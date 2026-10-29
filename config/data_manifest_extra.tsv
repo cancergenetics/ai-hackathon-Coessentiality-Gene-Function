@@ -1,0 +1,3 @@
+file	source	url	version	sha256	size_bytes	licence	notes
+data/raw/complexportal/9606.tsv	Complex Portal (EBI IntAct)	https://ftp.ebi.ac.uk/pub/databases/intact/complex/current/complextab/9606.tsv	current; Last-Modified 2026-10-17	f9e977e0cce4f518de066eb267c70cabc2f8c1e659cfc1c164fbee41d4380d53	5362905	CC BY 4.0	human complexes
+data/raw/mitocarta/Human.MitoCarta3.0.xls	MitoCarta3.0 (Rath et al. 2021 NAR)	https://personal.broadinstitute.org/scalvo/MitoCarta3.0/Human.MitoCarta3.0.xls	MitoCarta3.0 (file saved 2023-03-20)	e6ada0ae8dcd5447a5efb6f77c69a1c10b1ffa66521540a1e81b92c61e5505f2	10179584	free for academic use (Broad; unverified)	mitochondrial protein inventory

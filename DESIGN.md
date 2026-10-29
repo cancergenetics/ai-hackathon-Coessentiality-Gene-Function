@@ -1,48 +1,154 @@
-# DESIGN.md — v0 (PI draft, pre-review; to be revised with LITERATURE.md)
+# DESIGN.md — v1 (PI draft for review round 1)
 
-## 0. Fixed goal (from PROMPT.md; not negotiable)
-Use the co-essentiality tool (zavg_BEF, commit 3c684c9) on DepMap CRISPR screens (26Q3 Chronos) to propose putative
-functions for **pre-registered uncharacterised human genes**; use orthogonal datasets to reinforce/downweight; do
-comprehensive literature checks and propose experiments for the best predictions; deliver a reviewed paper with
-figures and references, per-candidate reports, and REPORT.md.
+Status: draft for review. Revision log at the bottom. Sections marked **[PRE-SPECIFIED]** are frozen once the design is
+accepted; any later change is logged with reason and date, and results are reported under both the frozen and the
+changed rule.
 
-## 1. Pre-registration of uncharacterised genes (before any network computation)  [details TBD from LITERATURE.md]
-- Universe: HGNC Approved protein-coding genes. Report how many are measured in DepMap 26Q3 (column presence only — not
-  network analysis); genes not measured are listed but cannot be characterised by the tool.
-- Candidate criteria (objective, scriptable, versioned inputs): absence of informative experimental GO annotation;
-  low focused-publication count (gene2pubmed); low UniProt annotation score; optional Unknome knownness.
-- Output: `preregistration/uncharacterised_genes.tsv` + criteria document; committed, SHA-256 recorded in
-  RESEARCH_TREE.md **before** the tool is run on DepMap data.
+## 0. Fixed goal (PROMPT.md; not negotiable)
+Use the co-essentiality tool (zavg_BEF; github.com/cancergenetics/ai-hackathon-Coessentiality @ 3c684c9, used read-only)
+on DepMap CRISPR screens (Public 26Q3 Chronos `CRISPRGeneEffect.csv`) as the **primary hypothesis generator** for the
+functions of a **pre-registered list of uncharacterised human genes**. Orthogonal datasets may reinforce or downweight
+predictions. For the most promising predictions: comprehensive literature search (what is known; does it support us)
+and proposed experiments. Deliverables: reviewed paper (abstract, introduction, methods, results, discussion, figures,
+full references), per-candidate reports, REPORT.md.
 
-## 2. Tool verification (M4)
-- Run tool's own toy tests; reproduce a published number (hu.MAP train-pair AP) to confirm correct installation.
-- Our own toy test: planted modules in synthetic gene-effect matrix → method must recover them; null matrix → no
-  enrichment beyond nominal rates.
+Scope decision: calibration on *characterised* genes (§3) is in scope only as a means to attach honest confidence to
+predictions for the pre-registered genes; no function is proposed for any gene outside the pre-registered list.
 
-## 3. Calibration on characterised genes (M5) — how much should we trust a neighbourhood?
-- Leave-one-gene-out GO prediction from co-essential neighbours for characterised genes; compare zavg_BEF vs GLS vs
-  Pearson and vs a term-prevalence (multifunctionality) null.
-- Temporal hold-out: genes "uncharacterised" by the same criteria at an archived GO release (T0), annotated since →
-  were their new terms predicted? Flag annotations derived from co-essentiality papers (circularity).
-- Per-gene informativeness: split-half (cell lines) reproducibility of each gene's neighbour list, seeds 0–4.
-- Output: empirical precision as a function of evidence strength → confidence tiers for predictions.
+## 1. Pre-registration of uncharacterised genes **[PRE-SPECIFIED]**
+Inputs (versions/checksums in DATA.md): HGNC complete set (file dated 2026-04-23), GO current (ontology 2026-07-26,
+goa_human GAF generated 2026-05-21), UniProt 2026_03, NCBI gene2pubmed (2026-10-29), TCRD/Pharos TDL (2023 mapping),
+DepMap 26Q3 header (column names only). Feature table: `results/preregistration/gene_knownness_features.tsv`
+(`scripts/02_gene_knownness_table.py`).
 
-## 4. Hypothesis generation for pre-registered genes (M6)
-- For each pre-registered gene: neighbour ranking by zavg_BEF; GO/complex/pathway enrichment of top neighbours with a
-  degree/annotation-preserving null; complex membership via hu.MAP/CORUM neighbours.
-- Confounder flags: genomic proximity of neighbours (CN artefacts), paralogs, low-variance/noise profiles,
-  lineage-restricted signals.
+- **Universe**: HGNC Approved, locus_group "protein-coding gene" (19,296 genes).
+- **D1 (primary, "no experimental functional annotation")**: zero informative GO BP or MF terms supported by
+  low-throughput experimental (EXP, IDA, IPI, IMP, IGI, IEP) or author/curator (TAS, IC) evidence, NOT-qualified rows
+  excluded; IPI/IDA to generic binding terms (protein binding GO:0005515, binding, identical protein binding, protein
+  homodimerization activity, ontology roots; full list in the script README) do not count. High-throughput codes
+  (HTP, HDA, HMP, HGI, HEP), IEA, ISS/ISO/ISA/ISM, IBA/IBD/IKR/IRD, RCA, NAS, ND are ignored. CC-only annotation does not
+  count as functional.
+- **D2**: UniProt (Swiss-Prot) annotation score ≤ 2 (max over the gene's reviewed entries; Wainberg et al. 2021 definition).
+- **D3 ("low literature attention")**: ≤ 10 "focused" PubMed records in gene2pubmed (PMIDs linked to ≤ 10 human genes)
+  **or** IDG Tdark.
+- **Pre-registered set U = D1 ∩ (D2 ∪ D3)**. Genes not in DepMap 26Q3 stay in U but are reported as "not scorable".
+- Sensitivity sets reported (not used for selection): D1, D2, D3 alone and pairwise overlaps.
+- **Curation-lag audit**: an agent with no access to network outputs audits a random sample of 50 U genes (seed 0) by
+  literature search and classifies each as truly uncharacterised / partially characterised / characterised-but-uncurated.
+  Audit results are reported; **no gene is removed from U** (the list stays as registered); audit flags are carried into
+  the candidate reports.
+- **Freeze**: `preregistration/uncharacterised_genes.tsv` + `preregistration/CRITERIA.md` committed; SHA-256 and commit
+  hash recorded in RESEARCH_TREE.md **before the tool is run on DepMap data** (enforced: the run scripts refuse to run
+  unless the registered file exists with the recorded hash).
 
-## 5. Orthogonal evidence (M6)
-- Pre-specified per-source support rule, with positive (known co-complex pairs) and negative (random pairs) controls
-  measured before use. Sources: BioPlex, hu.MAP, OpenCell, HuRI, BioGRID physical, CCLE co-abundance, HPA/OpenCell/
-  HCM localisation, Perturb-seq, chemogenomic screens, DEMETER2, STRING without text-mining.
+## 2. Tool installation check and verification (M4)
+- Tool toy tests (done: 16 passed, 2 skipped needing the authors' cache).
+- **Reproduction**: run the tool's `predict_pairs` on the hu.MAP 3.0 train pairs and confirm the published dev-scale
+  numbers (AP on train pairs) within tolerance — this confirms correct installation on 26Q3; the run touches only
+  labelled known pairs, not U.
+- **Our toy test**: synthetic gene-effect matrix (n lines ≈ 300, n genes ≈ 2,000) with planted modules of sizes 3–30,
+  a shared nuisance factor (lineage), and planted "proximity" blocks; the full pipeline (tool → neighbour enrichment →
+  tiers) must recover planted module labels for held-out module members and must give nominal false-positive rates on a
+  null matrix with no modules. Known-answer checks for the enrichment statistics.
+- Implementation: we call the tool's Python API (`coessential.method.CoessentialityModel`) without modifying it; we
+  compute the full gene × gene zavg_BEF matrix (and z_B, z_E, z_F; GLS and Pearson baselines from the tool).
 
-## 6. Prioritisation and literature validation (M7)
-- Composite pre-specified ranking; top N to blinded literature review: literature summary written blind to our
-  prediction; separate judge compares real vs decoy predictions (randomised order) → support rate vs decoy.
-- Per-candidate reports with proposed experiments.
+## 3. Calibration on characterised genes (M5) **[PRE-SPECIFIED]**
+Purpose: estimate how often a neighbourhood-based functional prediction is right, as a function of measurable evidence
+strength, so that U predictions carry calibrated confidence.
 
-## 7. Reproducibility
-Seeds `config/seeds.yaml`; data `DATA.md`; scripts numbered; all results committed; any result reviewed by an agent
-that did not produce it.
+**Annotation vocabularies** (prediction targets):
+- V1 (primary; matches the tool's training signal): protein complexes — Complex Portal human (current), GO CC terms
+  descending from "protein-containing complex" (GO:0032991) with experimental evidence, and hu.MAP 3.0 complexes
+  (flagged: partially dependent, the tool was tuned on hu.MAP 3.0 train pairs).
+- V2 (secondary): GO BP and MF, experimental evidence (as D1), propagated to ancestors (true-path rule), terms with
+  5–300 annotated scorable genes; Reactome pathways (lowest-level, 5–300 genes).
+
+**Predictor (single, pre-specified)**: for query gene g, neighbours N(g) = top K = 25 genes by zavg_BEF (excluding g,
+excluding genes not in background). Term score S(g,t) = Σ_{j∈N(g), j annotated t} max(z_gj, 0). Term p-value: one-sided
+hypergeometric of |N(g) ∩ t| vs the scorable annotated background; BH-FDR within gene. Ranked list per gene = terms by
+S, ties by p. (K = 25 is fixed a priori; K = 10 and 50 reported as sensitivity.)
+
+**Benchmarks** (all on genes NOT in U):
+1. Leave-one-gene-out (the query's own annotations are not used for its neighbours' labels — trivially true — and the
+   query is removed from term backgrounds): per-gene AUPRC and precision@1/@3 of ranked terms vs the gene's own
+   annotations; macro-averaged over genes and over terms.
+2. **Temporal hold-out (primary validation)**: t0 = GO release 2018-07-02. Hold-out genes H = genes meeting D1 at t0 and
+   ≤ 10 focused PubMed records with PMID < cut-off for 2018-07 (PMID-number date proxy), that have ≥ 1 new informative
+   experimental BP/MF term (or complex) in the current release. Targets: the terms acquired since t0. Network
+   annotations used for prediction: t0 release only. Named subset: literature positive controls (SPRING1, PEDS1, CCDC32,
+   INTS15, HAPSTR1, SLC25A51, TEDC1, TEDC2, POU2AF2, POU2AF3, TMEM242; weaker: FIRRM, AIRIM, TMEM41B).
+   Circularity: new annotations whose supporting PMIDs are co-essentiality/DepMap papers (blacklist compiled from
+   LITERATURE.md before scoring) are reported separately; primary metric excludes them.
+3. **Comparators**: GLS and Pearson (same predictor, tool's implementations); **prior-only null** (rank terms by
+   annotation frequency — multifunctionality baseline, Gillis & Pavlidis 2011); **matched-gene null** (replace g by a
+   gene matched on mean effect, SD and NaN fraction — 5 matches, seeds 0–4).
+4. **Confidence model**: precision@1 of the top term as a function of (i) the top-K mean zavg_BEF of g, (ii) split-half
+   reproducibility of N(g) (§4.2), binned; isotonic fit on benchmark 1, checked on benchmark 2. Output: calibrated
+   probability that the top-ranked term is a correct annotation.
+
+Primary success criterion for using the tool on U: on the temporal hold-out, zavg_BEF precision@1 exceeds both the
+prior-only and matched-gene nulls (paired bootstrap over genes, 95% CI excludes 0). Reported whichever way it falls.
+
+## 4. Hypothesis generation for U (M6) **[PRE-SPECIFIED]**
+4.1 Same predictor as §3 on V1 and V2, using current annotations, for every scorable U gene. Also report the top-10
+named co-essential partners with their zavg_BEF, annotations, and flags.
+4.2 **Assessability**: split-half reproducibility — split cell lines randomly in halves (seeds 0–4), run the tool on each
+half, compute Jaccard/RBO overlap of top-25 neighbours of g across halves; genes whose mean overlap is below the 95th
+percentile of the matched-gene null overlap are "not assessable" (no prediction made, not "negative").
+4.3 **Artefact controls** (each prediction must survive): (a) recompute after removing neighbours on the same
+chromosome arm (Ensembl coordinates/HGNC cytoband); (b) paralog flag (Ensembl 116) for top partners; (c) MitoCarta /
+large-complex stratification — report predictions by compartment and compare the U prediction distribution against the
+matched-gene null distribution; (d) low-coverage genes (NaN ≥ 10%) flagged; (e) lineage-restricted signal check: does
+the top-partner correlation persist after removing the most dependent lineage?
+4.4 **Clustering view**: communities in the zavg_BEF kNN graph (Leiden/Louvain, seed 0, resolution fixed a priori; seeds
+1–4 for stability) to report U genes embedded in coherent modules; descriptive only.
+
+## 5. Orthogonal evidence **[PRE-SPECIFIED rules, set before viewing U predictions]**
+Independent classes: (P) physical — BioPlex 3.0, OpenCell, HuRI, BioGRID low-throughput physical; hu.MAP 3.0 flagged
+partially dependent; (A) co-abundance — CCLE proteomics (Nusinow 2020), ProteomeHD if available; (L) localisation — HPA,
+OpenCell, Human Cell Map; (G) other perturbation — DEMETER2 co-dependency on shared lines, Perturb-seq profile
+similarity, chemogenomic profile similarity; (S) structure-predicted interactomes if available. Excluded for
+circularity: HumanNet, SPOC/Predictomes, STRING text-mining/database/co-expression? (STRING experiments channel only).
+- Pair-level support rule per continuous source: similarity ≥ 95th percentile of random-pair distribution; binary
+  sources: edge present. Each source's sensitivity is first measured on known co-complex pairs (positive control) and
+  random pairs (negative control); sources with no enrichment are dropped (reported).
+- Prediction-level support: observed number of supported (g, partner-in-predicted-term) pairs vs the expectation from
+  matched random partners; class supports the prediction if one-sided p < 0.05. Localisation supports if g's compartment
+  matches the predicted term's dominant compartment; **contradiction** (e.g. nuclear-only protein predicted in a
+  mitochondrial matrix complex) downweights.
+
+## 6. Prioritisation, literature validation, experiments (M7) **[PRE-SPECIFIED]**
+- **Tier A**: assessable; calibrated P(top term correct) ≥ 0.5; survives same-arm removal; no paralog-only support;
+  ≥ 1 orthogonal class supports, none contradicts. **Tier B**: calibrated ≥ 0.3 or orthogonal-only shortfall. Rank
+  within tier by calibrated probability, then number of supporting classes.
+- Top 20 (Tier A first) go to literature deep-dives with **blinded judging**: agent L (blind to our prediction) writes
+  what is known about the gene (all symbols/aliases, PubMed, Europe PMC incl. preprints); agent J sees L's summary and
+  two candidate function statements in random order — our prediction and a **decoy** (the prediction for a different U
+  gene, matched on compartment class where possible) — and classifies each as supported / contradicted / unaddressed.
+  Primary literature-validation metric: support rate of real vs decoy (paired). Then unblinded deep-dive.
+- Per-candidate report (top ~8–10): evidence chain, partners, orthogonal support, literature, novelty, alternative
+  explanations, and proposed experiments (e.g. tagged-protein localisation, IP-MS/proximity labelling, CRISPR KO with
+  complex-specific readouts, epistasis with predicted partners, rescue).
+- External benchmarks (agreement only, never tuning): Wainberg 2021's 108 predictions; hu.MAP 3.0 uncharacterised-protein
+  hypotheses.
+
+## 7. Statistics
+BH-FDR for multiple testing; bootstrap CIs (genes resampled; 1,000 replicates, seed 0); seeds [0,1,2,3,4]
+(`config/seeds.yaml`). All thresholds above are fixed before U predictions are computed.
+
+## 8. Compute
+Full gene × gene matrices (≈18.4k²; float32 ≈1.35 GB each) for zavg_BEF, components, GLS, Pearson; ≈2–3 min per tool run
+on the 24 GB laptop; split-half: 10 extra runs. Matrices are git-ignored; summaries committed.
+
+## 9. AI-agent failure-mode safeguards
+Pre-registration hash gate; agents never read predictions outside their task; hallucinated references blocked by
+Crossref/PubMed verification of every citation; blinded literature judging with decoys; independent re-implementation
+check of key numbers (one agent computes, another re-derives from raw outputs); toy tests with known answers; no metric,
+control or label changed after seeing results (any change logged and both versions reported); research tree as memory.
+
+## 10. Deliverables
+`manuscript/` (paper + figures + references), `reports/<GENE>.md` per top candidate, REPORT.md, LESSONS.md, tree.
+
+## Revision log
+- v0 (2026-10-29): skeleton. v1 (2026-10-29): criteria and analyses specified from LITERATURE.md §3.4/§4/§6.

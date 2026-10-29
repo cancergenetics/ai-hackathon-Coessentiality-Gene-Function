@@ -185,6 +185,9 @@ with tarfile.open(RAW + "/" + f) as t:
         w(f"  - {sid} {au}: {r.n_screens} screens, {r.n_conditions} conditions, up to {int(r.genes)} genes")
     ol = idx[idx.SOURCE_ID.astype(str) == "32649862"]
     w(f"- Olivieri 2020 (PMID 32649862): {len(ol)} screens in ORCS; cell line {ol.CELL_LINE.unique().tolist()}; score types {ol['SCORE.1_TYPE'].unique().tolist()}")
+    w(f"- Olivieri ORCS SCREEN_IDs: {ol.SCREEN_ID.tolist()}; conditions: {sorted(ol.CONDITION_NAME.dropna().unique().tolist())}")
+    lau = idx[idx.SOURCE_ID.astype(str) == "32028983"]
+    w(f"- Lau 2020 (PMID 32028983, multidrug-resistance genes): {len(lau)} screens, SCREEN_IDs {lau.SCREEN_ID.min()}-{lau.SCREEN_ID.max()}, cell lines {lau.CELL_LINE.unique().tolist()}")
     if len(ol):
         mem = [n for n in names if re.search(r"SCREEN_%s-" % ol.SCREEN_ID.iloc[0], n)]
         if mem:
@@ -200,11 +203,11 @@ try:
     v1 = pd.read_excel(RAW + "/" + d + "biorxiv_845446_TableS1_media-1.xlsx", header=None)
 except Exception:
     v1 = read_strict_xlsx(RAW + "/" + d + "biorxiv_845446_TableS1_media-1.xlsx")
-w(f"- {v1.shape[0]} rows x {v1.shape[1]} cols; header/first row: {v1.iloc[0].dropna().astype(str).tolist()[:12]}")
+w(f"- {v1.shape[0]} rows x {v1.shape[1]} cols; title row: {v1.iloc[0].dropna().astype(str).tolist()[:3]}; column header: {v1.iloc[1].dropna().astype(str).tolist()[:6]}")
 sec("Olivieri 2020 (bioRxiv v1) Table S2 NormZ", d + "biorxiv_845446_TableS2_NormZ_media-2.xlsx", "gene symbol (RPE1-hTERT TP53-/- Cas9 screens, DrugZ NormZ)")
 v = read_strict_xlsx(RAW + "/" + d + "biorxiv_845446_TableS2_NormZ_media-2.xlsx")  # strict-OOXML workbook; sheet name Zscores_28screens
-num = v.select_dtypes("number")
 gcol = v.columns[0]
+num = v.drop(columns=[gcol]).apply(pd.to_numeric, errors="coerce")
 w(f"- sheet `Zscores_28screens` (custom strict-OOXML parser): {v.shape[0]} rows x {v.shape[1]} cols; columns: {list(v.columns)}")
 w(f"- distinct genes (col `{gcol}`): {v[gcol].nunique()}; numeric screen columns: {num.shape[1]}; NaN fraction {float(num.isna().mean().mean()):.3f}")
 w(f"- example gene IDs: {v[gcol].head(4).astype(str).tolist()}; NormZ range {float(num.min().min()):.1f} to {float(num.max().max()):.1f}")
@@ -237,7 +240,9 @@ with zipfile.ZipFile(RAW + "/" + f) as z:
 w(f"- rows (pairs): {len(df)}; columns: {list(df.columns)}")
 prots = pd.concat([df.Protein_1, df.Protein_2]).unique()
 w(f"- distinct protein groups: {len(prots)}; distinct primary accessions (first ACC of each group): {len(set(p.split(';')[0].split('-')[0] for p in prots))}")
-w(f"- score min/median/99.5th pct/max: {df.coregulation_score.min():.4f}/{df.coregulation_score.median():.4f}/{df.coregulation_score.quantile(0.995):.4f}/{df.coregulation_score.max():.4f}; pairs >= 0.995 (authors' cut-off): {(df.coregulation_score >= 0.995).sum()}")
+q = df.coregulation_score.quantile(0.995)
+w(f"- score min/median/99.5th pct/max: {df.coregulation_score.min():.4f}/{df.coregulation_score.median():.4f}/{q:.4f}/{df.coregulation_score.max():.4f}")
+w(f"- the authors' 'recommended cut-off 0.995' is a PERCENTILE (top 0.5% of pairs), i.e. raw score >= {q:.4f}: {(df.coregulation_score >= q).sum()} pairs; raw scores never reach 0.995")
 del df
 
 # ---------------------------------------------------------------- AF2 pair-level
