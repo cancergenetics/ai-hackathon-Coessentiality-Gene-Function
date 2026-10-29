@@ -1,0 +1,14 @@
+# raw/restricted data and large derived matrices: never commit
+/data/
+/external/
+/.env/
+*.npy
+*.npz
+*.parquet
+*.h5
+*.feather
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.DS_Store
+scratch/

@@ -1,0 +1,4 @@
+# Fixed random seed list for the whole project (frozen 2026-10-29; never change after results exist).
+# Use seeds[0] for any single-run stochastic step; use all for repeated/bootstrapped steps.
+seeds: [0, 1, 2, 3, 4]
+# Tool's own internal seed (zavg_BEF random-pair reference) is fixed inside the tool and not overridden.
