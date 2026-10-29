@@ -1,0 +1,108 @@
+[get ] https://current.geneontology.org/ontology/go-basic.obo -> data/raw/go/current/go-basic.obo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 30.7M  100 30.7M    0     0  42.9M      0 --:--:-- --:--:-- --:--:-- 42.9M
+[get ] https://current.geneontology.org/annotations/goa_human.gaf.gz -> data/raw/go/current/goa_human.gaf.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 14.3M  100 14.3M    0     0  37.4M      0 --:--:-- --:--:-- --:--:-- 37.4M
+[get ] https://release.geneontology.org/2018-07-02/ontology/go-basic.obo -> data/raw/go/archive/2018-07-02/go-basic.obo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 49 32.3M   49 16.0M    0     0  33.4M      0 --:--:-- --:--:-- --:--:-- 33.4M100 32.3M  100 32.3M    0     0  38.2M      0 --:--:-- --:--:-- --:--:-- 38.2M
+[get ] https://release.geneontology.org/2018-07-02/annotations/goa_human.gaf.gz -> data/raw/go/archive/2018-07-02/goa_human.gaf.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 8221k  100 8221k    0     0  22.7M      0 --:--:-- --:--:-- --:--:-- 22.8M
+[get ] https://release.geneontology.org/2019-07-01/ontology/go-basic.obo -> data/raw/go/archive/2019-07-01/go-basic.obo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  2 29.9M    2  727k    0     0  5892k      0  0:00:05 --:--:--  0:00:05 5870k100 29.9M  100 29.9M    0     0  42.4M      0 --:--:-- --:--:-- --:--:-- 42.4M
+[get ] https://release.geneontology.org/2019-07-01/annotations/goa_human.gaf.gz -> data/raw/go/archive/2019-07-01/goa_human.gaf.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 8643k  100 8643k    0     0  32.9M      0 --:--:-- --:--:-- --:--:-- 33.1M
+[get ] https://release.geneontology.org/2020-06-01/ontology/go-basic.obo -> data/raw/go/archive/2020-06-01/go-basic.obo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 29.6M  100 29.6M    0     0  37.1M      0 --:--:-- --:--:-- --:--:-- 37.1M
+[get ] https://release.geneontology.org/2020-06-01/annotations/goa_human.gaf.gz -> data/raw/go/archive/2020-06-01/goa_human.gaf.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1 9494k    1  175k    0     0  2011k      0  0:00:04 --:--:--  0:00:04 1992k100 9494k  100 9494k    0     0  35.7M      0 --:--:-- --:--:-- --:--:-- 35.6M
+[get ] https://release.geneontology.org/2020-07-16/ontology/go-basic.obo -> data/raw/go/archive/2020-07-16/go-basic.obo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 99 29.5M   99 29.4M    0     0  41.2M      0 --:--:-- --:--:-- --:--:-- 41.2M100 29.5M  100 29.5M    0     0  41.2M      0 --:--:-- --:--:-- --:--:-- 41.2M
+[get ] https://release.geneontology.org/2020-07-16/annotations/goa_human.gaf.gz -> data/raw/go/archive/2020-07-16/goa_human.gaf.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 10.2M  100 10.2M    0     0  28.0M      0 --:--:-- --:--:-- --:--:-- 28.1M
+[get ] https://release.geneontology.org/2022-07-01/ontology/go-basic.obo -> data/raw/go/archive/2022-07-01/go-basic.obo
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0 50 29.5M   50 14.7M    0     0  33.7M      0 --:--:-- --:--:-- --:--:-- 33.7M100 29.5M  100 29.5M    0     0  41.8M      0 --:--:-- --:--:-- --:--:-- 41.8M
+[get ] https://release.geneontology.org/2022-07-01/annotations/goa_human.gaf.gz -> data/raw/go/archive/2022-07-01/goa_human.gaf.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 11.6M  100 11.6M    0     0  34.4M      0 --:--:-- --:--:-- --:--:-- 34.5M
+[get ] https://ftp.ncbi.nlm.nih.gov/gene/DATA/GENE_INFO/Mammalia/Homo_sapiens.gene_info.gz -> data/raw/ncbi_gene/Homo_sapiens.gene_info.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 5077k  100 5077k    0     0  4868k      0  0:00:01  0:00:01 --:--:-- 4872k
+[get ] https://ftp.ncbi.nlm.nih.gov/gene/DATA/gene2pubmed.gz -> data/raw/ncbi_gene/gene2pubmed.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  1  277M    1 3218k    0     0  3042k      0  0:01:33  0:00:01  0:01:32 3041k  9  277M    9 27.1M    0     0  12.9M      0  0:00:21  0:00:02  0:00:19 12.9M 17  277M   17 47.9M    0     0  15.2M      0  0:00:18  0:00:03  0:00:15 15.2M 22  277M   22 63.3M    0     0  15.6M      0  0:00:17  0:00:04  0:00:13 15.6M 28  277M   28 79.8M    0     0  15.7M      0  0:00:17  0:00:05  0:00:12 16.2M 34  277M   34 95.8M    0     0  15.8M      0  0:00:17  0:00:06  0:00:11 18.5M 41  277M   41  113M    0     0  16.0M      0  0:00:17  0:00:07  0:00:10 17.3M 47  277M   47  130M    0     0  16.1M      0  0:00:17  0:00:08  0:00:09 16.7M 53  277M   53  148M    0     0  16.3M      0  0:00:16  0:00:09  0:00:07 16.9M 59  277M   59  165M    0     0  16.4M      0  0:00:16  0:00:10  0:00:06 17.1M 66  277M   66  184M    0     0  16.5M      0  0:00:16  0:00:11  0:00:05 17.5M 72  277M   72  201M    0     0  16.7M      0  0:00:16  0:00:12  0:00:04 17.6M 79  277M   79  220M    0     0  16.8M      0  0:00:16  0:00:13  0:00:03 17.8M 86  277M   86  238M    0     0  16.9M      0  0:00:16  0:00:14  0:00:02 18.2M 92  277M   92  256M    0     0  17.0M      0  0:00:16  0:00:15  0:00:01 18.1M 99  277M   99  275M    0     0  17.1M      0  0:00:16  0:00:16 --:--:-- 18.3M100  277M  100  277M    0     0  17.1M      0  0:00:16  0:00:16 --:--:-- 18.4M
+[get ] https://rest.uniprot.org/uniprotkb/stream?query=organism_id:9606+AND+reviewed:true&format=tsv&fields=accession,id,gene_names,gene_primary,protein_name,annotation_score,protein_existence,length,cc_function,cc_subcellular_location,go_id,go_p,go_f,go_c,keyword,ft_domain,xref_pfam,xref_interpro,cc_similarity,xref_geneid,xref_hgnc,lit_pubmed_id,date_modified,version -> data/raw/uniprot/uniprot_human_reviewed.tsv
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:--  0:00:01 --:--:--     0100  8567    0  8567    0     0   4320      0 --:--:--  0:00:01 --:--:--  4320100  174k    0  174k    0     0  80392      0 --:--:--  0:00:02 --:--:-- 80387100  618k    0  618k    0     0   191k      0 --:--:--  0:00:03 --:--:--  191k100 1271k    0 1271k    0     0   289k      0 --:--:--  0:00:04 --:--:--  289k100 1845k    0 1845k    0     0   349k      0 --:--:--  0:00:05 --:--:--  442k100 2144k    0 2144k    0     0   342k      0 --:--:--  0:00:06 --:--:--  500k100 2956k    0 2956k    0     0   410k      0 --:--:--  0:00:07 --:--:--  559k100 4330k    0 4330k    0     0   525k      0 --:--:--  0:00:08 --:--:--  740k100 5769k    0 5769k    0     0   629k      0 --:--:--  0:00:09 --:--:--  941k100 7432k    0 7432k    0     0   731k      0 --:--:--  0:00:10 --:--:-- 1141k100 8967k    0 8967k    0     0   774k      0 --:--:--  0:00:11 --:--:-- 1282k100 10.0M    0 10.0M    0     0   849k      0 --:--:--  0:00:12 --:--:-- 1482k100 11.7M    0 11.7M    0     0   911k      0 --:--:--  0:00:13 --:--:-- 1558k100 11.9M    0 11.9M    0     0   857k      0 --:--:--  0:00:14 --:--:-- 1266k100 13.2M    0 13.2M    0     0   893k      0 --:--:--  0:00:15 --:--:-- 1221k100 13.4M    0 13.4M    0     0   833k      0 --:--:--  0:00:16 --:--:--  968k100 14.3M    0 14.3M    0     0   856k      0 --:--:--  0:00:17 --:--:--  872k100 14.8M    0 14.8M    0     0   828k      0 --:--:--  0:00:18 --:--:--  618k100 15.4M    0 15.4M    0     0   823k      0 --:--:--  0:00:19 --:--:--  724k100 16.6M    0 16.6M    0     0   843k      0 --:--:--  0:00:20 --:--:--  690k100 18.5M    0 18.5M    0     0   896k      0 --:--:--  0:00:21 --:--:-- 1122k100 19.8M    0 19.8M    0     0   915k      0 --:--:--  0:00:22 --:--:-- 1118k100 21.1M    0 21.1M    0     0   931k      0 --:--:--  0:00:23 --:--:-- 1324k100 22.6M    0 22.6M    0     0   946k      0 --:--:--  0:00:24 --:--:-- 1392k100 23.6M    0 23.6M    0     0   959k      0 --:--:--  0:00:25 --:--:-- 1423k100 24.1M    0 24.1M    0     0   946k      0 --:--:--  0:00:26 --:--:-- 1160k100 25.4M    0 25.4M    0     0   958k      0 --:--:--  0:00:27 --:--:-- 1153k100 26.8M    0 26.8M    0     0   975k      0 --:--:--  0:00:28 --:--:-- 1179k100 28.0M    0 28.0M    0     0   982k      0 --:--:--  0:00:29 --:--:-- 1174k100 29.1M    0 29.1M    0     0   972k      0 --:--:--  0:00:30 --:--:-- 1032k100 29.3M    0 29.3M    0     0   964k      0 --:--:--  0:00:31 --:--:-- 1057k100 29.3M    0 29.3M    0     0   935k      0 --:--:--  0:00:32 --:--:--  807k100 29.4M    0 29.4M    0     0   907k      0 --:--:--  0:00:33 --:--:--  530k100 29.5M    0 29.5M    0     0   884k      0 --:--:--  0:00:34 --:--:--  300k100 29.5M    0 29.5M    0     0   860k      0 --:--:--  0:00:35 --:--:--   98k100 29.5M    0 29.5M    0     0   837k      0 --:--:--  0:00:36 --:--:-- 52577100 30.4M    0 30.4M    0     0   837k      0 --:--:--  0:00:37 --:--:--  215k100 31.5M    0 31.5M    0     0   844k      0 --:--:--  0:00:38 --:--:--  424k100 33.0M    0 33.0M    0     0   865k      0 --:--:--  0:00:39 --:--:--  731k100 34.9M    0 34.9M    0     0   890k      0 --:--:--  0:00:40 --:--:-- 1104k100 36.4M    0 36.4M    0     0   905k      0 --:--:--  0:00:41 --:--:-- 1391k100 38.0M    0 38.0M    0     0   921k      0 --:--:--  0:00:42 --:--:-- 1526k100 39.2M    0 39.2M    0     0   923k      0 --:--:--  0:00:43 --:--:-- 1497k100 39.8M    0 39.8M    0     0   921k      0 --:--:--  0:00:44 --:--:-- 1360k100 40.6M    0 40.6M    0     0   919k      0 --:--:--  0:00:45 --:--:-- 1151k100 41.1M    0 41.1M    0     0   912k      0 --:--:--  0:00:46 --:--:--  968k100 42.1M    0 42.1M    0     0   906k      0 --:--:--  0:00:47 --:--:--  788k100 42.3M    0 42.3M    0     0   899k      0 --:--:--  0:00:48 --:--:--  678k100 42.4M    0 42.4M    0     0   901k      0 --:--:--  0:00:48 --:--:--  675k
+[get ] https://unknome.mrc-lmb.cam.ac.uk/download/prot_tsv_gz/18_Mar_2026/ -> data/raw/unknome/unknome_protein_table_18_Mar_2026.tsv.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0 57.1M    0  140k    0     0   189k      0  0:05:08 --:--:--  0:05:08  189k 75 57.1M   75 43.3M    0     0  24.7M      0  0:00:02  0:00:01  0:00:01 24.7M100 57.1M  100 57.1M    0     0  28.3M      0  0:00:02  0:00:02 --:--:-- 28.3M
+[get ] https://unknome.mrc-lmb.cam.ac.uk/download/clust_tsv_gz/18_Mar_2026/ -> data/raw/unknome/unknome_cluster_table_18_Mar_2026.tsv.gz
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 2887k  100 2887k    0     0  7725k      0 --:--:-- --:--:-- --:--:-- 7740k
+[get ] https://unmtid-dbs.net/download/TCRD/PharosTCRD_UniProt_Mapping.tsv -> data/raw/tcrd/PharosTCRD_UniProt_Mapping.tsv
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  389k  100  389k    0     0   502k      0 --:--:-- --:--:-- --:--:--  501k
+[get ] https://unmtid-dbs.net/download/TCRD/latest.README -> data/raw/tcrd/latest.README
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  1769  100  1769    0     0   4559      0 --:--:-- --:--:-- --:--:--  4559
+[get ] https://unmtid-dbs.net/download/TCRD/README -> data/raw/tcrd/README
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100  1345  100  1345    0     0   4136      0 --:--:-- --:--:-- --:--:--  4138
+[get ] https://reactome.org/download/current/UniProt2Reactome_All_Levels.txt -> data/raw/reactome/UniProt2Reactome_All_Levels.txt
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100 65536    0 65536    0     0   148k      0 --:--:-- --:--:-- --:--:--  148k100 22.0M    0 22.0M    0     0  17.4M      0 --:--:--  0:00:01 --:--:-- 17.4M100 71.3M    0 71.3M    0     0  31.4M      0 --:--:--  0:00:02 --:--:-- 31.4M100  112M    0  112M    0     0  35.9M      0 --:--:--  0:00:03 --:--:-- 35.9M
+
+SHA-256 (data files only):
+754bb348b387d37b3b73b66eb3f5c67afe6557e28a5a6a2dd71c88576d72a2cf  data/raw/go/archive/2018-07-02/go-basic.obo
+e9386952963da247b9f7ca047789d62428230ced0b016f0d13df5b3f75a8c82d  data/raw/go/archive/2018-07-02/goa_human.gaf.gz
+f96adc6c08a1030fee2fcb143271d4d671fb48ac45d2a20b3b23f7d61bcf17c1  data/raw/go/archive/2019-07-01/go-basic.obo
+a5c76f4175ab0b0b7137cce3558ffbe9166ec93308fbaaf62222cc104e219955  data/raw/go/archive/2019-07-01/goa_human.gaf.gz
+fdd73677e8c9e9b4be2d179dc07727c492b2d07aa2a34ad73ea09747130b20c9  data/raw/go/archive/2020-06-01/go-basic.obo
+8478c0ade9062d34292e2ac97fddcd25cb76f1ab85b24383a6787ea9d1618d18  data/raw/go/archive/2020-06-01/goa_human.gaf.gz
+b5d9a1a9b8930ff15e8ee7a055bba72aa99729966b2bd88d9dc0169e9faaebec  data/raw/go/archive/2020-07-16/go-basic.obo
+95a8ac644a123ce60c853c2b716f047453065f5f5106366943496a11a5c6e9b9  data/raw/go/archive/2020-07-16/goa_human.gaf.gz
+91eae63f06163aea5072d1d7c8d34a1f0cdf6295b23b527297bce4ac89dd022a  data/raw/go/archive/2022-07-01/go-basic.obo
+58032ab75305d4934e6888c0beaadc2f5bdbf6c20fb7b7f16f00b3aa16b11ffa  data/raw/go/archive/2022-07-01/goa_human.gaf.gz
+b08d45b268b8c24ccb2513dbbbc7d4df9f6521c099b413f79eb31e06e0fa3bcc  data/raw/go/current/go-basic.obo
+db472faff1785878521693af62646546cea6af4a386609dd01c72c0554a46a30  data/raw/go/current/goa_human.gaf.gz
+5bde20b70714bad4ae223a05869c93a1d14cf6705cf2005845e9b6f402a13b58  data/raw/ncbi_gene/Homo_sapiens.gene_info.gz
+7c66afc06782503164c1986f9d2411abe325bd1b3558c4c247776ba8bba5f347  data/raw/ncbi_gene/gene2pubmed.gz
+ea86631f38e2ef6491f7f85e7e066bcfa8acab458be6ec9615be05f75490b9bd  data/raw/ncbi_gene/gene2pubmed_9606.tsv
+b56bdfeeece937ff12de31ad637fe4b5443ec091915776044850f4c0f31235fb  data/raw/reactome/UniProt2Reactome_All_Levels.txt
+fc10c99fa0ae357b7bb59d0acfee8954763bb4d8031fd9be4efd30e4ccbd0555  data/raw/tcrd/PharosTCRD_UniProt_Mapping.tsv
+ecb8bec5ab6bd89333b3561608fbe8905f6dce418428cce6977aabdde6e45dc8  data/raw/tcrd/README
+d0a0eb37d3bc6a502c080f9c707d403d70fb1c46ab25e9ac158bf7c3c8db8743  data/raw/tcrd/latest.README
+7d034c25ec83b2cb3b50fe4e4ca2724aad10d0f3baeb0405ef7f2f0e2c806db6  data/raw/uniprot/uniprot_human_reviewed.tsv
+0874be9718cd5f2ace8e0f626296e3333104dbcd2c4991ab73e374a071ad1821  data/raw/unknome/unknome_cluster_table_18_Mar_2026.tsv.gz
+af0ef544b36278f4ec9084f540734ae8313e61401a42b521d407e1d25eee768c  data/raw/unknome/unknome_protein_table_18_Mar_2026.tsv.gz
