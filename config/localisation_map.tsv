@@ -1,0 +1,120 @@
+# config/localisation_map.tsv -- source localisation labels -> common vocabulary (DESIGN.md v2.3 §5.1b; committed at M4).
+# Vocabulary (13): nucleus, nucleolus, nuclear envelope, cytosol, mitochondrion, ER, Golgi, plasma membrane, vesicles/endosome/lysosome, peroxisome, lipid droplet, centrosome/cilium, cytoskeleton.
+# compartment: '|'-separated when a label spans two compartments; empty = label not mapped (ignored; e.g. sperm-specific, mitotic or aggregate structures).
+# GO_CC rows: a GO CC term maps to the compartment of the FIRST row (lowest priority number) among its is_a/part_of ancestors (reflexive); terms with none are ignored.
+# Agreement/compatibility rule (src/orthogonal.py::compartments_match): two sets match if they share a compartment after adding parents nucleolus->nucleus and nuclear envelope->nucleus.
+# Multi-localised (§5.1b): >= 2 distinct compartments in any admitted source after collapsing nucleolus and nuclear envelope into nucleus.
+source	label	compartment	priority	note
+HPA	Nucleoplasm	nucleus		
+HPA	Nuclear bodies	nucleus		
+HPA	Nuclear speckles	nucleus		
+HPA	Nucleoli	nucleolus		
+HPA	Nucleoli fibrillar center	nucleolus		
+HPA	Nucleoli rim	nucleolus		
+HPA	Nuclear membrane	nuclear envelope		
+HPA	Cytosol	cytosol		
+HPA	Cytoplasmic bodies	cytosol		
+HPA	Mitochondria	mitochondrion		
+HPA	Endoplasmic reticulum	ER		
+HPA	Golgi apparatus	Golgi		
+HPA	Plasma membrane	plasma membrane		
+HPA	Cell Junctions	plasma membrane		
+HPA	Focal adhesion sites	plasma membrane		
+HPA	Vesicles	vesicles/endosome/lysosome		
+HPA	Endosomes	vesicles/endosome/lysosome		
+HPA	Lysosomes	vesicles/endosome/lysosome		
+HPA	Peroxisomes	peroxisome		
+HPA	Lipid droplets	lipid droplet		
+HPA	Centrosome	centrosome/cilium		
+HPA	Centriolar satellite	centrosome/cilium		
+HPA	Basal body	centrosome/cilium		
+HPA	Primary cilium	centrosome/cilium		
+HPA	Primary cilium tip	centrosome/cilium		
+HPA	Primary cilium transition zone	centrosome/cilium		
+HPA	Flagellar centriole	centrosome/cilium		
+HPA	Actin filaments	cytoskeleton		
+HPA	Intermediate filaments	cytoskeleton		
+HPA	Microtubules	cytoskeleton		
+HPA	Microtubule ends	cytoskeleton		
+HPA	Mitotic spindle	cytoskeleton		
+HPA	Kinetochore			mitotic structure; not mapped
+HPA	Mitotic chromosome			mitotic structure; not mapped
+HPA	Cytokinetic bridge			mitotic structure; not mapped
+HPA	Midbody			mitotic structure; not mapped
+HPA	Midbody ring			mitotic structure; not mapped
+HPA	Cleavage furrow			mitotic structure; not mapped
+HPA	Aggresome			aggregate; not mapped
+HPA	Rods & Rings			not mapped
+HPA	Acrosome			sperm-specific; not mapped
+HPA	Annulus			sperm-specific; not mapped
+HPA	Calyx			sperm-specific; not mapped
+HPA	Connecting piece			sperm-specific; not mapped
+HPA	End piece			sperm-specific; not mapped
+HPA	Equatorial segment			sperm-specific; not mapped
+HPA	Mid piece			sperm-specific; not mapped
+HPA	Perinuclear theca			sperm-specific; not mapped
+HPA	Principal piece			sperm-specific; not mapped
+OpenCell	nucleoplasm	nucleus		
+OpenCell	chromatin	nucleus		
+OpenCell	nuclear_punctae	nucleus		
+OpenCell	nucleolus_gc	nucleolus		
+OpenCell	nucleolus_fc_dfc	nucleolus		
+OpenCell	nuclear_membrane	nuclear envelope		
+OpenCell	cytoplasmic	cytosol		
+OpenCell	mitochondria	mitochondrion		
+OpenCell	er	ER		
+OpenCell	golgi	Golgi		
+OpenCell	membrane	plasma membrane		
+OpenCell	cell_contact	plasma membrane		
+OpenCell	focal_adhesions	plasma membrane		
+OpenCell	vesicles	vesicles/endosome/lysosome		
+OpenCell	centrosome	centrosome/cilium		
+OpenCell	cytoskeleton	cytoskeleton		
+OpenCell	big_aggregates			aggregate; not mapped
+HCM_NMF	nucleoplasm	nucleus		
+HCM_NMF	chromatin	nucleus		
+HCM_NMF	nuclear body	nucleus		
+HCM_NMF	nucleolus	nucleolus		
+HCM_NMF	nuclear outer membrane-ER membrane network	nuclear envelope|ER		
+HCM_NMF	cytosol	cytosol		
+HCM_NMF	cytoplasmic ribonucleoprotein granule	cytosol		
+HCM_NMF	mitochondrial matrix	mitochondrion		
+HCM_NMF	mitochondrial inner membrane	mitochondrion		
+HCM_NMF	mitochondrial intermembrane space	mitochondrion		
+HCM_NMF	mitochondrial outer membrane	mitochondrion		
+HCM_NMF	ER lumen	ER		
+HCM_NMF	ER membrane	ER		
+HCM_NMF	Golgi apparatus	Golgi		
+HCM_NMF	plasma membrane	plasma membrane		
+HCM_NMF	cell junction	plasma membrane		
+HCM_NMF	early endosome	vesicles/endosome/lysosome		
+HCM_NMF	endosome	vesicles/endosome/lysosome		
+HCM_NMF	recycling endosome	vesicles/endosome/lysosome		
+HCM_NMF	lysosome	vesicles/endosome/lysosome		
+HCM_NMF	peroxisome	peroxisome		
+HCM_NMF	centrosome	centrosome/cilium		
+HCM_NMF	actin cytoskeleton	cytoskeleton		
+HCM_NMF	microtubule cytoskeleton	cytoskeleton		
+HCM_NMF	miscellaneous			not a compartment; not mapped
+MitoCarta	MitoCarta3.0	mitochondrion		gene listed in MitoCarta3.0 (positive calls only; absence is not a localisation)
+GO_CC	GO:0005730	nucleolus	1	nucleolus
+GO_CC	GO:0005635	nuclear envelope	2	nuclear envelope
+GO_CC	GO:0005811	lipid droplet	3	lipid droplet
+GO_CC	GO:0005777	peroxisome	4	peroxisome
+GO_CC	GO:0005739	mitochondrion	5	mitochondrion
+GO_CC	GO:0005813	centrosome/cilium	6	centrosome
+GO_CC	GO:0005815	centrosome/cilium	7	microtubule organizing center
+GO_CC	GO:0005929	centrosome/cilium	8	cilium
+GO_CC	GO:0034451	centrosome/cilium	9	centriolar satellite
+GO_CC	GO:0005783	ER	10	endoplasmic reticulum
+GO_CC	GO:0005794	Golgi	11	Golgi apparatus
+GO_CC	GO:0005768	vesicles/endosome/lysosome	12	endosome
+GO_CC	GO:0005764	vesicles/endosome/lysosome	13	lysosome
+GO_CC	GO:0000323	vesicles/endosome/lysosome	14	lytic vacuole
+GO_CC	GO:0031410	vesicles/endosome/lysosome	15	cytoplasmic vesicle (extracellular vesicles are not descendants)
+GO_CC	GO:0005856	cytoskeleton	16	cytoskeleton
+GO_CC	GO:0005886	plasma membrane	17	plasma membrane
+GO_CC	GO:0030054	plasma membrane	18	cell junction
+GO_CC	GO:0005634	nucleus	19	nucleus
+GO_CC	GO:0005694	nucleus	20	chromosome
+GO_CC	GO:0005829	cytosol	21	cytosol
