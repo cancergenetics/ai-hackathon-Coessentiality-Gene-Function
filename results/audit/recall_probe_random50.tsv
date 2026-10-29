@@ -1,0 +1,51 @@
+hgnc_id	symbol	recalled_function	confidence	recognised
+HGNC:922	B3GAT2	Beta-1,3-glucuronyltransferase (GlcAT-S) in the Golgi that synthesizes the HNK-1 carbohydrate epitope on neural glycoproteins.	high	yes
+HGNC:1187	ERG28	ER membrane scaffold protein that tethers cholesterol-biosynthesis enzymes (C-4 demethylation complex), homolog of yeast Erg28.	medium	yes
+HGNC:1302	RWDD2B	unknown	none	no
+HGNC:2879	SEPTIN1	Septin-family GTPase that forms cytoskeletal filaments involved in cytokinesis and cell cortex organization.	high	yes
+HGNC:4110	PAGE3	GAGE-family cancer/testis antigen expressed in testis and tumours; molecular function unclear.	low	no
+HGNC:4904	HHLA1	unknown	none	no
+HGNC:6461	KRT84	Type II hair keratin forming intermediate filaments in hair and nail.	high	yes
+HGNC:8055	NUDT8	Mitochondrial Nudix hydrolase, probably a CoA/acyl-CoA diphosphatase.	medium	yes
+HGNC:11548	TAF7L	Testis-enriched TFIID subunit paralog of TAF7 required for spermatogenesis gene expression (also implicated in adipogenesis).	high	yes
+HGNC:12867	ZKSCAN5	KRAB/SCAN-domain C2H2 zinc-finger transcription factor (DNA-binding transcriptional regulator).	medium	yes
+HGNC:13010	TSHZ2	Teashirt zinc-finger homeobox transcriptional repressor involved in development.	medium	yes
+HGNC:14171	PTX4	Pentraxin-family secreted protein; specific function unknown.	low	no
+HGNC:15193	OR51D1	Olfactory receptor GPCR mediating odorant detection.	high	yes
+HGNC:15204	OR51S1	Olfactory receptor GPCR mediating odorant detection.	high	yes
+HGNC:18094	DEFB113	Beta-defensin antimicrobial peptide, likely epididymal/innate defence.	medium	yes
+HGNC:18477	MRTO4	Ribosome biogenesis factor (P0 paralog) that binds pre-60S particles and is released during cytoplasmic maturation of the large subunit.	high	yes
+HGNC:18747	CNTNAP4	Neurexin-family contactin-associated protein (Caspr4) at synapses regulating GABAergic and dopaminergic transmission.	high	yes
+HGNC:19420	STOML3	Stomatin-like membrane protein required for mechanosensory touch transduction, modulating Piezo/ASIC channels in sensory neurons.	high	yes
+HGNC:19664	GNG8	Heterotrimeric G-protein gamma subunit enriched in medial habenula.	high	yes
+HGNC:22974	ARL14	ARF-like small GTPase (ARF7) regulating MHC class II vesicle transport in dendritic cells via ARF7EP/myosin 1E.	medium	yes
+HGNC:23237	GIMAP1	GTPase of immunity-associated protein required for lymphocyte (T/B cell) survival.	medium	yes
+HGNC:23622	GPR152	Orphan class A G protein-coupled receptor with unknown ligand.	medium	yes
+HGNC:25141	CEP95	Centrosomal coiled-coil protein; specific function unknown.	low	no
+HGNC:25429	TMEM130	unknown	none	no
+HGNC:25521	SRBD1	S1 RNA-binding domain protein, possibly involved in RNA processing; function poorly defined.	low	no
+HGNC:25862	NOL10	Nucleolar WD40 protein involved in ribosome biogenesis (homolog of yeast Enp2).	medium	yes
+HGNC:26091	TYW2	tRNA methyltransferase/aminocarboxypropyltransferase in wybutosine biosynthesis on tRNA-Phe.	high	yes
+HGNC:26094	ARMCX6	Armadillo repeat X-linked protein, possibly mitochondrial; function unknown.	low	no
+HGNC:26288	JHY	Protein required for motile cilia axoneme assembly in ependymal cells; loss causes hydrocephalus in mouse.	medium	yes
+HGNC:26345	C8orf48	unknown	none	no
+HGNC:26967	C12orf56	unknown	none	no
+HGNC:27271	ZNF883	Probable KRAB C2H2 zinc-finger transcriptional regulator; specific function unknown.	low	no
+HGNC:27648	SPATA46	Testis-expressed protein possibly involved in sperm head shaping/fertilization.	low	no
+HGNC:27786	CNPY1	Canopy-family ER protein that promotes FGF signaling (midbrain-hindbrain boundary).	medium	yes
+HGNC:28129	GLB1L	Putative beta-galactosidase-like glycosyl hydrolase; function uncharacterized.	low	no
+HGNC:28164	PRRC1	Proline-rich coiled-coil Golgi protein; function poorly defined.	low	no
+HGNC:28455	DBNDD1	Dysbindin-domain protein; function unknown.	low	no
+HGNC:28503	SLC66A3	PQ-loop family membrane transporter, possibly lysosomal; substrate unknown.	low	no
+HGNC:29344	RIMBP3	RIM-binding protein paralog expressed in testis, possibly in sperm head/manchette formation.	low	no
+HGNC:29373	LRRCC1	Centriolar coiled-coil protein (VFL1/CLERC homolog) involved in centriole rootlet/basal body organization and ciliogenesis.	medium	yes
+HGNC:30397	SELENOM	ER-resident thioredoxin-like selenoprotein with possible oxidoreductase/antioxidant function.	medium	yes
+HGNC:31907	GAGE12G	GAGE-family cancer/testis antigen; molecular function unknown.	low	no
+HGNC:31986	FOXD4L6	Forkhead-box family putative transcription factor; function uncharacterized.	low	no
+HGNC:33178	SPANXN5	SPANX-N family cancer/testis protein, possibly sperm-related; function unknown.	low	no
+HGNC:33202	ZNF705D	Putative zinc-finger transcription factor; function unknown.	low	no
+HGNC:33600	TMEM191B	unknown	none	no
+HGNC:33755	C16orf86	unknown	none	no
+HGNC:37173	PRR23C	unknown	none	no
+HGNC:40037	C18orf63	unknown	none	no
+HGNC:51250	KIAA2012	unknown	none	no
