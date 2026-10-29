@@ -25,6 +25,9 @@ tool repository's `DATA.md`. DepMap files carry no version stamp; release 26Q3 i
 | depmap/CRISPRConfounders.csv | DepMap Portal | 26Q3 | 0e098325d53403d7852f3a773477d20a508a9bf29f43e10fe28bf0f550b35779 | CC BY 4.0 |
 | depmap/OmicsExpressionTPMLogp1HumanProteinCodingGenes.csv | DepMap Portal | 26Q3 | 252d1fedc7014953b19ffe5d68151b4df973c8078b12c9e5ccd97e292548d177 | CC BY 4.0 |
 | depmap/OmicsProfiles.csv | DepMap Portal | 26Q3 | 4241e537f0b23139c0e525b4d78fb53ee65c5507771a33e2cd5debd78f7179ea | CC BY 4.0 |
+| depmap/OmicsCNGeneWGS.csv | DepMap Portal | 26Q3 (user-stated); ploidy-relative linear CN ratio | 31cace66f202adaace306d975b5661c8b77ea82f07d2ed34045eec9c7958fcd6 | CC BY 4.0 |
+| depmap/OmicsSomaticMutationsMatrixDamaging.csv | DepMap Portal | 26Q3 (user-stated) | 736b7a82b4d1f234dc597a409d104186c282f01b0caa56365c27ff987ae49e20 | CC BY 4.0 |
+| depmap/OmicsSomaticMutationsMatrixHotspot.csv | DepMap Portal | 26Q3 (user-stated) | 0cbdacdce2355d2dd600d3741a36ae093dbe77d7bee44bde97411b1e96973058 | CC BY 4.0 |
 | depmap_rnai/D2_combined_gene_dep_scores.csv | DepMap Portal, DEMETER2 (McFarland et al. 2018) | v6 (user-stated) | 6bfe7b24ef191debccd502b7dfe61c4b0763caba3e02c6c14e521c8226bb98a7 | CC BY 4.0 |
 | hgnc/hgnc_complete_set.txt | HGNC, genenames.org | download date unknown (user-provided; file dated 2026-04-23) | 0f2d3f035e0e6583c055a1d9e008f275376a4b66f72af380dfc2ac730272c247 | CC0 |
 | bioplex/BioPlex_293T_Network_10K_Dec_2019.tsv | BioPlex 3.0 (Huttlin et al. 2021) | Dec 2019 | 5a98def087fc77c7bf07aac79e2553fd64ea1a27a7d0c4617870476f3f120833 | BioPlex terms (free for research; unverified) |
