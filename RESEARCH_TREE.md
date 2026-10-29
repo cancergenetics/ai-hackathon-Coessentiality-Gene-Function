@@ -4,6 +4,26 @@ Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · 
 
 ## Status summary (latest first)
 
+### M5 — temporal hold-out: primary passes, modest absolute accuracy (2026-10-30)
+On LOO (3,000 characterised genes) the frozen rule chose ranker R1 (raw S; MRR 0.169 vs R2 0.140, R3 0.111, prior
+0.073); label shuffle collapses it (p@1 0.015). Ranker + calibration spec + a cluster fallback were logged (LOOKS.md,
+f0922e1) before H was opened once (7db89d2). On H (809 genes with targets after circularity exclusion), zavg_BEF
+precision@1 = 0.030 (95% CI 0.018–0.043) vs prior-only 0.000 and matched-gene null 0.005: **primary IUT passes**
+(Δ +0.030 and +0.025, CIs exclude 0; also in all 10 split-half networks and all circularity sensitivities). zavg_BEF vs
+GLS +0.006 (−0.005 to +0.017): no detectable difference. Calibration out-of-fold slope 0.82 (0.51–1.13), intercept
+−0.01, c-statistic 0.86 → p_cal permitted.
+
+The honest picture: absolute accuracy for exact GO-term prediction of later-annotated genes is low and concentrated in
+the strongest-signal quintile (p@1 0.117; bottom quintiles 0). Two secondary baselines beat co-essentiality on H: the
+gene's own t0 electronic/phylogenetic annotations (homology, 0.218) and hu.MAP PPI transfer (0.049). Named controls:
+only TMEM242 rank 1; most controls lose their targets to circularity flags (their annotations cite DepMap-based work).
+These shape the paper: co-essentiality is a calibrated, complementary signal for a minority of genes with strong
+dependency, not a general annotator.
+
+**Decision note D4.** Proceed to M6 under the "calibrated" branch. Plan an exploratory (post hoc, logged in LOOKS)
+complementarity analysis: zavg_BEF on H genes lacking homology predictions, and union/agreement with homology and PPI.
+Independent re-derivation of the primary is running before results are relied on.
+
 ### M4 — tool verified on DepMap 26Q3; census of assessable genes (2026-10-30)
 The tool reproduces its published internal-test HT-AP exactly (zavg_BEF 0.3451, GLS 0.2423, Spearman 0.1463, Pearson
 0.1341 vs 0.345/0.242/0.146/0.134) and passes 14/14 sanity checks (Chronos sign, symmetry, Integrator/CCT/mitoribosome
@@ -93,8 +113,10 @@ pre-registered list is committed and its hash recorded here.
 - [x] M4 Tool verification: reproduction PASS, sanity 14/14, split-half 10 runs, admission, C1 = 646 assessable
   - [!] 42% of "uncharacterised" genes have functional literature (curation lag)
   - [x] Recall probe random 50 (24 recognised)
-- [~] M5 Calibration: LOO ranker choice (running) → one look at H
-- [ ] M6 Hypothesis generation for pre-registered genes; orthogonal evidence integration
+- [x] M5 Calibration: R1 chosen on LOO; one look at H — primary IUT PASS (p@1 0.030 vs 0.005); calibration c 0.86
+  - [!] Homology baseline (0.218) and PPI transfer (0.049) beat co-essentiality on H; signal in top quintile (0.117)
+  - [~] Independent re-derivation of H primary
+- [~] M6 Hypothesis generation for pre-registered genes; orthogonal evidence integration (running)
 - [ ] M7 Literature deep-dives + experiments for top candidates; per-candidate reports
 - [ ] M8 Manuscript, figures, references; review rounds
 - [ ] M9 REPORT.md, final LESSONS pruning
