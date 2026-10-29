@@ -4,6 +4,24 @@ Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · 
 
 ## Status summary (latest first)
 
+### M4 — tool verified on DepMap 26Q3; census of assessable genes (2026-10-30)
+The tool reproduces its published internal-test HT-AP exactly (zavg_BEF 0.3451, GLS 0.2423, Spearman 0.1463, Pearson
+0.1341 vs 0.345/0.242/0.146/0.134) and passes 14/14 sanity checks (Chronos sign, symmetry, Integrator/CCT/mitoribosome
+medians 10.9/7.6/5.1). Ten lineage × library-stratified split-half runs completed. Our GLS/Pearson rows match the tool
+to < 3e-7. Orthogonal admission: 12 pair sources admitted (BioPlex OR 86 … Burke AF2 OR 3.7); Olivieri 2020 dropped
+(OR 1.87, lower CI 1.58); localisation: only HPA admitted (others too few H genes).
+
+**C1 census:** of 4,924 pre-registered genes, 4,271 are scorable, ~2.7k expressed, and **646 (13%) assessable**
+(635 with the freeze-time expression column) — 590 in the headline stratum; only 2/516 chemosensory and 43/742 tandem
+genes. Curation-lag audit: 42% (95% CI 29–56%) of random U genes already have established functional literature
+(N1), 26% partial, 32% none. Closed-book probe: the LLM "recognises" 24/50 (mostly family-level). Caveat: clean-negative
+genes reach split-half p < 0.05 at 13% (null anti-conservative for genes with some dependency) — the expression
+requirement carries the specificity; reported in C1.
+
+**Decision note D3.** Primary assessable count applies DESIGN §1.4 fully (646); contradiction rule uses the four named
+localisation sources (DEVIATIONS.md). Next: M5a LOO ranker choice + label-shuffle (H closed), then log ranker +
+calibration spec in LOOKS.md and open H once.
+
 ### M2–M3 — design frozen and gene list pre-registered (2026-10-29)
 DESIGN.md went v1 → v2 → v2.1 → v2.2 → v2.3 through two review rounds (round 1: external PI, statistics,
 data/algorithms, AI failure modes, prior work, biology/experiments; round 2: five reviewers, all "ready after minor
@@ -72,8 +90,10 @@ pre-registered list is committed and its hash recorded here.
 - [x] M3 Pre-registration: U = 4,924 genes frozen (tag preregistration-v1, afed1dd); independently re-derived
   - [x] Hold-out H = 820 genes / 5,965 targets; circularity flags (1.5% PMIDs); power sim
   - [x] Pipeline modules + toy tests (99 pass)
-- [~] M4 Tool verification: full matrix, reproduction, sign checks, split-half, source admission, audit + probe
-- [ ] M5 Calibration: how well does the network predict function for characterised genes (incl. temporal hold-out)
+- [x] M4 Tool verification: reproduction PASS, sanity 14/14, split-half 10 runs, admission, C1 = 646 assessable
+  - [!] 42% of "uncharacterised" genes have functional literature (curation lag)
+  - [x] Recall probe random 50 (24 recognised)
+- [~] M5 Calibration: LOO ranker choice (running) → one look at H
 - [ ] M6 Hypothesis generation for pre-registered genes; orthogonal evidence integration
 - [ ] M7 Literature deep-dives + experiments for top candidates; per-candidate reports
 - [ ] M8 Manuscript, figures, references; review rounds
