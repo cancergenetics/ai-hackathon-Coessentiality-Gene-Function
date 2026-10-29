@@ -1,1 +1,2 @@
 timestamp_utc	role	task	model_id	working_dir	input_files	input_sha256	output_files	notes
+2026-10-29T21:16:04Z	audit	curation-lag audit of random50 U sample (DESIGN 1.5)	claude-sonnet-5-5	results/audit/	results/audit/random50_U_sample.tsv	ba8ab7420923ec107fec08670a3e3370a1285dff2609cbf710238d0ffce14432	results/audit/curation_lag_audit.tsv;results/audit/curation_lag_audit.md	N1=21 N2=13 N3=16; Europe PMC REST + UniProt REST; no co-essentiality access
