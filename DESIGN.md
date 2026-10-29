@@ -1,4 +1,4 @@
-# DESIGN.md — v2 (after review round 1)
+# DESIGN.md — v2.1 (after review round 1; OPEN items resolved)
 
 Sections marked **[PRE-SPECIFIED]** are frozen at acceptance (git tag `design-frozen`). Any later change is logged in
 the revision log with reason and date, and affected results are reported under both the frozen and the changed rule.
@@ -29,6 +29,8 @@ Scope rule: work on characterised genes (§3) only calibrates confidence; no fun
   cross-fitted model only with that caveat; no recalibration beyond the pre-specified model.
 - Low-yield branch: if fewer than 10 genes reach Tier A, the paper leads with C1–C2; the top-40 list is filled Tier A,
   then Tier B, then by p_cal, labelled by tier (§6.1). Thresholds are never relaxed post hoc.
+- If fewer than 100 U genes are scorable, expressed and assessable, the catalogue (C3) is reported descriptively without
+  tiers and the top 40 are chosen by p_cal alone. Reliability-diagram bins must hold ≥ 30 genes (adjacent bins merged).
 - If GLS equals or beats zavg_BEF on the hold-out, this is stated plainly; zavg_BEF remains the pre-specified generator.
 
 ## 1. Pre-registration of uncharacterised genes **[PRE-SPECIFIED]**
@@ -40,6 +42,7 @@ gene2pubmed (2026-10-29), TCRD TDL (2023), DepMap 26Q3 header and single-gene su
 - **D1**: zero informative GO BP/MF terms with evidence in {EXP, IDA, IPI, IMP, IGI, IEP, TAS, IC}; NOT rows excluded;
   generic binding terms (GO:0005515, GO:0005488, GO:0042802, GO:0042803, roots; full list in the script) do not count;
   HTP/HDA/HMP/HGI/HEP, IEA, ISS/ISO/ISA/ISM/IGC, IBA/IBD/IKR/IRD, RCA, NAS, ND ignored; CC-only does not count.
+  `contributes_to` MF annotations count as known; IPI counts only for non-generic terms regardless of the with/from partner.
 - **D2**: UniProt annotation score ≤ 2 (max over reviewed entries).
 - **D3**: ≤ 10 focused PubMed records (PMIDs linked to ≤ 10 human genes in gene2pubmed) **or** IDG Tdark.
 - **U = D1 ∩ (D2 ∪ D3)**. Exact |U| and |U ∩ DepMap| are written into `preregistration/CRITERIA.md` at freeze
@@ -99,7 +102,9 @@ term ≤ 5%, assessable rate 5% ± 2%; proximity blocks removed by same-arm excl
    ≤ 10 focused PMIDs with PMID < 2018-07 cut-off, with ≥ 1 target. Targets T(g) = propagated current D1-evidence BP/MF
    terms minus propagated t0 terms (all propagation and ID mapping with the current obo; alt_id/replaced_by resolved;
    dropped obsolete terms counted), size 5–200 at t0. Neighbour annotations: t0 release only.
-   Sensitivity: t0 = 2019-07; ≤ 5 PMIDs. Named controls (descriptive case series): SPRING1, PEDS1, CCDC32, INTS15,
+   Sensitivity: t0 = 2019-07; ≤ 5 PMIDs; targets restricted to annotations whose supporting PMIDs all exceed the
+   2018-07 PMID cut-off (date by supporting paper, not only by release difference). TEDC1/TEDC2 were placed by Pan et
+   al. 2018 (before t0) and are retained as controls with that caveat. Named controls (descriptive case series): SPRING1, PEDS1, CCDC32, INTS15,
    HAPSTR1, SLC25A51, TEDC1, TEDC2, POU2AF2, POU2AF3, TMEM242; weaker FIRRM, AIRIM, TMEM41B — rank of true term.
 3. *Circularity*: every PMID supporting a target annotation is queried in Europe PMC full text for DepMap-derived
    analysis ("DepMap", "co-essential*", "coessential*", "codependen*", "co-dependen*", "Project Achilles"); flagged
@@ -109,7 +114,11 @@ term ≤ 5%, assessable rate 5% ± 2%; proximity blocks removed by same-arm excl
    V1′ module level = V1 ∪ MitoCarta3.0 pathways ∪ Complex Portal complexes (current only). Reported with and without
    ETC complex I and the mitoribosome, and stratified by membership of hu.MAP 3.0 train proteins (tool-tuning leakage).
 3.3 **Comparators**: GLS, Pearson (same predictor); prior-only (t0 term frequencies, same background and size filter);
-homology baseline (gene's own t0 IEA/ISS/IBA terms, then frequency); matched-gene null (5 matches per gene).
+homology baseline (gene's own t0 IEA/ISS/IBA terms, then frequency); matched-gene null (5 matches per gene);
+**PPI module-transfer comparator** (secondary): same predictor with N(g) = top-25 partners by hu.MAP 3.0 pair
+probability (and, separately, BioPlex neighbours), with coverage reported — shows what co-essentiality adds beyond
+physical-interaction transfer (hu.MAP 3.0 post-dates t0; caveat stated). Complementarity on U: fraction of U genes with
+a co-essentiality prediction but no PPI coverage.
 **Primary test** (intersection–union): paired precision@1 difference zavg_BEF − prior-only > 0 **and** zavg_BEF −
 matched-null > 0, each with cluster-bootstrap 95% CI excluding 0. Key secondary: zavg_BEF − GLS (two-sided), by
 neighbourhood-size stratum. Also MRR, AUPRC (|T| ≥ 3), precision@1 restricted to terms ≤ 50 genes, size distribution
@@ -133,8 +142,9 @@ no p_cal. p_cal = probability that the prediction is confirmed by later annotati
 4.1 Predictor §3.1 with current annotations (V2 primary for calibration; V1/V1′ reported for every gene; tiers use the
 module-level call). Per gene: top-10 partners with zavg_BEF, z_B/z_E/z_F, GLS rank, annotations, essentiality,
 chromosome/distance, paralogue and hub flags, hu.MAP-train membership.
-4.2 **Assessability**: split cell lines into halves stratified by OncotreeLineage, keeping each PatientID together
-(seeds 0–4); run the tool on each half (genes all-NaN in a half are recorded and treated as not reproducible).
+4.2 **Assessability**: split cell lines into halves stratified by OncotreeLineage × screen library (where recorded),
+keeping each PatientID together (seeds 0–4); background genes and K are recorded per half (they cannot be forced equal
+without modifying the tool); run the tool on each half (genes all-NaN in a half are recorded and treated as not reproducible).
 R(g) = mean_s |N_A^s(g) ∩ N_B^s(g)| / K; null R0(g,m) = mean_s |N_A^s(g) ∩ N_B^s(m)| / K over M = 200 matched genes;
 assessable if R(g) > 95th percentile of R0(g,·) **and** expressed (§1.4). Non-expressed U genes are scored anyway as a
 **negative control**: the rate at which they receive Tier-A-like calls estimates the false-call rate. RBO as sensitivity.
@@ -159,6 +169,14 @@ Olivieri 2020 + drug screens; DepMap/Avana-type screens excluded); (S) structure
 (H) homology — orthologue experimental function (GO IBA/ISO, reported only). Not counted as independent: hu.MAP 3.0
 (tool tuning + integrates BioPlex; reported), DEMETER2 (robustness, §4.3), Predictomes/HumanNet/STRING text-mining,
 database and co-expression channels (circular; Predictomes reported only as external comparison).
+5.1b **Pair-level scores per source** (fixed): BioPlex 3.0 — edge in either cell line; OpenCell — reported interaction;
+BioGRID — physical, low-throughput (experiment type not HTP); STRING — experiments channel ≥ 400; Human Cell Map —
+SAINT BFDR ≤ 0.01 bait–prey; ProteomeHD — co-regulation score, per-gene row percentile; CCLE proteomics — Pearson r,
+pairwise-complete ≥ 50 lines, per-gene row percentile; Perturb-seq — Pearson r of pseudo-bulk z profiles (both genes
+perturbed); chemogenomic — Pearson r of gene-level score profiles across screens (≥ 10 shared screens); Burke AF2 —
+pDockQ ≥ 0.23; localisation — compartment-set match after mapping each source to a common vocabulary (nucleus,
+nucleolus, cytosol, mitochondrion, ER, Golgi, plasma membrane, vesicles/endosome/lysosome, centrosome/cilium,
+cytoskeleton); homology — orthologue IBA/ISO annotation to the predicted term or a descendant.
 5.2 **Source admission**: each source's co-complex odds ratio on non-hu.MAP complexes (Complex Portal/GO CC) vs
 degree-matched random pairs; kept only if the lower 95% CI > 2 (reported).
 5.3 **Four states per class**: not measured / no support / supports / contradicts. Support: g–partner pairs (partners
@@ -195,7 +213,8 @@ fixed now: ≥ 7/10 real supported and ≤ 3/30 decoys supported.
 cell-line selection rule, strongest alternative explanation. Each report gets an unedited red-team review by a separate
 agent; claims without a verified source fail a lint.
 6.6 **External benchmarks** (agreement only, never tuning): Wainberg 2021 predictions, hu.MAP 3.0 uncharacterised-protein
-hypotheses, Replogle 2022 assignments, Predictomes; overlap with U reported up front.
+hypotheses, Replogle 2022 assignments, Predictomes; overlap with U reported up front. Could (time permitting): fraction of Wainberg 2021 predictions for
+then-uncharacterised genes later confirmed by experimental annotation (hit-rate of an earlier catalogue).
 
 ## 7. Statistics
 Gene = unit; cluster bootstrap (§3.5); seeds [0–4] (`config/seeds.yaml`); BH is not used as a U-level error statement —
@@ -223,3 +242,6 @@ script/question with a ≤ 300-word summary.
   query; cluster bootstrap; covariate shift; relationship types; expression negative control; four-state,
   family-specific orthogonal rules with Holm and admission test; blinded judging with 3 decoys, 2 judges; templates;
   AI safeguards). Disposition: `reviews/round1_disposition.md`.
+- v2.1 (2026-10-29): seven OPEN items from the disposition resolved by the PI (PPI comparator; PMID-dated target
+  sensitivity; pair scores per source; split-half stratification by library; D1 qualifier rules; size fallbacks and
+  bin minimum; earlier-catalogue audit as could).
