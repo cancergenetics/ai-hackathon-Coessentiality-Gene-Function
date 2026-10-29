@@ -1,11 +1,14 @@
 # LESSONS.md — process rules for running this project efficiently
 
-One line per rule, with evidence. Pruned at each milestone.
+One line per rule, with evidence. Pruned at each milestone (M3 pruning: reviews/retro_M3.md).
 
-1. Check the user's machine for already-provided data before trying public portals: DepMap portal is behind bot verification and figshare stops at 24Q4, but the exact 26Q3 files (checksums matching the tool's DATA.md) were in sibling project folders. (M0, saved ~hours / avoided using a different release than the tool was tuned on.)
-2. In zsh, `echo ====` fails (`=` expansion); use `echo '----'` as separators in shell commands. (M0, one wasted call.)
-3. Never open the tool's precomputed `results/predictions/` before the gene list is pre-registered — it is network output. (M0, pre-registration hygiene.)
-4. While agents are writing, commit with explicit paths, never `git add -A`: the v2.1 commit swept in other agents' work-in-progress files. (M2)
-5. Six parallel role-specific reviewers in round 1 found largely non-overlapping must-fixes (assessability null, calibration shift, term-size bias, circularity, templates) in ~5–7 min each — cheap relative to the errors prevented. (M2)
-6. Have a cheap editor agent produce an item-by-item disposition table; it surfaced 7 must-fix items the PI's revision had silently missed. (M2)
-7. Build annotation-only artefacts (gene list, hold-out sizing, circularity flags, toy-tested pipeline) in parallel with design review; only the DepMap pairwise step must wait for the freeze. (M2)
+1. Look on the user's machine for provided data before public portals; match checksums to the tool's DATA.md. (M0: 26Q3 found, hours saved)
+2. Make "blind" and "no-look" rules mechanisms with a log: sparse checkout, `gate.check()`, an allow-listed reader, LOOKS/PROVENANCE. (round2_ai §1; `verify_sparse.sh`)
+3. Commit with explicit paths, one logical change per commit; keep the tagged freeze commit small. (v2.1 swept in WIP; `afed1dd` 65 files)
+4. Use 5–6 role-specific parallel reviewers, at most 2 rounds, stop when all say "minor". (`3e6b162`, `ba26d17`)
+5. Run an item-by-item disposition by a cheap agent against the document text, never the revision log. (7 and 32 gaps found)
+6. Keep one implementation per frozen definition, and have an independent agent re-derive it from raw files. (`knownness.py` vs script 02; 7 vs 22 terms)
+7. Do annotation-only builds in parallel with design review; only DepMap pairwise steps wait for the freeze. (M2: freeze right after round 2)
+8. Update RESEARCH_TREE at every DESIGN version; a stale tree misleads reviewers. (round2_ai §2.3)
+9. Commit scripts, hashes and summaries, not duplicate derived tables. (`afed1dd`: 116k lines)
+10. Give later review rounds a diff and ID'd items, not the whole document. (round-2 reviews were short, disposition 31 KB)
