@@ -1,0 +1,17 @@
+comparison	n	n_clusters	mean_a	mean_b	diff	ci_lo	ci_hi	bca_lo	bca_hi	design_effect	excludes_zero	clusters	role	stratification	stratum
+precision@1 zavg - prior	809	703	0.029666	0.000000	0.029666	0.017721	0.042553	0.018939	0.044525	1.124947	True	PMID-only (fallback)	primary IUT		
+precision@1 zavg - prior	809	214	0.029666	0.000000	0.029666	0.010526	0.038218	0.015728	0.047445	1.263812	True	PMID+N(g)	primary IUT (cluster sensitivity)		
+precision@1 zavg - null	809	703	0.029666	0.004944	0.024722	0.012970	0.037759	0.014182	0.039757	1.120504	True	PMID-only (fallback)	primary IUT		
+precision@1 zavg - null	809	214	0.029666	0.004944	0.024722	0.005536	0.033085	0.010274	0.042799	1.311706	True	PMID+N(g)	primary IUT (cluster sensitivity)		
+precision@1 zavg - GLS (two-sided)	809	703	0.029666	0.023486	0.006180	-0.004981	0.017327	-0.004866	0.017535	0.901916	False	PMID-only (fallback)	key secondary		
+precision@1 zavg - GLS, smallest-target-size stratum <= 50	649	568	0.033898	0.023112	0.010786	-0.001567	0.023989	-0.001554	0.024316	0.884596	False	PMID-only (fallback)	key secondary (stratum)	2-way	<= 50
+precision@1 zavg - GLS, smallest-target-size stratum > 50	160	141	0.012500	0.025000	-0.012500	-0.032468	0.000000	-0.042424	0.000000	1.024504	False	PMID-only (fallback)	key secondary (stratum)	2-way	> 50
+precision@1 zavg - GLS, smallest-target-size stratum 21-50	119	109	0.033613	0.008403	0.025210	0.000000	0.057851	0.008065	0.068376	0.979599	False	PMID-only (fallback)	key secondary (stratum)	3-way	21-50
+precision@1 zavg - GLS, smallest-target-size stratum 5-20	530	466	0.033962	0.026415	0.007547	-0.007491	0.022268	-0.007339	0.022599	0.873976	False	PMID-only (fallback)	key secondary (stratum)	3-way	5-20
+precision@1 zavg - GLS, smallest-target-size stratum 51-200	160	141	0.012500	0.025000	-0.012500	-0.032468	0.000000	-0.042424	0.000000	1.024504	False	PMID-only (fallback)	key secondary (stratum)	3-way	51-200
+MRR zavg - prior	809	703	0.048088	0.038151	0.009937	-0.003970	0.025066	-0.003009	0.026497	1.141452	False	PMID-only (fallback)	core		
+MRR zavg - null	809	703	0.048088	0.010136	0.037952	0.025108	0.051950	0.026469	0.053890	1.143406	True	PMID-only (fallback)	core		
+MRR zavg - gls	809	703	0.048088	0.032000	0.016088	0.005186	0.027448	0.005652	0.027994	0.920029	True	PMID-only (fallback)	core		
+precision@1 (terms <= 50) zavg - prior	649	568	0.029276	0.000000	0.029276	0.016742	0.043620	0.017483	0.045388	1.101965	True	PMID-only (fallback)	core		
+precision@1 (terms <= 50) zavg - null	649	568	0.029276	0.002773	0.026502	0.013982	0.040729	0.014937	0.042186	1.063444	True	PMID-only (fallback)	core		
+precision@1 (terms <= 50) zavg - gls	649	568	0.029276	0.018490	0.010786	0.001522	0.021341	0.001565	0.022188	0.997454	True	PMID-only (fallback)	core		

@@ -1,0 +1,15 @@
+symbol	hgnc_id	weak	in_H	n_targets_2_300	n_targets_flagged	n_reportable	rank_best_true_term	best_true_term	best_true_term_size_t0	top1_term	top1_size_t0	hit_at_1	top_v1prime_label	zmean	R
+SPRING1	HGNC:26128	False	False	1	1	89				GO:0019216 regulation of lipid metabolic process	204	False	GO:0032936 SREBP-SCAP complex	13.38240442276001	0.672
+PEDS1	HGNC:16735	False	True	6	0	79	7.0	GO:0008611 ether lipid biosynthetic process	5.0	GO:0006644 phospholipid metabolic process	239	False		11.816312942504883	0.392
+CCDC32	HGNC:28295	False	True	5	4	86				GO:0006897 endocytosis	239	False	GO:0030117 membrane coat	12.665955867767334	0.648
+INTS15	HGNC:21702	False	True	8	0	21				GO:0016073 snRNA metabolic process	73	False	CP:CPX-26393 Integrator-PP2A complex	12.002186107635499	0.6
+HAPSTR1	HGNC:30103	False	True	5	3	61				GO:0004842 ubiquitin-protein transferase activity	274	False	GO:0008180 COP9 signalosome	9.909035415649415	0.344
+SLC25A51	HGNC:23323	False	True	23	20	24				GO:0007005 mitochondrion organization	204	False	MitoCarta: OXPHOS	6.834787139892578	0.648
+TEDC1	HGNC:20127	False	False	1	1	87				GO:0007098 centrosome cycle	59	False	GO:0120099 procentriole replication complex	15.269213829040527	0.832
+TEDC2	HGNC:25849	False	False	1	1	80				GO:0007098 centrosome cycle	59	False	GO:0120099 procentriole replication complex	15.144450340270996	0.8
+POU2AF2	HGNC:30527	False	False	1	1	23				GO:0008270 zinc ion binding	199	False		5.734870853424073	0.024
+POU2AF3	HGNC:26978	False	False	1	1	16				GO:0000978 RNA polymerase II cis-regulatory region sequence-specific DNA binding	262	False	CP:CPX-5646 Kinetochore CCAN complex	4.915458631515503	0.016
+TMEM242	HGNC:17206	False	True	5	0	77	1.0	GO:0007005 mitochondrion organization	204.0	GO:0007005 mitochondrion organization	204	True	MitoCarta: OXPHOS	13.05400360107422	0.672
+FIRRM	HGNC:25565	True	True	18	17	54				GO:0006302 double-strand break repair	119	False	CP:CPX-478 ERCC1-XPF endonuclease complex	5.456279525756836	0.08
+AIRIM	HGNC:26039	True	True	4	0	125	89.0	GO:0006260 DNA replication	150.0	GO:0006487 protein N-linked glycosylation	57	False	GO:1904949 ATPase complex	7.962780132293701	0.36
+TMEM41B	HGNC:28948	True	True	16	0	70				GO:0034976 response to endoplasmic reticulum stress	167	False	GO:0140534 endoplasmic reticulum protein-containing complex	10.37331750869751	0.584

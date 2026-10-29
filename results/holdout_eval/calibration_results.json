@@ -1,0 +1,97 @@
+{
+ "dry_run": false,
+ "n_H_primary": 809,
+ "n_fit": 775,
+ "n_without_prediction": 34,
+ "families_kept": [
+  "ER_Golgi_secretory_lipid",
+  "other",
+  "signalling_lineage"
+ ],
+ "reference_family": "other",
+ "family_counts": {
+  "other": 552,
+  "signalling_lineage": 111,
+  "ER_Golgi_secretory_lipid": 44,
+  "ribosome_biogenesis_translation": 19,
+  "nuclear_RNA_machinery": 16,
+  "DNA_replication_repair": 13,
+  "centrosome_cilia_mitosis": 10,
+  "mitochondrial": 10
+ },
+ "oof": {
+  "n": 775,
+  "mean_pred": 0.031116730704081625,
+  "obs_rate": 0.03096774193548387,
+  "brier": 0.02938667323959939,
+  "brier_ref_constant": 0.030008740894901145,
+  "intercept": -0.005596052704399905,
+  "intercept_ci": [
+   -0.43737550313464896,
+   0.4261833977258492
+  ],
+  "slope": 0.8191996202686217,
+  "slope_ci": [
+   0.5117930019636343,
+   1.126606238573609
+  ],
+  "c_statistic": 0.8553595206391478,
+  "intercept_ci_boot": [
+   -0.5344565312015107,
+   0.44211094805957935
+  ],
+  "slope_ci_boot": [
+   0.5926848799837487,
+   1.0900594630451688
+  ],
+  "brier_ci_boot": [
+   0.019758422654489887,
+   0.04119711965136823
+  ],
+  "n_boot": 2000,
+  "oof_by_seed_sd": 0.004225445529623512
+ },
+ "poor_calibration_wald": false,
+ "poor_calibration_bootstrap": false,
+ "c2_primary_pass": true,
+ "gls_ge_zavg": false,
+ "branches": [
+  "C2 primary PASSES -> calibrated claims for U are permitted (p_cal from the pre-specified model).",
+  "Calibration branch: slope 95% CI includes 1 and intercept 95% CI includes 0 (Wald) -> calibration not poor; p_cal reported without the poor-calibration caveat.",
+  "GLS < zavg_BEF on H (point estimate): the 'GLS \u2265 zavg' branch does not apply.",
+  "Tier-A (< 10) and assessable-count (< 100) branches are decided at M6/M7 (C1: 646 assessable, so the < 100 branch does not hold)."
+ ],
+ "in_sample": {
+  "mean_pred": 0.030968053528842094,
+  "brier": 0.027799387929582902
+ },
+ "coef": {
+  "zmean": 0.2850410016788698,
+  "R": 0.0,
+  "cov_pct": 1.7037846982176128,
+  "size_pct": 0.0,
+  "fam_ER_Golgi_secretory_lipid": -0.19336525085592746,
+  "fam_signalling_lineage": -11.859295617981145,
+  "fam_rare": 1.2436641290029953
+ },
+ "intercept": -6.315465389159761,
+ "support": {
+  "zmean": [
+   3.3331049999999998,
+   10.990159999999994
+  ],
+  "R": [
+   0.0,
+   0.5463999999999997
+  ],
+  "cov_pct": [
+   0.0750788,
+   0.89396
+  ],
+  "size_pct": [
+   0.049318860000000006,
+   0.949817
+  ]
+ },
+ "converged": true
+}

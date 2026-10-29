@@ -1,0 +1,299 @@
+{
+ "dry_run": false,
+ "n_boot": 10000,
+ "seed": 0,
+ "v2_t0_stats": {
+  "gaf_rows": 476410,
+  "not_rows_removed": 1153,
+  "colocalizes_with_rows_removed": 1314,
+  "rows_bpmf_d1_evidence": 192384,
+  "rows_alt_id": 2910,
+  "rows_replaced_by": 1923,
+  "rows_obsolete_dropped": 3977,
+  "rows_unknown_dropped": 0,
+  "rows_unmapped_accession": 1299,
+  "rows_mapped_not_scorable": 5058,
+  "ipi_withfrom_tokens_uniprot": 96236,
+  "ipi_withfrom_tokens_uniprot_unmapped": 9745,
+  "ipi_withfrom_tokens_other_db": 122,
+  "ipi_rows": 95288,
+  "ipi_rows_with_mapped_partner": 85515,
+  "rows_kept": 184562,
+  "genes_with_rows": 13838,
+  "n_genes": 18434,
+  "n_scorable": 18394,
+  "n_annotated_background": 12210,
+  "n_columns": 6089,
+  "size_slack": 236,
+  "n_candidate_terms_base": 5856,
+  "lo": 5,
+  "hi": 200,
+  "ipi_rule": true
+ },
+ "v2_cur_stats": {
+  "gaf_rows": 906445,
+  "not_rows_removed": 1501,
+  "colocalizes_with_rows_removed": 1113,
+  "rows_bpmf_d1_evidence": 416998,
+  "rows_alt_id": 0,
+  "rows_replaced_by": 53,
+  "rows_obsolete_dropped": 18,
+  "rows_unknown_dropped": 0,
+  "rows_unmapped_accession": 9691,
+  "rows_mapped_not_scorable": 9258,
+  "ipi_withfrom_tokens_uniprot": 285271,
+  "ipi_withfrom_tokens_uniprot_unmapped": 17369,
+  "ipi_withfrom_tokens_other_db": 216,
+  "ipi_rows": 283373,
+  "ipi_rows_with_mapped_partner": 265918,
+  "rows_kept": 401527,
+  "genes_with_rows": 15812,
+  "n_genes": 18434,
+  "n_scorable": 18394,
+  "n_annotated_background": 12867,
+  "n_columns": 7326,
+  "size_slack": 783,
+  "n_candidate_terms_base": 6920,
+  "lo": 5,
+  "hi": 200,
+  "ipi_rule": true
+ },
+ "H": {
+  "n_H": 820,
+  "n_pairs": 5965,
+  "n_flagged_pairs": 106,
+  "n_fully_circular_pairs": 65,
+  "n_unscannable_pairs": 48,
+  "n_primary": 809,
+  "n_genes_losing_all": 11,
+  "n_target_pairs_not_v2t0_column": 0,
+  "n_new_pmids_queried": 0
+ },
+ "clusters": {
+  "PMID-only": {
+   "n_clusters": 709,
+   "largest": 9,
+   "largest_frac": 0.01097560975609756,
+   "singletons": 644
+  },
+  "PMID+N(g)": {
+   "n_clusters": 214,
+   "largest": 521,
+   "largest_frac": 0.6353658536585366,
+   "singletons": 171
+  },
+  "primary": "PMID-only (fallback)",
+  "sensitivity": "PMID+N(g)",
+  "fallback_threshold": 0.2
+ },
+ "primary": {
+  "pass_": true,
+  "pass_bca": true,
+  "clusters": "PMID-only (fallback)",
+  "n": 809,
+  "p1": {
+   "zavg": 0.029666254635352288,
+   "prior": 0.0,
+   "null": 0.004944375772558714,
+   "gls": 0.023485784919653894
+  },
+  "coverage": {
+   "zavg": 0.957972805933251,
+   "prior": 1.0,
+   "null": 0.9661310259579728,
+   "gls": 0.927070457354759
+  },
+  "diff": {
+   "prior": {
+    "est": 0.029666254635352288,
+    "ci": [
+     0.017720958888764425,
+     0.0425531914893617
+    ],
+    "bca": [
+     0.01893939393939394,
+     0.044524669073405534
+    ],
+    "design_effect": 1.12494656180842,
+    "n_clusters": 703,
+    "effective_n": 719.1452709535672
+   },
+   "null": {
+    "est": 0.024721878862793572,
+    "ci": [
+     0.012970103923071699,
+     0.03775895930580038
+    ],
+    "bca": [
+     0.014181788373521135,
+     0.03975703224181724
+    ],
+    "design_effect": 1.120504097099133,
+    "n_clusters": 703,
+    "effective_n": 721.9964675670672
+   }
+  },
+  "underpowered": false
+ },
+ "gls": {
+  "est": 0.006180469715698393,
+  "ci": [
+   -0.0049813200498132005,
+   0.017326732673267328
+  ],
+  "bca": [
+   -0.004866180048661801,
+   0.017535224699903314
+  ],
+  "p1_gls": 0.023485784919653894,
+  "gls_ge_zavg": false,
+  "significant": false
+ },
+ "gls_strata": [
+  {
+   "comparison": "precision@1 zavg - GLS, smallest-target-size stratum <= 50",
+   "n": 649,
+   "n_clusters": 568,
+   "mean_a": 0.03389830508474576,
+   "mean_b": 0.023112480739599383,
+   "diff": 0.01078582434514638,
+   "ci_lo": -0.001567459633962097,
+   "ci_hi": 0.02398890644767705,
+   "bca_lo": -0.0015537597187617598,
+   "bca_hi": 0.0243161094224924,
+   "design_effect": 0.884595537281307,
+   "excludes_zero": false,
+   "clusters": "PMID-only (fallback)",
+   "role": "key secondary (stratum)",
+   "stratification": "2-way",
+   "stratum": "<= 50"
+  },
+  {
+   "comparison": "precision@1 zavg - GLS, smallest-target-size stratum > 50",
+   "n": 160,
+   "n_clusters": 141,
+   "mean_a": 0.0125,
+   "mean_b": 0.025,
+   "diff": -0.0125,
+   "ci_lo": -0.032467532467532464,
+   "ci_hi": 0.0,
+   "bca_lo": -0.04242424242424243,
+   "bca_hi": 0.0,
+   "design_effect": 1.024503711447425,
+   "excludes_zero": false,
+   "clusters": "PMID-only (fallback)",
+   "role": "key secondary (stratum)",
+   "stratification": "2-way",
+   "stratum": "> 50"
+  },
+  {
+   "comparison": "precision@1 zavg - GLS, smallest-target-size stratum 21-50",
+   "n": 119,
+   "n_clusters": 109,
+   "mean_a": 0.03361344537815126,
+   "mean_b": 0.008403361344537815,
+   "diff": 0.025210084033613446,
+   "ci_lo": 0.0,
+   "ci_hi": 0.05785123966942149,
+   "bca_lo": 0.008064516129032258,
+   "bca_hi": 0.06837606837606838,
+   "design_effect": 0.9795989731399082,
+   "excludes_zero": false,
+   "clusters": "PMID-only (fallback)",
+   "role": "key secondary (stratum)",
+   "stratification": "3-way",
+   "stratum": "21-50"
+  },
+  {
+   "comparison": "precision@1 zavg - GLS, smallest-target-size stratum 5-20",
+   "n": 530,
+   "n_clusters": 466,
+   "mean_a": 0.033962264150943396,
+   "mean_b": 0.026415094339622643,
+   "diff": 0.007547169811320755,
+   "ci_lo": -0.00749063670411985,
+   "ci_hi": 0.022268147133633325,
+   "bca_lo": -0.007339449541284404,
+   "bca_hi": 0.022598870056497175,
+   "design_effect": 0.8739764154294439,
+   "excludes_zero": false,
+   "clusters": "PMID-only (fallback)",
+   "role": "key secondary (stratum)",
+   "stratification": "3-way",
+   "stratum": "5-20"
+  },
+  {
+   "comparison": "precision@1 zavg - GLS, smallest-target-size stratum 51-200",
+   "n": 160,
+   "n_clusters": 141,
+   "mean_a": 0.0125,
+   "mean_b": 0.025,
+   "diff": -0.0125,
+   "ci_lo": -0.032467532467532464,
+   "ci_hi": 0.0,
+   "bca_lo": -0.04242424242424243,
+   "bca_hi": 0.0,
+   "design_effect": 1.024503711447425,
+   "excludes_zero": false,
+   "clusters": "PMID-only (fallback)",
+   "role": "key secondary (stratum)",
+   "stratification": "3-way",
+   "stratum": "51-200"
+  }
+ ],
+ "small": {
+  "n_genes": 649,
+  "n_dropped": 160
+ },
+ "splithalf": {
+  "p1_min": 0.024721878862793572,
+  "p1_max": 0.038318912237330034,
+  "p1_mean": 0.03152039555006181,
+  "n_pass_both": 10
+ },
+ "v1": {
+  "n_target_pairs": 184,
+  "n_flagged": 6,
+  "n_new_pmids_queried": 23,
+  "n_etc1_mitoribo_terms": 3,
+  "n_humap_train_genes": 1119,
+  "n_genes": 77,
+  "clusters": {
+   "PMID-only": {
+    "n_clusters": 65,
+    "largest": 3,
+    "largest_frac": 0.03896103896103896,
+    "singletons": 56
+   },
+   "PMID+N(g)": {
+    "n_clusters": 59,
+    "largest": 5,
+    "largest_frac": 0.06493506493506493,
+    "singletons": 47
+   }
+  },
+  "cluster_rule": "PMID+N(g)"
+ },
+ "controls_not_scorable": [],
+ "controls": {
+  "n": 14,
+  "n_hit1": 1,
+  "n_rank_le5": 1,
+  "n_rank_le10": 2,
+  "n_no_true_term_ranked": 11,
+  "n_new_pmids_queried": 4
+ },
+ "smd": {
+  "n_H": 809,
+  "n_U": 4271,
+  "n_LOO": 3000,
+  "note": "H at t0 (coverage), U/LOO at current"
+ },
+ "timing": {
+  "main_scoring_s": 22.1,
+  "splithalf_s": 212.4,
+  "v1_s": 10.4,
+  "controls_s": 7.3
+ },
+ "runtime_s": 297.2
+}

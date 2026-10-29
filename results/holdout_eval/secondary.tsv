@@ -1,0 +1,11 @@
+analysis	kind	n	p1_method	p1_method_lo	p1_method_hi	coverage	p1_zavg	d_zavg_minus_method	d_lo	d_hi	d_bca_lo	d_bca_hi	mrr_method	n_with_partner	p1_prior	p1_null	p1_zavg_lo	p1_zavg_hi	d_prior	d_prior_lo	d_prior_hi	d_prior_bca_lo	d_prior_bca_hi	d_null	d_null_lo	d_null_hi	d_null_bca_lo	d_null_bca_hi	iut_pass	n_H	clusters	overlap_with_H	extra_note
+Pearson (R1)	comparator	809	0.027194	0.015931	0.039851	0.909765	0.029666	0.002472	-0.008794	0.013682	-0.008749	0.013780	0.039482																				
+Homology baseline (t0 IEA/ISS/IBA, then frequency)	comparator	809	0.217553	0.184309	0.253317	0.569839	0.029666	-0.187886	-0.224692	-0.153074	-0.226528	-0.154405	0.274010																				
+PPI module transfer (hu.MAP 3.0 top-25)	comparator	809	0.049444	0.034005	0.065758	0.883807	0.029666	-0.019778	-0.036746	-0.003610	-0.037166	-0.003690	0.072681	728.000000																			
+t0 = 2019-07 (H rebuilt)	variant	649				0.961479	0.027735								0.007704	0.005547	0.015723	0.040945	0.020031	0.004573	0.035659	0.004565	0.035549	0.022188	0.010061	0.035625	0.011077	0.036835	True	660.000000	PMID-only (fallback)	628.000000	
+PMID-dated targets (all supporting PMIDs ≥ 2018-07 cut-off)	variant	475				0.960000	0.033684								0.000000	0.005474	0.016949	0.053170	0.033684	0.016949	0.053170	0.018868	0.056017	0.028211	0.011740	0.047392	0.013511	0.050405	True				
+K = 10	variant	809				0.601978	0.028430								0.000000	0.003461	0.017220	0.040640	0.028430	0.017220	0.040640	0.018248	0.042361	0.024969	0.013708	0.037323	0.014750	0.038857	True				
+K = 50	variant	809				1.000000	0.033375								0.000000	0.006675	0.021226	0.046341	0.033375	0.021226	0.046341	0.022619	0.048433	0.026700	0.014425	0.040001	0.015519	0.041913	True				
+No same-arm / paralogue exclusion	variant	809				0.964153	0.033375								0.000000	0.004697	0.021144	0.046251	0.033375	0.021144	0.046251	0.022360	0.048038	0.028677	0.016545	0.041501	0.017782	0.043021	True				
+U-reweighted (inverse-odds, trimmed 1/99)	reweighted	809	0.011546				0.012063	0.000518	-0.007668	0.008804					0.000000	0.004205	0.006521	0.018855	0.012063	0.006521	0.018855			0.007859	0.001868	0.015021			True				U-eligible 3301; ESS 656; method = GLS
+LOO-fitted calibration evaluated on H	calibration	775																															Brier 0.0397; intercept -1.394 (-1.835 to -0.953); slope 0.839 (0.576 to 1.102); mean p 0.089 vs observed 0.031

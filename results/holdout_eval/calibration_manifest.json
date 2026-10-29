@@ -1,0 +1,25 @@
+{
+ "script": "scripts/34_calibration_fit.py",
+ "created": "2026-10-29T22:49:20",
+ "git_head": "e066f495f74d62eecf57b8abd049b5fd9433826e",
+ "gate": {
+  "tag": "preregistration-v1",
+  "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",
+  "freeze_file": "preregistration/FREEZE.sha256",
+  "freeze_sha256": "687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04",
+  "n_files": 10,
+  "tool_commit": "3c684c972f1e5c3ead722b4b3e2c508fa3cb5ddf",
+  "data": {
+   "data/raw/depmap/CRISPRGeneEffect.csv": "1e0c492944a7297c0eda179081a1e81a1cfe41a97628facd7eddbdda1a7504ee"
+  },
+  "n_freeze_files": 10
+ },
+ "inputs": {
+  "results/holdout_eval/per_gene_core.tsv": "0df6f01ce910d083f978d8ada67ff0dbaf7874f6664751c3ffcecb983599177c"
+ },
+ "seed": 0,
+ "runtime_s": 4.7,
+ "peak_rss_gb": 0.221,
+ "python": "3.12.16",
+ "platform": "macOS-26.5.2-x86_64-i386-64bit"
+}

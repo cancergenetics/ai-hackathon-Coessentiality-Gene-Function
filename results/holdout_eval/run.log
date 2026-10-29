@@ -1,0 +1,41 @@
+[22:41:19] gate OK
+[22:41:23] base loaded in 2 s
+[22:41:26] V2 t0 built in 3 s: 6089 columns, 5856 base candidates, B = 12210
+[22:41:32] V2 current built in 6 s: 7326 columns, 6920 base candidates, B = 12867
+[22:41:32] H: 820 genes; primary 809; flagged pairs 106
+[22:41:32] clusters: {'PMID-only': {'n_clusters': 709, 'largest': 9, 'largest_frac': 0.01097560975609756, 'singletons': 644}, 'PMID+N(g)': {'n_clusters': 214, 'largest': 521, 'largest_frac': 0.6353658536585366, 'singletons': 171}}; primary = PMID-only (fallback)
+[22:41:51] scored 4337 queries (zavg t0) in 18 s
+[22:41:54] scored 820 queries (GLS t0) in 3 s
+[22:42:01] PRIMARY: zavg 0.0297 prior 0.0000 null 0.0049; IUT pass = True
+[22:42:22] scored 4331 queries (half s0h0) in 18 s
+[22:42:44] scored 4331 queries (half s0h1) in 18 s
+[22:43:05] scored 4331 queries (half s1h0) in 18 s
+[22:43:26] scored 4331 queries (half s1h1) in 18 s
+[22:43:47] scored 4331 queries (half s2h0) in 18 s
+[22:44:08] scored 4331 queries (half s2h1) in 18 s
+[22:44:30] scored 4331 queries (half s3h0) in 18 s
+[22:44:51] scored 4331 queries (half s3h1) in 18 s
+[22:45:12] scored 4331 queries (half s4h0) in 18 s
+[22:45:34] scored 4331 queries (half s4h1) in 18 s
+[22:45:52] V1 t0 built in 3 s: 333 columns
+[22:45:57] V1 current built in 5 s: 459 columns
+[22:45:59] scored 457 queries (V1 t0) in 1 s
+[22:46:03] V2 t0 window 2-300 built in 3 s: 9757 columns, 9605 base candidates, B = 12210
+[22:46:07] scored 14 queries (controls t0 2-300) in 2 s
+[22:46:15] done in 297.2 s; primary IUT PASS
+[22:46:19] gate OK
+[22:46:22] base loaded in 2 s
+[22:46:26] V2 t0 built in 3 s: 6089 columns, 5856 base candidates, B = 12210
+[22:46:44] scored 4298 queries (zavg t0) in 19 s
+[22:46:47] scored 809 queries (Pearson t0) in 3 s
+[22:47:11] scored 809 queries (hu.MAP PPI t0) in 3 s
+[22:47:15] V2 2019-07 built in 3 s: 6148 columns, 5891 base candidates, B = 12370
+[22:47:43] scored 3539 queries (2019-07) in 16 s
+[22:47:56] scored 4331 queries (K=10) in 9 s
+[22:48:31] scored 4331 queries (K=50) in 31 s
+[22:48:53] scored 4298 queries (no exclusions) in 16 s
+[22:49:13] done in 175.8 s
+[22:49:17] gate OK
+[22:49:18] fit set 775 of 809; families kept ['ER_Golgi_secretory_lipid', 'other', 'signalling_lineage'] (ref other); hit rate 0.0310
+[22:49:20] done: C2 primary PASSES -> calibrated claims for U are permitted (p_cal from the pre-specified model). | Calibration branch: slope 95% CI includes 1 and intercept 95% CI includes 0 (Wald) -> calibration not poor; p_cal reported without the poor-calibration caveat. | GLS < zavg_BEF on H (point estimate): the 'GLS ≥ zavg' branch does not apply. | Tier-A (< 10) and assessable-count (< 100) branches are decided at M6/M7 (C1: 646 assessable, so the < 100 branch does not hold).
+[22:49:25] figures + SUMMARY written in 4 s

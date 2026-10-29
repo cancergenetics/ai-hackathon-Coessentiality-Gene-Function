@@ -1,0 +1,111 @@
+{
+ "dry_run": false,
+ "n_boot": 10000,
+ "homology": {
+  "rows": 111032,
+  "genes_with_homology_terms": 461
+ },
+ "ppi": {
+  "pairs_touching_queries": 1903769,
+  "queries_with_partner": 728,
+  "queries_with_ge2_partners": 724,
+  "coverage_reportable": 0.8838071693448702
+ },
+ "t2019": {
+  "n_H": 660,
+  "n_primary": 649,
+  "n_pairs": 4618,
+  "n_flagged": 98,
+  "clusters": {
+   "PMID-only": {
+    "n_clusters": 583,
+    "largest": 8,
+    "largest_frac": 0.012121212121212121,
+    "singletons": 537
+   },
+   "PMID+N(g)": {
+    "n_clusters": 223,
+    "largest": 338,
+    "largest_frac": 0.5121212121212121,
+    "singletons": 178
+   }
+  },
+  "cluster_rule": "PMID-only (fallback)",
+  "n_new_pmids_queried": 11
+ },
+ "u_reweighted": {
+  "n_H": 809,
+  "n_U_scorable": 4271,
+  "n_U_eligible": 3301,
+  "weight_min": 0.18253403456565567,
+  "weight_max": 12.285039928887288,
+  "ess": 655.6621994331722,
+  "p1": {
+   "zavg": 0.012063347657942263,
+   "prior": 0.0,
+   "null": 0.004204800141159672,
+   "gls": 0.01154578059731721
+  },
+  "p1_zavg_ci": [
+   0.0065209424174803065,
+   0.018855194561047527
+  ],
+  "d_prior": 0.012063347657942263,
+  "d_prior_ci": [
+   0.0065209424174803065,
+   0.018855194561047527
+  ],
+  "d_null": 0.007858547516782591,
+  "d_null_ci": [
+   0.0018684487283808753,
+   0.015020579791665602
+  ],
+  "d_gls": 0.0005175670606250536,
+  "d_gls_ci": [
+   -0.007667702557299449,
+   0.008803637804103003
+  ]
+ },
+ "loo_fitted_calibration": {
+  "n": 775,
+  "mean_pred": 0.08901477626933821,
+  "obs_rate": 0.03096774193548387,
+  "brier": 0.039675579981636,
+  "brier_ref_constant": 0.030008740894901145,
+  "intercept": -1.3937778102572114,
+  "intercept_ci": [
+   -1.834839976638933,
+   -0.9527156438754898
+  ],
+  "slope": 0.8390688681110402,
+  "slope_ci": [
+   0.5760404795024638,
+   1.1020972567196166
+  ],
+  "n_loo": 2479,
+  "loo_hit_rate": 0.14078257361839452,
+  "converged": true,
+  "coef": {
+   "zmean": 0.36014758258896334,
+   "R": 0.0,
+   "cov_pct": 1.8594685358869656,
+   "size_pct": -0.30623787796927354,
+   "fam_ER_Golgi_secretory_lipid": 0.1096931264752762,
+   "fam_signalling_lineage": 0.18189467044864976,
+   "fam_rare": 1.2471486854114138
+  },
+  "families_kept": [
+   "ER_Golgi_secretory_lipid",
+   "other",
+   "signalling_lineage"
+  ],
+  "reference_family": "other"
+ },
+ "timing": {
+  "ppi_s": 17.5,
+  "t2019_s": 34.2,
+  "noexcl_s": 21.8,
+  "reweight_s": 14.4
+ },
+ "runtime_s": 175.8
+}
