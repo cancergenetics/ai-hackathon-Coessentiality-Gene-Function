@@ -143,3 +143,31 @@ def test_baseline_gene_subset_uses_full_covariance(effect):
     M, _ = cm.gls_matrix(X, gidx)
     res = cm.verify_against_baselines(M, X, "gls", gidx=gidx, n_pairs=5000)
     assert res["passed"], res
+
+
+@pytest.mark.parametrize("method", ["pearson", "gls"])
+def test_baseline_rows_match_tool_and_full_matrix(effect, method):
+    """M4 addition: rows x cols baseline blocks equal Baselines.score and the square matrix (incl. self -> NaN,
+    rows with block-structured / heavy missingness, columns a subset)."""
+    X = effect.to_numpy()
+    rows = np.array([3, 17, 300, 331, 335, 336, 399, 5])          # unsorted, mixed missingness patterns
+    cols = np.r_[0:200, 300:340]                                  # includes some row genes (self pairs)
+    f = cm.pearson_rows if method == "pearson" else (lambda *a, **k: cm.gls_rows(*a, chunk=17, **k)[0])
+    M = f(X, rows, cols)
+    assert M.shape == (len(rows), len(cols)) and M.dtype == np.float32
+    bl = Baselines(X)
+    ii, jj = np.meshgrid(np.arange(len(rows)), np.arange(len(cols)), indexing="ij")
+    ii, jj = ii.ravel(), jj.ravel()
+    selfp = rows[ii] == cols[jj]
+    assert np.isnan(M[ii[selfp], jj[selfp]]).all() and selfp.sum() == 7
+    ref = bl.score(method, rows[ii[~selfp]], cols[jj[~selfp]])
+    got = M[ii[~selfp], jj[~selfp]].astype(np.float64)
+    assert (np.isfinite(ref) == np.isfinite(got)).all()
+    fin = np.isfinite(ref)
+    assert np.abs(ref[fin] - got[fin]).max() < 1e-4
+    full = cm.pearson_matrix(X) if method == "pearson" else cm.gls_matrix(X)[0]
+    sub = full[np.ix_(rows, cols)]
+    both = np.isfinite(sub) & np.isfinite(M)
+    assert (np.isfinite(sub) == np.isfinite(M)).all() and np.abs(sub[both] - M[both]).max() < 1e-5
+    v = cm.verify_rows_against_baselines(M, X, method, rows, cols, n_pairs=2000, baselines=bl)
+    assert v["passed"] and v["n_compared"] > 1000

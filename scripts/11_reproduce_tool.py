@@ -1,0 +1,115 @@
+"""11_reproduce_tool.py -- reproduce the tool's published internal-test (IFT) HT-AP (DESIGN.md v2.3 §2.3).
+
+Published (external/coessentiality README "Results in brief"; results/ift/look01_2026-10-27.json, metrics.*.ap_ht):
+zavg_BEF 0.345, GLS 0.242, Spearman 0.146, Pearson 0.134. Tolerance +-0.005 (config/frozen.yaml infra.*).
+
+Protocol (from the tool's README, mvp/README and the IFT look JSON; nothing else in the tool's results/ was read):
+1. score every hu.MAP 3.0 train pair (data/raw/humap_train/Train_{positive,negative}_pairs.txt, concatenated) with the
+   tool's own CLI ``mvp/scripts/predict_pairs.py`` (methods zavg_BEF, gls, spearman, pearson; published Config;
+   ``--unmapped na``) on data/raw/depmap/CRISPRGeneEffect.csv (DepMap 26Q3, the tool's release) and
+   data/raw/hgnc/hgnc_complete_set.txt (our HGNC 2026-04-23; the tool's HGNC copy may differ -- mapping counts are
+   reported);
+2. evaluate with the tool's own CLI ``mvp/scripts/evaluate.py --pos --neg --assignment
+   results/splits/protein_assignment.csv --side ift`` (HT weights: between-cluster pairs weighted 1/f, f = fraction of
+   mapped proteins on the IFT side), which reports ``ap_ht``.
+The CLIs run unmodified from the tool's directory (read-only; outputs go to data/derived/repro/).
+
+Output: results/verification/tool_reproduction.md (+ data/derived/repro/*.json, run manifest).
+Run: .env/bin/python -I scripts/11_reproduce_tool.py
+"""
+import json
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import m4_common as C  # noqa: E402
+
+t0 = time.perf_counter()
+POS, NEG = "data/raw/humap_train/Train_positive_pairs.txt", "data/raw/humap_train/Train_negative_pairs.txt"
+HGNC = "data/raw/hgnc/hgnc_complete_set.txt"
+g = C.gate_check(data_files=(C.EFFECT_CSV, POS, NEG, HGNC))
+C.log("gate OK")
+
+TOOL = C.TOOL_DIR
+ASSIGN = TOOL / "results" / "splits" / "protein_assignment.csv"
+LOOK = TOOL / "results" / "ift" / "look01_2026-10-27.json"
+PUBLISHED = C.fz("infra", "reproduction_targets")
+TOL = C.fz("infra", "reproduction_tolerance")
+METHODS = {"zavg_BEF": "zavg_BEF", "GLS": "gls", "Spearman": "spearman", "Pearson": "pearson"}
+LOOK_KEY = {"zavg_BEF": "zavg_BEF", "GLS": "gls_signed", "Spearman": "spearman_signed", "Pearson": "pearson_signed"}
+
+out = C.DERIVED / "repro"
+out.mkdir(parents=True, exist_ok=True)
+pairs = out / "humap_train_all_pairs.txt"
+pairs.write_text((C.ROOT / POS).read_text() + (C.ROOT / NEG).read_text())
+look = json.loads(LOOK.read_text())
+
+res, runtimes = {}, {}
+for name, method in METHODS.items():
+    sc = out / f"scores_{method}.tsv"
+    t = time.perf_counter()
+    if not sc.exists():
+        r = subprocess.run([sys.executable, "-I", str(TOOL / "mvp/scripts/predict_pairs.py"), "--pairs", str(pairs),
+                            "--method", method, "--depmap", str(C.ROOT / C.EFFECT_CSV), "--hgnc", str(C.ROOT / HGNC),
+                            "--unmapped", "na", "--float-format", "%.10g", "--out", str(sc)],
+                           cwd=TOOL, capture_output=True, text=True)
+        if r.returncode:
+            raise RuntimeError(r.stderr[-3000:])
+        C.log(f"{name}: scored {r.stdout.strip()}")
+    ev = out / f"eval_{method}.json"
+    r = subprocess.run([sys.executable, "-I", str(TOOL / "mvp/scripts/evaluate.py"), "--scores", str(sc),
+                        "--pos", str(C.ROOT / POS), "--neg", str(C.ROOT / NEG), "--assignment", str(ASSIGN),
+                        "--side", "ift", "--out", str(ev)], cwd=TOOL, capture_output=True, text=True)
+    if r.returncode:
+        raise RuntimeError(r.stderr[-3000:])
+    res[name] = json.loads(ev.read_text())
+    runtimes[name] = round(time.perf_counter() - t, 1)
+    C.log(f"{name}: ap_ht {res[name]['ap_ht']:.4f} (published {PUBLISHED[name]})")
+
+def children_rss():
+    import platform
+    import resource
+    r = resource.getrusage(resource.RUSAGE_CHILDREN).ru_maxrss
+    return round(r / (1e9 if platform.system() == "Darwin" else 1e6), 3)
+
+
+rows, ok_all = [], True
+for name in METHODS:
+    r, pub = res[name], look["metrics"][LOOK_KEY[name]]
+    d = r["ap_ht"] - PUBLISHED[name]
+    ok = abs(d) <= TOL
+    ok_all &= ok
+    rows.append(f"| {name} | {PUBLISHED[name]:.3f} | {pub['ap_ht']:.4f} | {r['ap_ht']:.4f} | {d:+.4f} | "
+                f"{'PASS' if ok else 'FAIL'} | {r['n_pos']} / {pub['n_pos']} | {r['n_neg']} / {pub['n_neg']} | "
+                f"{r['n_unmapped_pos']} / {pub['n_unmapped_pos']} | {r['ht_f']:.4f} |")
+
+run = C.write_manifest(out / "run_manifest.json", "scripts/11_reproduce_tool.py", g,
+                       [C.EFFECT_CSV, POS, NEG, HGNC, ASSIGN.relative_to(C.ROOT)], seed=0, t0=t0,
+                       extra=dict(results={k: v["ap_ht"] for k, v in res.items()}, passed=bool(ok_all),
+                                  runtimes_s=runtimes, children_peak_rss_gb=children_rss()))
+L = ["# Reproduction of the tool's published internal-test HT-AP (DESIGN §2.3)", "",
+     f"Generated by `scripts/11_reproduce_tool.py` ({run['created']}; runtime {run['runtime_s']} s, peak RSS "
+     f"{run['peak_rss_gb']} GB; tool CLI subprocesses {run['children_peak_rss_gb']} GB; scores are cached in "
+     f"data/derived/repro/ and reused on re-runs). Gate: tag `{g['tag']}` @ {g['tag_commit'][:10]}, tool {g['tool_commit'][:10]}.", "",
+     f"**Overall: {'PASS' if ok_all else 'FAIL'}** (tolerance ±{TOL}).", "",
+     "Protocol: the tool's own CLIs, unmodified: `mvp/scripts/predict_pairs.py --method <m> --unmapped na` on all "
+     "hu.MAP 3.0 train pairs (positive + negative files), DepMap 26Q3 `CRISPRGeneEffect.csv`, our HGNC "
+     "`hgnc_complete_set.txt`; then `mvp/scripts/evaluate.py --pos --neg --assignment "
+     "results/splits/protein_assignment.csv --side ift` (Horvitz–Thompson weights 1/f for between-cluster pairs, "
+     "f = fraction of mapped proteins on the IFT side). Published values: tool README and "
+     "`results/ift/look01_2026-10-27.json` (`metrics.<method>.ap_ht`; the research harness scorers "
+     "`gls_signed`, `spearman_signed`, `pearson_signed`). Only `results/splits/protein_assignment.csv` and "
+     "`results/ift/` were read from the tool's `results/`.", "",
+     "| method | published (README) | published (IFT JSON) | reproduced | Δ | ±0.005 | IFT pos (ours / pub) | "
+     "IFT neg (ours / pub) | unmapped pos (ours / pub) | f |",
+     "|---|---|---|---|---|---|---|---|---|---|", *rows, "",
+     "Other metrics from the same evaluation (ours): " + "; ".join(
+         f"{k}: AP {v['ap']:.4f}, AUROC {v['auroc']:.4f}, macro-cluster AP {v['macro_cluster_ap']:.4f}"
+         for k, v in res.items()), "",
+     f"Inputs (SHA-256): " + "; ".join(f"`{k}` {v[:12]}…" for k, v in run["inputs"].items()), ""]
+dst = C.ROOT / "results" / "verification" / "tool_reproduction.md"
+dst.parent.mkdir(parents=True, exist_ok=True)
+dst.write_text("\n".join(L))
+C.log(f"wrote {dst}; passed={ok_all}")

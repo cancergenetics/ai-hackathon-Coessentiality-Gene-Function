@@ -152,3 +152,35 @@ def test_empirical_p_uniform_under_exchangeability():
         pc_all.append(pr.empirical_p(ts, S_all, m, ann, all_terms=True)[0][1][0])
     assert kstest(pr_all, "uniform").pvalue > 0.01
     assert np.mean(np.array(pc_all) <= 0.05) <= 0.05 + 0.015
+
+
+def test_matching_mahalanobis_caliper_exact_and_fixed_vi():
+    """DESIGN v2.3 §3.1: caliper in Mahalanobis units, BG status exact-match, nearest-available fallback."""
+    rng = np.random.default_rng(3)
+    G = 500
+    cov = pd.DataFrame(dict(mean=rng.normal(size=G), log_sd=rng.normal(size=G) * 2, nan_fraction=rng.random(G)))
+    bgl = (rng.random(G) < 0.7).astype(int)
+    pool = np.ones(G, bool)
+    VI = np.linalg.pinv(np.cov(cov.values, rowvar=False))
+    q = [0, 1, 2]
+    r = pr.match_genes(cov, q, pool, M=40, caliper=0.2, mode="relaxed", caliper_metric="mahalanobis",
+                       exact=bgl, vi=VI)
+    for g in q:
+        got = r.matches[g]
+        assert len(got) == 40 and g not in got
+        assert (bgl[got] == bgl[g]).all()                                  # exact match on BG status
+        D = cov.values[got] - cov.values[g]
+        d = np.sqrt(np.einsum("ij,jk,ik->i", D, VI, D))
+        assert np.allclose(d, r.distances[g]) and (np.diff(d) >= -1e-12).all()
+        assert r.n_outside_caliper[g] == int((d > 0.2).sum())             # violations = matches beyond caliper
+        # admissible count = same-label genes within Mahalanobis 0.2 (brute force)
+        others = np.flatnonzero((bgl == bgl[g]) & (np.arange(G) != g))
+        Do = cov.values[others] - cov.values[g]
+        do = np.sqrt(np.einsum("ij,jk,ik->i", Do, VI, Do))
+        assert r.n_admissible[g] == int((do <= 0.2).sum())
+        assert set(got[:min(40, r.n_admissible[g])]) == set(others[do <= 0.2][np.argsort(do[do <= 0.2])][:40])
+    s = pr.match_genes(cov, q, pool, M=40, caliper=0.2, mode="strict", caliper_metric="mahalanobis", exact=bgl,
+                       vi=VI)
+    assert all(len(s.matches[g]) == min(40, s.n_admissible[g]) for g in q)
+    with pytest.raises(ValueError):
+        pr.match_genes(cov, q, pool, M=5, caliper_metric="bogus")

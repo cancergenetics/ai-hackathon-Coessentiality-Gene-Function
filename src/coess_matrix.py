@@ -393,6 +393,143 @@ def gls_matrix(X: np.ndarray, gidx=None, out_path=None, chunk: int = 1024, log=N
     return M, stats
 
 
+def _row_col(X, rows, cols):
+    rows = np.asarray(rows, dtype=np.int64)
+    cols = np.arange(X.shape[1]) if cols is None else np.asarray(cols, dtype=np.int64)
+    return rows, cols
+
+
+def _self_nan(M, rows, cols):
+    """Set M[i, j] = NaN where rows[i] == cols[j] (a gene paired with itself)."""
+    cpos = pd.Series(np.arange(len(cols)), index=cols)
+    hit = cpos.reindex(rows).values
+    ok = ~np.isnan(hit)
+    M[np.flatnonzero(ok), hit[ok].astype(np.int64)] = np.nan
+
+
+def pearson_rows(X: np.ndarray, rows, cols=None, out_path=None, block: int = 512) -> np.ndarray:
+    """Pairwise-complete Pearson r for gene columns ``rows`` (query genes) x ``cols`` (default all) of X (lines x
+    genes); float32 (len(rows) x len(cols)), NaN for a gene paired with itself. Same masked-matmul arithmetic as
+    ``pearson_matrix`` (per-gene centring by the overall observed mean; r is invariant to it). Added at M4 for the
+    DESIGN §2.2 baseline rows (H, LOO, controls vs background genes)."""
+    X = np.asarray(X, dtype=np.float64)
+    rows, cols = _row_col(X, rows, cols)
+    mu = np.nanmean(X, 0)
+
+    def parts(idx):
+        Xg = X[:, idx]
+        O = (~np.isnan(Xg)).astype(np.float64)
+        V = np.nan_to_num(Xg - mu[idx])
+        return O, V, V * V
+
+    Oc, Vc, V2c = parts(cols)
+    if out_path is None:
+        M = np.empty((len(rows), len(cols)), np.float32)
+    else:
+        Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+        M = np.lib.format.open_memmap(out_path, mode="w+", dtype=np.float32, shape=(len(rows), len(cols)))
+    for r0 in range(0, len(rows), block):
+        Or, Vr, V2r = (a.T for a in parts(rows[r0:r0 + block]))
+        cnt = Or @ Oc
+        sx, sy = Vr @ Oc, Or @ Vc
+        sxx, syy = V2r @ Oc, Or @ V2c
+        sxy = Vr @ Vc
+        with np.errstate(invalid="ignore", divide="ignore"):
+            cov = sxy - sx * sy / cnt
+            vx = sxx - sx * sx / cnt
+            vy = syy - sy * sy / cnt
+            R = cov / np.sqrt(vx * vy)
+        R[(cnt < 2) | ~(vx > 0) | ~(vy > 0)] = np.nan
+        M[r0:r0 + block] = np.clip(R, -1.0, 1.0)
+    _self_nan(M, rows, cols)
+    if hasattr(M, "flush"):
+        M.flush()
+    return M
+
+
+def gls_rows(X: np.ndarray, rows, cols=None, out_path=None, chunk: int = 2048, log=None) -> tuple[np.ndarray, dict]:
+    """GLS signed t for gene columns ``rows`` x ``cols`` (default all) of X; float32 (len(rows) x len(cols)), NaN
+    for a gene paired with itself; plus stats. Arithmetic of ``gls_matrix`` / ``Baselines._gls``: line covariance
+    from ALL columns of X (pass the full matrix), per pair of missingness patterns (row pattern P, column pattern Q)
+    the shared lines S = P & Q are whitened with the tool's ``whitening``, both genes warped, the warped intercept
+    projected out, rows normalised, t = r sqrt(df / (1 - r^2)), df = |S_kept| - 2. Added at M4 (DESIGN §2.2)."""
+    X = np.asarray(X)
+    rows, cols = _row_col(X, rows, cols)
+    XT = np.ascontiguousarray(np.asarray(X, dtype=np.float64).T)            # genes x lines
+    sigma = sample_covariance(X)
+    pid_all, pmask = missingness_patterns(X)
+    prow, pcol = pid_all[rows], pid_all[cols]
+    if out_path is None:
+        M = np.empty((len(rows), len(cols)), np.float32)
+    else:
+        Path(out_path).parent.mkdir(parents=True, exist_ok=True)
+        M = np.lib.format.open_memmap(out_path, mode="w+", dtype=np.float32, shape=(len(rows), len(cols)))
+    cache: dict = {}
+
+    def white(S):
+        key = S.tobytes()
+        if key not in cache:
+            A, keep = whitening(sigma[np.ix_(S, S)])
+            w0 = A.sum(1)
+            cache[key] = (A, np.flatnonzero(S)[keep], w0 / np.linalg.norm(w0))
+            while len(cache) > 64:
+                cache.pop(next(iter(cache)))
+        return cache[key]
+
+    def warp(genes, A, Sk, w0):
+        W = np.nan_to_num(XT[genes][:, Sk]) @ A.T
+        R = W - np.outer(W @ w0, w0)
+        with np.errstate(invalid="ignore", divide="ignore"):
+            return R / np.linalg.norm(R, axis=1, keepdims=True)
+
+    t0 = time.perf_counter()
+    npair = 0
+    for p in np.unique(prow):
+        ri = np.flatnonzero(prow == p)
+        for q in np.unique(pcol):
+            ci = np.flatnonzero(pcol == q)
+            S = pmask[p] & pmask[q]
+            A, Sk, w0 = white(S)
+            df = A.shape[0] - 2
+            npair += 1
+            if df < 1:
+                M[np.ix_(ri, ci)] = np.nan
+                continue
+            Rr = warp(rows[ri], A, Sk, w0)
+            for c0 in range(0, len(ci), chunk):
+                cc = ci[c0:c0 + chunk]
+                r = np.clip(Rr @ warp(cols[cc], A, Sk, w0).T, -1.0, 1.0)
+                with np.errstate(invalid="ignore", divide="ignore"):
+                    M[np.ix_(ri, cc)] = (r * np.sqrt(df / (1.0 - r * r))).astype(np.float32)
+    _self_nan(M, rows, cols)
+    if hasattr(M, "flush"):
+        M.flush()
+    stats = dict(n_rows=len(rows), n_cols=len(cols), n_row_patterns=int(len(np.unique(prow))),
+                 n_col_patterns=int(len(np.unique(pcol))), n_pattern_pairs=npair,
+                 seconds=round(time.perf_counter() - t0, 2))
+    if log:
+        log(stats)
+    return M, stats
+
+
+def verify_rows_against_baselines(M: np.ndarray, X: np.ndarray, method: str, rows, cols=None, n_pairs: int = 100_000,
+                                  seed: int = 0, baselines: Baselines | None = None) -> dict:
+    """Compare a rows x cols baseline matrix with the tool's ``Baselines(X).score`` on random (row, col) pairs
+    (self pairs skipped). Acceptance as ``verify_against_baselines``: max_abs_diff < 1e-4, no finiteness mismatch."""
+    if method not in BASELINE_KINDS:
+        raise ValueError(method)
+    rows, cols = _row_col(np.asarray(X), rows, cols)
+    rng = np.random.default_rng(seed)
+    i, j = rng.integers(0, len(rows), n_pairs), rng.integers(0, len(cols), n_pairs)
+    keep = rows[i] != cols[j]
+    i, j = i[keep], j[keep]
+    bl = baselines if baselines is not None else Baselines(X)
+    ref = bl.score(method, rows[i], cols[j])
+    out = _compare(np.asarray(M[i, j], dtype=np.float64), ref)
+    out["passed"] = bool(out["max_abs_diff"] < 1e-4 and out["n_nonfinite_mismatch"] == 0)
+    return out
+
+
 def write_baseline_matrix(X: np.ndarray, genes: pd.Index, out_dir, method: str, gidx=None) -> dict:
     """Write ``<method>.npy`` (float32 memmap) + ``genes_<method>.tsv`` + ``manifest_<method>.json`` to out_dir.
 

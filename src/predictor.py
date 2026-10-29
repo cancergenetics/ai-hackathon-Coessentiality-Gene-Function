@@ -26,6 +26,10 @@ of the pool), caliper ``caliper`` x pool SD on every covariate, M nearest within
 than M if not enough) or M nearest regardless of caliper with violations counted (``mode='relaxed'``); within one
 query no gene is used twice; ``global_without_replacement`` also forbids re-use across queries (for the 5-match
 null comparator). Excluded from g's pool: g, N(g), same-arm genes, paralogues and any ``extra`` set.
+DESIGN v2.3 §3.1 caliper (added at M4): ``caliper_metric='mahalanobis'`` = Mahalanobis distance <= caliper (the
+distance is invariant to standardising the covariates); ``exact`` = per-gene labels that must match exactly (BG
+status); ``vi`` = a fixed inverse covariance (default: pool covariance). ``Matches.distances`` holds the
+Mahalanobis distance of every returned match.
 """
 from __future__ import annotations
 
@@ -120,11 +124,14 @@ class Matches:
     M: int
     caliper: float | None
     mode: str
+    caliper_metric: str = "sd_box"
+    distances: dict | None = None
 
     def summary(self) -> dict:
         n = np.array([len(v) for v in self.matches.values()])
         o = np.array(list(self.n_outside_caliper.values()))
         return dict(n_queries=len(n), M=self.M, caliper=self.caliper, mode=self.mode,
+                    caliper_metric=self.caliper_metric,
                     frac_full_M=float((n >= self.M).mean()) if len(n) else np.nan,
                     median_matched=float(np.median(n)) if len(n) else np.nan,
                     frac_matches_outside_caliper=float(o.sum() / max(n.sum(), 1)))
@@ -132,22 +139,29 @@ class Matches:
 
 def match_genes(cov, queries, pool, M: int, caliper: float | None = 0.2, mode: str = "strict", nb=None,
                 arm=None, paralogues=None, extra=None, global_without_replacement: bool = False,
-                seed: int = 0) -> Matches:
+                seed: int = 0, caliper_metric: str = "sd_box", exact=None, vi=None) -> Matches:
     """Matched genes for each query position (see module docstring). ``cov``: G x p covariate array/DataFrame;
-    ``pool``: boolean G mask of eligible genes (e.g. scorable, BG); ``nb``: Neighbours whose N(g) are excluded."""
+    ``pool``: boolean G mask of eligible genes (e.g. scorable, BG); ``nb``: Neighbours whose N(g) are excluded.
+    caliper_metric: 'sd_box' (|difference| <= caliper x pool SD on every covariate) or 'mahalanobis' (Mahalanobis
+    distance <= caliper; DESIGN v2.3). exact: optional G array of labels matched exactly (e.g. BG status).
+    vi: optional fixed inverse covariance matrix (default: pinv of the pool covariance)."""
     if mode not in ("strict", "relaxed"):
         raise ValueError(mode)
+    if caliper_metric not in ("sd_box", "mahalanobis"):
+        raise ValueError(caliper_metric)
     C = np.asarray(cov, dtype=np.float64)
     pool = np.asarray(pool, bool) & np.isfinite(C).all(1)
     Cp = C[pool]
     sd = Cp.std(0)
-    VI = np.linalg.pinv(np.cov(Cp, rowvar=False))
+    VI = np.linalg.pinv(np.cov(Cp, rowvar=False)) if vi is None else np.asarray(vi, dtype=np.float64)
     nbd = nb.as_dict() if nb is not None else {}
+    arm = None if arm is None else np.asarray(arm)
+    exact = None if exact is None else np.asarray(exact)
     avail = pool.copy()
     queries = np.asarray(queries, dtype=np.int64)
     order = np.random.default_rng(seed).permutation(len(queries)) if global_without_replacement \
         else np.arange(len(queries))
-    out, nadm, nout = {}, {}, {}
+    out, nadm, nout, dist = {}, {}, {}, {}
     for qi in order:
         g = int(queries[qi])
         cand = avail.copy()
@@ -155,15 +169,19 @@ def match_genes(cov, queries, pool, M: int, caliper: float | None = 0.2, mode: s
         if g in nbd:
             cand[nbd[g]] = False
         if arm is not None and arm[g] >= 0:
-            cand &= np.asarray(arm) != arm[g]
+            cand &= arm != arm[g]
+        if exact is not None:
+            cand &= exact == exact[g]
         for sets in (paralogues, extra):
             if sets and g in sets:
                 cand[np.asarray(sets[g], dtype=np.int64)] = False
         idx = np.flatnonzero(cand)
         D = C[idx] - C[g]
-        d2 = np.einsum("ij,jk,ik->i", D, VI, D)
+        d2 = np.maximum(np.einsum("ij,jk,ik->i", D, VI, D), 0.0)
         if caliper is None:
             within = np.ones(len(idx), bool)
+        elif caliper_metric == "mahalanobis":
+            within = np.sqrt(d2) <= caliper
         else:
             within = (np.abs(D) <= caliper * np.where(sd > 0, sd, np.inf)).all(1)
         nadm[g] = int(within.sum())
@@ -171,11 +189,13 @@ def match_genes(cov, queries, pool, M: int, caliper: float | None = 0.2, mode: s
             idx, d2, within = idx[within], d2[within], within[within]
         o = np.lexsort((idx, d2))[:M]
         out[g] = idx[o]
+        dist[g] = np.sqrt(d2[o])
         nout[g] = int((~within[o]).sum())
         if global_without_replacement:
             avail[out[g]] = False
     out = {int(g): out[int(g)] for g in queries}
-    return Matches(matches=out, n_admissible=nadm, n_outside_caliper=nout, M=M, caliper=caliper, mode=mode)
+    return Matches(matches=out, n_admissible=nadm, n_outside_caliper=nout, M=M, caliper=caliper, mode=mode,
+                   caliper_metric=caliper_metric, distances={int(g): dist[int(g)] for g in queries})
 
 
 def balance(cov, queries, matches: Matches) -> pd.DataFrame:

@@ -1,0 +1,102 @@
+{
+ "tool_manifest": {
+  "kind": "tool_matrices",
+  "created": "2026-10-29T21:09:21",
+  "config": {
+   "k": 20,
+   "tau": 0.1,
+   "q": 0.25,
+   "d": 512,
+   "max_nan": 0.1,
+   "standardize": true,
+   "center": "gene",
+   "n_null": 200000,
+   "seed": 0,
+   "block": 1024
+  },
+  "published_config": true,
+  "n_lines": 1361,
+  "lines": "1361 line IDs (see data/derived/matrices/zavg_full/manifest.json)",
+  "n_model_genes": 18434,
+  "n_matrix_genes": 18434,
+  "n_bg": 17525,
+  "K_tool": 44,
+  "dropped_all_nan_genes": [],
+  "null_moments": {
+   "B": {
+    "mean": 0.0035405695136082964,
+    "sd": 0.9961739778828361
+   },
+   "E": {
+    "mean": 0.0002577598561396039,
+    "sd": 0.04665847981851506
+   },
+   "F": {
+    "mean": 0.0003131672446658814,
+    "sd": 0.026499871218646533
+   }
+  },
+  "matrices": "upper triangle = z_block value (row < col), lower = mirror, diagonal NaN; float32",
+  "files": {
+   "zavg_BEF.npy": {
+    "dtype": "float32",
+    "shape": [
+     18434,
+     18434
+    ],
+    "sha256": "2119daf479ae8908182324ee434dc6d131cd67b6a0bd384dea28df68b0549c64"
+   }
+  },
+  "runtime": {
+   "fit_s": 0.29,
+   "state_and_null_s": 104.16,
+   "blocks_s": 37.38,
+   "mirror_s": 1.5,
+   "total_s": 147.08,
+   "peak_rss_gb": 4.276
+  }
+ },
+ "run_manifest": {
+  "script": "scripts/10_full_matrix.py",
+  "created": "2026-10-29T21:09:22",
+  "git_head": "6a269e7dafc52965606e1515645e8d6d520a5373",
+  "gate": {
+   "tag": "preregistration-v1",
+   "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",
+   "freeze_file": "preregistration/FREEZE.sha256",
+   "freeze_sha256": "687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04",
+   "n_files": 10,
+   "tool_commit": "3c684c972f1e5c3ead722b4b3e2c508fa3cb5ddf",
+   "data": {
+    "data/raw/depmap/CRISPRGeneEffect.csv": "1e0c492944a7297c0eda179081a1e81a1cfe41a97628facd7eddbdda1a7504ee"
+   },
+   "n_freeze_files": 10
+  },
+  "inputs": {
+   "data/raw/depmap/CRISPRGeneEffect.csv": "1e0c492944a7297c0eda179081a1e81a1cfe41a97628facd7eddbdda1a7504ee",
+   "results/ids/hgnc_hub.tsv": "cc2ba221575628c9c9d6d8ecb4247a8c0c51d08722ab7a4d62cee477cac5db7b"
+  },
+  "seed": 0,
+  "runtime_s": 154.5,
+  "peak_rss_gb": 4.276,
+  "python": "3.12.16",
+  "platform": "macOS-26.5.2-x86_64-i386-64bit",
+  "verification_pair_api": {
+   "zavg_BEF": {
+    "n": 99995,
+    "n_compared": 99995,
+    "n_nonfinite_mismatch": 0,
+    "max_abs_diff": 9.256421655834401e-07
+   }
+  },
+  "summary": {
+   "n_genes": 18434,
+   "n_bg": 17525,
+   "K_tool": 44,
+   "n_lines": 1361,
+   "n_scorable": 18394,
+   "n_scorable_bg": 17488,
+   "nan_fraction_gt0": 1352
+  }
+ }
+}
