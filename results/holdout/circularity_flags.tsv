@@ -1,0 +1,1051 @@
+pmid	found_in_europepmc	full_text_searchable	is_open_access	pmcid	pub_year	title	circular_flag	matched_terms	searched_fields
+1280328	True	False	False		1992	The CRES gene: a unique testis-regulated gene related to the cystatin family is highly restricted in its expression to the proximal region of the mouse epididymis.	False		title/abstract/keywords only
+1527079	True	False	False		1992	Cloning and expression of the cDNA sequence encoding the lysosomal glycosidase di-N-acetylchitobiase.	False		title/abstract/keywords only
+1639063	True	True	False	PMC556772	1992	A family of human cdc2-related protein kinases.	False		full text + title/abstract/keywords
+1690992	True	False	False		1990	The human pregnancy-specific glycoprotein genes are tightly linked on the long arm of chromosome 19 and are coordinately expressed.	False		title/abstract/keywords only
+2460440	True	False	False		1988	Molecular cloning of complementary DNA encoding one of the human pancreatic protease E isozymes.	False		title/abstract/keywords only
+3128227	True	False	False		1987	[Syndrome of vagal hypertonia in a newborn infant manifested during the surgical repair of aortic coarctation associated with banding of the pulmonary artery].	False		title/abstract/keywords only
+3427074	True	False	False		1987	Primary structure of human pancreatic elastase 2 determined by sequence analysis of the cloned mRNA.	False		title/abstract/keywords only
+3467790	True	False	False		1986	Isolation and characterization of a human colon carcinoma-secreted enzyme with pancreatic ribonuclease-like activity.	False		title/abstract/keywords only
+7555018	True	False	False		1995	The multiple functions of hemoglobin.	False		title/abstract/keywords only
+7664269	True	False	False		1995	The cdc-2-related kinase, PISSLRE, is essential for cell growth and acts in G2 phase of the cell cycle.	False		title/abstract/keywords only
+7737358	True	False	False		1995	The protein complexity of the cytoskeleton of bovine and human sperm heads: the identification and characterization of cylicin II.	False		title/abstract/keywords only
+8034671	True	False	False		1994	The endoplasmic reticulum calcium-binding protein of 55 kDa is a novel EF-hand protein retained in the endoplasmic reticulum by a carboxyl-terminal His-Asp-Glu-Leu motif.	False		title/abstract/keywords only
+8640231	True	False	False		1996	Characterization of DRP2, a novel human dystrophin homologue.	False		title/abstract/keywords only
+8702731	True	False	False		1996	Expression and characterization of a modified flavin-containing monooxygenase 4 from humans.	False		title/abstract/keywords only
+8789438	True	False	False		1996	Cloning and characterization of a murine brain specific gene Bpx and its human homologue lying within the Xic candidate region.	False		title/abstract/keywords only
+8976385	True	False	False		1996	Cloning, expression pattern and mapping to Xq of NAP1L3, a gene encoding a peptide homologous to human and yeast nucleosome assembly proteins.	False		title/abstract/keywords only
+9073519	True	False	False		1997	Cloning, expression, and chromosomal assignment of the human mitochondrial intermediate peptidase gene (MIPEP).	False		title/abstract/keywords only
+9119369	True	False	False		1997	Cloning and chromosomal mapping of mouse ladinin, a novel basement membrane zone component.	False		title/abstract/keywords only
+9184239	True	True	False	PMC1169903	1997	The human RNA 3'-terminal phosphate cyclase is a member of a new family of proteins conserved in Eucarya, Bacteria and Archaea.	False		full text + title/abstract/keywords
+9218452	True	False	False		1997	Characterization of PKIgamma, a novel isoform of the protein kinase inhibitor of cAMP-dependent protein kinase.	False		title/abstract/keywords only
+9418891	True	True	False	PMC121513	1998	Isolation of estrogen-responsive genes with a CpG island library.	False		full text + title/abstract/keywords
+9425115	True	True	False	PMC1219047	1998	Cloning and sequencing of four new mammalian monocarboxylate transporter (MCT) homologues confirms the existence of a transporter family with an ancient past.	False		full text + title/abstract/keywords
+9466997	True	False	False		1998	A novel pseudoautosomal gene encoding a putative GTP-binding protein resides in the vicinity of the Xp/Yp telomere.	False		title/abstract/keywords only
+9503024	True	False	False		1998	Genomic organization of mouse Capn5 and Capn6 genes confirms that they are a distinct calpain subfamily.	False		title/abstract/keywords only
+9524069	True	False	False		1998	Molecular cloning and characterization of a novel tissue-specific calpain predominantly expressed in the digestive tract.	False		title/abstract/keywords only
+9592090	True	True	False	PMC6792806	1998	Kir2.4: a novel K+ inward rectifier channel associated with motoneurons of cranial nerve nuclei.	False		full text + title/abstract/keywords
+9630247	True	True	False	PMC1369627	1998	Autoantigenic properties of some protein subunits of catalytically active complexes of human ribonuclease P.	False		full text + title/abstract/keywords
+10072760	True	False	False		1999	Isolation and characterization of IPP, a novel human gene encoding an actin-binding, kelch-like protein.	False		title/abstract/keywords only
+10097100	True	True	False	PMC22357	1999	Suppression of breast cancer growth and metastasis by a serpin myoepithelium-derived serine proteinase inhibitor expressed in the mammary myoepithelial cells.	False		full text + title/abstract/keywords
+10369865	True	False	False		1999	New gene family defined by MORC, a nuclear protein required for mouse spermatogenesis.	False		title/abstract/keywords only
+10444334	True	False	False		1999	Two novel human RAB genes with near identical sequence each map to a telomere-associated region: the subtelomeric region of 22q13.3 and the ancestral telomere band 2q13.	False		title/abstract/keywords only
+10662549	True	False	False		2000	Sequencing, expression analysis, and mapping of three unique human tropomodulin genes and their mouse orthologs.	False		title/abstract/keywords only
+10783259	True	False	False		2000	Sequence and expression pattern of a novel human orphan G-protein-coupled receptor, GPRC5B, a family C receptor with a short amino-terminal domain.	False		title/abstract/keywords only
+10880450	True	True	False	PMC313940	2000	HuCHRAC, a human ISWI chromatin remodelling complex contains hACF1 and two novel histone-fold proteins.	False		full text + title/abstract/keywords
+11062263	True	True	True	PMC2185579	2000	ACAPs are arf6 GTPase-activating proteins that function in the cell periphery.	False		full text + title/abstract/keywords
+11283698	True	False	False		2001	The evolution and genetics of innate immunity.	False		title/abstract/keywords only
+11410595	True	False	False		2001	Atp11p and Atp12p are assembly factors for the F(1)-ATPase in human mitochondria.	False		title/abstract/keywords only
+11602603	True	False	False		2001	Human tryptase epsilon (PRSS22), a new member of the chromosome 16p13.3 family of human serine proteases expressed in airway epithelial cells.	False		title/abstract/keywords only
+11779640	True	False	False		2001	Nucleotide sequence and cell cycle-associated differential expression of ZF5128, a novel Kruppel type zinc finger protein gene.	False		title/abstract/keywords only
+11897058	True	False	False		2002	A novel membrane potential-sensitive fluorescent dye improves cell-based assays for ion channels.	False		title/abstract/keywords only
+12027455	True	False	False		2002	Expression, cellular localization, and enzymatic activities of RNA helicase II/Gu(beta).	False		title/abstract/keywords only
+12110693	True	False	False		2002	Identification, characterization, and functional study of the two novel human members of the semaphorin gene family.	False		title/abstract/keywords only
+12153398	True	True	False	PMC1222940	2002	Characterization of an amyloid precursor protein-binding protein Fe65L2 and its novel isoforms lacking phosphotyrosine-interaction domains.	False		full text + title/abstract/keywords
+12393390	True	False	False		2003	LIR9, an immunoglobulin-superfamily-activating receptor, is expressed as a transmembrane and as a secreted molecule.	False		title/abstract/keywords only
+12434153	True	False	False		2002	An ACF1-ISWI chromatin-remodeling complex is required for DNA replication through heterochromatin.	False		title/abstract/keywords only
+12479873	True	False	False		2003	Molecular cloning and characterization of a novel human protein phosphatase, LMW-DSP3.	False		title/abstract/keywords only
+12584248	True	False	False		2003	Protein products of human Gas2-related genes on chromosomes 17 and 22 (hGAR17 and hGAR22) associate with both microfilaments and microtubules.	False		title/abstract/keywords only
+12711671	True	True	False	PMC154223	2003	A candidate prostate cancer susceptibility gene encodes tRNA 3' processing endoribonuclease.	False		full text + title/abstract/keywords
+12767927	True	False	False		2003	Synleurin, a novel leucine-rich repeat protein that increases the intensity of pleiotropic cytokine responses.	False		title/abstract/keywords only
+12799427	True	True	False	PMC162335	2003	Identification of novel co-repressor molecules for Interferon Regulatory Factor-2.	False		full text + title/abstract/keywords
+12839973	True	False	False		2003	A specific splicing variant of SVH, a novel human armadillo repeat protein, is up-regulated in hepatocellular carcinomas.	False		title/abstract/keywords only
+12907679	True	True	False	PMC2885917	2003	Structure-function analysis of the bestrophin family of anion channels.	False		full text + title/abstract/keywords
+12930902	True	True	False	PMC193545	2003	The alternative Ctf18-Dcc1-Ctf8-replication factor C complex required for sister chromatid cohesion loads proliferating cell nuclear antigen onto DNA.	False		full text + title/abstract/keywords
+12974676	True	True	False	PMC1223837	2004	GBPI, a novel gastrointestinal- and brain-specific PP1-inhibitory protein, is activated by PKC and inactivated by PKA.	False		full text + title/abstract/keywords
+14500733	True	False	False		2003	Identification and characterization of a third human, rat, and mouse collagen prolyl 4-hydroxylase isoenzyme.	False		title/abstract/keywords only
+14528312	True	False	False		2003	Targeting of protein ubiquitination by BTB-Cullin 3-Roc1 ubiquitin ligases.	False		title/abstract/keywords only
+14701807	True	False	False		2004	The molecular chaperone, Atp12p, from Homo sapiens. In vitro studies with purified wild type and mutant (E240K) proteins.	False		title/abstract/keywords only
+14759371	True	False	False		2004	The histone-fold protein complex CHRAC-15/17 enhances nucleosome sliding and assembly mediated by ACF.	False		title/abstract/keywords only
+15094197	True	False	False		2004	Cloning, expression and subcellular localization of HN1 and HN1L genes, as well as characterization of their orthologs, defining an evolutionarily conserved gene family.	False		title/abstract/keywords only
+15203201	True	False	False		2004	The human and mouse repertoire of the adhesion family of G-protein-coupled receptors.	False		title/abstract/keywords only
+15475252	True	False	False		2004	Novel human testis-specific histone H2B encoded by the interrupted gene on the X chromosome.	False		title/abstract/keywords only
+15527968	True	False	False		2004	A novel gene family induced by acute inflammation in endothelial cells.	False		title/abstract/keywords only
+15610002	True	False	False		2004	Solution structure of human beta-parvalbumin and structural comparison with its paralog alpha-parvalbumin and with their rat orthologs.	False		title/abstract/keywords only
+15670820	True	False	False		2005	A fourth ADP/ATP carrier isoform in man: identification, bacterial expression, functional characterization and tissue distribution.	False		title/abstract/keywords only
+15694343	True	False	False		2005	Steroid hormone receptor coactivation and alternative RNA splicing by U2AF65-related proteins CAPERalpha and CAPERbeta.	False		title/abstract/keywords only
+15694837	True	False	False		2005	Dual-specificity tyrosine-phosphorylated and regulated kinase 1A (DYRK1A) interacts with the phytanoyl-CoA alpha-hydroxylase associated protein 1 (PAHX-AP1), a brain specific protein.	False		title/abstract/keywords only
+15701722	True	True	False	PMC1895090	2005	Urokinase-type plasminogen activator is a preferred substrate of the human epithelium serine protease tryptase epsilon/PRSS22.	False		full text + title/abstract/keywords
+15741602	True	False	False		2005	Functional characterization of two human olfactory receptors expressed in the baculovirus Sf9 insect cell system.	False		title/abstract/keywords only
+15795899	True	False	False		2005	BT-IgSF, a novel immunoglobulin superfamily protein, functions as a cell adhesion molecule.	False		title/abstract/keywords only
+16054448	True	False	False		2005	Probing the substrate specificities of human PHOSPHO1 and PHOSPHO2.	False		title/abstract/keywords only
+16112081	True	False	False		2005	GrinchGEF--a novel Rho-specific guanine nucleotide exchange factor.	False		title/abstract/keywords only
+16115860	True	True	False	PMC1351102	2005	Characterization of a human core-specific lysosomal {alpha}1,6-mannosidase involved in N-glycan catabolism.	False		full text + title/abstract/keywords
+16227581	True	True	False	PMC1265808	2005	Role of the UBL-UBA protein KPC2 in degradation of p27 at G1 phase of the cell cycle.	False		full text + title/abstract/keywords
+16407260	True	False	False		2006	Stimulation of DNA strand exchange by the human TBPIP/Hop2-Mnd1 complex.	False		title/abstract/keywords only
+16433634	True	True	False	PMC1449992	2006	A proteomic approach reveals transient association of reticulocalbin-3, a novel member of the CREC family, with the precursor of subtilisin-like proprotein convertase, PACE4.	False		full text + title/abstract/keywords
+16449661	True	True	False	PMC1367197	2006	The NH2 tail of the novel histone variant H2BFWT exhibits properties distinct from conventional H2B with respect to the assembly of mitotic chromosomes.	False		full text + title/abstract/keywords
+16542149	True	False	False		2006	The zinc finger protein ZNF297B interacts with BDP1, a subunit of TFIIIB.	False		title/abstract/keywords only
+16751333	True	False	False		2006	Cell-based screening and validation of human novel genes associated with cell viability.	False		title/abstract/keywords only
+16762638	True	True	False	PMC2569837	2006	Hint2, a mitochondrial apoptotic sensitizer down-regulated in hepatocellular carcinoma.	False		full text + title/abstract/keywords
+16769727	True	False	False		2006	Protein phosphatase 6 subunit with conserved Sit4-associated protein domain targets IkappaBepsilon.	False		title/abstract/keywords only
+16794344	True	False	False		2006	Optimum substrate size and specific anomer requirements for the reducing-end glycoside hydrolase di-N-acetylchitobiase.	False		title/abstract/keywords only
+16820875	True	False	False		2006	A gene encoding a family with sequence similarity 84, member A (FAM84A) enhanced migration of human colon cancer cells.	False		title/abstract/keywords only
+16923123	True	False	False		2006	Screening for target Rabs of TBC (Tre-2/Bub2/Cdc16) domain-containing proteins based on their Rab-binding activity.	False		title/abstract/keywords only
+17189198	True	False	False		2006	Cooperation of multiple chaperones required for the assembly of mammalian 20S proteasomes.	False		title/abstract/keywords only
+17289582	True	False	False		2007	Identification of FAAP24, a Fanconi anemia core complex protein that interacts with FANCM.	False		title/abstract/keywords only
+17291528	True	False	False		2007	NMR structure and functional characterization of a human cancer-related nucleoside triphosphatase.	False		title/abstract/keywords only
+17700068	True	False	False		2007	p18(Hamlet) mediates different p53-dependent responses to DNA-damage inducing agents.	False		title/abstract/keywords only
+17870088	True	False	False		2007	Evidence that human histidine triad nucleotide binding protein 3 (Hint3) is a distinct branch of the histidine triad (HIT) superfamily.	False		title/abstract/keywords only
+17904127	True	False	False		2007	SVH-B interacts directly with p53 and suppresses the transcriptional activity of p53.	False		title/abstract/keywords only
+18070910	True	True	True	PMC2140014	2007	RMD-1, a novel microtubule-associated protein, functions in chromosome segregation in Caenorhabditis elegans.	False		full text + title/abstract/keywords
+18084723	True	False	False		2008	ZNF418, a novel human KRAB/C2H2 zinc finger protein, suppresses MAPK signaling pathway.	False		title/abstract/keywords only
+18191643	True	False	False		2008	Novel tyrosine phosphorylated and cardiolipin-binding protein CLPABP functions as mitochondrial RNA granule.	False		title/abstract/keywords only
+18256281	True	False	False		2008	A novel Cas family member, HEPL, regulates FAK and cell spreading.	False		title/abstract/keywords only
+18313027	True	True	False	PMC2427296	2008	Human RFT1 deficiency leads to a disorder of N-linked glycosylation.	False		full text + title/abstract/keywords
+18351441	True	False	False		2009	Identification of a novel human lactate dehydrogenase gene LDHAL6A, which activates transcriptional activities of AP1(PMA).	False		title/abstract/keywords only
+18400985	True	True	False	PMC2465210	2008	Bestrophin Cl- channels are highly permeable to HCO3-.	False		full text + title/abstract/keywords
+18417609	True	True	False	PMC2397309	2008	Identification of a novel protein MICS1 that is involved in maintenance of mitochondrial morphology and apoptotic release of cytochrome c.	False		full text + title/abstract/keywords
+18430783	True	False	False		2008	Zfp64 participates in Notch signaling and regulates differentiation in mesenchymal cells.	False		title/abstract/keywords only
+18445686	True	False	False		2008	EML3 is a nuclear microtubule-binding protein required for the correct alignment of chromosomes in metaphase.	False		title/abstract/keywords only
+18539757	True	False	False		2008	Myocardial expression, signaling, and function of GPR22: a protective role for an orphan G protein-coupled receptor.	False		title/abstract/keywords only
+18549450	True	True	False	PMC4765179	2008	Expression and purification of orphan cytochrome P450 4X1 and oxidation of anandamide.	False		full text + title/abstract/keywords
+18614045	True	True	False	PMC3242369	2008	A PP4-phosphatase complex dephosphorylates gamma-H2AX generated during DNA replication.	False		full text + title/abstract/keywords
+18671972	True	False	False		2008	IRF2-binding protein-1 is a JDP2 ubiquitin ligase and an inhibitor of ATF2-dependent transcription.	False		title/abstract/keywords only
+18703424	True	False	False		2008	RGS22, a novel testis-specific regulator of G-protein signaling involved in human and mouse spermiogenesis along with GNA12/13 subunits.	False		title/abstract/keywords only
+18719355	True	False	False		2008	A novel human BTB-kelch protein KLHL31, strongly expressed in muscle and heart, inhibits transcriptional activities of TRE and SRE.	False		title/abstract/keywords only
+18815276	True	False	False		2008	INF1 is a novel microtubule-associated formin.	False		title/abstract/keywords only
+19009525	True	False	False		2008	LILRA5 is expressed by synovial tissue macrophages in rheumatoid arthritis, selectively induces pro-inflammatory cytokines and IL-10 and is regulated by TNF-alpha, IL-10 and IFN-gamma.	False		title/abstract/keywords only
+19088067	True	False	False		2009	Activity, splice variants, conserved peptide motifs, and phylogeny of two new alpha1,3-fucosyltransferase families (FUT10 and FUT11).	False		title/abstract/keywords only
+19436836	True	False	False		2009	Isolation and characterization of novel human short-chain dehydrogenase/reductase SCDR10B which is highly expressed in the brain and acts as hydroxysteroid dehydrogenase.	False		title/abstract/keywords only
+19494128	True	False	False		2009	An integral protein of the inner nuclear membrane localizes to the mitotic spindle in mammalian cells.	False		title/abstract/keywords only
+19617556	True	True	False	PMC2718329	2009	The human Dcn1-like protein DCNL3 promotes Cul3 neddylation at membranes.	False		full text + title/abstract/keywords
+19679103	True	False	False		2009	LRRC19, a novel member of the leucine-rich repeat protein family, activates NF-kappaB and induces expression of proinflammatory cytokines.	False		title/abstract/keywords only
+19680787	True	False	False		2010	Overexpression of PIP5KL1 suppresses cell proliferation and migration in human gastric cancer cells.	False		title/abstract/keywords only
+19734123	True	False	False		2008	Functional expression and characterization of human 101F6 protein, a homologue of cytochrome b561 and a candidate tumor suppressor gene product.	False		title/abstract/keywords only
+19884327	True	True	True	PMC2830132	2010	Tenascin-W is a specific marker of glioma-associated blood vessels and stimulates angiogenesis in vitro.	False		full text + title/abstract/keywords
+20074548	True	False	False		2010	Palmitoylation of R-Ras by human DHHC19, a palmitoyl transferase with a CaaX box.	False		title/abstract/keywords only
+20080937	True	False	False		2010	A severe human metabolic disease caused by deficiency of the endoplasmatic mannosyltransferase hALG11 leads to congenital disorder of glycosylation-Ip.	False		title/abstract/keywords only
+20107318	True	True	False	PMC4523393	2010	Mutations in a gene encoding a midbody protein in binucleated Reed-Sternberg cells of Hodgkin lymphoma.	False		full text + title/abstract/keywords
+20473270	True	True	False	PMC2892367	2010	Essential role of p18Hamlet/SRCAP-mediated histone H2A.Z chromatin incorporation in muscle differentiation.	False		full text + title/abstract/keywords
+20553626	True	True	True	PMC2905333	2010	RNF122: a novel ubiquitin ligase associated with calcium-modulating cyclophilin ligand.	False		full text + title/abstract/keywords
+20562830	True	True	False	PMC2910275	2010	The ATAC acetyl transferase complex controls mitotic progression by targeting non-histone substrates.	False		full text + title/abstract/keywords
+20639536	True	True	True	PMC2995059	2010	GAM/ZFp/ZNF512B is central to a gene sensor circuitry involving cell-cycle regulators, TGF{beta} effectors, Drosha and microRNAs with opposite oncogenic potentials.	False		full text + title/abstract/keywords
+20657603	True	True	False	PMC3739317	2010	Human RING finger protein ZNF645 is a novel testis-specific E3 ubiquitin ligase.	False		full text + title/abstract/keywords
+20723760	True	False	False		2010	Identification of MOAG-4/SERF as a regulator of age-related proteotoxicity.	False		title/abstract/keywords only
+20725088	True	True	False	PMC3131898	2011	Primate-specific RFPL1 gene controls cell-cycle progression through cyclin B1/Cdc2 degradation.	False		full text + title/abstract/keywords
+20826339	True	False	False		2010	Structural insight into the zinc finger CW domain as a histone modification reader.	False		title/abstract/keywords only
+20930503	True	False	False		2010	A screen for deubiquitinating enzymes involved in the G₂/M checkpoint identifies USP50 as a regulator of HSP90-dependent Wee1 stability.	False		title/abstract/keywords only
+21460222	True	True	False	PMC3103341	2011	PRR7 is a transmembrane adaptor protein expressed in activated T cells involved in regulation of T cell receptor signaling and apoptosis.	False		full text + title/abstract/keywords
+21464289	True	True	False	PMC3080982	2011	Algae and humans share a molybdate transporter.	False		full text + title/abstract/keywords
+21530488	True	False	False		2011	Crystal structure of PHYHD1A, a 2OG oxygenase related to phytanoyl-CoA hydroxylase.	False		title/abstract/keywords only
+21602889	True	True	True	PMC3161170	2011	The exonuclease activity of hPMC2 is required for transcriptional regulation of the QR gene and repair of estrogen-induced abasic sites.	False		full text + title/abstract/keywords
+21610090	True	False	False		2011	Samp1 is functionally associated with the LINC complex and A-type lamina networks.	False		title/abstract/keywords only
+21724987	True	True	False	PMC3141932	2011	Latrophilin 1 and its endogenous ligand Lasso/teneurin-2 form a high-affinity transsynaptic receptor pair with signaling capabilities.	False		full text + title/abstract/keywords
+21745818	True	True	True	PMC3201852	2011	Mechanisms of translational regulation by a human eIF5-mimic protein.	False		full text + title/abstract/keywords
+21768307	True	True	False	PMC3187354	2011	Human GTPases associate with RNA polymerase II to mediate its nuclear import.	False		full text + title/abstract/keywords
+22016388	True	True	False	PMC3234807	2011	Ethylmalonyl-CoA decarboxylase, a new enzyme involved in metabolite proofreading.	False		full text + title/abstract/keywords
+22043319	True	True	True	PMC3197025	2011	UV-sensitive photoreceptor protein OPN5 in humans and mice.	False		full text + title/abstract/keywords
+22100406	True	False	False		2011	Induction of the mitochondrial NDUFA4L2 protein by HIF-1α decreases oxygen consumption by inhibiting Complex I activity.	False		title/abstract/keywords only
+22127701	True	False	False		2011	Overexpression of SPACIA1/SAAL1, a newly identified gene that is involved in synoviocyte proliferation, accelerates the progression of synovitis in mice and humans.	False		title/abstract/keywords only
+22159412	True	False	False		2011	Linking cytoplasmic dynein and transport of Rab8 vesicles to the midbody during cytokinesis by the doublecortin domain-containing 5 protein.	False		title/abstract/keywords only
+22170066	True	True	False	PMC3307270	2012	Cytosolic carboxypeptidase 1 is involved in processing α- and β-tubulin.	False		full text + title/abstract/keywords
+22298428	True	True	True	PMC3315809	2012	The Ankrd 13 family of UIM-bearing proteins regulates EGF receptor endocytosis from the plasma membrane.	False		full text + title/abstract/keywords
+22406838	True	False	False		2012	RWDD1 interacts with the ligand binding domain of the androgen receptor and acts as a coactivator of androgen-dependent transactivation.	False		title/abstract/keywords only
+22863774	True	True	True	PMC3433784	2012	The RNA-binding E3 ubiquitin ligase MEX-3C links ubiquitination with MHC-I mRNA degradation.	False		full text + title/abstract/keywords
+22988245	True	True	False	PMC3493949	2012	The kelch protein KLHDC8B guards against mitotic errors, centrosomal amplification, and chromosomal instability.	False		full text + title/abstract/keywords
+23201271	True	True	False	PMC3786212	2013	Structural conservation of distinctive N-terminal acetylation-dependent interactions across a family of mammalian NEDD8 ligation enzymes.	False		full text + title/abstract/keywords
+23213400	True	True	True	PMC3507203	2012	The CUL3-KLHL18 ligase regulates mitotic entry and ubiquitylates Aurora-A.	False		full text + title/abstract/keywords
+23235316	True	False	False		2013	Functional characterization of the recombinant human tumour suppressor 101F6 protein, a cytochrome b(561) homologue.	False		title/abstract/keywords only
+23235459	True	True	True	PMC3542616	2012	PRAP1 is a novel executor of p53-dependent mechanisms in cell survival after DNA damage.	False		full text + title/abstract/keywords
+23251473	True	True	True	PMC3520985	2012	Tubulin tyrosine ligase like 12, a TTLL family member with SET- and TTL-like domains and roles in histone and tubulin modifications and mitosis.	False		full text + title/abstract/keywords
+23329847	True	True	False	PMC3591615	2013	Regulation of the cyclin-dependent kinase inhibitor 1A gene (CDKN1A) by the repressor BOZF1 through inhibition of p53 acetylation and transcription factor Sp1 binding.	False		full text + title/abstract/keywords
+23345436	True	True	False	PMC3593915	2013	Slitrks control excitatory and inhibitory synapse formation with LAR receptor protein tyrosine phosphatases.	False		full text + title/abstract/keywords
+23509069	True	True	True	PMC3601349	2013	MISP is a novel Plk1 substrate required for proper spindle orientation and mitotic progression.	False		full text + title/abstract/keywords
+23537644	True	False	False		2013	Alarin but not its alternative-splicing form, GALP (Galanin-like peptide) has antimicrobial activity.	False		title/abstract/keywords only
+23542155	True	False	False		2013	Human inactive X chromosome is compacted through a PRC2-independent SMCHD1-HBiX1 pathway.	False		title/abstract/keywords only
+23574715	True	True	True	PMC3674073	2013	The novel actin/focal adhesion-associated protein MISP is involved in mitotic spindle positioning in human cells.	False		full text + title/abstract/keywords
+23688586	True	False	False		2013	Depletion of PHF14, a novel histone-binding protein gene, causes neonatal lethality in mice due to respiratory failure.	False		title/abstract/keywords only
+23711155	True	False	False		2013	Human Drg1 is a potassium-dependent GTPase enhanced by Lerepo4.	False		title/abstract/keywords only
+23713010	True	True	True	PMC3656006	2013	Mitotic errors, aneuploidy and micronuclei in Hodgkin lymphoma pathogenesis.	False		full text + title/abstract/keywords
+23873930	True	True	True	PMC3764795	2013	Cellular localization and characterization of cytosolic binding partners for Gla domain-containing proteins PRRG4 and PRRG2.	False		full text + title/abstract/keywords
+23896122	True	False	False		2013	A novel RING finger E3 ligase RNF186 regulate ER stress-mediated apoptosis through interaction with BNip1.	False		title/abstract/keywords only
+23936004	True	True	True	PMC3720282	2013	Very long-chain acyl-CoA synthetase 3: overexpression and growth dependence in lung cancer.	False		full text + title/abstract/keywords
+23936473	True	True	True	PMC3732291	2013	GPR88 reveals a discrete function of primary cilia as selective insulators of GPCR cross-talk.	False		full text + title/abstract/keywords
+23936529	True	True	True	PMC3735572	2013	Rab41 is a novel regulator of Golgi apparatus organization that is needed for ER-to-Golgi trafficking and cell growth.	False		full text + title/abstract/keywords
+24035498	True	True	False	PMC3981468	2013	Parallel SCF adaptor capture proteomics reveals a role for SCFFBXL17 in NRF2 activation via BACH1 repressor turnover.	False		full text + title/abstract/keywords
+24090352	True	True	False	PMC4086624	2013	NRMT2 is an N-terminal monomethylase that primes for its homologue NRMT1.	False		full text + title/abstract/keywords
+24192928	True	True	False	PMC4191716	2014	Oncogenic function of SCCRO5/DCUN1D5 requires its Neddylation E3 activity and nuclear localization.	False		full text + title/abstract/keywords
+24207122	True	True	False	PMC3824115	2013	A dominant mutation in FBXO38 causes distal spinal muscular atrophy with calf predominance.	False		full text + title/abstract/keywords
+24210219	True	True	True	PMC3899018	2013	Biochemical and structural studies of conserved Maf proteins revealed nucleotide pyrophosphatases with a preference for modified nucleotides.	False		full text + title/abstract/keywords
+24223803	True	True	True	PMC3818330	2013	Metastasis suppressor microRNA-335 targets the formin family of actin nucleators.	False		full text + title/abstract/keywords
+24246760	True	False	False		2014	Biochemical properties of human dehydrogenase/reductase (SDR family) member 7.	False		title/abstract/keywords only
+24283382	True	False	False		2014	Zinc-finger BED domain-containing 3 (Zbed3) is a novel secreted protein associated with insulin resistance in humans.	False		title/abstract/keywords only
+24311584	True	True	True	PMC3852653	2013	Structural polymorphism in the L1 loop regions of human H2A.Z.1 and H2A.Z.2.	False		full text + title/abstract/keywords
+24333015	True	False	False		2014	C1orf163/RESA1 is a novel mitochondrial intermembrane space protein connected to respiratory chain assembly.	False		title/abstract/keywords only
+24357060	True	True	False	PMC3952429	2014	Novel lipid droplet-associated serine hydrolase regulates macrophage cholesterol mobilization.	False		full text + title/abstract/keywords
+24374861	True	False	False		2014	Proline-rich acidic protein 1 (PRAP1) is a novel interacting partner of MAD1 and has a suppressive role in mitotic checkpoint signalling in hepatocellular carcinoma.	False		title/abstract/keywords only
+24442440	True	False	False		2014	PC3-secreted microprotein is a novel chemoattractant protein and functions as a high-affinity ligand for CC chemokine receptor 2.	False		title/abstract/keywords only
+24449502	True	False	False		2014	Production and characterization of recombinant human beta-defensin DEFB120.	False		title/abstract/keywords only
+24486019	True	True	True	PMC3991326	2014	Optimal translational termination requires C4 lysyl hydroxylation of eRF1.	False		full text + title/abstract/keywords
+24492612	True	True	True	PMC3961655	2014	Methyllysine reader plant homeodomain (PHD) finger protein 20-like 1 (PHF20L1) antagonizes DNA (cytosine-5) methyltransferase 1 (DNMT1) proteasomal degradation.	False		full text + title/abstract/keywords
+24531343	True	True	True	PMC4123781	2014	The PYRIN domain-only protein POP3 inhibits ALR inflammasomes and regulates responses to infection with DNA viruses.	False		full text + title/abstract/keywords
+24648509	True	True	False	PMC4036332	2014	N-terminal proline-rich domain is required for scrambling activity of human phospholipid scramblases.	False		full text + title/abstract/keywords
+24681962	True	True	True	PMC3972703	2014	Novel function of the chromosome 7 open reading frame 41 gene to promote leukemic megakaryocyte differentiation by modulating TPA-induced signaling.	False		full text + title/abstract/keywords
+24706950	True	True	True	PMC4058111	2014	GAS2-like proteins mediate communication between microtubules and actin through interactions with end-binding proteins.	False		full text + title/abstract/keywords
+24813886	True	True	True	PMC5092538	2014	MUS81-EME2 promotes replication fork restart.	False		full text + title/abstract/keywords
+24843043	True	True	False	PMC4198051	2014	Msp1/ATAD1 maintains mitochondrial function by facilitating the degradation of mislocalized tail-anchored proteins.	False		full text + title/abstract/keywords
+24916387	True	True	False	PMC4197048	2014	C to U RNA editing mediated by APOBEC1 requires RNA-binding protein RBM47.	False		full text + title/abstract/keywords
+24955228	True	True	True	PMC4064052	2014	Beta-Defensin 124 Is Required for Efficient Innate Immune Responses in Prostate Epithelial RWPE-1 Cells.	False		full text + title/abstract/keywords
+24999593	True	False	False		2014	A synthetic sandalwood odorant induces wound-healing processes in human keratinocytes via the olfactory receptor OR2AT4.	False		title/abstract/keywords only
+25009997	True	False	False		2014	Contribution of calumin to embryogenesis through participation in the endoplasmic reticulum-associated degradation activity.	False		title/abstract/keywords only
+25043379	True	True	False	PMC4123609	2014	Family-wide analysis of poly(ADP-ribose) polymerase activity.	False		full text + title/abstract/keywords
+25063848	True	False	False		2014	PAAT, a novel ATPase and trans-regulator of mitochondrial ABC transporters, is critically involved in the maintenance of mitochondrial homeostasis.	False		title/abstract/keywords only
+25111180	True	True	True	PMC4128653	2014	A splicing mutation in the novel mitochondrial protein DNAJC11 causes motor neuron pathology associated with cristae disorganization, and lymphoid abnormalities in mice.	False		full text + title/abstract/keywords
+25130899	True	True	False	PMC4205267	2014	Cellular zinc levels are modulated by TRPML1-TMEM163 interaction.	False		full text + title/abstract/keywords
+25134913	True	True	False	PMC11113685	2015	Novel function of PITH domain-containing 1 as an activator of internal ribosomal entry site to enhance RUNX1 expression and promote megakaryocyte differentiation.	False		full text + title/abstract/keywords
+25148687	True	True	False	PMC4192476	2014	Tandem pore domain halothane-inhibited K+ channel subunits THIK1 and THIK2 assemble and form active channels.	False		full text + title/abstract/keywords
+25150861	True	False	False		2014	NuRD-ZNF827 recruitment to telomeres creates a molecular scaffold for homologous recombination.	False		title/abstract/keywords only
+25175347	True	True	True	PMC4157140	2014	Mutations in APOPT1, encoding a mitochondrial protein, cause cavitating leukoencephalopathy with cytochrome c oxidase deficiency.	False		full text + title/abstract/keywords
+25231987	True	True	False	PMC4215210	2014	Exposure of phosphatidylserine by Xk-related protein family members during apoptosis.	False		full text + title/abstract/keywords
+25287256	True	True	True	PMC4282708	2015	Is D-aspartate produced by glutamic-oxaloacetic transaminase-1 like 1 (Got1l1): a putative aspartate racemase?	False		full text + title/abstract/keywords
+25288793	True	True	False	PMC4239624	2014	Biochemical characterization of pathogenic mutations in human mitochondrial methionyl-tRNA formyltransferase.	False		full text + title/abstract/keywords
+25331638	True	False	False		2015	Whole-exome sequencing identifies a variant in TMEM132E causing autosomal-recessive nonsyndromic hearing loss DFNB99.	False		title/abstract/keywords only
+25342469	True	True	False	PMC4356340	2015	Regulation of neuronal survival and morphology by the E3 ubiquitin ligase RNF157.	False		full text + title/abstract/keywords
+25355561	True	True	True	PMC4213795	2014	Identification of a mammalian vesicular polyamine transporter.	False		full text + title/abstract/keywords
+25374899	True	True	False	PMC4219281	2013	Prostate-associated gene 4 (PAGE4) protects cells against stress by elevating p21 and suppressing reactive oxygen species production.	False		full text + title/abstract/keywords
+25385316	True	False	False		2015	Two siblings with homozygous pathogenic splice-site variant in mitochondrial asparaginyl-tRNA synthetase (NARS2).	False		title/abstract/keywords only
+25499759	True	False	False		2015	Loss of PRDM11 promotes MYC-driven lymphomagenesis.	False		title/abstract/keywords only
+25578875	True	True	True	PMC4321881	2015	Structure and assembly pathway of the ribosome quality control complex.	False		full text + title/abstract/keywords
+25582197	True	True	False	PMC4333090	2015	The ubiquitin E3 ligase SCF-FBXO24 recognizes deacetylated nucleoside diphosphate kinase A to enhance its degradation.	False		full text + title/abstract/keywords
+25619643	True	False	False		2015	Human prostaglandin reductase 1 (PGR1): Substrate specificity, inhibitor analysis and site-directed mutagenesis.	False		title/abstract/keywords only
+25621764	True	True	True	PMC4383229	2015	Translation of 5' leaders is pervasive in genes resistant to eIF2 repression.	False		full text + title/abstract/keywords
+25752612	True	True	False	PMC4416838	2015	Structural and biochemical characterization of a novel aminopeptidase from human intestine.	False		full text + title/abstract/keywords
+25756798	True	True	False	PMC4537388	2015	Fidgetin-Like 2: A Microtubule-Based Regulator of Wound Healing.	False		full text + title/abstract/keywords
+25791473	True	False	False		2015	Expression of human olfactory receptor 10J5 in heart aorta, coronary artery, and endothelial cells and its functional role in angiogenesis.	False		title/abstract/keywords only
+25851810	True	True	True	PMC4395875	2015	The E3 ubiquitin ligase Trim7 mediates c-Jun/AP-1 activation by Ras signalling.	False		full text + title/abstract/keywords
+25855506	True	False	False		2015	HCBP6 Modulates Triglyceride Homeostasis in Hepatocytes Via the SREBP1c/FASN Pathway.	False		title/abstract/keywords only
+26022416	True	True	False	PMC4487827	2015	GENE SILENCING. Epigenetic silencing by the HUSH complex mediates position-effect variegation in human cells.	False		full text + title/abstract/keywords
+26039994	True	True	False	PMC4466715	2015	Human ortholog of Drosophila Melted impedes SMAD2 release from TGF-β receptor I to inhibit TGF-β signaling.	False		full text + title/abstract/keywords
+26056045	True	True	True	PMC4673261	2015	TMEM196 acts as a novel functional tumour suppressor inactivated by DNA methylation and is a potential prognostic biomarker in lung cancer.	False		full text + title/abstract/keywords
+26094765	True	False	False		2015	Proton myo-inositol cotransporter is a novel γ-secretase associated protein that regulates Aβ production without affecting Notch cleavage.	False		title/abstract/keywords only
+26138980	True	True	False	PMC4766860	2015	SELENOPROTEINS. CRL2 aids elimination of truncated selenoproteins produced by failed UGA/Sec decoding.	False		full text + title/abstract/keywords
+26164235	True	True	False	PMC5920680	2015	The actin family protein ARP6 contributes to the structure and the function of the nucleolus.	False		full text + title/abstract/keywords
+26179882	True	False	False		2015	Blimp-1 homolog Hobit identifies effector-type lymphocytes in humans.	False		title/abstract/keywords only
+26209634	True	True	False	PMC4571976	2015	Small GTPase Rab2B and Its Specific Binding Protein Golgi-associated Rab2B Interactor-like 4 (GARI-L4) Regulate Golgi Morphology.	False		full text + title/abstract/keywords
+26265139	True	True	False	PMC7780642	2015	UBXN2A regulates nicotinic receptor degradation by modulating the E3 ligase activity of CHIP.	False		full text + title/abstract/keywords
+26406119	True	True	True	PMC4625184	2015	Genomic DNA transposition induced by human PGBD5.	False		full text + title/abstract/keywords
+26455426	True	True	True	PMC4796657	2015	Functional identification of SLC43A3 as an equilibrative nucleobase transporter involved in purine salvage in mammals.	False		full text + title/abstract/keywords
+26466768	True	False	False		2016	Human DHRS7, promising enzyme in metabolism of steroids and retinoids?	False		title/abstract/keywords only
+26477565	True	False	False		2016	Evolution and structural organization of the mitochondrial contact site (MICOS) complex and the mitochondrial intermembrane space bridging (MIB) complex.	False		title/abstract/keywords only
+26535572	True	True	True	PMC4633242	2015	Effect of C-Terminal S-Palmitoylation on D2 Dopamine Receptor Trafficking and Stability.	False		full text + title/abstract/keywords
+26564798	True	True	True	PMC4713130	2016	Actin- and microtubule-dependent regulation of Golgi morphology by FHDC1.	False		full text + title/abstract/keywords
+26595655	True	True	False	PMC5010778	2016	Synaptic adhesion molecule IgSF11 regulates synaptic transmission and plasticity.	False		full text + title/abstract/keywords
+26598620	True	True	True	PMC4657161	2015	PAK4 promotes kinase-independent stabilization of RhoU to modulate cell adhesion.	False		full text + title/abstract/keywords
+26634371	True	True	False	PMC4786526	2016	Structural studies of UBXN2A and mortalin interaction and the putative role of silenced UBXN2A in preventing response to chemotherapy.	False		full text + title/abstract/keywords
+26649771	True	True	True	PMC4674080	2015	Expression of Beta-Defensin 131 Promotes an Innate Immune Response in Human Prostate Epithelial Cells.	False		full text + title/abstract/keywords
+26655834	True	False	False		2016	Isoform diversity in the Arp2/3 complex determines actin filament dynamics.	False		title/abstract/keywords only
+26656854	True	False	False		2016	Secondary ubiquitin-RING docking enhances Arkadia and Ark2C E3 ligase activity.	False		title/abstract/keywords only
+26711351	True	False	False		2015	Genome-wide RNAi Screening Identifies Protein Modules Required for 40S Subunit Synthesis in Human Cells.	False		title/abstract/keywords only
+26714646	True	True	True	PMC4699358	2015	KIAA0556 is a novel ciliary basal body component mutated in Joubert syndrome.	False		full text + title/abstract/keywords
+26732173	True	True	True	PMC4702109	2016	Osmotic stress induces the phosphorylation of WNK4 Ser575 via the p38MAPK-MK pathway.	False		full text + title/abstract/keywords
+26780829	True	True	True	PMC4733052	2016	Heart of glass anchors Rasip1 at endothelial cell-cell junctions to support vascular integrity.	False		full text + title/abstract/keywords
+26875622	True	False	False		2016	Brain α7 Nicotinic Acetylcholine Receptor Assembly Requires NACHO.	False		title/abstract/keywords only
+26906416	True	True	True	PMC4886823	2016	Characterization of the mammalian family of DCN-type NEDD8 E3 ligases.	False		full text + title/abstract/keywords
+26920047	True	False	False		2016	Human SCP4 is a chromatin-associated CTD phosphatase and exhibits the dynamic translocation during erythroid differentiation.	False		title/abstract/keywords only
+26933034	True	True	False	PMC4861470	2016	Family-wide Characterization of Histone Binding Abilities of Human CW Domain-containing Proteins.	False		full text + title/abstract/keywords
+27104960	True	True	True	PMC4841597	2016	GPR142 Agonists Stimulate Glucose-Dependent Insulin Secretion via Gq-Dependent Signaling.	False		full text + title/abstract/keywords
+27125460	True	False	False		2016	ERRF is essential for Estrogen-Estrogen Receptor alpha signaling pathway in ER positive breast cancer cells.	False		title/abstract/keywords only
+27129234	True	True	False	PMC4919451	2016	Zinc Finger Protein 618 Regulates the Function of UHRF2 (Ubiquitin-like with PHD and Ring Finger Domains 2) as a Specific 5-Hydroxymethylcytosine Reader.	False		full text + title/abstract/keywords
+27129774	True	True	True	PMC4919437	2016	PR Domain-containing Protein 7 (PRDM7) Is a Histone 3 Lysine 4 Trimethyltransferase.	False		full text + title/abstract/keywords
+27152329	True	True	True	PMC4846428	2016	Neuron-specific SALM5 limits inflammation in the CNS via its interaction with HVEM.	False		full text + title/abstract/keywords
+27153538	True	True	False	PMC4887106	2016	The TIP60 Complex Regulates Bivalent Chromatin Recognition by 53BP1 through Direct H4K20me Binding and H2AK15 Acetylation.	False		full text + title/abstract/keywords
+27158779	True	True	True	PMC4978421	2016	The ciliopathy-associated CPLANE proteins direct basal body recruitment of intraflagellar transport machinery.	False		full text + title/abstract/keywords
+27199445	True	False	False		2016	JMJD8 Regulates Angiogenic Sprouting and Cellular Metabolism by Interacting With Pyruvate Kinase M2 in Endothelial Cells.	False		title/abstract/keywords only
+27224062	True	True	True	PMC4880186	2016	SDCCAG8 Interacts with RAB Effector Proteins RABEP2 and ERC1 and Is Required for Hedgehog Signaling.	False		full text + title/abstract/keywords
+27234298	True	True	True	PMC4884786	2016	SCF (Fbxl17) ubiquitylation of Sufu regulates Hedgehog signaling and medulloblastoma development.	False		full text + title/abstract/keywords
+27273464	True	True	True	PMC4895136	2016	Slitrk1 is localized to excitatory synapses and promotes their development.	False		full text + title/abstract/keywords
+27302215	True	True	True	PMC4908428	2016	Solute carrier 41A3 encodes for a mitochondrial Mg(2+) efflux system.	False		full text + title/abstract/keywords
+27317664	True	True	False	PMC4974360	2016	MPC1-like Is a Placental Mammal-specific Mitochondrial Pyruvate Carrier Subunit Expressed in Postmeiotic Male Germ Cells.	False		full text + title/abstract/keywords
+27322068	True	True	False	PMC7001580	2016	A family of metal-dependent phosphatases implicated in metabolite damage-control.	False		full text + title/abstract/keywords
+27322810	True	True	True	PMC4920590	2016	GPR142 Controls Tryptophan-Induced Insulin and Incretin Hormone Secretion to Improve Glucose Metabolism.	False		full text + title/abstract/keywords
+27440922	True	True	True	PMC5025273	2016	TSSC1 is novel component of the endosomal retrieval machinery.	False		full text + title/abstract/keywords
+27458189	True	True	False	PMC5007554	2016	Synaptonuclear messenger PRR7 inhibits c-Jun ubiquitination and regulates NMDA-mediated excitotoxicity.	False		full text + title/abstract/keywords
+27485036	True	True	True	PMC4971459	2016	Genome-wide identification and gene expression profiling of ubiquitin ligases for endoplasmic reticulum protein degradation.	False		full text + title/abstract/keywords
+27486780	True	True	False	PMC4974089	2016	TTC25 Deficiency Results in Defects of the Outer Dynein Arm Docking Machinery and Primary Ciliary Dyskinesia with Left-Right Body Asymmetry Randomization.	False		full text + title/abstract/keywords
+27491780	True	True	True	PMC4973553	2016	Forward genetic screen of human transposase genomic rearrangements.	False		full text + title/abstract/keywords
+27541860	True	True	True	PMC5039005	2016	Samp1, a RanGTP binding transmembrane protein in the inner nuclear membrane.	False		full text + title/abstract/keywords
+27545886	True	True	False	PMC5007171	2016	COX7A2L Is a Mitochondrial Complex III Binding Protein that Stabilizes the III2+IV Supercomplex without Affecting Respirasome Formation.	False		full text + title/abstract/keywords
+27555588	True	True	False	PMC5018766	2016	PLEKHG3 enhances polarized cell migration by activating actin filaments at the cell front.	False		full text + title/abstract/keywords
+27566589	True	True	True	PMC5325388	2016	ERMP1, a novel potential oncogene involved in UPR and oxidative stress defense, is highly expressed in human cancer.	False		full text + title/abstract/keywords
+27613864	True	True	False	PMC5087724	2016	Palmitoylation of Progressive Rod-Cone Degeneration (PRCD) Regulates Protein Stability and Localization.	False		full text + title/abstract/keywords
+27637550	True	False	False		2016	Calcium-dependent generation of N-acylethanolamines and lysophosphatidic acids by glycerophosphodiesterase GDE7.	False		title/abstract/keywords only
+27641500	True	True	True	PMC5037318	2016	Epithelia Use Butyrophilin-like Molecules to Shape Organ-Specific γδ T Cell Compartments.	False		full text + title/abstract/keywords
+27641616	True	True	True	PMC5027585	2016	TSPO ligands stimulate ZnPPIX transport and ROS accumulation leading to the inhibition of P. falciparum growth in human blood.	False		full text + title/abstract/keywords
+27671354	True	True	True	PMC5037431	2016	JMJD8 is a positive regulator of TNF-induced NF-κB signaling.	False		full text + title/abstract/keywords
+27677288	True	False	False		2016	Overexpression of CASS4 promotes invasion in non-small cell lung cancer by activating the AKT signaling pathway and inhibiting E-cadherin expression.	False		title/abstract/keywords only
+27689744	True	True	True	PMC5056977	2016	Novel function of FAXDC2 in megakaryopoiesis.	False		full text + title/abstract/keywords
+27693046	True	False	False		2016	Glycerophosphodiesterase GDE2 Promotes Neuroblastoma Differentiation through Glypican Release and Is a Marker of Clinical Outcome.	False		title/abstract/keywords only
+27697108	True	True	True	PMC5346324	2016	Expression and characterization of transmembrane and coiled-coil domain family 3.	False		full text + title/abstract/keywords
+27708159	True	True	False	PMC5081616	2016	Insulin resistance and diabetes caused by genetic or diet-induced KBTBD2 deficiency in mice.	False		full text + title/abstract/keywords
+27708257	True	True	True	PMC5059743	2016	Crystal structures of the human elongation factor eEFSec suggest a non-canonical mechanism for selenocysteine incorporation.	False		full text + title/abstract/keywords
+27733620	True	True	True	PMC5170610	2016	The phospholipid flippase ATP9A is required for the recycling pathway from the endosomes to the plasma membrane.	False		full text + title/abstract/keywords
+27754753	True	True	False	PMC5224455	2016	Fbxo28 promotes mitotic progression and regulates topoisomerase IIα-dependent DNA decatenation.	False		full text + title/abstract/keywords
+27764101	True	True	True	PMC5072721	2016	Rare Functional Variant in TM2D3 is Associated with Late-Onset Alzheimer's Disease.	False		full text + title/abstract/keywords
+27789755	True	False	False		2017	A Genome-Wide Arrayed cDNA Screen to Identify Functional Modulators of α7 Nicotinic Acetylcholine Receptors.	False		title/abstract/keywords only
+27812135	True	True	True	PMC5094585	2016	Characterization and Genetic Analyses of New Genes Coding for NOD2 Interacting Proteins.	False		full text + title/abstract/keywords
+27814492	True	False	False		2016	The AAA ATPase MDN1 Acts as a SUMO-Targeted Regulator in Mammalian Pre-ribosome Remodeling.	False		title/abstract/keywords only
+27814695	True	True	True	PMC5097439	2016	Transcription factor ZNF25 is associated with osteoblast differentiation of human skeletal stem cells.	False		full text + title/abstract/keywords
+27880896	True	True	False	PMC5192565	2016	RNF166 Determines Recruitment of Adaptor Proteins during Antibacterial Autophagy.	False		full text + title/abstract/keywords
+27895300	True	True	False	PMC5134902	2016	THSD1 (Thrombospondin Type 1 Domain Containing Protein 1) Mutation in the Pathogenesis of Intracranial Aneurysm and Subarachnoid Hemorrhage.	False		full text + title/abstract/keywords
+27906959	True	True	True	PMC5131917	2016	PCNA-Dependent Cleavage and Degradation of SDE2 Regulates Response to Replication Stress.	False		full text + title/abstract/keywords
+27916747	True	False	False		2017	The Broadly Tuned Odorant Receptor OR1A1 is Highly Selective for 3-Methyl-2,4-nonanedione, a Key Food Odorant in Aged Wines, Tea, and Other Foods.	False		title/abstract/keywords only
+28011935	True	False	False		2017	TTLL12 Inhibits the Activation of Cellular Antiviral Signaling through Interaction with VISA/MAVS.	False		title/abstract/keywords only
+28051089	True	True	True	PMC5496811	2017	Cadherin 26 is an alpha integrin-binding epithelial receptor regulated during allergic inflammation.	False		full text + title/abstract/keywords
+28067790	True	True	True	PMC5297731	2017	RAB10 Interacts with the Male Germ Cell-Specific GTPase-Activating Protein during Mammalian Spermiogenesis.	False		full text + title/abstract/keywords
+28082258	True	True	True	PMC5321112	2017	EEPD1 Is a Novel LXR Target Gene in Macrophages Which Regulates ABCA1 Abundance and Cholesterol Efflux.	False		full text + title/abstract/keywords
+28082314	True	True	False	PMC5331208	2017	A <i>CMC1</i>-knockout reveals translation-independent control of human mitochondrial complex IV biogenesis.	False		full text + title/abstract/keywords
+28094437	True	True	True	PMC5324553	2017	The deubiquitinating enzyme, ubiquitin-specific peptidase 50, regulates inflammasome activation by targeting the ASC adaptor protein.	False		full text + title/abstract/keywords
+28139699	True	True	True	PMC5282477	2017	Genome-wide Regulatory Roles of the C2H2-type Zinc Finger Protein ZNF764 on the Glucocorticoid Receptor.	False		full text + title/abstract/keywords
+28153719	True	True	False	PMC5318257	2017	C21orf57 is a human homologue of bacterial YbeY proteins.	False		full text + title/abstract/keywords
+28167675	True	True	False	PMC5354324	2017	ARPP-16 Is a Striatal-Enriched Inhibitor of Protein Phosphatase 2A Regulated by Microtubule-Associated Serine/Threonine Kinase 3 (Mast 3 Kinase).	False		full text + title/abstract/keywords
+28289220	True	True	False	PMC5380038	2017	Phytosphingosine degradation pathway includes fatty acid α-oxidation reactions in the endoplasmic reticulum.	False		full text + title/abstract/keywords
+28297668	True	True	True	PMC5368414	2017	Mutually Exclusive CBC-Containing Complexes Contribute to RNA Fate.	False		full text + title/abstract/keywords
+28306502	True	False	False		2017	Pacer Mediates the Function of Class III PI3K and HOPS Complexes in Autophagosome Maturation by Engaging Stx17.	False		title/abstract/keywords only
+28388415	True	True	False	PMC5514552	2017	Multidimensional Tracking of GPCR Signaling via Peroxidase-Catalyzed Proximity Labeling.	False		full text + title/abstract/keywords
+28404855	True	True	False	PMC5469253	2017	Genome-Wide Screening Uncovers the Significance of N-Sulfation of Heparan Sulfate as a Host Cell Factor for Chikungunya Virus Infection.	False		full text + title/abstract/keywords
+28416685	True	True	False	PMC5422790	2017	SNAT7 is the primary lysosomal glutamine exporter required for extracellular protein-dependent growth of cancer cells.	False		full text + title/abstract/keywords
+28418919	True	True	True	PMC5503578	2017	ZNF452 facilitates tumor proliferation and invasion via activating AKT-GSK3β signaling pathway and predicts poor prognosis of non-small cell lung cancer patients.	False		full text + title/abstract/keywords
+28445721	True	False	False		2017	NACHO Mediates Nicotinic Acetylcholine Receptor Function throughout the Brain.	False		title/abstract/keywords only
+28457967	True	False	False		2017	DHRS7 (SDR34C1) - A new player in the regulation of androgen receptor function by inactivation of 5α-dihydrotestosterone?	False		title/abstract/keywords only
+28488682	True	True	False	PMC5567151	2017	Exome sequencing revealed a splice site variant in the IQCE gene underlying post-axial polydactyly type A restricted to lower limb.	False		full text + title/abstract/keywords
+28512204	True	True	True	PMC5468982	2017	The human RNA-binding protein RBFA promotes the maturation of the mitochondrial ribosome.	False		full text + title/abstract/keywords
+28539433	True	True	False	PMC5513181	2017	SLC46 Family Transporters Facilitate Cytosolic Innate Immune Recognition of Monomeric Peptidoglycans.	False		full text + title/abstract/keywords
+28542145	True	True	True	PMC5520693	2017	TRIM45 functions as a tumor suppressor in the brain via its E3 ligase activity by stabilizing p53 through K63-linked ubiquitination.	False		full text + title/abstract/keywords
+28561066	True	True	True	PMC5460038	2017	WIPI3 and WIPI4 β-propellers are scaffolds for LKB1-AMPK-TSC signalling circuits in the control of autophagy.	False		full text + title/abstract/keywords
+28569745	True	True	True	PMC5461507	2017	The microprotein Minion controls cell fusion and muscle formation.	False		full text + title/abstract/keywords
+28578400	True	True	True	PMC5457427	2017	Lipid Droplet-Associated Hydrolase Promotes Lipid Droplet Fusion and Enhances ATGL Degradation and Triglyceride Accumulation.	False		full text + title/abstract/keywords
+28581500	True	True	False	PMC5493197	2017	Hyperactivation of HUSH complex function by Charcot-Marie-Tooth disease mutation in MORC2.	False		full text + title/abstract/keywords
+28597544	True	False	False		2017	Endoplasmic reticulum proteins SDF2 and SDF2L1 act as components of the BiP chaperone cycle to prevent protein aggregation.	False		title/abstract/keywords only
+28641112	True	True	False	PMC5745067	2017	Molecular Mechanism of MDGA1: Regulation of Neuroligin 2:Neurexin Trans-synaptic Bridges.	False		full text + title/abstract/keywords
+28655767	True	True	False	PMC5582859	2017	Three distinct 3-methylcytidine (m<sup>3</sup>C) methyltransferases modify tRNA and mRNA in mice and humans.	False		full text + title/abstract/keywords
+28668886	True	False	False		2017	An Alpha-kinase 2 Gene Variant Disrupts Filamentous Actin Localization in the Surface Cells of Colorectal Cancer Spheroids.	False		title/abstract/keywords only
+28687384	True	False	False		2017	The identification of new substrates of human DHRS7 by molecular modeling and in vitro testing.	False		title/abstract/keywords only
+28688764	True	True	False	PMC5617334	2017	RELT family members activate p38 and induce apoptosis by a mechanism distinct from TNFR1.	False		full text + title/abstract/keywords
+28785058	True	True	True	PMC5547113	2017	A novel family of mammalian transmembrane proteins involved in cholesterol transport.	False		full text + title/abstract/keywords
+28792927	True	True	False	PMC5706657	2017	Genome-scale activation screen identifies a lncRNA locus regulating a gene neighbourhood.	False		full text + title/abstract/keywords
+28794130	True	False	False		2017	Mutations in <i>SCAPER</i> cause autosomal recessive retinitis pigmentosa with intellectual disability.	False		title/abstract/keywords only
+28827405	True	True	False	PMC5665440	2017	Conserved cytoplasmic domains promote Hrd1 ubiquitin ligase complex formation for ER-associated degradation (ERAD).	False		full text + title/abstract/keywords
+28842679	True	True	True	PMC5573314	2017	Olfactory receptor 10J5 responding to α-cedrene regulates hepatic steatosis via the cAMP-PKA pathway.	False		full text + title/abstract/keywords
+28847961	True	True	False	PMC5604019	2017	Clipping of arginine-methylated histone tails by JMJD5 and JMJD7.	False		full text + title/abstract/keywords
+28848044	True	True	False	PMC5672033	2017	Regulation of mitochondrial protein import by the nucleotide exchange factors GrpEL1 and GrpEL2 in human cells.	False		full text + title/abstract/keywords
+28849762	True	True	True	PMC5576486	2017	Negative regulation of urokinase receptor activity by a GPI-specific phospholipase C in breast cancer cells.	False		full text + title/abstract/keywords
+28851713	True	True	False	PMC5741142	2018	SCP4 Promotes Gluconeogenesis Through FoxO1/3a Dephosphorylation.	False		full text + title/abstract/keywords
+28869610	True	False	False		2017	Mutations in ACTRT1 and its enhancer RNA elements lead to aberrant activation of Hedgehog signaling in inherited and sporadic basal cell carcinomas.	False		title/abstract/keywords only
+28892079	True	True	False	PMC5790113	2017	Retriever is a multiprotein complex for retromer-independent endosomal cargo recycling.	False		full text + title/abstract/keywords
+28898552	True	False	False		2017	A key tyrosine substitution restricts nucleotide hydrolysis by the ectoenzyme NPP5.	False		title/abstract/keywords only
+28939891	True	True	True	PMC5610303	2017	Differential Proteomics Identifies Reticulocalbin-3 as a Novel Negative Mediator of Collagen Production in Human Cardiac Fibroblasts.	False		full text + title/abstract/keywords
+28951459	True	True	False	PMC5804482	2017	SMYD5 Controls Heterochromatin and Chromosome Integrity during Embryonic Stem Cell Differentiation.	False		full text + title/abstract/keywords
+28973932	True	True	False	PMC5651762	2017	Discovery of an O-mannosylation pathway selectively serving cadherins and protocadherins.	False		full text + title/abstract/keywords
+28978524	True	True	False	PMC5792167	2017	RING finger protein 113A regulates C-X-C chemokine receptor type 4 stability and signaling.	False		full text + title/abstract/keywords
+28981728	True	True	True	PMC5714202	2017	Competition between translation initiation factor eIF5 and its mimic protein 5MP determines non-AUG initiation rate genome-wide.	False		full text + title/abstract/keywords
+29069646	True	False	False		2017	The Intracranial Aneurysm Gene THSD1 Connects Endosome Dynamics to Nascent Focal Adhesion Assembly.	False		title/abstract/keywords only
+29079736	True	True	True	PMC5660078	2017	Cysteinyl-tRNA synthetase governs cysteine polysulfidation and mitochondrial bioenergetics.	False		full text + title/abstract/keywords
+29144457	True	True	True	PMC6458054	2017	A ubiquitin-dependent signalling axis specific for ALKBH-mediated DNA dealkylation repair.	False		full text + title/abstract/keywords
+29156729	True	True	True	PMC5689619	2017	A RasGAP, DAB2IP, regulates lipid droplet homeostasis by serving as GAP toward RAB40C.	False		full text + title/abstract/keywords
+29162887	True	True	True	PMC5698439	2017	The WD40-domain containing protein CORO2B is specifically enriched in glomerular podocytes and regulates the ventral actin cytoskeleton.	False		full text + title/abstract/keywords
+29180010	True	False	False		2018	Role of N-myristoylation in stability and subcellular localization of the CLPABP protein.	False		title/abstract/keywords only
+29186683	True	False	False		2017	TRIM48 Promotes ASK1 Activation and Cell Death through Ubiquitination-Dependent Degradation of the ASK1-Negative Regulator PRMT1.	False		title/abstract/keywords only
+29203529	True	True	False	PMC5787798	2018	Crystal and solution structures of human protein-disulfide isomerase-like protein of the testis (PDILT) provide insight into its chaperone activity.	False		full text + title/abstract/keywords
+29211708	True	True	True	PMC5774979	2018	Selective silencing of euchromatic L1s revealed by genome-wide screens for L1 regulators.	False		full text + title/abstract/keywords
+29242231	True	True	True	PMC5788257	2018	The ER membrane protein complex is a transmembrane domain insertase.	False		full text + title/abstract/keywords
+29253101	True	True	True	PMC5837393	2018	A novel human pain insensitivity disorder caused by a point mutation in ZFHX2.	False		full text + title/abstract/keywords
+29257953	True	True	False	PMC5752135	2017	Evolutionary Proteomics Uncovers Ancient Associations of Cilia with Signaling Pathways.	False		full text + title/abstract/keywords
+29259115	True	True	False	PMC5777063	2018	Structure of the human monomeric NEET protein MiNT and its role in regulating iron and reactive oxygen species in cancer cells.	False		full text + title/abstract/keywords
+29276006	True	True	False	PMC5777383	2018	WNT Signaling Perturbations Underlie the Genetic Heterogeneity of Robinow Syndrome.	False		full text + title/abstract/keywords
+29282292	True	True	False	PMC5818191	2018	The radical SAM protein HemW is a heme chaperone.	False		full text + title/abstract/keywords
+29290612	True	True	False	PMC6467090	2018	Removal of RTF2 from Stalled Replisomes Promotes Maintenance of Genome Integrity.	False		full text + title/abstract/keywords
+29307555	True	True	False	PMC5787036	2018	Vps13D Encodes a Ubiquitin-Binding Protein that Is Required for the Regulation of Mitochondrial Size and Clearance.	False		full text + title/abstract/keywords
+29358331	True	True	False	PMC5846134	2018	LSD1 demethylase and the methyl-binding protein PHF20L1 prevent SET7 methyltransferase-dependent proteolysis of the stem-cell protein SOX2.	False		full text + title/abstract/keywords
+29374258	True	True	True	PMC5785973	2018	Identification of a Golgi GPI-N-acetylgalactosamine transferase with tandem transmembrane regions in the catalytic domain.	False		full text + title/abstract/keywords
+29405629	True	False	False		2018	Topological analysis of DPY19L3, a human C-mannosyltransferase.	False		title/abstract/keywords only
+29426865	True	True	True	PMC5807400	2018	The WDR11 complex facilitates the tethering of AP-1-derived vesicles.	False		full text + title/abstract/keywords
+29429998	True	True	False	PMC6207569	2018	ZDHHC11 modulates innate immune response to DNA virus by mediating MITA-IRF3 association.	False		full text + title/abstract/keywords
+29431694	True	True	False	PMC6860365	2018	ILDR2 Is a Novel B7-like Protein That Negatively Regulates T Cell Responses.	False		full text + title/abstract/keywords
+29449551	True	True	True	PMC5814398	2018	Mutations in CFAP43 and CFAP44 cause male infertility and flagellum defects in Trypanosoma and human.	False		full text + title/abstract/keywords
+29453251	True	False	False		2018	Novel Adipokine, FAM19A5, Inhibits Neointima Formation After Injury Through Sphingosine-1-Phosphate Receptor 2.	False		title/abstract/keywords only
+29469807	True	True	True	PMC5823543	2018	GRAM domain proteins specialize functionally distinct ER-PM contact sites in human cells.	False		full text + title/abstract/keywords
+29470543	True	True	True	PMC5823381	2018	Translational autoregulation of BZW1 and BZW2 expression by modulating the stringency of start codon selection.	False		full text + title/abstract/keywords
+29476094	True	True	True	PMC5824887	2018	A family of unconventional deubiquitinases with modular chain specificity determinants.	False		full text + title/abstract/keywords
+29503192	True	True	True	PMC5871715	2018	Structural Basis for Draxin-Modulated Axon Guidance and Fasciculation by Netrin-1 through DCC.	False		full text + title/abstract/keywords
+29531808	True	True	True	PMC5841295	2018	PLEKHN1 promotes apoptosis by enhancing Bax-Bak hetro-oligomerization through interaction with Bid in human colon cancer.	False		full text + title/abstract/keywords
+29576528	True	False	False		2018	ZUFSP Deubiquitylates K63-Linked Polyubiquitin Chains to Promote Genome Stability.	False		title/abstract/keywords only
+29601584	True	True	True	PMC5877831	2018	2'-O-methylation of the mRNA cap protects RNAs from decapping and degradation by DXO.	False		full text + title/abstract/keywords
+29604308	True	False	False		2018	TRIM50 regulates Beclin 1 proautophagic activity.	False		title/abstract/keywords only
+29628311	True	False	False		2018	A Family of Vertebrate-Specific Polycombs Encoded by the LCOR/LCORL Genes Balance PRC2 Subtype Activities.	False		title/abstract/keywords only
+29632183	True	True	False	PMC5924878	2018	Molecular mechanism of activation of human musk receptors OR5AN1 and OR1A1 by (<i>R</i>)-muscone and diverse other musk-smelling compounds.	False		full text + title/abstract/keywords
+29666234	True	True	True	PMC5939056	2018	Nuclear export of ubiquitinated proteins via the UBIN-POST system.	False		full text + title/abstract/keywords
+29681526	True	False	False		2018	A Designed Peptide Targets Two Types of Modifications of p53 with Anti-cancer Activity.	False		title/abstract/keywords only
+29742103	True	True	True	PMC5962103	2018	SHOC1 is a ERCC4-(HhH)2-like protein, integral to the formation of crossover recombination intermediates during mammalian meiosis.	False		full text + title/abstract/keywords
+29745899	True	True	True	PMC6021172	2018	Identification of a transporter complex responsible for the cytosolic entry of nitrogen-containing bisphosphonates.	False		full text + title/abstract/keywords
+29750193	True	True	True	PMC5942914	2018	Mammalian EAK-7 activates alternative mTOR signaling to regulate cell proliferation and migration.	False		full text + title/abstract/keywords
+29760464	True	True	True	PMC5951830	2018	CO<sub>2</sub>-sensitive tRNA modification associated with human mitochondrial disease.	False		full text + title/abstract/keywords
+29760876	True	True	True	PMC5944131	2018	RINCK-mediated monoubiquitination of cGAS promotes antiviral innate immune responses.	False		full text + title/abstract/keywords
+29765154	True	False	False		2018	The cancer-associated microprotein CASIMO1 controls cell proliferation and interacts with squalene epoxidase modulating lipid droplet formation.	False		title/abstract/keywords only
+29775578	True	True	False	PMC6145449	2018	C-Terminal End-Directed Protein Elimination by CRL2 Ubiquitin Ligases.	False		full text + title/abstract/keywords
+29779948	True	True	False	PMC6003881	2018	The Eukaryotic Proteome Is Shaped by E3 Ubiquitin Ligases Targeting C-Terminal Degrons.	False		full text + title/abstract/keywords
+29786068	True	True	False	PMC6329745	2019	Mitochondrial PIP3-binding protein FUNDC2 supports platelet survival via AKT signaling pathway.	False		full text + title/abstract/keywords
+29802199	True	True	False	PMC6036214	2018	C6orf106 is a novel inhibitor of the interferon-regulatory factor 3-dependent innate antiviral response.	False		full text + title/abstract/keywords
+29804830	True	False	False		2018	ZFAND1 Recruits p97 and the 26S Proteasome to Promote the Clearance of Arsenite-Induced Stress Granules.	False		title/abstract/keywords only
+29809151	True	True	True	PMC5995541	2018	The ER membrane protein complex interacts cotranslationally to enable biogenesis of multipass membrane proteins.	False		full text + title/abstract/keywords
+29851555	True	True	True	PMC5994893	2018	Targeted protein unfolding uncovers a Golgi-specific transcriptional stress response.	False		full text + title/abstract/keywords
+29888752	True	True	True	PMC5993047	2018	ALPK2 Promotes Cardiogenesis in Zebrafish and Human Pluripotent Stem Cells.	False		full text + title/abstract/keywords
+29897333	True	True	True	PMC6042963	2018	iTAP, a novel iRhom interactor, controls TNF secretion by policing the stability of iRhom/TACE.	False		full text + title/abstract/keywords
+29897336	True	True	True	PMC6042961	2018	FRMD8 promotes inflammatory and growth factor signalling by stabilising the iRhom/ADAM17 sheddase complex.	False		full text + title/abstract/keywords
+29899090	True	True	False	PMC6069172	2018	TRIM41-Mediated Ubiquitination of Nucleoprotein Limits Influenza A Virus Infection.	False		full text + title/abstract/keywords
+29901208	True	False	False		2018	AAED1 modulates proliferation and glycolysis in gastric cancer.	False		title/abstract/keywords only
+29909548	True	True	False	PMC6105278	2018	Molecular heterogeneity and CXorf67 alterations in posterior fossa group A (PFA) ependymomas.	False		full text + title/abstract/keywords
+29909984	True	True	False	PMC6089614	2018	A Milieu Molecule for TGF-β Required for Microglia Function in the Nervous System.	False		full text + title/abstract/keywords
+29911972	True	True	True	PMC6037477	2018	The multi-subunit GID/CTLH E3 ubiquitin ligase promotes cell proliferation and targets the transcription factor Hbp1 for degradation.	False		full text + title/abstract/keywords
+29915238	True	True	True	PMC6027965	2018	The Jumonji-C oxygenase JMJD7 catalyzes (3S)-lysyl hydroxylation of TRAFAC GTPases.	False		full text + title/abstract/keywords
+29934401	True	True	True	PMC6048556	2018	PIP30/FAM192A is a novel regulator of the nuclear proteasome activator PA28γ.	False		full text + title/abstract/keywords
+29967452	True	True	False	PMC6428260	2018	The transcription factor Rfx7 limits metabolism of NK cells and promotes their maintenance and immunity.	False		full text + title/abstract/keywords
+30026490	True	True	True	PMC6053364	2018	Armadillo repeat containing 12 promotes neuroblastoma progression through interaction with retinoblastoma binding protein 4.	False		full text + title/abstract/keywords
+30031147	True	False	False		2019	Initial characterization of human DHRS1 (SDR19C1), a member of the short-chain dehydrogenase/reductase superfamily.	False		title/abstract/keywords only
+30032984	True	True	False	PMC6080767	2018	Mutations in PMFBP1 Cause Acephalic Spermatozoa Syndrome.	False		full text + title/abstract/keywords
+30045876	True	False	False		2018	Structural and functional characterization of the RBBP4-ZNF827 interaction and its role in NuRD recruitment to telomeres.	False		title/abstract/keywords only
+30080851	True	True	True	PMC6095617	2018	The mitochondrial transporter SLC25A25 links ciliary TRPP2 signaling and cellular metabolism.	False		full text + title/abstract/keywords
+30082715	True	True	True	PMC6078967	2018	SLC10A7 mutations cause a skeletal dysplasia with amelogenesis imperfecta mediated by GAG biosynthesis defects.	False		full text + title/abstract/keywords
+30093494	True	True	True	PMC6219718	2018	Genome-wide CRISPR screen identifies <i>TMEM41B</i> as a gene required for autophagosome formation.	False		full text + title/abstract/keywords
+30097457	True	True	False	PMC6277001	2018	FLYWCH1, a Novel Suppressor of Nuclear β-Catenin, Regulates Migration and Morphology in Colorectal Cancer.	False		full text + title/abstract/keywords
+30110327	True	True	True	PMC6110521	2018	The roles of SMYD4 in epigenetic regulation of cardiac development in zebrafish.	False		full text + title/abstract/keywords
+30122540	True	True	False	PMC6128304	2018	A Homozygous Ancestral SVA-Insertion-Mediated Deletion in WDR66 Induces Multiple Morphological Abnormalities of the Sperm Flagellum and Male Infertility.	False		full text + title/abstract/keywords
+30126924	True	True	False	PMC6123663	2018	TMEM41B is a novel regulator of autophagy and lipid mobilization.	False		full text + title/abstract/keywords
+30127001	True	True	False	PMC6130362	2018	Two novel protein <i>O</i>-glucosyltransferases that modify sites distinct from POGLUT1 and affect Notch trafficking and signaling.	False		full text + title/abstract/keywords
+30131441	True	False	False		2018	LRRC45 contributes to early steps of axoneme extension.	False		title/abstract/keywords only
+30133132	True	False	False		2018	PAC1-PAC2 proteasome assembly chaperone retains the core α4-α7 assembly intermediates in the cytoplasm.	False		title/abstract/keywords only
+30135424	True	True	True	PMC6105683	2018	ZCCHC3 is a co-sensor of cGAS for dsDNA recognition in innate immune response.	False		full text + title/abstract/keywords
+30137358	True	False	False		2018	Whole-exome sequencing identifies mutations in FSIP2 as a recurrent cause of multiple morphological abnormalities of the sperm flagella.	False		title/abstract/keywords only
+30171069	True	True	False	PMC6200945	2018	The SCF<sup>FBXO46</sup> ubiquitin ligase complex mediates degradation of the tumor suppressor FBXO31 and thereby prevents premature cellular senescence.	False		full text + title/abstract/keywords
+30188326	True	True	False	PMC6205388	2018	Deletion of Tmtc4 activates the unfolded protein response and causes postnatal hearing loss.	False		full text + title/abstract/keywords
+30190310	True	False	False		2018	Dimerization quality control ensures neuronal development and survival.	False		title/abstract/keywords only
+30193849	True	False	False		2018	The Zinc-Finger Protein ZCCHC3 Binds RNA and Facilitates Viral RNA Sensing and Activation of the RIG-I-like Receptors.	False		title/abstract/keywords only
+30213940	True	True	True	PMC6137200	2018	SNX3-retromer requires an evolutionary conserved MON2:DOPEY2:ATP9A complex to mediate Wntless sorting and Wnt secretion.	False		full text + title/abstract/keywords
+30217978	True	True	True	PMC6138639	2018	The ZZ-type zinc finger of ZZZ3 modulates the ATAC complex-mediated histone acetylation and gene activation.	False		full text + title/abstract/keywords
+30244831	True	True	False	PMC6344051	2018	Release of Ubiquitinated and Non-ubiquitinated Nascent Chains from Stalled Mammalian Ribosomal Complexes by ANKZF1 and Ptrh1.	False		full text + title/abstract/keywords
+30260988	True	True	True	PMC6160046	2018	Identification of a novel zinc-binding protein, C1orf123, as an interactor with a heavy metal-associated domain.	False		full text + title/abstract/keywords
+30267671	True	False	False		2018	The mitochondrial phosphatase PPTC7 orchestrates mitochondrial metabolism regulating coenzyme Q<sub>10</sub> biosynthesis.	False		title/abstract/keywords only
+30270044	True	True	False	PMC6524645	2018	Protein AMPylation by an Evolutionarily Conserved Pseudokinase.	False		full text + title/abstract/keywords
+30280012	True	True	True	PMC6166629	2018	Crystal structure and functional analysis of human C1ORF123.	False		full text + title/abstract/keywords
+30312582	True	False	False		2019	Astroprincin (FAM171A1, C10orf38): A Regulator of Human Cell Shape and Invasive Growth.	False		title/abstract/keywords only
+30321378	True	True	True	PMC6265488	2018	Human GTPBP10 is required for mitoribosome maturation.	False		full text + title/abstract/keywords
+30354798	True	True	True	PMC6340214	2018	Ccdc61 controls centrosomal localization of Cep170 and is required for spindle assembly and symmetry.	False		full text + title/abstract/keywords
+30361506	True	True	True	PMC6202333	2018	A homozygous loss-of-function mutation leading to CYBC1 deficiency causes chronic granulomatous disease.	False		full text + title/abstract/keywords
+30361697	True	True	False	PMC6261439	2018	Deregulation of CRAD-controlled cytoskeleton initiates mucinous colorectal cancer via β-catenin.	False		full text + title/abstract/keywords
+30370660	True	True	True	PMC6587792	2019	Transmembrane protein 215 promotes angiogenesis by maintaining endothelial cell survival.	False		full text + title/abstract/keywords
+30374053	True	True	False	PMC6261670	2018	TMEM9 promotes intestinal tumorigenesis through vacuolar-ATPase-activated Wnt/β-catenin signalling.	False		full text + title/abstract/keywords
+30375385	True	True	True	PMC6207757	2018	M-Phase Phosphoprotein 9 regulates ciliogenesis by modulating CP110-CEP97 complex localization at the mother centriole.	False		full text + title/abstract/keywords
+30401460	True	True	False	PMC6218603	2018	Bi-allelic CCDC47 Variants Cause a Disorder Characterized by Woolly Hair, Liver Dysfunction, Dysmorphic Features, and Global Developmental Delay.	False		full text + title/abstract/keywords
+30404835	True	False	False		2018	CCDC102B functions in centrosome linker assembly and centrosome cohesion.	False		title/abstract/keywords only
+30405130	True	True	True	PMC6220262	2018	CDC20B is required for deuterosome-mediated centriole production in multiciliated cells.	False		full text + title/abstract/keywords
+30415212	True	False	False		2019	Novel homozygous <i>CFAP69</i> mutations in humans and mice cause severe asthenoteratospermia with multiple morphological abnormalities of the sperm flagella.	False		title/abstract/keywords only
+30415835	True	True	True	PMC6269167	2018	EMC Is Required to Initiate Accurate Membrane Protein Topogenesis.	False		full text + title/abstract/keywords
+30428348	True	True	True	PMC6286155	2018	Human COX7A2L Regulates Complex III Biogenesis and Promotes Supercomplex Organization Remodeling without Affecting Mitochondrial Bioenergetics.	False		full text + title/abstract/keywords
+30442778	True	True	False	PMC6300058	2018	SFXN1 is a mitochondrial serine transporter required for one-carbon metabolism.	False		full text + title/abstract/keywords
+30449657	True	True	False	PMC6436622	2018	Mutations in MAST1 Cause Mega-Corpus-Callosum Syndrome with Cerebellar Hypoplasia and Cortical Malformations.	False		full text + title/abstract/keywords
+30454648	True	False	False		2018	Cryo-EM Structure of the Human Ribonuclease P Holoenzyme.	False		title/abstract/keywords only
+30458214	True	False	False		2019	Transglutaminase-mediated cross-linking of WDR54 regulates EGF receptor-signaling.	False		title/abstract/keywords only
+30463011	True	False	False		2018	A Dock-and-Lock Mechanism Clusters ADAM10 at Cell-Cell Junctions to Promote α-Toxin Cytotoxicity.	False		title/abstract/keywords only
+30481768	True	False	False		2018	EFHB is a Novel Cytosolic Ca2+ Sensor That Modulates STIM1-SARAF Interaction.	False		title/abstract/keywords only
+30487606	True	False	False		2018	FBXO38 mediates PD-1 ubiquitination and regulates anti-tumour immunity of T cells.	False		title/abstract/keywords only
+30488656	True	False	False		2019	The homozygous variant c.797G>A/p.(Cys266Tyr) in PISD is associated with a Spondyloepimetaphyseal dysplasia with large epiphyses and disturbed mitochondrial function.	False		title/abstract/keywords only
+30506946	True	True	True	PMC6392136	2019	Mutations in RELT cause autosomal recessive amelogenesis imperfecta.	False		full text + title/abstract/keywords
+30507380	True	True	True	PMC6303110	2018	Biosynthesis of histone messenger RNA employs a specific 3' end endonuclease.	False		full text + title/abstract/keywords
+30509349	True	True	True	PMC6279351	2018	Membrane fluidity is regulated by the <i>C. elegans</i> transmembrane protein FLD-1 and its human homologs TLCD1/2.	False		full text + title/abstract/keywords
+30526872	True	True	False	PMC6294321	2018	Recognition of the Diglycine C-End Degron by CRL2&lt;sup&gt;KLHDC2&lt;/sup&gt; Ubiquitin Ligase.	False		full text + title/abstract/keywords
+30530625	True	True	True	PMC6380271	2019	The human ortholog of archaeal Pus10 produces pseudouridine 54 in select tRNAs where its recognition sequence contains a modified residue.	False		full text + title/abstract/keywords
+30531910	True	True	False	PMC6463480	2019	N<sup>6-</sup>Methyladenosine methyltransferase ZCCHC4 mediates ribosomal RNA methylation.	False		full text + title/abstract/keywords
+30552096	True	True	True	PMC6328941	2019	APOPT1/COA8 assists COX assembly and is oppositely regulated by UPS and ROS.	False		full text + title/abstract/keywords
+30554877	True	True	False	PMC6329640	2019	HMCES Maintains Genome Integrity by Shielding Abasic Sites in Single-Strand DNA.	False		full text + title/abstract/keywords
+30573509	True	True	True	PMC6717597	2019	Tspan18 is a novel regulator of the Ca&lt;sup&gt;2+&lt;/sup&gt; channel Orai1 and von Willebrand factor release in endothelial cells.	False		full text + title/abstract/keywords
+30602440	True	True	True	PMC6317318	2019	ZNF445 is a primary regulator of genomic imprinting.	False		full text + title/abstract/keywords
+30605677	True	False	False		2019	DHHC4 and DHHC5 Facilitate Fatty Acid Uptake by Palmitoylating and Targeting CD36 to the Plasma Membrane.	False		title/abstract/keywords only
+30626973	True	False	False		2019	FTSJ3 is an RNA 2'-O-methyltransferase recruited by HIV to avoid innate immune sensing.	False		title/abstract/keywords only
+30641943	True	True	True	PMC6359379	2019	SLC35A5 Protein-A Golgi Complex Member with Putative Nucleotide Sugar Transport Activity.	False		full text + title/abstract/keywords
+30657454	True	True	True	PMC6368403	2019	Identification of a bilirubin receptor that may mediate a component of cholestatic itch.	False		full text + title/abstract/keywords
+30658679	True	True	True	PMC6339303	2019	PAGE4 promotes prostate cancer cells survive under oxidative stress through modulating MAPK/JNK/ERK pathway.	False		full text + title/abstract/keywords
+30659109	True	False	False		2019	The Autoimmune Susceptibility Gene &lt;i&gt;C5orf30&lt;/i&gt; Regulates Macrophage-Mediated Resolution of Inflammation.	False		title/abstract/keywords only
+30660999	True	True	True	PMC6348303	2019	A CRISPR Screen Identifies LAPTM4A and TM9SF Proteins as Glycolipid-Regulating Factors.	False		full text + title/abstract/keywords
+30661770	True	True	False	PMC6369567	2019	TBC1D8B Loss-of-Function Mutations Lead to X-Linked Nephrotic Syndrome via Defective Trafficking Pathways.	False		full text + title/abstract/keywords
+30665704	True	True	False	PMC6372263	2019	Lack of GAS2L2 Causes PCD by Impairing Cilia Orientation and Mucociliary Clearance.	False		full text + title/abstract/keywords
+30683861	True	True	True	PMC6347614	2019	Loss-of-function mutations in QRICH2 cause male infertility with multiple morphological abnormalities of the sperm flagella.	False		full text + title/abstract/keywords
+30686508	True	True	False	PMC6372258	2019	Bi-allelic Mutations in ARMC2 Lead to Severe Astheno-Teratozoospermia Due to Sperm Flagellum Malformations in Humans and Mice.	False		full text + title/abstract/keywords
+30698747	True	True	True	PMC6451108	2019	ARGLU1 is a transcriptional coactivator and splicing regulator important for stress hormone signaling and development.	False		full text + title/abstract/keywords
+30704899	True	False	False		2019	Pacer Is a Mediator of mTORC1 and GSK3-TIP60 Signaling in Regulation of Autophagosome Maturation and Lipid Metabolism.	False		title/abstract/keywords only
+30715179	True	True	True	PMC6391606	2019	Mutations in the microtubule-associated protein MAP11 (C7orf43) cause microcephaly in humans and zebrafish.	False		full text + title/abstract/keywords
+30718482	True	True	True	PMC6361898	2019	The meiotic TERB1-TERB2-MAJIN complex tethers telomeres to the nuclear envelope.	False		full text + title/abstract/keywords
+30723163	True	True	False	PMC6462511	2019	The microtubule-associated protein EML3 regulates mitotic spindle assembly by recruiting the Augmin complex to spindle microtubules.	False		full text + title/abstract/keywords
+30742009	True	True	True	PMC6370788	2019	Nkx2-5 Second Heart Field Target Gene Ccdc117 Regulates DNA Metabolism and Proliferation.	False		full text + title/abstract/keywords
+30745215	True	False	False		2019	Homozygous loss-of-function mutations in FSIP2 cause male infertility with asthenoteratospermia.	False		title/abstract/keywords only
+30768591	True	True	True	PMC6377114	2019	An African-specific haplotype in MRGPRX4 is associated with menthol cigarette smoking.	False		full text + title/abstract/keywords
+30771381	True	False	False		2019	DENN domain-containing protein FAM45A regulates the homeostasis of late/multivesicular endosomes.	False		title/abstract/keywords only
+30811583	True	False	False		2019	DNAH2 is a novel candidate gene associated with multiple morphological abnormalities of the sperm flagella.	False		title/abstract/keywords only
+30842217	True	True	True	PMC6499326	2019	NRDE2 negatively regulates exosome functions by inhibiting MTR4 recruitment and exosome interaction.	False		full text + title/abstract/keywords
+30844405	True	True	False	PMC6443457	2019	Comparison of RNA Editing Activity of APOBEC1-A1CF and APOBEC1-RBM47 Complexes Reconstituted in HEK293T Cells.	False		full text + title/abstract/keywords
+30858161	True	True	True	PMC6412922	2019	<i>PISD</i> is a mitochondrial disease gene causing skeletal dysplasia, cataracts, and white matter changes.	False		full text + title/abstract/keywords
+30905400	True	True	False	PMC6451727	2019	Bi-allelic Mutations in FAM149B1 Cause Abnormal Primary Cilium and a Range of Ciliopathy Phenotypes in Humans.	False		full text + title/abstract/keywords
+30910793	True	False	False		2019	Characterization of 6-Mercaptopurine Transport by the SLC43A3-Encoded Nucleobase Transporter.	False		title/abstract/keywords only
+30914427	True	True	True	PMC6463212	2019	SUMOylation promotes protective responses to DNA-protein crosslinks.	False		full text + title/abstract/keywords
+30923826	True	True	False	PMC6620627	2019	EZHIP/CXorf67 mimics K27M mutated oncohistones and functions as an intrinsic inhibitor of PRC2 function in aggressive posterior fossa ependymoma.	False		full text + title/abstract/keywords
+30926623	True	True	True	PMC6526708	2019	ArhGEF37 assists dynamin 2 during clathrin-mediated endocytosis.	False		full text + title/abstract/keywords
+30929735	True	True	False	PMC6451729	2019	Bi-allelic Mutations in TTC21A Induce Asthenoteratospermia in Humans and Mice.	False		full text + title/abstract/keywords
+30931947	True	True	True	PMC6443703	2019	Identification of human D lactate dehydrogenase deficiency.	False		full text + title/abstract/keywords
+30933966	True	True	True	PMC6459555	2019	CRISPR screening using an expanded toolkit of autophagy reporters identifies TMEM41B as a novel autophagy factor.	False		full text + title/abstract/keywords
+30947313	True	True	True	PMC6448858	2019	The P4-ATPase ATP9A is a novel determinant of exosome release.	False		full text + title/abstract/keywords
+30952800	True	True	True	PMC6548141	2019	ATG2 transports lipids to promote autophagosome biogenesis.	False		full text + title/abstract/keywords
+30990684	True	False	False		2019	Identification of Filamin A Mechanobinding Partner II: Fimbacin Is a Novel Actin Cross-Linking and Filamin A Binding Protein.	False		title/abstract/keywords only
+31010679	True	False	False		2019	HERC4 exerts an anti-tumor role through destabilizing the oncoprotein Smo.	False		title/abstract/keywords only
+31010960	True	True	True	PMC6609988	2019	Genetic Regulation of Enoyl-CoA Hydratase Domain-Containing 3 in Adipose Tissue Determines Insulin Sensitivity in African Americans and Europeans.	False		full text + title/abstract/keywords
+31023583	True	True	False	PMC6555668	2019	ER and Nutrient Stress Promote Assembly of Respiratory Chain Supercomplexes through the PERK-eIF2α Axis.	False		full text + title/abstract/keywords
+31023925	True	True	False	PMC7305803	2019	PAC, an evolutionarily conserved membrane protein, is a proton-activated chloride channel.	False		full text + title/abstract/keywords
+31028571	True	True	False	PMC6754518	2019	Cyclin-dependent Kinase 18 Promotes Oligodendrocyte Precursor Cell Differentiation through Activating the Extracellular Signal-Regulated Kinase Signaling Pathway.	False		full text + title/abstract/keywords
+31036939	True	True	True	PMC6649673	2019	The lysosomal GPCR-like protein GPR137B regulates Rag and mTORC1 localization and activity.	False		full text + title/abstract/keywords
+31048344	True	False	False		2020	Homozygous mutations in <i>SPEF2</i> induce multiple morphological abnormalities of the sperm flagella and male infertility.	False		title/abstract/keywords only
+31068464	True	True	False	PMC6535009	2019	MRGPRX4 is a G protein-coupled receptor activated by bile acids that may contribute to cholestatic pruritus.	False		full text + title/abstract/keywords
+31076723	True	True	False	PMC7395739	2020	E3 ubiquitin ligase RNF170 inhibits innate immune responses by targeting and degrading TLR3 in murine cells.	False		full text + title/abstract/keywords
+31081026	True	True	True	PMC6582341	2019	Myg1 exonuclease couples the nuclear and mitochondrial translational programs through RNA processing.	False		full text + title/abstract/keywords
+31104839	True	True	True	PMC6579486	2019	SCAF4 and SCAF8, mRNA Anti-Terminator Proteins.	False		full text + title/abstract/keywords
+31119277	True	False	False		2019	GPR31 and GPR151 are activated under acidic conditions.	False		title/abstract/keywords only
+31125351	True	True	True	PMC6553794	2019	Drosophila ADCK1 is critical for maintaining mitochondrial structures and functions in the muscle.	False		full text + title/abstract/keywords
+31142615	True	True	False	PMC6635435	2019	The E3 ubiquitin ligase MARCH2 regulates ERGIC3-dependent trafficking of secretory proteins.	False		full text + title/abstract/keywords
+31151990	True	False	False		2019	Loss-of-function mutations in SPEF2 cause multiple morphological abnormalities of the sperm flagella (MMAF).	False		title/abstract/keywords only
+31160578	True	True	True	PMC6547688	2019	The ORC ubiquitin ligase OBI1 promotes DNA replication origin firing.	False		full text + title/abstract/keywords
+31178125	True	True	False	PMC6612517	2019	Mutations in DNAH17, Encoding a Sperm-Specific Axonemal Outer Dynein Arm Heavy Chain, Cause Isolated Male Infertility Due to Asthenozoospermia.	False		full text + title/abstract/keywords
+31189666	True	False	False		2019	Nonclassical Ligand-Independent Regulation of Go Protein by an Orphan Class C G-Protein-Coupled Receptor.	False		title/abstract/keywords only
+31191338	True	True	True	PMC6539198	2019	Characterization of Two Cases of Congenital Dyserythropoietic Anemia Type I Shed Light on the Uncharacterized C15orf41 Protein.	False		full text + title/abstract/keywords
+31204173	True	True	False	PMC7457226	2019	Akt Regulates a Rab11-Effector Switch Required for Ciliogenesis.	False		full text + title/abstract/keywords
+31213526	True	True	False	PMC6682728	2019	Human FAM173A is a mitochondrial lysine-specific methyltransferase that targets adenine nucleotide translocase and affects mitochondrial respiration.	False		full text + title/abstract/keywords
+31226201	True	True	True	PMC6698753	2019	Quantitative proteomics revealed C6orf203/MTRES1 as a factor preventing stress-induced transcription deficiency in human mitochondria.	False		full text + title/abstract/keywords
+31235913	True	True	True	PMC6609482	2019	Structural basis of HMCES interactions with abasic DNA and multivalent substrate recognition.	False		full text + title/abstract/keywords
+31267705	True	True	False	PMC6607007	2019	Regulation of MAGE-A3/6 by the CRL4-DCAF12 ubiquitin ligase and nutrient availability.	False		full text + title/abstract/keywords
+31271352	True	True	True	PMC6625793	2019	The autophagic membrane tether ATG2A transfers lipids between membranes.	False		full text + title/abstract/keywords
+31273098	True	True	False	PMC7090375	2019	A glycine-specific N-degron pathway mediates the quality control of protein &lt;i&gt;N&lt;/i&gt;-myristoylation.	False		full text + title/abstract/keywords
+31308046	True	False	False		2019	SET Domain-Containing Protein 4 Epigenetically Controls Breast Cancer Stem Cell Quiescence.	False		title/abstract/keywords only
+31311869	True	True	False	PMC6681764	2019	PEAK3/C19orf35 pseudokinase, a new NFK3 kinase family member, inhibits CrkII through dimerization.	False		full text + title/abstract/keywords
+31318332	True	True	True	PMC6663466	2019	Identification of TMEM206 proteins as pore of PAORAC/ASOR acid-sensitive chloride channels.	False		full text + title/abstract/keywords
+31328227	True	True	True	PMC6735865	2019	The human 18S rRNA m6A methyltransferase METTL5 is stabilized by TRMT112.	False		full text + title/abstract/keywords
+31341047	True	True	False	PMC6798110	2019	Identification of ARKL1 as a Negative Regulator of Epstein-Barr Virus Reactivation.	False		full text + title/abstract/keywords
+31356773	True	False	False		2019	The human uncoupling proteins 5 and 6 (UCP5/SLC25A14 and UCP6/SLC25A30) transport sulfur oxyanions, phosphate and dicarboxylates.	False		title/abstract/keywords only
+31358901	True	False	False		2019	RBM47-regulated alternative splicing of TJP1 promotes actin stress fiber assembly during epithelial-to-mesenchymal transition.	False		title/abstract/keywords only
+31361898	True	True	True	PMC6821191	2019	FICC-Seq: a method for enzyme-specified profiling of methyl-5-uridine in cellular RNA.	False		full text + title/abstract/keywords
+31380578	True	True	True	PMC7318274	2020	Opsin 3 is a key regulator of ultraviolet A-induced photoageing in human dermal fibroblast cells.	False		full text + title/abstract/keywords
+31390091	True	True	False	PMC6745499	2019	TRAF3IP3 mediates the recruitment of TRAF3 to MAVS for antiviral innate immunity.	False		full text + title/abstract/keywords
+31406347	True	True	False	PMC7159804	2019	Mutations in RABL3 alter KRAS prenylation and are associated with hereditary pancreatic cancer.	False		full text + title/abstract/keywords
+31420216	True	False	False		2019	Estrogen-Related Hormones Induce Apoptosis by Stabilizing Schlafen-12 Protein Turnover.	False		title/abstract/keywords only
+31428936	True	True	True	PMC6851045	2019	Epigenetic loss of RNA-methyltransferase NSUN5 in glioma targets ribosomes to drive a stress adaptive translational program.	False		full text + title/abstract/keywords
+31434986	True	True	True	PMC6704141	2019	Human metallo-β-lactamase enzymes degrade penicillin.	False		full text + title/abstract/keywords
+31435015	True	True	True	PMC6715529	2019	BCAA catabolism in brown fat controls energy homeostasis through SLC25A44.	False		full text + title/abstract/keywords
+31435016	True	True	True	PMC6726485	2019	Identification of an ATP-sensitive potassium channel in mitochondria.	False		full text + title/abstract/keywords
+31467087	True	False	False		2019	Control of homologous recombination by the HROB-MCM8-MCM9 pathway.	False		title/abstract/keywords only
+31473225	True	True	False	PMC7016487	2019	Sperm Flagellar 1 Binds Actin in Intestinal Epithelial Cells and Contributes to Formation of Filopodia and Lamellipodia.	False		full text + title/abstract/keywords
+31477916	True	True	True	PMC6764900	2019	mRNA structure determines modification by pseudouridine synthase 1.	False		full text + title/abstract/keywords
+31480808	True	True	True	PMC6780728	2019	<i>ADCK2</i> Haploinsufficiency Reduces Mitochondrial Lipid Oxidation and Causes Myopathy Associated with CoQ Deficiency.	False		full text + title/abstract/keywords
+31481669	True	True	True	PMC6722078	2019	Defects in t<sup>6</sup>A tRNA modification due to GON7 and YRDC mutations lead to Galloway-Mowat syndrome.	False		full text + title/abstract/keywords
+31500698	True	True	True	PMC6773440	2019	MRGPRX4 is a bile acid receptor for human cholestatic itch.	False		full text + title/abstract/keywords
+31519766	True	True	False	PMC6823846	2019	BioID Performed on Golgi Enriched Fractions Identify C10orf76 as a GBF1 Binding Protein Essential for Golgi Maintenance and Secretion.	False		full text + title/abstract/keywords
+31534008	True	False	False		2019	Cutting Edge: USP27X Deubiquitinates and Stabilizes the DNA Sensor cGAS to Regulate Cytosolic DNA-Mediated Signaling.	False		title/abstract/keywords only
+31536960	True	True	True	PMC6831851	2019	Rewiring of the Human Mitochondrial Interactome during Neuronal Reprogramming Reveals Regulators of the Respirasome and Neurogenesis.	False		full text + title/abstract/keywords
+31537781	True	True	True	PMC6753076	2019	HPD degradation regulated by the TTC36-STK33-PELI1 signaling axis induces tyrosinemia and neurological damage.	False		full text + title/abstract/keywords
+31537798	True	True	True	PMC6753064	2019	NPC1 regulates ER contacts with endocytic organelles to mediate cholesterol egress.	False		full text + title/abstract/keywords
+31540829	True	True	False	PMC6800164	2019	Systematic Identification of Host Cell Regulators of Legionella pneumophila Pathogenesis Using a Genome-wide CRISPR Screen.	False		full text + title/abstract/keywords
+31548606	True	False	False		2019	The nucleoskeleton protein IFFO1 immobilizes broken DNA and suppresses chromosome translocation during tumorigenesis.	False		title/abstract/keywords only
+31552090	True	True	True	PMC6733986	2019	Single-Cell Transcriptomics Reveals Spatial and Temporal Turnover of Keratinocyte Differentiation Regulators.	False		full text + title/abstract/keywords
+31553721	True	True	True	PMC6760779	2019	Unraveling the functional role of the orphan solute carrier, SLC22A24 in the transport of steroid conjugates through metabolomic and genome-wide association studies.	False		full text + title/abstract/keywords
+31560140	True	True	True	PMC6869366	2019	Osteoclastogenesis inhibition by mutated IGSF23 results in human osteopetrosis.	False		full text + title/abstract/keywords
+31570513	True	True	True	PMC6769256	2019	HELZ directly interacts with CCR4-NOT and causes decay of bound mRNAs.	False		full text + title/abstract/keywords
+31586034	True	True	False	PMC6851335	2019	The RING-type E3 ligase RNF186 ubiquitinates Sestrin-2 and thereby controls nutrient sensing.	False		full text + title/abstract/keywords
+31604315	True	False	False		2019	A bacterial light response reveals an orphan desaturase for human plasmalogen synthesis.	False		title/abstract/keywords only
+31644573	True	True	True	PMC6808451	2019	Armadillo repeat-containing protein 1 is a dual localization protein associated with mitochondrial intermembrane space bridging complex.	False		full text + title/abstract/keywords
+31653868	True	True	True	PMC6814811	2019	Regulation of the ER stress response by a mitochondrial microprotein.	False		full text + title/abstract/keywords
+31665743	True	True	True	PMC6821322	2019	METTL15 introduces N4-methylcytidine into human mitochondrial 12S rRNA and is required for mitoribosome biogenesis.	False		full text + title/abstract/keywords
+31666358	True	True	False	PMC6944232	2020	The Mitochondrial Acyl-carrier Protein Interaction Network Highlights Important Roles for LYRM Family Members in Complex I and Mitoribosome Assembly.	False		full text + title/abstract/keywords
+31695039	True	True	True	PMC6834594	2019	Structure and regulation of ZCCHC4 in m<sup>6</sup>A-methylation of 28S rRNA.	False		full text + title/abstract/keywords
+31697912	True	True	True	PMC6864316	2019	Transmembrane 163 (TMEM163) protein effluxes zinc.	False		full text + title/abstract/keywords
+31708432	True	True	False	PMC7235935	2019	LDAF1 and Seipin Form a Lipid Droplet Assembly Complex.	False		full text + title/abstract/keywords
+31722219	True	False	False		2019	CCDC84 Acetylation Oscillation Regulates Centrosome Duplication by Modulating HsSAS-6 Degradation.	False		title/abstract/keywords only
+31722427	True	True	True	PMC7145617	2019	Loss of the ribosomal RNA methyltransferase NSUN5 impairs global protein synthesis and normal growth.	False		full text + title/abstract/keywords
+31735292	True	True	False	PMC6904810	2019	Mutations in TTC29, Encoding an Evolutionarily Conserved Axonemal Protein, Result in Asthenozoospermia and Male Infertility.	False		full text + title/abstract/keywords
+31735293	True	True	False	PMC6904804	2019	TMX2 Is a Crucial Regulator of Cellular Redox State, and Its Dysfunction Causes Severe Brain Developmental Abnormalities.	False		full text + title/abstract/keywords
+31735294	True	True	False	PMC6904824	2019	Bi-allelic Mutations in TTC29 Cause Male Subfertility with Asthenoteratospermia in Humans and Mice.	False		full text + title/abstract/keywords
+31799605	True	True	True	PMC6954407	2020	The human methyltransferase ZCCHC4 catalyses N6-methyladenosine modification of 28S ribosomal RNA.	False		full text + title/abstract/keywords
+31804502	True	True	True	PMC6895100	2019	Biogenesis and functions of aminocarboxypropyluridine in tRNA.	False		full text + title/abstract/keywords
+31806350	True	False	False		2020	The ER-Localized Transmembrane Protein TMEM39A/SUSR2 Regulates Autophagy by Controlling the Trafficking of the PtdIns(4)P Phosphatase SAC1.	False		title/abstract/keywords only
+31819270	True	False	False		2020	Differential roles of human PUS10 in miRNA processing and tRNA pseudouridylation.	False		title/abstract/keywords only
+31844321	True	True	False	PMC7197892	2020	Loss of ADAMTS19 causes progressive non-syndromic heart valve disease.	False		full text + title/abstract/keywords
+31849860	True	True	True	PMC6901969	2019	Transmembrane Protein 39A Promotes the Replication of Encephalomyocarditis Virus <i>via</i> Autophagy Pathway.	False		full text + title/abstract/keywords
+31854042	True	True	True	PMC7004520	2020	Ubiquitination of NOTCH2 by DTX3 suppresses the proliferation and migration of human esophageal carcinoma.	False		full text + title/abstract/keywords
+31856708	True	True	True	PMC6923878	2019	"DUF3669, a ""domain of unknown function"" within ZNF746 and ZNF777, oligomerizes and contributes to transcriptional repression."	False		full text + title/abstract/keywords
+31862704	True	True	False	PMC6934996	2020	Deletion in the <i>Cobalamin Synthetase W Domain-Containing Protein 1</i> Gene Is associated with Congenital Anomalies of the Kidney and Urinary Tract.	False		full text + title/abstract/keywords
+31871319	True	False	False		2020	Mapping the proximity interaction network of the Rho-family GTPases reveals signalling pathways and regulatory mechanisms.	False		title/abstract/keywords only
+31913360	True	True	False	PMC7264358	2020	METTL4 is an snRNA m<sup>6</sup>Am methyltransferase that regulates RNA splicing.	False		full text + title/abstract/keywords
+31932351	True	True	False	PMC6983723	2020	GDE3 regulates oligodendrocyte precursor proliferation via release of soluble CNTFRα.	False		full text + title/abstract/keywords
+31932507	True	True	True	PMC7033719	2020	Sequence-dependent trafficking and activity of GDE2, a GPI-specific phospholipase promoting neuronal differentiation.	False		full text + title/abstract/keywords
+31948311	True	True	True	PMC7237155	2020	TRMT2B is responsible for both tRNA and rRNA m<sup>5</sup>U-methylation in human mitochondria.	False		full text + title/abstract/keywords
+31974111	True	True	True	PMC7044459	2020	Cep44 functions in centrosome cohesion by stabilizing rootletin.	False		full text + title/abstract/keywords
+31979016	True	True	True	PMC7077221	2020	TRIM41-Mediated Ubiquitination of Nucleoprotein Limits Vesicular Stomatitis Virus Infection.	False		full text + title/abstract/keywords
+31985809	True	True	True	PMC6993856	2020	Exome sequencing reveals novel causes as well as new candidate genes for human globozoospermia.	False		full text + title/abstract/keywords
+31989647	True	False	False		2020	TSPO2 translocates 5-aminolevulinic acid into human erythroleukemia cells.	False		title/abstract/keywords only
+31990367	True	False	False		2020	Histidine triad nucleotide-binding proteins HINT1 and HINT2 share similar substrate specificities and little affinity for the signaling dinucleotide Ap4A.	False		title/abstract/keywords only
+32009146	True	True	True	PMC7049688	2020	FAM46B is a prokaryotic-like cytoplasmic poly(A) polymerase essential in human embryonic stem cells.	False		full text + title/abstract/keywords
+32024300	True	True	True	PMC7072304	2020	C20orf27 Promotes Cell Growth and Proliferation of Colorectal Cancer via the TGFβR-TAK1-NFĸB Pathway.	False		full text + title/abstract/keywords
+32027733	True	True	True	PMC7029883	2020	USP27X negatively regulates antiviral signaling by deubiquitinating RIG-I.	False		full text + title/abstract/keywords
+32047918	True	True	True	PMC7102964	2020	Molecular basis for t6A modification in human mitochondria.	False		full text + title/abstract/keywords
+32060285	True	True	True	PMC7021698	2020	CEP44 ensures the formation of bona fide centriole wall, a requirement for the centriole-to-centrosome conversion.	False		full text + title/abstract/keywords
+32075755	True	True	False	PMC7067598	2020	ELAC1 Repairs tRNAs Cleaved during Ribosome-Associated Quality Control.	False		full text + title/abstract/keywords
+32095531	True	True	True	PMC7015688	2020	Broadly conserved roles of TMEM131 family proteins in intracellular collagen assembly and secretory cargo trafficking.	False		full text + title/abstract/keywords
+32097630	True	True	False	PMC7357395	2020	Pathogenic Variants in CEP85L Cause Sporadic and Familial Posterior Predominant Lissencephaly.	False		full text + title/abstract/keywords
+32128961	True	True	False	PMC7132337	2020	WDR63 inhibits Arp2/3-dependent actin polymerization and mediates the function of p53 in suppressing metastasis.	False		full text + title/abstract/keywords
+32161263	True	True	True	PMC7066179	2020	Mitochondrial peptide BRAWNIN is essential for vertebrate respiratory complex III assembly.	False		full text + title/abstract/keywords
+32169168	True	True	False	PMC7118575	2020	De Novo Truncating Variants in the Last Exon of SEMA6B Cause Progressive Myoclonic Epilepsy.	False		full text + title/abstract/keywords
+32172343	True	True	True	PMC7244618	2020	Mutated ATP10B increases Parkinson's disease risk by compromising lysosomal glucosylceramide export.	False		full text + title/abstract/keywords
+32175648	True	False	False		2020	Identification of transmembrane protein 168 mutation in familial Brugada syndrome.	False		title/abstract/keywords only
+32181939	True	False	False		2020	Homozygous Loss-of-Function Mutations in CCDC134 Are Responsible for a Severe Form of Osteogenesis Imperfecta.	False		title/abstract/keywords only
+32183942	True	True	False	PMC7214128	2020	N<sup>6</sup>-Deoxyadenosine Methylation in Mammalian Mitochondrial DNA.	False		full text + title/abstract/keywords
+32200094	True	True	True	PMC7090344	2020	Cul5-type Ubiquitin Ligase KLHDC1 Contributes to the Elimination of Truncated SELENOS Produced by Failed UGA/Sec Decoding.	False		full text + title/abstract/keywords
+32204458	True	True	True	PMC7175337	2020	Why Does Knocking Out NACHO, But Not RIC3, Completely Block Expression of α7 Nicotinic Receptors in Mouse Brain?	False		full text + title/abstract/keywords
+32209652	True	True	False	PMC7363140	2020	The small EF-hand protein CALML4 functions as a critical myosin light chain within the intermicrovillar adhesion complex.	False		full text + title/abstract/keywords
+32209662	True	True	True	PMC7149458	2020	The <i>TMEM189</i> gene encodes plasmanylethanolamine desaturase which introduces the characteristic vinyl ether double bond into plasmalogens.	False		full text + title/abstract/keywords
+32217665	True	False	False		2020	The rRNA m<sup>6</sup>A methyltransferase METTL5 is involved in pluripotency and developmental programs.	False		title/abstract/keywords only
+32222833	True	False	False		2020	CIAO3 protein forms a stable ternary complex with two key players of the human cytosolic iron-sulfur cluster assembly machinery.	False		title/abstract/keywords only
+32291319	True	False	False		2020	Golgi-Localized PAQR4 Mediates Antiapoptotic Ceramidase Activity in Breast Cancer.	False		title/abstract/keywords only
+32295846	True	True	False	PMC7272337	2020	CSAG1 maintains the integrity of the mitotic centrosome in cells with defective p53.	False		full text + title/abstract/keywords
+32307552	True	True	False	PMC7268788	2020	Loss of function mutations in CCDC32 cause a congenital syndrome characterized by craniofacial, cardiac and neurodevelopmental anomalies.	False		full text + title/abstract/keywords
+32320651	True	False	False		2020	Dissecting the Roles of Mitochondrial Complex I Intermediate Assembly Complex Factors in the Biogenesis of Complex I.	False		title/abstract/keywords only
+32323311	True	False	False		2020	ADAMTS19-associated heart valve defects: Novel genetic variants consolidating a recognizable cardiac phenotype.	False		title/abstract/keywords only
+32325220	True	False	False		2020	Structure of human DPEP3 in complex with the SC-003 antibody Fab fragment reveals basis for lack of dipeptidase activity.	False		title/abstract/keywords only
+32339528	True	False	False		2020	Functional Analysis of the Role of Equilibrative Nucleobase Transporter 1 (ENBT1/SLC43A3) in Adenine Transport in HepG2 Cells.	False		title/abstract/keywords only
+32371392	True	True	False	PMC7307190	2020	The human mitochondrial 12S rRNA m<sup>4</sup>C methyltransferase METTL15 is required for mitochondrial function.	False		full text + title/abstract/keywords
+32375023	True	True	True	PMC7267773	2020	CCDC61/VFL3 Is a Paralog of SAS6 and Promotes Ciliary Functions.	False		full text + title/abstract/keywords
+32385160	True	True	False	PMC7261015	2020	ZBED2 is an antagonist of interferon regulatory factor 1 and modifies cell identity in pancreatic cancer.	False		full text + title/abstract/keywords
+32402286	True	False	False		2020	CCDC57 Cooperates with Microtubules and Microcephaly Protein CEP63 and Regulates Centriole Duplication and Mitotic Progression.	False		title/abstract/keywords only
+32427860	True	True	True	PMC7237682	2020	DALRD3 encodes a protein mutated in epileptic encephalopathy that targets arginine tRNAs for 3-methylcytosine modification.	False		full text + title/abstract/keywords
+32433612	True	True	True	PMC7610944	2020	TASL is the SLC15A4-associated adaptor for IRF5 activation by TLR7-9.	False		full text + title/abstract/keywords
+32483132	True	True	True	PMC7264293	2020	Multi-site-mediated entwining of the linear WIR-motif around WIPI β-propellers for autophagy.	False		full text + title/abstract/keywords
+32492081	True	True	True	PMC7401821	2020	ERdj8 governs the size of autophagosomes during the formation process.	False		full text + title/abstract/keywords
+32492421	True	True	True	PMC7313144	2020	HMCES Maintains Replication Fork Progression and Prevents Double-Strand Breaks in Response to APOBEC Deamination and Abasic Site Formation.	False		full text + title/abstract/keywords
+32496561	True	True	True	PMC7337498	2020	LUZP1 and the tumor suppressor EPLIN modulate actin stability to restrict primary cilia formation.	False		full text + title/abstract/keywords
+32499443	True	True	False	PMC7396227	2020	NELL2-mediated lumicrine signaling through OVCH2 is required for male fertility.	False		full text + title/abstract/keywords
+32513819	True	True	True	PMC7375690	2020	A heterodimeric SNX4--SNX7 SNX-BAR autophagy complex coordinates ATG9A trafficking for efficient autophagosome assembly.	False		full text + title/abstract/keywords
+32521232	True	True	False	PMC7415739	2020	Local Mitochondrial ATP Production Regulates Endothelial Fatty Acid Uptake and Transport.	False		full text + title/abstract/keywords
+32567732	True	True	True	PMC7361284	2020	MICOS assembly controls mitochondrial inner membrane remodeling and crista junction redistribution to mediate cristae formation.	False		full text + title/abstract/keywords
+32579589	True	True	True	PMC7313976	2020	ABHD11, a new diacylglycerol lipase involved in weight gain regulation.	False		full text + title/abstract/keywords
+32591534	True	True	True	PMC7319964	2020	The MiDAC histone deacetylase complex is essential for embryonic development and has a unique multivalent structure.	False		full text + title/abstract/keywords
+32619401	True	True	False	PMC7413861	2020	Bi-allelic DNAH8 Variants Lead to Multiple Morphological Abnormalities of the Sperm Flagella and Primary Male Infertility.	False		full text + title/abstract/keywords
+32629025	True	False	False		2020	Identification of human glycerophosphodiesterase 3 as an ecto phospholipase C that converts the G protein-coupled receptor 55 agonist lysophosphatidylinositol to bioactive monoacylglycerols in cultured mammalian cells.	False		title/abstract/keywords only
+32640219	True	True	True	PMC7473174	2020	The ZGRF1 Helicase Promotes Recombinational Repair of Replication-Blocking DNA Damage in Human Cells.	False		full text + title/abstract/keywords
+32669547	True	True	True	PMC7363849	2020	Structural snapshots of human pre-60S ribosomal particles before and after nuclear export.	False		full text + title/abstract/keywords
+32673564	True	True	False	PMC7413853	2020	Bi-allelic Mutations in M1AP Are a Frequent Cause of Meiotic Arrest and Severely Impaired Spermatogenesis Leading to Male Infertility.	False		full text + title/abstract/keywords
+32690950	True	True	True	PMC7610351	2020	STEEP mediates STING ER exit and activation of signaling.	False		full text + title/abstract/keywords
+32694168	True	False	False		2020	TMEM147 interacts with lamin B receptor, regulates its localization and levels, and affects cholesterol homeostasis.	False		title/abstract/keywords only
+32694189	True	True	True	PMC7928229	2021	Tetraspanin18 regulates angiogenesis through VEGFR2 and Notch pathways.	False		full text + title/abstract/keywords
+32703943	True	True	True	PMC7378245	2020	Mutations in FAM50A suggest that Armfield XLID syndrome is a spliceosomopathy.	False		full text + title/abstract/keywords
+32776417	True	True	True	PMC7534640	2020	FAM111 protease activity undermines cellular fitness and is amplified by gain-of-function mutations in human disease.	False		full text + title/abstract/keywords
+32783947	True	False	False		2020	NACHO Engages N-Glycosylation ER Chaperone Pathways for α7 Nicotinic Receptor Assembly.	False		title/abstract/keywords only
+32791035	True	True	False	PMC7477015	2020	Bi-allelic Loss-of-function Variants in CFAP58 Cause Flagellar Axoneme and Mitochondrial Sheath Defects and Asthenoteratozoospermia in Humans and Mice.	False		full text + title/abstract/keywords
+32814900	True	True	False	PMC7610463	2020	An intramembrane chaperone complex facilitates membrane protein biogenesis.	False		full text + title/abstract/keywords
+32820719	True	True	True	PMC7505659	2020	An ER translocon for multi-pass membrane protein biogenesis.	False		full text + title/abstract/keywords
+32832629	True	True	True	PMC7439320	2020	Cryo-EM structures of calcium homeostasis modulator channels in diverse oligomeric assemblies.	False		full text + title/abstract/keywords
+32855533	True	True	True	PMC8559271	2021	Pathogenic variants in THSD4, encoding the ADAMTS-like 6 protein, predispose to inherited thoracic aortic aneurysm.	False		full text + title/abstract/keywords
+32906142	True	True	True	PMC7718333	2020	SLC25A51 is a mammalian mitochondrial NAD<sup>+</sup> transporter.	False		full text + title/abstract/keywords
+32917725	True	True	False	PMC7667972	2020	Glycerophosphodiesterase 3 (GDE3) is a lysophosphatidylinositol-specific ectophospholipase C acting as an endocannabinoid signaling switch.	False		full text + title/abstract/keywords
+32923617	True	True	True	PMC7449687	2020	METTL6 is a tRNA m<sup>3</sup>C methyltransferase that regulates pluripotency and tumor cell growth.	False		full text + title/abstract/keywords
+32923640	True	True	True	PMC7455189	2020	The NEMP family supports metazoan fertility and nuclear envelope stiffness.	False		full text + title/abstract/keywords
+32929201	True	True	True	PMC7653546	2020	PD-L1-mediated gasdermin C expression switches apoptosis to pyroptosis in cancer cells and facilitates tumour necrosis.	False		full text + title/abstract/keywords
+32946374	True	True	True	PMC7500955	2020	WDR90 is a centriolar microtubule wall protein important for centriole architecture integrity.	False		full text + title/abstract/keywords
+32977469	True	True	True	PMC7598220	2020	Transmembrane BAX Inhibitor-1 Motif Containing Protein 5 (TMBIM5) Sustains Mitochondrial Structure, Shape, and Function by Impacting the Mitochondrial Protein Synthesis Machinery.	False		full text + title/abstract/keywords
+33009411	True	True	True	PMC7532188	2020	TASOR is a pseudo-PARP that directs HUSH complex assembly and epigenetic transposon control.	False		full text + title/abstract/keywords
+33023933	True	True	True	PMC7749629	2021	Mammalian nuclear TRUB1, mitochondrial TRUB2, and cytoplasmic PUS10 produce conserved pseudouridine 55 in different sets of tRNA.	False		full text + title/abstract/keywords
+33048000	True	True	True	PMC8244758	2021	The DExD box ATPase DDX55 is recruited to domain IV of the 28S ribosomal RNA by its C-terminal region.	False		full text + title/abstract/keywords
+33087354	True	True	True	PMC7577609	2020	MCART1/SLC25A51 is required for mitochondrial NAD transport.	True	coessential*	full text + title/abstract/keywords
+33103737	True	False	False		2020	YIF1B mutations cause a post-natal neurodevelopmental syndrome associated with Golgi and primary cilium alterations.	False		title/abstract/keywords only
+33124720	True	True	False	PMC7839234	2020	Deorphaning a solute carrier 22 family member, SLC22A15, through functional genomic studies.	False		full text + title/abstract/keywords
+33130824	True	True	True	PMC7603527	2020	OPA1 and MICOS Regulate mitochondrial crista dynamics and formation.	False		full text + title/abstract/keywords
+33139725	True	True	True	PMC7606486	2020	CFAP45 deficiency causes situs abnormalities and asthenospermia by disrupting an axonemal adenine nucleotide homeostasis module.	False		full text + title/abstract/keywords
+33154469	True	True	True	PMC7645770	2020	ZNF354C is a transcriptional repressor that inhibits endothelial angiogenic sprouting.	False		full text + title/abstract/keywords
+33184234	True	True	False	PMC8177725	2020	A ubiquitin ligase mediates target-directed microRNA decay independently of tailing and trimming.	False		full text + title/abstract/keywords
+33184237	True	True	False	PMC8356967	2020	The ZSWIM8 ubiquitin ligase mediates target-directed microRNA degradation.	False		full text + title/abstract/keywords
+33184450	True	True	True	PMC8322076	2021	The SUMOylation of TAB2 mediated by TRIM60 inhibits MAPK/NF-κB activation and the innate immune response.	False		full text + title/abstract/keywords
+33208952	True	True	True	PMC7770032	2020	MFSD12 mediates the import of cysteine into melanosomes and lysosomes.	False		full text + title/abstract/keywords
+33219126	True	True	True	PMC7949124	2021	Metallo-β-lactamase domain-containing protein 2 is S-palmitoylated and exhibits acyl-CoA hydrolase activity.	False		full text + title/abstract/keywords
+33227311	True	True	False	PMC8133392	2021	ZZEF1 is a Histone Reader and Transcriptional Coregulator of Krüppel-Like Factors.	False		full text + title/abstract/keywords
+33228246	True	True	True	PMC7699536	2020	ACTN4 Mediates SEPT14 Mutation-Induced Sperm Head Defects.	False		full text + title/abstract/keywords
+33232676	True	True	False	PMC7820625	2020	DAAM2 Variants Cause Nephrotic Syndrome via Actin Dysregulation.	False		full text + title/abstract/keywords
+33238161	True	True	False	PMC7796963	2021	Distinct Structures and Dynamics of Chromatosomes with Different Human Linker Histone Isoforms.	False		full text + title/abstract/keywords
+33243891	True	True	False	PMC7116630	2020	Elongational stalling activates mitoribosome-associated quality control.	False		full text + title/abstract/keywords
+33262325	True	True	True	PMC7708531	2020	Epistasis-driven identification of SLC25A51 as a regulator of human mitochondrial NAD import.	True	DepMap	full text + title/abstract/keywords
+33280498	True	True	False	PMC8525924	2021	RNF186 regulates EFNB1 (ephrin B1)-EPHB2-induced autophagy in the colonic epithelial cells for the maintenance of intestinal homeostasis.	False		full text + title/abstract/keywords
+33310703	True	True	True	PMC7948421	2021	ATP13A3 is a major component of the enigmatic mammalian polyamine transport system.	False		full text + title/abstract/keywords
+33310911	True	False	False		2021	PLEKHG4B enables actin cytoskeletal remodeling during epithelial cell-cell junction formation.	False		title/abstract/keywords only
+33321094	True	True	True	PMC7864614	2021	The ubiquitin ligase RFWD3 is required for translesion DNA synthesis.	False		full text + title/abstract/keywords
+33357433	True	False	False		2020	Ribosome 18S m<sup>6</sup>A Methyltransferase METTL5 Promotes Translation Initiation and Breast Cancer Cell Growth.	False		title/abstract/keywords only
+33367824	True	True	True	PMC7826282	2021	NOPCHAP1 is a PAQosome cofactor that helps loading NOP58 on RUVBL1/2 during box C/D snoRNP biogenesis.	False		full text + title/abstract/keywords
+33376131	True	True	True	PMC7772775	2021	The uncharacterized protein FAM47E interacts with PRMT5 and regulates its functions.	False		full text + title/abstract/keywords
+33384352	True	True	False	PMC8315080	2021	QRICH1 dictates the outcome of ER stress through transcriptional control of proteostasis.	False		full text + title/abstract/keywords
+33408175	True	True	False	PMC8094947	2021	Inducible Guanylate-Binding Protein 7 Facilitates Influenza A Virus Replication by Suppressing Innate Immunity via NF-κB and JAK-STAT Signaling Pathways.	False		full text + title/abstract/keywords
+33428944	True	True	True	PMC7948815	2021	Enzymatic characterization of three human RNA adenosine methyltransferases reveals diverse substrate affinities and reaction optima.	False		full text + title/abstract/keywords
+33468658	True	True	False	PMC7848545	2021	A short ORF-encoded transcriptional regulator.	False		full text + title/abstract/keywords
+33472045	True	True	False	PMC7895902	2021	Deleterious variants in X-linked CFAP47 induce asthenoteratozoospermia and primary male infertility.	False		full text + title/abstract/keywords
+33479178	True	True	False	PMC7848706	2021	Novel function of <i>N</i>-acetyltransferase for microtubule stability and JNK signaling in <i>Drosophila</i> organ development.	False		full text + title/abstract/keywords
+33496845	True	True	False	PMC8099798	2021	A biallelic variant in CLRN2 causes non-syndromic hearing loss in humans.	False		full text + title/abstract/keywords
+33508233	True	True	True	PMC7895996	2021	Homozygous mutations in C14orf39/SIX6OS1 cause non-obstructive azoospermia and premature ovarian insufficiency in humans.	False		full text + title/abstract/keywords
+33558764	True	True	True	PMC7610652	2021	Cryo-EM structures of human RNA polymerase III in its unbound and transcribing states.	False		full text + title/abstract/keywords
+33563959	True	True	True	PMC7873184	2021	The methyltransferase METTL9 mediates pervasive 1-methylhistidine modification in mammalian proteomes.	False		full text + title/abstract/keywords
+33587225	True	True	False	PMC7610860	2021	SOGA1 and SOGA2/MTCL1 are CLASP-interacting proteins required for faithful chromosome segregation in human cells.	False		full text + title/abstract/keywords
+33593792	True	True	True	PMC7938800	2021	Conditional targeting of phosphatidylserine decarboxylase to lipid droplets.	False		full text + title/abstract/keywords
+33626338	True	True	False	PMC8008497	2021	Homozygous pathogenic variants in ACTL9 cause fertilization failure and male infertility in humans and mice.	False		full text + title/abstract/keywords
+33633399	True	True	False	PMC8315899	2021	Cryo-EM structure of the Hippo signaling integrator human STRIPAK.	False		full text + title/abstract/keywords
+33649426	True	True	True	PMC7921093	2021	Human METTL7B is an alkyl thiol methyltransferase that metabolizes hydrogen sulfide and captopril.	False		full text + title/abstract/keywords
+33660365	True	True	True	PMC8045932	2021	A novel p53 regulator, C16ORF72/TAPR1, buffers against telomerase inhibition.	False		full text + title/abstract/keywords
+33711283	True	True	False	PMC8254759	2021	HectD1 controls hematopoietic stem cell regeneration by coordinating ribosome assembly and protein synthesis.	False		full text + title/abstract/keywords
+33725486	True	False	False		2021	Caspase cleavage releases a nuclear protein fragment that stimulates phospholipid scrambling at the plasma membrane.	False		title/abstract/keywords only
+33731436	True	True	False	PMC8085789	2021	GDE2-RECK controls ADAM10 α-secretase-mediated cleavage of amyloid precursor protein.	False		full text + title/abstract/keywords
+33753518	True	True	True	PMC8020751	2021	TMEM70 and TMEM242 help to assemble the rotor ring of human ATP synthase and interact with assembly factors for complex I.	False		full text + title/abstract/keywords
+33789107	True	True	False	PMC8283736	2021	Asterix/Gtsf1 links tRNAs and piRNA silencing of retrotransposons.	False		full text + title/abstract/keywords
+33799331	True	True	True	PMC8001983	2021	m<sup>5</sup>U54 tRNA Hypomodification by Lack of TRMT2A Drives the Generation of tRNA-Derived Small RNAs.	False		full text + title/abstract/keywords
+33818125	True	True	False	PMC8174806	2021	Expression and function of human ribonuclease 4 in the kidney and urinary tract.	False		full text + title/abstract/keywords
+33824347	True	True	True	PMC8024261	2021	Deficiency of TMEM53 causes a previously unknown sclerosing bone disorder by dysregulation of BMP-SMAD signaling.	False		full text + title/abstract/keywords
+33850023	True	True	True	PMC8072408	2021	A model for a partnership of lipid transfer proteins and scramblases in membrane expansion and organelle biogenesis.	False		full text + title/abstract/keywords
+33857431	True	False	False		2021	BBLN-1 is essential for intermediate filament organization and apical membrane morphology.	False		title/abstract/keywords only
+33857516	True	False	False		2021	New insights on human Hsp70-escort protein 1: Chaperone activity, interaction with liposomes, cellular localizations and HSPA's self-assemblies remodeling.	False		title/abstract/keywords only
+33859415	True	True	False	PMC8763319	2021	A genome-wide atlas of co-essential modules assigns function to uncharacterized genes.	True	"DepMap|""co-essential*""|coessential*"	full text + title/abstract/keywords
+33872655	True	True	False	PMC8569286	2021	Multisystem inflammation and susceptibility to viral infections in human ZNFX1 deficiency.	False		full text + title/abstract/keywords
+33876776	True	True	False	PMC8053974	2021	Inherited deficiency of stress granule ZNFX1 in patients with monocytosis and mycobacterial disease.	False		full text + title/abstract/keywords
+33882315	True	True	True	PMC8065176	2021	SLC22A14 is a mitochondrial riboflavin transporter required for sperm oxidative phosphorylation and male fertility.	False		full text + title/abstract/keywords
+33909987	True	True	False	PMC8141035	2021	Convergence of mammalian RQC and C-end rule proteolytic pathways via alanine tailing.	False		full text + title/abstract/keywords
+33913806	True	True	True	PMC8137146	2021	ZC3H4 restricts non-coding transcription in human cells.	False		full text + title/abstract/keywords
+33929485	True	True	True	PMC8077175	2021	TMEM41B and VMP1 are scramblases and regulate the distribution of cholesterol and phosphatidylserine.	False		full text + title/abstract/keywords
+33934390	True	True	True	PMC8126939	2021	The TBC1D31/praja2 complex controls primary ciliogenesis through PKA-directed OFD1 ubiquitylation.	False		full text + title/abstract/keywords
+33945503	True	True	False	PMC8203463	2021	C2orf69 mutations disrupt mitochondrial function and cause a multisystem human disorder with recurring autoinflammation.	False		full text + title/abstract/keywords
+33964204	True	True	False	PMC8254792	2021	WNK1 is an assembly factor for the human ER membrane protein complex.	False		full text + title/abstract/keywords
+33986552	True	False	False		2021	Cryo-EM structures of human GMPPA-GMPPB complex reveal how cells maintain GDP-mannose homeostasis.	False		title/abstract/keywords only
+34009673	True	True	True	PMC8280824	2021	Chromosomal instability by mutations in the novel minor spliceosome component CENATAC.	False		full text + title/abstract/keywords
+34012073	True	True	True	PMC8410789	2021	The metabolite α-KG induces GSDMC-dependent pyroptosis through death receptor 6-activated caspase-8.	False		full text + title/abstract/keywords
+34015269	True	False	False		2021	TMEM41B acts as an ER scramblase required for lipoprotein biogenesis and lipid homeostasis.	False		title/abstract/keywords only
+34042961	True	True	False	PMC8485435	2021	Spliceosome-regulated RSRP1-dependent NF-κB activation promotes the glioblastoma mesenchymal phenotype.	False		full text + title/abstract/keywords
+34043740	True	True	True	PMC8189496	2021	TMEM41B is a host factor required for the replication of diverse coronaviruses including SARS-CoV-2.	False		full text + title/abstract/keywords
+34048638	True	True	True	PMC8286142	2021	Structural and functional characterization of multiple myeloma associated cytoplasmic poly(A) polymerase FAM46C.	False		full text + title/abstract/keywords
+34052850	True	False	False		2021	FBXO43 variants in patients with female infertility characterized by early embryonic arrest.	False		title/abstract/keywords only
+34065512	True	True	True	PMC8161014	2021	CRL4-DCAF12 Ubiquitin Ligase Controls MOV10 RNA Helicase during Spermatogenesis and T Cell Activation.	False		full text + title/abstract/keywords
+34080749	True	True	False	PMC8256294	2021	CK1-mediated phosphorylation of FAM110A promotes its interaction with mitotic spindle and controls chromosomal alignment.	False		full text + title/abstract/keywords
+34108662	True	True	True	PMC7611218	2021	Elongation factor ELOF1 drives transcription-coupled repair and prevents genome instability.	False		full text + title/abstract/keywords
+34108663	True	True	False	PMC8890769	2021	ELOF1 is a transcription-coupled DNA repair factor that directs RNA polymerase II ubiquitylation.	False		full text + title/abstract/keywords
+34123281	True	True	True	PMC8148390	2020	Chemical tagging for sensitive determination of uridine modifications in RNA.	False		full text + title/abstract/keywords
+34131137	True	True	True	PMC8206348	2021	TSSC4 is a component of U5 snRNP that promotes tri-snRNP formation.	False		full text + title/abstract/keywords
+34135319	True	True	True	PMC8209004	2021	Structural basis of GTPase-mediated mitochondrial ribosome biogenesis and recycling.	False		full text + title/abstract/keywords
+34135511	True	True	False	PMC8776294	2021	GluD1 is a signal transduction device disguised as an ionotropic receptor.	False		full text + title/abstract/keywords
+34157114	True	True	True	PMC8266636	2021	Rrp1 translocase and ubiquitin ligase activities restrict the genome destabilising effects of Rad51 in fission yeast.	False		full text + title/abstract/keywords
+34160127	True	True	False	PMC8339671	2021	RNA-binding protein RBM47 stabilizes IFNAR1 mRNA to potentiate host antiviral activity.	False		full text + title/abstract/keywords
+34230638	True	True	True	PMC8553619	2021	Missense NAA20 variants impairing the NatB protein N-terminal acetyltransferase cause autosomal recessive developmental delay, intellectual disability, and microcephaly.	False		full text + title/abstract/keywords
+34235268	True	True	True	PMC8228594	2021	Human SLC46A2 Is the Dominant cGAMP Importer in Extracellular cGAMP-Sensing Macrophages and Monocytes.	False		full text + title/abstract/keywords
+34255152	True	False	False		2021	Bi-allelic truncating variants in CFAP206 cause male infertility in human and mouse.	False		title/abstract/keywords only
+34260926	True	True	True	PMC8358895	2021	Feedback control of PLK1 by Apolo1 ensures accurate chromosome segregation.	False		full text + title/abstract/keywords
+34260931	True	True	False	PMC8363759	2021	Human oncoprotein 5MP suppresses general and repeat-associated non-AUG translation via eIF3 by a common mechanism.	False		full text + title/abstract/keywords
+34268557	True	True	True	PMC8373065	2021	Mutually exclusive substrate selection strategy by human m3C RNA transferases METTL2A and METTL6.	False		full text + title/abstract/keywords
+34269178	True	True	True	PMC8373376	2021	Localization, proteomics, and metabolite profiling reveal a putative vesicular transporter for UDP-glucose.	False		full text + title/abstract/keywords
+34272366	True	True	True	PMC8285493	2021	Structure of PDE3A-SLFN12 complex reveals requirements for activation of SLFN12 RNase.	False		full text + title/abstract/keywords
+34301894	True	True	True	PMC8325298	2021	MYO1F regulates antifungal immunity by regulating acetylation of microtubules.	False		full text + title/abstract/keywords
+34346195	True	True	True	PMC8683635	2021	Exome sequencing identifies a disease variant of the mitochondrial ATP-Mg/Pi carrier SLC25A25 in two families with kidney stones.	False		full text + title/abstract/keywords
+34348960	True	False	False		2022	Homozygous mutations in &lt;i&gt;CCDC34&lt;/i&gt; cause male infertility with oligoasthenoteratozoospermia in humans and mice.	False		title/abstract/keywords only
+34351732	True	True	False	PMC8526403	2021	Synthesis of 3-<i>O</i>-Sulfated Heparan Sulfate Oligosaccharides Using 3-<i>O</i>-Sulfotransferase Isoform 4.	False		full text + title/abstract/keywords
+34354233	True	False	False		2021	ASTE1 promotes shieldin-complex-mediated DNA repair by attenuating end resection.	False		title/abstract/keywords only
+34365507	True	True	True	PMC8450105	2021	SDE2 is an essential gene required for ribosome biogenesis and the regulation of alternative splicing.	True	"DepMap|""Project Achilles"""	full text + title/abstract/keywords
+34388369	True	False	False		2021	Structure of the human signal peptidase complex reveals the determinants for signal peptide cleavage.	False		title/abstract/keywords only
+34411563	True	True	True	PMC8405936	2021	POGLUT2 and POGLUT3 O-glucosylate multiple EGF repeats in fibrillin-1, -2, and LTBP1 and promote secretion of fibrillin-1.	False		full text + title/abstract/keywords
+34429071	True	True	True	PMC10717410	2021	TMC4 is a novel chloride channel involved in high-concentration salt taste sensation.	False		full text + title/abstract/keywords
+34432599	True	True	True	PMC9037554	2022	C5orf51 is a component of the MON1-CCZ1 complex and controls RAB7A localization and stability during mitophagy.	False		full text + title/abstract/keywords
+34468713	True	False	False		2021	Transmembrane channel-like 4 is involved in pH and temperature-dependent modulation of salty taste.	False		title/abstract/keywords only
+34471290	True	True	False	PMC8538427	2021	The polar oxy-metabolome reveals the 4-hydroxymandelate CoQ10 synthesis pathway.	False		full text + title/abstract/keywords
+34481960	True	False	False		2021	Soluble expression and purification of human β-defensin DEFB136 in Escherichia coli and identification of its bioactivity.	False		title/abstract/keywords only
+34516797	True	True	False	PMC8744464	2021	Nucleolar maturation of the human small subunit processome.	True	codependen*	full text + title/abstract/keywords
+34556860	True	True	False	PMC8551019	2021	Activity-based RNA-modifying enzyme probing reveals DUS3L-mediated dihydrouridylation.	False		full text + title/abstract/keywords
+34562450	True	True	True	PMC8571522	2021	siRNA screening identifies METTL9 as a histidine Nπ-methyltransferase that targets the proinflammatory protein S100A9.	False		full text + title/abstract/keywords
+34584079	True	True	True	PMC8479045	2021	Assembly defects of human tRNA splicing endonuclease contribute to impaired pre-tRNA processing in pontocerebellar hypoplasia.	False		full text + title/abstract/keywords
+34623328	True	True	False	PMC8409591	2021	Ubiquitination of ATF6 by disease-associated RNF186 promotes the innate receptor-induced unfolded protein response.	False		full text + title/abstract/keywords
+34669960	True	True	True	PMC8599901	2021	THUMPD3-TRMT112 is a m2G methyltransferase working on a broad range of tRNA substrates.	False		full text + title/abstract/keywords
+34707288	True	True	False	PMC10981497	2021	SLC25A39 is necessary for mitochondrial glutathione import in mammalian cells.	False		full text + title/abstract/keywords
+34711951	True	False	False		2021	AKIRIN2 controls the nuclear import of proteasomes in vertebrates.	False		title/abstract/keywords only
+34723967	True	True	True	PMC8559929	2021	FOXR1 regulates stress response pathways and is necessary for proper brain development.	False		full text + title/abstract/keywords
+34774131	True	True	False	PMC11214777	2021	Balancing of mitochondrial translation through METTL8-mediated m&lt;sup&gt;3&lt;/sup&gt;C modification of mitochondrial tRNAs.	False		full text + title/abstract/keywords
+34782749	True	True	False	PMC8807603	2022	Regulators of tubulin polyglutamylation control nuclear shape and cilium disassembly by balancing microtubule and actin assembly.	False		full text + title/abstract/keywords
+34789874	True	True	False	PMC9150435	2021	Structure, function and pharmacology of human itch GPCRs.	False		full text + title/abstract/keywords
+34792097	True	False	False		2021	CFAP61 is required for sperm flagellum formation and male fertility in human and mouse.	False		title/abstract/keywords only
+34798057	True	True	False	PMC8792297	2022	Transcription-wide mapping of dihydrouridine reveals that mRNA dihydrouridylation is required for meiotic chromosome segregation.	False		full text + title/abstract/keywords
+34815492	True	True	True	PMC8610974	2021	Loss of zinc-finger protein 212 leads to Purkinje cell death and locomotive abnormalities with phospholipase D3 downregulation.	False		full text + title/abstract/keywords
+34818527	True	True	True	PMC8657813	2021	The ESCRT machinery counteracts Nesprin-2G-mediated mechanical forces during nuclear envelope repair.	False		full text + title/abstract/keywords
+34862464	True	True	True	PMC8642396	2021	Crystal structure of human METTL6, the m<sup>3</sup>C methyltransferase.	False		full text + title/abstract/keywords
+34918864	True	True	False	PMC8728618	2022	EMC is required for biogenesis of Xport-A, an essential chaperone of Rhodopsin-1 and the TRP channel.	False		full text + title/abstract/keywords
+34922197	True	False	False		2022	Structural basis for METTL6-mediated m3C RNA methylation.	False		title/abstract/keywords only
+34927784	True	True	True	PMC8811627	2022	ENTREP/FAM189A2 encodes a new ITCH ubiquitin ligase activator that is downregulated in breast cancer.	False		full text + title/abstract/keywords
+34929720	True	False	False		2022	Structural architecture of the human NALCN channelosome.	False		title/abstract/keywords only
+34932939	True	True	False	PMC8764202	2022	Bi-allelic variants in DNHD1 cause flagellar axoneme defects and asthenoteratozoospermia in humans and mice.	False		full text + title/abstract/keywords
+34969438	True	True	True	PMC8719881	2021	Defining the interactome of the human mitochondrial ribosome identifies SMIM4 and TMEM223 as respiratory chain assembly factors.	False		full text + title/abstract/keywords
+34969853	True	True	True	PMC8740581	2022	PKD-dependent PARP12-catalyzed mono-ADP-ribosylation of Golgin-97 is required for E-cadherin transport from Golgi to plasma membrane.	False		full text + title/abstract/keywords
+35017528	True	True	True	PMC8752778	2022	The RNA methyltransferase METTL8 installs m<sup>3</sup>C<sub>32</sub> in mitochondrial tRNAs<sup>Thr/Ser(UCN)</sup> to optimise tRNA structure and mitochondrial translation.	False		full text + title/abstract/keywords
+35025664	True	True	False	PMC9744443	2022	Olfactory receptor 2 in vascular macrophages drives atherosclerosis by NLRP3-dependent IL-1 production.	False		full text + title/abstract/keywords
+35032339	True	True	True	PMC8844120	2022	NAP1L2 drives mesenchymal stem cell senescence and suppresses osteogenic differentiation.	False		full text + title/abstract/keywords
+35033535	True	True	True	PMC8857481	2022	The METTL5-TRMT112 N<sup>6</sup>-methyladenosine methyltransferase complex regulates mRNA translation via 18S rRNA methylation.	False		full text + title/abstract/keywords
+35051350	True	True	False	PMC8859966	2022	Pseudouridine synthases modify human pre-mRNA co-transcriptionally and affect pre-mRNA processing.	False		full text + title/abstract/keywords
+35080992	True	True	True	PMC9250361	2022	Ovarian carcinoma immunoreactive antigen-like protein 2 (OCIAD2) is a novel complex III-specific assembly factor in mitochondria.	False		full text + title/abstract/keywords
+35104454	True	False	False		2022	Multiple PDE3A modulators act as molecular glues promoting PDE3A-SLFN12 interaction and induce SLFN12 dephosphorylation and cell death.	False		title/abstract/keywords only
+35157000	True	True	True	PMC8932523	2022	Neuralized-like protein 4 (NEURL4) mediates ADP-ribosylation of mitochondrial proteins.	False		full text + title/abstract/keywords
+35167828	True	True	False	PMC12333389	2022	C9ORF78 partially localizes to centromeres and plays a role in chromosome segregation.	False		full text + title/abstract/keywords
+35174165	True	True	True	PMC8841411	2021	Biallelic Variants in <i>CFAP61</i> Cause Multiple Morphological Abnormalities of the Flagella and Male Infertility.	False		full text + title/abstract/keywords
+35182431	True	True	False	PMC9038680	2022	Tiki proteins are glycosylphosphatidylinositol-anchored proteases.	False		full text + title/abstract/keywords
+35188580	True	True	True	PMC8934646	2022	The intrinsically disordered TSSC4 protein acts as a helicase inhibitor, placeholder and multi-interaction coordinator during snRNP assembly and recycling.	False		full text + title/abstract/keywords
+35197565	True	True	False	PMC9433399	2022	ENKD1 promotes epidermal stratification by regulating spindle orientation in basal keratinocytes.	False		full text + title/abstract/keywords
+35210360	True	True	True	PMC8892353	2022	Mitochondrial COA7 is a heme-binding protein with disulfide reductase activity, which acts in the early stages of complex IV assembly.	False		full text + title/abstract/keywords
+35213692	True	True	True	PMC9136880	2022	HEATR3 variants impair nuclear import of uL18 (RPL5) and drive Diamond-Blackfan anemia.	False		full text + title/abstract/keywords
+35241646	True	True	True	PMC8894380	2022	A multi-factor trafficking site on the spliceosome remodeling enzyme BRR2 recruits C9ORF78 to regulate alternative splicing.	False		full text + title/abstract/keywords
+35260756	True	True	True	PMC8904536	2022	Mammalian HEMK1 methylates glutamine residue of the GGQ motif of mitochondrial release factors.	False		full text + title/abstract/keywords
+35278701	True	True	True	PMC8968063	2022	Key features of inhibitor binding to the human mitochondrial pyruvate carrier hetero-dimer.	False		full text + title/abstract/keywords
+35290797	True	False	False		2022	Crystal structure of the human MUS81-EME2 complex.	False		title/abstract/keywords only
+35301795	True	True	False	PMC9066061	2022	ENKD1 promotes CP110 removal through competing with CEP97 to initiate ciliogenesis.	False		full text + title/abstract/keywords
+35311970	True	True	True	PMC9280987	2022	Inner nuclear membrane protein TMEM201 maintains endothelial cell migration and angiogenesis by interacting with the LINC complex.	False		full text + title/abstract/keywords
+35354024	True	True	True	PMC9004343	2022	Labeling of heterochronic ribosomes reveals C1ORF109 and SPATA5 control a late step in human ribosome assembly.	False		full text + title/abstract/keywords
+35387802	True	False	False		2023	Biallelic <i>CFAP61</i> variants cause male infertility in humans and mice with severe oligoasthenoteratozoospermia.	False		title/abstract/keywords only
+35410347	True	True	True	PMC9001643	2022	Conservation of the unusual dimeric JmjC fold of JMJD7 from Drosophila melanogaster to humans.	False		full text + title/abstract/keywords
+35418677	True	False	False		2022	Tethered peptide activation mechanism of the adhesion GPCRs ADGRG2 and ADGRG4.	False		title/abstract/keywords only
+35418678	True	False	False		2022	Structural basis for the tethered peptide activation of adhesion GPCRs.	False		title/abstract/keywords only
+35427157	True	True	True	PMC9012467	2022	Cln5 represents a new type of cysteine-based <i>S</i>-depalmitoylase linked to neurodegeneration.	False		full text + title/abstract/keywords
+35450818	True	True	False	PMC9372290	2022	Mitochondrial micropeptide STMP1 promotes G1/S transition by enhancing mitochondrial complex IV activity.	False		full text + title/abstract/keywords
+35450882	True	True	True	PMC9067407	2022	HMCES protects immunoglobulin genes specifically from deletions during somatic hypermutation.	False		full text + title/abstract/keywords
+35455965	True	True	True	PMC9031525	2022	Functional Study of <i>TMEM163</i> Gene Variants Associated with Hypomyelination Leukodystrophy.	False		full text + title/abstract/keywords
+35482892	True	False	False		2022	Posttranslational modification of microtubules by the MATCAP detyrosinase.	False		title/abstract/keywords only
+35486881	True	True	False	PMC9875861	2022	Human Protein-l-isoaspartate <i>O</i>-Methyltransferase Domain-Containing Protein 1 (PCMTD1) Associates with Cullin-RING Ligase Proteins.	False		full text + title/abstract/keywords
+35499567	True	True	True	PMC9067936	2022	SHIP164 is a chorein motif lipid transfer protein that controls endosome-Golgi membrane traffic.	False		full text + title/abstract/keywords
+35512830	True	True	True	PMC9070665	2022	Rab40c regulates focal adhesions and PP6 activity by controlling ANKRD28 ubiquitylation.	False		full text + title/abstract/keywords
+35513392	True	True	True	PMC9072411	2022	Combinatorial GxGxE CRISPR screen identifies SLC25A39 in mitochondrial glutathione transport linking iron homeostasis to OXPHOS.	False		full text + title/abstract/keywords
+35525273	True	True	True	PMC9168615	2022	Human UFSP1 translated from an upstream near-cognate initiation codon functions as an active UFM1-specific protease.	False		full text + title/abstract/keywords
+35534203	True	False	False		2023	Biallelic mutations in <i>ARMC12</i> cause asthenozoospermia and multiple midpiece defects in humans and mice.	False		title/abstract/keywords only
+35545041	True	True	True	PMC9201767	2022	SETD4-mediated KU70 methylation suppresses apoptosis.	False		full text + title/abstract/keywords
+35585237	True	True	False	PMC9202145	2022	Gibbin mesodermal regulation patterns epithelial development.	False		full text + title/abstract/keywords
+35589130	True	True	True	PMC9186391	2022	RBM33 directs the nuclear export of transcripts containing GC-rich elements.	False		full text + title/abstract/keywords
+35606353	True	True	True	PMC9126914	2022	GSK3β palmitoylation mediated by ZDHHC4 promotes tumorigenicity of glioblastoma stem cells in temozolomide-resistant glioblastoma through the EZH2-STAT3 axis.	False		full text + title/abstract/keywords
+35638551	True	True	True	PMC9973481	2023	APOLD1 loss causes endothelial dysfunction involving cell junctions, cytoskeletal architecture, and Weibel-Palade bodies, while disrupting hemostasis.	False		full text + title/abstract/keywords
+35642635	True	True	True	PMC9151691	2022	Impaired activity of the fusogenic micropeptide Myomixer causes myopathy resembling Carey-Fineman-Ziter syndrome.	False		full text + title/abstract/keywords
+35676484	True	True	True	PMC9200640	2022	Mechanism of mitoribosomal small subunit biogenesis and preinitiation.	False		full text + title/abstract/keywords
+35686936	True	True	True	PMC9237825	2022	Selectively Fluorinated Citronellol Analogues Support a Hydrogen Bonding Donor Interaction with the Human OR1A1 Olfactory Receptor.	False		full text + title/abstract/keywords
+35709277	True	True	False	PMC10064918	2022	Structure of the mammalian ribosome as it decodes the selenocysteine UGA codon.	False		full text + title/abstract/keywords
+35727972	True	True	True	PMC9245706	2022	Mutations in &lt;i&gt;MINAR2&lt;/i&gt; encoding membrane integral NOTCH2-associated receptor 2 cause deafness in humans and mice.	False		full text + title/abstract/keywords
+35782979	True	True	True	PMC9243342	2022	Ubiquitin ligase DTX3 empowers mutant p53 to promote ovarian cancer development.	False		full text + title/abstract/keywords
+35792897	True	True	True	PMC12166272	2022	E3 ubiquitin ligase NEURL3 promotes innate antiviral response through catalyzing K63-linked ubiquitination of IRF7.	False		full text + title/abstract/keywords
+35840571	True	True	True	PMC9287327	2022	SLITRK2 variants associated with neurodevelopmental disorders impair excitatory synaptic function and cognition in mice.	False		full text + title/abstract/keywords
+35893676	True	True	True	PMC9394474	2022	TRIM7 Restricts Coxsackievirus and Norovirus Infection by Detecting the C-Terminal Glutamine Generated by 3C Protease Processing.	False		full text + title/abstract/keywords
+35912435	True	True	True	PMC9379554	2022	Regulation of mitochondrial proteostasis by the proton gradient.	False		full text + title/abstract/keywords
+35926457	True	True	True	PMC9638016	2022	Human UFSP1 is an active protease that regulates UFM1 maturation and UFMylation.	False		full text + title/abstract/keywords
+35939714	True	True	True	PMC9388157	2022	Early B cell factor 4 modulates FAS-mediated apoptosis and promotes cytotoxic function in human immune cells.	False		full text + title/abstract/keywords
+35989311	True	False	False		2023	The ZSWIM8 ubiquitin ligase regulates neurodevelopment by guarding the protein quality of intrinsically disordered Dab1.	False		title/abstract/keywords only
+36042231	True	True	True	PMC9427852	2022	Single-cell transcriptome and translatome dual-omics reveals potential mechanisms of human oocyte maturation.	False		full text + title/abstract/keywords
+36052645	True	False	False		2022	The atypical small GTPase RABL3 interacts with RAB11 to regulate early ciliogenesis in human cells.	False		title/abstract/keywords only
+36074821	True	True	False	PMC9547973	2022	The human disease gene LYSET is essential for lysosomal enzyme transport and viral infection.	False		full text + title/abstract/keywords
+36074822	True	False	False		2022	Lysosomal enzyme trafficking factor LYSET enables nutritional usage of extracellular proteins.	False		title/abstract/keywords only
+36096887	True	True	True	PMC9468337	2022	GCAF(TMEM251) regulates lysosome biogenesis by activating the mannose-6-phosphate pathway.	False		full text + title/abstract/keywords
+36161911	True	True	True	PMC9546558	2022	Human sperm TMEM95 binds eggs and facilitates membrane fusion.	False		full text + title/abstract/keywords
+36161949	True	True	True	PMC9546575	2022	Spns1 is a lysophospholipid transporter mediating lysosomal phospholipid salvage.	False		full text + title/abstract/keywords
+36173861	True	False	False		2022	Actin maturation requires the ACTMAP/C19orf54 protease.	False		title/abstract/keywords only
+36191189	True	True	True	PMC9564825	2022	SPACA9 is a lumenal protein of human ciliary singlet and doublet microtubules.	False		full text + title/abstract/keywords
+36198313	True	False	False		2022	Two independent respiratory chains adapt OXPHOS performance to glycolytic switch.	False		title/abstract/keywords only
+36261522	True	True	True	PMC9630114	2022	Substrate-driven assembly of a translocon for multipass membrane proteins.	False		full text + title/abstract/keywords
+36317962	True	True	True	PMC9714970	2022	Kiaa1024L/Minar2 is essential for hearing by regulating cholesterol distribution in hair bundles.	False		full text + title/abstract/keywords
+36321428	True	True	True	PMC9724676	2022	TMBIM5 is the Ca&lt;sup&gt;2+&lt;/sup&gt; /H&lt;sup&gt;+&lt;/sup&gt; antiporter of mammalian mitochondria.	False		full text + title/abstract/keywords
+36321563	True	True	True	PMC9728048	2022	IQCN disruption causes fertilization failure and male infertility due to manchette assembly defect.	False		full text + title/abstract/keywords
+36354136	True	True	True	PMC9647857	2022	N<sup>6</sup> -methyladenosine-modified lncRNA ARHGAP5-AS1 stabilises CSDE1 and coordinates oncogenic RNA regulons in hepatocellular carcinoma.	False		full text + title/abstract/keywords
+36355209	True	True	False	PMC11797904	2023	TMEM196 inhibits lung cancer metastasis by regulating the Wnt/β-catenin signaling pathway.	False		full text + title/abstract/keywords
+36355624	True	False	False		2023	IQUB deficiency causes male infertility by affecting the activity of p-ERK1/2/RSPH3.	False		title/abstract/keywords only
+36456177	True	True	True	PMC9719028	2023	Disrupted in renal carcinoma 2 (DIRC2/SLC49A4) is an H<sup>+</sup>-driven lysosomal pyridoxine exporter.	False		full text + title/abstract/keywords
+36481789	True	True	False	PMC9950085	2023	Deficiency of cancer/testis antigen gene CT55 causes male infertility in humans and mice.	False		full text + title/abstract/keywords
+36482135	True	True	True	PMC9892005	2023	Principles of mitoribosomal small subunit assembly in eukaryotes.	False		full text + title/abstract/keywords
+36523161	True	True	True	PMC10541466	2023	Fidgetin-like 2 depletion enhances cell migration by regulating GEF-H1, RhoA, and FAK.	False		full text + title/abstract/keywords
+36546111	True	False	False		2022	Mutations in CCIN cause teratozoospermia and male infertility.	False		title/abstract/keywords only
+36590171	True	True	True	PMC9800543	2023	Centrosomal protein 120 promotes centrosome amplification and gastric cancer progression via USP54-mediated deubiquitination of PLK4.	False		full text + title/abstract/keywords
+36592658	True	True	True	PMC9926310	2023	Sterol-regulated transmembrane protein TMEM86a couples LXR signaling to regulation of lysoplasmalogens in macrophages.	False		full text + title/abstract/keywords
+36593121	True	False	False		2023	Biallelic mutations in <i>CFAP54</i> cause male infertility with severe MMAF and NOA.	False		title/abstract/keywords only
+36608669	True	True	False	PMC9881729	2023	The FANCJ helicase unfolds DNA-protein crosslinks to promote their repair.	False		full text + title/abstract/keywords
+36610787	True	True	True	PMC9881137	2023	Structural basis of Qng1-mediated salvage of the micronutrient queuine from queuosine-5'-monophosphate as the biological substrate.	False		full text + title/abstract/keywords
+36631436	True	True	True	PMC9834230	2023	The HAPSTR2 retrogene buffers stress signaling and resilience in mammals.	True	"DepMap|""Project Achilles"""	full text + title/abstract/keywords
+36638793	True	True	False	PMC9994462	2023	An E3 ligase network engages GCN1 to promote the degradation of translation factors on stalled ribosomes.	False		full text + title/abstract/keywords
+36649229	True	True	True	PMC9844829	2023	Identification of ARMH4 and WIPF3 as human podocyte proteins with potential roles in immunomodulation and cytoskeletal dynamics.	False		full text + title/abstract/keywords
+36681779	True	True	False	PMC10070438	2023	E3 ligase RNF99 negatively regulates TLR-mediated inflammatory immune response via K48-linked ubiquitination of TAB2.	False		full text + title/abstract/keywords
+36689522	True	False	False		2023	Biallelic TUFT1 variants cause woolly hair, superficial skin fragility and desmosomal defects.	False		title/abstract/keywords only
+36695333	True	True	True	PMC10022746	2023	CCDC86 is a novel Ki-67-interacting protein important for cell division.	False		full text + title/abstract/keywords
+36732965	True	False	False		2020	A TOP6BL mutation abolishes meiotic DNA double-strand break formation and causes human infertility.	False		title/abstract/keywords only
+36737649	True	True	True	PMC9898238	2023	Lysine 222 in PPAR γ1 functions as the key site of MuRF2-mediated ubiquitination modification.	False		full text + title/abstract/keywords
+36792588	True	True	True	PMC9932082	2023	DNALI1 deficiency causes male infertility with severe asthenozoospermia in humans and mice by disrupting the assembly of the flagellar inner dynein arms and fibrous sheath.	False		full text + title/abstract/keywords
+36792600	True	True	True	PMC9931718	2023	Chemoproteomic discovery of a human RNA ligase.	False		full text + title/abstract/keywords
+36804407	True	False	False		2023	CYSRT1: An Antimicrobial Epidermal Protein that Can Interact with Late Cornified Envelope Proteins.	False		title/abstract/keywords only
+36848233	True	True	True	PMC10010011	2023	SAYSD1 senses UFMylated ribosome to safeguard co-translational protein translocation at the endoplasmic reticulum.	False		full text + title/abstract/keywords
+36876523	True	True	False	PMC10074088	2023	Vitamin C promotes ACE2 degradation and protects against SARS-CoV-2 infection.	False		full text + title/abstract/keywords
+36881763	True	True	True	PMC10085689	2023	Human and bacterial TatD enzymes exhibit apurinic/apyrimidinic (AP) endonuclease activity.	False		full text + title/abstract/keywords
+36897777	True	True	True	PMC10164416	2023	FAM193A is a positive regulator of p53 activity.	True	DepMap|codependen*	full text + title/abstract/keywords
+36920904	True	True	True	PMC10312363	2023	A combinatorial approach to uncover an additional Integrator subunit.	False		full text + title/abstract/keywords
+36943869	True	False	False		2023	UBL7 enhances antiviral innate immunity by promoting Lys27-linked polyubiquitination of MAVS.	False		title/abstract/keywords only
+36972172	True	False	False		2023	The ubiquitin E3 ligase TRIM10 promotes STING aggregation and activation in the Golgi apparatus.	False		title/abstract/keywords only
+36996198	True	True	False	PMC10751545	2023	Orphan receptor GPR158 serves as a metabotropic glycine receptor: mGlyR.	False		full text + title/abstract/keywords
+37009826	True	True	False	PMC10240204	2023	LINC00493-encoded microprotein SMIM26 exerts anti-metastatic activity in renal cell carcinoma.	False		full text + title/abstract/keywords
+37015930	True	True	True	PMC10073072	2023	Molecular basis for METTL9-mediated N1-histidine methylation.	False		full text + title/abstract/keywords
+37037900	True	True	False	PMC10287065	2023	UBXN2A suppresses the Rictor-mTORC2 signaling pathway, an established tumorigenic pathway in human colorectal cancer.	False		full text + title/abstract/keywords
+37041148	True	True	True	PMC10090152	2023	FOXI3 pathogenic variants cause one form of craniofacial microsomia.	False		full text + title/abstract/keywords
+37052235	True	True	True	PMC10245037	2023	Bi-allelic pathogenic variants in PABPC1L cause oocyte maturation arrest and female infertility.	False		full text + title/abstract/keywords
+37116706	True	True	True	PMC10220488	2023	Peptidoglycan recognition in Drosophila is mediated by LysMD3/4.	False		full text + title/abstract/keywords
+37137720	True	True	False	PMC10353073	2023	METTL7A (TMT1A) and METTL7B (TMT1B) Are Responsible for Alkyl <i>S</i>-Thiol Methyl Transferase Activity in Liver.	False		full text + title/abstract/keywords
+37142673	True	True	True	PMC10313822	2023	Disruption of ER ion homeostasis maintained by an ER anion channel CLCC1 contributes to ALS-like pathologies.	False		full text + title/abstract/keywords
+37158588	True	True	True	PMC10219652	2023	Insights into cargo sorting by SNX32 and its role in neurite outgrowth.	False		full text + title/abstract/keywords
+37186866	True	True	True	PMC10214176	2023	The SHDRA syndrome-associated gene <i>TMEM260</i> encodes a protein-specific O-mannosyltransferase.	False		full text + title/abstract/keywords
+37192300	True	False	False		2023	The <i>Bacillus cereus</i> toxin alveolysin disrupts the intestinal epithelial barrier by inducing microtubule disorganization through CFAP100.	False		title/abstract/keywords only
+37246770	True	True	True	PMC10228412	2023	Human nucleolar protein 7 (NOL7) is required for early pre-rRNA accumulation and pre-18S rRNA processing.	True	DepMap	full text + title/abstract/keywords
+37256941	True	True	True	PMC10413679	2023	FIRRM/C1orf112 mediates resolution of homologous recombination intermediates in response to DNA interstrand crosslinks.	False		full text + title/abstract/keywords
+37257451	True	True	False	PMC10330838	2023	RBM33 is a unique m&lt;sup&gt;6&lt;/sup&gt;A RNA-binding protein that regulates ALKBH5 demethylase activity and substrate selectivity.	False		full text + title/abstract/keywords
+37267906	True	False	False		2023	Structural basis of mRNA binding by the human FERRY Rab5 effector complex.	False		title/abstract/keywords only
+37283053	True	True	True	PMC10415138	2023	N 2-methylguanosine modifications on human tRNAs and snRNA U6 are important for cell proliferation, protein translation and pre-mRNA splicing.	False		full text + title/abstract/keywords
+37334830	True	True	True	PMC10415124	2023	Structural and biochemical insights into the molecular mechanism of TRPT1 for nucleic acid ADP-ribosylation.	False		full text + title/abstract/keywords
+37347663	True	False	False		2023	FIRRM/C1orf112 is synthetic lethal with PICH and mediates RAD51 dynamics.	False		title/abstract/keywords only
+37377732	True	True	True	PMC10291262	2023	Spermatogenic cell-specific SPACA4 is essential for efficient sperm-zona pellucida binding <i>in vitro</i>.	False		full text + title/abstract/keywords
+37398635	True	True	True	PMC10308197	2023	"Molecular basis for protein histidine N1-specific methylation of the ""His-x-His"" motifs by METTL9."	False		full text + title/abstract/keywords
+37421948	True	True	True	PMC10432263	2023	Stretch-activated ion channel TMEM63B associates with developmental and epileptic encephalopathies and progressive neurodegeneration.	False		full text + title/abstract/keywords
+37463214	True	True	True	PMC10372682	2023	Small mitochondrial protein NERCLIN regulates cardiolipin homeostasis and mitochondrial ultrastructure.	False		full text + title/abstract/keywords
+37474505	True	True	True	PMC10359404	2023	Antiviral HIV-1 SERINC restriction factors disrupt virus membrane asymmetry.	False		full text + title/abstract/keywords
+37515771	True	False	False		2023	C1orf112 teams up with FIGNL1 to facilitate RAD51 filament disassembly and DNA interstrand cross-link repair.	False		title/abstract/keywords only
+37519246	True	True	True	PMC10505908	2023	A non-proteolytic release mechanism for HMCES-DNA-protein crosslinks.	False		full text + title/abstract/keywords
+37527038	True	False	False		2023	SLC15A4 controls endolysosomal TLR7-9 responses by recruiting the innate immune adaptor TASL.	False		title/abstract/keywords only
+37543036	True	True	False	PMC10592209	2023	TMEM63 proteins function as monomeric high-threshold mechanosensitive ion channels.	False		full text + title/abstract/keywords
+37546710	True	True	True	PMC10400050	2023	MXRA7 is involved in megakaryocyte differentiation and platelet production.	False		full text + title/abstract/keywords
+37556550	True	True	True	PMC10411901	2023	FIRRM cooperates with FIGNL1 to promote RAD51 disassembly during DNA repair.	True	codependen*	full text + title/abstract/keywords
+37616343	True	True	True	PMC10617673	2023	The midnolin-proteasome pathway catches proteins for ubiquitination-independent degradation.	False		full text + title/abstract/keywords
+37643469	True	True	True	PMC10446823	2023	FAM76B regulates NF-κB-mediated inflammatory pathway by influencing the translocation of hnRNPA2B1.	False		full text + title/abstract/keywords
+37648867	True	True	True	PMC10482677	2023	Identification of an alternative triglyceride biosynthesis pathway.	False		full text + title/abstract/keywords
+37651229	True	False	False		2023	Drug-induced eRF1 degradation promotes readthrough and reveals a new branch of ribosome quality control.	False		title/abstract/keywords only
+37673336	True	True	True	PMC10622838	2023	GPR114/ADGRG5 is activated by its tethered peptide agonist because it is a cleaved adhesion GPCR.	False		full text + title/abstract/keywords
+37681898	True	True	True	PMC10487028	2023	Polycystin-1 Interacting Protein-1 (CU062) Interacts with the Ectodomain of Polycystin-1 (PC1).	False		full text + title/abstract/keywords
+37696806	True	True	True	PMC10495444	2023	Extracellular calcium functions as a molecular glue for transmembrane helices to activate the scramblase Xkr4.	False		full text + title/abstract/keywords
+37768732	True	True	True	PMC10721274	2023	TBC1D32 variants disrupt retinal ciliogenesis and cause retinitis pigmentosa.	False		full text + title/abstract/keywords
+37802024	True	True	True	PMC10552648	2023	S-acylation of p62 promotes p62 droplet recruitment into autophagosomes in mammalian autophagy.	False		full text + title/abstract/keywords
+37804054	True	False	False		2023	LRRC23 deficiency causes male infertility with idiopathic asthenozoospermia by disrupting the assembly of radial spokes.	False		title/abstract/keywords only
+37816088	True	False	False		2023	TRIM55 promotes noncanonical NF-κB signaling and B cell-mediated immune responses by coordinating p100 ubiquitination and processing.	False		title/abstract/keywords only
+37823600	True	True	True	PMC10639050	2023	ZNF432 stimulates PARylation and inhibits DNA resection to balance PARPi sensitivity and resistance.	False		full text + title/abstract/keywords
+37832545	True	False	False		2023	TAK1 is an essential kinase for STING trafficking.	False		title/abstract/keywords only
+37838179	True	True	True	PMC10641671	2023	Biophysical characterization of chloride intracellular channel 6 (CLIC6).	False		full text + title/abstract/keywords
+37864924	True	False	False		2023	CCDC127 regulates lipid droplet homeostasis by enhancing mitochondria-ER contacts.	False		title/abstract/keywords only
+37883554	True	False	False		2023	Unbiased transcription factor CRISPR screen identifies ZNF800 as master repressor of enteroendocrine differentiation.	False		title/abstract/keywords only
+37884807	True	True	True	PMC10830421	2024	Mitochondrial matrix RTN4IP1/OPA10 is an oxidoreductase for coenzyme Q synthesis.	True	DepMap|codependen*	full text + title/abstract/keywords
+37890669	True	True	True	PMC10689955	2023	TMEM241 is a UDP-N-acetylglucosamine transporter required for M6P modification of NPC2 and cholesterol transport.	False		full text + title/abstract/keywords
+37917749	True	True	False	PMC11170550	2023	Autoregulatory control of mitochondrial glutathione homeostasis.	False		full text + title/abstract/keywords
+37926288	True	True	True	PMC11406190	2023	TBK1-stabilized ZNF268a recruits SETD4 to methylate TBK1 for efficient interferon signaling.	False		full text + title/abstract/keywords
+37934199	True	True	True	PMC10629824	2023	Novel axonemal protein ZMYND12 interacts with TTC29 and DNAH1, and is required for male fertility and flagellum function.	False		full text + title/abstract/keywords
+37934472	True	True	True	PMC10630097	2023	CCDC15 localizes to the centriole inner scaffold and controls centriole length and integrity.	False		full text + title/abstract/keywords
+37938770	True	True	False	PMC11000523	2023	TNRC18 engages H3K9me3 to mediate silencing of endogenous retrotransposons.	False		full text + title/abstract/keywords
+37950866	True	True	True	PMC10842721	2023	Self-reversal facilitates the resolution of HMCES DNA-protein crosslinks in cells.	False		full text + title/abstract/keywords
+37951215	True	False	False		2023	K6-linked ubiquitylation marks formaldehyde-induced RNA-protein crosslinks for resolution.	False		title/abstract/keywords only
+37951216	True	True	True	PMC10783637	2023	RNF14-dependent atypical ubiquitylation promotes translation-coupled resolution of RNA-protein crosslinks.	False		full text + title/abstract/keywords
+37973953	True	True	True	PMC10703691	2023	Primate-specific ZNF808 is essential for pancreatic development in humans.	False		full text + title/abstract/keywords
+37992713	True	False	False		2023	Glycosylated queuosines in tRNAs optimize translational rate and post-embryonic growth.	False		title/abstract/keywords only
+38009294	True	False	False		2024	Leucine zipper protein 1 (LUZP1) regulates the constriction velocity of the contractile ring during cytokinesis.	False		title/abstract/keywords only
+38013430	True	True	True	PMC10684152	2023	Cylicins are a structural component of the sperm calyx being indispensable for male fertility in mice and human.	False		full text + title/abstract/keywords
+38016475	True	False	False		2023	CPT1A induction following epigenetic perturbation promotes MAVS palmitoylation and activation to potentiate antitumor immunity.	False		title/abstract/keywords only
+38016540	True	False	False		2024	Tm4sf19 deficiency inhibits osteoclast multinucleation and prevents bone loss.	False		title/abstract/keywords only
+38016980	True	True	True	PMC10684865	2023	TM2D3, a mammalian homologue of Drosophila neurogenic gene product Almondex, regulates surface presentation of Notch receptors.	False		full text + title/abstract/keywords
+38042949	True	True	True	PMC10693566	2023	Structural insights into the role of GTPBP10 in the RNA maturation of the mitoribosome.	False		full text + title/abstract/keywords
+38127458	True	True	True	PMC10904053	2024	Mechanosensitive channels TMEM63A and TMEM63B mediate lung inflation-induced surfactant secretion.	False		full text + title/abstract/keywords
+38157846	True	True	False	PMC10922821	2024	Dual regulation of SLC25A39 by AFG3L2 and iron controls mitochondrial glutathione homeostasis.	False		full text + title/abstract/keywords
+38199006	True	True	True	PMC11046306	2024	METTL17 is an Fe-S cluster checkpoint for mitochondrial translation.	True	"DepMap|""Project Achilles"""	full text + title/abstract/keywords
+38231884	True	True	True	PMC11302414	2024	ARID3C Acts as a Regulator of Monocyte-to-Macrophage Differentiation Interacting with NPM1.	False		full text + title/abstract/keywords
+38286805	True	True	True	PMC10825145	2024	FLIP(C1orf112)-FIGNL1 complex regulates RAD51 chromatin association to promote viability after replication stress.	True	DepMap	full text + title/abstract/keywords
+38287013	True	True	True	PMC10825186	2024	A universal metabolite repair enzyme removes a strong inhibitor of the TCA cycle.	False		full text + title/abstract/keywords
+38307937	True	True	True	PMC10907362	2024	The deubiquitinase USP40 preserves endothelial integrity by targeting the heat shock protein HSP90β.	False		full text + title/abstract/keywords
+38312775	True	True	True	PMC10834362	2024	Bi-allelic variants in <i>DNAH3</i> cause male infertility with asthenoteratozoospermia in humans and mice.	False		full text + title/abstract/keywords
+38316879	True	True	True	PMC10948364	2024	Structural basis for RNA polymerase II ubiquitylation and inactivation in transcription-coupled repair.	False		full text + title/abstract/keywords
+38322995	True	True	True	PMC10845071	2024	Mieap forms membrane-less organelles involved in cardiolipin metabolism.	False		full text + title/abstract/keywords
+38373542	True	False	False		2024	The catalytic action of human d-lactate dehydrogenase is severely inhibited by oxalate and is impaired by mutations triggering d-lactate acidosis.	False		title/abstract/keywords only
+38421448	True	True	True	PMC10904503	2024	FAM76B regulates PI3K/Akt/NF-κB-mediated M1 macrophage polarization by influencing the stability of PIK3CD mRNA.	False		full text + title/abstract/keywords
+38422122	True	True	True	PMC10958617	2024	The immunopathological landscape of human pre-TCRα deficiency: From rare to common variants.	False		full text + title/abstract/keywords
+38425362	True	True	True	PMC7615680	2024	In vitro construction of the COQ metabolon unveils the molecular determinants of coenzyme Q biosynthesis.	False		full text + title/abstract/keywords
+38438251	True	True	True	PMC11093212	2024	SMYD4 monomethylates PRMT5 and forms a positive feedback loop to promote hepatocellular carcinoma progression.	False		full text + title/abstract/keywords
+38441556	True	True	True	PMC10942651	2024	Lack of CCDC146, a ubiquitous centriole and microtubule-associated protein, leads to non-syndromic male infertility in human and mouse.	False		full text + title/abstract/keywords
+38503280	True	False	False		2024	A gut-derived hormone regulates cholesterol metabolism.	False		title/abstract/keywords only
+38507452	True	True	True	PMC10990142	2024	Orphan lysosomal solute carrier MFSD1 facilitates highly selective dipeptide transport.	False		full text + title/abstract/keywords
+38513662	True	True	False	PMC10997467	2024	ERMA (TMEM94) is a P-type ATPase transporter for Mg&lt;sup&gt;2+&lt;/sup&gt; uptake in the endoplasmic reticulum.	False		full text + title/abstract/keywords
+38538795	True	False	False		2024	The HEAT repeat protein HPO-27 is a lysosome fission factor.	False		title/abstract/keywords only
+38554706	True	True	False	PMC11055677	2024	The SPATA5-SPATA5L1 ATPase complex directs replisome proteostasis to ensure genome integrity.	False		full text + title/abstract/keywords
+38570683	True	True	True	PMC11062913	2024	Structural basis of Integrator-dependent RNA polymerase II termination.	False		full text + title/abstract/keywords
+38573307	True	True	True	PMC10994659	2024	Disruption in <i>CYLC1</i> leads to acrosome detachment, sperm head deformity, and male in/subfertility in humans and mice.	False		full text + title/abstract/keywords
+38580077	True	True	False	PMC11292582	2024	An Inner Mitochondrial Membrane Microprotein from the SLC35A4 Upstream ORF Regulates Cellular Metabolism.	False		full text + title/abstract/keywords
+38614099	True	False	False		2024	ITPRIPL1 binds CD3ε to impede T cell activation and enable tumor immune evasion.	False		title/abstract/keywords only
+38667302	True	True	True	PMC11048823	2024	The E3 Ubiquitin Protein Ligase LINCR Amplifies the TLR-Mediated Signals through Direct Degradation of MKP1.	False		full text + title/abstract/keywords
+38670073	True	True	False	PMC11149550	2024	Positive selection CRISPR screens reveal a druggable pocket in an oligosaccharyltransferase required for inflammatory signaling to NF-κB.	True	DepMap	full text + title/abstract/keywords
+38718132	True	True	True	PMC11645656	2024	MRGPRX4 mediates phospho-drug-associated pruritus in a humanized mouse model.	False		full text + title/abstract/keywords
+38820148	True	True	True	PMC11141617	2024	HSDL2 links nutritional cues to bile acid and cholesterol homeostasis.	False		full text + title/abstract/keywords
+38832964	True	True	True	PMC11335285	2024	LUZP1 regulates the maturation of contractile actomyosin bundles.	False		full text + title/abstract/keywords
+38843396	True	False	False		2024	TRABD modulates mitochondrial homeostasis and tissue integrity.	False		title/abstract/keywords only
+38886340	True	True	True	PMC11182771	2024	Rft1 catalyzes lipid-linked oligosaccharide translocation across the ER membrane.	False		full text + title/abstract/keywords
+38892217	True	True	True	PMC11173073	2024	Human C15orf39 Inhibits Inflammatory Response via PRMT2 in Human Microglial HMC3 Cell Line.	False		full text + title/abstract/keywords
+38918637	True	True	True	PMC11479938	2024	Structural basis of tRNA recognition by the m<sup>3</sup>C RNA methyltransferase METTL6 in complex with SerRS seryl-tRNA synthetase.	False		full text + title/abstract/keywords
+38961186	True	True	False	PMC11891014	2024	PAQR4 regulates adipocyte function and systemic metabolic health by mediating ceramide levels.	False		full text + title/abstract/keywords
+38977856	True	True	False	PMC11887816	2024	Metabolic gene function discovery platform GeneMAP identifies SLC25A48 as necessary for mitochondrial choline import.	False		full text + title/abstract/keywords
+38992176	True	True	True	PMC11316107	2024	PPTC7 antagonizes mitophagy by promoting BNIP3 and NIX degradation via SCF&lt;sup&gt;FBXL4&lt;/sup&gt;.	False		full text + title/abstract/keywords
+39013473	True	False	False		2024	Competition between two HUSH complexes orchestrates the immune response to retroelement invasion.	False		title/abstract/keywords only
+39028815	True	True	True	PMC11259169	2024	R-loop resolution by ARIP4 helicase promotes androgen-mediated transcription induction.	False		full text + title/abstract/keywords
+39036954	True	True	True	PMC11381339	2024	The human mitochondrial translation factor TACO1 alleviates mitoribosome stalling at polyproline stretches.	False		full text + title/abstract/keywords
+39048817	True	True	False	PMC11625416	2024	SMYD5 methylation of rpL40 links ribosomal output to gastric cancer.	False		full text + title/abstract/keywords
+39048823	True	False	False		2024	TMEFF1 is a neuron-specific restriction factor for herpes simplex virus.	False		title/abstract/keywords only
+39048830	True	True	True	PMC11306101	2024	Human TMEFF1 is a restriction factor for herpes simplex virus in the brain.	False		full text + title/abstract/keywords
+39073202	True	False	False		2024	SNX32 Regulates Sorting and Trafficking of Activated EGFR to the Lysosomal Degradation Pathway.	False		title/abstract/keywords only
+39084256	True	False	False		2025	The membrane transporter SLC25A48 enables transport of choline into human mitochondria.	False		title/abstract/keywords only
+39103523	True	True	True	PMC11369092	2024	SMYD5 is a ribosomal methyltransferase that catalyzes RPL40 lysine methylation to enhance translation output and promote hepatocellular carcinoma.	False		full text + title/abstract/keywords
+39111307	True	True	True	PMC11953726	2024	SLC25A48 controls mitochondrial choline import and metabolism.	False		full text + title/abstract/keywords
+39173631	True	True	False	PMC11571744	2024	The modified RNA base acp&lt;sup&gt;3&lt;/sup&gt;U is an attachment site for N-glycans in glycoRNA.	False		full text + title/abstract/keywords
+39174844	True	False	False		2025	Structural basis for lipid transfer by the ATG2A-ATG9A complex.	False		title/abstract/keywords only
+39217145	True	True	True	PMC11366033	2024	Phospholipid scrambling induced by an ion channel/metabolite transporter complex.	False		full text + title/abstract/keywords
+39225180	True	True	False	PMC11759624	2025	ABHD8 antagonizes inflammation by facilitating chaperone-mediated autophagy-mediated degradation of NLRP3.	False		full text + title/abstract/keywords
+39319391	True	False	False		2024	CCDC158: A novel regulator in renal proximal tubular endocytosis unveiled through exome sequencing and interactome analysis.	False		title/abstract/keywords only
+39333773	True	True	True	PMC11574294	2024	The human disease-associated gene ZNFX1 controls inflammation through inhibition of the NLRP3 inflammasome.	False		full text + title/abstract/keywords
+39349455	True	True	True	PMC11443074	2024	CEP112 coordinates translational regulation of essential fertility genes during spermiogenesis through phase separation in humans and mice.	False		full text + title/abstract/keywords
+39354220	True	True	True	PMC11445529	2024	Human DUS1L catalyzes dihydrouridine modification at tRNA positions 16/17, and DUS1L overexpression perturbs translation.	False		full text + title/abstract/keywords
+39384743	True	True	True	PMC11464496	2024	MIR937 amplification potentiates ovarian cancer progression by attenuating FBXO16 inhibition on ULK1-mediated autophagy.	False		full text + title/abstract/keywords
+39423812	True	False	False		2024	A conserved fertilization complex bridges sperm and egg in vertebrates.	False		title/abstract/keywords only
+39424995	True	True	True	PMC11753361	2025	Membrane structure-responsive lipid scrambling by TMEM63B to control plasma membrane lipid distribution.	False		full text + title/abstract/keywords
+39476841	True	False	False		2024	Structure-guided discovery of bile acid derivatives for treating liver diseases without causing itch.	False		title/abstract/keywords only
+39481378	True	False	False		2024	IRGQ-mediated autophagy in MHC class I quality control promotes tumor immune evasion.	False		title/abstract/keywords only
+39482881	True	True	True	PMC11615593	2025	Epileptic encephalopathy linked to a DALRD3 missense variant that impairs tRNA modification.	False		full text + title/abstract/keywords
+39503742	True	True	True	PMC11540302	2024	DNAH3 deficiency causes flagellar inner dynein arm loss and male infertility in humans and mice.	False		full text + title/abstract/keywords
+39509507	True	True	True	PMC7617332	2024	Regulated N-glycosylation controls chaperone function and receptor trafficking.	True	"DepMap|""co-essential*"""	full text + title/abstract/keywords
+39513743	True	False	False		2024	The uncharacterized protein ZNF200 interacts with PRMT3 and aids its stability and nuclear translocation.	False		title/abstract/keywords only
+39570315	True	True	True	PMC11621510	2024	Identification of FBLL1 as a neuron-specific RNA 2'-O-methyltransferase mediating neuronal differentiation.	False		full text + title/abstract/keywords
+39587316	True	True	True	PMC12037411	2025	Discovery and mechanism of K63-linkage-directed deubiquitinase activity in USP53.	False		full text + title/abstract/keywords
+39680501	True	True	True	PMC11649117	2024	SLMO transfers phosphatidylserine between the outer and inner mitochondrial membrane in Drosophila.	False		full text + title/abstract/keywords
+39694035	True	False	False		2025	MYO1F positions cGAS on the plasma membrane to ensure full and functional signaling.	False		title/abstract/keywords only
+39713860	True	True	True	PMC11828466	2025	The novel ECM protein SNED1 mediates cell adhesion via the RGD-binding integrins α5β1 and αvβ3.	False		full text + title/abstract/keywords
+39716028	True	False	False		2025	Membrane structure-responsive lipid scramblase activity of the TMEM63/OSCA family.	False		title/abstract/keywords only
+39753129	True	True	False	PMC11866977	2025	CIROZ is dispensable in ancestral vertebrates but essential for left-right patterning in humans.	False		full text + title/abstract/keywords
+39775168	True	True	True	PMC11949838	2025	FUT10 and FUT11 are protein O-fucosyltransferases that modify protein EMI domains.	False		full text + title/abstract/keywords
+39786990	True	True	True	PMC11831618	2025	Human TRMT1 and TRMT1L paralogs ensure the proper modification state, stability, and function of tRNAs.	False		full text + title/abstract/keywords
+39786998	True	True	True	PMC11834103	2025	TRMT1L-catalyzed m<sup>2</sup><sub>2</sub>G27 on tyrosine tRNA is required for efficient mRNA translation and cell survival under oxidative stress.	False		full text + title/abstract/keywords
+39845104	True	True	True	PMC11751636	2025	Functional and comparative analysis of the Fe<sup>II</sup>/2-oxoglutarate-dependent dioxygenases without using any substrate.	False		full text + title/abstract/keywords
+39920308	True	True	True	PMC11914266	2025	Mutations in the kinesin KIF12 promote MASH in humans and mice by disrupting lipogenic enzyme turnover.	False		full text + title/abstract/keywords
+40067145	True	True	False	PMC12076216	2025	The Ulcerative Colitis-Associated Gene NXPE1 Catalyzes Glycan Modifications on Colonic Mucin.	False		full text + title/abstract/keywords
+40105103	True	False	False		2025	Definition of the human mitochondrial TOM interactome reveals TRABD as a new interacting protein.	False		title/abstract/keywords only
+40108300	True	False	False		2025	CLYBL averts vitamin B&lt;sub&gt;12&lt;/sub&gt; depletion by repairing malyl-CoA.	False		title/abstract/keywords only
+40146200	True	True	True	PMC11949491	2025	Deficiency in DNAH12 causes male infertility by impairing DNAH1 and DNALI1 recruitment in humans and mice.	False		full text + title/abstract/keywords
+40200126	True	True	False	PMC12087536	2025	TMEM65 regulates and is required for NCLX-dependent mitochondrial calcium efflux.	False		full text + title/abstract/keywords
+40285646	True	True	True	PMC12279241	2025	m&lt;sup&gt;6&lt;/sup&gt;A-Mediated TMCO3 Promotes Hepatocellular Carcinoma Progression by Facilitating the Membrane Translocation and Activation of AKT.	False		full text + title/abstract/keywords
+40328246	True	True	False	PMC12101526	2025	ZNF574 is a quality control factor for defective ribosome biogenesis intermediates.	False		full text + title/abstract/keywords
+40355556	True	True	True	PMC12170882	2025	The microprotein C16orf74/MICT1 promotes thermogenesis in brown adipose tissue.	False		full text + title/abstract/keywords
+40409267	True	True	True	PMC12256823	2025	Bi-allelic variants in POPDC2 cause an autosomal recessive syndrome presenting with cardiac conduction defects and hypertrophic cardiomyopathy.	False		full text + title/abstract/keywords
+40425538	True	True	True	PMC12216134	2025	NXPE1 alters the sialoglycome by acetylating sialic acids in the human colon.	False		full text + title/abstract/keywords
+40446798	True	False	False		2025	A microbial amino-acid-conjugated bile acid, tryptophan-cholic acid, improves glucose homeostasis via the orphan receptor MRGPRE.	False		title/abstract/keywords only
+40526720	True	True	True	PMC12207525	2025	The oncogene SLC35F2 is a high-specificity transporter for the micronutrients queuine and queuosine.	False		full text + title/abstract/keywords
+40593606	True	True	True	PMC12219730	2025	CFAP100 couples microtubule glutamylation to spindle pole integrity in keratinocytes to promote epidermal development.	False		full text + title/abstract/keywords
+40669140	True	False	False		2025	Preclinical characterization of novel multi-client inhibitors of Sec61 with broad antitumor activity.	False		title/abstract/keywords only
+40691517	True	True	False	PMC12768467	2025	TMEM65 functions as the mitochondrial Na<sup>+</sup>/Ca<sup>2+</sup> exchanger.	False		full text + title/abstract/keywords
+40739340	True	True	True	PMC12339391	2025	PEX39 facilitates the peroxisomal import of PTS2-containing proteins.	True	DepMap	full text + title/abstract/keywords
+40781244	True	True	True	PMC12334663	2025	Structure and function of the human apoptotic scramblase Xkr4.	False		full text + title/abstract/keywords
+40836090	True	True	True	PMC12488480	2025	A missing enzyme-rescue metabolite as cause of a rare skeletal dysplasia.	False		full text + title/abstract/keywords
+40836097	True	True	True	PMC12507699	2025	SLC45A4 is a pain gene encoding a neuronal polyamine transporter.	False		full text + title/abstract/keywords
+40885392	True	True	True	PMC12494543	2025	Identification of ALKBH6 as a nucleotide demethylase with a distinct substrate preference.	False		full text + title/abstract/keywords
+40963025	True	True	True	PMC12589099	2025	Covariation MS uncovers a protein that controls cysteine catabolism.	False		full text + title/abstract/keywords
+40972734	True	False	False		2025	Diversity of human choline transporters: substrate specificity, kinetic properties, and inhibitor sensitivity.	False		title/abstract/keywords only
+41075780	True	True	False	PMC12768559	2025	Machine-learning-guided discovery of SLC25A45 as a mediator of mitochondrial methylated amino acid import and carnitine synthesis.	False		full text + title/abstract/keywords
+41075794	True	True	True	PMC12594208	2025	SLC25A45 is required for mitochondrial uptake of methylated amino acids and de novo carnitine biosynthesis.	True	DepMap	full text + title/abstract/keywords
+41094145	True	False	False		2025	A conserved H3K14ub-driven H3K9me3 for chromatin compartmentalization.	False		title/abstract/keywords only
+41136621	True	True	True	PMC12716993	2025	A comprehensive tRNA pseudouridine map uncovers targets dependent on human stand-alone pseudouridine synthases.	False		full text + title/abstract/keywords
+41175374	True	False	False		2025	The ER thioredoxin-related transmembrane protein TMX2 controls redox-mediated tethering of ER-mitochondria contacts.	False		title/abstract/keywords only
+41211863	True	False	False		2025	Mechanisms of non-obstructive azoospermia caused by TOP6BL variants.	False		title/abstract/keywords only
+41570822	True	False	False		2026	Structural decoding of reversible covalent linkage of odorants in human olfactory receptor OR6A2.	False		title/abstract/keywords only

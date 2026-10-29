@@ -1,0 +1,55 @@
+universe 19296
+accessions added from UniProt HGNC xref: 5
+current GAF {'rows': 906445, 'not': 1501, 'nonuniprot': 8404} d1 rows 408594
+current unmapped d1 rows 1287
+|U| 4907 |U&DepMap| 4259 |U scorable| 4259
+PMID cut-off 29958442
+|H| 819 targets 5946
+universe 19296
+U 4907
+U_depmap 4259
+U_scorable 4259
+n_scorable_universe 18331
+D1 6148
+D1_22 6172
+D2 1110
+D3 7695
+D3_pubmed 7511
+D3_tdark 4492
+U22 4924
+U7_minus_U22 0
+U22_minus_U7 17
+U_anytdark 4908
+U_hgnconly_map 4908
+produced_U 4924
+U_minus_produced 0 []
+produced_minus_U 17 ['HGNC:21294', 'HGNC:21608', 'HGNC:23136', 'HGNC:25364', 'HGNC:25495', 'HGNC:26458', 'HGNC:28930', 'HGNC:29141', 'HGNC:29221', 'HGNC:30438', 'HGNC:30499', 'HGNC:31668', 'HGNC:4725', 'HGNC:4726', 'HGNC:4730', 'HGNC:4735', 'HGNC:4737']
+U22_minus_produced 0 []
+produced_minus_U22 0 []
+D1_t0 6771
+D1_t0_22 6793
+H_candidates 5040
+H 819
+H_pairs 5946
+t0_rows_obsolete_dropped_currentobo 3977
+produced_H 820
+produced_H_pairs 5965
+H_minus_produced 0 []
+produced_minus_H 1 ['HGNC:21407']
+H_and_U 0
+pairs_common_genes_mine_only 0
+pairs_common_genes_prod_only 0
+genes_with_identical_targets 819
+examples_pair_mine_only 0 []
+examples_pair_prod_only 0 []
+U22_depmap 4275
+U22_scorable 4271
+H22_candidates 5051
+H22 820
+H22_pairs 5965
+H22_minus_produced 0 []
+produced_minus_H22 0 []
+H22_pairs_symdiff 0
+H22_and_U22 0
+term_size_mismatches 0 []
+n_term_size_mismatches 0

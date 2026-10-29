@@ -2,10 +2,18 @@
 
 Fill every `{{placeholder}}`. Rules (DESIGN §6.5, §9):
 - Numbers are copied from `results/ledger/*.tsv` by script; do not retype them.
-- Prose may only (a) paraphrase a ledger row or (b) cite a key that appears in the evidence ledger (§12) with verified = Y.
+- Prose may only (a) paraphrase a ledger row or (b) cite a key that appears in the evidence ledger (Appendix A) with verified = Y.
 - Any gene-function sentence without a ledger row or an evidence-ledger key fails the lint.
 - Write "not found in the literature as of {{search_date}}", never "novel".
 - Write §9 (falsifying observations) before reading §7 (literature) and §6 (orthogonal evidence).
+- The report opens with Section 0 (bench summary, written last, readable without the rest). The evidence ledger and the red-team review are appendices (A and B).
+
+## 0. Bench summary (for a bench biologist; plain words)
+- **Claim:** {{one or two sentences: what {{gene}} is predicted to do, in plain words, with relationship type}}
+- **Confidence:** {{p_cal}} = expected probability that the claim is confirmed by later annotation (hit probability for the module term only, not for the relationship type); tier {{A|B|filled by p_cal}}
+- **Strongest reason to doubt:** {{one sentence, from §8 and the red-team review}}
+- **First experiment:** {{one sentence}}; time {{weeks}}; approximate cost {{cost}} (details in `reports/{{GENE}}_experiments.md`)
+- Cancer-line essentiality is not organismal function: dependency in DepMap lines says the gene is needed for proliferation there, not what it does in the organism.
 
 ## Definitions used in this template
 
@@ -46,7 +54,7 @@ Without type-(a) support the claim reads "functions in / supports module M".
 ## 2. The protein
 - Domains (InterPro): {{domains}}; TM / signal peptide / MTS: {{features}}; AlphaFold pLDDT: {{plddt}}; deepest orthologue: {{orthologue}}
 - Class H (homology) evidence: {{h_evidence}}
-- Source keys: {{keys}} (all must appear in §12)
+- Source keys: {{keys}} (all must appear in Appendix A)
 
 ## 3. Dependency profile
 - Mean / SD of Chronos effect: {{mean}} / {{sd}}; fraction of lines < −0.5: {{frac}}; common-essential or selective: {{status}}; NaN fraction: {{nan}}
@@ -92,7 +100,7 @@ Reported but not counted: hu.MAP 3.0, DEMETER2, Predictomes. Absence of an inter
 ## 7. Literature (blinded step, then synthesis)
 - Blinded summary of agent L's evidence items, with evidence level (functional / high-throughput / mention) and DepMap-derived yes/no
 - Blinded verdicts: real statement {{+1/0/−1}}; decoys {{+1/0/−1}}, {{}}, {{}}; judges {{J1}}, {{J2}}, adjudicator {{J3 or n/a}}
-- Unblinded synthesis (every sentence carries an evidence-ledger key): {{text}}
+- Unblinded synthesis (every sentence carries an evidence-ledger key from Appendix A): {{text}}
 - Closest prior publication and what co-essentiality adds beyond it: {{text}}
 - Prior prediction lists containing this gene (Wainberg 2021, hu.MAP 3.0, Replogle 2022, Predictomes): {{yes/no, which}}
 - Post-freeze (after 2026-10-29) papers confirming the prediction (counted separately): {{list}}
@@ -111,14 +119,14 @@ See `reports/{{GENE}}_experiments.md` (Template B).
 ## 11. Novelty and external benchmarks
 Agreement with prior catalogues (Wainberg 2021, hu.MAP 3.0, Replogle 2022, Predictomes); what is new here: {{text}}.
 
-## 12. Evidence ledger
+## Appendix A. Evidence ledger
 Every claim in this report that is not a ledger row from `results/ledger/*.tsv` has a row here. Unverified rows must be deleted before submission.
 
 | Claim | Source file or PMID/DOI | Verbatim span | Verified (Y/N) |
 |---|---|---|---|
 | {{claim}} | {{results/ledger/....tsv row id | PMID | DOI}} | "{{verbatim span from abstract or full text}}" (text read: {{abstract | full text}}) | {{Y/N}} |
 
-## 13. Red-team review
+## Appendix B. Red-team review
 Written by a separate agent that argues the artefact explanation (hub, mitochondrial or ribosomal dominance, proximity, lineage, multifunctional partners, curation lag). Appended unedited.
 - Reviewer / model / date: {{}}
 - Review text: {{unedited}}

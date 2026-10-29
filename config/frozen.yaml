@@ -1,0 +1,181 @@
+# config/frozen.yaml -- every numeric parameter, threshold and seed of DESIGN.md v2.3 (hash-frozen at `design-frozen`).
+# Each entry: {value, section (DESIGN.md §), quote (verbatim DESIGN.md text; checked by scripts/07_check_frozen_yaml.py), note}.
+# JSON flow mappings are valid YAML. Code reads `value`; do not hard-code these numbers elsewhere.
+# Seeds: config/seeds.yaml is authoritative for the global list; the entries here mirror DESIGN §7.
+
+meta:
+  design_version: {"value": "v2.3", "section": "header", "quote": "DESIGN.md — v2.3"}
+  freeze_extra_hashes: {"value": ["src/gate.py", "tool commit 3c684c9", "SHA-256 of DepMap gene-effect, CN and mutation files"], "section": "§1.6", "quote": "src/gate.py, the tool commit hash 3c684c9 and the SHA-256 of the DepMap gene-effect, CN and mutation files", "note": "added in v2.3"}
+  post_tag_changes_file: {"value": "DEVIATIONS.md", "section": "header", "quote": "`DEVIATIONS.md` with reason and date"}
+  freeze_tags: {"value": ["preregistration-v1", "design-frozen"], "section": "§1.6", "quote": "tagged `preregistration-v1` and `design-frozen`"}
+  tool_commit: {"value": "3c684c972f1e5c3ead722b4b3e2c508fa3cb5ddf", "section": "§0 / verify_sparse.sh", "quote": "@ 3c684c9", "note": "full SHA from PROMPT/DATA pin; DESIGN gives the short form only"}
+  depmap_release: {"value": "26Q3", "section": "§0", "quote": "DepMap Public 26Q3"}
+  t0_go_release: {"value": "2018-07-02", "section": "§3.2", "quote": "t0 = GO 2018-07-02"}
+  t0_secondary_go_release: {"value": "2019-07", "section": "§3.3", "quote": "t0 = 2019-07"}
+seeds:
+  global: {"value": [0, 1, 2, 3, 4], "section": "§7", "quote": "global [0–4]", "note": "= config/seeds.yaml"}
+  matched_lists: {"value": 0, "section": "§3.1", "quote": "seed 0"}
+  bootstraps: {"value": 0, "section": "§7", "quote": "bootstraps 0"}
+  loo_sample: {"value": 0, "section": "§3.2", "quote": "(seed 0)", "note": "3,000-gene LOO sample"}
+  curation_lag_sample: {"value": 0, "section": "§1.5", "quote": "random U sample (seed 0)"}
+  decoys: {"value": 0, "section": "§6.4", "quote": "seed 0"}
+  calibration_fold_seeds: {"value": [0, 1, 2, 3, 4], "section": "§3.7", "quote": "fold seeds 0–4"}
+  split_half_seeds: {"value": [0, 1, 2, 3, 4], "section": "§4.2", "quote": "(seeds 0–4)"}
+universe:
+  hgnc_status: {"value": "Approved", "section": "§1.1", "quote": "HGNC Approved"}
+  locus_group: {"value": "protein-coding gene", "section": "§1.1", "quote": "locus_group \"protein-coding gene\""}
+knownness:
+  d1_evidence_codes: {"value": ["EXP", "IDA", "IPI", "IMP", "IGI", "IEP", "TAS", "IC"], "section": "§1.2", "quote": "{EXP, IDA, IPI, IMP, IGI, IEP, TAS, IC}"}
+  d2_uniprot_annotation_score_max: {"value": 2, "section": "§1.2", "quote": "annotation score ≤ 2"}
+  d3_focused_pmid_max: {"value": 10, "section": "§1.2", "quote": "≤ 10 focused PubMed records", "note": "PMIDs linked to <= 10 human genes"}
+  focused_pmid_max_genes: {"value": 10, "section": "§1.2", "quote": "linked to ≤ 10 human genes"}
+  core_stratum_focused_pmid_max: {"value": 3, "section": "§1.4", "quote": "core (≤ 3 focused PMIDs and Tdark)"}
+  tdl_dark: {"value": "Tdark", "section": "§1.2", "quote": "IDG Tdark"}
+strata:
+  expressed_log2tpm1_min: {"value": 1, "section": "§1.4", "quote": "log2(TPM+1) ≥ 1"}
+  expressed_min_line_fraction: {"value": 0.1, "section": "§1.4", "quote": "≥ 10% of DepMap lines with expression"}
+  clean_negative_log2tpm1_max: {"value": 0.5, "section": "§1.4", "quote": "clean negative = log2(TPM+1) < 0.5", "note": "negative-control stratum for false-call rate"}
+  clean_negative_min_line_fraction: {"value": 0.95, "section": "§1.4", "quote": "in ≥ 95% of lines"}
+  lineage_restricted_min_line_fraction: {"value": 0.5, "section": "§1.4", "quote": "expressed in ≥ 50% of lines of any lineage with ≥ 10 lines"}
+  lineage_restricted_min_lines_per_lineage: {"value": 10, "section": "§1.4", "quote": "any lineage with ≥ 10 lines"}
+  any_dependency_effect_max: {"value": -0.5, "section": "§1.4", "quote": "< −0.5", "note": "Chronos gene effect"}
+  any_dependency_min_line_fraction: {"value": 0.01, "section": "§1.4", "quote": "≥ 1% lines < −0.5"}
+  tandem_cluster_min_paralogues: {"value": 2, "section": "§1.4", "quote": "≥ 2 Ensembl paralogues within 1 Mb"}
+  tandem_cluster_window_bp: {"value": 1000000, "section": "§1.4", "quote": "within 1 Mb"}
+  informativeness_quantiles: {"value": 3, "section": "§1.4", "quote": "SD tertile"}
+curation_lag:
+  random_u_sample_size: {"value": 50, "section": "§1.5", "quote": "50-gene random U sample"}
+vocabulary:
+  candidate_term_min_genes: {"value": 5, "section": "§3.0", "quote": "5–200 annotated scorable genes", "note": "applies to V2, V1 and V1′ (v2.3)"}
+  candidate_term_max_genes: {"value": 200, "section": "§3.0", "quote": "5–200 annotated scorable genes"}
+  propagation_relations: {"value": ["is_a", "part_of"], "section": "§3.0", "quote": "over is_a/part_of"}
+  v1_cc_root: {"value": "GO:0032991", "section": "§3.0", "quote": "GO:0032991"}
+  small_term_max_genes: {"value": 50, "section": "§3.3", "quote": "terms ≤ 50 genes"}
+predictor:
+  k_neighbours: {"value": 25, "section": "§3.1", "quote": "top K = 25"}
+  rankers: {"value": ["R1", "R2", "R3"], "section": "§3.1", "quote": "Rankers (exactly three)"}
+  matched_list_size: {"value": 500, "section": "§3.1", "quote": "one list of 500 scorable genes"}
+  matched_null_comparator_size: {"value": 5, "section": "§3.1", "quote": "First 5 = null comparator"}
+  assessability_null_size: {"value": 200, "section": "§3.1", "quote": "first 200 = assessability null"}
+  matching_features: {"value": ["mean effect", "log SD", "NaN fraction"], "section": "§3.1", "quote": "(mean effect, log SD, NaN fraction)"}
+  matching_metric: {"value": "Mahalanobis", "section": "§3.1", "quote": "Mahalanobis distance"}
+  caliper_mahalanobis: {"value": 0.2, "section": "§3.1", "quote": "caliper 0.2 in Mahalanobis units on standardised covariates", "note": "v2.3: Mahalanobis units (v2.2: SD)"}
+  matching_exact_covariate: {"value": "BG status", "section": "§3.1", "quote": "with BG status an exact-match covariate"}
+  p_emp_floor: {"value": 0.001996007984031936, "section": "§2.5", "quote": "p_emp floor 1/501", "note": "= 1/(1+500)"}
+  ranker_tie_mrr_delta: {"value": 0.005, "section": "§3.1", "quote": "(|ΔMRR| < 0.005)"}
+  ranker_tie_order: {"value": ["R3", "R1"], "section": "§3.1", "quote": "→ R3, then R1"}
+  reportable_min_supporting_partners: {"value": 2, "section": "§3.1", "quote": "≥ 2 supporting partners in N(g)"}
+  top_terms_for_specificity: {"value": 5, "section": "§3.1", "quote": "among the top 5"}
+  loo_sample_size: {"value": 3000, "section": "§3.2", "quote": "random 3,000 scorable genes"}
+holdout:
+  h_max_focused_pmids: {"value": 10, "section": "§3.2", "quote": "≤ 10 focused PMIDs with PMID"}
+  h_min_targets: {"value": 1, "section": "§3.2", "quote": "with ≥ 1 target"}
+  pmid_cutoff: {"value": "2018-07", "section": "§3.2", "quote": "2018-07 cut-off"}
+  endpoint: {"value": "hit@1", "section": "§3.2", "quote": "hit@1 = top reportable term ∈ T(g)"}
+  named_controls: {"value": ["SPRING1", "PEDS1", "CCDC32", "INTS15", "HAPSTR1", "SLC25A51", "TEDC1", "TEDC2", "POU2AF2", "POU2AF3", "TMEM242"], "section": "§3.2", "quote": "SPRING1, PEDS1, CCDC32, INTS15, HAPSTR1, SLC25A51, TEDC1, TEDC2"}
+  case_series_candidate_window: {"value": [2, 300], "section": "§3.2", "quote": "candidate window 2–300"}
+  weak_controls: {"value": ["FIRRM", "AIRIM", "TMEM41B"], "section": "§3.2", "quote": "weaker FIRRM, AIRIM, TMEM41B"}
+comparators:
+  secondary_k_values: {"value": [10, 50], "section": "§3.3", "quote": "K = 10/50"}
+  humap_ppi_top_k: {"value": 25, "section": "§3.3", "quote": "top-25 by hu.MAP 3.0 probability"}
+  primary_test: {"value": "intersection-union (prior-only and matched-null, each CI excludes 0)", "section": "§3.3", "quote": "Primary test** (intersection–union)"}
+  primary_ci_type: {"value": "cluster-bootstrap 95% percentile (BCa also reported)", "section": "§3.3", "quote": "cluster-bootstrap 95% percentile CI"}
+  primary_ci_level: {"value": 0.95, "section": "§3.3", "quote": "95% percentile CI"}
+bootstrap:
+  paired_cluster_replicates: {"value": 10000, "section": "§3.5", "quote": "paired cluster bootstrap 10,000"}
+  sigma_pcal_replicates: {"value": 2000, "section": "§3.7", "quote": "2,000 cluster-bootstrap"}
+  sigma_pcal_ci_type: {"value": "percentile", "section": "§3.7", "quote": "percentile CI"}
+  underpowered_effective_n: {"value": 300, "section": "§3.5", "quote": "if < 300 the primary is labelled underpowered"}
+  scale_check_note: {"value": "Bootstrap replicates differ by purpose: 10,000 for the paired primary-difference CIs (§3.5), 2,000 for the Sigma p_cal refits (§3.7). Not a conflict.", "section": "§3.5/§3.7"}
+covariate_shift:
+  n_covariates: {"value": 6, "section": "§3.6", "quote": "those six covariates"}
+  weight_trim_percentiles: {"value": [1, 99], "section": "§3.6", "quote": "trimmed 1st/99th percentile"}
+calibration:
+  cv_folds: {"value": 10, "section": "§3.7", "quote": "10-fold cluster cross-fitting"}
+  support_percentile_range: {"value": [5, 95], "section": "§3.7", "quote": "5th–95th percentile"}
+  min_h_genes_per_family: {"value": 30, "section": "§3.7", "quote": "family with ≥ 30 H genes"}
+  reliability_min_genes_per_bin: {"value": 30, "section": "§3.7", "quote": "merged to ≥ 30 genes"}
+  reliability_bins: {"value": 10, "section": "§3.7", "quote": "deciles of out-of-fold p_cal"}
+  horizon_years: {"value": 8, "section": "§3.7", "quote": "within ~8 years"}
+  poor_calibration_ci: {"value": "slope 95% CI excludes 1 or intercept 95% CI excludes 0", "section": "§0", "quote": "calibration-slope 95% CI excludes 1"}
+assessability:
+  half_list_k: {"value": 25, "section": "§4.2", "quote": "the top 25 after restriction"}
+  half_list_retained_top: {"value": 60, "section": "§4.2", "quote": "top-60 per half retained before filtering"}
+  alpha: {"value": 0.05, "section": "§4.2", "quote": "< 0.05"}
+  null_genes: {"value": 200, "section": "§4.2", "quote": "first 200 matches"}
+  p_denominator: {"value": 201, "section": "§4.2", "quote": "/201"}
+  split_seeds: {"value": [0, 1, 2, 3, 4], "section": "§4.2", "quote": "(seeds 0–4)"}
+  n_halves_runs: {"value": 10, "section": "§8", "quote": "10 split-half runs"}
+predictions:
+  ledger_partners_per_gene: {"value": 10, "section": "§4.1", "quote": "top-10 partners"}
+  gls_rank_top_n: {"value": 40, "section": "§4.1", "quote": "GLS rank (top 40 only, §2.2)"}
+artefacts:
+  bidirectional_tss_max_bp: {"value": 1000, "section": "§4.3", "quote": "TSS < 1 kb opposite strands"}
+  cn_coamplification_pearson_r: {"value": 0.3, "section": "§4.3", "quote": "CN co-amplification (Pearson r between g's effect and a supporting partner's CN > 0.3)"}
+  hub_in_degree_top_fraction: {"value": 0.01, "section": "§4.3", "quote": "top 1% of in-degree"}
+  hub_s_fraction: {"value": 0.5, "section": "§4.3", "quote": "> 50% of S"}
+  flag_fraction_blocks_tier_a: {"value": 0.5, "section": "§4.3", "quote": "Any flag on ≥ half of the supporting"}
+  expression_coupling_abs_spearman: {"value": 0.3, "section": "§4.3", "quote": "|Spearman ρ| between g's effect and its own expression > 0.3"}
+  tf_enrichment_fisher_or_min: {"value": 3, "section": "§4.3", "quote": "one-sided Fisher OR > 3"}
+  tf_enrichment_q_max: {"value": 0.05, "section": "§4.3", "quote": "OR > 3 and q < 0.05"}
+  tp53_mannwhitney_q: {"value": 0.05, "section": "§4.3", "quote": "Mann–Whitney q < 0.05"}
+  demeter2_percentile: {"value": 95, "section": "§4.3", "quote": "≥ 95th percentile"}
+  top_n_extended_checks: {"value": 40, "section": "§4.3", "quote": "Top 40 only"}
+orthogonal:
+  scope_min_pcal: {"value": 0.3, "section": "§5 header", "quote": "p_cal ≥ 0.3"}
+  scope_top_n: {"value": 40, "section": "§5 header", "quote": "the top 40"}
+  perturbseq_knockdown_min: {"value": 0.3, "section": "§5.1", "quote": "knockdown ≥ 30%"}
+  perturbseq_min_cells: {"value": 25, "section": "§5.1b", "quote": "a perturbation counts only with ≥ 25 cells"}
+  localisation_admission_agreement_ci_lower_min: {"value": 0.6, "section": "§5.2", "quote": "agreement rate lower 95% CI > 0.6"}
+  localisation_admission_min_h_genes: {"value": 200, "section": "§5.2", "quote": "≥ 200 H genes"}
+  string_experiments_min: {"value": 400, "section": "§5.1b", "quote": "STRING experiments ≥ 400", "note": "score on 0-1000 scale"}
+  hcm_saint_bfdr_max: {"value": 0.01, "section": "§5.1b", "quote": "SAINT BFDR ≤ 0.01"}
+  ccle_proteomics_min_lines: {"value": 50, "section": "§5.1b", "quote": "pairwise complete ≥ 50 lines"}
+  chemogenomic_min_shared_screens: {"value": 10, "section": "§5.1b", "quote": "(≥ 10 shared)"}
+  pdockq_min: {"value": 0.23, "section": "§5.1b", "quote": "pDockQ ≥ 0.23"}
+  admission_continuous_dichotomise_percentile: {"value": 95, "section": "§5.2", "quote": "95th row percentile"}
+  admission_or_lower_ci_min: {"value": 2, "section": "§5.2", "quote": "lower 95% CI > 2"}
+  admission_ci_level: {"value": 0.95, "section": "§5.2", "quote": "lower 95% CI"}
+  support_null_sets: {"value": 1000, "section": "§5.3", "quote": "1,000 equal-size member sets"}
+  support_alpha: {"value": 0.05, "section": "§5.3", "quote": "α = 0.05 per gene"}
+  contradiction_min_high_reliability_sources: {"value": 2, "section": "§5.3", "quote": "≥ 2 high-reliability sources"}
+tiers:
+  tier_a_pcal_min: {"value": 0.5, "section": "§6.1", "quote": "p_cal ≥ 0.5"}
+  tier_b_pcal_min: {"value": 0.3, "section": "§6.1", "quote": "(needs ≥ 0.3)"}
+  top_n: {"value": 40, "section": "§6.1", "quote": "Top 40 filled"}
+  mito_cap_top20_fraction: {"value": 0.3333333333333333, "section": "§6.1", "quote": "≤ ⅓ of the top 20", "note": "1/3 = at most 6"}
+  mito_cap_top20_max_count: {"value": 6, "section": "§6.1", "quote": "(≤ 6)"}
+  mito_cap_reports_max_count: {"value": 3, "section": "§6.1", "quote": "≤ 3 reports", "note": "v2.3: absolute count (v2.2: ⅓ of reports); counts N1 exemplars"}
+  min_tier_a_for_paper_lead: {"value": 10, "section": "§0", "quote": "< 10 genes in Tier A"}
+  min_assessable_for_tiers: {"value": 100, "section": "§0", "quote": "< 100 U genes scorable"}
+judging:
+  decoys_per_gene: {"value": 3, "section": "§6.4", "quote": "real + 3 decoys"}
+  decoy_max_jaccard: {"value": 0.1, "section": "§6.4", "quote": "Jaccard of member sets < 0.1"}
+  alpha_one_sided: {"value": 0.05, "section": "§6.4", "quote": "α = 0.05"}
+  test: {"value": "exact sign-flip (enumeration), real - mean(decoy)", "section": "§6.4", "quote": "exact one-sided sign-flip test"}
+  extra_u_genes_across_pcal_bins: {"value": 30, "section": "§6.4", "quote": "30 extra U genes"}
+  validation_h_genes: {"value": 10, "section": "§6.4", "quote": "10 H genes"}
+  validation_min_real_supported: {"value": 7, "section": "§6.4", "quote": "≥ 7/10 real supported"}
+  validation_max_decoys_supported: {"value": 3, "section": "§6.4", "quote": "≤ 3/30 decoys supported"}
+  validation_max_revisions: {"value": 1, "section": "§6.4", "quote": "one logged revision"}
+reports:
+  n_reports_min: {"value": 8, "section": "§6.5", "quote": "8–10 genes"}
+  n_reports_max: {"value": 10, "section": "§6.5", "quote": "8–10 genes"}
+  max_n1_rediscovery: {"value": 2, "section": "§6.5", "quote": "up to 2 N1 genes"}
+infra:
+  gls_pearson_rows_u_top_n: {"value": 40, "section": "§2.2", "quote": "the U top-40 genes", "note": "v2.3: GLS/Pearson rows also for U top 40"}
+  pair_check_min_pairs: {"value": 100000, "section": "§2.2", "quote": "≥ 100k random pairs"}
+  pair_check_max_abs_diff: {"value": 0.0001, "section": "§2.2", "quote": "max abs diff < 1e-4"}
+  reproduction_tolerance: {"value": 0.005, "section": "§2.3", "quote": "Tolerance ±0.005"}
+  reproduction_targets: {"value": {"zavg_BEF": 0.345, "GLS": 0.242, "Spearman": 0.146, "Pearson": 0.134}, "section": "§2.3", "quote": "zavg_BEF 0.345, GLS 0.242, Spearman 0.146, Pearson 0.134"}
+  common_essential_mean_max: {"value": -0.5, "section": "§2.4", "quote": "common essentials mean < −0.5"}
+  control_pair_min_score: {"value": 3, "section": "§2.4", "quote": "score > 3"}
+  toy_strong_module_precision_min: {"value": 0.8, "section": "§2.5", "quote": "precision@1 ≥ 0.8"}
+  toy_strong_module_assessable_min: {"value": 0.8, "section": "§2.5", "quote": "≥ 80% assessable"}
+  toy_null_ks_p_min: {"value": 0.01, "section": "§2.5", "quote": "KS p > 0.01"}
+  toy_null_bh_significant_max: {"value": 0.05, "section": "§2.5", "quote": "≤ 5% genes with any"}
+  toy_null_assessable_max: {"value": 0.07, "section": "§2.5", "quote": "≤ 7% genes assessable"}
+  toy_n_lines: {"value": 300, "section": "§2.5", "quote": "~300 lines"}
+  toy_n_genes: {"value": 2000, "section": "§2.5", "quote": "2,000 genes"}
+  toy_module_size_range: {"value": [3, 30], "section": "§2.5", "quote": "modules 3–30"}
+  matrix_dtype: {"value": "float32", "section": "§2.2", "quote": "float32"}

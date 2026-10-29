@@ -1,0 +1,1433 @@
+{
+ "universe": 19296,
+ "U": 4907,
+ "U_depmap": 4259,
+ "U_scorable": 4259,
+ "n_scorable_universe": 18331,
+ "D1": 6148,
+ "D1_22": 6172,
+ "D2": 1110,
+ "D3": 7695,
+ "D3_pubmed": 7511,
+ "D3_tdark": 4492,
+ "U22": 4924,
+ "U7_minus_U22": 0,
+ "U22_minus_U7": 17,
+ "U_anytdark": 4908,
+ "U_hgnconly_map": 4908,
+ "produced_U": 4924,
+ "U_minus_produced": [],
+ "produced_minus_U": [
+  "HGNC:21294",
+  "HGNC:21608",
+  "HGNC:23136",
+  "HGNC:25364",
+  "HGNC:25495",
+  "HGNC:26458",
+  "HGNC:28930",
+  "HGNC:29141",
+  "HGNC:29221",
+  "HGNC:30438",
+  "HGNC:30499",
+  "HGNC:31668",
+  "HGNC:4725",
+  "HGNC:4726",
+  "HGNC:4730",
+  "HGNC:4735",
+  "HGNC:4737"
+ ],
+ "U22_minus_produced": [],
+ "produced_minus_U22": [],
+ "D1_t0": 6771,
+ "D1_t0_22": 6793,
+ "H_candidates": 5040,
+ "H": 819,
+ "H_pairs": 5946,
+ "t0_rows_obsolete_dropped_currentobo": 3977,
+ "produced_H": 820,
+ "produced_H_pairs": 5965,
+ "H_minus_produced": [],
+ "produced_minus_H": [
+  "HGNC:21407"
+ ],
+ "H_and_U": 0,
+ "pairs_common_genes_mine_only": 0,
+ "pairs_common_genes_prod_only": 0,
+ "genes_with_identical_targets": 819,
+ "examples_pair_mine_only": [],
+ "examples_pair_prod_only": [],
+ "diag_U": {
+  "HGNC:21294": {
+   "sym": "KCTD2",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 4.0,
+   "D3pm": true,
+   "npm": 5,
+   "tdl": "Tdark",
+   "anytdark": true,
+   "inf_terms": [
+    "GO:0044877"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "4",
+    "D3": "True",
+    "n_pubmed_focused": "5",
+    "tdl": "Tdark"
+   }
+  },
+  "HGNC:21608": {
+   "sym": "LUC7L2",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 5.0,
+   "D3pm": true,
+   "npm": 8,
+   "tdl": "Tbio",
+   "anytdark": false,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "5",
+    "D3": "True",
+    "n_pubmed_focused": "8",
+    "tdl": "Tbio"
+   }
+  },
+  "HGNC:23136": {
+   "sym": "SCNM1",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 5.0,
+   "D3pm": true,
+   "npm": 3,
+   "tdl": "Tbio",
+   "anytdark": false,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "5",
+    "D3": "True",
+    "n_pubmed_focused": "3",
+    "tdl": "Tbio"
+   }
+  },
+  "HGNC:25364": {
+   "sym": "HDHD2",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 3.0,
+   "D3pm": true,
+   "npm": 0,
+   "tdl": "Tdark",
+   "anytdark": true,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "3",
+    "D3": "True",
+    "n_pubmed_focused": "0",
+    "tdl": "Tdark"
+   }
+  },
+  "HGNC:25495": {
+   "sym": "WDR70",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 3.0,
+   "D3pm": true,
+   "npm": 5,
+   "tdl": "Tdark",
+   "anytdark": true,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "3",
+    "D3": "True",
+    "n_pubmed_focused": "5",
+    "tdl": "Tdark"
+   }
+  },
+  "HGNC:26458": {
+   "sym": "TEPSIN",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 5.0,
+   "D3pm": true,
+   "npm": 5,
+   "tdl": "Tdark",
+   "anytdark": true,
+   "inf_terms": [
+    "GO:0044877"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "5",
+    "D3": "True",
+    "n_pubmed_focused": "5",
+    "tdl": "Tdark"
+   }
+  },
+  "HGNC:28930": {
+   "sym": "KRT79",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 5.0,
+   "D3pm": true,
+   "npm": 2,
+   "tdl": "Tbio",
+   "anytdark": false,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "5",
+    "D3": "True",
+    "n_pubmed_focused": "2",
+    "tdl": "Tbio"
+   }
+  },
+  "HGNC:29141": {
+   "sym": "WDR47",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 4.0,
+   "D3pm": true,
+   "npm": 4,
+   "tdl": "Tdark",
+   "anytdark": true,
+   "inf_terms": [
+    "GO:0044877"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "4",
+    "D3": "True",
+    "n_pubmed_focused": "4",
+    "tdl": "Tdark"
+   }
+  },
+  "HGNC:29221": {
+   "sym": "RALGAPB",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 4.0,
+   "D3pm": true,
+   "npm": 9,
+   "tdl": "Tbio",
+   "anytdark": false,
+   "inf_terms": [
+    "GO:0046982"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "4",
+    "D3": "True",
+    "n_pubmed_focused": "9",
+    "tdl": "Tbio"
+   }
+  },
+  "HGNC:30438": {
+   "sym": "MB21D2",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 5.0,
+   "D3pm": true,
+   "npm": 4,
+   "tdl": "Tdark",
+   "anytdark": true,
+   "inf_terms": [
+    "GO:0044877"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "5",
+    "D3": "True",
+    "n_pubmed_focused": "4",
+    "tdl": "Tdark"
+   }
+  },
+  "HGNC:30499": {
+   "sym": "PHLDB3",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 3.0,
+   "D3pm": true,
+   "npm": 1,
+   "tdl": "Tdark",
+   "anytdark": true,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "3",
+    "D3": "True",
+    "n_pubmed_focused": "1",
+    "tdl": "Tdark"
+   }
+  },
+  "HGNC:31668": {
+   "sym": "GOLGA7B",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 4.0,
+   "D3pm": true,
+   "npm": 2,
+   "tdl": "Tdark",
+   "anytdark": true,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "4",
+    "D3": "True",
+    "n_pubmed_focused": "2",
+    "tdl": "Tdark"
+   }
+  },
+  "HGNC:4725": {
+   "sym": "H2AC13",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 5.0,
+   "D3pm": true,
+   "npm": 3,
+   "tdl": "Tbio",
+   "anytdark": false,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "5",
+    "D3": "True",
+    "n_pubmed_focused": "3",
+    "tdl": "Tbio"
+   }
+  },
+  "HGNC:4726": {
+   "sym": "H2AC15",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 5.0,
+   "D3pm": true,
+   "npm": 3,
+   "tdl": "Tbio",
+   "anytdark": false,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "5",
+    "D3": "True",
+    "n_pubmed_focused": "3",
+    "tdl": "Tbio"
+   }
+  },
+  "HGNC:4730": {
+   "sym": "H2AC16",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 5.0,
+   "D3pm": true,
+   "npm": 5,
+   "tdl": "Tbio",
+   "anytdark": false,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "5",
+    "D3": "True",
+    "n_pubmed_focused": "5",
+    "tdl": "Tbio"
+   }
+  },
+  "HGNC:4735": {
+   "sym": "H2AC17",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 5.0,
+   "D3pm": true,
+   "npm": 7,
+   "tdl": "Tbio",
+   "anytdark": false,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "5",
+    "D3": "True",
+    "n_pubmed_focused": "7",
+    "tdl": "Tbio"
+   }
+  },
+  "HGNC:4737": {
+   "sym": "H2AC11",
+   "D1": false,
+   "D1_22": true,
+   "D1_hgnconly": false,
+   "D2": false,
+   "score": 5.0,
+   "D3pm": true,
+   "npm": 4,
+   "tdl": "Tbio",
+   "anytdark": false,
+   "inf_terms": [
+    "GO:0019899"
+   ],
+   "produced": {
+    "D1": "True",
+    "n_d1_terms_informative": "0",
+    "D2": "False",
+    "annotation_score": "5",
+    "D3": "True",
+    "n_pubmed_focused": "4",
+    "tdl": "Tbio"
+   }
+  }
+ },
+ "diag_U22": {},
+ "diag_H": {
+  "HGNC:21407": {
+   "sym": "AKIRIN2",
+   "scorable": true,
+   "D1_t0": false,
+   "D1_t0_22": true,
+   "npm_t0": 6,
+   "n_mine_targets": 0,
+   "n_prod_targets": 19,
+   "new_terms_sizes": [
+    [
+     "GO:0006511",
+     196
+    ],
+    [
+     "GO:0006515",
+     7
+    ],
+    [
+     "GO:0006606",
+     27
+    ],
+    [
+     "GO:0006810",
+     2298
+    ],
+    [
+     "GO:0006886",
+     116
+    ],
+    [
+     "GO:0006913",
+     162
+    ],
+    [
+     "GO:0006950",
+     1811
+    ],
+    [
+     "GO:0008104",
+     586
+    ]
+   ],
+   "new_terms_nogeneric_prop": [
+    [
+     "GO:0006511",
+     196
+    ],
+    [
+     "GO:0006515",
+     7
+    ],
+    [
+     "GO:0006606",
+     27
+    ],
+    [
+     "GO:0006810",
+     2298
+    ],
+    [
+     "GO:0006886",
+     116
+    ],
+    [
+     "GO:0006913",
+     162
+    ],
+    [
+     "GO:0006950",
+     1811
+    ],
+    [
+     "GO:0008104",
+     586
+    ]
+   ],
+   "t0_inf_terms": [
+    "GO:0019899"
+   ],
+   "prod_targets": [
+    "GO:0006511",
+    "GO:0006515",
+    "GO:0006606",
+    "GO:0006886",
+    "GO:0006913",
+    "GO:0010498",
+    "GO:0019941",
+    "GO:0030674"
+   ]
+  }
+ },
+ "evidence_samples": {
+  "HGNC:28796": {
+   "set": "U",
+   "sym": "MRFAP1L1",
+   "D1": true,
+   "D2": false,
+   "score": 5.0,
+   "D3": true,
+   "npm": 1,
+   "tdl": "Tdark",
+   "inU_produced": true,
+   "n_inf": 0,
+   "rows": [
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q96HT8",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:16189514"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q96HT8",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:16407074"
+    },
+    {
+     "go": "GO:0042802",
+     "name": "identical protein binding",
+     "generic": true,
+     "acc": "Q96HT8",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:25416956"
+    }
+   ]
+  },
+  "HGNC:30201": {
+   "set": "U",
+   "sym": "COMMD10",
+   "D1": true,
+   "D2": false,
+   "score": 5.0,
+   "D3": true,
+   "npm": 9,
+   "tdl": "Tbio",
+   "inU_produced": true,
+   "n_inf": 0,
+   "rows": [
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q9Y6G5",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:15799966"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q9Y6G5",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:15799966"
+    }
+   ]
+  },
+  "HGNC:14277": {
+   "set": "U",
+   "sym": "MRPL9",
+   "D1": true,
+   "D2": false,
+   "score": 4.0,
+   "D3": true,
+   "npm": 2,
+   "tdl": "Tdark",
+   "inU_produced": true,
+   "n_inf": 0,
+   "rows": [
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q9BYD2",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:25416956"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q9BYD2",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:32296183"
+    }
+   ]
+  },
+  "HGNC:25208": {
+   "set": "U",
+   "sym": "NTN5",
+   "D1": true,
+   "D2": false,
+   "score": 3.0,
+   "D3": true,
+   "npm": 1,
+   "tdl": "Tdark",
+   "inU_produced": true,
+   "n_inf": 0,
+   "rows": []
+  },
+  "HGNC:37147": {
+   "set": "U",
+   "sym": "TRIM64B",
+   "D1": true,
+   "D2": true,
+   "score": 2.0,
+   "D3": true,
+   "npm": 0,
+   "tdl": "Tdark",
+   "inU_produced": true,
+   "n_inf": 0,
+   "rows": []
+  },
+  "HGNC:33769": {
+   "set": "U",
+   "sym": "BNIP5",
+   "D1": true,
+   "D2": true,
+   "score": 2.0,
+   "D3": true,
+   "npm": 1,
+   "tdl": "Tdark",
+   "inU_produced": true,
+   "n_inf": 0,
+   "rows": [
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "P0C671",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:32296183"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "P0C671",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:32296183"
+    }
+   ]
+  },
+  "HGNC:29400": {
+   "set": "U",
+   "sym": "CCDC85A",
+   "D1": true,
+   "D2": false,
+   "score": 3.0,
+   "D3": true,
+   "npm": 1,
+   "tdl": "Tdark",
+   "inU_produced": true,
+   "n_inf": 0,
+   "rows": [
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q96PX6",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:32296183"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q96PX6",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:32296183"
+    }
+   ]
+  },
+  "HGNC:26388": {
+   "set": "U",
+   "sym": "ARHGAP36",
+   "D1": true,
+   "D2": false,
+   "score": 4.0,
+   "D3": true,
+   "npm": 8,
+   "tdl": "Tbio",
+   "inU_produced": true,
+   "n_inf": 0,
+   "rows": []
+  },
+  "HGNC:33286": {
+   "set": "U",
+   "sym": "CT47A5",
+   "D1": true,
+   "D2": false,
+   "score": 4.0,
+   "D3": true,
+   "npm": 0,
+   "tdl": "Tdark",
+   "inU_produced": true,
+   "n_inf": 0,
+   "rows": []
+  },
+  "HGNC:28249": {
+   "set": "U",
+   "sym": "PHYKPL",
+   "D1": true,
+   "D2": false,
+   "score": 5.0,
+   "D3": true,
+   "npm": 2,
+   "tdl": "Tbio",
+   "inU_produced": true,
+   "n_inf": 0,
+   "rows": [
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q8IUZ5",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:21044950"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q8IUZ5",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:25416956"
+    },
+    {
+     "go": "GO:0042802",
+     "name": "identical protein binding",
+     "generic": true,
+     "acc": "Q8IUZ5",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:16189514"
+    }
+   ]
+  },
+  "HGNC:30389": {
+   "set": "nonU",
+   "sym": "EXOC4",
+   "D1": false,
+   "D2": false,
+   "score": 5.0,
+   "D3": false,
+   "npm": 58,
+   "tdl": "Tbio",
+   "inU_produced": false,
+   "n_inf": 1,
+   "rows": [
+    {
+     "go": "GO:0016241",
+     "name": "regulation of macroautophagy",
+     "generic": false,
+     "acc": "Q96A65",
+     "ev": "TAS",
+     "qual": "involved_in",
+     "aspect": "P",
+     "ref": "PMID:21241894"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q96A65",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:17043677"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q96A65",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:18329369"
+    }
+   ]
+  },
+  "HGNC:16849": {
+   "set": "nonU",
+   "sym": "MORF4L2",
+   "D1": false,
+   "D2": false,
+   "score": 5.0,
+   "D3": false,
+   "npm": 20,
+   "tdl": "Tbio",
+   "inU_produced": false,
+   "n_inf": 2,
+   "rows": [
+    {
+     "go": "GO:0051726",
+     "name": "regulation of cell cycle",
+     "generic": false,
+     "acc": "Q15014",
+     "ev": "IMP",
+     "qual": "involved_in",
+     "aspect": "P",
+     "ref": "PMID:27153538"
+    },
+    {
+     "go": "GO:1905168",
+     "name": "positive regulation of double-strand break repair via homologous recombination",
+     "generic": false,
+     "acc": "Q15014",
+     "ev": "IDA",
+     "qual": "involved_in",
+     "aspect": "P",
+     "ref": "PMID:27153538"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q15014",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:11988016"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q15014",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:12963728"
+    }
+   ]
+  },
+  "HGNC:27097": {
+   "set": "nonU",
+   "sym": "RBFOX3",
+   "D1": true,
+   "D2": false,
+   "score": 4.0,
+   "D3": false,
+   "npm": 143,
+   "tdl": "Tbio",
+   "inU_produced": false,
+   "n_inf": 0,
+   "rows": []
+  },
+  "HGNC:14006": {
+   "set": "nonU",
+   "sym": "TRPV6",
+   "D1": false,
+   "D2": false,
+   "score": 5.0,
+   "D3": false,
+   "npm": 222,
+   "tdl": "Tchem",
+   "inU_produced": false,
+   "n_inf": 5,
+   "rows": [
+    {
+     "go": "GO:0005262",
+     "name": "calcium channel activity",
+     "generic": false,
+     "acc": "Q9H1D0",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:11097838"
+    },
+    {
+     "go": "GO:0005262",
+     "name": "calcium channel activity",
+     "generic": false,
+     "acc": "Q9H1D0",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:15184369"
+    },
+    {
+     "go": "GO:0005516",
+     "name": "calmodulin binding",
+     "generic": false,
+     "acc": "Q9H1D0",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:11278579"
+    },
+    {
+     "go": "GO:0006816",
+     "name": "calcium ion transport",
+     "generic": false,
+     "acc": "Q9H1D0",
+     "ev": "IDA",
+     "qual": "involved_in",
+     "aspect": "P",
+     "ref": "PMID:23612980"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q9H1D0",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:15894168"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q9H1D0",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:17197020"
+    }
+   ]
+  },
+  "HGNC:18439": {
+   "set": "nonU",
+   "sym": "IL17RE",
+   "D1": true,
+   "D2": false,
+   "score": 5.0,
+   "D3": false,
+   "npm": 13,
+   "tdl": "Tbio",
+   "inU_produced": false,
+   "n_inf": 0,
+   "rows": [
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q8NFR9",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:21993848"
+    }
+   ]
+  },
+  "HGNC:1402": {
+   "set": "nonU",
+   "sym": "CACNB2",
+   "D1": false,
+   "D2": false,
+   "score": 5.0,
+   "D3": false,
+   "npm": 74,
+   "tdl": "Tbio",
+   "inU_produced": false,
+   "n_inf": 10,
+   "rows": [
+    {
+     "go": "GO:0005245",
+     "name": "voltage-gated calcium channel activity",
+     "generic": false,
+     "acc": "Q08289",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:1309651"
+    },
+    {
+     "go": "GO:0007528",
+     "name": "neuromuscular junction development",
+     "generic": false,
+     "acc": "Q08289",
+     "ev": "TAS",
+     "qual": "involved_in",
+     "aspect": "P",
+     "ref": "PMID:8494331"
+    },
+    {
+     "go": "GO:0008331",
+     "name": "high voltage-gated calcium channel activity",
+     "generic": false,
+     "acc": "Q08289",
+     "ev": "IDA",
+     "qual": "contributes_to",
+     "aspect": "F",
+     "ref": "PMID:1309651"
+    },
+    {
+     "go": "GO:0051928",
+     "name": "positive regulation of calcium ion transport",
+     "generic": false,
+     "acc": "Q08289",
+     "ev": "IDA",
+     "qual": "involved_in",
+     "aspect": "P",
+     "ref": "PMID:1309651"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q08289",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:17525370"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "Q08289",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:18535142"
+    }
+   ]
+  },
+  "HGNC:6774": {
+   "set": "nonU",
+   "sym": "SMAD9",
+   "D1": false,
+   "D2": false,
+   "score": 5.0,
+   "D3": false,
+   "npm": 100,
+   "tdl": "Tbio",
+   "inU_produced": false,
+   "n_inf": 5,
+   "rows": [
+    {
+     "go": "GO:0000978",
+     "name": "RNA polymerase II cis-regulatory region sequence-specific DNA binding",
+     "generic": false,
+     "acc": "O15198",
+     "ev": "TAS",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:25534700"
+    },
+    {
+     "go": "GO:0001649",
+     "name": "osteoblast differentiation",
+     "generic": false,
+     "acc": "O15198",
+     "ev": "IDA",
+     "qual": "involved_in",
+     "aspect": "P",
+     "ref": "PMID:34948289"
+    },
+    {
+     "go": "GO:0006879",
+     "name": "intracellular iron ion homeostasis",
+     "generic": false,
+     "acc": "O15198",
+     "ev": "IDA",
+     "qual": "involved_in",
+     "aspect": "P",
+     "ref": "PMID:31800957"
+    },
+    {
+     "go": "GO:0030509",
+     "name": "BMP signaling pathway",
+     "generic": false,
+     "acc": "O15198",
+     "ev": "TAS",
+     "qual": "involved_in",
+     "aspect": "P",
+     "ref": "PMID:19018011"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "O15198",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:15231748"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "O15198",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:16189514"
+    }
+   ]
+  },
+  "HGNC:12482": {
+   "set": "nonU",
+   "sym": "UBE2G1",
+   "D1": false,
+   "D2": false,
+   "score": 5.0,
+   "D3": false,
+   "npm": 41,
+   "tdl": "Tbio",
+   "inU_produced": false,
+   "n_inf": 6,
+   "rows": [
+    {
+     "go": "GO:0004842",
+     "name": "ubiquitin-protein transferase activity",
+     "generic": false,
+     "acc": "P62253",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:20061386"
+    },
+    {
+     "go": "GO:0006511",
+     "name": "ubiquitin-dependent protein catabolic process",
+     "generic": false,
+     "acc": "P62253",
+     "ev": "TAS",
+     "qual": "involved_in",
+     "aspect": "P",
+     "ref": "PMID:8893823"
+    },
+    {
+     "go": "GO:0031625",
+     "name": "ubiquitin protein ligase binding",
+     "generic": false,
+     "acc": "P62253",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:11439185"
+    },
+    {
+     "go": "GO:0031625",
+     "name": "ubiquitin protein ligase binding",
+     "generic": false,
+     "acc": "P62253",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:15673284"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "P62253",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:32814053"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "P62253",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:32814053"
+    }
+   ]
+  },
+  "HGNC:3321": {
+   "set": "nonU",
+   "sym": "ELK1",
+   "D1": false,
+   "D2": false,
+   "score": 5.0,
+   "D3": false,
+   "npm": 498,
+   "tdl": "Tbio",
+   "inU_produced": false,
+   "n_inf": 9,
+   "rows": [
+    {
+     "go": "GO:0000976",
+     "name": "transcription cis-regulatory region binding",
+     "generic": false,
+     "acc": "P19419",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:31146003"
+    },
+    {
+     "go": "GO:0000978",
+     "name": "RNA polymerase II cis-regulatory region sequence-specific DNA binding",
+     "generic": false,
+     "acc": "P19419",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:12750007"
+    },
+    {
+     "go": "GO:0000981",
+     "name": "DNA-binding transcription factor activity, RNA polymerase II-specific",
+     "generic": false,
+     "acc": "P19419",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:10799319"
+    },
+    {
+     "go": "GO:0001228",
+     "name": "DNA-binding transcription activator activity, RNA polymerase II-specific",
+     "generic": false,
+     "acc": "P19419",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:12750007"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "P19419",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:16291755"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "P19419",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:17036045"
+    }
+   ]
+  },
+  "HGNC:792": {
+   "set": "nonU",
+   "sym": "ATF7",
+   "D1": false,
+   "D2": false,
+   "score": 5.0,
+   "D3": false,
+   "npm": 35,
+   "tdl": "Tbio",
+   "inU_produced": false,
+   "n_inf": 9,
+   "rows": [
+    {
+     "go": "GO:0000122",
+     "name": "negative regulation of transcription by RNA polymerase II",
+     "generic": false,
+     "acc": "P17544",
+     "ev": "IDA",
+     "qual": "involved_in",
+     "aspect": "P",
+     "ref": "PMID:8288576"
+    },
+    {
+     "go": "GO:0000978",
+     "name": "RNA polymerase II cis-regulatory region sequence-specific DNA binding",
+     "generic": false,
+     "acc": "P17544",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:17264123"
+    },
+    {
+     "go": "GO:0000978",
+     "name": "RNA polymerase II cis-regulatory region sequence-specific DNA binding",
+     "generic": false,
+     "acc": "P17544",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:8288576"
+    },
+    {
+     "go": "GO:0001223",
+     "name": "transcription coactivator binding",
+     "generic": false,
+     "acc": "P17544",
+     "ev": "IDA",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:17264123"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "P17544",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:10376527"
+    },
+    {
+     "go": "GO:0005515",
+     "name": "protein binding",
+     "generic": true,
+     "acc": "P17544",
+     "ev": "IPI",
+     "qual": "enables",
+     "aspect": "F",
+     "ref": "PMID:15735663"
+    }
+   ]
+  }
+ },
+ "U22_depmap": 4275,
+ "U22_scorable": 4271,
+ "U22_column_mismatches": {},
+ "U22_column_mismatch_counts": {},
+ "H22_candidates": 5051,
+ "H22": 820,
+ "H22_pairs": 5965,
+ "H22_minus_produced": [],
+ "produced_minus_H22": [],
+ "H22_pairs_symdiff": 0,
+ "H22_and_U22": 0,
+ "H22_column_mismatch_counts": {},
+ "term_size_mismatches": [],
+ "n_term_size_mismatches": 0
+}

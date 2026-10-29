@@ -1,0 +1,73 @@
+order	family	go_id	go_name
+1	mitochondrial	GO:0140053	mitochondrial gene expression
+1	mitochondrial	GO:0033108	mitochondrial respiratory chain complex assembly
+1	mitochondrial	GO:0006839	mitochondrial transport
+1	mitochondrial	GO:0007005	mitochondrion organization
+1	mitochondrial	GO:0007006	mitochondrial membrane organization
+1	mitochondrial	GO:0006119	oxidative phosphorylation
+1	mitochondrial	GO:0022904	respiratory electron transport chain
+1	mitochondrial	GO:0008137	NADH dehydrogenase (ubiquinone) activity
+2	nuclear_RNA_machinery	GO:0006397	mRNA processing
+2	nuclear_RNA_machinery	GO:0008380	RNA splicing
+2	nuclear_RNA_machinery	GO:0006406	mRNA export from nucleus
+2	nuclear_RNA_machinery	GO:0031124	mRNA 3'-end processing
+2	nuclear_RNA_machinery	GO:0006366	transcription by RNA polymerase II
+2	nuclear_RNA_machinery	GO:0009451	RNA modification
+2	nuclear_RNA_machinery	GO:0008033	tRNA processing
+2	nuclear_RNA_machinery	GO:0006402	mRNA catabolic process
+2	nuclear_RNA_machinery	GO:0003729	mRNA binding
+2	nuclear_RNA_machinery	GO:0003724	RNA helicase activity
+3	ribosome_biogenesis_translation	GO:0042254	ribosome biogenesis
+3	ribosome_biogenesis_translation	GO:0022613	ribonucleoprotein complex biogenesis
+3	ribosome_biogenesis_translation	GO:0006364	rRNA processing
+3	ribosome_biogenesis_translation	GO:0006412	translation
+3	ribosome_biogenesis_translation	GO:0003735	structural constituent of ribosome
+3	ribosome_biogenesis_translation	GO:0008135	translation factor activity, RNA binding
+3	ribosome_biogenesis_translation	GO:0004812	aminoacyl-tRNA ligase activity
+4	DNA_replication_repair	GO:0006260	DNA replication
+4	DNA_replication_repair	GO:0006281	DNA repair
+4	DNA_replication_repair	GO:0006310	DNA recombination
+4	DNA_replication_repair	GO:0006974	DNA damage response
+4	DNA_replication_repair	GO:0000723	telomere maintenance
+4	DNA_replication_repair	GO:0003678	DNA helicase activity
+4	DNA_replication_repair	GO:0034061	DNA polymerase activity
+4	DNA_replication_repair	GO:0008094	ATP-dependent activity, acting on DNA
+5	ER_Golgi_secretory_lipid	GO:0006888	endoplasmic reticulum to Golgi vesicle-mediated transport
+5	ER_Golgi_secretory_lipid	GO:0048193	Golgi vesicle transport
+5	ER_Golgi_secretory_lipid	GO:0016192	vesicle-mediated transport
+5	ER_Golgi_secretory_lipid	GO:0006886	intracellular protein transport
+5	ER_Golgi_secretory_lipid	GO:0045047	protein targeting to ER
+5	ER_Golgi_secretory_lipid	GO:0006487	protein N-linked glycosylation
+5	ER_Golgi_secretory_lipid	GO:0006505	GPI anchor metabolic process
+5	ER_Golgi_secretory_lipid	GO:0034975	protein folding in endoplasmic reticulum
+5	ER_Golgi_secretory_lipid	GO:0007030	Golgi organization
+5	ER_Golgi_secretory_lipid	GO:0007029	endoplasmic reticulum organization
+5	ER_Golgi_secretory_lipid	GO:0009306	protein secretion
+5	ER_Golgi_secretory_lipid	GO:0006629	lipid metabolic process
+5	ER_Golgi_secretory_lipid	GO:0006869	lipid transport
+5	ER_Golgi_secretory_lipid	GO:0016757	glycosyltransferase activity
+6	centrosome_cilia_mitosis	GO:0007059	chromosome segregation
+6	centrosome_cilia_mitosis	GO:0000280	nuclear division
+6	centrosome_cilia_mitosis	GO:0051301	cell division
+6	centrosome_cilia_mitosis	GO:0000278	mitotic cell cycle
+6	centrosome_cilia_mitosis	GO:0007098	centrosome cycle
+6	centrosome_cilia_mitosis	GO:0031023	microtubule organizing center organization
+6	centrosome_cilia_mitosis	GO:0007051	spindle organization
+6	centrosome_cilia_mitosis	GO:0044782	cilium organization
+6	centrosome_cilia_mitosis	GO:0060271	cilium assembly
+6	centrosome_cilia_mitosis	GO:0042073	intraciliary transport
+6	centrosome_cilia_mitosis	GO:0003341	cilium movement
+6	centrosome_cilia_mitosis	GO:0008017	microtubule binding
+6	centrosome_cilia_mitosis	GO:0003774	cytoskeletal motor activity
+6	centrosome_cilia_mitosis	GO:0015631	tubulin binding
+7	signalling_lineage	GO:0007165	signal transduction
+7	signalling_lineage	GO:0006355	regulation of DNA-templated transcription
+7	signalling_lineage	GO:0030154	cell differentiation
+7	signalling_lineage	GO:0032502	developmental process
+7	signalling_lineage	GO:0002376	immune system process
+7	signalling_lineage	GO:0000981	DNA-binding transcription factor activity, RNA polymerase II-specific
+7	signalling_lineage	GO:0003700	DNA-binding transcription factor activity
+7	signalling_lineage	GO:0003712	transcription coregulator activity
+7	signalling_lineage	GO:0004672	protein kinase activity
+7	signalling_lineage	GO:0038023	signaling receptor activity
+7	signalling_lineage	GO:0030695	GTPase regulator activity

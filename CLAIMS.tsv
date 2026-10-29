@@ -1,0 +1,7 @@
+claim_id	manuscript_location	statement	value	source_file	source_key	script	verified_by
+C001	Methods/Results C1	size of pre-registered set U	4924	preregistration/CRITERIA.md	|U|	scripts/03_build_preregistration.py	verify/prereg_verification.md
+C002	Results C1	U genes with a DepMap column	4275	preregistration/CRITERIA.md	|U ∩ DepMap|	scripts/03_build_preregistration.py	verify/prereg_verification.md
+C003	Results C1	U genes scorable by the tool	4271	preregistration/CRITERIA.md	|U scorable|	scripts/03_build_preregistration.py	verify/prereg_verification.md
+C004	Methods hold-out	hold-out genes H	820	results/holdout/holdout_sizing.md	|H|	scripts/04_holdout_sizing.py	verify/prereg_verification.md
+C005	Methods hold-out	hold-out targets	5965	results/holdout/holdout_sizing.md	targets	scripts/04_holdout_sizing.py	verify/prereg_verification.md
+C006	Methods power	MDE (80% power) baseline 0.05 / 0.15	0.04 / 0.06	results/holdout/power_sim.md	MDE	scripts/08_power_simulation.py	pending

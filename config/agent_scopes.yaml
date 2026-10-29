@@ -1,0 +1,153 @@
+# config/agent_scopes.yaml -- allowed write paths per agent task and per blind role (DESIGN.md v2.3 §9). TEMPLATE: the PI adjusts it and
+# hands each agent its own stanza in the task prompt. Paths are repository-root-relative globs. An agent may READ
+# anything not listed under `no_read`; it may WRITE only what its task lists. Agents never commit, tag or push; the
+# PI commits with explicit paths. Writes outside the list = stop and report.
+version: 1
+global:
+  commit: never            # agents commit nothing; the PI commits with explicit paths
+  tag: never
+  never_write:             # no agent task may write these (changes go through the PI + revision log)
+    - DESIGN.md
+    - PROMPT.md
+    - config/frozen.yaml
+    - config/term_families.tsv
+    - config/seeds.yaml
+    - config/agent_scopes.yaml
+    - preregistration/FREEZE.sha256
+    - preregistration/uncharacterised_genes.tsv    # after the freeze commit (the preregistration task writes it before)
+    - preregistration/CRITERIA.md                  # idem
+    - external/**                                  # tool clone is read-only
+    - data/raw/**
+    - reviews/**
+  append_only:             # may be appended to by the named task only; never rewritten
+    - LOOKS.md
+    - CLAIMS.tsv
+  log_every_write: true    # each task appends a one-line entry (what, paths) to results/agent_log/<task>.log
+  run_log: results/agent_runs.tsv   # every role run appends: role, model ID, input hashes, timestamp (§9); header in file
+
+tasks:
+  preregistration:         # M2-M3: build U, criteria, provenance, freeze (annotation data only)
+    write:
+      - preregistration/**
+      - results/preregistration/**
+      - results/config_checks/**
+      - results/agent_log/preregistration.log
+      - scripts/02*_*.py
+      - scripts/03_*.py
+    no_read: [results/u_predictions*, results/ledger/**, results/holdout/*metrics*, matrices/**]
+    pairwise_depmap: forbidden
+  infra:                   # M4: ID hub, matrices, reproduction, toy tests, orthogonal admission
+    write:
+      - src/**
+      - tests/**
+      - scripts/0[0-9]_*.py
+      - scripts/*.sh
+      - results/ids/**
+      - results/matrices/manifest*.tsv
+      - results/matrices/**/*.md
+      - results/repro/**
+      - results/toy/**
+      - results/orthogonal_admission/**
+      - results/agent_log/infra.log
+    no_read: [results/u_predictions*, results/ledger/**]
+    pairwise_depmap: after_gate        # src/gate.py::check() passes (tag preregistration-v1)
+  holdout:                 # M5: LOO, temporal hold-out H, comparators, calibration model, circularity
+    write:
+      - results/holdout/**
+      - results/loo/**
+      - results/calibration/**
+      - results/circularity/**
+      - results/splits/**
+      - scripts/1[0-9]_*.py
+      - results/agent_log/holdout.log
+    no_read: [results/u_predictions*, results/ledger/**]
+    looks: "H outcomes are opened once, only after the ranker choice and calibration spec are logged in LOOKS.md"
+    pairwise_depmap: after_gate
+  u_predictions:           # M6: predictor on U, assessability, artefact flags, machine ledger
+    write:
+      - results/u_predictions/**
+      - results/ledger/**
+      - results/assessability/**
+      - scripts/2[0-9]_*.py
+      - results/agent_log/u_predictions.log
+    no_read: [reports/**, manuscript/**]
+    pairwise_depmap: after_gate
+  orthogonal:              # M6-M7: orthogonal support tests (candidate-only scope, §5)
+    write:
+      - results/orthogonal/**
+      - scripts/3[0-9]_*.py
+      - results/agent_log/orthogonal.log
+    no_read: [manuscript/**]
+    pairwise_depmap: after_gate
+  literature_L:            # agent L: novelty screen and evidence items; NO access to co-essentiality outputs
+    write:
+      - results/literature/**
+      - results/recall_probe/**
+      - results/agent_log/literature_L.log
+    no_read: [results/u_predictions*, results/ledger/**, results/holdout/**, results/orthogonal/**, results/matrices/**,
+              external/**, reports/**, manuscript/**]
+    pairwise_depmap: forbidden
+  judges:                  # blinded judges: redacted statements only
+    write:
+      - results/judging/<judge_id>/**
+      - results/agent_log/judges.log
+    no_read: [results/u_predictions*, results/ledger/**, results/holdout/**, results/orthogonal/**, results/matrices/**,
+              external/**, reports/**, manuscript/**, results/judging/<other_judge_id>/**]
+    pairwise_depmap: forbidden
+  reports:                 # per-candidate reports + unedited red-team reviews (separate agent)
+    write:
+      - reports/*.md
+      - reports/redteam/**
+      - results/agent_log/reports.log
+    no_read: [manuscript/**]
+    pairwise_depmap: forbidden
+  manuscript:              # numbers inserted by script from results files; CLAIMS.tsv rows added here
+    write:
+      - manuscript/**
+      - CLAIMS.tsv
+      - REPORT.md
+      - results/agent_log/manuscript.log
+    no_read: []
+    pairwise_depmap: forbidden
+
+# Roles (DESIGN §9): for each blind or independent role the working directory, allowed input files and allowed write paths.
+# Blind roles run in a directory that contains ONLY the listed input file(s); the PI (or a script) prepares it, so the agent
+# cannot reach co-essentiality outputs. Each run appends one row to results/agent_runs.tsv
+# (timestamp_utc, role, task, model_id, working_dir, input_files, input_sha256, output_files, notes). <RUN_ID> and
+# <JUDGE_ID> are filled by the PI per run; directories live outside the repository tree (or in git-ignored scratch/).
+roles:
+  audit:                   # §1.5 curation-lag audit of the 50-gene random U sample (seed 0)
+    working_dir: scratch/blind/audit_<RUN_ID>/
+    inputs: [audit_ids.tsv]          # hgnc_id, symbol only (+ previous symbols/aliases built from HGNC)
+    write: [audit_out/**]            # structured classes N1/N2/N3 with sources
+    tools: [web_search, europe_pmc, uniprot_lookup]
+    no_access: [results/**, external/**, preregistration/uncharacterised_genes.tsv, DESIGN.md, reports/**, manuscript/**]
+    output_collected_to: results/curation_lag/audit_<RUN_ID>.tsv    # PI/script copies; agent does not write there
+  probe:                   # §6.2 LLM recall probe: tool-less, symbol + aliases only
+    working_dir: scratch/blind/probe_<RUN_ID>/
+    inputs: [probe_symbols.tsv]      # symbol, aliases (top-40 genes and the 50 random U genes pooled and shuffled)
+    write: [probe_out/**]
+    tools: []                        # none
+    no_access: [results/**, external/**, preregistration/**, DESIGN.md, reports/**, manuscript/**]
+    output_collected_to: results/recall_probe/probe_<RUN_ID>.tsv
+  L:                       # §6.3 literature/novelty agent: no co-essentiality outputs, no predictions
+    working_dir: scratch/blind/L_<RUN_ID>/
+    inputs: [L_genes.tsv]            # symbol, aliases, UniProt accession; no predicted term, no partners
+    write: [L_out/**]                # structured evidence items + N1/N2/N3 per gene
+    tools: [web_search, europe_pmc, uniprot_lookup, fetch]
+    no_access: [results/**, external/**, reports/**, manuscript/**, DESIGN.md, preregistration/**]
+    output_collected_to: results/literature/L_<RUN_ID>/
+  judge:                   # §6.4 blinded judge: redacted statements + redacted evidence only
+    working_dir: scratch/blind/judge_<JUDGE_ID>/
+    inputs: [statements_redacted.tsv, evidence_redacted.tsv]   # order randomised; gene names redacted; DepMap-derived support = unaddressed
+    write: [judge_out/**]            # scores +1/0/-1 per statement
+    tools: []
+    no_access: [results/**, external/**, reports/**, manuscript/**, DESIGN.md, preregistration/**, other judges' directories]
+    output_collected_to: results/judging/<JUDGE_ID>/
+  red_team:                # §6.5 unedited red-team of one report, by an agent that did not write it
+    working_dir: scratch/redteam/<GENE>_<RUN_ID>/
+    inputs: [reports/<GENE>.md, results/ledger/u_predictions.tsv (row for the gene), results/literature/** (the gene's evidence items)]
+    write: [reports/redteam/<GENE>.md]
+    tools: [web_search, europe_pmc, uniprot_lookup, fetch]
+    no_access: [manuscript/**, reviews/**, other genes' reports]
+    output_collected_to: reports/redteam/<GENE>.md

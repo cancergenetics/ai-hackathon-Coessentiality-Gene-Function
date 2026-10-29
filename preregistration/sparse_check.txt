@@ -1,0 +1,5 @@
+verify_sparse: tag preregistration-v1 does not exist
+verify_sparse: OK: results/predictions not in working tree
+verify_sparse: OK: tool clone clean (git status --porcelain empty)
+verify_sparse: OK: tool clone HEAD == 3c684c972f1e5c3ead722b4b3e2c508fa3cb5ddf
+verify_sparse: PASS
