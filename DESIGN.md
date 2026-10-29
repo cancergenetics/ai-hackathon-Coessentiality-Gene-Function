@@ -105,11 +105,16 @@ the top-partner correlation persist after removing the most dependent lineage?
 1–4 for stability) to report U genes embedded in coherent modules; descriptive only.
 
 ## 5. Orthogonal evidence **[PRE-SPECIFIED rules, set before viewing U predictions]**
-Independent classes: (P) physical — BioPlex 3.0, OpenCell, HuRI, BioGRID low-throughput physical; hu.MAP 3.0 flagged
-partially dependent; (A) co-abundance — CCLE proteomics (Nusinow 2020), ProteomeHD if available; (L) localisation — HPA,
-OpenCell, Human Cell Map; (G) other perturbation — DEMETER2 co-dependency on shared lines, Perturb-seq profile
-similarity, chemogenomic profile similarity; (S) structure-predicted interactomes if available. Excluded for
-circularity: HumanNet, SPOC/Predictomes, STRING text-mining/database/co-expression? (STRING experiments channel only).
+Independent classes (data obtained; see DATA.md): (P) physical — BioPlex 3.0 (293T, HCT116), OpenCell (2022),
+BioGRID 5.0.262 low-throughput physical, STRING v12.5 *experiments* channel only, Human Cell Map SAINT bait–prey;
+hu.MAP 3.0 flagged partially dependent (tool tuned on its train pairs; hu.MAP also integrates BioPlex). HuRI could not
+be downloaded (host unreachable) — HuRI edges partly present in BioGRID. (A) co-abundance — CCLE proteomics (Nusinow
+2020; shares cell lines with DepMap, flagged), ProteomeHD (Kustatscher 2019; independent). (L) localisation — HPA v25.1,
+OpenCell, Human Cell Map NMF/SAFE. (G) other perturbation — DEMETER2 co-dependency, genome-wide Perturb-seq (Replogle
+2022, K562 GW + RPE1/K562 essential pseudo-bulk) profile similarity, chemogenomic profile similarity (Olivieri 2020
+NormZ; BioGRID ORCS drug-exposure screens with DepMap/Avana-type screens removed). (S) structure — Burke 2023 AF2 pDockQ
+(pre-selected pairs; coverage limited). Excluded for circularity: HumanNet, SPOC/Predictomes (uses DepMap as a feature;
+reported only as an external comparison), STRING text-mining/database/co-expression channels.
 - Pair-level support rule per continuous source: similarity ≥ 95th percentile of random-pair distribution; binary
   sources: edge present. Each source's sensitivity is first measured on known co-complex pairs (positive control) and
   random pairs (negative control); sources with no enrichment are dropped (reported).
