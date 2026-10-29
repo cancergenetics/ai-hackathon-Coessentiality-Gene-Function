@@ -1,0 +1,21 @@
+analysis	ranker	n_genes	MRR	precision_at_1	coverage	MRR_ci_gene	p1_ci_gene	top1_size_p10	top1_size_q1	top1_size_median	top1_size_q3	top1_size_p90	top1_size_mean	top1_frac_le50	chosen_by_frozen_rule
+primary (flagged excluded; unscannable included)	R1	2519	0.168835	0.138547	0.984121	0.1566-0.1823	0.1258-0.1520	40.000000	79.000000	131.000000	169.500000	187.000000	122.217426	0.131101	True
+primary (flagged excluded; unscannable included)	R2	2519	0.140258	0.110361	0.984121	0.1285-0.1527	0.0992-0.1227	8.000000	16.000000	35.000000	75.000000	136.000000	53.131505	0.610730	False
+primary (flagged excluded; unscannable included)	R3	2519	0.110761	0.077015	0.984121	0.1004-0.1209	0.0667-0.0869	8.000000	16.000000	31.000000	66.000000	109.200000	47.645825	0.653893	False
+primary (flagged excluded; unscannable included)	prior	2519	0.072938	0.036919	1.000000	0.0654-0.0802	0.0294-0.0441	200.000000	200.000000	200.000000	200.000000	200.000000	200.000000	0.000000	False
+sens: fully-circular only excluded	R1	2520	0.170306	0.140079	0.984127										True
+sens: fully-circular only excluded	R2	2520	0.141644	0.111905	0.984127										False
+sens: fully-circular only excluded	R3	2520	0.111096	0.077381	0.984127										False
+sens: fully-circular only excluded	prior	2520	0.072948	0.036905	1.000000										False
+sens: flagged + unscannable excluded	R1	2481	0.168859	0.138654	0.983877										True
+sens: flagged + unscannable excluded	R2	2481	0.139798	0.110036	0.983877										False
+sens: flagged + unscannable excluded	R3	2481	0.108826	0.074970	0.983877										False
+sens: flagged + unscannable excluded	prior	2481	0.071742	0.036679	1.000000										False
+sens: flagged removed from targets only	R1	2519	0.168325	0.138150	0.984121										True
+sens: flagged removed from targets only	R2	2519	0.139826	0.109964	0.984121										False
+sens: flagged removed from targets only	R3	2519	0.110648	0.077015	0.984121										False
+sens: flagged removed from targets only	prior	2519	0.072740	0.036522	1.000000										False
+sens: no circularity exclusion	R1	2526	0.171683	0.141726	0.984165										True
+sens: no circularity exclusion	R2	2526	0.143254	0.113618	0.984165										False
+sens: no circularity exclusion	R3	2526	0.111663	0.077593	0.984165										False
+sens: no circularity exclusion	prior	2526	0.072874	0.036817	1.000000										False
