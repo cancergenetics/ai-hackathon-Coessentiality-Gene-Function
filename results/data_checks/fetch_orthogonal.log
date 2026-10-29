@@ -1,0 +1,78 @@
+[19:51:04] get   humap3/hu.MAP3.0_complexes_wConfidenceScores_total15326_wGenenames_20240922.csv  (1271417 bytes)
+[19:51:06] get   humap3/humap3_complex_pairs_20240929.pairsWprob  (5237040 bytes)
+[19:51:08] get   humap3/hu.MAP3.0_complex_pairs_genenames_20240930.pairsWprob  (5035946 bytes)
+[19:51:10] get   humap3/humap3_all_ppis_202305.pairsWprob.gz  (236208694 bytes)
+[19:51:22] get   humap3/nodeTable.txt  (232 bytes)
+curl: (22) The requested URL returned error: 404
+curl: (22) The requested URL returned error: 404
+curl: (22) The requested URL returned error: 404
+[19:51:53] FAIL  humap3/nodeTable.txt (https://humap3.proteincomplexes.org/static/downloads/nodeTable.txt)
+[19:51:55] get   opencell/opencell-protein-interactions.csv  (4568928 bytes)
+[19:51:59] get   opencell/opencell-localization-annotations.csv  (61612 bytes)
+[19:52:01] get   opencell/opencell-library-metadata.csv  (647376 bytes)
+[19:52:04] get   hpa/subcellular_location.tsv.zip  (252331 bytes)
+[19:52:05] get   humancellmap/baits-latest.txt  (21408 bytes)
+[19:52:06] get   humancellmap/preys-latest.txt  (441953 bytes)
+[19:52:08] get   humancellmap/not-significant-latest.txt  (363167 bytes)
+[19:52:09] get   humancellmap/saint-latest.txt  (81457216 bytes)
+[19:52:15] get   huri/HuRI.tsv  (? bytes)
+curl: (60) SSL: no alternative certificate subject name matches target hostname 'www.interactome-atlas.org'
+More details here: https://curl.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the webpage mentioned above.
+curl: (60) SSL: no alternative certificate subject name matches target hostname 'www.interactome-atlas.org'
+More details here: https://curl.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the webpage mentioned above.
+curl: (60) SSL: no alternative certificate subject name matches target hostname 'www.interactome-atlas.org'
+More details here: https://curl.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the webpage mentioned above.
+[19:52:46] FAIL  huri/HuRI.tsv (https://www.interactome-atlas.org/data/HuRI.tsv)
+[19:52:47] get   huri/Lit-BM.tsv  (? bytes)
+curl: (60) SSL: no alternative certificate subject name matches target hostname 'www.interactome-atlas.org'
+More details here: https://curl.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the webpage mentioned above.
+curl: (60) SSL: no alternative certificate subject name matches target hostname 'www.interactome-atlas.org'
+More details here: https://curl.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the webpage mentioned above.
+curl: (60) SSL: no alternative certificate subject name matches target hostname 'www.interactome-atlas.org'
+More details here: https://curl.se/docs/sslcerts.html
+
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the webpage mentioned above.
+[19:53:18] FAIL  huri/Lit-BM.tsv (https://www.interactome-atlas.org/data/Lit-BM.tsv)
+[19:53:18] get   string/9606.protein.links.detailed.v12.5.txt.gz  (103004268 bytes)
+[19:53:22] get   string/9606.protein.physical.links.detailed.v12.5.txt.gz  (9087654 bytes)
+[19:53:23] get   string/9606.protein.info.v12.5.txt.gz  (1970090 bytes)
+[19:53:24] get   string/9606.protein.aliases.v12.5.txt.gz  (19777800 bytes)
+[19:53:25] get   biogrid/BIOGRID-ORGANISM-Homo_sapiens-5.0.262.tab3.txt  (? bytes)
+[19:53:34] get   biogrid_orcs/BIOGRID-ORCS-ALL-homo_sapiens-LATEST.screens.tar.gz  (? bytes)
+curl: (92) HTTP/2 stream 1 was not closed cleanly: INTERNAL_ERROR (err 2)
+[19:54:01] get   olivieri2020/biorxiv_845446_TableS1_media-1.xlsx  (? bytes)
+[19:54:21] get   olivieri2020/biorxiv_845446_TableS2_NormZ_media-2.xlsx  (? bytes)
+[19:54:42] get   replogle2022_perturbseq/K562_gwps_normalized_bulk_01.h5ad  (0 bytes)
+[19:54:50] get   replogle2022_perturbseq/K562_essential_normalized_bulk_01.h5ad  (0 bytes)
+[19:54:52] get   replogle2022_perturbseq/rpe1_normalized_bulk_01.h5ad  (0 bytes)
+[19:54:55] get   replogle2022_perturbseq/annotated_embedding_coordinates.csv  (0 bytes)
+[19:54:55] SKIP  replogle2022_perturbseq/K562_gwps_normalized_singlecell_01.h5ad (recorded only)
+[19:54:55] SKIP  replogle2022_perturbseq/anderson-darling_pvalues_BH.csv.gz (recorded only)
+[19:54:55] get   proteomehd/coregulation_scores.zip  (193643861 bytes)
+[19:56:17] SKIP  proteomehd/ProteomeHD_v1_1.7z (recorded only)
+[19:56:17] get   burke2023_af2/table_AF2_HURI_HuMap_UNIQUE.csv  (21643999 bytes)
+[19:56:19] get   predictomes2025/20251110_hs_predictome_pair_scores.csv.gz  (28427577 bytes)
+[19:56:21] SKIP  predictomes2025/hs_predictomes_top_16k_export.tar (recorded only)
+[19:56:31] manifest written: config/data_manifest_orthogonal.tsv
