@@ -93,3 +93,93 @@ def test_assessability_null_rates_at_real_scale():
     a = sh.assessable(R, R0, seed=0)
     assert abs(a.randomized.mean() - 0.05) < 0.025
     assert a.percentile.mean() < 0.035 and a.conservative.mean() < 0.035
+
+
+# ------------------------------------------------------------------------------------------ M4 additions
+def test_restrict_lists():
+    ids = np.array([[5, 1, 7, 2, -1], [3, 4, 6, 0, 1]])
+    allowed = np.array([True, True, False, True, True, True, False, True])
+    out = sh.restrict_lists(ids, allowed, 3)
+    assert out.tolist() == [[5, 1, 7], [3, 4, 0]]
+    out = sh.restrict_lists(np.array([[2, 6, 5, -1, -1]]), allowed, 3)
+    assert out.tolist() == [[5, -1, -1]]
+
+
+def _rbo_naive(a, b, p):
+    a, b = [x for x in a if x >= 0], [x for x in b if x >= 0]
+    K = max(len(a), len(b))
+    X = [len(set(a[:d]) & set(b[:d])) for d in range(1, K + 1)]
+    return X[-1] / K * p ** K + (1 - p) / p * sum(X[d - 1] / d * p ** d for d in range(1, K + 1))
+
+
+def test_rbo_ext_by_hand():
+    A = np.array([[1, 2, 3], [1, 2, 3], [1, 2, 3], [1, 2, 3]])
+    B = np.array([[1, 2, 3], [4, 5, 6], [2, 1, 3], [3, 9, 1]])
+    v = sh.rbo_ext(A, B, p=0.9)
+    assert np.isclose(v[0], 1.0) and v[1] == 0.0
+    # [1,2,3] vs [2,1,3]: X = 0, 2, 3 -> 3/3 * .729 + (.1/.9) * (0 + 2/2 * .81 + 3/3 * .729)
+    assert np.isclose(v[2], 0.729 + (0.1 / 0.9) * (0.81 + 0.729))
+    rng = np.random.default_rng(0)
+    for _ in range(50):
+        a, b = rng.choice(40, 25, replace=False), rng.choice(40, 25, replace=False)
+        assert np.isclose(sh.rbo_ext(a[None], b[None], 0.9)[0], _rbo_naive(a, b, 0.9))
+    assert np.isclose(v[3], _rbo_naive([1, 2, 3], [3, 9, 1], 0.9))
+    # empty slots never match
+    assert sh.rbo_ext(np.array([[-1, -1]]), np.array([[-1, -1]]))[0] == 0.0
+
+
+def test_reproducibility_rbo_matches_definition():
+    A1 = np.array([[1, 2], [0, 3], [0, 1], [-1, -1]])
+    B1 = np.array([[2, 3], [2, 3], [0, 1], [0, 1]])
+    A2, B2 = A1.copy(), np.array([[1, 2], [2, 3], [0, 3], [0, 1]])
+    pairs = [(A1, B1), (A2, B2)]
+    R, R0 = sh.reproducibility_rbo(pairs, p=0.9, matches={0: np.array([1, 2, 3]), 2: np.array([0])}, chunk=1)
+    for g in range(4):
+        exp = np.mean([sh.rbo_ext(a[g][None], b[g][None], 0.9)[0] for a, b in pairs])
+        assert np.isclose(R[g], exp)
+    for g, ms in {0: [1, 2, 3], 2: [0]}.items():
+        exp = [np.mean([sh.rbo_ext(a[g][None], b[m][None], 0.9)[0] for a, b in pairs]) for m in ms]
+        assert np.allclose(R0[g], exp)
+
+
+def test_conservative_p_integer_ties():
+    K, S = 25, 5
+    R = np.array([3 / (S * K), 0.0])
+    R0 = {0: np.r_[np.full(8, 3 / (S * K)), np.zeros(192)], 1: np.zeros(200)}
+    t = sh.conservative_p(R, R0, n_seeds=S, K=K).set_index("gene")
+    assert t.loc[0, "n_R0_ge_R"] == 8 and np.isclose(t.loc[0, "p"], 9 / 201) and t.loc[0, "p"] < 0.05
+    assert t.loc[1, "p"] == 1.0
+    a = sh.assessable(R, R0).set_index("gene")
+    assert np.allclose(a.p_conservative.values, t.p.values)
+
+
+def test_expression_strata():
+    # 30 models: lineage L1 (12 models), L2 (10), L3 (8, too small)
+    lin = np.array(["L1"] * 12 + ["L2"] * 10 + ["L3"] * 8, dtype=object)
+    X = np.zeros((30, 5))
+    X[:3, 0] = 2.0                         # gene 0: 3/30 = 10% >= 1 -> expressed
+    X[:6, 1] = 2.0                         # gene 1: 6/30 = 20%; 6/12 = 50% of L1 -> expressed (not lineage-restricted)
+    X[12:17, 2] = 1.5                      # gene 2: 5/30 = 16.7% -> expressed
+    X[:, 3] = 0.7                          # gene 3: never >= 1, never < 0.5 -> neither expressed nor clean negative
+    X[22:30, 4] = 3.0                      # gene 4: 8/30 = 26.7% expressed; L3 too small for the lineage rule
+    X[0, 3] = np.nan
+    s = sh.expression_strata(X, lin)
+    assert s.expressed.tolist() == [True, True, True, False, True]
+    assert s.clean_negative.tolist() == [False, False, False, False, False]
+    assert s.attrs["n_lineages_eligible"] == 2
+    # lineage-restricted: 2/30 overall (< 10%) but 6/10 of L2 >= 50% ; clean negative: 29/30 < 0.5 (>= 95%)
+    Y = np.zeros((30, 3))
+    Y[12:18, 0] = 2.0                      # 6/30 = 20% -> expressed (and lineage criterion)
+    Y[12:14, 1] = 2.0
+    Y[14:17, 1] = 1.2                      # 5/30 = 16.7% expressed overall
+    Y[12:17, 2] = 1.0                      # 5/10 of L2 = 50% -> lineage criterion; 5/30 >= 10% -> expressed anyway
+    s = sh.expression_strata(Y, lin, expr_frac=0.2)
+    assert s.expressed.tolist() == [True, False, False]
+    assert s.lineage_criterion.tolist() == [True, True, True]
+    assert s.lineage_restricted.tolist() == [False, True, True]
+    assert s.lineage_max.tolist() == ["L2", "L2", "L2"]
+    Z = np.zeros((40, 2))
+    Z[0, 0] = 0.6                          # 39/40 = 97.5% < 0.5 -> clean negative
+    Z[:3, 1] = 0.6                         # 37/40 = 92.5% -> not clean negative
+    s = sh.expression_strata(Z, None)
+    assert s.clean_negative.tolist() == [True, False] and not s.lineage_criterion.any()

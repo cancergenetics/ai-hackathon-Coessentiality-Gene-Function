@@ -157,3 +157,116 @@ def assessable(R: np.ndarray, R0: dict, alpha: float = 0.05, seed: int = 0) -> p
                          percentile=bool(r > q95), conservative=bool(p_cons <= alpha),
                          randomized=bool(p_rand <= alpha)))
     return pd.DataFrame(rows)
+
+
+# ------------------------------------------------------------------------------------------ added at M4
+def restrict_lists(ids: np.ndarray, allowed: np.ndarray, K: int) -> np.ndarray:
+    """First K entries of each ranked list (rows of ``ids``, -1 padding) that are in ``allowed`` (bool mask over
+    gene positions), order preserved; -1 padding if fewer than K remain (DESIGN §4.2: the top-60 half lists are
+    restricted to BG_A n BG_B n BG_full, then cut to K)."""
+    ids = np.asarray(ids, dtype=np.int64)
+    allowed = np.asarray(allowed, bool)
+    ok = (ids >= 0) & allowed[np.where(ids >= 0, ids, 0)]
+    rank = np.cumsum(ok, 1)
+    keep = ok & (rank <= K)
+    out = np.full((ids.shape[0], K), -1, np.int64)
+    r, c = np.nonzero(keep)
+    out[r, rank[r, c] - 1] = ids[r, c]
+    return out
+
+
+def rbo_ext(A: np.ndarray, B: np.ndarray, p: float = 0.9) -> np.ndarray:
+    """Extrapolated rank-biased overlap (Webber, Moffat & Zobel 2010, eq. 32, equal-length lists) of each row pair of
+    A and B (n x K ranked id lists, -1 = empty slot, never matches):
+        RBO_ext = X_K / K * p^K + (1 - p) / p * sum_{d=1..K} X_d / d * p^d,  X_d = |A[:d] n B[:d]|.
+    Identical lists -> 1, disjoint -> 0. Rows are assumed to hold distinct ids."""
+    A = np.atleast_2d(np.asarray(A, dtype=np.int64))
+    B = np.atleast_2d(np.asarray(B, dtype=np.int64))
+    n, K = A.shape
+    eq = (A[:, :, None] == B[:, None, :]) & (A[:, :, None] >= 0)
+    hit = eq.any(2)
+    j = eq.argmax(2)
+    depth = np.where(hit, np.maximum(np.arange(K)[None, :], j) + 1, K + 1)    # depth at which A[:, i] is shared
+    d = np.arange(1, K + 1)
+    X = (depth[:, :, None] <= d[None, None, :]).sum(1)                       # n x K: X_d
+    w = p ** d
+    return X[:, -1] / K * p ** K + (1 - p) / p * (X / d * w).sum(1)
+
+
+def reproducibility_rbo(pairs, p: float = 0.9, matches: dict | None = None, chunk: int = 64) -> tuple[np.ndarray, dict]:
+    """RBO analogue of ``reproducibility`` (DESIGN §4.2 'RBO = sensitivity'):
+        R_rbo(g)     = mean_s RBO_ext(N_A^s(g), N_B^s(g))
+        R0_rbo(g, m) = mean_s RBO_ext(N_A^s(g), N_B^s(m))."""
+    G = pairs[0][0].shape[0]
+    R = np.zeros(G)
+    qs = [int(g) for g in (matches or {})]
+    R0 = {g: np.zeros(len(matches[g])) for g in qs}
+    for ids_a, ids_b in pairs:
+        R += rbo_ext(ids_a, ids_b, p)
+        for c0 in range(0, len(qs), chunk):
+            cg = qs[c0:c0 + chunk]
+            lens = [len(matches[g]) for g in cg]
+            a = np.repeat(np.asarray(ids_a)[cg], lens, axis=0)
+            b = np.asarray(ids_b)[np.concatenate([np.asarray(matches[g], dtype=np.int64) for g in cg])]
+            v = rbo_ext(a, b, p)
+            for g, part in zip(cg, np.split(v, np.cumsum(lens)[:-1])):
+                R0[g] += part
+    R /= len(pairs)
+    for g in R0:
+        R0[g] /= len(pairs)
+    return R, R0
+
+
+def conservative_p(R: np.ndarray, R0: dict, n_seeds: int | None = None, K: int | None = None) -> pd.DataFrame:
+    """Frozen §4.2 p per query: (1 + #{m: R0(g, m) >= R(g)}) / (1 + M). If n_seeds and K are given, R and R0 are
+    converted to integer overlap totals (x n_seeds K) before comparing, so ties are exact."""
+    rows = []
+    for g in sorted(R0):
+        r, r0 = R[g], np.asarray(R0[g])
+        if n_seeds and K:
+            r, r0 = np.rint(r * n_seeds * K), np.rint(r0 * n_seeds * K)
+        n_ge = int((r0 >= r).sum())
+        rows.append(dict(gene=g, n_R0_ge_R=n_ge, M=len(r0), p=(1 + n_ge) / (1 + len(r0))))
+    return pd.DataFrame(rows)
+
+
+def expression_strata(X: np.ndarray, lineage=None, expr_min: float = 1.0, expr_frac: float = 0.10,
+                      neg_max: float = 0.5, neg_frac: float = 0.95, lin_frac: float = 0.5,
+                      lin_min_lines: int = 10) -> pd.DataFrame:
+    """DESIGN §1.4 expression strata from a models x genes log2(TPM+1) matrix (NaN = missing; fractions over
+    non-missing models):
+      expressed           frac(X >= expr_min) >= expr_frac
+      clean_negative      frac(X < neg_max) >= neg_frac
+      lineage_criterion   frac(X >= expr_min) >= lin_frac within some lineage with >= lin_min_lines models
+                          (lineage = per-model label; missing labels ignored)
+      lineage_restricted  lineage_criterion and not expressed (counts as expressed, §1.4)
+    Returns one row per gene (column order of X)."""
+    X = np.asarray(X, dtype=np.float64)
+    ok = ~np.isnan(X)
+    n_ok = ok.sum(0)
+    with np.errstate(invalid="ignore", divide="ignore"):
+        f_exp = (X >= expr_min).sum(0) / n_ok
+        f_neg = (X < neg_max).sum(0) / n_ok
+    best = np.full(X.shape[1], np.nan)
+    best_lin = np.full(X.shape[1], None, dtype=object)
+    n_lin = 0
+    if lineage is not None:
+        lab = pd.Series(lineage).astype(object)
+        for L in sorted(lab.dropna().astype(str).unique()):
+            m = (lab.astype(str) == L).to_numpy() & lab.notna().to_numpy()
+            if m.sum() < lin_min_lines:
+                continue
+            n_lin += 1
+            with np.errstate(invalid="ignore", divide="ignore"):
+                f = (X[m] >= expr_min).sum(0) / ok[m].sum(0)
+            better = np.nan_to_num(f, nan=-1) > np.nan_to_num(best, nan=-1)
+            best = np.where(better, f, best)
+            best_lin = np.where(better, L, best_lin)
+    expressed = np.nan_to_num(f_exp, nan=0) >= expr_frac
+    lin_crit = np.nan_to_num(best, nan=0) >= lin_frac
+    out = pd.DataFrame(dict(n_models=n_ok, frac_ge_expr=f_exp, expressed=expressed & (n_ok > 0),
+                            frac_lt_neg=f_neg, clean_negative=(np.nan_to_num(f_neg, nan=0) >= neg_frac) & (n_ok > 0),
+                            lineage_max_frac=best, lineage_max=best_lin, lineage_criterion=lin_crit,
+                            lineage_restricted=lin_crit & ~expressed))
+    out.attrs["n_lineages_eligible"] = n_lin
+    return out
