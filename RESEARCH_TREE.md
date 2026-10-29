@@ -4,6 +4,28 @@ Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · 
 
 ## Status summary (latest first)
 
+### M2–M3 — design frozen and gene list pre-registered (2026-10-29)
+DESIGN.md went v1 → v2 → v2.1 → v2.2 → v2.3 through two review rounds (round 1: external PI, statistics,
+data/algorithms, AI failure modes, prior work, biology/experiments; round 2: five reviewers, all "ready after minor
+changes") and two item-by-item disposition checks, which caught 7 and then 32 small gaps. Key design features: claims
+C1–C4 with pre-written decision branches; U = D1 ∩ (D2 ∪ D3); temporal hold-out H (t0 = GO 2018-07-02) as the primary
+validation with prior-only and matched-gene nulls; calibration on H with cross-fitting and support restriction;
+assessability by split-half reproducibility vs a cross-gene null plus an expression requirement; non-expressed genes as
+a negative control; four-state, family-specific orthogonal evidence; blinded literature judging with decoys.
+
+The pre-registered list U has 4,924 genes (4,275 in DepMap, 4,271 scorable); H has 820 genes and 5,965 targets
+(power: MDE ≈ 0.04–0.06 precision@1). An independent agent re-derived U and H from raw files with its own code and
+reproduced both exactly. Pipeline modules pass 99 tests incl. a toy test with planted modules (precision@1 1.00 on
+strong modules; proximity calls removed; null calibrated); our GLS/Pearson match the tool's to < 5e-7. Next (M4): full
+zavg_BEF matrix on DepMap 26Q3, reproduction of the tool's published HT-AP, sign checks, split-half runs, orthogonal
+source admission, curation-lag audit and recall probe on the random 50 U genes.
+
+**Decision note D2 (freeze).** Freeze commit afed1dd, tags `preregistration-v1` and `design-frozen`;
+`preregistration/FREEZE.sha256` SHA-256 = 687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04.
+`gate.check()` passes. Named controls SPRING1, TEDC1/2, POU2AF2/3 fall outside the 5–200 term window and are not in H;
+they stay in the descriptive case series (window 2–300). Kept the frozen (conservative) assessability rule
+(toy null false-assessable 1.7%). Matching caliper will mostly fall back to nearest-M (violation rate reported).
+
 ### M1 — literature and data (2026-10-29)
 LITERATURE.md (≈6.8k words, 123 Crossref-verified references) recommends: pre-register U = D1 ∩ (D2 ∪ D3) (no
 experimental functional GO; UniProt score ≤ 2 or low literature/Tdark); calibrate on characterised genes with a
@@ -46,9 +68,11 @@ pre-registered list is committed and its hash recorded here.
   - [x] LITERATURE.md: co-essentiality for function prediction, defining "uncharacterised", orthogonal datasets, validation designs
   - [x] Datasets obtained + checksummed (HuRI, CORUM unavailable)
   - [x] Knownness feature table (annotation-only)
-- [~] M2 Design: DESIGN.md + up to 3 review rounds (v1 in round 1)
-- [ ] M3 Pre-registration: frozen list of uncharacterised genes (committed + hashed before any network analysis)
-- [ ] M4 Tool verification: toy tests, reproduction of published numbers, sanity controls
+- [x] M2 Design: DESIGN v2.3 after 2 review rounds (11 reviews) + 2 disposition checks; tag design-frozen
+- [x] M3 Pre-registration: U = 4,924 genes frozen (tag preregistration-v1, afed1dd); independently re-derived
+  - [x] Hold-out H = 820 genes / 5,965 targets; circularity flags (1.5% PMIDs); power sim
+  - [x] Pipeline modules + toy tests (99 pass)
+- [~] M4 Tool verification: full matrix, reproduction, sign checks, split-half, source admission, audit + probe
 - [ ] M5 Calibration: how well does the network predict function for characterised genes (incl. temporal hold-out)
 - [ ] M6 Hypothesis generation for pre-registered genes; orthogonal evidence integration
 - [ ] M7 Literature deep-dives + experiments for top candidates; per-candidate reports
