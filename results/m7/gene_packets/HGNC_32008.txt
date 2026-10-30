@@ -1,0 +1,6 @@
+hgnc_id: HGNC:32008
+symbol: TMEM120B
+previous_symbols: 
+alias_symbols: 
+uniprot_accessions: A0PK00
+cytoband: 12q24.31

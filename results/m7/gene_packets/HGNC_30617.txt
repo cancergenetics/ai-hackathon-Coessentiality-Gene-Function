@@ -1,0 +1,6 @@
+hgnc_id: HGNC:30617
+symbol: ELP5
+previous_symbols: C17orf81
+alias_symbols: DERP6
+uniprot_accessions: Q8TE02
+cytoband: 17p13.1

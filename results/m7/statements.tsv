@@ -1,0 +1,401 @@
+item_id	hgnc_id	slot	statement
+M7-001	HGNC:14440	A	GENE_X functions in cellular response to chemical stress; module context: FAR/SIP/STRIPAK complex
+M7-001	HGNC:14440	B	GENE_X functions in response to xenobiotic stimulus; module context: cyclin-dependent protein kinase holoenzyme complex
+M7-001	HGNC:14440	C	GENE_X functions in regulation of pattern recognition receptor signaling pathway; module context: protein phosphatase type 1 complex
+M7-001	HGNC:14440	D	GENE_X functions in positive regulation of protein catabolic process; module context: cullin-RING ubiquitin ligase complex
+M7-002	HGNC:27406	A	GENE_X functions in actomyosin structure organization; module context: protein-DNA complex
+M7-002	HGNC:27406	B	GENE_X functions in polyubiquitin modification-dependent protein binding; module context: nuclear pore
+M7-002	HGNC:27406	C	GENE_X functions in peptidase activator activity; module context: MitoCarta: 0.0
+M7-002	HGNC:27406	D	GENE_X functions in response to fluid shear stress; module context: Nuclear pore complex
+M7-003	HGNC:24127	A	GENE_X functions in response to endoplasmic reticulum stress
+M7-003	HGNC:24127	B	GENE_X functions in protein localization to membrane
+M7-003	HGNC:24127	C	GENE_X functions in RNA catabolic process
+M7-003	HGNC:24127	D	GENE_X functions in regulation of monoatomic ion transmembrane transport
+M7-004	HGNC:11326	A	GENE_X functions in long-chain fatty acid metabolic process; module context: plasma membrane signaling receptor complex
+M7-004	HGNC:11326	B	GENE_X functions in endoplasmic reticulum organization; module context: Nuclear pore complex
+M7-004	HGNC:11326	C	GENE_X functions in vesicle-mediated transport to the plasma membrane; module context: vesicle tethering complex
+M7-004	HGNC:11326	D	GENE_X functions in protein N-linked glycosylation; module context: endoplasmic reticulum protein-containing complex
+M7-005	HGNC:17971	A	GENE_X functions in mitochondrial membrane organization
+M7-005	HGNC:17971	B	GENE_X functions in mitochondrial translational elongation
+M7-005	HGNC:17971	C	GENE_X functions in mitochondrial transport
+M7-005	HGNC:17971	D	GENE_X functions in mitochondrial respiratory chain complex assembly
+M7-006	HGNC:25749	A	GENE_X functions in transition metal ion transport; module context: spliceosomal complex
+M7-006	HGNC:25749	B	GENE_X functions in endosome organization; module context: MitoCarta: Metabolism > Detoxification
+M7-006	HGNC:25749	C	GENE_X functions in DNA-templated transcription elongation; module context: PAQosome co-chaperone complex
+M7-006	HGNC:25749	D	GENE_X functions in cell-cell junction assembly; module context: monoatomic ion channel complex
+M7-007	HGNC:20338	A	GENE_X functions in gamma-catenin binding
+M7-007	HGNC:20338	B	GENE_X functions in arylsulfatase activity
+M7-007	HGNC:20338	C	GENE_X functions in nucleoside diphosphate kinase activity
+M7-007	HGNC:20338	D	GENE_X functions in protein localization to condensed chromosome
+M7-008	HGNC:30763	A	GENE_X functions in tRNA metabolic process; module context: Elongator holoenzyme complex
+M7-008	HGNC:30763	B	GENE_X functions in ligand-gated monoatomic ion channel activity; module context: monoatomic ion channel complex
+M7-008	HGNC:30763	C	GENE_X functions in phosphatase binding; module context: plasma membrane signaling receptor complex
+M7-008	HGNC:30763	D	GENE_X functions in response to light stimulus; module context: Major Spliceosomal B-act-I complex
+M7-009	HGNC:18896	A	GENE_X functions in negative regulation of protein transport
+M7-009	HGNC:18896	B	GENE_X functions in protein autoubiquitination
+M7-009	HGNC:18896	C	GENE_X functions in negative regulation of viral process
+M7-009	HGNC:18896	D	GENE_X functions in ossification
+M7-010	HGNC:11866	A	GENE_X functions in host-mediated suppression of symbiont invasion
+M7-010	HGNC:11866	B	GENE_X functions in taste receptor activity
+M7-010	HGNC:11866	C	GENE_X functions in morphogenesis of a branching structure
+M7-010	HGNC:11866	D	GENE_X functions in nuclear steroid receptor activity
+M7-011	HGNC:28982	A	GENE_X functions in sulfur compound metabolic process; module context: MitoCarta: Metabolism > Lipid metabolism
+M7-011	HGNC:28982	B	GENE_X functions in defense response to virus; module context: RNA polymerase II transcription regulator complex
+M7-011	HGNC:28982	C	GENE_X functions in regulation of microtubule-based process; module context: GBAF (SWI/SNF) ATP-dependent chromatin remodeling complex
+M7-011	HGNC:28982	D	GENE_X functions in organic acid transport; module context: SCAR complex
+M7-012	HGNC:2937	A	GENE_X functions in nucleoside phosphate biosynthetic process; module context: protein kinase complex
+M7-012	HGNC:2937	B	GENE_X functions in regulation of cellular response to growth factor stimulus; module context: monoatomic ion channel complex
+M7-012	HGNC:2937	C	GENE_X functions in defense response to bacterium; module context: plasma membrane signaling receptor complex
+M7-012	HGNC:2937	D	GENE_X functions in regulation of hemopoiesis; module context: transcription repressor complex
+M7-013	HGNC:9519	A	GENE_X functions in protein folding
+M7-013	HGNC:9519	B	GENE_X functions in regulation of type I interferon production
+M7-013	HGNC:9519	C	GENE_X functions in xenobiotic metabolic process
+M7-013	HGNC:9519	D	GENE_X functions in cellular response to starvation
+M7-014	HGNC:25628	A	GENE_X functions in regulation of DNA repair; module context: ubiquitin conjugating enzyme complex
+M7-014	HGNC:25628	B	GENE_X functions in macromolecular conformation isomerase activity; module context: MitoCarta: Mitochondrial central dogma > Translation
+M7-014	HGNC:25628	C	GENE_X functions in carboxylic acid biosynthetic process; module context: chromatin silencing complex
+M7-014	HGNC:25628	D	GENE_X functions in cell population proliferation; module context: endoplasmic reticulum protein-containing complex
+M7-015	HGNC:26105	A	GENE_X functions in regulation of actin cytoskeleton organization; module context: monoatomic ion channel complex
+M7-015	HGNC:26105	B	GENE_X functions in cytokine receptor binding; module context: endoribonuclease complex
+M7-015	HGNC:26105	C	GENE_X functions in cell junction organization; module context: serine/threonine protein kinase complex
+M7-015	HGNC:26105	D	GENE_X functions in regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction; module context: protein folding chaperone complex
+M7-016	HGNC:15682	A	GENE_X functions in response to light stimulus; module context: oxidoreductase complex
+M7-016	HGNC:15682	B	GENE_X functions in cysteine-type peptidase activity; module context: Integrator-PP2A complex
+M7-016	HGNC:15682	C	GENE_X functions in epigenetic regulation of gene expression; module context: PcG protein complex
+M7-016	HGNC:15682	D	GENE_X functions in regulation of transmembrane receptor protein serine/threonine kinase signaling pathway; module context: signal peptidase complex
+M7-017	HGNC:32008	A	GENE_X functions in sulfur compound metabolic process; module context: MitoCarta: Metabolism > Lipid metabolism
+M7-017	HGNC:32008	B	GENE_X functions in negative regulation of cell adhesion; module context: cullin-RING ubiquitin ligase complex
+M7-017	HGNC:32008	C	GENE_X functions in regulation of microtubule-based process; module context: microtubule associated complex
+M7-017	HGNC:32008	D	GENE_X functions in G protein-coupled receptor binding; module context: monoatomic ion channel complex
+M7-018	HGNC:18329	A	GENE_X functions in regulation of DNA recombination; module context: MitoCarta: Metabolism > Vitamin metabolism
+M7-018	HGNC:18329	B	GENE_X functions in positive regulation of Wnt signaling pathway; module context: GID E3 ubiquitin ligase complex
+M7-018	HGNC:18329	C	GENE_X functions in endopeptidase inhibitor activity; module context: MitoCarta: Metabolism > Carbohydrate metabolism
+M7-018	HGNC:18329	D	GENE_X functions in blood coagulation; module context: MitoCarta: Metabolism > Nucleotide metabolism
+M7-019	HGNC:24142	A	GENE_X functions in regulation of DNA repair
+M7-019	HGNC:24142	B	GENE_X functions in response to endoplasmic reticulum stress
+M7-019	HGNC:24142	C	GENE_X functions in ribonucleotide metabolic process
+M7-019	HGNC:24142	D	GENE_X functions in establishment of protein localization to organelle
+M7-020	HGNC:25015	A	GENE_X functions in cell killing; module context: Exocyst
+M7-020	HGNC:25015	B	GENE_X functions in response to UV; module context: DNA replication factor C complex
+M7-020	HGNC:25015	C	GENE_X functions in establishment of protein localization to membrane; module context: endoplasmic reticulum protein-containing complex
+M7-020	HGNC:25015	D	GENE_X functions in negative regulation of Wnt signaling pathway; module context: beta-catenin destruction complex
+M7-021	HGNC:26532	A	GENE_X functions in mitotic sister chromatid segregation
+M7-021	HGNC:26532	B	GENE_X functions in motile cilium assembly
+M7-021	HGNC:26532	C	GENE_X functions in G2/M transition of mitotic cell cycle
+M7-021	HGNC:26532	D	GENE_X functions in G1/S transition of mitotic cell cycle
+M7-022	HGNC:21874	A	GENE_X functions in protein localization to cytoskeleton; module context: Histone-lysine N-methyltransferase complex
+M7-022	HGNC:21874	B	GENE_X functions in oxidoreductase activity, acting on the aldehyde or oxo group of donors; module context: MitoCarta: Metabolism > Amino acid metabolism
+M7-022	HGNC:21874	C	GENE_X functions in protein monoubiquitination; module context: methyltransferase complex
+M7-022	HGNC:21874	D	GENE_X functions in snRNA metabolic process; module context: RNA polymerase II transcription regulator complex
+M7-023	HGNC:20715	A	GENE_X functions in negative regulation of cell adhesion; module context: cullin-RING ubiquitin ligase complex
+M7-023	HGNC:20715	B	GENE_X functions in positive regulation of cell-cell adhesion; module context: MitoCarta: Metabolism > Vitamin metabolism
+M7-023	HGNC:20715	C	GENE_X functions in alcohol metabolic process; module context: MitoCarta: Metabolism > Amino acid metabolism
+M7-023	HGNC:20715	D	GENE_X functions in sulfur compound metabolic process; module context: MitoCarta: Metabolism > Lipid metabolism
+M7-024	HGNC:21898	A	GENE_X functions in protein autophosphorylation; module context: protein kinase complex
+M7-024	HGNC:21898	B	GENE_X functions in regulation of proteasomal ubiquitin-dependent protein catabolic process; module context: Non-canonical polycomb repressive complex 1.3
+M7-024	HGNC:21898	C	GENE_X functions in nucleus organization; module context: Nuclear pore complex
+M7-024	HGNC:21898	D	GENE_X functions in negative regulation of leukocyte activation; module context: extracellular protein-containing complex
+M7-025	HGNC:13490	A	GENE_X functions in iron ion binding; module context: MitoCarta: Mitochondrial central dogma > Translation
+M7-025	HGNC:13490	B	GENE_X functions in RNA 3'-end processing; module context: mRNA cleavage factor complex
+M7-025	HGNC:13490	C	GENE_X functions in intracellular iron ion homeostasis; module context: proton-transporting two-sector ATPase complex
+M7-025	HGNC:13490	D	GENE_X functions in PDZ domain binding; module context: Kinetochore CCAN complex
+M7-026	HGNC:2943	A	GENE_X functions in motile cilium assembly
+M7-026	HGNC:2943	B	GENE_X functions in mitotic cytokinesis
+M7-026	HGNC:2943	C	GENE_X functions in microtubule organizing center organization
+M7-026	HGNC:2943	D	GENE_X functions in mitotic sister chromatid segregation
+M7-027	HGNC:37252	A	GENE_X functions in pentosyltransferase activity
+M7-027	HGNC:37252	B	GENE_X functions in retinoid metabolic process
+M7-027	HGNC:37252	C	GENE_X functions in protein N-linked glycosylation
+M7-027	HGNC:37252	D	GENE_X functions in neutral lipid metabolic process
+M7-028	HGNC:7697	A	GENE_X functions in intramolecular transferase activity; module context: monoatomic ion channel complex
+M7-028	HGNC:7697	B	GENE_X functions in NADH dehydrogenase activity; module context: Mitochondrial respiratory chain complex I
+M7-028	HGNC:7697	C	GENE_X functions in pteridine-containing compound metabolic process; module context: MitoCarta: Metabolism > Vitamin metabolism
+M7-028	HGNC:7697	D	GENE_X functions in E-box binding; module context: nuclear exosome (RNase complex)
+M7-029	HGNC:14456	A	GENE_X functions in PDZ domain binding; module context: Kinetochore CCAN complex
+M7-029	HGNC:14456	B	GENE_X functions in iron ion binding; module context: MitoCarta: Mitochondrial central dogma > Translation
+M7-029	HGNC:14456	C	GENE_X functions in vitamin binding; module context: protein kinase complex
+M7-029	HGNC:14456	D	GENE_X functions in intracellular iron ion homeostasis; module context: proton-transporting two-sector ATPase complex
+M7-030	HGNC:28965	A	GENE_X functions in action potential; module context: monoatomic ion channel complex
+M7-030	HGNC:28965	B	GENE_X functions in transition metal ion transport; module context: spliceosomal complex
+M7-030	HGNC:28965	C	GENE_X functions in transferase activity, transferring sulphur-containing groups; module context: MitoCarta: 0.0
+M7-030	HGNC:28965	D	GENE_X functions in DNA-templated transcription elongation; module context: DNA-directed RNA polymerase I complex
+M7-031	HGNC:9558	A	GENE_X functions in establishment of protein localization to organelle; module context: cullin-RING ubiquitin ligase complex
+M7-031	HGNC:9558	B	GENE_X functions in regulation of monoatomic ion transmembrane transport; module context: RNA polymerase II transcription regulator complex
+M7-031	HGNC:9558	C	GENE_X functions in response to endoplasmic reticulum stress; module context: cytoplasmic ubiquitin ligase complex
+M7-031	HGNC:9558	D	GENE_X functions in regulation of proteasomal protein catabolic process; module context: proteasome complex
+M7-032	HGNC:18386	A	GENE_X functions in reactive oxygen species metabolic process
+M7-032	HGNC:18386	B	GENE_X functions in ossification
+M7-032	HGNC:18386	C	GENE_X functions in tetrapyrrole binding
+M7-032	HGNC:18386	D	GENE_X functions in double-stranded RNA binding
+M7-033	HGNC:26624	A	GENE_X functions in gamete generation; module context: peptidase complex
+M7-033	HGNC:26624	B	GENE_X functions in sodium ion transmembrane transporter activity; module context: monoatomic ion channel complex
+M7-033	HGNC:26624	C	GENE_X functions in regulation of transmembrane receptor protein serine/threonine kinase signaling pathway; module context: cullin-RING ubiquitin ligase complex
+M7-033	HGNC:26624	D	GENE_X functions in positive regulation of canonical NF-kappaB signal transduction; module context: IkappaB kinase complex
+M7-034	HGNC:24542	A	GENE_X functions in amyloid-beta binding; module context: Prefoldin co-chaperone complex
+M7-034	HGNC:24542	B	GENE_X functions in DNA-templated transcription elongation; module context: PAQosome co-chaperone complex
+M7-034	HGNC:24542	C	GENE_X functions in regulation of intracellular steroid hormone receptor signaling pathway; module context: transcription repressor complex
+M7-034	HGNC:24542	D	GENE_X functions in transferase activity, transferring sulphur-containing groups; module context: MitoCarta: 0.0
+M7-035	HGNC:33842	A	GENE_X functions in adenylate cyclase-modulating G protein-coupled receptor signaling pathway
+M7-035	HGNC:33842	B	GENE_X functions in DNA-binding transcription repressor activity
+M7-035	HGNC:33842	C	GENE_X functions in immune response-regulating cell surface receptor signaling pathway
+M7-035	HGNC:33842	D	GENE_X functions in lymphocyte activation
+M7-036	HGNC:16046	A	GENE_X functions in Golgi organization; module context: vesicle tethering complex
+M7-036	HGNC:16046	B	GENE_X functions in exocytosis; module context: Exocyst
+M7-036	HGNC:16046	C	GENE_X functions in phosphatidylinositol metabolic process; module context: extracellular protein-containing complex
+M7-036	HGNC:16046	D	GENE_X functions in steroid biosynthetic process; module context: NuA4 histone acetyltransferase complex
+M7-037	HGNC:25373	A	GENE_X functions in activation of innate immune response; module context: sTNF-TNR1A receptor-ligand core complex
+M7-037	HGNC:25373	B	GENE_X functions in blood vessel development; module context: sodium:potassium-exchanging ATPase complex
+M7-037	HGNC:25373	C	GENE_X functions in neuron projection development; module context: SIN3A histone deacetylase complex
+M7-037	HGNC:25373	D	GENE_X functions in heart development; module context: RNA polymerase II transcription regulator complex
+M7-038	HGNC:7696	A	GENE_X functions in NADH dehydrogenase activity; module context: MitoCarta: OXPHOS
+M7-038	HGNC:7696	B	GENE_X functions in E-box binding; module context: nuclear exosome (RNase complex)
+M7-038	HGNC:7696	C	GENE_X functions in regulation of mitochondrial gene expression; module context: histone acetyltransferase complex
+M7-038	HGNC:7696	D	GENE_X functions in positive regulation of defense response to virus by host; module context: MitoCarta: Metabolism > Amino acid metabolism
+M7-039	HGNC:27312	A	GENE_X functions in regulation of transforming growth factor beta receptor signaling pathway
+M7-039	HGNC:27312	B	GENE_X functions in protein targeting
+M7-039	HGNC:27312	C	GENE_X functions in monoatomic anion channel activity
+M7-039	HGNC:27312	D	GENE_X functions in regulation of ketone metabolic process
+M7-040	HGNC:26685	A	GENE_X functions in epigenetic regulation of gene expression; module context: PcG protein complex
+M7-040	HGNC:26685	B	GENE_X functions in sodium ion transmembrane transporter activity; module context: RNA polymerase II transcription regulator complex
+M7-040	HGNC:26685	C	GENE_X functions in carboxylic acid transmembrane transporter activity; module context: extracellular protein-containing complex
+M7-040	HGNC:26685	D	GENE_X functions in tRNA metabolic process; module context: MitoCarta: Mitochondrial central dogma > Translation
+M7-041	HGNC:24738	A	GENE_X functions in alcohol metabolic process
+M7-041	HGNC:24738	B	GENE_X functions in regulation of organelle assembly
+M7-041	HGNC:24738	C	GENE_X functions in histone modifying activity
+M7-041	HGNC:24738	D	GENE_X functions in vesicle organization
+M7-042	HGNC:23817	A	GENE_X functions in regulation of cytoplasmic pattern recognition receptor signaling pathway; module context: Polybromo-associated SWI/SNF ATP-dependent chromatin remodeling complex
+M7-042	HGNC:23817	B	GENE_X functions in protein O-linked glycosylation; module context: Radial spoke complex
+M7-042	HGNC:23817	C	GENE_X functions in lipid carrier activity; module context: cullin-RING ubiquitin ligase complex
+M7-042	HGNC:23817	D	GENE_X functions in regulation of RNA stability; module context: CCR4-NOT mRNA deadenylase complex
+M7-043	HGNC:29243	A	GENE_X functions in RNA localization; module context: TREX transcription-export complex
+M7-043	HGNC:29243	B	GENE_X functions in regulation of peptide secretion; module context: protein kinase complex
+M7-043	HGNC:29243	C	GENE_X functions in proteoglycan metabolic process; module context: UDP-N-acetylglucosamine transferase complex
+M7-043	HGNC:29243	D	GENE_X functions in regulation of reactive oxygen species metabolic process; module context: extracellular protein-containing complex
+M7-044	HGNC:19399	A	GENE_X functions in regulation of interleukin-1 production
+M7-044	HGNC:19399	B	GENE_X functions in negative regulation of canonical NF-kappaB signal transduction
+M7-044	HGNC:19399	C	GENE_X functions in regulation of protein-containing complex disassembly
+M7-044	HGNC:19399	D	GENE_X functions in structural constituent of cytoskeleton
+M7-045	HGNC:26027	A	GENE_X functions in fatty acid metabolic process; module context: MitoCarta: Metabolism > Lipid metabolism
+M7-045	HGNC:26027	B	GENE_X functions in lipid transport; module context: Ribonuclease MRP complex
+M7-045	HGNC:26027	C	GENE_X functions in phospholipid biosynthetic process; module context: monoatomic ion channel complex
+M7-045	HGNC:26027	D	GENE_X functions in endosomal transport; module context: Commander complex
+M7-046	HGNC:14010	A	GENE_X functions in positive regulation of canonical NF-kappaB signal transduction; module context: CBM complex
+M7-046	HGNC:14010	B	GENE_X functions in ligand-gated monoatomic ion channel activity; module context: monoatomic ion channel complex
+M7-046	HGNC:14010	C	GENE_X functions in epigenetic regulation of gene expression; module context: chromatin silencing complex
+M7-046	HGNC:14010	D	GENE_X functions in muscle system process; module context: cullin-RING ubiquitin ligase complex
+M7-047	HGNC:26179	A	GENE_X functions in monoatomic anion transmembrane transporter activity
+M7-047	HGNC:26179	B	GENE_X functions in carboxylic acid binding
+M7-047	HGNC:26179	C	GENE_X functions in nuclear receptor binding
+M7-047	HGNC:26179	D	GENE_X functions in organophosphate ester transport
+M7-048	HGNC:15975	A	GENE_X functions in regulation of receptor signaling pathway via JAK-STAT; module context: MitoCarta: Metabolism > Amino acid metabolism
+M7-048	HGNC:15975	B	GENE_X functions in vitamin binding; module context: protein kinase complex
+M7-048	HGNC:15975	C	GENE_X functions in PDZ domain binding; module context: Kinetochore CCAN complex
+M7-048	HGNC:15975	D	GENE_X functions in regulation of B cell activation; module context: plasma membrane signaling receptor complex
+M7-049	HGNC:28796	A	GENE_X functions in guanyl nucleotide binding
+M7-049	HGNC:28796	B	GENE_X functions in calcium ion transport
+M7-049	HGNC:28796	C	GENE_X functions in magnesium ion binding
+M7-049	HGNC:28796	D	GENE_X functions in positive regulation of cell projection organization
+M7-050	HGNC:24842	A	GENE_X functions in nucleus organization
+M7-050	HGNC:24842	B	GENE_X functions in protein-folding chaperone binding
+M7-050	HGNC:24842	C	GENE_X functions in response to toxic substance
+M7-050	HGNC:24842	D	GENE_X functions in phagocytosis
+M7-051	HGNC:6555	A	GENE_X functions in regulation of RNA stability; module context: CCR4-NOT mRNA deadenylase complex
+M7-051	HGNC:6555	B	GENE_X functions in lipid carrier activity; module context: cullin-RING ubiquitin ligase complex
+M7-051	HGNC:6555	C	GENE_X functions in protein O-linked glycosylation; module context: Radial spoke complex
+M7-051	HGNC:6555	D	GENE_X functions in regulation of cytoplasmic pattern recognition receptor signaling pathway; module context: Ribosome quality control complex
+M7-052	HGNC:23067	A	GENE_X functions in Golgi vesicle transport; module context: TRAPP III complex
+M7-052	HGNC:23067	B	GENE_X functions in endosomal transport; module context: Commander complex
+M7-052	HGNC:23067	C	GENE_X functions in steroid metabolic process; module context: MitoCarta: Metabolism > Metals and cofactors
+M7-052	HGNC:23067	D	GENE_X functions in lipid transport; module context: TREX-2 transcription-export complex
+M7-053	HGNC:28033	A	GENE_X functions in DNA-templated transcription initiation; module context: DNA-directed RNA polymerase complex
+M7-053	HGNC:28033	B	GENE_X functions in oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen; module context: Histone-lysine N-methyltransferase complex
+M7-053	HGNC:28033	C	GENE_X functions in lyase activity; module context: MitoCarta: 0.0
+M7-053	HGNC:28033	D	GENE_X functions in muscle system process; module context: cullin-RING ubiquitin ligase complex
+M7-054	HGNC:30617	A	GENE_X functions in response to light stimulus; module context: oxidoreductase complex
+M7-054	HGNC:30617	B	GENE_X functions in positive regulation of canonical NF-kappaB signal transduction; module context: plasma membrane signaling receptor complex
+M7-054	HGNC:30617	C	GENE_X functions in tRNA metabolic process; module context: Elongator holoenzyme complex
+M7-054	HGNC:30617	D	GENE_X functions in regulation of transmembrane receptor protein serine/threonine kinase signaling pathway; module context: cullin-RING ubiquitin ligase complex
+M7-055	HGNC:28005	A	GENE_X functions in phosphatase binding; module context: plasma membrane signaling receptor complex
+M7-055	HGNC:28005	B	GENE_X functions in carboxylic acid transmembrane transporter activity; module context: extracellular protein-containing complex
+M7-055	HGNC:28005	C	GENE_X functions in positive regulation of canonical NF-kappaB signal transduction; module context: cullin-RING ubiquitin ligase complex
+M7-055	HGNC:28005	D	GENE_X functions in tRNA metabolic process; module context: Elongator holoenzyme complex
+M7-056	HGNC:1935	A	GENE_X functions in cell population proliferation
+M7-056	HGNC:1935	B	GENE_X functions in response to endoplasmic reticulum stress
+M7-056	HGNC:1935	C	GENE_X functions in regulation of DNA repair
+M7-056	HGNC:1935	D	GENE_X functions in RNA catabolic process
+M7-057	HGNC:17798	A	GENE_X functions in cell-matrix adhesion; module context: protein complex involved in cell adhesion
+M7-057	HGNC:17798	B	GENE_X functions in negative regulation of protein phosphorylation; module context: MitoCarta: Metabolism > Amino acid metabolism
+M7-057	HGNC:17798	C	GENE_X functions in regulation of reactive oxygen species metabolic process; module context: extracellular protein-containing complex
+M7-057	HGNC:17798	D	GENE_X functions in RNA localization; module context: TREX-2 transcription-export complex
+M7-058	HGNC:26104	A	GENE_X functions in structural constituent of muscle; module context: RNA polymerase II transcription regulator complex
+M7-058	HGNC:26104	B	GENE_X functions in telomeric repeat DNA binding; module context: telomere cap complex
+M7-058	HGNC:26104	C	GENE_X functions in translation initiation factor activity; module context: Eukaryotic translation initiation factor 3 complex
+M7-058	HGNC:26104	D	GENE_X functions in SNARE binding; module context: histone deacetylase complex
+M7-059	HGNC:30781	A	GENE_X functions in carbohydrate metabolic process; module context: MitoCarta: Mitochondrial central dogma > Translation
+M7-059	HGNC:30781	B	GENE_X functions in acyltransferase activity, transferring groups other than amino-acyl groups; module context: SAGA complex
+M7-059	HGNC:30781	C	GENE_X functions in positive regulation of protein phosphorylation; module context: extracellular protein-containing complex
+M7-059	HGNC:30781	D	GENE_X functions in regulation of small GTPase mediated signal transduction; module context: protein phosphatase type 1 complex
+M7-060	HGNC:26614	A	GENE_X functions in modulation of chemical synaptic transmission; module context: histone deacetylase complex
+M7-060	HGNC:26614	B	GENE_X functions in deacylase activity; module context: telomere cap complex
+M7-060	HGNC:26614	C	GENE_X functions in regulatory ncRNA-mediated gene silencing; module context: RISC complex
+M7-060	HGNC:26614	D	GENE_X functions in dicarboxylic acid metabolic process; module context: plasma membrane signaling receptor complex
+M7-061	HGNC:19401	A	GENE_X functions in heart development; module context: RNA polymerase II transcription regulator complex
+M7-061	HGNC:19401	B	GENE_X functions in blood vessel development; module context: sodium:potassium-exchanging ATPase complex
+M7-061	HGNC:19401	C	GENE_X functions in activation of innate immune response; module context: MitoCarta: OXPHOS
+M7-061	HGNC:19401	D	GENE_X functions in muscle structure development; module context: ATPase complex
+M7-062	HGNC:25217	A	GENE_X functions in serine-type peptidase activity; module context: histone acetyltransferase complex
+M7-062	HGNC:25217	B	GENE_X functions in regulation of RNA stability; module context: CCR4-NOT mRNA deadenylase complex
+M7-062	HGNC:25217	C	GENE_X functions in regulation of cytoplasmic pattern recognition receptor signaling pathway; module context: BRCA1-A complex
+M7-062	HGNC:25217	D	GENE_X functions in regulation of ubiquitin-dependent protein catabolic process; module context: cullin-RING ubiquitin ligase complex
+M7-063	HGNC:28728	A	GENE_X functions in leukocyte differentiation
+M7-063	HGNC:28728	B	GENE_X functions in muscle structure development
+M7-063	HGNC:28728	C	GENE_X functions in head development
+M7-063	HGNC:28728	D	GENE_X functions in GTPase activator activity
+M7-064	HGNC:30948	A	GENE_X functions in ribonucleotide metabolic process; module context: RNA polymerase II transcription regulator complex
+M7-064	HGNC:30948	B	GENE_X functions in oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen; module context: Histone-lysine N-methyltransferase complex
+M7-064	HGNC:30948	C	GENE_X functions in sodium ion transmembrane transporter activity; module context: monoatomic ion channel complex
+M7-064	HGNC:30948	D	GENE_X functions in DNA-templated transcription initiation; module context: DNA-directed RNA polymerase III complex
+M7-065	HGNC:7685	A	GENE_X functions in E-box binding; module context: nuclear exosome (RNase complex)
+M7-065	HGNC:7685	B	GENE_X functions in regulation of mitochondrial gene expression; module context: histone acetyltransferase complex
+M7-065	HGNC:7685	C	GENE_X functions in NADH dehydrogenase activity; module context: Mitochondrial respiratory chain complex I
+M7-065	HGNC:7685	D	GENE_X functions in intramolecular transferase activity; module context: monoatomic ion channel complex
+M7-066	HGNC:23162	A	GENE_X functions in organophosphate catabolic process
+M7-066	HGNC:23162	B	GENE_X functions in establishment of organelle localization
+M7-066	HGNC:23162	C	GENE_X functions in regulation of JNK cascade
+M7-066	HGNC:23162	D	GENE_X functions in chromatin-protein adaptor activity
+M7-067	HGNC:24604	A	GENE_X functions in cytochrome complex assembly; module context: MitoCarta: OXPHOS
+M7-067	HGNC:24604	B	GENE_X functions in transcription by RNA polymerase III; module context: snRNA-activating protein complex
+M7-067	HGNC:24604	C	GENE_X functions in protein kinase A binding; module context: CORVET tethering complex
+M7-067	HGNC:24604	D	GENE_X functions in peptidase activator activity; module context: MitoCarta: 0.0
+M7-068	HGNC:24256	A	GENE_X functions in steroid metabolic process; module context: MitoCarta: Metabolism > Metals and cofactors
+M7-068	HGNC:24256	B	GENE_X functions in endosomal transport; module context: Commander complex
+M7-068	HGNC:24256	C	GENE_X functions in lipid transport; module context: MitoCarta: Signaling
+M7-068	HGNC:24256	D	GENE_X functions in sphingolipid metabolic process; module context: palmitoyltransferase complex
+M7-069	HGNC:30201	A	GENE_X functions in phospholipid biosynthetic process; module context: mitochondrial protein-containing complex
+M7-069	HGNC:30201	B	GENE_X functions in steroid metabolic process; module context: MitoCarta: Metabolism > Metals and cofactors
+M7-069	HGNC:30201	C	GENE_X functions in endosomal transport; module context: Commander complex
+M7-069	HGNC:30201	D	GENE_X functions in sphingolipid metabolic process; module context: palmitoyltransferase complex
+M7-070	HGNC:13449	A	GENE_X functions in regulation of synapse assembly
+M7-070	HGNC:13449	B	GENE_X functions in sulfur amino acid metabolic process
+M7-070	HGNC:13449	C	GENE_X functions in wide pore channel activity
+M7-070	HGNC:13449	D	GENE_X functions in NADP binding
+M7-071	HGNC:14985	A	GENE_X functions in alkali metal ion binding
+M7-071	HGNC:14985	B	GENE_X functions in contractile actin filament bundle assembly
+M7-071	HGNC:14985	C	GENE_X functions in carbonate dehydratase activity
+M7-071	HGNC:14985	D	GENE_X functions in snRNA transcription
+M7-072	HGNC:30029	A	GENE_X functions in phosphatidylcholine acyl-chain remodeling
+M7-072	HGNC:30029	B	GENE_X functions in multivesicular body sorting pathway
+M7-072	HGNC:30029	C	GENE_X functions in phosphatidylglycerol biosynthetic process
+M7-072	HGNC:30029	D	GENE_X functions in vesicle fusion
+M7-073	HGNC:23332	A	GENE_X functions in intracellular protein transport; module context: vesicle tethering complex
+M7-073	HGNC:23332	B	GENE_X functions in sphingolipid metabolic process; module context: palmitoyltransferase complex
+M7-073	HGNC:23332	C	GENE_X functions in Golgi vesicle transport; module context: TRAPP III complex
+M7-073	HGNC:23332	D	GENE_X functions in endosomal transport; module context: Commander complex
+M7-074	HGNC:30795	A	GENE_X functions in muscle cell differentiation
+M7-074	HGNC:30795	B	GENE_X functions in signal transduction by p53 class mediator
+M7-074	HGNC:30795	C	GENE_X functions in cell surface receptor signaling pathway via STAT
+M7-074	HGNC:30795	D	GENE_X functions in response to type II interferon
+M7-075	HGNC:13519	A	GENE_X functions in negative regulation of cell migration; module context: FAR/SIP/STRIPAK complex
+M7-075	HGNC:13519	B	GENE_X functions in regulation of cell growth; module context: monoatomic ion channel complex
+M7-075	HGNC:13519	C	GENE_X functions in regulation of small GTPase mediated signal transduction; module context: ATPase complex
+M7-075	HGNC:13519	D	GENE_X functions in purine nucleotide metabolic process; module context: endoplasmic reticulum protein-containing complex
+M7-076	HGNC:21111	A	GENE_X functions in chromatin-protein adaptor activity; module context: BRCA1-A complex
+M7-076	HGNC:21111	B	GENE_X functions in regulation of G protein-coupled receptor signaling pathway; module context: nuclear pore
+M7-076	HGNC:21111	C	GENE_X functions in transcription coregulator binding; module context: GBAF (SWI/SNF) ATP-dependent chromatin remodeling complex
+M7-076	HGNC:21111	D	GENE_X functions in organophosphate catabolic process; module context: TREX transcription-export complex
+M7-077	HGNC:25167	A	GENE_X functions in C2H2 zinc finger domain binding
+M7-077	HGNC:25167	B	GENE_X functions in nucleoside diphosphate kinase activity
+M7-077	HGNC:25167	C	GENE_X functions in arylsulfatase activity
+M7-077	HGNC:25167	D	GENE_X functions in positive regulation of osteoclast differentiation
+M7-078	HGNC:26036	A	GENE_X functions in sphingolipid metabolic process; module context: MitoCarta: Mitochondrial dynamics and surveillance
+M7-078	HGNC:26036	B	GENE_X functions in phospholipid biosynthetic process; module context: palmitoyltransferase complex
+M7-078	HGNC:26036	C	GENE_X functions in endosomal transport; module context: Commander complex
+M7-078	HGNC:26036	D	GENE_X functions in fatty acid metabolic process; module context: MitoCarta: OXPHOS
+M7-079	HGNC:25487	A	GENE_X functions in integrin-mediated signaling pathway; module context: monoatomic ion channel complex
+M7-079	HGNC:25487	B	GENE_X functions in formation of primary germ layer; module context: 28S mitochondrial small ribosomal subunit
+M7-079	HGNC:25487	C	GENE_X functions in nuclear receptor activity; module context: plasma membrane signaling receptor complex
+M7-079	HGNC:25487	D	GENE_X functions in regulation of transcription initiation by RNA polymerase II; module context: RNA polymerase II transcription regulator complex
+M7-080	HGNC:24253	A	GENE_X functions in steroid metabolic process; module context: MitoCarta: Mitochondrial central dogma > mtRNA metabolism
+M7-080	HGNC:24253	B	GENE_X functions in phospholipid biosynthetic process; module context: MitoCarta: Small molecule transport
+M7-080	HGNC:24253	C	GENE_X functions in lipid transport; module context: TREX-2 transcription-export complex
+M7-080	HGNC:24253	D	GENE_X functions in Golgi vesicle transport; module context: cytoplasmic ubiquitin ligase complex
+M7-081	HGNC:25526	A	GENE_X functions in regulation of mRNA catabolic process
+M7-081	HGNC:25526	B	GENE_X functions in regulation of cytokine-mediated signaling pathway
+M7-081	HGNC:25526	C	GENE_X functions in negative regulation of mitotic cell cycle
+M7-081	HGNC:25526	D	GENE_X functions in regulation of leukocyte migration
+M7-082	HGNC:13578	A	GENE_X functions in purine nucleotide metabolic process; module context: endoplasmic reticulum protein-containing complex
+M7-082	HGNC:13578	B	GENE_X functions in negative regulation of cytokine production; module context: MitoCarta: Metabolism > Amino acid metabolism
+M7-082	HGNC:13578	C	GENE_X functions in negative regulation of cell cycle process; module context: mRNA cleavage and polyadenylation specificity factor complex
+M7-082	HGNC:13578	D	GENE_X functions in positive regulation of protein phosphorylation; module context: protein kinase complex
+M7-083	HGNC:21754	A	GENE_X functions in protein localization to membrane; module context: MitoCarta: Mitochondrial central dogma > Translation
+M7-083	HGNC:21754	B	GENE_X functions in ribonucleotide metabolic process; module context: RNA polymerase II transcription regulator complex
+M7-083	HGNC:21754	C	GENE_X functions in response to endoplasmic reticulum stress; module context: monoatomic ion channel complex
+M7-083	HGNC:21754	D	GENE_X functions in establishment of protein localization to organelle; module context: cullin-RING ubiquitin ligase complex
+M7-084	HGNC:24731	A	GENE_X functions in sensory perception of sound; module context: extracellular protein-containing complex
+M7-084	HGNC:24731	B	GENE_X functions in response to unfolded protein; module context: endoplasmic reticulum protein-containing complex
+M7-084	HGNC:24731	C	GENE_X functions in phosphatase regulator activity; module context: protein serine/threonine phosphatase complex
+M7-084	HGNC:24731	D	GENE_X functions in growth factor activity; module context: RNA polymerase II transcription regulator complex
+M7-085	HGNC:29562	A	GENE_X functions in macromolecular conformation isomerase activity; module context: MitoCarta: Mitochondrial central dogma > Translation
+M7-085	HGNC:29562	B	GENE_X functions in small GTPase binding; module context: oxidoreductase complex
+M7-085	HGNC:29562	C	GENE_X functions in RNA catabolic process; module context: RNA decapping and exonuclease complex
+M7-085	HGNC:29562	D	GENE_X functions in establishment of protein localization to organelle; module context: cullin-RING ubiquitin ligase complex
+M7-086	HGNC:20371	A	GENE_X functions in pteridine-containing compound metabolic process; module context: MitoCarta: Metabolism > Vitamin metabolism
+M7-086	HGNC:20371	B	GENE_X functions in intramolecular transferase activity; module context: monoatomic ion channel complex
+M7-086	HGNC:20371	C	GENE_X functions in NADH dehydrogenase activity; module context: MitoCarta: OXPHOS
+M7-086	HGNC:20371	D	GENE_X functions in E-box binding; module context: nuclear exosome (RNase complex)
+M7-087	HGNC:23707	A	GENE_X functions in negative regulation of molecular function
+M7-087	HGNC:23707	B	GENE_X functions in negative regulation of cytokine production
+M7-087	HGNC:23707	C	GENE_X functions in negative regulation of cell cycle process
+M7-087	HGNC:23707	D	GENE_X functions in regulation of anatomical structure size
+M7-088	HGNC:33754	A	GENE_X functions in regulation of actin cytoskeleton organization
+M7-088	HGNC:33754	B	GENE_X functions in export from cell
+M7-088	HGNC:33754	C	GENE_X functions in negative regulation of defense response
+M7-088	HGNC:33754	D	GENE_X functions in cytokine receptor binding
+M7-089	HGNC:24260	A	GENE_X functions in gamete generation; module context: CCR4-NOT mRNA deadenylase complex
+M7-089	HGNC:24260	B	GENE_X functions in small GTPase binding; module context: Integrator-PP2A complex
+M7-089	HGNC:24260	C	GENE_X functions in muscle system process; module context: monoatomic ion channel complex
+M7-089	HGNC:24260	D	GENE_X functions in DNA-templated transcription initiation; module context: RNA polymerase II transcription regulator complex
+M7-090	HGNC:842	A	GENE_X functions in tube morphogenesis; module context: plasma membrane signaling receptor complex
+M7-090	HGNC:842	B	GENE_X functions in central nervous system development; module context: Shelterin complex
+M7-090	HGNC:842	C	GENE_X functions in immune response-regulating cell surface receptor signaling pathway; module context: Oligosaccharyltransferase complex B
+M7-090	HGNC:842	D	GENE_X functions in apoptotic signaling pathway; module context: RNA polymerase II transcription regulator complex
+M7-091	HGNC:13671	A	GENE_X functions in vacuolar transport; module context: HOPS tethering complex
+M7-091	HGNC:13671	B	GENE_X functions in visual perception; module context: FERRY RAB5 effector complex
+M7-091	HGNC:13671	C	GENE_X functions in establishment of protein localization to membrane; module context: endoplasmic reticulum protein-containing complex
+M7-091	HGNC:13671	D	GENE_X functions in regulation of cell cycle G1/S phase transition; module context: small nuclear ribonucleoprotein complex
+M7-092	HGNC:28476	A	GENE_X functions in regulation of heart contraction
+M7-092	HGNC:28476	B	GENE_X functions in potassium ion transmembrane transporter activity
+M7-092	HGNC:28476	C	GENE_X functions in regulation of RNA stability
+M7-092	HGNC:28476	D	GENE_X functions in lipid carrier activity
+M7-093	HGNC:21182	A	GENE_X functions in regulation of mRNA catabolic process; module context: histone acetyltransferase complex
+M7-093	HGNC:21182	B	GENE_X functions in negative regulation of protein localization; module context: MitoCarta: Metabolism > Metals and cofactors
+M7-093	HGNC:21182	C	GENE_X functions in nucleocytoplasmic transport; module context: Nuclear pore complex
+M7-093	HGNC:21182	D	GENE_X functions in cytokine activity; module context: mismatch repair complex
+M7-094	HGNC:7699	A	GENE_X functions in positive regulation of defense response to virus by host; module context: MitoCarta: Metabolism > Amino acid metabolism
+M7-094	HGNC:7699	B	GENE_X functions in pteridine-containing compound metabolic process; module context: MitoCarta: Metabolism > Vitamin metabolism
+M7-094	HGNC:7699	C	GENE_X functions in intramolecular transferase activity; module context: monoatomic ion channel complex
+M7-094	HGNC:7699	D	GENE_X functions in NADH dehydrogenase activity; module context: MitoCarta: OXPHOS
+M7-095	HGNC:18706	A	GENE_X functions in glycolipid metabolic process; module context: endoribonuclease complex
+M7-095	HGNC:18706	B	GENE_X functions in vesicle-mediated transport to the plasma membrane; module context: vesicle tethering complex
+M7-095	HGNC:18706	C	GENE_X functions in steroid biosynthetic process; module context: NuA4 histone acetyltransferase complex
+M7-095	HGNC:18706	D	GENE_X functions in protein N-linked glycosylation; module context: endoplasmic reticulum protein-containing complex
+M7-096	HGNC:24993	A	GENE_X functions in steroid metabolic process; module context: MitoCarta: Metabolism > Metals and cofactors
+M7-096	HGNC:24993	B	GENE_X functions in endosomal transport; module context: Commander complex
+M7-096	HGNC:24993	C	GENE_X functions in intracellular protein transport; module context: vesicle tethering complex
+M7-096	HGNC:24993	D	GENE_X functions in phospholipid biosynthetic process; module context: Bcl-2 family protein complex
+M7-097	HGNC:25976	A	GENE_X functions in tRNA metabolic process; module context: Elongator holoenzyme complex
+M7-097	HGNC:25976	B	GENE_X functions in epigenetic regulation of gene expression; module context: SIN3A histone deacetylase complex
+M7-097	HGNC:25976	C	GENE_X functions in sodium ion transmembrane transporter activity; module context: extracellular protein-containing complex
+M7-097	HGNC:25976	D	GENE_X functions in regulation of transmembrane receptor protein serine/threonine kinase signaling pathway; module context: cullin-RING ubiquitin ligase complex
+M7-098	HGNC:25744	A	GENE_X functions in regulation of proteasomal protein catabolic process; module context: proteasome complex
+M7-098	HGNC:25744	B	GENE_X functions in establishment of protein localization to organelle; module context: cullin-RING ubiquitin ligase complex
+M7-098	HGNC:25744	C	GENE_X functions in RNA catabolic process; module context: MitoCarta: Mitochondrial central dogma > mtRNA metabolism
+M7-098	HGNC:25744	D	GENE_X functions in carboxylic acid biosynthetic process; module context: MitoCarta: Metabolism > Vitamin metabolism
+M7-099	HGNC:24149	A	GENE_X functions in organic acid transport; module context: SCAR complex
+M7-099	HGNC:24149	B	GENE_X functions in G protein-coupled receptor binding; module context: cullin-RING ubiquitin ligase complex
+M7-099	HGNC:24149	C	GENE_X functions in defense response to virus; module context: MitoCarta: Mitochondrial dynamics and surveillance
+M7-099	HGNC:24149	D	GENE_X functions in cell junction organization; module context: serine/threonine protein kinase complex
+M7-100	HGNC:21067	A	GENE_X functions in intracellular iron ion homeostasis
+M7-100	HGNC:21067	B	GENE_X functions in protein-lysine N-methyltransferase activity
+M7-100	HGNC:21067	C	GENE_X functions in detection of stimulus involved in sensory perception
+M7-100	HGNC:21067	D	GENE_X functions in regulation of nucleotide metabolic process

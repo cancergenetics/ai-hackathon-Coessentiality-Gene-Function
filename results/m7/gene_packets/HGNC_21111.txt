@@ -1,0 +1,6 @@
+hgnc_id: HGNC:21111
+symbol: BICRAL
+previous_symbols: KIAA0240, GLTSCR1L
+alias_symbols: SMARCK2
+uniprot_accessions: Q6AI39
+cytoband: 6p21.1

@@ -1,0 +1,6 @@
+hgnc_id: HGNC:11866
+symbol: TMEFF1
+previous_symbols: C9orf2
+alias_symbols: H7365, CT120.1
+uniprot_accessions: Q8IYR6
+cytoband: 9q31.1

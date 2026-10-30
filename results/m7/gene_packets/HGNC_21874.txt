@@ -1,0 +1,6 @@
+hgnc_id: HGNC:21874
+symbol: FBXL18
+previous_symbols: 
+alias_symbols: FLJ11467, Fbl18
+uniprot_accessions: Q96ME1
+cytoband: 7p22.1

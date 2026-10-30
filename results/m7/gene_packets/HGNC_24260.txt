@@ -1,0 +1,6 @@
+hgnc_id: HGNC:24260
+symbol: MED31
+previous_symbols: 
+alias_symbols: CGI-125, Soh1
+uniprot_accessions: Q9Y3C7
+cytoband: 17p13.1

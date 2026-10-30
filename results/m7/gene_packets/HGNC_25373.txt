@@ -1,0 +1,6 @@
+hgnc_id: HGNC:25373
+symbol: CYRIA
+previous_symbols: FAM49A
+alias_symbols: DKFZP566A1524, FLJ11080, CYRI-A
+uniprot_accessions: Q9H0Q0
+cytoband: 2p24.2

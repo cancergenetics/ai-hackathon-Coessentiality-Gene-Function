@@ -1,0 +1,6 @@
+hgnc_id: HGNC:21182
+symbol: NUP43
+previous_symbols: 
+alias_symbols: bA350J20.1, FLJ13287
+uniprot_accessions: Q8NFH3
+cytoband: 6q25.1

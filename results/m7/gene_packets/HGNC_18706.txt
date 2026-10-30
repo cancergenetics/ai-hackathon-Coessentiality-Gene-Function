@@ -1,0 +1,6 @@
+hgnc_id: HGNC:18706
+symbol: GRIPAP1
+previous_symbols: 
+alias_symbols: GRASP-1, GRASP1, KIAA1167, MPMGp800B12492Q3, DKFZp434P0630
+uniprot_accessions: Q4V328
+cytoband: Xp11.23

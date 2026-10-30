@@ -1,0 +1,6 @@
+hgnc_id: HGNC:17971
+symbol: MTRES1
+previous_symbols: C6orf203
+alias_symbols: HSPC230, PRED31
+uniprot_accessions: Q9P0P8
+cytoband: 6q21

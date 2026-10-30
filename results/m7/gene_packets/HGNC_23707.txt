@@ -1,0 +1,6 @@
+hgnc_id: HGNC:23707
+symbol: ZNF492
+previous_symbols: ZNF115
+alias_symbols: KIAA1473
+uniprot_accessions: Q9P255
+cytoband: 19p12

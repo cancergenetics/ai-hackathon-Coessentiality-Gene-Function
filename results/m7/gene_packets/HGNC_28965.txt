@@ -1,0 +1,6 @@
+hgnc_id: HGNC:28965
+symbol: RBM34
+previous_symbols: 
+alias_symbols: KIAA0117
+uniprot_accessions: P42696
+cytoband: 1q42.3

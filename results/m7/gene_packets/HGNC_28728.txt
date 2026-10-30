@@ -1,0 +1,6 @@
+hgnc_id: HGNC:28728
+symbol: MARCHF3
+previous_symbols: MARCH3
+alias_symbols: MGC48332, MARCH-III, RNF173
+uniprot_accessions: Q86UD3
+cytoband: 5q23.2

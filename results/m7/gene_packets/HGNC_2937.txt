@@ -1,0 +1,6 @@
+hgnc_id: HGNC:2937
+symbol: DMXL1
+previous_symbols: 
+alias_symbols: 
+uniprot_accessions: Q9Y485
+cytoband: 5q23.1

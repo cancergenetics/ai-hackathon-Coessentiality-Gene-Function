@@ -1,0 +1,6 @@
+hgnc_id: HGNC:23332
+symbol: COMMD3
+previous_symbols: C10orf8
+alias_symbols: BUP
+uniprot_accessions: Q9UBI1
+cytoband: 10p12.2

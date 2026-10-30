@@ -1,0 +1,6 @@
+hgnc_id: HGNC:25526
+symbol: FAM90A1
+previous_symbols: 
+alias_symbols: FLJ10408
+uniprot_accessions: Q86YD7
+cytoband: 12p13.31

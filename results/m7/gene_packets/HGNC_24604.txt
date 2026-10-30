@@ -1,0 +1,6 @@
+hgnc_id: HGNC:24604
+symbol: COA4
+previous_symbols: CHCHD8
+alias_symbols: E2IG2, CMC3
+uniprot_accessions: Q9NYJ1
+cytoband: 11q13.4

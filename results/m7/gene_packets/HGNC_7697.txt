@@ -1,0 +1,6 @@
+hgnc_id: HGNC:7697
+symbol: NDUFB2
+previous_symbols: 
+alias_symbols: AGGG, CI-AGGG
+uniprot_accessions: O95178
+cytoband: 7q34

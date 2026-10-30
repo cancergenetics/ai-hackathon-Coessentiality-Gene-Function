@@ -1,0 +1,6 @@
+hgnc_id: HGNC:23817
+symbol: CNOT10
+previous_symbols: 
+alias_symbols: FLJ12890, FLJ13165
+uniprot_accessions: Q9H9A5
+cytoband: 3p22.3

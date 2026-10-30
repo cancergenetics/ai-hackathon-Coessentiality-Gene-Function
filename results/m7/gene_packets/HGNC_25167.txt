@@ -1,0 +1,6 @@
+hgnc_id: HGNC:25167
+symbol: TM4SF19
+previous_symbols: 
+alias_symbols: 
+uniprot_accessions: Q96DZ7
+cytoband: 3q29

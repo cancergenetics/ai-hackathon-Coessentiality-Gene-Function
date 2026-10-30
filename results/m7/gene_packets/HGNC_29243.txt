@@ -1,0 +1,6 @@
+hgnc_id: HGNC:29243
+symbol: RBM27
+previous_symbols: 
+alias_symbols: KIAA1311, ARRS1, Psc1, ZC3H20
+uniprot_accessions: Q9P2N5
+cytoband: 5q32

@@ -1,0 +1,6 @@
+hgnc_id: HGNC:26027
+symbol: COMMD4
+previous_symbols: 
+alias_symbols: FLJ20452
+uniprot_accessions: Q9H0A8
+cytoband: 15q24.2

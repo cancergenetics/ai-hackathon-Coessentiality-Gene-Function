@@ -1,0 +1,6 @@
+hgnc_id: HGNC:24542
+symbol: DPCD
+previous_symbols: 
+alias_symbols: DKFZP566F084, RP11-529I10.4
+uniprot_accessions: Q9BVM2
+cytoband: 10q24.32

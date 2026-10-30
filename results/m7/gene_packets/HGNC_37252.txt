@@ -1,0 +1,6 @@
+hgnc_id: HGNC:37252
+symbol: ARHGEF33
+previous_symbols: 
+alias_symbols: 
+uniprot_accessions: A8MVX0
+cytoband: 2p22.1

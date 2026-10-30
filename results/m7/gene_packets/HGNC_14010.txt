@@ -1,0 +1,6 @@
+hgnc_id: HGNC:14010
+symbol: MGA
+previous_symbols: 
+alias_symbols: KIAA0518, MAD5, MXD5, FLJ12634
+uniprot_accessions: Q8IWI9
+cytoband: 15q15

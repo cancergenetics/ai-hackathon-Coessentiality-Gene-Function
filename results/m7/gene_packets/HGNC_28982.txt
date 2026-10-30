@@ -1,0 +1,6 @@
+hgnc_id: HGNC:28982
+symbol: HMGXB3
+previous_symbols: HMGX3
+alias_symbols: SMF, KIAA0194
+uniprot_accessions: Q12766
+cytoband: 5q32

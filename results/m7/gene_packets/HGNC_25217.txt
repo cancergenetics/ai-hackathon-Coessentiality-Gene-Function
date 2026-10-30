@@ -1,0 +1,6 @@
+hgnc_id: HGNC:25217
+symbol: CNOT11
+previous_symbols: C2orf29
+alias_symbols: C40
+uniprot_accessions: Q9UKZ1
+cytoband: 2q11.2

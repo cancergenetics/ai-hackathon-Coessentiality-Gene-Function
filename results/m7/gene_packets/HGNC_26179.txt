@@ -1,0 +1,6 @@
+hgnc_id: HGNC:26179
+symbol: ZNF672
+previous_symbols: 
+alias_symbols: FLJ22301
+uniprot_accessions: Q499Z4
+cytoband: 1q44

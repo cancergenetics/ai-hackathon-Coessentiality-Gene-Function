@@ -1,0 +1,6 @@
+hgnc_id: HGNC:25487
+symbol: MED9
+previous_symbols: 
+alias_symbols: FLJ10193, MED25
+uniprot_accessions: Q9NWA0
+cytoband: 17p11.2

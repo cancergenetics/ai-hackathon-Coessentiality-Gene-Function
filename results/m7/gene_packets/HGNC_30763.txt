@@ -1,0 +1,6 @@
+hgnc_id: HGNC:30763
+symbol: NR2C2AP
+previous_symbols: 
+alias_symbols: TRA16
+uniprot_accessions: Q86WQ0
+cytoband: 19p13.11

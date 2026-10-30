@@ -1,0 +1,6 @@
+hgnc_id: HGNC:18329
+symbol: YPEL5
+previous_symbols: 
+alias_symbols: CGI-127
+uniprot_accessions: P62699
+cytoband: 2p23.1

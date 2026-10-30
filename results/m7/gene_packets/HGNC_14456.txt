@@ -1,0 +1,6 @@
+hgnc_id: HGNC:14456
+symbol: H2AJ
+previous_symbols: H2AFJ
+alias_symbols: FLJ10903, MGC921
+uniprot_accessions: Q9BTM1
+cytoband: 12p12.3

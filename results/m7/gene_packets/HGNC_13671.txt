@@ -1,0 +1,6 @@
+hgnc_id: HGNC:13671
+symbol: H2AC12
+previous_symbols: HIST1H2AH
+alias_symbols: H2AFALii, dJ86C11.1, H2A/S
+uniprot_accessions: Q96KK5
+cytoband: 6p22.1

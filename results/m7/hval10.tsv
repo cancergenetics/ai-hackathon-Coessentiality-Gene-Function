@@ -1,0 +1,11 @@
+hgnc_id	symbol	n_eligible_targets	real_term	real_term_name	size_cur	family	term_size_t0	support_evidence	support_pmids
+HGNC:11866	TMEFF1	3	GO:0046597	host-mediated suppression of symbiont invasion	20	signalling_lineage	15	IDA	39048823|39048830
+HGNC:13449	SLITRK2	16	GO:0051963	regulation of synapse assembly	25	other	9	IDA|IMP	23345436
+HGNC:14985	LUZP1	20	GO:0030038	contractile actin filament bundle assembly	13	other	9	IMP	38832964
+HGNC:17971	MTRES1	11	GO:0070125	mitochondrial translational elongation	6	mitochondrial	86	IDA	33243891
+HGNC:20338	G2E3	8	GO:1903083	protein localization to condensed chromosome	12	other	10	IDA	41094145
+HGNC:21067	SMYD4	8	GO:0016279	protein-lysine N-methyltransferase activity	49	other	41	IDA	38438251
+HGNC:25167	TM4SF19	11	GO:0045672	positive regulation of osteoclast differentiation	12	other	10	IMP	38016540
+HGNC:26532	DNHD1	16	GO:0044458	motile cilium assembly	29	centrosome_cilia_mitosis	8	IMP	34932939
+HGNC:2943	DNAH12	18	GO:0044458	motile cilium assembly	29	centrosome_cilia_mitosis	8	IMP	40146200
+HGNC:30029	PGS1	6	GO:0006655	phosphatidylglycerol biosynthetic process	6	ER_Golgi_secretory_lipid	5	TAS	38322995

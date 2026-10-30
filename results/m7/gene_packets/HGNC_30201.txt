@@ -1,0 +1,6 @@
+hgnc_id: HGNC:30201
+symbol: COMMD10
+previous_symbols: 
+alias_symbols: PTD002
+uniprot_accessions: Q9Y6G5
+cytoband: 5q23.1

@@ -1,0 +1,6 @@
+hgnc_id: HGNC:7699
+symbol: NDUFB4
+previous_symbols: 
+alias_symbols: B15
+uniprot_accessions: O95168
+cytoband: 3q13.33

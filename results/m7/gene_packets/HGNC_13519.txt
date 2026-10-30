@@ -1,0 +1,6 @@
+hgnc_id: HGNC:13519
+symbol: TLNRD1
+previous_symbols: MESDC1
+alias_symbols: MGC99595
+uniprot_accessions: Q9H1K6
+cytoband: 15q25.1

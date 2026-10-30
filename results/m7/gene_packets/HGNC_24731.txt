@@ -1,0 +1,6 @@
+hgnc_id: HGNC:24731
+symbol: NHLRC2
+previous_symbols: 
+alias_symbols: FLJ25621, FLJ20147, FLJ33312, MGC45492, DKFZp779F115
+uniprot_accessions: Q8NBF2
+cytoband: 10q25.3

@@ -1,0 +1,6 @@
+hgnc_id: HGNC:13578
+symbol: ZNF318
+previous_symbols: 
+alias_symbols: HRIHFB2436, ZFP318
+uniprot_accessions: Q5VUA4
+cytoband: 6p21.1

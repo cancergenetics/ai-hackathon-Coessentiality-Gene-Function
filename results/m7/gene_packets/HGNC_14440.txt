@@ -1,0 +1,6 @@
+hgnc_id: HGNC:14440
+symbol: FAM117B
+previous_symbols: ALS2CR13
+alias_symbols: FLJ38771
+uniprot_accessions: Q6P1L5
+cytoband: 2q33.2

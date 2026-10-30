@@ -1,0 +1,6 @@
+hgnc_id: HGNC:24993
+symbol: COMMD2
+previous_symbols: 
+alias_symbols: HSPC042
+uniprot_accessions: Q86X83
+cytoband: 3q25.1

@@ -1,0 +1,6 @@
+hgnc_id: HGNC:1935
+symbol: CHIC2
+previous_symbols: 
+alias_symbols: BTL
+uniprot_accessions: Q9UKJ5
+cytoband: 4q12

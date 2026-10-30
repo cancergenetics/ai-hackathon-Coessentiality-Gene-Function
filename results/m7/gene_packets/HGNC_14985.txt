@@ -1,0 +1,6 @@
+hgnc_id: HGNC:14985
+symbol: LUZP1
+previous_symbols: 
+alias_symbols: LUZP
+uniprot_accessions: Q86V48
+cytoband: 1p36.12

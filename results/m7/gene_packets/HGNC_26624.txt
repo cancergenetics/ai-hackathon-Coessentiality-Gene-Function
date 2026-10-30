@@ -1,0 +1,6 @@
+hgnc_id: HGNC:26624
+symbol: KDF1
+previous_symbols: C1orf172
+alias_symbols: FLJ34633, RP11-344H11.3
+uniprot_accessions: Q8NAX2
+cytoband: 1p36.11

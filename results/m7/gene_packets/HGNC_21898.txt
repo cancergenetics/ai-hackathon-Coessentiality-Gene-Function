@@ -1,0 +1,6 @@
+hgnc_id: HGNC:21898
+symbol: TMEM209
+previous_symbols: 
+alias_symbols: FLJ14803, NET31
+uniprot_accessions: Q96SK2
+cytoband: 7q32.2

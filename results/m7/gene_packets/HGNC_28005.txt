@@ -1,0 +1,6 @@
+hgnc_id: HGNC:28005
+symbol: CTU2
+previous_symbols: C16orf84
+alias_symbols: NCS2
+uniprot_accessions: Q2VPK5
+cytoband: 16q24.3

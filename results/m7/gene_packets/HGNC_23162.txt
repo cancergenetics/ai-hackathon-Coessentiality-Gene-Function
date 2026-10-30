@@ -1,0 +1,6 @@
+hgnc_id: HGNC:23162
+symbol: ALG10
+previous_symbols: 
+alias_symbols: FLJ14751, DIE2, ALG10A
+uniprot_accessions: Q5BKT4
+cytoband: 12p11.1

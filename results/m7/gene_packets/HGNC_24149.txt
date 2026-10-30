@@ -1,0 +1,6 @@
+hgnc_id: HGNC:24149
+symbol: HES4
+previous_symbols: 
+alias_symbols: bHLHb42
+uniprot_accessions: Q9HCC6
+cytoband: 1p36.33

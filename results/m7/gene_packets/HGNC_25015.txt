@@ -1,0 +1,6 @@
+hgnc_id: HGNC:25015
+symbol: TMEM208
+previous_symbols: 
+alias_symbols: HSPC171, hSND2, SND2
+uniprot_accessions: Q9BTX3
+cytoband: 16q22.1

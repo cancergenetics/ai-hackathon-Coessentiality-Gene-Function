@@ -1,0 +1,6 @@
+hgnc_id: HGNC:25749
+symbol: TANGO6
+previous_symbols: TMCO7
+alias_symbols: FLJ12688, KIAA1746
+uniprot_accessions: Q9C0B7
+cytoband: 16q22.1

@@ -1,0 +1,6 @@
+hgnc_id: HGNC:24256
+symbol: WASHC3
+previous_symbols: CCDC53
+alias_symbols: CGI-116
+uniprot_accessions: Q9Y3C0
+cytoband: 12q23.2

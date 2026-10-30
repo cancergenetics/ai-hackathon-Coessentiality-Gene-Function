@@ -1,0 +1,6 @@
+hgnc_id: HGNC:21754
+symbol: TMEM60
+previous_symbols: C7orf35
+alias_symbols: DC32
+uniprot_accessions: Q9H2L4
+cytoband: 7q11.23

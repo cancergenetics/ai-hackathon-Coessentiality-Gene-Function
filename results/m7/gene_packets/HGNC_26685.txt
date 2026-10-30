@@ -1,0 +1,6 @@
+hgnc_id: HGNC:26685
+symbol: CCDC71L
+previous_symbols: C7orf74
+alias_symbols: FLJ36031
+uniprot_accessions: Q8N9Z2
+cytoband: 7q22.3

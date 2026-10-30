@@ -1,0 +1,6 @@
+hgnc_id: HGNC:29562
+symbol: MARF1
+previous_symbols: KIAA0430
+alias_symbols: LKAP, PPP1R34, LMKB
+uniprot_accessions: Q9Y4F3
+cytoband: 16p13.11

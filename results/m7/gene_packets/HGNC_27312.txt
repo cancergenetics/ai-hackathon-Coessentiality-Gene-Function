@@ -1,0 +1,6 @@
+hgnc_id: HGNC:27312
+symbol: SAMD14
+previous_symbols: 
+alias_symbols: FLJ36890
+uniprot_accessions: Q8IZD0
+cytoband: 17q21.33

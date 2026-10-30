@@ -1,0 +1,21 @@
+rank	hgnc_id	symbol	top_term	top_term_name	family	v1p_label	v1p_label_name	zmean	R	cov_pct	size_pct	top_size	support_reason	excl43	low_coverage	sd_tertile_withinU
+1	HGNC:23332	COMMD3	GO:0016197	endosomal transport	ER_Golgi_secretory_lipid	CP:CPX-2211	Commander complex	18.4816	0.936	0.328096	0.676307	163	zmean > P95; R > P95	False	False	high
+2	HGNC:24993	COMMD2	GO:0016197	endosomal transport	ER_Golgi_secretory_lipid	CP:CPX-2211	Commander complex	16.9746	0.872	0.328096	0.676307	163	zmean > P95; R > P95	False	False	high
+3	HGNC:7696	NDUFB10	GO:0003954	NADH dehydrogenase activity	other	MC:OXPHOS	MitoCarta: OXPHOS	16.6555	0.904	0.328096	0.0511402	27	zmean > P95; R > P95	False	False	high
+4	HGNC:26027	COMMD4	GO:0016197	endosomal transport	ER_Golgi_secretory_lipid	CP:CPX-2211	Commander complex	16.4119	0.904	0.328096	0.676307	163	zmean > P95; R > P95	False	False	mid
+5	HGNC:7697	NDUFB2	GO:0003954	NADH dehydrogenase activity	other	CP:CPX-577	Mitochondrial respiratory chain complex I	16.3301	0.904	0.457459	0.0511402	27	zmean > P95; R > P95	False	False	high
+6	HGNC:7685	NDUFA2	GO:0003954	NADH dehydrogenase activity	other	CP:CPX-577	Mitochondrial respiratory chain complex I	16.2974	0.896	0.457459	0.0511402	27	zmean > P95; R > P95	False	False	high
+7	HGNC:26036	COMMD8	GO:0016197	endosomal transport	ER_Golgi_secretory_lipid	CP:CPX-2211	Commander complex	16.2588	0.88	0.328096	0.676307	163	zmean > P95; R > P95	False	False	high
+8	HGNC:30781	TADA2B	GO:0016747	acyltransferase activity, transferring groups other than amino-acyl groups	other	CP:CPX-900	SAGA complex, KAT2A variant	16.2113	0.8	0.859139	0.918048	188	zmean > P95; R > P95	False	False	high
+9	HGNC:20371	NDUFA11	GO:0003954	NADH dehydrogenase activity	other	MC:OXPHOS	MitoCarta: OXPHOS	15.9916	0.928	0.457459	0.0511402	27	zmean > P95; R > P95	False	False	high
+10	HGNC:30201	COMMD10	GO:0016197	endosomal transport	ER_Golgi_secretory_lipid	CP:CPX-2211	Commander complex	15.9202	0.88	0.328096	0.676307	163	zmean > P95; R > P95	False	False	high
+11	HGNC:13490	WDR7	GO:0006879	intracellular iron ion homeostasis	other	GO:0016469	proton-transporting two-sector ATPase complex	15.8189	0.904	0.960802	0.123721	49	zmean > P95; R > P95; cov_pct > P95	False	False	high
+12	HGNC:24256	WASHC3	GO:0016197	endosomal transport	ER_Golgi_secretory_lipid	CP:CPX-2211	Commander complex	15.6309	0.888	0.328096	0.676307	163	zmean > P95; R > P95	False	False	high
+13	HGNC:30763	NR2C2AP	GO:0006399	tRNA metabolic process	other	CP:CPX-1949	Elongator holoenzyme complex	15.5287	0.752	0.457459	0.535067	142	zmean > P95; R > P95	False	False	high
+14	HGNC:28005	CTU2	GO:0006399	tRNA metabolic process	other	CP:CPX-1949	Elongator holoenzyme complex	15.5266	0.688	0.457459	0.535067	142	zmean > P95; R > P95	False	False	high
+15	HGNC:7699	NDUFB4	GO:0003954	NADH dehydrogenase activity	other	MC:OXPHOS	MitoCarta: OXPHOS	15.4938	0.864	0.457459	0.0511402	27	zmean > P95; R > P95	False	False	high
+16	HGNC:30617	ELP5	GO:0006399	tRNA metabolic process	other	CP:CPX-1949	Elongator holoenzyme complex	15.2141	0.712	0.457459	0.535067	142	zmean > P95; R > P95	False	False	high
+17	HGNC:25976	ELP6	GO:0006399	tRNA metabolic process	other	CP:CPX-1949	Elongator holoenzyme complex	15.0368	0.72	0.457459	0.535067	142	zmean > P95; R > P95	False	False	high
+18	HGNC:16046	UNC50	GO:0007030	Golgi organization	ER_Golgi_secretory_lipid	GO:0099023	vesicle tethering complex	14.9051	0.728	0.693976	0.237959	78	zmean > P95; R > P95	False	False	high
+19	HGNC:25487	MED9	GO:0060260	regulation of transcription initiation by RNA polymerase II	signalling_lineage	GO:0090575	RNA polymerase II transcription regulator complex	14.8133	0.888	0.328096	0.118437	48	zmean > P95; R > P95	False	False	high
+20	HGNC:21182	NUP43	GO:0006913	nucleocytoplasmic transport	other	CP:CPX-873	Nuclear pore complex	14.7972	0.776	0.785908	0.451724	125	zmean > P95; R > P95	False	False	high

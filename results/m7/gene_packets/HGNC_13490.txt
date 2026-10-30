@@ -1,0 +1,6 @@
+hgnc_id: HGNC:13490
+symbol: WDR7
+previous_symbols: 
+alias_symbols: KIAA0541, TRAG
+uniprot_accessions: Q9Y4E6
+cytoband: 18q21.31

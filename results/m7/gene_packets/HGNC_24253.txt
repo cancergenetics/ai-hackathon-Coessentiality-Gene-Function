@@ -1,0 +1,6 @@
+hgnc_id: HGNC:24253
+symbol: TMED7
+previous_symbols: 
+alias_symbols: CGI-109, FLJ90481, p24gamma3, p24g3
+uniprot_accessions: Q9Y3B3
+cytoband: 5q22.3

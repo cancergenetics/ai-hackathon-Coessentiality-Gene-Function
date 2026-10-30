@@ -1,0 +1,6 @@
+hgnc_id: HGNC:28476
+symbol: YIPF2
+previous_symbols: 
+alias_symbols: MGC3262, FinGER2, Yip5C, YIPFbeta3B
+uniprot_accessions: Q9BWQ6
+cytoband: 19p13.2

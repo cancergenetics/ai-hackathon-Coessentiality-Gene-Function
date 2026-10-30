@@ -1,0 +1,6 @@
+hgnc_id: HGNC:26105
+symbol: PLEKHH3
+previous_symbols: 
+alias_symbols: FLJ21019
+uniprot_accessions: Q7Z736
+cytoband: 17q21.2

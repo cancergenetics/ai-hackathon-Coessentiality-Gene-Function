@@ -1,0 +1,6 @@
+hgnc_id: HGNC:25976
+symbol: ELP6
+previous_symbols: TMEM103, C3orf75
+alias_symbols: FLJ20211
+uniprot_accessions: Q0PNE2
+cytoband: 3p21.31

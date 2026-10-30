@@ -1,0 +1,6 @@
+hgnc_id: HGNC:30795
+symbol: TSPAN11
+previous_symbols: 
+alias_symbols: 
+uniprot_accessions: A1L157
+cytoband: 12p11.21

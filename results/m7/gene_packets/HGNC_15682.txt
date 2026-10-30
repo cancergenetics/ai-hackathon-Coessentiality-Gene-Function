@@ -1,0 +1,6 @@
+hgnc_id: HGNC:15682
+symbol: PHC3
+previous_symbols: 
+alias_symbols: EDR3, FLJ12967, FLJ12729, HPH3
+uniprot_accessions: Q8NDX5
+cytoband: 3q26.2

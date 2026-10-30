@@ -1,0 +1,6 @@
+hgnc_id: HGNC:30029
+symbol: PGS1
+previous_symbols: 
+alias_symbols: DKFZP762M186
+uniprot_accessions: Q32NB8
+cytoband: 17q25.3

@@ -1,0 +1,6 @@
+hgnc_id: HGNC:18896
+symbol: TMEM185B
+previous_symbols: FAM11B
+alias_symbols: FLJ20979
+uniprot_accessions: Q9H7F4
+cytoband: 2q14.2

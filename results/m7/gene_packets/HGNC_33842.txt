@@ -1,0 +1,6 @@
+hgnc_id: HGNC:33842
+symbol: AARD
+previous_symbols: C8orf85
+alias_symbols: LOC441376
+uniprot_accessions: Q4LEZ3
+cytoband: 8q24.11

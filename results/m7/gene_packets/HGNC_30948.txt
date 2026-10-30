@@ -1,0 +1,6 @@
+hgnc_id: HGNC:30948
+symbol: ZNF585B
+previous_symbols: 
+alias_symbols: FLJ14928, SZFP41, Zfp27
+uniprot_accessions: Q52M93
+cytoband: 19q13.12

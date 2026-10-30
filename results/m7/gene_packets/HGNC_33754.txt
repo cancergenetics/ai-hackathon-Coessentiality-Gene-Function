@@ -1,0 +1,6 @@
+hgnc_id: HGNC:33754
+symbol: C16orf87
+previous_symbols: 
+alias_symbols: 
+uniprot_accessions: Q6PH81
+cytoband: 16q11.2

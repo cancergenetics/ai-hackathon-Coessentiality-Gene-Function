@@ -1,0 +1,6 @@
+hgnc_id: HGNC:24842
+symbol: LGALS9B
+previous_symbols: 
+alias_symbols: 
+uniprot_accessions: Q3B8N2
+cytoband: 17p11.2

@@ -1,0 +1,6 @@
+hgnc_id: HGNC:25744
+symbol: AKIRIN1
+previous_symbols: C1orf108
+alias_symbols: FLJ12666
+uniprot_accessions: Q9H9L7
+cytoband: 1p34.3

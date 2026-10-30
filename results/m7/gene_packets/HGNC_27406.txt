@@ -1,0 +1,6 @@
+hgnc_id: HGNC:27406
+symbol: INAFM1
+previous_symbols: PRR24
+alias_symbols: 
+uniprot_accessions: C9JVW0
+cytoband: 19q13.32

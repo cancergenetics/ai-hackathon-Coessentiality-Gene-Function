@@ -1,0 +1,6 @@
+hgnc_id: HGNC:16046
+symbol: UNC50
+previous_symbols: 
+alias_symbols: URP, UNCL, GMH1
+uniprot_accessions: Q53HI1
+cytoband: 2q11.2

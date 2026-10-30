@@ -1,0 +1,6 @@
+hgnc_id: HGNC:28796
+symbol: MRFAP1L1
+previous_symbols: 
+alias_symbols: MGC9651
+uniprot_accessions: Q96HT8
+cytoband: 4p16.1

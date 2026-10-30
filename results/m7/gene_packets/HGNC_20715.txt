@@ -1,0 +1,6 @@
+hgnc_id: HGNC:20715
+symbol: MID1IP1
+previous_symbols: 
+alias_symbols: STRAIT11499, FLJ10386, MIG12, THRSPL, G12-like
+uniprot_accessions: Q9NPA3
+cytoband: Xp11.4

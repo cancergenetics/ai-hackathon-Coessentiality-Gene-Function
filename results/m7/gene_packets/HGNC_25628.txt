@@ -1,0 +1,6 @@
+hgnc_id: HGNC:25628
+symbol: DDX19A
+previous_symbols: DDX19L
+alias_symbols: FLJ11126
+uniprot_accessions: Q9NUU7
+cytoband: 16q22.1

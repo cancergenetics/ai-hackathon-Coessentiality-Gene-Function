@@ -1,0 +1,6 @@
+hgnc_id: HGNC:26532
+symbol: DNHD1
+previous_symbols: DHCD1, C11orf47, DNHD1L, CCDC35
+alias_symbols: FLJ32752, FLJ46184, FLJ35709, DKFZp686J0796
+uniprot_accessions: Q96M86
+cytoband: 11p15.4

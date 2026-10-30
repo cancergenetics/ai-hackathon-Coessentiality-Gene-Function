@@ -1,0 +1,6 @@
+hgnc_id: HGNC:24738
+symbol: C5orf34
+previous_symbols: 
+alias_symbols: FLJ32363
+uniprot_accessions: Q96MH7
+cytoband: 5p12

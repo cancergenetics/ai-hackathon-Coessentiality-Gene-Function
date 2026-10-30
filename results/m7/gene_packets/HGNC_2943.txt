@@ -1,0 +1,6 @@
+hgnc_id: HGNC:2943
+symbol: DNAH12
+previous_symbols: DNHD2, DNAH12L, DNAH7L
+alias_symbols: DLP12, Dnahc3, HL-19, hdhc3, DHC3, FLJ40427, FLJ44290
+uniprot_accessions: Q6ZR08
+cytoband: 3p14.3

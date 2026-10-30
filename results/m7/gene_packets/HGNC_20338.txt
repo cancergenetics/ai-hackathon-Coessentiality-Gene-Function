@@ -1,0 +1,6 @@
+hgnc_id: HGNC:20338
+symbol: G2E3
+previous_symbols: KIAA1333
+alias_symbols: FLJ20333, PHF7B
+uniprot_accessions: Q7L622
+cytoband: 14q12

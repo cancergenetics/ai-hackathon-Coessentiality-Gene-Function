@@ -1,0 +1,6 @@
+hgnc_id: HGNC:20371
+symbol: NDUFA11
+previous_symbols: 
+alias_symbols: B14.7
+uniprot_accessions: Q86Y39
+cytoband: 19p13.3

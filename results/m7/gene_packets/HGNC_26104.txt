@@ -1,0 +1,6 @@
+hgnc_id: HGNC:26104
+symbol: C8orf33
+previous_symbols: 
+alias_symbols: FLJ20989
+uniprot_accessions: Q9H7E9
+cytoband: 8q24.3

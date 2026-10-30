@@ -1,0 +1,6 @@
+hgnc_id: HGNC:17798
+symbol: YLPM1
+previous_symbols: C14orf170
+alias_symbols: ZAP, PPP1R169
+uniprot_accessions: P49750
+cytoband: 14q24.3

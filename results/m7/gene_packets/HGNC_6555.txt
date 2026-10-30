@@ -1,0 +1,6 @@
+hgnc_id: HGNC:6555
+symbol: LEPROTL1
+previous_symbols: 
+alias_symbols: my047, Vps55
+uniprot_accessions: O95214
+cytoband: 8p12

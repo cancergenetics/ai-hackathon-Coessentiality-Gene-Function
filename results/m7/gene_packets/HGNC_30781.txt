@@ -1,0 +1,6 @@
+hgnc_id: HGNC:30781
+symbol: TADA2B
+previous_symbols: 
+alias_symbols: MGC21874
+uniprot_accessions: Q86TJ2
+cytoband: 4p16.1

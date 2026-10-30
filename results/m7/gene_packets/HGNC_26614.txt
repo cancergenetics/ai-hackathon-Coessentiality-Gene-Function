@@ -1,0 +1,6 @@
+hgnc_id: HGNC:26614
+symbol: ANKRD52
+previous_symbols: 
+alias_symbols: FLJ34236, PP6-ARS-C
+uniprot_accessions: Q8NB46
+cytoband: 12q13.3

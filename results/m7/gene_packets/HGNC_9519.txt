@@ -1,0 +1,6 @@
+hgnc_id: HGNC:9519
+symbol: PSG2
+previous_symbols: PSBG2
+alias_symbols: PSGGB, PSG1, CEA
+uniprot_accessions: P11465
+cytoband: 19q13.31

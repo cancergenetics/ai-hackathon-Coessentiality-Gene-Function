@@ -1,0 +1,6 @@
+hgnc_id: HGNC:842
+symbol: ATP5MC2
+previous_symbols: ATP5G2
+alias_symbols: 
+uniprot_accessions: Q06055
+cytoband: 12q13.13

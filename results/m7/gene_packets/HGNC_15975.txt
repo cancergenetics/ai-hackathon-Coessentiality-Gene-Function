@@ -1,0 +1,6 @@
+hgnc_id: HGNC:15975
+symbol: SASH3
+previous_symbols: CXorf9
+alias_symbols: SLY, 753P9, SH3D6C, HACS2
+uniprot_accessions: O75995
+cytoband: Xq26.1

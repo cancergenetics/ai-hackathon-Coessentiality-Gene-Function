@@ -1,0 +1,6 @@
+hgnc_id: HGNC:7685
+symbol: NDUFA2
+previous_symbols: 
+alias_symbols: B8
+uniprot_accessions: O43678
+cytoband: 5q31.3

@@ -1,0 +1,6 @@
+hgnc_id: HGNC:7696
+symbol: NDUFB10
+previous_symbols: 
+alias_symbols: PDSW
+uniprot_accessions: O96000
+cytoband: 16p13.3

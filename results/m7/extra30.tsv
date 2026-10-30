@@ -1,0 +1,31 @@
+bin	bin_pcal_min	bin_pcal_max	bin_n	hgnc_id	symbol	p_cal	top_term	top_term_name	family	v1p_label	v1p_label_name	top_size	excl43	contradiction	zmean
+0	5.50476e-08	0.00621366	46	HGNC:19401	PGBD4	6.3768e-08	GO:0001568	blood vessel development	signalling_lineage	GO:0005890	sodium:potassium-exchanging ATPase complex	137	False	False	3.67576
+0	5.50476e-08	0.00621366	46	HGNC:30795	TSPAN11	8.87539e-08	GO:0034341	response to type II interferon	signalling_lineage			60	True	False	4.0624
+0	5.50476e-08	0.00621366	46	HGNC:28728	MARCHF3	9.61182e-08	GO:0061061	muscle structure development	signalling_lineage			132	False	False	4.34205
+0	5.50476e-08	0.00621366	46	HGNC:842	ATP5MC2	1.19306e-07	GO:0097190	apoptotic signaling pathway	signalling_lineage	GO:0090575	RNA polymerase II transcription regulator complex	181	False	False	4.33901
+0	5.50476e-08	0.00621366	46	HGNC:33842	AARD	1.66819e-07	GO:0001217	DNA-binding transcription repressor activity	signalling_lineage			170	False	False	3.87529
+0	5.50476e-08	0.00621366	46	HGNC:25373	CYRIA	2.94552e-07	GO:0007507	heart development	signalling_lineage	GO:0090575	RNA polymerase II transcription regulator complex	124	False	False	6.30763
+1	0.006228	0.00936171	46	HGNC:27312	SAMD14	0.00769226	GO:0006605	protein targeting	other			75	False	False	3.80338
+1	0.006228	0.00936171	46	HGNC:30948	ZNF585B	0.0082722	GO:0006352	DNA-templated transcription initiation	other	CP:CPX-2393	DNA-directed RNA polymerase III complex, POLR3G variant	146	False	False	3.40271
+1	0.006228	0.00936171	46	HGNC:17798	YLPM1	0.00831153	GO:0006403	RNA localization	other	CP:CPX-2477	TREX-2 transcription-export complex, CETN2 variant	78	False	False	4.58399
+1	0.006228	0.00936171	46	HGNC:13671	H2AC12	0.00836326	GO:1902806	regulation of cell cycle G1/S phase transition	other	GO:0030532	small nuclear ribonucleoprotein complex	110	False	False	3.44144
+1	0.006228	0.00936171	46	HGNC:18386	SFTA2	0.00859883	GO:0001503	ossification	other			58	False	False	4.19745
+1	0.006228	0.00936171	46	HGNC:14456	H2AJ	0.00892723	GO:0030165	PDZ domain binding	other	CP:CPX-5646	Kinetochore CCAN complex	48	False	False	4.3301
+2	0.00939196	0.0137445	45	HGNC:18896	TMEM185B	0.00939196	GO:0051865	protein autoubiquitination	other			57	False	False	3.85206
+2	0.00939196	0.0137445	45	HGNC:25526	FAM90A1	0.00944086	GO:0001959	regulation of cytokine-mediated signaling pathway	other			126	False	False	5.03495
+2	0.00939196	0.0137445	45	HGNC:26179	ZNF672	0.0114049	GO:0016922	nuclear receptor binding	other			105	False	False	5.19819
+2	0.00939196	0.0137445	45	HGNC:32008	TMEM120B	0.0118754	GO:0006790	sulfur compound metabolic process	other	MC:Metabolism > Lipid metabolism	MitoCarta: Metabolism > Lipid metabolism	167	False	False	4.68397
+2	0.00939196	0.0137445	45	HGNC:33754	C16orf87	0.0120791	GO:0005126	cytokine receptor binding	other			173	False	False	3.9711
+2	0.00939196	0.0137445	45	HGNC:23707	ZNF492	0.0131378	GO:0001818	negative regulation of cytokine production	other			181	False	False	4.26963
+3	0.0138409	0.0199349	46	HGNC:28476	YIPF2	0.0138409	GO:0005319	lipid carrier activity	other			119	False	False	4.45502
+3	0.0138409	0.0199349	46	HGNC:24149	HES4	0.0141298	GO:0051607	defense response to virus	other	MC:Mitochondrial dynamics and surveillance	MitoCarta: Mitochondrial dynamics and surveillance	170	False	False	3.7673
+3	0.0138409	0.0199349	46	HGNC:6555	LEPROTL1	0.0157092	GO:0039531	regulation of cytoplasmic pattern recognition receptor signaling pathway	other	CP:CPX-2656	Ribosome quality control complex	120	False	False	4.14466
+3	0.0138409	0.0199349	46	HGNC:9519	PSG2	0.0167311	GO:0006805	xenobiotic metabolic process	other			102	False	False	7.06838
+3	0.0138409	0.0199349	46	HGNC:14440	FAM117B	0.01692	GO:0009410	response to xenobiotic stimulus	other	GO:0000307	cyclin-dependent protein kinase holoenzyme complex	158	False	False	4.40947
+3	0.0138409	0.0199349	46	HGNC:28982	HMGXB3	0.018164	GO:0032886	regulation of microtubule-based process	other	CP:CPX-4203	GBAF (SWI/SNF) ATP-dependent chromatin remodeling complex, ACTL6A-BICRAL-SMARCA2 variant	168	False	False	6.19728
+4	0.0199491	0.0993891	46	HGNC:23162	ALG10	0.0199491	GO:0046434	organophosphate catabolic process	other			102	False	False	4.99807
+4	0.0199491	0.0993891	46	HGNC:37252	ARHGEF33	0.0224727	GO:0016763	pentosyltransferase activity	ER_Golgi_secretory_lipid			47	False	False	4.90135
+4	0.0199491	0.0993891	46	HGNC:19399	PGBD2	0.0247899	GO:0043124	negative regulation of canonical NF-kappaB signal transduction	other			66	False	False	7.31209
+4	0.0199491	0.0993891	46	HGNC:28796	MRFAP1L1	0.0262062	GO:0019001	guanyl nucleotide binding	other			133	False	False	4.77561
+4	0.0199491	0.0993891	46	HGNC:21754	TMEM60	0.0373629	GO:0034976	response to endoplasmic reticulum stress	other	GO:0034702	monoatomic ion channel complex	151	True	False	8.0236
+4	0.0199491	0.0993891	46	HGNC:29562	MARF1	0.0993891	GO:0006401	RNA catabolic process	other	CP:CPX-2870	RNA decapping and exonuclease complex, DCP1A variant	149	False	True	9.28865

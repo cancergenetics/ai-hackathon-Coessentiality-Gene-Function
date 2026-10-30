@@ -1,0 +1,6 @@
+hgnc_id: HGNC:11326
+symbol: SSR4
+previous_symbols: 
+alias_symbols: TRAPD
+uniprot_accessions: P51571
+cytoband: Xq28

@@ -1,0 +1,6 @@
+hgnc_id: HGNC:19399
+symbol: PGBD2
+previous_symbols: 
+alias_symbols: 
+uniprot_accessions: Q6P3X8
+cytoband: 1q44

@@ -1,0 +1,6 @@
+hgnc_id: HGNC:23067
+symbol: TRAPPC5
+previous_symbols: 
+alias_symbols: MGC52424, TRS31
+uniprot_accessions: Q8IUR0
+cytoband: 19p13.2

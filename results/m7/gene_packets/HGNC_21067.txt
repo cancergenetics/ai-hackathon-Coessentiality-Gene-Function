@@ -1,0 +1,6 @@
+hgnc_id: HGNC:21067
+symbol: SMYD4
+previous_symbols: 
+alias_symbols: KIAA1936, ZMYND21
+uniprot_accessions: Q8IYR2
+cytoband: 17p13.3

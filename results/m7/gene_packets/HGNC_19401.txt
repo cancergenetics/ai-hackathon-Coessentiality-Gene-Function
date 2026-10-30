@@ -1,0 +1,6 @@
+hgnc_id: HGNC:19401
+symbol: PGBD4
+previous_symbols: 
+alias_symbols: FLJ32638, FLJ37497
+uniprot_accessions: Q96DM1
+cytoband: 15q14

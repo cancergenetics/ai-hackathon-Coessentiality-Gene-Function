@@ -1,0 +1,6 @@
+hgnc_id: HGNC:26036
+symbol: COMMD8
+previous_symbols: 
+alias_symbols: FLJ20502
+uniprot_accessions: Q9NX08
+cytoband: 4p12

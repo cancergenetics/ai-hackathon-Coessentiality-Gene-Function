@@ -1,0 +1,6 @@
+hgnc_id: HGNC:13449
+symbol: SLITRK2
+previous_symbols: SLITL1, TMEM257, CXorf1
+alias_symbols: KIAA1854, CXorf2
+uniprot_accessions: Q9H156
+cytoband: Xq27.3

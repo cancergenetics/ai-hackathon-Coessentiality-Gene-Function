@@ -1,0 +1,6 @@
+hgnc_id: HGNC:24142
+symbol: TM2D1
+previous_symbols: 
+alias_symbols: BBP
+uniprot_accessions: Q9BX74
+cytoband: 1p31.3
