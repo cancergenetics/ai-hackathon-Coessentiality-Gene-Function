@@ -6,11 +6,11 @@
 
 This is an exercise in assessing the bioinformatics capabilities of agentic AI. This exercise was performed by the Ryan lab at University College Dublin, collaborating as part of a hackathon run by the Beltrao Lab at ETH Zurich, where we used Claude to run bioinformatics projects. All results in this project were generated entirely by AI with minimal human intervention. This is not intended to be viewed as a traditional publication and bioinformatics tool.
 
-The goal of this specific project is to develop an approach to predict co-complex membership from gene co-essentiality. It was executed by Claude Opus 5.5 with delegation to Opus 5.5/Sonnet 5.5 subagents, and finished within 24 hours on a personal 13-inch MacBook Pro equipped with an Apple M2 chip and 24 GB of unified memory.
+The goal of this specific project is to use a co-essentiality method (zavg_BEF, from https://github.com/cancergenetics/ai-hackathon-Coessentiality) applied to DepMap CRISPR screens to propose putative functions for uncharacterised human genes, pre-registered before any network analysis, and to support or downweight these predictions with orthogonal datasets and the literature. It was executed by Claude Opus 5.5 with delegation to Opus 5.5/Sonnet 5.5 subagents, and finished within 24 hours on a personal 13-inch MacBook Pro equipped with an Apple M2 chip and 24 GB of unified memory.
 
 Currently none of the results have been verified by a human. We plan to verify the agent’s methodology and benchmarking, and we will update this section accordingly.
 
-The rest of this repository is entirely AI generated. It includes code for implementation of the predictive model and a AI-written report in the style of a journal article, detailing the final method, the path followed to reach it, and benchmarking against other methods.
+The rest of this repository is entirely AI generated. It includes the pre-registered list of uncharacterised genes, the analysis code, calibrated function predictions, reports on the most promising candidate genes with proposed experiments, and an AI-written report in the style of a journal article, detailing the approach, its validation on a temporal hold-out and against blinded literature checks, and comparison with other methods.
 
 (Human-written text ends)
 
