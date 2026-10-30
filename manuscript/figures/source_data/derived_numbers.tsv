@@ -1,0 +1,27 @@
+key	value	note	inputs
+audit_N1_wilson	21/50 = 0.42 (0.29-0.56)	curation-lag class share, Wilson 95% CI	results/audit/curation_lag_audit.tsv
+audit_N2_wilson	13/50 = 0.26 (0.16-0.40)	curation-lag class share, Wilson 95% CI	results/audit/curation_lag_audit.tsv
+audit_N3_wilson	16/50 = 0.32 (0.21-0.46)	curation-lag class share, Wilson 95% CI	results/audit/curation_lag_audit.tsv
+sigma_pcal_top40_primary	2.50	sum of p_cal over the primary top 40 (no CI)	results/ledger/top40_primary.tsv
+support_rule_real_vs_matched	diff +0.040; discordant 47/37; McNemar exact p = 0.326	descriptive paired comparison over 247 anchors (not pre-specified)	results/ledger/support.tsv
+support_strict_real_vs_matched	diff +0.065; discordant 47/31; McNemar exact p = 0.0888	descriptive paired comparison over 247 anchors (not pre-specified)	results/ledger/support.tsv
+support_any_real_vs_matched	diff +0.101; discordant 61/36; McNemar exact p = 0.0144	descriptive paired comparison over 247 anchors (not pre-specified)	results/ledger/support.tsv
+support_rule_real_vs_decoy	diff +0.097; discordant 54/30; McNemar exact p = 0.0116	descriptive paired comparison over 247 anchors (not pre-specified)	results/ledger/support.tsv
+support_strict_real_vs_decoy	diff +0.097; discordant 54/30; McNemar exact p = 0.0116	descriptive paired comparison over 247 anchors (not pre-specified)	results/ledger/support.tsv
+support_any_real_vs_decoy	diff +0.146; discordant 68/32; McNemar exact p = 0.000409	descriptive paired comparison over 247 anchors (not pre-specified)	results/ledger/support.tsv
+top40_n_any_top40_check_fail	33	primary top 40 genes failing >= 1 top-40-only check	results/ledger/top40_primary.tsv
+top40_n_lineage_fail	10	lineage leave-out changes top term	results/ledger/top40_primary.tsv
+top40_n_d2_measured	30	DEMETER2 measured	results/ledger/top40_primary.tsv
+top40_n_d2_flag	24	DEMETER2 not replicated	results/ledger/top40_primary.tsv
+top40_n_tp53_flag	11	TP53 flag	results/ledger/top40_primary.tsv
+top40_n_any_class_support	27	>= 1 orthogonal class supports	results/ledger/top40_primary.tsv
+top40_n_diag_support	25	diagnostic-class support	results/ledger/top40_primary.tsv
+top40_family_counts	other 36; ER_Golgi_secretory_lipid 4	module family of the V2 top term	results/ledger/top40_primary.tsv
+top40_pcal_range	0.036-0.141	p_cal range	results/ledger/top40_primary.tsv
+top40_n_unflagged	7	no top-40-only check failure	results/ledger/top40_primary.tsv
+top40_n_lowcov	1	low_coverage genes	results/ledger/top40_primary.tsv
+top40_pool_n	269	fill pool: expressed, assessable, in-support U genes with a prediction	results/ledger/tiers_all.tsv
+top40_pool_excluded	24 (artefact exclusion 23, contradiction 1)	pool genes removed by section 4.3 exclusion or contradiction	results/ledger/tiers_all.tsv
+top40_pool_families	other 209; signalling_lineage 43; ER_Golgi_secretory_lipid 17	module families in the fill pool (mito cap cannot bind)	results/ledger/tiers_all.tsv
+top40_overlap_primary_vs_cleanfirst	20	genes shared by the primary (p_cal order) and clean-first sensitivity top 40	results/ledger/top40_primary.tsv; results/ledger/top40.tsv
+top40_term_counts	DNA-templated transcription elongation 3; epigenetic regulation of gene expression 3; response to endoplasmic reticulum stress 3; DNA-templated transcription initiation 2; regulation of RNA stability 2; Golgi vesicle transport 2	most frequent V2 top terms	results/ledger/top40_primary.tsv

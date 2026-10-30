@@ -1,0 +1,15 @@
+symbol	weak	in_H	n_targets_2_300	n_targets_flagged	n_unflagged	n_reportable	rank_best_true_term	best_true_term	top1_term	top_v1prime_label
+SPRING1	False	False	1	1	0	89			GO:0019216 regulation of lipid metabolic process	GO:0032936 SREBP-SCAP complex
+PEDS1	False	True	6	0	6	79	7.0	GO:0008611 ether lipid biosynthetic process	GO:0006644 phospholipid metabolic process	
+CCDC32	False	True	5	4	1	86			GO:0006897 endocytosis	GO:0030117 membrane coat
+INTS15	False	True	8	0	8	21			GO:0016073 snRNA metabolic process	CP:CPX-26393 Integrator-PP2A complex
+HAPSTR1	False	True	5	3	2	61			GO:0004842 ubiquitin-protein transferase activity	GO:0008180 COP9 signalosome
+SLC25A51	False	True	23	20	3	24			GO:0007005 mitochondrion organization	MitoCarta: OXPHOS
+TEDC1	False	False	1	1	0	87			GO:0007098 centrosome cycle	GO:0120099 procentriole replication complex
+TEDC2	False	False	1	1	0	80			GO:0007098 centrosome cycle	GO:0120099 procentriole replication complex
+POU2AF2	False	False	1	1	0	23			GO:0008270 zinc ion binding	
+POU2AF3	False	False	1	1	0	16			GO:0000978 RNA polymerase II cis-regulatory region sequence-specific DNA binding	CP:CPX-5646 Kinetochore CCAN complex
+TMEM242	False	True	5	0	5	77	1.0	GO:0007005 mitochondrion organization	GO:0007005 mitochondrion organization	MitoCarta: OXPHOS
+FIRRM	True	True	18	17	1	54			GO:0006302 double-strand break repair	CP:CPX-478 ERCC1-XPF endonuclease complex
+AIRIM	True	True	4	0	4	125	89.0	GO:0006260 DNA replication	GO:0006487 protein N-linked glycosylation	GO:1904949 ATPase complex
+TMEM41B	True	True	16	0	16	70			GO:0034976 response to endoplasmic reticulum stress	GO:0140534 endoplasmic reticulum protein-containing complex

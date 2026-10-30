@@ -1,0 +1,41 @@
+rank	symbol	top_term	top_term_name	family	p_cal	zmean	R	cov_pct	lineage_fail	d2_meas	d2_fl	tp53_fl	classes	diag	lowcov	demotion_reason
+1	ANKRD52	GO:0031047	regulatory ncRNA-mediated gene silencing	other	0.141024	10.6822	0.472	0.859139	False	False	False	False		False	False	
+2	CCDC174	GO:0006352	DNA-templated transcription initiation	other	0.116433	9.91095	0.48	0.859139	True	False	False	False	AL	True	False	lineage_leaveout
+3	CNOT10	GO:0043487	regulation of RNA stability	other	0.115749	10.8748	0.312	0.693976	False	True	True	True	PAL	True	False	DEMETER2|TP53
+4	TRAPPC5	GO:0048193	Golgi vesicle transport	ER_Golgi_secretory_lipid	0.11402	10.944	0.512	0.785908	False	False	False	True	PALG	True	False	TP53
+5	RBM34	GO:0006354	DNA-templated transcription elongation	other	0.102738	9.41798	0.48	0.859139	False	True	True	True	PAL	True	False	DEMETER2|TP53
+6	SSR4	GO:0006487	protein N-linked glycosylation	ER_Golgi_secretory_lipid	0.091498	9.6462	0.488	0.859139	False	True	True	False	PAL	True	False	DEMETER2
+7	CNOT11	GO:0043487	regulation of RNA stability	other	0.0797873	10.8434	0.32	0.457459	False	True	True	True	PA	True	False	DEMETER2|TP53
+8	MED31	GO:0006352	DNA-templated transcription initiation	other	0.0788531	10.0373	0.48	0.58481	False	True	False	False	PALG	True	False	
+9	YPEL5	GO:0030177	positive regulation of Wnt signaling pathway	other	0.0782256	10.7681	0.376	0.457459	True	True	True	False	A	True	False	lineage_leaveout|DEMETER2
+10	TMEM208	GO:0090150	establishment of protein localization to membrane	other	0.0777261	8.34275	0.504	0.859139	False	True	True	False	A	True	False	DEMETER2
+11	PHC3	GO:0040029	epigenetic regulation of gene expression	other	0.0765728	8.72365	0.44	0.785908	False	True	False	False	AL	True	False	
+12	PLEKHH3	GO:0051896	regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction	other	0.0757136	8.24307	0.264	0.859139	False	False	False	False		False	False	
+13	TLNRD1	GO:0030336	negative regulation of cell migration	other	0.0693311	8.89721	0.296	0.693976	False	True	True	False	P	True	False	DEMETER2
+14	DMXL1	GO:1903706	regulation of hemopoiesis	other	0.063789	7.59686	0.088	0.859139	True	True	True	False		False	False	lineage_leaveout|DEMETER2
+15	TMED7	GO:0048193	Golgi vesicle transport	ER_Golgi_secretory_lipid	0.0636413	8.70428	0.416	0.785908	True	True	True	False	PG	False	False	lineage_leaveout|DEMETER2
+16	CCDC71L	GO:0040029	epigenetic regulation of gene expression	other	0.063521	7.58109	0.272	0.859139	True	False	False	False		False	False	lineage_leaveout
+17	TANGO6	GO:0006354	DNA-templated transcription elongation	other	0.0612955	9.0874	0.504	0.58481	False	False	False	True	G	True	False	TP53
+18	MGA	GO:0040029	epigenetic regulation of gene expression	other	0.0587553	7.28967	0.272	0.859139	False	True	False	False	PAL	True	False	
+19	LGALS9B	GO:0006909	phagocytosis	other	0.0575891	9.61597	0.232	0.457459	True	True	True	False		False	True	lineage_leaveout|DEMETER2
+20	TMEM209	GO:0006997	nucleus organization	other	0.0546176	8.00533	0.376	0.693976	False	True	False	True	PALG	True	False	TP53
+21	TM2D2	GO:0034976	response to endoplasmic reticulum stress	other	0.050285	9.11307	0.272	0.457459	False	True	True	False		False	False	DEMETER2
+22	C8orf33	GO:0042162	telomeric repeat DNA binding	other	0.0494263	7.63573	0.4	0.693976	False	True	True	True		False	False	DEMETER2|TP53
+23	MID1IP1	GO:0006790	sulfur compound metabolic process	other	0.0489598	7.05123	0.088	0.785908	False	True	True	False		False	False	DEMETER2
+24	FBXL18	GO:0016073	snRNA metabolic process	other	0.0484828	6.5774	0.12	0.859139	False	True	True	False	L	True	False	DEMETER2
+25	CHIC2	GO:0034976	response to endoplasmic reticulum stress	other	0.0472052	7.46624	0.176	0.693976	True	True	True	False	G	True	False	lineage_leaveout|DEMETER2
+26	PSMD13	GO:0061136	regulation of proteasomal protein catabolic process	other	0.0471533	10.3069	0.528	0.21806	False	True	True	False	PALG	True	False	DEMETER2
+27	COA4	GO:0017004	cytochrome complex assembly	other	0.0464306	6.41811	0.232	0.859139	False	True	True	False	PALG	True	False	DEMETER2
+28	TM2D1	GO:0034976	response to endoplasmic reticulum stress	other	0.0451822	8.71887	0.288	0.457459	False	False	False	False		False	False	
+29	SASH3	GO:0050864	regulation of B cell activation	other	0.0449361	6.29783	0.24	0.859139	True	True	True	False		False	False	lineage_leaveout|DEMETER2
+30	GRIPAP1	GO:0098876	vesicle-mediated transport to the plasma membrane	ER_Golgi_secretory_lipid	0.0444943	7.37765	0.264	0.785908	False	True	False	False	A	False	False	
+31	C5orf34	GO:1902115	regulation of organelle assembly	other	0.044261	7.22948	0.424	0.693976	False	True	True	True		False	False	DEMETER2|TP53
+32	NHLRC2	GO:0019208	phosphatase regulator activity	other	0.0435584	6.18353	0.136	0.859139	False	True	True	False	A	True	False	DEMETER2
+33	BICRAL	GO:0001221	transcription coregulator binding	other	0.0414605	6.98991	0.16	0.693976	True	False	False	False	AL	True	False	lineage_leaveout
+34	AKIRIN1	GO:0061136	regulation of proteasomal protein catabolic process	other	0.0389948	6.76579	0.136	0.693976	False	True	True	True	PL	True	False	DEMETER2|TP53
+35	KDF1	GO:0043123	positive regulation of canonical NF-kappaB signal transduction	other	0.0376475	8.05126	0.2	0.457459	False	True	True	False	L	True	False	DEMETER2
+36	RBM27	GO:0006403	RNA localization	other	0.036822	6.00722	0.064	0.785908	False	False	False	True	AL	True	False	TP53
+37	INAFM1	GO:0031593	polyubiquitin modification-dependent protein binding	other	0.0366899	6.54364	0.192	0.693976	True	False	False	False		False	False	lineage_leaveout
+38	DDX19A	GO:0008283	cell population proliferation	other	0.0356027	9.27886	0.032	0.21806	False	True	True	False		False	False	DEMETER2
+39	ZNF318	GO:0010948	negative regulation of cell cycle process	other	0.0355838	6.43222	0.208	0.693976	False	True	False	True	AL	True	False	TP53
+40	DPCD	GO:0006354	DNA-templated transcription elongation	other	0.035536	5.87782	0.064	0.785908	False	True	True	False	L	True	False	DEMETER2

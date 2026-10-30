@@ -1,0 +1,5 @@
+set	n	sum	lo	hi	source
+all in-support U	2583	30.48749005373222	13.834047317504883	49.69965362548828	results/ledger/pcal_summary.json
+in support, expr. & assessable	269	5.494303497017871	2.8132667541503906	8.635934829711914	results/ledger/pcal_summary.json
+boundary genes (upper bound)	133	1.0396027368281686	0.4517800211906433	1.8699634075164795	results/ledger/pcal_summary.json
+primary top 40	40	2.4995926			results/ledger/top40_primary.tsv (point sum; no bootstrap CI)

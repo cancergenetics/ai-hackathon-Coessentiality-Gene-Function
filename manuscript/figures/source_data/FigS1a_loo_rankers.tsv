@@ -1,0 +1,5 @@
+analysis	ranker	n_genes	MRR	precision_at_1	coverage	MRR_ci_gene	p1_ci_gene	top1_size_p10	top1_size_q1	top1_size_median	top1_size_q3	top1_size_p90	top1_size_mean	top1_frac_le50	chosen_by_frozen_rule	mrr_lo	mrr_hi	p1_lo	p1_hi
+primary (flagged excluded; unscannable included)	R1	2519	0.168835	0.138547	0.984121	0.1566-0.1823	0.1258-0.1520	40.0	79.0	131.0	169.5	187.0	122.217426	0.131101	True	0.1566	0.1823	0.1258	0.152
+primary (flagged excluded; unscannable included)	R2	2519	0.140258	0.110361	0.984121	0.1285-0.1527	0.0992-0.1227	8.0	16.0	35.0	75.0	136.0	53.131505	0.61073	False	0.1285	0.1527	0.0992	0.1227
+primary (flagged excluded; unscannable included)	R3	2519	0.110761	0.077015	0.984121	0.1004-0.1209	0.0667-0.0869	8.0	16.0	31.0	66.0	109.2	47.645825	0.653893	False	0.1004	0.1209	0.0667	0.0869
+primary (flagged excluded; unscannable included)	prior	2519	0.072938	0.036919	1.0	0.0654-0.0802	0.0294-0.0441	200.0	200.0	200.0	200.0	200.0	200.0	0.0	False	0.0654	0.0802	0.0294	0.0441

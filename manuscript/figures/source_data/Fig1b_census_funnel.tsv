@@ -1,0 +1,7 @@
+step	n	source	frac_of_U
+HGNC protein-coding	19296	preregistration/CRITERIA.md	3.91876523151909
+pre-registered U	4924	results/assessability/assessability_U.tsv	1.0
+in DepMap 26Q3	4275	results/assessability/assessability_U.tsv	0.8681965881397238
+scorable	4271	results/assessability/assessability_U.tsv	0.8673842404549147
+scorable & expressed	2722	results/assessability/assessability_U.tsv	0.5528025995125914
+assessable	646	results/assessability/assessability_U.tsv	0.13119415109666938

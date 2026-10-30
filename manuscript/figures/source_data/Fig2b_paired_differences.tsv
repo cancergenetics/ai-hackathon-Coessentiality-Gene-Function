@@ -1,0 +1,7 @@
+comparator	role	diff	ci_lo	ci_hi	source
+prior-only	primary	0.029666	0.017721	0.042553	results/holdout_eval/comparisons_core.tsv (PMID-only clusters)
+matched-gene null	primary	0.024722	0.01297	0.037759	results/holdout_eval/comparisons_core.tsv (PMID-only clusters)
+GLS	key secondary	0.00618	-0.004981	0.017327	results/holdout_eval/comparisons_core.tsv (PMID-only clusters)
+Pearson	secondary batch	0.002472	-0.008794	0.013682	results/holdout_eval/secondary.tsv
+hu.MAP PPI transfer	secondary batch	-0.019778	-0.036746	-0.00361	results/holdout_eval/secondary.tsv
+homology (t0 IEA/ISS/IBA)	secondary batch	-0.187886	-0.224692	-0.153074	results/holdout_eval/secondary.tsv

@@ -1,0 +1,8 @@
+method	group	p1	lo	hi	coverage
+zavg_BEF (R1)	core	0.02967	0.01772	0.04255	0.95797
+GLS (R1)	core	0.02349	0.01271	0.03541	0.92707
+Pearson	secondary	0.02719	0.01593	0.03985	0.90977
+matched-gene null	core	0.00494	0.00267	0.00761	0.96613
+prior-only	core	0.0	0.0	0.0	1.0
+PPI module transfer	secondary	0.04944	0.03401	0.06576	0.88381
+Homology baseline	secondary	0.21755	0.18431	0.25332	0.56984
