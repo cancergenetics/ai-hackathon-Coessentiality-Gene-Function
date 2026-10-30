@@ -4,6 +4,25 @@ Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · 
 
 ## Status summary (latest first)
 
+### M7b — ten deep-dive candidate reports, red-teamed (2026-10-30)
+Ten reports (selection fixed before judging) were written from machine-generated evidence bundles, then reviewed by
+independent red-team agents (all ACCEPT WITH REVISIONS; zero fabricated citations across ~300 verified spans, but each
+review found real framing or numeric issues) and revised. Conclusions: **INAFM1** (N3) — novel, co-dependent with the
+NFE2L1–NGLY1–DDI2 (NRF1 activation) axis; label rests on weak term partners, hypothesis framed accordingly.
+**PLEKHH3** (N3) — co-*advantage* with PTEN/PLEKHA1 (its #1/#2 genome-wide correlates), a putative PI(3,4)P2-arm brake
+on PI3K/AKT. **CCDC71L** (N2) — Polycomb-dominated co-dependency, HP1-arm physical hints (PxVxL), lineage-fragile.
+**TM2D1/TM2D2** (N2) — tentative ER/protein-QC co-dependency (AUP1/JOSD1/STUB1, CHIC2), weak partner magnitudes.
+**C5orf34** (N2) — centriole-assembly (A–C linker) co-dependency conditional on TP53 status. **RBM34** (N2) — nucleolar
+rRNA production (yeast Nop12 orthologue: largely rediscovery; "transcription elongation" is a vocabulary artefact).
+**BICRAL** (N2) — GBAF/ncBAF subunit (rediscovery; paralogue-specificity downgraded). **TRAPPC5** (N2) — TRAPP core,
+dependency tracks the TRAPPIII arm. **ANKRD52** (N1 exemplar) — exact pathway-level rediscovery of PP6–AGO2 miRNA
+regulation.
+
+**Decision note D7.** Proceed to manuscript assembly (Discussion, Abstract, Table 3 candidates), number verification,
+two manuscript review rounds, REPORT.md. Narrative: calibrated, pre-registered co-essentiality gives honest, low but real
+accuracy; most confident predictions are rediscoveries of uncurated literature; a handful of genuinely novel,
+testable hypotheses with explicit experiments.
+
 ### M7a — blinded literature validation (2026-10-30)
 Closed-book recall probe: 52/90 candidates "recognised" by the LLM (mostly complex members). Blind literature screen
 (agent L, 100 genes, verbatim-checked evidence): 69 N1 / 24 N2 / 7 N3 — confirming heavy curation lag among
@@ -152,9 +171,9 @@ pre-registered list is committed and its hash recorded here.
   - [x] Exploratory: co-essentiality hits largely distinct from homology hits; hit@5 ≈ prior
 - [x] M6 Predictions for 4,137 U genes; max p_cal 0.141 → low-yield branch; top 40 by p_cal; S20 secondary list
   - [-] Orthogonal support barely separates real from null predictions (0.32 vs 0.28 vs 0.22)
-- [~] M7 Literature deep-dives + experiments for top candidates; per-candidate reports
+- [x] M7 Literature deep-dives + experiments for top candidates; per-candidate reports
   - [!] Blinded judging primary PASS: 18/40 vs 3/120 decoys, p = 0.0002; S20 19/20; extra30 1/30
   - [x] L screen 100 genes: 69 N1 / 24 N2 / 7 N3; recall probe 52/90
-  - [~] Deep-dive reports (10 genes)
-- [ ] M8 Manuscript, figures, references; review rounds
+  - [x] Deep-dive reports (10 genes): written, red-teamed, revised
+- [~] M8 Manuscript, figures, references; review rounds
 - [ ] M9 REPORT.md, final LESSONS pruning
