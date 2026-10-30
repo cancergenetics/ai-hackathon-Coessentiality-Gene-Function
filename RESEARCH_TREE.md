@@ -4,6 +4,23 @@ Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · 
 
 ## Status summary (latest first)
 
+### M9 — project complete (2026-10-30)
+Manuscript final (v3, `manuscript/manuscript.pdf`, 36 pp; source `manuscript/src/`; S1 Text in `manuscript/supplementary/`)
+after two review rounds: round 1 major revision (both referees) → post-review exploratory analyses
+(`results/revision/`) and reframing → round 2 minor revision (both referees; all post-review numbers independently
+recomputed) → final edits; number check clean (every miss hand-confirmed); 101 verified references; CLAIMS.tsv
+regenerated (1,291 rows). Ten candidate reports carry red-team reviews and post-review novelty corrections (9/10 had
+prior co-essentiality predictions; only PLEKHH3 is new). M9 chronology audit PASS (gate, sparse checkout, no pairwise
+output before the freeze tag); 160 tests pass. REPORT.md and final LESSONS.md (12 rules) written.
+
+Headline (honest) message: pre-registered, calibrated co-essentiality gives real but modest accuracy (hold-out
+precision@1 0.030 vs 0.005 null; ≈ GLS; homology 0.218), only a few hundred "uncharacterised" genes carry usable signal,
+expected confirmations are few (≈ 5 unconditional), and literature-supported predictions are mostly rediscoveries of
+published-but-uncurated or previously predicted function — with a small set of testable hypotheses and experiments.
+
+**Open items needing a human:** author list, CRediT, funding, human-oversight statement; repository deposit (DOI);
+wet-lab validation; optional human curation of the judged statements.
+
 ### M8 — manuscript v1 reviewed; revision in progress (2026-10-31) — RESUME HERE
 Manuscript v1 (manuscript/manuscript.md/.pdf/.docx; source manuscript/src/, built by scripts/79 + 80) went through
 review round 1 (reviews/ms_round1_*.md): domain and statistics referees → major revision; numbers 948/953 match;
@@ -193,5 +210,5 @@ pre-registered list is committed and its hash recorded here.
   - [!] Blinded judging primary PASS: 18/40 vs 3/120 decoys, p = 0.0002; S20 19/20; extra30 1/30
   - [x] L screen 100 genes: 69 N1 / 24 N2 / 7 N3; recall probe 52/90
   - [x] Deep-dive reports (10 genes): written, red-teamed, revised
-- [~] M8 Manuscript v1 + review round 1 done; revision interrupted (see top)
-- [ ] M9 REPORT.md, final LESSONS pruning
+- [x] M8 Manuscript: v1 → round 1 (major) → revision → round 2 (minor) → final v3
+- [x] M9 REPORT.md, final LESSONS pruning, M9 chronology audit
