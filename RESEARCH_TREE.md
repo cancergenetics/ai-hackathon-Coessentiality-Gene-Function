@@ -4,6 +4,25 @@ Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · 
 
 ## Status summary (latest first)
 
+### M6 — predictions for U: low-yield branch (2026-10-30)
+All 4,271 scorable U genes were scored with the H code path (4,137 have a reportable top term). Calibrated
+probabilities are low everywhere: max p_cal 0.141, so **no gene reaches Tier A (≥0.5) or Tier B (≥0.3)** — the
+pre-specified low-yield branch applies (paper leads with C1–C2; top 40 by p_cal). Σp_cal = 30.5 (95% CI 13.8–49.7)
+expected confirmed top terms over 2,583 in-support genes; 5.5 (2.8–8.6) among 269 expressed+assessable in-support genes.
+Negative control: 1,167 clean-negative genes, median p_cal 0.010, zero Tier-A-like calls. Orthogonal support rule
+passes 0.32 of real vs 0.28 matched-gene vs 0.22 decoy predictions (n = 247 each): weak separation. Top-40-only checks
+are strict: 221/269 pool genes fail ≥ 1 (DEMETER2 non-replication 182/204; leave-out changes top term in ~50%).
+
+Primary top 40 (pure p_cal order; DEVIATIONS) is led by ANKRD52, CCDC174, CNOT10, TRAPPC5, RBM34, SSR4, CNOT11, MED31,
+YPEL5, TMEM208 … — many are known complex subunits whose GO lacks experimental BP/MF (curation lag), others plausible
+novel calls (TM2D1/TM2D2/CHIC2 ER-stress module, C8orf33, TANGO6, CCDC71L, PLEKHH3). Calibration support removes every
+prediction in five machinery families and the strongest signals, so a secondary uncalibrated list S20 was defined
+(DEVIATIONS) before any literature step.
+
+**Decision note D5.** Fill key = p_cal (demotions inert without tiers); M6 agent's clean-first list = sensitivity.
+Add S20. M7: recall probe → blind literature screen (L) → judge validation on 10 H genes → blinded judging (top 40 + S20
++ extra 30) → deep-dive reports.
+
 ### M5 — temporal hold-out: primary passes, modest absolute accuracy (2026-10-30)
 On LOO (3,000 characterised genes) the frozen rule chose ranker R1 (raw S; MRR 0.169 vs R2 0.140, R3 0.111, prior
 0.073); label shuffle collapses it (p@1 0.015). Ranker + calibration spec + a cluster fallback were logged (LOOKS.md,
@@ -115,8 +134,10 @@ pre-registered list is committed and its hash recorded here.
   - [x] Recall probe random 50 (24 recognised)
 - [x] M5 Calibration: R1 chosen on LOO; one look at H — primary IUT PASS (p@1 0.030 vs 0.005); calibration c 0.86
   - [!] Homology baseline (0.218) and PPI transfer (0.049) beat co-essentiality on H; signal in top quintile (0.117)
-  - [~] Independent re-derivation of H primary
-- [~] M6 Hypothesis generation for pre-registered genes; orthogonal evidence integration (running)
-- [ ] M7 Literature deep-dives + experiments for top candidates; per-candidate reports
+  - [x] Independent re-derivation of H primary: VERIFIED (809/809 agreement)
+  - [x] Exploratory: co-essentiality hits largely distinct from homology hits; hit@5 ≈ prior
+- [x] M6 Predictions for 4,137 U genes; max p_cal 0.141 → low-yield branch; top 40 by p_cal; S20 secondary list
+  - [-] Orthogonal support barely separates real from null predictions (0.32 vs 0.28 vs 0.22)
+- [~] M7 Literature deep-dives + experiments for top candidates; per-candidate reports
 - [ ] M8 Manuscript, figures, references; review rounds
 - [ ] M9 REPORT.md, final LESSONS pruning
