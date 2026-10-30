@@ -1,0 +1,373 @@
+# TM2D2 — deep-dive candidate report (Template A + Template B)
+
+Primary top-40 rank 21 · predicted module: response to endoplasmic reticulum stress (GO:0034976) · novelty class N2 · literature search date 2026-10-30.
+Companion reports: `reports/TM2D1.md` (paralogue, same predicted module, rank 28). **This file holds the shared module analysis (§12) and the shared literature synthesis (§7.3)**; `reports/TM2D1.md` refers to them. CHIC2 (rank 25, N1) is the third member of the predicted module and has no report of its own; its bundle is `reports/data/TM2D_module/CHIC2_bundle.md`.
+Bracketed keys (M#, Q#) point to the evidence ledger in Appendix A; M-keys are shared with `reports/TM2D1.md`, which cites them from this file.
+
+Deviation from the template's file layout (recorded, not a rule change): DESIGN §6.5 places Template B in `reports/TM2D2_experiments.md`; this assignment restricted writing to `reports/TM2D1.md` and `reports/TM2D2.md`, so Template B is included below as Part 2. Content and required fields are unchanged.
+
+---
+
+# Part 1. Template A
+
+## 0. Bench summary (for a bench biologist; plain words)
+- **Claim:** Across 1,361 cancer cell lines [M82], the lines that grow poorly without TM2D2 are the same lines that grow poorly without its paralogue TM2D1 and without three membrane-associated ubiquitin/quality-control proteins (JOSD1, AUP1, STUB1; also STUB1's adaptor CHIC2) [M53, M54]. The GO term this module maps to is "response to endoplasmic reticulum stress" (with "ERAD pathway" as an equally scored, more specific term) [Q9, Q11]. Claim: TM2D2 *functions in / supports* the ER-stress response; relationship type unresolved (d). This is shared dependency, not a physical interaction.
+- **Confidence:** p_cal = 0.0503 (95% interval 0.016–0.098) [Q10] = expected probability (about 5%) that TM2D2 is later annotated to "response to endoplasmic reticulum stress" by experimental (D1-evidence) GO annotation within about 8 years [M65]. It is a hit probability for the module term only, not for the relationship type and not for "the gene's function is this module" [M66]. Tier: none (top 40 is filled by p_cal; no U gene can reach Tier B) [M67].
+- **Strongest reason to doubt:** the ER-stress label rests on only two partners (AUP1 and STUB1) and is lost if either is removed [Q12]; the partner correlations do not replicate in RNAi (DEMETER2) [Q13]; no orthogonal evidence class supports it (§6); and TM2D2's dependency does not co-vary with the core HRD1–SEL1L–UBE2G2 ERAD machinery, although AUP1's does [M62, M63].
+- **First experiment:** acute CRISPRi knockdown of TM2D2 in two TM2D2-dependent lines (YD-8, ETCC-016) and one non-dependent line (SNU-46), next to AUP1, JOSD1 and STUB1 knockdowns and a matched-essentiality control (MEN1), reading the unfolded-protein-response panel (BiP/HSPA5, CHOP/DDIT3, ATF4, spliced XBP1) and tunicamycin sensitivity; time about 6–8 weeks; approximate cost USD 10–15k (author's estimate, consumables only). Details in Part 2 (Template B) of this file.
+- Cancer-line essentiality is not organismal function: dependency in DepMap lines says the gene is needed for proliferation there, not what it does in the organism. Loss-of-function TM2D variants are in fact *selected for* in human blood clones [M26] — the opposite sign to the cancer-line dependency.
+
+## Definitions used in this template
+Relationship types (a–e) and novelty classes (N1–N3) as defined in `reports/TEMPLATE_candidate.md` (DESIGN §4.4, §1.5, §6.3). Without type-(a) support the claim reads "functions in / supports module M".
+
+## 1. Header
+- Symbol: TM2D2 | HGNC ID: HGNC:24127 | previous symbols / aliases: — / BLP1 (UniProt name: beta-amyloid-binding protein-like protein 1) | UniProt: Q9BX73 | band: 8p11.22
+- D1 / D2 / D3 values: True / False (UniProt annotation score 3) / True (D3_pubmed True, D3_tdark True; focused PMIDs 1; TDL Tdark) | curation-lag audit flag: not in the audit sample
+- Stratum (§1.4): family other; expression expressed (not lineage-restricted); informativeness tertile high; core True
+- Hypothesis (one sentence): TM2D2 functions in / supports the response to endoplasmic reticulum stress (GO:0034976), as part of a shared-dependency module with TM2D1, AUP1, JOSD1, STUB1 and CHIC2.
+- Relationship type: **d (type unresolved)** under the DESIGN §4.4 text; the script rule returned **c** ("multi-pass membrane, no complex-like partners") because it used UniProt's "Multi-pass membrane protein" keyword as a ≥ 4-TM proxy [M74], but TM2D2 has only two TM helices (145–165, 183–203) [Q2, Q3] and no enzyme or transporter keyword, so the c criterion of DESIGN §4.4 is not met. No P/A/S support, so type a is excluded. Claim wording therefore "functions in / supports".
+- Novelty class: N2 (agent L, blind) [Q30]; unblinded search date 2026-10-30
+- LLM-recall-probe flag (§6.2): not known (confidence low); probe answer logged at `results/m7/recall_probe_90.tsv` [Q25]; matches network top term: no (probe answer: Notch signalling)
+- Calibrated probability p_cal: 0.0503 [95% CI 0.016–0.098] [Q10]; calibration family: other; covariates inside H's 5th–95th percentile: yes (support category in_support)
+- Tier: none (p_cal fill); rank in top 40: 21 of the primary top 40, which is pure p_cal order [M73] (label: demoted, DEMETER2 [Q35])
+
+## 2. The protein
+- Domains (InterPro): IPR007829 TM2; IPR050932 TM2D1-3-like; Pfam PF05154 (TM2 domain 147–195). TM / signal peptide / MTS: signal peptide 1–35 [Q4]; two TM helices 145–165 and 183–203 [Q2, Q3]; C-terminal segment 204–214 annotated extracellular/luminal [Q40]; N-glycosylated (UniProt keyword, bundle §8); no MTS. AlphaFold pLDDT: not retrieved (not measured here). Deepest orthologue: metazoan only — the family is absent from yeasts and plants [M9]; fly orthologue CG11103/*amaretto* [Q37, M8].
+- Class H (homology) evidence: no IBA/ISO GO annotation for TM2D2 (bundle §6). Family-level functional data come from the fly orthologues (Notch, γ-secretase step) [M5–M7] and from human TM2D3 (Notch surface presentation; ER localisation; ER-stress response) [M13–M18].
+- UniProt: TM2 family member [Q1]; no FUNCTION comment [Q42].
+- Source keys: Q1–Q4, Q37, Q40, Q42, M5–M9, M13–M18.
+
+## 3. Dependency profile
+- Mean / SD of Chronos effect: −0.227 / 0.228 [Q33]; fraction of lines < −0.5: 0.0977 (133 lines) [Q41]; selective (not common-essential); NaN fraction: 0.0000
+- Expression: log2(TPM+1) ≥ 1 in 100% of lines (≥ 2 in 100%) [Q43]; median 5.23. Dependency vs own expression: Spearman ρ = −0.069 (n = 1,292), no coupling; scatter in `reports/data/TM2D2/fig_profile.png` panel (b).
+- Lineage enrichment: Head and Neck (77 lines; mean −0.355; Mann–Whitney p reported as 0.0000, descriptive) [Q36], Bladder/Urinary Tract (34; −0.307), Biliary Tract (36; −0.293).
+- Split-half assessability: R(g) = 0.272 [Q34]; null: R0 mean 0.002 and maximum 0.040 over 200 matched genes, so every null value (and hence the 95th percentile) is below R(g); empirical p = 0.0050; assessable: yes. RBO R 0.448 (p 0.0050).
+- Figure 1 (profile panel): `reports/data/TM2D2/fig_profile.png` — panel (a) TM2D2 vs JOSD1 (Pearson r = 0.22 on raw Chronos [M63]; the network's zavg_BEF is a whitened, three-method z-score and is not comparable to raw r).
+
+## 4. Neighbourhood
+Top-10 partners (K = 25 list; TM2D1 and TM2D3 are excluded by the built-in paralogue rule):
+
+| # | partner | zavg_BEF | z_B / z_E / z_F | GLS rank | partner function and essentiality (mean effect; frac < −0.5) | band | paralogue / shared-guide flag | hu.MAP-train |
+|---|---|---|---|---|---|---|---|---|
+| 1 | JOSD1 | 18.63 | 29.4/18.7/7.7 | 2 | membrane-associated deubiquitinase [M34, M35]; −0.16; 0.026 | 22q13.1 | no / not checkable | no |
+| 2 | AUP1 | 17.44 | 27.1/15.4/9.8 | 1 | ERAD accessory factor, ER + lipid droplets, recruits UBE2G2 [M29–M31]; in term; −0.14; 0.039 | 2p13.1 | no | no |
+| 3 | STUB1 | 16.37 | 26.5/16.8/5.8 | 3 [Q38] | E3 ligase CHIP, ER quality control [M36]; CHIC2 partner [M37–M40]; in term; −0.23; 0.079 | 16p13.3 | no | no |
+| 4 | PCNX1 | 15.03 | 24.7/15.8/4.6 | 5 | uncharacterised (U gene); −0.04; 0.004 | 14q24.2 | paralogue of PCNX3 (other partner) | no |
+| 5 | ZDHHC6 | 13.43 | 20.4/15.7/4.2 | 13 | ER-localised S-acyltransferase [M43]; +0.08; 0.002 | 10q25.2 | no | no |
+| 6 | PCNX3 | 10.88 | 17.4/11.3/3.9 | 9 | uncharacterised (U gene); BioPlex edge with TM2D2; −0.41; 0.327 | 11q13.1 | paralogue of PCNX1 | no |
+| 7 | MMD | 10.56 | 16.3/12.3/3.1 | 79 | GO: neuron differentiation; −0.03; 0.002 | 17q22 | no | no |
+| 8 | CHIC2 | 10.37 | 14.3/13.4/3.5 | 26 | palmitoylated membrane adaptor of STUB1 [M37–M41]; −0.05; 0.007 | 4q12 | no | no |
+| 9 | ATP13A1 | 9.46 | 12.7/10.9/4.8 | 4 | ER P5A-ATPase dislocase [M42]; −0.21; 0.071 | 19p13.11 | no | no |
+| 10 | CCDC8 | 9.09 | 14.4/10.5/2.4 | 241 | GO: regulation of mitotic division; −0.05; 0.005 | 19q13.32 | no | yes (gene; pair no) |
+
+No partner is on chromosome 8. Shared-guide flags cannot be evaluated (no guide-level data).
+- Figure 2 (neighbourhood network): `reports/data/TM2D2/fig_network.png`; module view `reports/data/TM2D_module/fig_module.png`.
+- Top 3 terms (R1):
+
+| term | S | p_emp | hypergeometric p (descriptive) | leave-one-partner-out (rank kept / supporting partners) |
+|---|---|---|---|---|
+| GO:0034976 response to endoplasmic reticulum stress | 33.808 | 0.0242 | 0.0185 | 0/2 |
+| GO:0036503 ERAD pathway | 33.808 | 0.0100 | 0.0033 | 0/2 |
+| GO:0031334 positive regulation of protein-containing complex assembly | 21.637 | 0.0181 | 0.0141 | 0/2 |
+
+- Second-ranked term: GO:0036503 ERAD pathway — tied on S with the top term (same two partners) and placed second only by the ascending-GO-id tie-break [Q11, M75]. Both terms are supported by AUP1 and STUB1 alone [Q9, Q12].
+
+## 5. Robustness (pass / fail)
+
+| Check | Result | Note |
+|---|---|---|
+| Same-arm and paralogue removal (built in) | pass | arm 8p; no top-10 partner on chr 8; TM2D1, TM2D3 excluded as paralogues |
+| Bidirectional-promoter / overlapping / readthrough partners | pass | 0/2 supporting partners flagged |
+| Copy-number co-amplification | pass | AUP1 r = 0.05; STUB1 r = 0.05 |
+| Hub-driven call (>50% of S from top-1% in-degree) | pass | hub share 0.00 |
+| Lineage leave-out | pass | Head and Neck removed (77 lines); same top term; N(g) overlap 0.72 [Q15] |
+| K = 10 / 50 | pass | same top term at both |
+| Dependency vs own expression; TF / lineage-marker enrichment | pass | ρ = −0.069; TFs in N(g) 0, OR 0.24, q 1.0 |
+| TP53 / p53-axis correlation | pass (nominal p 0.0382, q 0.1091) | below the BH threshold over the top 40, but nominally significant [Q16] |
+| DEMETER2 replication | **fail** | mean partner r −0.039 vs null 95th percentile 0.116 [Q13] |
+| GLS network top term (descriptive) | same | GO:0034976 [Q14] |
+| Shared-sgRNA and per-guide check | not possible (guide maps / guide-level data not available) | recorded |
+
+## 6. Orthogonal evidence matrix (four states: not measured / no support / supports / contradicts)
+
+| Class | Dataset | State | Pair-level detail | Empirical p (Holm) | Diagnostic for this module family? |
+|---|---|---|---|---|---|
+| P physical | BioPlex 3.0 / BioGRID-LTP / STRING-exp (one group); HCM SAINT | no support | 0 edges to the 151 term members; BioPlex edges to TM2D3, PCNX3, SPCS1, ERGIC2 and 8 others, none in the term [Q17] | 1.0000 | yes (family "other": any class) |
+| A co-abundance | ProteomeHD; CCLE proteomics | not measured | TM2D2 absent from both | — | yes |
+| L localisation | HPA v25.1 (Approved) | no support | nucleoplasm, plasma membrane, vesicles; no high-reliability call; the term has no compartment [Q18] | 1.0000 | yes |
+| G perturbation phenotype | Perturb-seq K562 GW | no support | weak profile (top correlated perturbations r ≤ 0.06) [Q20] | 0.4755 | yes |
+| S structure | Burke 2023 AF2 | not measured | no term member modelled; one modelled pair GJB2 pDockQ 0.275 [Q19] | — | yes |
+| H homology | IBA/ISO | no IBA/ISO annotation | — | reported only | — |
+
+Reported but not counted: hu.MAP 3.0 places TM2D2 with TM2D3 (PPI probability 0.999) [M45, Q7] and with FADS1/UQCC1/UQCC2 [Q8], but not with any ER-stress member (AUP1 0.18) [M48]; Predictomes AF2 screen: TM2D2–TM2D3 SPOC 0.999, TM2D2–TM2D1 0.965 [M50, M51], no rows with AUP1, JOSD1, STUB1 or CHIC2 [M52]; DEMETER2 fails (§5). No contradiction. For scale: the empirical false-support rate of the support rule is 0.223 for decoy predictions [M70], so even a "supports" call would have been weak evidence.
+
+## 7. Literature (blinded step, then synthesis)
+
+### 7.1 Blinded summary (agent L, `results/m7/L/HGNC_24127.md`)
+Six evidence items, none DepMap-derived: UniProt family membership (mention); the 2001 BBP paper's "family of three" (mention); fly triple-knockout and γ-secretase-step Notch inhibition at family level (functional, fly); Daphnia TM2D2 knockout reduces an inducible defensive helmet (functional, crustacean orthologue); TM2D3 activates Notch1 (paralogue, mention). L's summary: no mammalian gene-specific functional study of TM2D2.
+
+### 7.2 Blinded verdicts
+Real statement (slot A, "response to endoplasmic reticulum stress") 0 [Q26, Q27]; decoys 0, 0, 0; judges J1 0 [Q28], J2 0 [Q29]; adjudicator n/a (no disagreement). The real statement was "unaddressed", so TM2D2 contributes d = 0 to the primary sign-flip test (top-40 p = 0.0002174 overall [M71]).
+
+### 7.3 Unblinded synthesis (shared with `reports/TM2D1.md`)
+*What is known about TM2D2 itself.* Almost nothing: UniProt gives family membership and no function [Q1, Q42]. In a genome-wide phagocytosis screen in human U937 cells, TM2D1, TM2D2 and TM2D3 were among the strongest hits [M24], and TM2D2- and TM2D3-knockout cells cleared amyloid-β aggregates poorly [M25]. A Daphnia CRISPR knockout of the TM2D2 orthologue reduced an inducible morphological defence [Q5]. In UK Biobank blood, loss-of-function variants in all three TM2D genes associate with copy-neutral LOH clonal expansions in cis [M26] (TM2D3 was the first such locus [M28]), meaning that losing TM2D function *helps* blood clones expand — the opposite of the cancer-line dependency.
+
+*The family acts as one unit.* The three human genes map 1:1 to fly *bisc* (TM2D1), *amrt* (TM2D2) and *amx* (TM2D3) [M8, Q37]. Each fly single knockout gives the same maternal-effect neurogenic (Notch) defect, and the triple null is no worse, so the three genes act together [M5, M6]. Human co-IP/MS data detect TM2D1–TM2D3 and TM2D2–TM2D3 interactions [M11]; hu.MAP 3.0 and Predictomes AF2 models agree (TM2D2–TM2D3 0.999 / SPOC 0.999) [M45, M50]. All three mouse knockouts are recessive embryonic lethal (IMPC, as cited) [M12]. This supports the co-dependency of TM2D1 with TM2D2 (zavg_BEF 31.70 [M53]; raw r 0.51, and 0.41–0.51 with TM2D3 [M61, M78]) but it also means the two reports describe **one** observation, not two.
+
+*Where the family acts.* Fly work places the TM2D function at the γ-secretase cleavage step of Notch [M7] and in Notch receptor distribution by a double-pass transmembrane protein [M21, M22, M23]; human TM2D3 promotes Notch1 surface presentation [M13, M14], and the TM2D3 P155L variant, which abolishes rescue of *amx* phenotypes, is associated with late-onset Alzheimer's disease [M19, M20]. TM2D1 (BBP) binds amyloid-β and was described as one of a family of three proteins sharing this structure [M1, M2]. Most relevant to our prediction, the 2025 description of bi-allelic TM2D3 variants shows that TM2D3 is an ER protein [M15]; TM2D3-knockout cells and patient fibroblasts dysregulate the ER-stress markers ATF4, HSPA5 and DDIT3 [M16] and show ER swelling [M17], and the disorder is linked to exacerbated ER-stress sensitivity [M18]. UniProt now records the ER localisation [M44].
+
+*The partners.* AUP1 binds the HRD1–SEL1L complex and is needed for ERAD of misfolded ER proteins [M29]; it sits on the ER and on lipid droplets [M30] and recruits and activates UBE2G2 at the ER membrane [M31]. STUB1 (CHIP) is an E3 ligase acting in ER protein quality control [M36]. CHIC2 is a palmitoylated vesicle/plasma-membrane protein [M41] that forms a complex with STUB1 controlling ubiquitination and surface levels of cytokine receptors [M37, M38], binds CHIP independently of chaperones and attenuates its ligase activity, and its knockout phenocopies CHIP knockout in some cell types [M39, M40]. JOSD1 is a membrane-associated deubiquitinase that regulates membrane dynamics and endocytosis [M34] and protects cells from proteotoxic stress from the plasma membrane [M35]. ATP13A1 extracts mistargeted proteins from the ER [M42]; ZDHHC6 is an ER S-acyltransferase [M43].
+
+*Verdict.* The literature **supports at family level, refines, and does not contradict** the prediction. Support: the TM2D3 paralogue is an ER protein whose loss alters the ER-stress response [M15–M18]. Refinement: (i) the partners are membrane-associated ubiquitin/quality-control proteins, of which only AUP1 is a canonical ERAD factor, and TM2D2's dependency does not co-vary with the HRD1–SEL1L–UBE2G2 core even though AUP1's does [M62, M63] — so "ERAD pathway" (the tied, more specific term) is less likely than a broader membrane-protein-homeostasis process; (ii) the best-documented TM2D function is at the plasma membrane/γ-secretase step for Notch [M7, M14], a competing reading (§8). No study tested TM2D2 itself for ER stress. DepMap-derived evidence in the literature: none found (the phagocytosis, clonal-haematopoiesis and TM2D3 studies are independent of DepMap).
+
+- Closest prior publication and what co-essentiality adds: Gabillard-Lefort et al. 2025 (PMID 40449487) [M15–M18] for the ER-stress link (TM2D3 only) and Salazar et al. 2021 (PMID 34905536) [M5–M7] for the family acting together. Co-essentiality adds (i) that human TM2D2 and TM2D1, not only TM2D3, share a fitness profile across 1,361 lines with AUP1, JOSD1 and the STUB1–CHIC2 pair, a link not found in the literature as of 2026-10-30; and (ii) a concrete, falsifiable prediction that TM2D2 loss perturbs the ER-stress response as TM2D3 loss does.
+- Prior prediction lists containing this gene: Wainberg 2021 — not mentioned in the main text (PMC8763319) [M72]; supplementary module tables not checked (not available locally), so unknown. hu.MAP 3.0 — yes, with TM2D3 and with FADS1/UQCC1/UQCC2, not with the ER-stress module [Q7, Q8]. Replogle 2022 — TM2D2 perturbed in K562 GW, weak profile, no module call checked [Q20]. Predictomes — TM2D trio interfaces only [M50–M52].
+- Post-freeze (after 2026-10-29) papers confirming the prediction: none found (Europe PMC search for TM2D1/TM2D2/TM2D3, first publication date 2026-06-01 onwards, 2026-10-30).
+
+## 8. Alternative explanations
+- **Paralogue artefact (TM2D1–TM2D2, zavg_BEF 31.70).** The built-in rule removes TM2D1 and TM2D3 from TM2D2's list [M53], so the term call cannot be driven by the paralogue itself. But the two lists are nearly identical (JOSD1, AUP1, STUB1, PCNX1, ZDHHC6, PCNX3, MMD, ATP13A1 are shared [M54]), so TM2D1's and TM2D2's predictions are one observation. A guide that cross-cuts both paralogues would inflate their mutual correlation, but it cannot create the shared correlation with AUP1, JOSD1 and STUB1 on other chromosomes. Per-guide data are not available; the guide off-target check in Part 2 must include TM2D1 and TM2D3.
+- **Proximity, copy number, hub, lineage:** no flags (§5). Lineage: retained after removing Head and Neck.
+- **RNAi non-replication (DEMETER2 fail):** the most serious data-level weakness for TM2D2; the CRISPR co-dependency could reflect a CRISPR-specific effect (e.g., guide-level behaviour) rather than biology. TP53: nominal p 0.0382 only.
+- **Label artefact.** The ER-stress term is carried by the GO annotations of two multifunctional quality-control proteins (AUP1, STUB1) and is lost if either is removed [Q12]; the rank-1 partner JOSD1 is not in the term. A different label (e.g., protein ubiquitination) would describe the same partners equally well (top-5 terms in bundle §2).
+- **Strongest competing biological hypothesis:** the TM2D complex and its partners form a *plasma-membrane / endosomal receptor-homeostasis* module rather than an ER-stress module: TM2D3 controls Notch surface presentation [M14], STUB1–CHIC2 control surface levels of cytokine receptors [M37, M38], and JOSD1 acts at the plasma membrane on endocytosis [M34]. A Notch-signalling explanation of the *cancer-line* dependency itself is unlikely because NOTCH1, PSEN1 and NCSTN are not dependencies on average (mean effects −0.012, −0.069, −0.100) [M76]. Experiment that separates them: Part 2 §6 (UPR panel versus surface-receptor levels after TM2D2 knockdown).
+- **Supplier/client reading:** TM2D2 could be a client of the STUB1–CHIC2 or AUP1 machinery rather than a functional member; Tier-1 "partner protein levels after knockdown" (Part 2 §4) addresses this.
+
+## 9. Falsifying observations
+Written from the prediction (term, partners) before the unblinded literature search, but after the orthogonal matrix in the bundle had been seen (the bundle presents both together), so not fully blind.
+1. Acute TM2D2 knockdown in YD-8 and ETCC-016 does not change BiP/HSPA5, CHOP/DDIT3, ATF4 or XBP1 splicing, nor tunicamycin sensitivity, beyond the matched-essentiality control (MEN1) at matched growth effect, while AUP1/JOSD1/STUB1 knockdowns do.
+2. TM2D2 knockdown leaves ERAD substrate turnover (NHK-HA cycloheximide chase) unchanged.
+3. Endogenously tagged TM2D2 shows no ER pool (plasma membrane/endosomes only) in both dependent lines.
+4. Combined TM2D2 + AUP1 (or + JOSD1) knockdown gives an additive or synergistic growth defect (parallel pathways).
+5. Guide-resistant TM2D2 cDNA does not rescue the growth defect (off-target or paralogue cross-cutting).
+
+## 10. Experiments
+See Part 2 of this file (Template B). The TM2D1 plan (`reports/TM2D1.md`, Part 2) runs in parallel with the same design.
+
+## 11. Novelty and external benchmarks
+Agreement with prior catalogues: hu.MAP 3.0 and Predictomes agree with the TM2D family complex [M45, M50, Q7], which the co-essentiality network also shows (zavg_BEF 31.70), but neither places TM2D2 with AUP1, JOSD1, STUB1 or CHIC2 [M48, M52]. Wainberg 2021: not in the main text [M72]. Replogle 2022: no informative TM2D2 perturbation profile [Q20]. What is new here: a shared fitness dependency between the TM2D family and membrane-associated ubiquitin/quality-control proteins (AUP1, JOSD1, STUB1–CHIC2), and with it the testable claim that TM2D2 supports the ER-stress response, as TM2D3 does [M16]. Not found in the literature as of 2026-10-30.
+
+## 12. Shared module analysis: TM2D1, TM2D2, CHIC2 (referenced by `reports/TM2D1.md`)
+Figure: `reports/data/TM2D_module/fig_module.png` (network of the three genes and the union of their top-10 partners; heat map of zavg_BEF).
+
+1. **Composition.** All three genes get the same top term from overlapping partner lists. JOSD1, AUP1 and STUB1 are ranks 1–3 for both TM2D genes; STUB1 is CHIC2's rank-1 partner (z 16.7), and TM2D1, TM2D2 and TM2D3 are CHIC2's ranks 2–4 [M54, M55, M79, M59]. The network among the 16 nodes has 103 edges with zavg_BEF ≥ 3, of which 6 have physical support: TM2D1–TM2D3, TM2D2–TM2D3, TM2D1–PCNX3, TM2D2–PCNX3, PCNX1–TM2D3 and JOSD1–STUB1 [M56]. None links a TM2D protein to AUP1, JOSD1, STUB1 or CHIC2.
+2. **Positive control inside the module.** The STUB1–CHIC2 co-dependency (CHIC2's top partner; raw r 0.34 [M64]) rediscovers a published complex [M37–M40]. This shows that this neighbourhood carries real complex-level signal; it does not show that the TM2D–STUB1 link is physical.
+3. **What the label rests on.** For all three genes the ER-stress term is carried by AUP1 and STUB1 (plus PTPN1 for CHIC2) [M80], and is lost when any one supporting partner is removed (LOPO 0/2, 0/2, 0/3) [Q12, M81; TM2D1: `reports/TM2D1.md` T14]. CHIC2's own call also fails lineage leave-out and DEMETER2 [M57], although its K562 Perturb-seq class supports the term [M58].
+4. **Refinement from raw dependency correlations** (recomputed, 1,361 lines; descriptive): TM2D1, TM2D2 and TM2D3 correlate with each other (r 0.41–0.51) and weakly with AUP1 (0.24–0.27) and JOSD1 (0.17–0.22), but not with UBE2G2, SEL1L or SYVN1 (|r| ≤ 0.03); AUP1, by contrast, correlates with UBE2G2, SEL1L and SYVN1 (0.39, 0.25, 0.34), which are themselves dependencies of differing strength (mean effects −0.321, −0.055, −0.458) [M61–M63, M77, M78]. So the TM2D–AUP1 link does not run through the canonical HRD1 ERAD core, and the most specific tied term (ERAD pathway) is the least supported reading. The best-supported reading is: *the TM2D complex is needed in the same cell lines as a set of membrane-associated ubiquitin-regulating proteins (AUP1, JOSD1, STUB1–CHIC2), several of which act in ER or membrane protein quality control* [M29–M43].
+5. **Sober statement of the module claim.** Shared dependency, one observation (two paralogues plus a weakly dependent third gene), p_cal ≈ 0.05 each — on a method whose hold-out precision@1 is 0.030 and whose calibration slope is 0.819 (not poor) [M69, M68] — no orthogonal support for any TM2D gene, blinded literature judging unaddressed for all three [Q26, M60]. The strongest independent support is the TM2D3 ER-stress phenotype [M16–M18].
+
+## Appendix A. Evidence ledger
+Texts were retrieved on 2026-10-30 (Europe PMC REST abstracts and full text; NCBI efetch PMC XML; UniProt REST; Crossref for DOI resolution) into `results/m7/scratch_reports_tm2d/texts/`; spans were checked by `results/m7/scratch_reports_tm2d/verify.py` (whitespace-normalised substring match; result `verify_result.json`); every PMID was resolved in Europe PMC and every DOI in Crossref. "⇥" marks a tab in a TSV line and "⏎" a line break inside a span. Bundle numbers are ledger rows of `results/ledger/*.tsv` reproduced in `reports/data/*/bundle.md`. Rows marked "recomputed" come from scratch scripts on `data/raw/depmap/CRISPRGeneEffect.csv` (raw Pearson; descriptive, not ledger rows).
+
+### A.1 Shared rows (cited by this report and by `reports/TM2D1.md`)
+| Key | Claim | Source file or PMID/DOI | Verbatim span | Verified (Y/N) |
+|---|---|---|---|---|
+| M1 | TM2D1 (BBP) was reported as one of a family of three proteins sharing a conserved structure | PMID:11278849 (DOI 10.1074/jbc.m011161200); checked in `results/m7/scratch_reports_tm2d/texts/11278849.abs.txt` | "BBP is one member of a family of three proteins containing this conserved structure." (text read: abstract) | Y |
+| M2 | TM2D1 (BBP) binds beta-amyloid peptide in vitro | PMID:11278849 (DOI 10.1074/jbc.m011161200); checked in `results/m7/scratch_reports_tm2d/texts/11278849.abs.txt` | "The BBP subtype bound human beta-amyloid peptide in vitro with high affinity and specificity." (text read: abstract) | Y |
+| M3 | BBP expression sensitised cells to beta-amyloid toxicity | PMID:11278849 (DOI 10.1074/jbc.m011161200); checked in `results/m7/scratch_reports_tm2d/texts/11278849.abs.txt` | "Expression of BBP in cell culture induced caspase-dependent vulnerability to beta-amyloid peptide toxicity." (text read: abstract) | Y |
+| M4 | BBP does not couple directly to heterotrimeric G proteins | PMID:12836168 (DOI 10.1002/jnr.10652); checked in `results/m7/scratch_reports_tm2d/texts/12836168.abs.txt` | "Our results suggest that BBP is not directly coupled to G alpha(i/o), G alpha(s), or G alpha(q) proteins" (text read: abstract) | Y |
+| M5 | Knock-out of each of the three fly TM2D genes gives the same maternal-effect neurogenic defect | PMID:34905536 (DOI 10.1371/journal.pgen.1009962); checked in `results/m7/scratch_reports_tm2d/texts/34905536.abs.txt` | "We knocked-out all three TM2D genes (almondex, CG11103/amaretto, CG10795/biscotti) in Drosophila and found that they share the same maternal-effect neurogenic defect." (text read: abstract) | Y |
+| M6 | Fly triple TM2D nulls are not worse than single nulls (genes act together) | PMID:34905536 (DOI 10.1371/journal.pgen.1009962); checked in `results/m7/scratch_reports_tm2d/texts/34905536.abs.txt` | "Triple null animals are not phenotypically worse than single nulls, suggesting these genes function together." (text read: abstract) | Y |
+| M7 | The conserved TM2D region inhibits Notch at the gamma-secretase step when overexpressed | PMID:34905536 (DOI 10.1371/journal.pgen.1009962); checked in `results/m7/scratch_reports_tm2d/texts/34905536.abs.txt` | "Overexpression of the most conserved region of the TM2D proteins acts as a potent inhibitor of Notch signaling at the γ-secretase cleavage step." (text read: abstract) | Y |
+| M8 | 1:1 orthology: TM2D1-bisc, TM2D2-amrt, TM2D3-amx | PMID:34905536 (DOI 10.1371/journal.pgen.1009962); checked in `results/m7/scratch_reports_tm2d/texts/34905536.full.txt` | "TM2D1, TM2D2, TM2D3 in Homo sapiens; bisc, amrt, amx in Drosophila melanogaster, respectively" (text read: full text) | Y |
+| M9 | TM2D genes are metazoan; absent from yeasts | PMID:34905536 (DOI 10.1371/journal.pgen.1009962); checked in `results/m7/scratch_reports_tm2d/texts/34905536.full.txt` | "TM2D genes are found in multicellular animals (both in invertebrates and in vertebrates) but are absent in yeasts" (text read: full text) | Y |
+| M10 | The TM2 domain consists of two transmembrane segments | PMID:34905536 (DOI 10.1371/journal.pgen.1009962); checked in `results/m7/scratch_reports_tm2d/texts/34905536.full.txt` | "The TM2 domain (boxed in red) is composed of two transmembrane domains (TMD) and an intracellular DRF motif" (text read: full text) | Y |
+| M11 | High-throughput co-IP/MS detected TM2D1-TM2D3 and TM2D2-TM2D3 interactions | PMID:34905536 (DOI 10.1371/journal.pgen.1009962); checked in `results/m7/scratch_reports_tm2d/texts/34905536.full.txt` | "physical interactions between TM2D1-TM2D3 [67] and TM2D2-TM2D3 [68], suggesting these proteins may form a protein complex" (text read: full text) | Y |
+| M12 | IMPC: Tm2d1, Tm2d2 and Tm2d3 knockout mice are recessive embryonic lethal | PMID:34905536 (DOI 10.1371/journal.pgen.1009962); checked in `results/m7/scratch_reports_tm2d/texts/34905536.full.txt` | "are all recessive embryonic lethal prior to E18.5" (text read: full text) | Y |
+| M13 | Overexpressed TM2D3 activates Notch1 | PMID:38016980 (DOI 10.1038/s41598-023-46866-7); checked in `results/m7/scratch_reports_tm2d/texts/38016980.abs.txt` | "overexpression of transmembrane 2 (TM2) domain containing 3 (TM2D3), a mammalian homologue of Drosophila melanogaster Almondex (Amx), activates Notch1" (text read: abstract) | Y |
+| M14 | Notch1/Notch2 surface levels fall in Tm2d3-deficient cells | PMID:38016980 (DOI 10.1038/s41598-023-46866-7); checked in `results/m7/scratch_reports_tm2d/texts/38016980.abs.txt` | "cell surface expression of Notch1 and Notch2 is reduced in Tm2d3-deficient cells" (text read: abstract) | Y |
+| M15 | TM2D3 is an ER protein | PMID:40449487 (DOI 10.1016/j.ajhg.2025.05.004); checked in `results/m7/scratch_reports_tm2d/texts/40449487.abs.txt` | "we show that TM2D3 is an endoplasmic reticulum (ER) protein" (text read: abstract) | Y |
+| M16 | TM2D3 loss dysregulates ER-stress markers ATF4, HSPA5, DDIT3 | PMID:40449487 (DOI 10.1016/j.ajhg.2025.05.004); checked in `results/m7/scratch_reports_tm2d/texts/40449487.abs.txt` | "revealed an impact of TM2D3 on ER-stress response, with dysregulated expression of ATF4, HSPA5, and DDIT3" (text read: abstract) | Y |
+| M17 | TM2D3 deficiency: ER swelling | PMID:40449487 (DOI 10.1016/j.ajhg.2025.05.004); checked in `results/m7/scratch_reports_tm2d/texts/40449487.abs.txt` | "Transmission electron microscopy highlighted ER swelling" (text read: abstract) | Y |
+| M18 | Bi-allelic TM2D3 variants: neurodevelopmental disorder with exacerbated ER-stress sensitivity | PMID:40449487 (DOI 10.1016/j.ajhg.2025.05.004); checked in `results/m7/scratch_reports_tm2d/texts/40449487.abs.txt` | "bi-allelic TM2D3 variants underlie a severe syndromic neurodevelopmental disorder linked to exacerbated ER-stress sensitivity" (text read: abstract) | Y |
+| M19 | TM2D3 P155L associated with late-onset AD | PMID:27764101 (DOI 10.1371/journal.pgen.1006327); checked in `results/m7/scratch_reports_tm2d/texts/27764101.abs.txt` | "P155L was associated with increased risk and earlier onset of LOAD" (text read: abstract) | Y |
+| M20 | P155L abolishes TM2D3 rescue of almondex phenotypes | PMID:27764101 (DOI 10.1371/journal.pgen.1006327); checked in `results/m7/scratch_reports_tm2d/texts/27764101.abs.txt` | "Human TM2D3 is capable of rescuing these phenotypes, but this activity is abolished by P155L" (text read: abstract) | Y |
+| M21 | almondex needed for subcellular Notch distribution | PMID:31782145 (DOI 10.1111/dgd.12639); checked in `results/m7/scratch_reports_tm2d/texts/31782145.abs.txt` | "almondex is required for proper subcellular Notch receptor distribution in the neuroectoderm" (text read: abstract) | Y |
+| M22 | almondex encodes a double-pass transmembrane protein | PMID:31782145 (DOI 10.1111/dgd.12639); checked in `results/m7/scratch_reports_tm2d/texts/31782145.abs.txt` | "encodes an evolutionarily conserved double-pass transmembrane protein" (text read: abstract) | Y |
+| M23 | NICD partially rescues maternal loss of amx | PMID:18331889 (DOI 10.1016/j.brainresbull.2007.10.060); checked in `results/m7/scratch_reports_tm2d/texts/18331889.abs.txt` | "embryonic overexpression of Notch intracellular domain partially rescues maternal lack of amx" (text read: abstract) | Y |
+| M24 | TM2D1, TM2D2, TM2D3 among the strongest phagocytosis regulators in genome-wide screens | PMID:30397336 (PMC6719718) (DOI 10.1038/s41588-018-0254-1); checked in `results/m7/scratch_reports_tm2d/texts/PMC6719718.full.txt` | "the poorly characterized genes NHLRC2, TM2D1, TM2D2, and TM2D3 represent some of the strongest genetic regulators of phagocytosis in this system" (text read: full text) | Y |
+| M25 | TM2D2 and TM2D3 KO cells have impaired Abeta-aggregate clearance | PMID:30397336 (PMC6719718) (DOI 10.1038/s41588-018-0254-1); checked in `results/m7/scratch_reports_tm2d/texts/PMC6719718.full.txt` | "We found that TM2D2 and TM2D3 deficient cells show impaired clearance of Aβ aggregates" (text read: full text) | Y |
+| M26 | LoF variants in TM2D1, TM2D2 and TM2D3 associate with CN-LOH clonal expansions in blood | PMID:42156563 (DOI 10.1038/s41588-026-02592-0); checked in `results/m7/scratch_reports_tm2d/texts/42156563.full.txt` | "loss-of-function (LoF) variants in all three TM2D genes—TM2D1, TM2D2, and TM2D3—associated with CN-LOH mutations in cis" (text read: full text) | Y |
+| M27 | TM2D1 LoF penetrance for CN-LOH 27% | PMID:42156563 (DOI 10.1038/s41588-026-02592-0); checked in `results/m7/scratch_reports_tm2d/texts/42156563.full.txt` | "TM2D1 LoF alleles exhibited the next-highest penetrance at 27% (95% CI 17–39%)" (text read: full text) | Y |
+| M28 | TM2D3 is a monogenic CN-LOH clonal-haematopoiesis locus | PMID:32581363 (DOI 10.1038/s41586-020-2430-6); checked in `results/m7/scratch_reports_tm2d/texts/32581363.full.txt` | "duplicated them to the homologous chromosome (at FH, NBN, MRE11, ATM, SH2B3, and TM2D3)" (text read: full text) | Y |
+| M29 | AUP1 associates with HRD1-SEL1L; its depletion impairs ERAD | PMID:21857022 (DOI 10.1074/jbc.m111.284794); checked in `results/m7/scratch_reports_tm2d/texts/21857022.abs.txt` | "Ancient ubiquitous protein 1 (AUP1) physically associates with the mammalian HRD1-SEL1L complex, and AUP1 depletion impairs degradation of misfolded ER proteins." (text read: abstract) | Y |
+| M30 | AUP1 is at the ER and lipid droplets | PMID:21857022 (DOI 10.1074/jbc.m111.284794); checked in `results/m7/scratch_reports_tm2d/texts/21857022.abs.txt` | "AUP1 localizes both to the ER and to lipid droplets." (text read: abstract) | Y |
+| M31 | AUP1 G2BR recruits and activates UBE2G2 at the ER membrane | PMID:34879065 (DOI 10.1371/journal.pbio.3001474); checked in `results/m7/scratch_reports_tm2d/texts/34879065.abs.txt` | "the G2BRAUP1 is required for both ER membrane recruitment of UBE2G2 and for its activation at the ER membrane" (text read: abstract) | Y |
+| M32 | NHK cycloheximide chase is an ERAD readout used for AUP1 | PMID:34879065 (PMC8699718) (DOI 10.1371/journal.pbio.3001474); checked in `results/m7/scratch_reports_tm2d/texts/34879065.full.txt` | "To assess the requirement of AUP1 in HRD1-dependent ERAD, we examined the degradation of a known ERAD-L HRD1 substrate" (text read: full text) | Y |
+| M33 | Aup1 knockdown raises ER-stress gene expression (zebrafish hepatocytes) | PMID:40484276 (DOI 10.1016/j.bbalip.2025.159643); checked in `results/m7/scratch_reports_tm2d/texts/40484276.abs.txt` | "reduced ER stress-related genes and pro-inflammatory cytokines expression in zebrafish liver (ZFL) cells. Conversely, Aup1 knockdown exerted opposite effects." (text read: abstract) | Y |
+| M34 | JOSD1 is a membrane-associated DUB regulating membrane dynamics and endocytosis | PMID:23625928 (DOI 10.1074/jbc.m113.463406); checked in `results/m7/scratch_reports_tm2d/texts/23625928.abs.txt` | "JosD1, a membrane-associated DUB whose activity is regulated by ubiquitination, helps regulate membrane dynamics, cell motility, and endocytosis" (text read: abstract) | Y |
+| M35 | Membrane-accumulated monoubiquitinated JOSD1 protects against proteotoxic stress | PMID:39284830 (DOI 10.1038/s41420-024-02177-y); checked in `results/m7/scratch_reports_tm2d/texts/39284830.abs.txt` | "Marked plasma membrane accumulation of monoubiquitinated JOSD1 in proteotoxic conditions is a prerequisite for its protective role" (text read: abstract) | Y |
+| M36 | CHIP (STUB1) works in ER quality control of CFTR | PMID:11146634 (DOI 10.1038/35050509); checked in `results/m7/scratch_reports_tm2d/texts/11146634.abs.txt` | "CHIP is a co-chaperone that converts Hsc70 from a protein-folding machine into a degradation factor that functions in endoplasmic-reticulum quality control." (text read: abstract) | Y |
+| M37 | STUB1-CHIC2 complex binds CSF2RB and controls its ubiquitination | PMID:36108743 (DOI 10.1016/j.jbc.2022.102484); checked in `results/m7/scratch_reports_tm2d/texts/36108743.abs.txt` | "We demonstrate that Stub1 and Chic2 form a complex that binds Csf2rb and that genetic inactivation of either Stub1 or Chic2 leads to reduced ubiquitination of Csf2rb." (text read: abstract) | Y |
+| M38 | STUB1-CHIC2 regulates cytokine receptor expression in CD8+ T cells | PMID:40796662 (DOI 10.1038/s41590-025-02231-6); checked in `results/m7/scratch_reports_tm2d/texts/40796662.abs.txt` | "STUB1 interacts with the adapter protein CHIC2 to regulate cytokine receptor expression in mouse and human CD8" (text read: abstract) | Y |
+| M39 | CHIC2 binds CHIP chaperone-independently and attenuates its ligase activity | DOI:10.1101/2023.07.17.549407; checked in `results/m7/scratch_reports_tm2d/texts/PPR693225.abs.txt` | "we report a chaperone-independent interaction of CHIP with the membrane-anchored protein CHIC2, which strongly attenuates CHIP’s ligase activity" (text read: abstract) | Y |
+| M40 | CHIC2 KO phenocopies CHIP KO in proteomics in some cell types | DOI:10.1101/2023.07.17.549407; checked in `results/m7/scratch_reports_tm2d/texts/PPR693225.abs.txt` | "CHIC2 knockout phenocopies CHIP knockout in certain cell types" (text read: abstract) | Y |
+| M41 | CHIC2 is palmitoylated and on vesicles/plasma membrane | PMID:11257495 (DOI 10.1016/s0014-5793(01)02240-2); checked in `results/m7/scratch_reports_tm2d/texts/11257495.abs.txt` | "cysteines in this central CHIC motif are palmitoylated and that CHIC2 is associated with vesicular structures and the plasma membrane" (text read: abstract) | Y |
+| M42 | ATP13A1 extracts mistargeted proteins from the ER | PMID:32973005 (DOI 10.1126/science.abc5809); checked in `results/m7/scratch_reports_tm2d/texts/32973005.abs.txt` | "P5A-ATPase activity mediated the extraction of mistargeted proteins from the endoplasmic reticulum (ER)." (text read: abstract) | Y |
+| M43 | ZDHHC6 is an ER-localised S-acyltransferase | PMID:37660915 (DOI 10.1016/j.jbc.2023.105201); checked in `results/m7/scratch_reports_tm2d/texts/37660915.abs.txt` | "zDHHC6, an S-acyltransferase enzyme localized at the endoplasmic reticulum" (text read: abstract) | Y |
+| M44 | TM2D3 UniProt: Notch positive regulator; ER localisation cites PMID 40449487 | UniProt:Q9BRN9 (entry v143, 2026-09-02); checked in `results/m7/scratch_reports_tm2d/texts/uniprot_Q9BRN9.txt` | "Endoplasmic reticulum {ECO:0000269\|PubMed:40449487}" (text read: database entry) | Y |
+| M45 | hu.MAP 3.0 PPI probability TM2D2-TM2D3 | data/raw/humap3/humap3_all_ppis_202305.pairsWprob.gz; checked in `results/m7/scratch_reports_tm2d/humap_rows.txt` | "Q9BRN9 ⇥ Q9BX73 ⇥ 0.9990838766098022" (text read: file) | Y |
+| M46 | hu.MAP 3.0 PPI probability TM2D1-TM2D3 | data/raw/humap3/humap3_all_ppis_202305.pairsWprob.gz; checked in `results/m7/scratch_reports_tm2d/humap_rows.txt` | "Q9BX74 ⇥ Q9BRN9 ⇥ 0.9181349873542786" (text read: file) | Y |
+| M47 | hu.MAP 3.0 PPI probability TM2D1-PCNX3 | data/raw/humap3/humap3_all_ppis_202305.pairsWprob.gz; checked in `results/m7/scratch_reports_tm2d/humap_rows.txt` | "Q9BX74 ⇥ Q9H6A9 ⇥ 0.8787796497344971" (text read: file) | Y |
+| M48 | hu.MAP 3.0 PPI probabilities with AUP1 are low | data/raw/humap3/humap3_all_ppis_202305.pairsWprob.gz; checked in `results/m7/scratch_reports_tm2d/humap_rows.txt` | "Q9Y679 ⇥ Q9BX73 ⇥ 0.1827963441610336" (text read: file) | Y |
+| M49 | Predictomes: TM2D3-TM2D1 SPOC 0.971 | data/raw/predictomes2025/20251110_hs_predictome_pair_scores.csv.gz; checked in `results/m7/scratch_reports_tm2d/predictomes_rows.txt` | "TM2D3_HUMAN__TM2D1_HUMAN__454aa,Q9BRN9:Q9BX74,0.806,0.971,60,581,171,1,1,0" (text read: file) | Y |
+| M50 | Predictomes: TM2D3-TM2D2 SPOC 0.999 | data/raw/predictomes2025/20251110_hs_predictome_pair_scores.csv.gz; checked in `results/m7/scratch_reports_tm2d/predictomes_rows.txt` | "TM2D3_HUMAN__TM2D2_HUMAN__461aa,Q9BRN9:Q9BX73,0.794,0.999,89,571,266,3,3,0" (text read: file) | Y |
+| M51 | Predictomes: TM2D2-TM2D1 SPOC 0.965 | data/raw/predictomes2025/20251110_hs_predictome_pair_scores.csv.gz; checked in `results/m7/scratch_reports_tm2d/predictomes_rows.txt` | "TM2D2_HUMAN__TM2D1_HUMAN__421aa,Q9BX73:Q9BX74,0.596,0.965,103,979,0,0,0,0" (text read: file) | Y |
+| M52 | Predictomes: no row pairing TM2D1/TM2D2 with AUP1, JOSD1, STUB1 or CHIC2 | data/raw/predictomes2025/20251110_hs_predictome_pair_scores.csv.gz; checked in `results/m7/scratch_reports_tm2d/predictomes_rows.txt` | "rows matching TM2D1/TM2D2 x {AUP1,JOSD1,STUB1,CHIC2}: 0" (text read: file) | Y |
+| M53 | TM2D1-TM2D2 zavg_BEF 31.70; excluded from each other's lists as paralogues | reports/data/TM2D_module/module.md; checked in `reports/data/TM2D_module/module.md` | "\| TM2D1–TM2D2 \| 31.70 \| excluded (paralogue) \| excluded (paralogue) \|" (text read: file) | Y |
+| M54 | Shared partners: JOSD1 #1, AUP1 #2, STUB1 #3 in both TM2D lists | reports/data/TM2D_module/module.md; checked in `reports/data/TM2D_module/module.md` | "\| JOSD1 \| no \| #1 z=18.6 \| #1 z=18.6 \| #9 z=7.6 \|" (text read: file) | Y |
+| M55 | STUB1 is CHIC2's rank-1 partner | reports/data/TM2D_module/module.md; checked in `reports/data/TM2D_module/module.md` | "\| STUB1 \| yes \| #3 z=17.3 \| #3 z=16.4 \| #1 z=16.7 \|" (text read: file) | Y |
+| M56 | Module network physical edges | reports/data/TM2D_module/module.md; checked in `reports/data/TM2D_module/module.md` | "Network: 16 nodes, 103 edges (zavg_BEF ≥ 3), 6 with physical support: TM2D1–PCNX3, TM2D1–TM2D3, TM2D2–PCNX3, TM2D2–TM2D3, JOSD1–STUB1, PCNX1–TM2D3." (text read: file) | Y |
+| M57 | CHIC2 prediction is the same term; p_cal 0.0472; lineage leave-out not retained | reports/data/TM2D_module/CHIC2_bundle.md; checked in `reports/data/TM2D_module/CHIC2_bundle.md` | "\| Lineage leave-out \| NOT retained \| removed Bladder/Urinary Tract (34 lines; mean effect -0.113); top term after refit GO:1901873 regulation of post-translational protein modification; N(g) overlap 0.88 \|" (text read: file) | Y |
+| M58 | CHIC2: G class (K562 Perturb-seq) supports | reports/data/TM2D_module/CHIC2_bundle.md; checked in `reports/data/TM2D_module/CHIC2_bundle.md` | "\| G \| supports \| 0.0030 \|" (text read: file) | Y |
+| M59 | TM2D3 is CHIC2's rank-4 partner | reports/data/TM2D_module/CHIC2_bundle.md; checked in `reports/data/TM2D_module/CHIC2_bundle.md` | "\| 4 \| TM2D3 \| 9.92 \|" (text read: file) | Y |
+| M60 | CHIC2 judged real statement unaddressed | results/m7/judge/analysis_main_genes.tsv; checked in `results/m7/judge/analysis_main_genes.tsv` | "J007 ⇥ HGNC:1935 ⇥ CHIC2 ⇥ top40 ⇥ 25 ⇥ 0.0 ⇥ 0.0 ⇥ 0 ⇥ 0.0 ⇥ N1" (text read: file) | Y |
+| M61 | Raw Pearson r (Chronos, 1,361 lines): TM2D1-TM2D2 0.51, TM2D2-TM2D3 0.51, TM2D1-TM2D3 0.41 | results/m7/scratch_reports_tm2d/lines.py -> lines_out.txt; checked in `results/m7/scratch_reports_tm2d/lines_out.txt` | "TM2D1    1.00   0.51   0.41   0.17  0.24   0.10   0.09   -0.01  -0.01   0.02" (text read: file (recomputed)) | Y |
+| M62 | Raw r: AUP1 with UBE2G2/SEL1L/SYVN1 0.39/0.25/0.34; TM2D1/2/3 with these ~0 | results/m7/scratch_reports_tm2d/lines.py -> lines_out.txt; checked in `results/m7/scratch_reports_tm2d/lines_out.txt` | "AUP1     0.24   0.27   0.26   0.07  1.00   0.12   0.11    0.39   0.25   0.34" (text read: file (recomputed)) | Y |
+| M63 | Raw r: TM2D2 with UBE2G2/SEL1L/SYVN1 -0.02/0.03/0.01 | results/m7/scratch_reports_tm2d/lines.py -> lines_out.txt; checked in `results/m7/scratch_reports_tm2d/lines_out.txt` | "TM2D2    0.51   1.00   0.51   0.22  0.27   0.20   0.14   -0.02   0.03   0.01" (text read: file (recomputed)) | Y |
+| M64 | Raw r: STUB1-CHIC2 0.34 | results/m7/scratch_reports_tm2d/lines.py -> lines_out.txt; checked in `results/m7/scratch_reports_tm2d/lines_out.txt` | "STUB1    0.10   0.20   0.16   0.13  0.12   1.00   0.34    0.13   0.05   0.05" (text read: file (recomputed)) | Y |
+| M65 | Meaning of p_cal: expected probability that the top term is later confirmed by D1-evidence annotation (~8 years) | results/ledger/M6_SUMMARY.md; checked in `results/ledger/M6_SUMMARY.md` | "Σ p_cal (expected number of top-term predictions later confirmed by D1-evidence annotation, ~8 years)" (text read: file) | Y |
+| M66 | p_cal is for the term, not the gene's function; in-support p_cal ≤ 0.15 for every U gene | results/ledger/M6_SUMMARY.md; checked in `results/ledger/M6_SUMMARY.md` | "p_cal is the probability that the V2 top term is confirmed, not that the gene's function is that module; with an H hit rate of 3% and the frozen covariates, in-support p_cal is ≤ 0.15 for every U gene." (text read: file) | Y |
+| M67 | No U gene can reach Tier B; top 40 is the p_cal fill | results/ledger/M6_SUMMARY.md; checked in `results/ledger/M6_SUMMARY.md` | "so no U gene can reach the Tier B threshold (0.3); the top 40 is the p_cal fill." (text read: file) | Y |
+| M68 | Hold-out calibration not poor (slope 0.819) | results/holdout_eval/SUMMARY.md; checked in `results/holdout_eval/SUMMARY.md` | "slope 0.819 (Wald 0.512 to 1.127; bootstrap 0.593 to 1.090), intercept -0.006" (text read: file) | Y |
+| M69 | Hold-out precision@1 of the method is 0.030 | results/holdout_eval/SUMMARY.md; checked in `results/holdout_eval/SUMMARY.md` | "precision@1 zavg_BEF 0.030 vs prior-only 0.000" (text read: file) | Y |
+| M70 | Empirical false-support rate of the orthogonal rule (decoys 0.223) | results/ledger/M6_SUMMARY.md; checked in `results/ledger/M6_SUMMARY.md` | "Empirical false-support rate of the full rule: matched-gene predictions 0.279 (strict 0.231), decoy predictions 0.223 (strict 0.198)" (text read: file) | Y |
+| M71 | Blinded top-40 judging primary result | results/m7/judge/analysis_main.md; checked in `results/m7/judge/analysis_main.md` | "exact one-sided sign-flip p = 0.0002174 (n non-zero = 20)" (text read: file) | Y |
+| M72 | Wainberg 2021 main text does not mention TM2D genes or the partners (search of PMC8763319 full text) | PMID:33859415 (PMC8763319) (DOI 10.1038/s41588-021-00840-z); checked in `results/m7/scratch_reports_tm2d/wainberg_grep.txt` | "matches for TM2D\|AUP1\|JOSD1\|CHIC2 in PMC8763319 main text: 0" (text read: full text (main text only; supplementary tables not checked)) | Y |
+| M73 | Top-40 rule: primary top 40 = pure p_cal order | DEVIATIONS.md; checked in `DEVIATIONS.md` | "Primary top 40 = pure p_cal order among expressed, assessable, in-support U genes" (text read: file) | Y |
+| M74 | Relationship-type c operationalised with 'Multi-pass membrane protein' as a ≥ 4-TM proxy | DEVIATIONS.md; checked in `DEVIATIONS.md` | "'Multi-pass membrane protein' as a ≥ 4-TM proxy (no TM counts in the UniProt file)" (text read: file) | Y |
+| M75 | R1 tie-break among equal top S is ascending GO id | DEVIATIONS.md; checked in `DEVIATIONS.md` | "Implemented tie-break among equal top S: ascending GO id (deterministic)." (text read: file) | Y |
+| M76 | Mean Chronos effect of NOTCH1 / PSEN1 / NCSTN across 1,361 lines (recomputed) | results/m7/scratch_reports_tm2d/lines.py -> lines_out.txt; checked in `results/m7/scratch_reports_tm2d/lines_out.txt` | "NOTCH1    -0.012 ⏎ PSEN1     -0.069 ⏎ NCSTN     -0.100" (text read: file (recomputed)) | Y |
+| M77 | Mean Chronos effect of UBE2G2 / SEL1L / SYVN1 (recomputed) | results/m7/scratch_reports_tm2d/lines.py -> lines_out.txt; checked in `results/m7/scratch_reports_tm2d/lines_out.txt` | "UBE2G2    -0.321 ⏎ SEL1L     -0.055 ⏎ SYVN1     -0.458" (text read: file (recomputed)) | Y |
+| M78 | Raw r TM2D3 row (recomputed) | results/m7/scratch_reports_tm2d/lines.py -> lines_out.txt; checked in `results/m7/scratch_reports_tm2d/lines_out.txt` | "TM2D3    0.41   0.51   1.00   0.20  0.26   0.16   0.06    0.01  -0.03  -0.01" (text read: file (recomputed)) | Y |
+| M79 | TM2D1 and TM2D2 are CHIC2's rank-2 and rank-3 partners | reports/data/TM2D_module/CHIC2_bundle.md; checked in `reports/data/TM2D_module/CHIC2_bundle.md` | "\| 2 \| TM2D1 \| 11.27 \| 17.5/13.4/2.9 \| 576 \|" (text read: file) | Y |
+| M80 | CHIC2's supporting partners are STUB1, AUP1, PTPN1 | reports/data/TM2D_module/CHIC2_bundle.md; checked in `reports/data/TM2D_module/CHIC2_bundle.md` | "\| CN co-amplification (r(g effect, partner CN) > 0.3) \| 0/3 flagged \| STUB1 r=0.02; AUP1 r=0.07; PTPN1 r=-0.03 \|" (text read: file) | Y |
+| M81 | CHIC2 top term LOPO 0/3 | reports/data/TM2D_module/CHIC2_bundle.md; checked in `reports/data/TM2D_module/CHIC2_bundle.md` | "\| 1 \| GO:0034976 \| response to endoplasmic reticulum stress \| 31.540 \| 3 \| 151 \| 0.0016 \| 0.0060 \| other \| 0/3 \|" (text read: file) | Y |
+| M82 | Lines in tool matrix 1,361 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| Lines in tool matrix / with value \| 1361 / 1361 \|" (text read: file) | Y |
+| M83 | Module-gene Chronos effects in the chosen lines (columns: ACH-002672, ACH-000787, ACH-000537, ACH-001997, ACH-000630, ACH-002650, ACH-003035, ACH-000500; recomputed) | results/m7/scratch_reports_tm2d/lines.py -> lines_out.txt; checked in `results/m7/scratch_reports_tm2d/lines_out.txt` | "TM2D3         -0.20       -0.44       -0.35       -0.28       -1.24       -0.51       -0.01        0.38 ⏎ JOSD1         -0.48       -0.40       -0.36       -0.63       -0.34       -0.31       -0.17       -0.13 ⏎ AUP1          -0.11       -0.20       -0.10       -0.28       -0.75       -0.05       -0.26       -0.06 ⏎ STUB1         -0.40       -0.23       -0.20       -0.32       -0.41       -0.40        0.05       -0.21" (text read: file (recomputed)) | Y |
+
+### A.2 TM2D2-specific rows (Q-keys)
+| Key | Claim | Source file or PMID/DOI | Verbatim span | Verified (Y/N) |
+|---|---|---|---|---|
+| Q1 | TM2D2 belongs to the TM2 family | UniProt:Q9BX73 (entry v147, 2026-09-02); checked in `results/m7/scratch_reports_tm2d/texts/uniprot_Q9BX73.txt` | "-!- SIMILARITY: Belongs to the TM2 family. {ECO:0000305}." (text read: database entry) | Y |
+| Q2 | TM2D2 TM helix 1 | UniProt:Q9BX73; checked in `results/m7/scratch_reports_tm2d/texts/uniprot_Q9BX73.txt` | "FT   TRANSMEM        145..165" (text read: database entry) | Y |
+| Q3 | TM2D2 TM helix 2 | UniProt:Q9BX73; checked in `results/m7/scratch_reports_tm2d/texts/uniprot_Q9BX73.txt` | "FT   TRANSMEM        183..203" (text read: database entry) | Y |
+| Q4 | TM2D2 signal peptide | UniProt:Q9BX73; checked in `results/m7/scratch_reports_tm2d/texts/uniprot_Q9BX73.txt` | "FT   SIGNAL          1..35" (text read: database entry) | Y |
+| Q5 | Daphnia TM2D2 KO reduces inducible helmet | PMID:42248690 (DOI 10.1101/gr.281631.125); checked in `results/m7/scratch_reports_tm2d/texts/42248690.abs.txt` | "Daphnia knockout mutants for TM2D2 or ISM1, generated from a helmet-forming clone using CRISPR-Cas9, exhibit much reduced plastic formation of the helmet" (text read: abstract) | Y |
+| Q6 | TM2D2 RefSeq isoform 1 | UniProt:Q9BX73; checked in `results/m7/scratch_reports_tm2d/texts/uniprot_Q9BX73.txt` | "RefSeq; NP_510882.1; NM_078473.3. [Q9BX73-1]" (text read: database entry) | Y |
+| Q7 | hu.MAP 3.0 complex TM2D3-TM2D2 | data/raw/humap3/hu.MAP3.0_complexes_wConfidenceScores_total15326_wGenenames_20240922.csv; checked in `data/raw/humap3/hu.MAP3.0_complexes_wConfidenceScores_total15326_wGenenames_20240922.csv` | "huMAP3_02894.1,1,Q9BRN9 Q9BX73,TM2D3 TM2D2" (text read: file) | Y |
+| Q8 | hu.MAP 3.0 complex with UQCC1/UQCC2/FADS1 | data/raw/humap3/hu.MAP3.0_complexes_wConfidenceScores_total15326_wGenenames_20240922.csv; checked in `data/raw/humap3/hu.MAP3.0_complexes_wConfidenceScores_total15326_wGenenames_20240922.csv` | "huMAP3_03746.1,1,O60427 Q9BRT2 Q9BX73 Q9NVA1,FADS1 UQCC2 UQCC1 TM2D2" (text read: file) | Y |
+| Q9 | Predicted term, S, supporting partners | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| S / supporting partners / term size (current V2) \| 33.808 / 2 / 151 \|" (text read: file) | Y |
+| Q10 | p_cal and CI | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| p_cal 95% interval \| 0.016–0.098 (cluster bootstrap, 2000 refits) \|" (text read: file) | Y |
+| Q11 | Top-2 terms tie at S 33.808 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| 2 \| GO:0036503 \| ERAD pathway \| 33.808 \| 2 \| 62 \| 0.0033 \| 0.0100 \| other \| 0/2 \|" (text read: file) | Y |
+| Q12 | LOPO 0/2 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| 1 \| GO:0034976 \| response to endoplasmic reticulum stress \| 33.808 \| 2 \| 151 \| 0.0185 \| 0.0242 \| other \| 0/2 \|" (text read: file) | Y |
+| Q13 | DEMETER2 not replicated | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| DEMETER2 replication (mean partner r ≥ 95th pct of random sets) \| NOT replicated \| partners in D2 2; mean r -0.039; null 95th pct 0.116 \|" (text read: file) | Y |
+| Q14 | GLS top term same | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| GLS network top term (K = 25, §3.1 exclusions) † \| same \| GO:0034976 response to endoplasmic reticulum stress \|" (text read: file) | Y |
+| Q15 | Lineage leave-out retained | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| Lineage leave-out \| retained \| removed Head and Neck (77 lines; mean effect -0.355); top term after refit GO:0034976 response to endoplasmic reticulum stress; N(g) overlap 0.72 \|" (text read: file) | Y |
+| Q16 | TP53 nominal p 0.0382, q 0.1091 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| TP53 status (Mann–Whitney, BH q < 0.05 over primary top 40) \| no flag \| mut 902 / WT 459; p 0.0382; q 0.1091; median diff (mut − WT) -0.027 \|" (text read: file) | Y |
+| Q17 | BioPlex3 interactors of TM2D2 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| BioPlex3 \| yes \| 12 \| 0 \| ERGIC2, MBOAT7, PCNX3, PIGM, SIDT2, SLC29A1, SPCS1, TM2D3, TMEM39A, TMEM97, UQCC1, UQCC2 \|" (text read: file) | Y |
+| Q18 | HPA (Approved): nucleoplasm, plasma membrane, vesicles | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "reliability Approved; main: Nucleoplasm;Plasma membrane;Vesicles" (text read: file) | Y |
+| Q19 | Burke AF2: GJB2 pDockQ 0.275 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "Burke 2023 AF2: 1 modelled pairs with g; 1 with pDockQ ≥ 0.23: GJB2 (0.275)" (text read: file) | Y |
+| Q20 | K562 GW Perturb-seq: weak profile (top r 0.06) | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| PerturbSeq_K562_GW \| yes \| SPI1 (0.06), SNX12 (0.06)" (text read: file) | Y |
+| Q21 | Chosen dependent line 1 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| ACH-000630 \| YD-8 \| Head and Neck \| Head and Neck Squamous Cell Carcinoma \| -1.14 \| -0.34 \| 5.20 \| 0.61 \| mut \| -12.25 \| 0.98 \| RPMI + 10% FBS (MF-001-001) \|" (text read: file) | Y |
+| Q22 | Chosen dependent line 2 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| ACH-002650 \| ETCC-016 \| Lung \| Non-Small Cell Lung Cancer \| -0.57 \| -0.31 \| 4.45 \| 0.67 \| mut \| -11.29 \| 0.96 \| DMEM + 10% FBS (MF-002-001) \|" (text read: file) | Y |
+| Q23 | Control line | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| ACH-000500 \| SNU-46 \| Head and Neck \| Head and Neck Squamous Cell Carcinoma \| -0.09 \| -0.13 \| 6.65 \| 1.35 \| mut \| -1.89 \| 0.78 \|" (text read: file) | Y |
+| Q24 | MAPAC-HS-77 and LXF-289 also TM2D2-dependent | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| ACH-002672 \| MAPAC-HS-77 \| Pancreas \| Pancreatic Adenocarcinoma \| -0.65 \| -0.48 \| 5.45 \| 0.69 \| mut \| -10.98 \| 0.98 \|" (text read: file) | Y |
+| Q25 | Recall probe: not recognised | results/m7/recall_probe_90.tsv; checked in `results/m7/recall_probe_90.tsv` | "HGNC:24127 ⇥ TM2D2 ⇥ TM2-domain membrane protein related to TM2D1; possibly involved in Notch signalling. ⇥ low ⇥ no" (text read: file) | Y |
+| Q26 | Blinded judging: real 0, decoys 0 | results/m7/judge/analysis_main_genes.tsv; checked in `results/m7/judge/analysis_main_genes.tsv` | "J017 ⇥ HGNC:24127 ⇥ TM2D2 ⇥ top40 ⇥ 21 ⇥ 0.0 ⇥ 0.0 ⇥ 0 ⇥ 0.0 ⇥ N2" (text read: file) | Y |
+| Q27 | Real statement was slot A | results/m7/answer_key.tsv; checked in `results/m7/answer_key.tsv` | "M7-003 ⇥ HGNC:24127 ⇥ TM2D2 ⇥ top40 ⇥ 21 ⇥ 4 ⇥ A" (text read: file) | Y |
+| Q28 | J1 slot A 0 | results/m7/judge/scores/J1_main1.tsv; checked in `results/m7/judge/scores/J1_main1.tsv` | "J017 ⇥ A ⇥ 0 ⇥ Family-level fly Notch data only; ER stress not addressed" (text read: file) | Y |
+| Q29 | J2 slot A 0 | results/m7/judge/scores/J2_main1.tsv; checked in `results/m7/judge/scores/J2_main1.tsv` | "J017 ⇥ A ⇥ 0 ⇥ No ER stress evidence." (text read: file) | Y |
+| Q30 | Agent L novelty class N2 | results/m7/L/HGNC_24127.md; checked in `results/m7/L/HGNC_24127.md` | "novelty_class: N2" (text read: file) | Y |
+| Q31 | Matched-essentiality control MEN1 (recomputed) | results/m7/scratch_reports_tm2d/ctrl.py -> ctrl_out.txt; checked in `results/m7/scratch_reports_tm2d/ctrl_out.txt` | "MEN1 -0.344        0.285  0.049       -0.91       -0.66" (text read: file (recomputed)) | Y |
+| Q32 | Module-gene effects in chosen lines (recomputed) | results/m7/scratch_reports_tm2d/lines.py -> lines_out.txt; checked in `results/m7/scratch_reports_tm2d/lines_out.txt` | "TM2D2         -0.65       -0.67       -1.04       -0.62       -1.14       -0.57        0.09       -0.09" (text read: file (recomputed)) | Y |
+| Q33 | TM2D2 dependency mean/SD | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| Mean / SD Chronos \| -0.227 / 0.228 \|" (text read: file) | Y |
+| Q34 | TM2D2 split-half R | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| Split-half R(g) (seeds 0–4, K = 25) \| 0.272 \|" (text read: file) | Y |
+| Q35 | TM2D2 demoted (DEMETER2) label in primary top 40 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| Top-40-only labels (demotion) \| demoted True DEMETER2 \|" (text read: file) | Y |
+| Q36 | Head and Neck most dependent lineage | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| Head and Neck \| 77 \| -0.355 \| -0.341 \| 0.0000 \|" (text read: file) | Y |
+| Q37 | fly orthologue of TM2D2 is CG11103/amrt | PMID:34905536 (DOI 10.1371/journal.pgen.1009962); checked in `results/m7/scratch_reports_tm2d/texts/34905536.full.txt` | "Null alleles of fly orthologs of TM2D2 (CG11103/amrt) and TM2D1 (CG10795/bisc) phenotypically mimics the loss of TM2D3 (amx)" (text read: full text) | Y |
+| Q38 | TM2D2 GLS rank of STUB1 = 3 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| 3 \| STUB1 \| 16.37 \| 26.5/16.8/5.8 \| 3 \| yes \|" (text read: file) | Y |
+| Q39 | Antibodies listed for TM2D2 | UniProt:Q9BX73; checked in `results/m7/scratch_reports_tm2d/texts/uniprot_Q9BX73.txt` | "Antibodypedia; 56606; 28 antibodies from 9 providers." (text read: database entry) | Y |
+| Q40 | TM2D2 C-terminal segment 204-214 annotated extracellular (luminal side) | UniProt:Q9BX73; checked in `results/m7/scratch_reports_tm2d/texts/uniprot_Q9BX73.txt` | "FT   TOPO_DOM        204..214 ⏎ FT                   /note="Extracellular"" (text read: database entry) | Y |
+| Q41 | TM2D2 frac lines < -0.5 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| Fraction of lines < −0.5 (n) \| 0.0977 (133) \|" (text read: file) | Y |
+| Q42 | UniProt has no FUNCTION comment for TM2D2 | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| Function [CC] (verbatim, UniProt) \| — \|" (text read: file) | Y |
+| Q43 | TM2D2 lineage-restricted expression False; expressed in all lines | reports/data/TM2D2/bundle.md; checked in `reports/data/TM2D2/bundle.md` | "\| Fraction lines log2(TPM+1) ≥ 1 / ≥ 2 \| 1.000 / 1.000 \|" (text read: file) | Y |
+
+## Appendix B. Red-team review
+Written by a separate agent that argues the artefact explanation (hub, mitochondrial or ribosomal dominance, proximity, lineage, multifunctional partners, curation lag). Appended unedited.
+- Reviewer / model / date: pending
+- Review text: pending
+- Lint result (claims without a verified source): pending
+- PI response (separate, below the review): pending
+
+---
+
+# Part 2. Template B: experiment plan (TM2D2)
+
+The TM2D1 plan (`reports/TM2D1.md`, Part 2) uses the same design in TM2D1's own lines; where the two genes share lines (MAPAC-HS-77 and LXF-289 depend on both [Q24, T23/T24 in `reports/TM2D1.md`]) the arms can be run in one experiment with shared controls.
+
+## 1. Context
+- Gene: TM2D2 | hypothesis: TM2D2 functions in / supports the response to ER stress (GO:0034976), as part of a shared-dependency module with TM2D1, AUP1, JOSD1, STUB1 and CHIC2 | relationship type: d (type unresolved; script c via a TM-count proxy that TM2D2 does not meet [Q2, Q3, M74]) | novelty class: N2
+- LLM-recall-probe flag: not known | calibrated probability: 0.0503 (calibration family other) | tier: none (p_cal fill; "A|B" not reached by any U gene [M67])
+- Strongest alternative explanation: the module is a plasma-membrane/endosomal receptor-homeostasis module (TM2D3–Notch surface presentation [M14]; STUB1–CHIC2–cytokine-receptor surface levels [M37, M38]; JOSD1 endocytosis [M34]), not an ER-stress module; or a CRISPR-specific artefact (DEMETER2 fails [Q13]).
+- Decisive experiment (one sentence): acute CRISPRi knockdown of TM2D2 (3 guides, plus a guide-resistant cDNA rescue arm) in YD-8 and ETCC-016 and in the non-dependent SNU-46, side by side with AUP1, JOSD1 and STUB1 knockdowns (module positive controls) and MEN1 (matched-essentiality control), measuring the UPR panel (HSPA5/BiP, DDIT3/CHOP, ATF4 protein; XBP1 splicing) at day 4–5 and the tunicamycin dose–response; the prediction is refuted if TM2D2 knockdown moves none of these beyond MEN1 knockdown at matched growth effect.
+- Falsifying observation (copied from Template A §9): acute TM2D2 knockdown in YD-8 and ETCC-016 does not change BiP/HSPA5, CHOP/DDIT3, ATF4 or XBP1 splicing, nor tunicamycin sensitivity, beyond the matched-essentiality control (MEN1) at matched growth effect, while AUP1/JOSD1/STUB1 knockdowns do.
+
+## 2. Cell lines (selection rule)
+- Two dependent lines (TM2D2 ≤ −0.5; rank-1 partner JOSD1 ≤ −0.3; expressed; not amplified; TP53-mutant ranked first; best screen quality):
+  - ACH-000630 YD-8 (head and neck SCC): TM2D2 −1.14, JOSD1 −0.34, log2(TPM+1) 5.20, relative CN 0.61, TP53 mutant, RPMI + 10% FBS [Q21]
+  - ACH-002650 ETCC-016 (NSCLC): TM2D2 −0.57, JOSD1 −0.31, 4.45, CN 0.67, TP53 mutant, DMEM + 10% FBS [Q22]
+  - Effects of the other module genes in these lines (recomputed, descriptive): YD-8 TM2D1 −0.80, TM2D3 −1.24, AUP1 −0.75, STUB1 −0.41; ETCC-016 TM2D1 −0.44, TM2D3 −0.51, AUP1 −0.05, STUB1 −0.40 [Q32, M83].
+- Control line (expresses TM2D2, does not depend on it; same lineage as line 1): ACH-000500 SNU-46 (head and neck SCC), TM2D2 −0.09, log2(TPM+1) 6.65 [Q23].
+- Common-essential genes: no (TM2D2 is selective; 9.8% of lines < −0.5 [Q41]); RPE1/HEK293T degron not required. Controls: guide-resistant cDNA rescue, two non-targeting guides, AAVS1 cutting control, matched-essentiality control gene.
+- Baseline medium: the DepMap screen media — RPMI + 10% FBS (YD-8; MF-001-001), DMEM + 10% FBS (ETCC-016; MF-002-001), RPMI + 10% FBS + 2 mM glutamine + 25 mM HEPES + 25 mM sodium bicarbonate (SNU-46; MF-001-005). Tunicamycin/thapsigargin are sensitising arms, not the baseline.
+- Essential-gene confound control (required): CRISPRi knockdown of TM2D2 time-matched to AUP1/JOSD1/STUB1 knockdown, against MEN1 (mean effect −0.344, frac < −0.5 0.285; YD-8 −0.91, ETCC-016 −0.66; r with TM2D2 0.049; menin chromatin module, unrelated to membrane quality control) [Q31]. Readouts are compared at matched population-doubling loss (day 4–5, before divergence > 20%).
+
+## 3. Reagents
+- 3 sgRNAs: CRISPRi (dCas9-KRAB; e.g. Dolcetto or hCRISPRi-v2 TSS-targeting guides) and Cas9 KO (Brunello) guides for TM2D2, AUP1, JOSD1, STUB1, MEN1. Sequences **not retrieved in this report** (no local library file; to be filled before ordering). 2 non-targeting guides; AAVS1 cutting control. Per-guide DepMap effects are not available locally; guide concordance is checked in the experiment itself.
+- Sequence-level off-target check of every guide: **pending**. Requirement: genome-wide mismatch search (Cas-OFFinder or CRISPOR, GRCh38); no perfect or 1-mismatch site in another gene, and explicitly none in TM2D1, TM2D3 or the partner loci (paralogue cross-cutting is the main artefact risk, §8 of Part 1).
+- CRISPRi guides if the locus is amplified: not required (relative CN 0.61 and 0.67) — CRISPRi is used anyway for acute, titratable knockdown.
+- Guide-resistant cDNA: TM2D2 isoform 1, NM_078473.3 / NP_510882.1 [Q6], with silent PAM/seed mutations for the KO arm (CRISPRi does not act on the cDNA).
+- Validated antibody, or endogenous tag: Antibodypedia lists 28 antibodies [Q39]; validate on knockout lysate. Endogenous tag at the C-terminus (small HA or ALFA tag; the N-terminal signal peptide 1–35 [Q4] precludes N-terminal tags; the C-terminal tail 204–214 is annotated luminal/extracellular [Q40], so a small epitope tag rather than a fluorescent protein).
+- Antibodies for partners and organelle markers: AUP1, JOSD1, STUB1/CHIP, CHIC2, UBE2G2; calnexin (ER), GM130 (Golgi), EEA1 (early endosome), LAMP1 (lysosome), Na+/K+-ATPase (plasma membrane); UPR panel: BiP/HSPA5, CHOP/DDIT3, ATF4; XBP1 splicing by RT-PCR. ERAD reporter: NHK-HA (α1-antitrypsin Null Hong Kong) for cycloheximide chase [M32].
+
+## 4. Experiment tiers
+
+| Tier | Experiment | Time | If right | If wrong | Selected? | Expected readout (specific) |
+|---|---|---|---|---|---|---|
+| 0 | AF-Multimer of TM2D2 with AUP1, JOSD1, STUB1 (and CHIC2, TM2D3 as reference) | days | Confident, conserved interface | No interface (does not exclude types b–e) | yes (cheap) | TM2D2–TM2D3 already high in Predictomes (SPOC 0.999 [M50]); for AUP1/JOSD1/STUB1 we expect no confident interface (no Predictomes rows [M52]); a confident interface would raise type a |
+| 1 | Competitive growth (GFP mix), 3 guides plus rescue, dependent vs control lines | 2–3 wk | Dropout only in YD-8 / ETCC-016; rescued by cDNA | No dropout, or no rescue (off-target or paralogue cross-cutting) | yes (prerequisite) | ≥ 2 of 3 guides deplete GFP+ cells in YD-8 and ETCC-016 by day 14, not in SNU-46; cDNA restores |
+| 1 | Essential-gene confound control: acute CRISPRi of TM2D2 time-matched to AUP1/JOSD1/STUB1 knockdown, vs MEN1 | 2–4 wk | UPR panel and tunicamycin response change beyond MEN1 at matched growth effect | Same change as MEN1 (general sickness) | **yes — decisive** | Right: HSPA5, DDIT3, ATF4 protein and XBP1s up and tunicamycin IC50 down (same direction as AUP1/JOSD1/STUB1 knockdown; TM2D3 loss dysregulates these markers [M16] and Aup1 knockdown raises ER-stress genes [M33]). Wrong: TM2D2 ≈ MEN1 |
+| 1 | Localisation with markers | 2–4 wk | ER pool (calnexin overlap), as for TM2D3 [M15] | Plasma membrane/endosome only | yes | Tagged TM2D2 co-localises with calnexin; HPA's Approved call is nucleoplasm/plasma membrane/vesicles [Q18], so an ER pool is not yet shown |
+| 1 | Module-specific readout after KO: ERAD substrate turnover | 2–4 wk | NHK-HA half-life lengthened, as after AUP1 loss [M32] | Normal | yes | Cycloheximide chase of NHK-HA; prediction for the tied "ERAD pathway" term, expected weaker given §12.4 of Part 1 |
+| 1 | Partner protein levels after TM2D2 KO (and the reverse) | 2 wk | Co-destabilisation (types a/b) | Stable (favours c/d) | yes | Western of AUP1, JOSD1, STUB1, CHIC2, TM2D1, TM2D3 after TM2D2 KO; TM2D2 (tag) after partner KO |
+| 2 | IP-MS / TurboID of tagged TM2D2 vs an unrelated tagged ER membrane control | 1–2 mo | Partners enriched (SAINT) | Absent, or another module appears | if Tier 1 positive | TM2D1/TM2D3 expected (positive control [M11]); AUP1/JOSD1/STUB1/CHIC2 enrichment would support a physical module |
+| 2 | BN-PAGE / SEC co-migration | 1 mo | Co-migrates; KO stalls assembly | Separate | optional | TM2D complex size with/without TM2D2 |
+| 2 | Double KO with partner (epistasis) | 1–2 mo | No extra defect | Additive or synergistic (parallel pathways) | yes | TM2D2+AUP1 and TM2D2+JOSD1 vs singles in YD-8 |
+| 2 | Arrayed CRISPRi Perturb-seq with partners | 2 mo | Signatures cluster | Distinct | optional | K562 GW TM2D2 profile is weak [Q20]; use a dependent line |
+| 3 | Interface mutants fail to rescue; reconstitution, activity or structure | 6–12 mo | Interface or activity required | Mutants rescue | later | conserved TM2 domain / DRF motif mutants [M10] |
+
+Type-specific rows: none apply (type d; the c row would require ≥ 4 TM helices or a transporter/enzyme domain, which TM2D2 lacks [Q2, Q3]).
+
+## 5. Module readouts
+| Module | Readouts |
+|---|---|
+| Other (module not listed): response to ER stress / ERAD | UPR panel ATF4, HSPA5, DDIT3 (+ XBP1s) and tunicamycin sensitivity; source: PMID 40449487 (TM2D3 loss dysregulates ATF4, HSPA5, DDIT3) [M16]; ERAD substrate turnover, NHK cycloheximide chase; source: PMID 34879065 [M32] |
+
+Chosen readout: UPR panel + tunicamycin dose–response (decisive); NHK-HA chase (secondary).
+
+## 6. Experiment that separates the alternative explanation
+- Alternative: plasma-membrane/endosomal receptor homeostasis (or a Notch-related function) rather than ER stress | experiment: in the same knockdown samples, flow cytometry of surface Notch1 and Notch2 (reduced in Tm2d3-deficient cells [M14]) and a cell-surface proteome (biotinylation-MS) next to the UPR panel | readout if prediction right: UPR panel shifted (and possibly surface changes secondary to ER stress, with a matching ER pool of TM2D2) | readout if alternative right: surface Notch1/2 (or other receptors) reduced with no UPR change beyond MEN1, and no ER pool.
+
+## 7. Decision rule (fixed in advance)
+- **Supported:** dropout rescued AND module-specific readout concordant (UPR panel/tunicamycin beyond MEN1) AND localisation compatible (ER pool) AND Tier-2 physical or epistatic support.
+- **Refuted:** a dropout that is not rescued, or incompatible localisation in both dependent lines.
+- **Ambiguous:** anything else. Report it as such and propose an alternative relationship type (e.g. surface-receptor homeostasis, type d).
+
+## 8. Evidence ledger
+Template B claims use the keys of Appendix A of Part 1 (M- and Q-keys; all verified = Y). Added for Template B: none beyond those rows (Q4, Q6, Q13, Q18, Q20–Q24, Q31, Q32, Q39–Q41, M10, M11, M14–M16, M32–M34, M37, M38, M50, M52, M67).
+
+## 9. Red-team review
+Separate agent; asks what would make the experiment uninformative (off-target guides, proximity effects, lineage dependence, rescue failure, assay insensitivity). Appended unedited.
+- Reviewer / model / date: pending
+- Review text: pending
+- PI response (separate): pending
