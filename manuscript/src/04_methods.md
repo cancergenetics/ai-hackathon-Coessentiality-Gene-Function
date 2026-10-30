@@ -3,10 +3,10 @@
 
 The analysis followed DESIGN.md v2.3, frozen at git tag `design-frozen` (commit afed1dd), with every later change logged
 in DEVIATIONS.md (summarised at the end of this section, including which rows were logged after the affected result).
-All steps were run by scripts in `scripts/`, numbered in execution order (README.md gives the run order). Table 4 defines
+All steps were run by scripts in `scripts/`, numbered in execution order (README.md gives the run order). Table 3 defines
 the notation.
 
-**Table 4. Notation.**
+**Table 3. Notation.**
 
 | Symbol | Meaning |
 |---|---|
@@ -201,8 +201,8 @@ When H genes were scored, neighbour memberships, the background, the candidate t
 from t0. The network used 26Q3 data, so the test is temporal in annotation only. Current annotations are about 8
 <!-- src: config/frozen.yaml --> years after t0. Because H includes only genes that gained at least one target, p_cal
 is the probability of confirmation within roughly that horizon *conditional on the gene gaining experimental BP/MF
-annotation*; DESIGN.md §3.7 describes it without this condition, and we correct the interpretation here without
-changing the model.
+annotation*. DESIGN.md §3.7 and the first submitted version of this manuscript described it without this condition;
+the conditional reading was introduced after the first round of review, without changing the model.
 
 **Circularity.** Every supporting PMID was searched in Europe PMC, in full text where available, for DepMap and
 co-essentiality terms. Of 1,050 <!-- src: results/holdout/circularity_summary.md --> PMIDs, 16
@@ -370,9 +370,19 @@ verdict with required fixes (reports/redteam/). The writer answered each fix poi
 
 After the first round of peer review, the referees' requests were run by `scripts/90_revision_analyses.py` (helpers in
 `scripts/revision_common.py`) into `results/revision/` (summary in `results/revision/SUMMARY.md`; figure S4 by
-`scripts/62_figS4.py`). None changes a frozen rule or a pre-specified result. Analyses that read H outcomes (A3, A4, A7,
-A8 below) were logged in LOOKS.md before they were run (row dated 2026-10-30). All are labelled [post-review
-exploratory] in Results.
+`scripts/62_figS4.py`). After the second round, `scripts/92_round2_numbers.py` derived a few further quantities from
+U-side and judging files only (A10 below; no H outcome was read). None changes a frozen rule or a pre-specified result.
+The analyses that read H outcomes (A3, A4, A7, A8 below) were logged in LOOKS.md; the row was committed together with
+the results (feb6172), so the order rests on the agents' record, as for the primary look. All are labelled
+[post-review exploratory] in Results.
+
+**Revision history.** The first submitted version read p_cal unconditionally, attributed most of the published-but-uncurated
+functions to slow curation, reported the candidate reports' overlap with published catalogues only as agreement, and
+carried the full sensitivity analyses and the rediscovery table in the main Results. Round 1 introduced the conditional
+reading of p_cal, the definition-artefact analysis (A1) and the catalogue check (A2). Round 2 corrected the
+null-adjusted assessability to an excess over the null (A6, A10), restricted the attribution to complex membership to
+the selected candidates, added the assumption behind every unconditional figure, and moved the detailed analyses to S1
+Text without changing their numbers.
 
 - **A1, entry routes and definition-artefact flags.** Each U gene was classed by entry route (D1 and D2, with or without
   D3; or D3 without D2) and flagged if it had UniProt annotation score 5, was a Complex Portal subunit [Meldal2022] or had
@@ -385,10 +395,19 @@ exploratory] in Results.
   co-member [Kim2019]. Symbols of older catalogues were mapped through HGNC previous symbols and aliases. Pan et al.
   [Pan2018], FIREWORKS [Amici2021] and Perturb-seq cluster assignments [Replogle2022] were not obtainable in
   machine-readable form. Downloads and checksums are in `results/revision/external_manifest.tsv`.
-- **A3, unconditional reading of p_cal.** The rate at which t0-eligible genes gained any target in the 5–200 window over
-  the horizon (overall, among genes with a reportable top term, and by quintile of top-K mean zavg_BEF) was multiplied
-  into the saved bootstrap Σp_cal; intervals combine bootstrap draws with Jeffreys-Beta draws of the rate, assuming
-  independence. Annual hazards for a 2022 cohort and for 2018 genes still uncharacterised in 2022 check stationarity.
+- **A3, unconditional reading of p_cal.** Because a top term can be confirmed only if the gene gains annotation, the
+  expected number of unconditional confirmations is exactly Σ p_i r_i, where r_i is gene i's probability of gaining new
+  experimental BP/MF annotation over the horizon. Using one rate r assumes that (i) the gain rate does not vary with
+  p_cal (shown false for signal: the highest quintile gains annotation about twice as often), (ii) the 2018 cohort's
+  rate transfers to genes still uncharacterised in 2026 and (iii) p_cal itself transfers to U. The rate at which
+  t0-eligible genes gained any target in the 5–200 window (overall, among genes with a reportable top term, and by
+  quintile of top-K mean zavg_BEF) was multiplied into the saved bootstrap Σp_cal; intervals combine bootstrap draws
+  with Jeffreys-Beta draws of the rate, assuming independence. The survivor-hazard version uses the hazard of 2018
+  genes still uncharacterised in 2022 (0.145 over the horizon): 30.5 × 0.145 ≈ 4.4
+  <!-- src: results/revision/a10_round2_numbers.tsv -->, beside 4.9 with the 2018-cohort rate; the unconditional
+  Poisson-binomial SD is about 2.2 <!-- src: results/revision/numbers_a3.json -->. Annual hazards for a 2022 cohort and
+  for the 2018 survivors check stationarity. Assumption (2) as worded in `results/revision/a3_pcal_conditional.md`
+  ("independent of whether the top term is right") is superseded by (i)–(iii) here.
 - **A4, calibration sensitivity.** Calibration-in-the-large, Brier skill and cluster-bootstrap intervals for the frozen
   model; the frozen model without signalling genes; and sign-constrained one- and two-covariate models (top-K mean
   zavg_BEF alone, plus coverage, plus term size) cross-fitted exactly as in §3.7 and applied to U with covariate support
@@ -396,14 +415,21 @@ exploratory] in Results.
 - **A5, judging sensitivities.** Term-only scores (the three real statements supported on the module label alone set to
   0; no decoy was affected), an exact slot-permutation test, and a sign-flip test over clusters of genes sharing the real
   statement's V1′ label.
-- **A6, null-adjusted assessability.** The clean-negative split-half false-call rate in each stratum (any dependency, or
-  profile-SD tertile) was applied to the expressed scorable genes of that stratum and the expected false calls subtracted
-  from the observed assessable count (Jeffreys-Beta and binomial draws, 100,000, seed 0). This is a bound under the
-  assumption that the rates transfer, not an estimate of specificity.
+- **A6, null-adjusted assessability.** The clean-negative split-half false-call rate α in each stratum (any
+  dependency, or profile-SD tertile) was applied to the N expressed scorable genes of that stratum and the expected
+  false calls Nα subtracted from the observed assessable count (Jeffreys-Beta and binomial draws, 100,000, seed 0). If T
+  genes carry real signal and are detected with power π, observed = Tπ + (N − T)α, so the difference is T(π − α): the
+  excess of calls over the null expectation (named `implied_true` in `a6_assessability_null_adjusted.tsv`), not T. At
+  full power T = (observed − Nα)/(1 − α) per stratum, a lower bound on T computed in A10. Both rest on the untested
+  assumption that the rates transfer to expressed genes.
 - **A7, combination rules on H.** Precision@1 for "homology if it predicts, else zavg_BEF", the reverse, and the oracle
   union, with paired cluster-bootstrap intervals and U-reweighting as in the secondary batch.
 - **A8, named-control misses.** For each control, each new term in the t0 vocabulary was classed as circularity-flagged,
   outside the size window, not reportable (fewer than two supporting neighbours annotated at t0) or ranked.
+- **A10, round-2 quantities** (`scripts/92_round2_numbers.py`; `results/revision/a10_round2_numbers.tsv` and
+  `a10_assessability_excess_and_implied.tsv`). The A6 excess and the full-power lower bound with intervals from the same
+  draw scheme; judged support among top-40 genes shared or not shared with the clean-first list; Wilson intervals for
+  the N1 accuracy estimate; and the survivor-hazard rescaling in A3. No H outcome was read.
 
 ## Reproducibility and AI-agent safeguards
 
@@ -416,18 +442,22 @@ as follows; where the record is incomplete, we say so.
   and the tag before any pairwise DepMap read. The freeze commit is afed1dd, and the SHA-256 of
   `preregistration/FREEZE.sha256` is 687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04
   <!-- src: README.md -->. The repository has no remote, so git tags and commit times are self-reported until deposition.
-- **Chronology audit.** `scripts/audit_order.py` was run at milestones M4 and M6 by the milestone analyst agents, not
-  by fresh agents, and found no ordering violation (reviews/audit_order_M4.md, reviews/audit_order_M6.md). Its globs do
-  not cover the hold-out and ledger outputs, whose first commits were checked by hand during review, and no audit was
-  committed for the final milestone.
+- **Chronology audit.** `scripts/audit_order.py` was run at milestones M4 and M6 by the milestone analyst agents
+  (reviews/audit_order_M4.md, reviews/audit_order_M6.md) and found no ordering violation. Its globs covered the
+  prediction ledger from the first commit (the M6 audit ran before the ledger existed), but not the hold-out evaluation,
+  the M7 judging or the post-review outputs. During revision the globs were extended to those three directories, and an
+  independent agent that produced no results ran the audit on all four (reviews/audit_order_M9.md): no ordering
+  violation, no pairwise output before the freeze tag, and the frozen files unchanged.
 - **Hidden tool predictions.** The tool's genome-wide predictions were hidden by sparse checkout until the freeze.
 - **One-look rule.** LOOKS.md allowed one primary look at H, after the ranker and calibration specification were
   committed. LOOKS.md also records an independent verification re-run of the primary analysis, one exploratory look
-  (complementarity) and the post-review exploratory analyses; the primary look's row was committed together with its
-  results, so "row before run" rests on the agents' record.
+  (complementarity) and the post-review exploratory analyses. Only the specification row (commit f0f7aa3) demonstrably
+  preceded the primary look (7db89d2), by 31 minutes <!-- src: reviews/audit_order_M9.md -->; the rows for the primary look, the verification re-run, the
+  exploratory look and the post-review analyses were each committed together with their results, so for those looks
+  "row before run" rests on the agents' record (reviews/audit_order_M9.md).
 - **Claim tracing.** Every number in this manuscript's source carries a comment naming its file. A claims table
-  generated from these comments (`results/revision/CLAIMS_preview.tsv`, by `scripts/91_claims_from_manuscript.py`)
-  replaces the hand-written CLAIMS.tsv, which held only six claims.
+  generated from these comments, for the main text and S1 Text (`CLAIMS.tsv`, by `scripts/91_claims_from_manuscript.py`),
+  replaces the hand-written version, which held only six claims.
 - **Agent scopes and prompts.** Blind roles (curation-lag auditor, literature agent L, recall probe, judges, adjudicator)
   were given read and write restrictions in their task prompts, which are reproduced verbatim in docs/AGENT_PROMPTS.md;
   `config/agent_scopes.yaml` is a template rather than an enforced policy, `results/agent_runs.tsv` logs only one agent
@@ -451,7 +481,9 @@ affected results are reported under both rules where both exist. Most were logge
 computed, but four were not: the R1 tie-break (found by the independent verifier after the primary look), the
 lineage-restricted expression rule behind the 646 versus 635 assessable count (found after the assessability output),
 the pure-p_cal reading of the top-40 fill (decided after the ranked list existed, before any literature step) and the
-module-label crediting in the judge instruction (logged retrospectively during manuscript review). Row dates in
+module-label crediting in the judge instruction (logged retrospectively during manuscript review in commit 017fa97;
+the row's date was first written as a later day and corrected in place in commit 95a40cc, so the commit, not the date,
+records when it was logged). Row dates in
 DEVIATIONS.md are not monotone, and the commits, not the dates, give the order. Thirteen rows fill operational details the
 design left open (for example orthogonal admission mechanics, the RBO persistence of 0.9, LOO and hold-out evaluation
 details, U scoring and bootstrap mechanics, artefact-flag operationalisation, the transcription-factor list, the fill

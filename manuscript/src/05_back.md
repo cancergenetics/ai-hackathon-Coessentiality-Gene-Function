@@ -3,14 +3,14 @@
 
 All code, configuration, pre-registration files, design documents and reviews, committed results, figure source data
 and candidate reports are in the project repository, which will be deposited with its git history and tags in an
-archival repository (Zenodo) on acceptance [archival DOI: 10.5281/zenodo.XXXXXXX, placeholder]. The pre-registration
+archival repository (Zenodo) on acceptance [archival DOI: to be completed by the human authors]. The pre-registration
 can be checked against the deposited history: freeze commit afed1dd (tags `preregistration-v1` and `design-frozen`),
 SHA-256 of `preregistration/FREEZE.sha256` 687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04
 <!-- src: README.md -->. Until deposition the repository has no public remote, so tag and commit times are self-reported.
 `README.md` gives the environment set-up, data acquisition and the run order of every script, and marks the steps that
 were performed by agents and cannot be re-run from a script. The layout is: `PROMPT.md` (the fixed goal), `DESIGN.md`
 (frozen design v2.3), `DEVIATIONS.md` and `LOOKS.md` (change and hold-out logs), `RESEARCH_TREE.md` (decision record),
-`results/revision/CLAIMS_preview.tsv` (number-to-file map generated from the manuscript's source comments),
+`CLAIMS.tsv` (number-to-file map generated from the source comments of the manuscript and S1 Text),
 `docs/AGENT_PROMPTS.md` (verbatim prompts for the blinded agent roles), `preregistration/` (the frozen
 list U, criteria, provenance and `FREEZE.sha256`), `config/` (frozen parameters, seeds, pinned environment, agent
 scopes), `src/` and `scripts/` (pipeline, numbered in execution order), `tests/` and `verify/` (unit tests, toy-data
@@ -37,20 +37,20 @@ curation-lag audit, literature agent L, judges and some analyses), working under
 The agents designed the study, wrote and ran all code, performed the literature screens and blinded judging, wrote the
 candidate reports and this manuscript, and revised it after review. The verbatim prompts of the blinded roles are in
 `docs/AGENT_PROMPTS.md`. AI tools cannot be authors and cannot take responsibility for the work. [Human oversight and
-accountability statement to be completed: which human author(s) set the brief, reviewed the design, results, literature
-claims and text, and take responsibility for the submission. At the time of writing, no human had verified the results,
-the literature claims or the text.]
+accountability statement: to be completed by the human authors, stating which human author(s) set the brief, reviewed
+the design, results, literature claims and text, and take responsibility for the submission. At the time of writing, no
+human had verified the results, the literature claims or the text.]
 
-**Author contributions (CRediT).** [To be completed by the human author(s); AI contributions are described above and
+**Author contributions (CRediT).** [To be completed by the human authors; AI contributions are described above and
 are not authorship.]
 
 # Acknowledgements
 
-[To be completed.]
+[To be completed by the human authors.]
 
 # Funding
 
-[To be completed.]
+[To be completed by the human authors.]
 
 # Competing interests
 
@@ -96,7 +96,7 @@ fitted on LOO genes, in bins of at least 30 genes; observed hit@1 with Wilson 95
 calibration. (E) Named positive controls: number of GO terms gained since t0 (window 2–300 genes), split into clean
 terms and terms whose supporting papers cite DepMap or co-essentiality work (excluded), with the rank of the best clean
 true term among the gene's reportable terms. Reasons for the misses of INTS15 and TMEM41B (true terms not reportable from
-t0 neighbour annotations) are given in Results [post-review]. †, not in H (no new term in the 5–200 window); case series only. Source data:
+t0 neighbour annotations) are given in Results and S1 Text [post-review exploratory]. †, not in H (no new term in the 5–200 window); case series only. Source data:
 manuscript/figures/source_data/Fig2a_precision_by_method.tsv, Fig2b_paired_differences.tsv, Fig2c_signal_quintiles.tsv,
 Fig2d_reliability.tsv, Fig2e_named_controls.tsv.
 
@@ -105,8 +105,9 @@ Fig2d_reliability.tsv, Fig2e_named_controls.tsv.
 **Fig 3. Calibrated catalogue for the pre-registered genes.** (A) Cumulative distribution of calibrated probability
 (p_cal) for expressed, assessable genes within calibration support (n = 269), for all in-support U genes (n = 2,583) and
 for in-support clean-negative genes, which are not expressed in at least 95% of lines (n = 708). The Tier B (0.3) and
-Tier A (0.5) thresholds lie off scale. (B) Σp_cal, the expected number of top terms that later experimental annotation
-will confirm, with percentile 95% confidence intervals from 2,000 cluster-bootstrap refits of the calibration model; the
+Tier A (0.5) thresholds lie off scale. (B) Σp_cal, the expected number of top terms that would be confirmed if every
+gene gained new experimental BP/MF annotation within about eight years <!-- src: config/frozen.yaml --> (conditional; about 4.9 <!-- src: results/revision/numbers_a3.json --> for the in-support genes
+if the 2018 cohort's annotation rate applies [post-review exploratory]), with percentile 95% confidence intervals from 2,000 cluster-bootstrap refits of the calibration model; the
 boundary-gene value is an upper bound, and the primary top 40 is a point sum. (C) Fraction of real, matched-gene and
 decoy-term predictions (247 anchors each) meeting the Tier-A orthogonal support condition (rule), the strict and any-class
 variants, and support from individual classes (P, physical; A, co-abundance; L, localisation; G, Perturb-seq), with 95%
@@ -180,9 +181,10 @@ counts. (B) Fraction of the primary top 40, S20 and the ten report genes for whi
 the gene's ten strongest partners was already in a published resource: hu.MAP 3.0 co-complex membership; Predictomes
 AlphaFold pair (SPOC ≥ 0.5); Wainberg et al. 2021 significant GLS pair, module (density ≥ 0.5) or explicit function
 prediction; Kim et al. 2019 network edge or cluster; and any co-essentiality catalogue or any resource. Flags record a
-published link, not the same function. (C) Assessable genes (grey) and the number remaining after subtracting the false
-calls expected from clean-negative rates (blue; 95% interval), by the stratifier used for the rates and the expression
-definition; labels give the null-adjusted count and its share of U. (D) Calibration of the frozen model and of one- and
+published link, not the same function. (C) Assessable genes (grey) and the excess of assessable calls over the false calls
+expected from clean-negative rates (blue; 95% interval), by the stratifier used for the rates and the expression
+definition; labels give the excess and its share of U. The excess is not the number of genes with real signal, which at
+full power is at least about 324 <!-- src: results/revision/a10_assessability_excess_and_implied.tsv --> (S1 Text). (D) Calibration of the frozen model and of one- and
 two-covariate models, all cross-fitted out of fold on H: calibration slope (solid, Wald 95% CI; dashed, cluster
 bootstrap) and c-statistic (cluster-bootstrap 95% CI); EPP, events per parameter; BSS, Brier skill score relative to a
 constant prediction. Source data: manuscript/figures/source_data/FigS4a_N1_by_route_and_flag.tsv,
@@ -194,22 +196,15 @@ FigS4_derived_numbers.tsv (scripts/62_figS4.py, from results/revision/).
 **Table 1. Principal data sources.** Version and use of each input; URLs, SHA-256 checksums and licences are in
 DATA.md. Restricted-licence files were used internally and are not redistributed.
 
-**Table 2. Top-40 and S20 predictions judged supported by the literature (blinded, adjudicated).** p_cal is given for the
-primary top 40 and the uncalibrated top-K mean zavg_BEF (zavg) for S20, in separate columns. UniProt score; CP: UniProt
-annotation score and whether the gene is a curated Complex Portal subunit [post-review]. L class, novelty class from the blind literature agent.
-Probe, recognised by the closed-book recall probe. Basis: whether judges cited the GO term (term) or only the module label
-(module); "generic" marks support from cancer cell-line proliferation studies. Module labels are shortened; full names
-are in the source file (manuscript/figures/source_data/Table2_rediscovery.tsv).
-
-**Table 3. The ten candidate reports.** For each report gene: rank and p_cal in the primary top 40; the predicted GO term
+**Table 2. The ten candidate reports.** For each report gene: rank and p_cal in the primary top 40; the predicted GO term
 and relationship type (a, stable subunit; b, assembly or maturation factor; d, pathway member, type unresolved); the
 strongest co-essential partners; evidence strength (physical-class support after Holm correction; other orthogonal
 classes, A, co-abundance, L, localisation, G, Perturb-seq; the blind literature agent's novelty class; and the
 adjudicated verdict on the real statement); prior catalogue evidence [post-review]; the main caveat after red-team
-review; and status (rediscovery, partial rediscovery or hypothesis). The decisive experiments are in S10 Table. Full
+review (DEMETER2 non-replication omitted as an unvalidated check); and status (rediscovery, partial rediscovery or hypothesis). The decisive experiments are in S10 Table. Full
 reports, experiment plans and red-team reviews: S1–S10 Reports.
 
-**Table 4. Notation** (Methods).
+**Table 3. Notation** (Methods).
 
 # Supporting information
 
@@ -246,15 +241,23 @@ al. 2019 (`results/revision/a2_novelty_overlap.tsv`); all other post-review tabl
 `results/revision/SUMMARY.md`).
 
 **S10 Table. Decisive experiments for the ten report genes.** `manuscript/supplementary/S10_Table_decisive_experiments.tsv`
-(moved from Table 3, with post-review notes).
+(moved from the candidate-report table, now Table 2, with post-review notes).
 
 **S1–S10 Reports. Candidate reports.** `reports/ANKRD52.md` (with `ANKRD52_experiments.md`), `reports/TRAPPC5.md` (with
 `TRAPPC5_experiments.md`), `reports/RBM34.md`, `reports/PLEKHH3.md`, `reports/CCDC71L.md`, `reports/TM2D2.md`,
 `reports/TM2D1.md`, `reports/C5orf34.md`, `reports/BICRAL.md`, `reports/INAFM1.md`; red-team reviews in
 `reports/redteam/`; machine-generated evidence bundles in `reports/data/`.
 
-**S1 Text. Frozen study design.** `DESIGN.md` v2.3 (tag `design-frozen`) and design reviews (`reviews/`).
+**S1 Text. Supplementary results.** Verification, sensitivity and secondary analyses moved from the Results in
+revision (tool reproduction and ranker choice; census strata and the rank-biased-overlap and null-adjusted
+assessability analyses; hold-out robustness, calibration details, named controls and complementarity; catalogue
+coverage, Σp_cal sensitivities, clean-negative false calls, artefact flags, orthogonal support and top-40 checks;
+judging details and alternative tests), Table A (the top-40 and S20 predictions judged supported by the literature,
+formerly Table 2) and the full candidate-report narrative. `manuscript/supplementary/S1_Text.md`.
+
+**S2 Text. Frozen study design.** `DESIGN.md` v2.3 (tag `design-frozen`) and design reviews (`reviews/`).
 
 **S1 Data. Figure source data.** `manuscript/figures/source_data/` (including S4 Fig).
 
-**S2 Text. Response to reviewers and verbatim agent prompts.** `reviews/ms_round1_response.md`; `docs/AGENT_PROMPTS.md`.
+**S3 Text. Responses to reviewers and verbatim agent prompts.** `reviews/ms_round1_response.md`,
+`reviews/ms_round2_response.md`; `docs/AGENT_PROMPTS.md`.

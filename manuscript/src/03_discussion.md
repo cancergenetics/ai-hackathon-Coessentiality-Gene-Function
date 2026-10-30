@@ -4,8 +4,9 @@ We asked how far co-essentiality can be trusted as a source of function for unch
 fixed before any network quantity was computed. Three answers emerge. The signal is real and specific: on genes that
 were uncharacterised in 2018, the method beat a profile-matched null (the prior-only arm was degenerate at rank 1), and
 in blinded judging its top predictions matched the literature far more often than decoy statements. Its absolute
-accuracy is low and its reach is narrow: at most one pre-registered gene in eight is assessable, and perhaps one in
-twenty once the reproducibility test's false-call rate is allowed for; no in-support calibrated probability exceeds
+accuracy is low and its reach is narrow: at most one pre-registered gene in eight is assessable, and once the
+reproducibility test's false-call rate is allowed for, the calls exceed the null by one gene in twenty, implying at
+least one in fifteen with real signal under an untested assumption; no in-support calibrated probability exceeds
 0.141; and transfer from homology or interaction partners is more accurate. And the most confident predictions point
 mainly to functions that are already published, and usually already linked by earlier co-essentiality or interaction
 catalogues, which says as much about how "uncharacterised" is defined as about the method.
@@ -15,7 +16,7 @@ catalogues, which says as much about how "uncharacterised" is defined as about t
 The primary result is modest in size. A precision@1 of 0.030 <!-- src: results/holdout_eval/SUMMARY.md --> means that
 about one gene in 33 of the hold-out receives, as its single top term, a term that curators later annotated with
 experimental evidence. Reweighted to the covariate distribution of U it is 0.012 <!-- src: results/holdout_eval/SUMMARY.md -->,
-about one gene in 80. Accuracy rose steeply with signal strength, to 0.117
+about one gene in 83. Accuracy rose steeply with signal strength, to 0.117
 <!-- src: results/holdout_eval/fig_signal_quintiles.tsv --> in the top quintile, and was much higher for complex
 membership (0.182 <!-- src: results/holdout_eval/SUMMARY.md -->) than for the broad process terms that dominate GO, so the
 low headline is partly a property of the pre-registered endpoint. Both observations agree with earlier evidence that
@@ -33,11 +34,14 @@ What the study adds is a calibration, with two qualifications. The pre-specified
 miscalibrated out of fold (slope 0.82, 95% CI 0.51–1.13; c-statistic 0.855
 <!-- src: results/holdout_eval/calibration.md -->), but it rests on 24 events at 3.4 per parameter, its Brier score barely
 improves on a constant <!-- src: results/revision/a4_calibration_models.tsv -->, one family coefficient reflects
-separation, and simpler models calibrate at least as well (S4D Fig). And p_cal is conditional: it estimates the chance
+separation, and simpler models calibrate comparably (S4D Fig), so the data cannot say whether the frozen model is
+over-parameterised. And p_cal is conditional: it estimates the chance
 that the top term is confirmed if the gene is annotated at all, which happened for about one eligible gene in six over
 eight years <!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->. The catalogue's headline of about 30
 confirmations among 2,583 calibrated top terms <!-- src: results/ledger/pcal_summary.json --> therefore corresponds to
-about five unconditionally <!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->. A model fitted on characterised
+about five confirmations if the 2018 cohort's annotation rate applies to U
+<!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json --> [post-review
+exploratory]. A model fitted on characterised
 genes, the usual leave-one-out set-up, overstated even the conditional probability about threefold
 <!-- src: results/holdout_eval/SUMMARY.md -->. Leave-one-out accuracy on well-annotated genes is therefore an optimistic
 guide to performance on genes that are only now being studied, a point that CAFA-style evaluations have made for other
@@ -55,15 +59,18 @@ p_cal or signal and estimate nothing about prevalence. Among the primary top 40,
 <!-- src: manuscript/figures/source_data/Fig5c_novelty_class.tsv -->, and 16 of the 18 supported predictions were for
 N1 genes <!-- src: results/m7/judge/analysis_main.md -->.
 
-Much of this is not slow curation but a property of our definition. U combined the absence of experimental GO process
+Part of this, and most of it among top candidates, is not slow curation but a property of our definition. U combined the absence of experimental GO process
 and function evidence with either a low UniProt annotation score or low focused literature, following Wainberg et al.'s
 UniProt criterion [Wainberg2021] only in part. The literature criterion counted papers about at most ten genes and the
-GO criterion ignored cellular component, so complex subunits described in multi-subunit papers entered U: 3,819 genes
-came in through the literature criterion alone and 288 are Complex Portal subunits
-<!-- src: results/revision/a1_flag_counts.tsv -->. In the random sample, 56% of such literature-route genes were N1 against
-13% of genes with a low UniProt score <!-- src: results/revision/a1_N1_rates_by_route_and_flag.tsv -->, and 6 of the 8 N1
-genes with evidence older than 2021 carried a definition-artefact flag <!-- src: results/revision/a1_U_entry_flags.tsv -->.
-Only the remainder, recent work not yet curated, is curation lag in the usual sense; electronic and phylogenetic
+GO criterion ignored cellular component, so genes studied mainly in multi-gene papers entered U: 3,819 genes came in
+through the literature criterion alone <!-- src: results/revision/a1_flag_counts.tsv -->. In the random sample, 56% of
+such literature-route genes were N1 against 13% of genes with a low UniProt score
+<!-- src: results/revision/a1_N1_rates_by_route_and_flag.tsv -->. There, 13 of the 21 N1 genes rest on evidence from 2021
+or later, which is curation lag in the usual sense; of the 8 with older evidence, 6 carry a definition-artefact flag,
+mostly a UniProt score of 5, and none is a Complex Portal subunit <!-- src: results/revision/a1_U_entry_flags.tsv -->.
+Among the top 40, by contrast, 30 genes carry a flag and 13 are Complex Portal subunits
+<!-- src: results/revision/a1_flag_counts.tsv -->, so complex membership matters mainly for the selected candidates.
+Electronic and phylogenetic
 annotation now covers most human genes [Feuermann2025], although its reliability varies by evidence source
 [Skunca2012], and experimental curation lags. A stricter definition (UniProt score ≤ 2, or exclusion of genes with
 experimental cellular-component or Complex Portal membership) would have given a smaller and more genuinely
@@ -93,7 +100,7 @@ already in earlier catalogues. The gap is a property of honest calibration on a 
 larger hold-out, pooled families or a hierarchical model could close it, at the price of new assumptions that should
 themselves be pre-specified.
 
-## Context, direction and vocabulary
+## Context, direction, vocabulary and circularity
 
 Two reports show that the "gene functions in module M" vocabulary is too coarse for some of the method's signal.
 PLEKHH3 tracks PTEN and PLEKHA1 in fitness *gains* on knockout <!-- src: reports/PLEKHH3.md (§0) -->, which suggests a
@@ -107,40 +114,29 @@ be annotated <!-- src: reports/RBM34.md (§0) -->. The named controls INTS15 and
 networks were right, but the terms curators later added were not carried by their neighbours at t0
 <!-- src: results/revision/a8_control_target_reasons.tsv -->.
 
-## Circularity in annotation
-
-Our attempts to use known successes as positive controls largely failed for a reason that matters beyond this study.
-For most named controls, the experimental annotations added since 2018 cite DepMap or co-essentiality papers
-<!-- src: results/holdout_eval/controls_case_series.tsv -->; 16 of 1,050 supporting PMIDs in the hold-out were flagged
-this way <!-- src: results/holdout/circularity_summary.md -->. Integrated interaction resources also embed DepMap
-[KimCY2022; Schmid2025], so hu.MAP 3.0, Predictomes and STRING text-mining were not used as independent support; hu.MAP 3.0
-was a secondary comparator, and hu.MAP and Predictomes were used after review only to check novelty. As
-co-essentiality-derived annotations enter GO, future benchmarks that do not track evidence provenance will increasingly
-reward the method for agreeing with itself. Excluding flagged evidence made no material difference here (precision@1
-0.030–0.032 across sensitivities <!-- src: results/holdout_eval/SUMMARY.md -->), but the issue will grow.
+Annotation also feeds back on itself. For most named controls the experimental annotations added since 2018 cite DepMap
+or co-essentiality papers <!-- src: results/holdout_eval/controls_case_series.tsv -->, and 16 of 1,050 supporting PMIDs
+in the hold-out were flagged this way <!-- src: results/holdout/circularity_summary.md -->. Integrated interaction
+resources also embed DepMap [KimCY2022; Schmid2025], so hu.MAP 3.0, Predictomes and STRING text-mining were not used as
+independent support. Excluding flagged evidence made no material difference here (precision@1 0.030–0.032 across
+sensitivities <!-- src: results/holdout_eval/SUMMARY.md -->), but as co-essentiality-derived annotations enter GO,
+benchmarks that do not track evidence provenance will increasingly reward the method for agreeing with itself.
 
 ## What the AI-agent safeguards caught, and what they did not
 
-The study was run by language-model agents, and several safeguards changed the result rather than merely documenting
-it. An independent agent re-derived the pre-registered list and the hold-out from raw files and reproduced both exactly,
-after an earlier re-derivation had exposed a mismatch between two implementations of the generic-term list (7 versus 22
-terms) <!-- src: reviews/retro_M3.md -->. An independent verifier reproduced hit@1 for 809 of 809 hold-out genes
-<!-- src: verify/holdout_verification.md --> and found that the design had never specified a tie-break, which affected
-401 of 820 genes <!-- src: DEVIATIONS.md -->. The PI overrode an implementing agent's fill of the top 40 that ranked
-genes with p_cal near zero above flagged genes with p_cal ≥ 0.06 and retained two genes that carried exclusions
-<!-- src: DEVIATIONS.md -->. Red-team review of the ten reports found no fabricated citation but changed every report: it
-led to the TP53-stratified refit for C5orf34, exposed an error in the recall-probe answer for TM2D1 (the fly gene
-*almondex* is the TM2D3 orthologue), showed that the blinded search for CCDC71L had missed its most relevant paper, and
-downgraded the paralogue claim for BICRAL <!-- src: reports/redteam/BICRAL.md; reports/redteam/C5orf34.md; reports/redteam/CCDC71L.md; reports/redteam/TM2D1.md -->.
-Blinding held at the level that was checked: no packet leaked a gene or partner name
-<!-- src: results/m7/judge/leak_check.tsv -->, and the judges were validated on known genes before they saw any candidate.
-
-The safeguards also had gaps that peer review exposed. The module-label crediting rule in the judge instruction was not
-logged until review; three other deviations were logged only after the results they affect existed; the agent-run log
-is sparse; the role-scope file is a template; and the agents' novelty statements had not been checked against earlier
-catalogues until a referee asked. Of 22 logged deviations, 13 filled operational details the design had left open
-<!-- src: DEVIATIONS.md --> (12 before review <!-- src: reviews/retro_M7.md -->); a full dry run of the pipeline before
-the freeze would have prevented most of them.
+Several safeguards changed the result rather than merely documenting it. Independent re-derivation of the
+pre-registered list exposed a mismatch between two implementations of the generic-term list (7 versus 22 terms)
+<!-- src: reviews/retro_M3.md -->; an independent verifier reproduced hit@1 for 809 of 809 hold-out genes
+<!-- src: verify/holdout_verification.md --> and found an unspecified tie-break affecting 401 of 820 genes
+<!-- src: DEVIATIONS.md -->; the PI overrode a top-40 fill that ranked genes with p_cal near zero above flagged genes
+with p_cal ≥ 0.06 <!-- src: DEVIATIONS.md -->; and red-team review changed every report, prompting the TP53-stratified
+refit for C5orf34 and downgrading the paralogue claim for BICRAL
+<!-- src: reports/redteam/BICRAL.md; reports/redteam/C5orf34.md -->. No packet leaked a gene or partner name
+<!-- src: results/m7/judge/leak_check.tsv -->. The gaps were exposed by peer review: the module-label crediting rule and
+three other deviations were logged only after the results they affect existed, the agent-run log is sparse, the
+role-scope file is a template, and the agents' novelty statements had not been checked against earlier catalogues. Of
+22 logged deviations, 13 filled operational details the design had left open <!-- src: DEVIATIONS.md -->; a full dry
+run of the pipeline before the freeze would have prevented most of them.
 
 ## Limitations
 
@@ -160,7 +156,9 @@ matches to the module label as well as to the term; on terms alone the top 40 ha
 statements <!-- src: results/revision/a5_judging_sensitivity.tsv -->. The literature agent's search was incomplete in at
 least one case (CCDC71L). The novelty check covered the catalogues we could obtain; Pan et al., FIREWORKS and the
 Perturb-seq clusters were not checked. Orthogonal support separated real from decoy predictions only weakly, and DEMETER2
-replication failed for most genes, a check that was never validated on positive controls. Twenty-two deviations from
+replication failed for most genes, a check that was never validated on positive controls. The DepMap-only controls for
+the two most novel report observations (lineage-adjusted and PTEN-null-excluded correlations for PLEKHH3; centriole-module
+coherence in TP53-wild-type lines for C5orf34) were not run. Twenty-two deviations from
 the frozen design are logged <!-- src: DEVIATIONS.md -->. Finally, no prediction was tested at the bench: the reports
 specify decisive experiments, with matched-essentiality controls and decision rules, but these remain proposals.
 
@@ -174,5 +172,5 @@ co-dependency) and context (lineage, TP53 status), which the reports show carry 
 express. Third, definitions of "uncharacterised" should exclude genes with experimental cellular-component or curated
 complex membership, or report them separately. Fourth, the most decisive next step is experimental: the reports each name
 a first experiment and a pre-registered decision rule, and PLEKHH3, the only report gene without precedent, together
-with the TP53 condition for C5orf34, offers the clearest test of whether co-essentiality can identify genuinely new
+with the TP53 condition for C5orf34, offers the clearest test, once the DepMap-only controls above have been run, of whether co-essentiality can identify genuinely new
 functions rather than recover known ones.

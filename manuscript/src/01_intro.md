@@ -91,7 +91,8 @@ whichever way it falls.
   against a prior-only predictor and a matched-gene null (the primary test) and against GLS (key secondary), together
   with the calibration of a pre-specified probability model and the recovery of named positive controls.
 - **C3, catalogue.** Calibrated predictions for every assessable pre-registered gene, headlined by the expected number of
-  top-term predictions that later annotation would confirm, with false-call rates from non-expressed genes and from
+  top-term predictions that would be confirmed if every gene gained new experimental annotation (a conditional
+  quantity), with false-call rates from non-expressed genes and from
   matched-gene and decoy predictions.
 - **C4, candidates.** A short list of top candidates, each with a literature check, a blinded comparison against decoy
   statements, a stated relationship type and alternative explanations, and a tiered experimental plan.

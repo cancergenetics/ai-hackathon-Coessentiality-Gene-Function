@@ -64,6 +64,7 @@ SCRIPT_BY_PATH = [
     (r"manuscript/figures/source_data/", "scripts/60_figures.py"),
     (r"preregistration/", "scripts/03_build_preregistration.py"),
     (r"results/preregistration/", "scripts/02_gene_knownness_table.py"),
+    (r"results/revision/a10_", "scripts/92_round2_numbers.py"),
     (r"results/revision/", "scripts/90_revision_analyses.py"),
     (r"^(DESIGN\.md|config/frozen\.yaml|DEVIATIONS\.md|LOOKS\.md|PROMPT\.md|docs/)", "(specification/log document; no script)"),
     (r"^verify/", "verify/rederive_holdout.py; verify/rederive_prereg.py"),
@@ -88,20 +89,29 @@ def script_for(paths: list[str]) -> str:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", default=str(ROOT / "results/revision/CLAIMS_preview.tsv"))
+    ap.add_argument("--also", nargs="*", default=[str(ROOT / "manuscript/supplementary/S1_Text.md")],
+                    help="further Markdown files with src tags (default: S1 Text); rows are prefixed with the file label")
     a = ap.parse_args()
-    rows = cmn.analyse(cmn.parse_manuscript(), cmn.git_tracked())
+    tracked = cmn.git_tracked()
+    docs = [("", cmn.MS)] + [("S1 Text" if Path(p).name == "S1_Text.md" else Path(p).stem, Path(p)) for p in a.also]
     out, n = [], 0
-    for r in rows:
-        for x in r["tagged"]:
-            if x["year"]:
-                continue
-            n += 1
-            paths = cmn.parse_paths(x["tag"])
-            src = x["hit_files"] or paths
-            out.append(dict(claim_id=f"M{n:04d}", manuscript_location=r["section"] or "front matter",
-                            statement=r["text"][:240], value=x["tok"], source_file="; ".join(src), source_key="",
-                            script=script_for(src), verified_by="verify/check_manuscript_numbers.py",
-                            line=r["line"], screen_status=x["status"], cited_paths="; ".join(paths)))
+    for label, path in docs:
+        cmn.MS = path
+        rows = cmn.analyse(cmn.parse_manuscript(), tracked)
+        for r in rows:
+            for x in r["tagged"]:
+                if x["year"]:
+                    continue
+                n += 1
+                paths = cmn.parse_paths(x["tag"])
+                src = x["hit_files"] or paths
+                loc = r["section"] or "front matter"
+                if label:
+                    loc = f"{label}/{loc}"
+                out.append(dict(claim_id=f"M{n:04d}", manuscript_location=loc,
+                                statement=r["text"][:240], value=x["tok"], source_file="; ".join(src), source_key="",
+                                script=script_for(src), verified_by="verify/check_manuscript_numbers.py",
+                                line=r["line"], screen_status=x["status"], cited_paths="; ".join(paths)))
     df = pd.DataFrame(out)
     Path(a.out).parent.mkdir(parents=True, exist_ok=True)
     df.to_csv(a.out, sep="\t", index=False)

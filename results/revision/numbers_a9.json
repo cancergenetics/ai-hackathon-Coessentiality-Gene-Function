@@ -4,19 +4,19 @@
  "rows": [
   {
    "key": "tagged numbers extracted (years excluded)",
-   "value": 943,
+   "value": 1291,
    "file": "results/revision/CLAIMS_preview.tsv",
    "note": ""
   },
   {
    "key": "screening hit / miss (value found in a cited file?)",
-   "value": "897 / 46",
+   "value": "1201 / 90",
    "file": "results/revision/CLAIMS_preview.tsv",
    "note": "miss rows need a manual look (rounding, derived values, wrong file)"
   },
   {
    "key": "rows with a generating script inferred",
-   "value": 935,
+   "value": 1283,
    "file": "results/revision/CLAIMS_preview.tsv",
    "note": ""
   }

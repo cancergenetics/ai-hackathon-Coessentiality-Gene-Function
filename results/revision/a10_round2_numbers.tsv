@@ -1,0 +1,14 @@
+key	value	file
+any_dependency, frozen expressed (635): excess of assessable calls over null expectation (95% int.)	243 (173–307)	results/revision/a10_assessability_excess_and_implied.tsv
+any_dependency, frozen expressed (635): implied genes with real signal at full power, (obs - N alpha)/(1 - alpha) per stratum (95% int.); % of U	324 (248–389); 6.6% (5.0–7.9%)	results/revision/a10_assessability_excess_and_implied.tsv
+any_dependency, DESIGN expressed (646): excess of assessable calls over null expectation (95% int.)	241 (168–306)	results/revision/a10_assessability_excess_and_implied.tsv
+any_dependency, DESIGN expressed (646): implied genes with real signal at full power, (obs - N alpha)/(1 - alpha) per stratum (95% int.); % of U	322 (242–388); 6.5% (4.9–7.9%)	results/revision/a10_assessability_excess_and_implied.tsv
+sd_tertile_withinU, frozen expressed (635): excess of assessable calls over null expectation (95% int.)	271 (202–331)	results/revision/a10_assessability_excess_and_implied.tsv
+sd_tertile_withinU, frozen expressed (635): implied genes with real signal at full power, (obs - N alpha)/(1 - alpha) per stratum (95% int.); % of U	325 (251–387); 6.6% (5.1–7.9%)	results/revision/a10_assessability_excess_and_implied.tsv
+sd_tertile_withinU, DESIGN expressed (646): excess of assessable calls over null expectation (95% int.)	269 (199–330)	results/revision/a10_assessability_excess_and_implied.tsv
+sd_tertile_withinU, DESIGN expressed (646): implied genes with real signal at full power, (obs - N alpha)/(1 - alpha) per stratum (95% int.); % of U	323 (247–386); 6.6% (5.0–7.8%)	results/revision/a10_assessability_excess_and_implied.tsv
+top-40 genes shared with the clean-first list: n; supported (primary); supported on term only	20; 12; 11	results/revision/a5_judging_per_gene.tsv
+top-40 genes not shared with the clean-first list: n; supported (primary); supported on term only	20; 6; 5	results/revision/a5_judging_per_gene.tsv
+top-40 N1 genes: supported (primary), Wilson 95% CI	16/31 = 52% (35–68%)	results/revision/a5_judging_per_gene.tsv
+top-40 N1 genes: supported on term only, Wilson 95% CI	14/31 = 45% (29–62%); module-only: DPCD, YPEL5	results/revision/a5_judging_per_gene.tsv
+unconditional Sigma p_cal with the 2018->2022 survivor hazard (0.145 over 7.88 y)	30.5 x 0.145 = 4.4	results/ledger/pcal_summary.json; results/revision/a3_pcal_conditional.md

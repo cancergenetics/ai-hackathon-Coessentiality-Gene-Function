@@ -3,60 +3,70 @@ title: "A pre-registered, temporally validated evaluation of co-essentiality fun
 ---
 
 <!-- manuscript/manuscript.md — assembled from manuscript/drafts/01–04, reports/, results/m7/ and manuscript/figures/;
-revised after manuscript review round 1 (reviews/ms_round1_*.md; response in reviews/ms_round1_response.md).
+revised after manuscript review rounds 1 and 2 (reviews/ms_round1_*.md, reviews/ms_round2_*.md; responses in
+reviews/ms_round1_response.md and reviews/ms_round2_response.md). Detailed sensitivity and secondary analyses moved to
+manuscript/supplementary/S1_Text.md in round 2.
 Every number carries a src comment naming the committed file it comes from; scripts/80_build_manuscript.sh strips these
 comments in the rendered PDF/DOCX only. Labels in square brackets inside Results: [pre-specified] = DESIGN.md v2.3 at
 tag design-frozen; [deviation] = logged in DEVIATIONS.md (Methods states which rows were logged after the affected
-result); [exploratory] = post hoc, before manuscript review; [post-review exploratory] = requested by the round-1
-referees, computed by scripts/90_revision_analyses.py into results/revision/ (H-touching analyses logged in LOOKS.md,
-2026-10-30), no frozen rule changed; [descriptive] = computed for presentation by scripts/60_figures.py,
+result); [exploratory] = post hoc, before manuscript review; [post-review exploratory] = requested by the referees,
+computed by scripts/90_revision_analyses.py (round 1) or scripts/92_round2_numbers.py (round 2, no H outcome read) into
+results/revision/ (the LOOKS.md row for the H-touching round-1 analyses was committed with their results, feb6172), no
+frozen rule changed; [post-review] alone = a table column or report statement added after review that is not itself an
+analysis; [descriptive] = computed for presentation by scripts/60_figures.py,
 scripts/61_figure5.py or scripts/62_figS4.py (manuscript/figures/source_data/), not a pre-specified test. Citations are
 numbered in order of first appearance; keys were resolved against references/literature_refs.tsv. -->
 
 **Short title:** Pre-registered evaluation of co-essentiality predictions
 
-[Human author(s), affiliations and ORCID iDs to be completed. Under PLOS policy AI tools cannot be authors; the
-human author(s) named here take responsibility for the work. Human oversight: [to be completed by the human authors]
-(role to be confirmed).]
+**Authors:** [Human author(s), affiliations and ORCID iDs: to be completed by the human authors. Under PLOS policy AI
+tools cannot be authors; the human author(s) named here take responsibility for the work.]
 
-**Corresponding author:** [name and e-mail to be completed]
+**Human oversight:** [Name, affiliation and role of the human who oversaw the study: to be completed by the human
+authors.]
+
+**Corresponding author:** [Name and e-mail: to be completed by the human authors.]
 
 # Abstract
 
-**Background.** Thousands of human genes lack an experimentally established function. Co-essentiality
-in CRISPR screens has suggested functions for several, but how often such predictions prove correct, and for how many
-genes, has not been measured under a pre-registered, time-split design.
+**Background.** Co-essentiality in CRISPR screens suggests functions for uncharacterised human genes, but its accuracy
+and reach have not been measured under a pre-registered, time-split design.
 
-**Methods.** We pre-registered 4,924 <!-- src: preregistration/CRITERIA.md --> uncharacterised genes from annotation
-data alone and froze the list and analysis design before computing any gene–gene quantity. We applied a
-co-essentiality method (zavg_BEF) to DepMap 26Q3, tested it on a hold-out of 809
-<!-- src: results/holdout_eval/core.md --> genes uncharacterised in 2018 and annotated since, calibrated its scores
-(p_cal), and compared top predictions with blindly retrieved literature against decoys. AI agents ran the study.
+**Methods.** We pre-registered 4,924 <!-- src: preregistration/CRITERIA.md --> uncharacterised genes and froze the
+list and design before any gene–gene computation. We tested a co-essentiality method (zavg_BEF; DepMap 26Q3) on
+809 <!-- src: results/holdout_eval/core.md --> genes uncharacterised in 2018 and annotated since, calibrated its scores
+(p_cal), and judged top predictions against blindly retrieved literature, with decoys. AI agents ran the study.
 
-**Results.** 646 genes (13.1%) <!-- src: manuscript/figures/source_data/Fig1b_census_funnel.tsv --> passed the
-assessability test; allowing for its false-call rate, about 243 (4.9%)
-<!-- src: results/revision/a6_assessability_null_adjusted.tsv --> remain [post-review]. Hold-out top-term
-precision was 0.030 (95% CI 0.018–0.043), above prior-only (0.000) and matched-gene (0.005) nulls and
-indistinguishable from GLS (difference +0.006, −0.005 to +0.017)
-<!-- src: results/holdout_eval/SUMMARY.md -->; it was 0.182 for complex membership and 0.012 after reweighting to the
+**Results.** 646 genes (13.1%) <!-- src: manuscript/figures/source_data/Fig1b_census_funnel.tsv --> were
+assessable; allowing for the test's false-call rate, calls exceed the null expectation by about 243
+<!-- src: results/revision/a6_assessability_null_adjusted.tsv -->; under that assumption at least about 320 genes
+(6.6%) <!-- src: results/revision/a10_assessability_excess_and_implied.tsv --> carry real signal [post-review
+exploratory]. Hold-out top-term precision was 0.030 (95% CI 0.018–0.043), above prior-only and matched-gene (0.005)
+nulls and indistinguishable from GLS (difference +0.006, −0.005 to +0.017)
+<!-- src: results/holdout_eval/SUMMARY.md -->; it was 0.182 for complex membership, and 0.012 reweighted to
 pre-registered genes <!-- src: results/holdout_eval/SUMMARY.md -->. Homology transfer reached 0.218
-<!-- src: results/holdout_eval/SUMMARY.md -->; adding co-essentiality where homology made no prediction gained 0.006
+<!-- src: results/holdout_eval/SUMMARY.md -->, and co-essentiality added 0.006 where homology made no prediction
 <!-- src: results/revision/a7_combination_rules.tsv -->. Calibration was not detectably poor but rested on 24 events
-(slope 0.82, 95% CI 0.51–1.13) <!-- src: results/revision/a4_calibration_models.tsv -->. Among 2,583 in-support genes,
-about 30.5 top terms should be confirmed if each gene is later annotated, about 4.9 (2.2–8.1) unconditionally <!-- src: results/ledger/pcal_summary.json; results/revision/numbers_a3.json -->. Judges supported 18 of the 40 top
-predictions (16 on the GO term alone) against 3 of 120 decoys <!-- src: results/revision/a5_judging_sensitivity.tsv -->,
-but 31 of these genes already had published functions <!-- src: results/m7/judge/analysis_main.md --> and 34 had a
-co-essential or physical link in earlier catalogues <!-- src: results/revision/a2_novelty_overlap.tsv -->.
+<!-- src: results/revision/a4_calibration_models.tsv -->. Among 2,583 in-support genes, about
+30.5 top terms should be confirmed if each gene is later annotated, and about 4.9 (2.2–8.1) if the 2018 cohort's
+annotation rate applies [post-review exploratory] <!-- src: results/ledger/pcal_summary.json; results/revision/numbers_a3.json -->.
+Judges supported 18 of the 40 top predictions (16 on the term alone) against 3 of 120 decoys
+<!-- src: results/revision/a5_judging_sensitivity.tsv -->, but 31 of these genes already had published functions
+<!-- src: results/m7/judge/analysis_main.md --> and 34 had links in earlier catalogues
+<!-- src: results/revision/a2_novelty_overlap.tsv -->.
 
-**Conclusions.** Co-essentiality gives specific but low-accuracy predictions that add little to homology. Many
-"uncharacterised" genes have published functions, partly because literature-based definitions miss complex subunits. Only one of ten candidate reports, PLEKHH3 with PTEN and PLEKHA1, has no precedent in
-the catalogues we checked.
+**Conclusions.** Co-essentiality gives specific, low-accuracy predictions that add little to homology. Many
+"uncharacterised" genes have published functions, partly because literature-based definitions miss genes studied mainly
+in multi-gene papers, including, among our top candidates, many complex subunits. Of ten candidate reports, only PLEKHH3
+(with PTEN and PLEKHA1) lacks a catalogue precedent, and it is a low-amplitude co-advantage signal not yet controlled
+for lineage.
 
 # Author summary
 
 By the definition we used, about one human protein-coding gene in four (4,924 of 19,296
 <!-- src: preregistration/CRITERIA.md -->) has no experimentally established function in the main annotation database
-and has been little studied. One way to find clues is to look for genes whose loss harms the same cancer cell lines. Such
+and was classed as little studied by our literature criterion; many such genes in fact have published functions.
+One way to find clues is to look for genes whose loss harms the same cancer cell lines. Such
 "co-essential" genes often work together. Before looking at any co-essentiality data, we fixed the list of genes and
 wrote down every analysis and decision rule. We then tested the method the way it would be used in practice: we
 predicted functions for genes that were unknown in 2018 and checked the predictions against what scientists have
@@ -65,7 +75,8 @@ genes; other co-essentiality methods did as well. Its confidence scores were not
 confirmed predictions and assume that a gene will be studied at all. The strongest predictions mostly matched functions
 that were already published but had not entered the databases, and most had already been suggested by earlier
 co-essentiality or protein-interaction maps. Part of this "curation lag" comes from how we defined an uncharacterised
-gene: counting only papers about few genes misses proteins described as members of large complexes. We offer ten
+gene: counting only papers about few genes misses genes studied mainly in multi-gene papers, including, among our top
+candidates, many complex subunits. We offer ten
 detailed candidate reports with experiments that could confirm or refute them. The study was run by AI agents; we
 describe the checks that constrained their work and the points where those checks were incomplete.
 
@@ -157,7 +168,8 @@ whichever way it falls.
   against a prior-only predictor and a matched-gene null (the primary test) and against GLS (key secondary), together
   with the calibration of a pre-specified probability model and the recovery of named positive controls.
 - **C3, catalogue.** Calibrated predictions for every assessable pre-registered gene, headlined by the expected number of
-  top-term predictions that later annotation would confirm, with false-call rates from non-expressed genes and from
+  top-term predictions that would be confirmed if every gene gained new experimental annotation (a conditional
+  quantity), with false-call rates from non-expressed genes and from
   matched-gene and decoy predictions.
 - **C4, candidates.** A short list of top candidates, each with a literature check, a blinded comparison against decoy
   statements, a stated relationship type and alternative explanations, and a tiered experimental plan.
@@ -175,113 +187,91 @@ and change no pre-specified result.
 The study design is summarised in Fig 1A; the notation is defined at the start of the Methods. Results are labelled
 [pre-specified] (frozen design, DESIGN.md v2.3), [deviation] (a change logged in DEVIATIONS.md; the Methods list the
 rows that were logged only after the affected result existed), [exploratory] (post hoc, before review; H looks logged in
-LOOKS.md), [post-review exploratory] (requested by the referees; results/revision/, summarised in S4 Fig) or
-[descriptive] (computed for presentation only).
+LOOKS.md), [post-review exploratory] (analyses requested by the referees and computed after peer review into
+results/revision/; no frozen rule changed) or [descriptive] (computed for presentation only). [post-review] alone marks a
+table column or report statement added after peer review that is not itself an analysis. Detailed sensitivity and
+secondary analyses, and the list of literature-supported predictions, are in S1 Text.
 
 ## The tool reproduces its published performance on DepMap 26Q3
 
-Before any prediction for the pre-registered genes, we checked the tool on our data (Fig 1A). With the tool's own
-command-line scripts, the internal-test average precision was 0.3451 for zavg_BEF, 0.2423 for GLS, 0.1463 for Spearman
-and 0.1341 for Pearson <!-- src: results/verification/tool_reproduction.md -->. The published values are 0.345, 0.242,
-0.146 and 0.134 <!-- src: results/verification/tool_reproduction.md -->, so every method fell inside the pre-specified
-tolerance of ±0.005 <!-- src: results/verification/tool_reproduction.md -->. All 14
-<!-- src: results/verification/sanity_checks.md --> sanity checks passed, including Chronos sign, exact symmetry and
-median within-complex scores of 4.06–16.90 <!-- src: results/verification/sanity_checks.md --> for seven reference
-complexes. Our GLS and Pearson rows matched the tool's to 2.96 × 10⁻⁷
-<!-- src: results/verification/baseline_rows.md -->.
-
-The ranker was then chosen once, on 2,519 <!-- src: results/calibration/loo_ranker_choice.md --> characterised
-leave-one-out (LOO) genes, by the frozen mean-reciprocal-rank (MRR) rule [pre-specified]. Raw neighbour support (R1)
-won with an MRR of 0.169, against 0.140 for the hypergeometric ranker (R2), 0.111 for the empirical ranker (R3) and
-0.073 for prior-only <!-- src: results/calibration/loo_ranker_choice.md --> (S1A Fig). Every circularity variant gave
-the same choice. When annotation rows were shuffled among genes of similar annotation count, R1 precision@1 fell from
-0.139 to 0.015, below the prior-only level of 0.036 <!-- src: results/calibration/label_shuffle.md --> (S1B Fig). The
-choice and the calibration specification were logged before the hold-out was opened (LOOKS.md, commit f0922e1).
+With the tool's own scripts, the internal-test average precision on our data was 0.3451 for zavg_BEF and 0.2423 for GLS,
+within the pre-specified ±0.005 of the published values
+<!-- src: results/verification/tool_reproduction.md -->, and all 14 <!-- src: results/verification/sanity_checks.md --> sanity checks passed (S1 Text). The term ranker was then
+chosen once, on 2,519 <!-- src: results/calibration/loo_ranker_choice.md --> characterised leave-one-out (LOO) genes, by
+the frozen mean-reciprocal-rank rule [pre-specified]: raw neighbour support (R1; MRR 0.169
+<!-- src: results/calibration/loo_ranker_choice.md -->) (S1A Fig). The choice and the calibration specification were
+logged before the hold-out was opened (LOOKS.md, commit f0f7aa3).
 
 ## C1: at most one in eight pre-registered genes is assessable
 
-**Census.** Of the 4,924 <!-- src: results/assessability/assessability_U.tsv --> pre-registered genes, 4,275
-<!-- src: manuscript/figures/source_data/Fig1b_census_funnel.tsv --> have a DepMap column and 4,271 (86.7%)
-<!-- src: manuscript/figures/source_data/Fig1b_census_funnel.tsv --> are scorable (Fig 1B). Of these, 2,722
-<!-- src: results/assessability/summary.md --> are expressed in DepMap lines, and 842 (19.7% of scorable)
+**Census [pre-specified].** Of the 4,924 <!-- src: results/assessability/assessability_U.tsv --> pre-registered genes,
+4,271 (86.7%) <!-- src: manuscript/figures/source_data/Fig1b_census_funnel.tsv --> are scorable (Fig 1B). Of these,
+2,722 <!-- src: results/assessability/summary.md --> are expressed in DepMap lines, and 842 (19.7% of scorable)
 <!-- src: results/assessability/summary.md --> have a split-half reproducibility p below 0.05 regardless of expression.
 The pre-specified C1 count, genes that are scorable, expressed and assessable, is **646 (13.1% of U)**
 <!-- src: manuscript/figures/source_data/Fig1b_census_funnel.tsv -->. This count applies the design's definition of
-"expressed", which includes lineage-restricted genes; the frozen gene table predates that wording, and with its
-expression column the count is 635 (12.9%) <!-- src: results/assessability/summary.md --> [deviation; both reported]. In
-the headline stratum (expressed, not chemosensory or epidermal, not in a tandem cluster), 598 of 2,525
-<!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv --> genes are assessable (590 of 2,439
-<!-- src: results/assessability/summary.md --> with the frozen column). A rank-biased-overlap version of the
-reproducibility statistic gave 704 assessable genes, against 635 with set overlap on the same (frozen) expression column
-<!-- src: results/assessability/summary.md -->; the two statistics are closely correlated (Spearman 0.991
-<!-- src: results/assessability/summary.md -->).
-
-**Strata.** Assessability tracked the strength of a gene's dependency profile (Fig 1C). Only 2 of 516
-<!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv --> chemosensory and epidermal genes and 46 of
-742 <!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv --> tandem-cluster genes were assessable,
-against 598 of 3,666 <!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv --> other genes. Among
-genes with any dependency (≥ 1% of lines below −0.5 <!-- src: preregistration/CRITERIA.md -->), 427 of 1,105
-<!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv --> were assessable, compared with 219 of
-3,170 <!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv --> without. By profile variability,
-the counts were 437, 138 and 71 of 1,425 <!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv -->
-genes in the high, middle and low tertiles. Secreted proteins (13 of 297
-<!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv -->) and genes outside the tool background (31
-of 484 <!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv -->) were rarely assessable. Mean
-R(g) was 0.041 in U against 0.078 in H and 0.112 in the LOO sample <!-- src: results/assessability/summary.md -->
-(S2A Fig).
+"expressed", which includes lineage-restricted genes; with the expression column of the frozen gene table, which
+predates that wording, the count is 635 (12.9%) <!-- src: results/assessability/summary.md --> [deviation; both
+reported]. In the headline stratum (expressed, not chemosensory or epidermal, not in a tandem cluster), 598 of 2,525
+<!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv --> genes are assessable. Assessability tracked
+the strength of the dependency profile: 427 of 1,105
+<!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv --> genes with any dependency (≥ 1% of lines
+below −0.5 <!-- src: preregistration/CRITERIA.md -->) were assessable, against 219 of 3,170
+<!-- src: manuscript/figures/source_data/Fig1c_assessable_by_stratum.tsv --> without (Fig 1C; other strata and a
+rank-biased-overlap sensitivity in S1 Text).
 
 **The reproducibility null is anti-conservative, so 646 is an upper bound.** Clean-negative genes, which are not
 expressed in at least 95% of lines, reached split-half p < 0.05 in 153 of 1,167 cases (13.1%)
-<!-- src: results/assessability/summary.md -->, well above the nominal 5%. The rate was 27.2%
+<!-- src: results/assessability/summary.md -->, well above the nominal 5%: 27.2%
 <!-- src: results/assessability/summary.md --> among clean negatives with some dependency and 9.7%
-<!-- src: results/assessability/summary.md --> among those without (S2B Fig). The matched-gene null of the
-reproducibility test is therefore anti-conservative for genes with any dependency signal, and requiring expression
-removes the genes in which this was measured without showing that the problem disappears in expressed genes. [Post-review
-exploratory] If the clean-negative false-call rates apply to expressed genes of the same dependency class, about 392
-(329–462) of the 635 calls on the frozen expression column are expected under the null, leaving 243 (173–306) genes,
-4.9% (3.5–6.2%) of U, assessable beyond the null <!-- src: results/revision/a6_assessability_null_adjusted.tsv -->
-(241, 169–306, under the design's expression definition; 269–271 with rates by profile-SD tertile
-<!-- src: results/revision/a6_assessability_null_adjusted.tsv -->; S4C Fig). This is a bound under an untested
-assumption, not an estimate of specificity; the pre-specified count of 646 stands as the C1 result, but it should be read
-as an upper bound on the genes to which co-essentiality can speak.
+<!-- src: results/assessability/summary.md --> among those without (S2B Fig). Requiring expression removes the genes in
+which this was measured without showing that the problem disappears in expressed genes. [Post-review exploratory] If
+the clean-negative false-call rates apply to expressed genes of the same dependency class, about 392 (329–462) of the
+635 calls on the frozen expression column are expected under the null, leaving an excess of 243 (173–306) calls, 4.9%
+(3.5–6.2%) of U, over the null expectation <!-- src: results/revision/a6_assessability_null_adjusted.tsv --> (S4C Fig).
+Because some expected false calls fall on genes that also carry real signal, the excess understates the number of such
+genes: at full power it implies at least about 324 (248–389) genes, 6.6% of U, with real reproducible signal, and more
+at lower power <!-- src: results/revision/a10_assessability_excess_and_implied.tsv --> (S1 Text). This is a lower bound
+under an untested assumption. The pre-specified count of 646 <!-- src: manuscript/figures/source_data/Fig1b_census_funnel.tsv --> stands as the C1 result, read as an upper bound on the
+genes that pass the reproducibility test for reasons other than chance.
 
-**Published but uncurated functions.** An auditor with no access to co-essentiality output classed a pre-specified random sample of 50 U
-genes (Fig 1D). For 21 genes (42%, Wilson 95% CI 29–56%) <!-- src: results/audit/curation_lag_audit.md --> the auditor
-found direct functional evidence in a focused study (N1). Thirteen (26%) <!-- src: results/audit/curation_lag_audit.md -->
-had partial evidence (N2) and 16 (32%) <!-- src: results/audit/curation_lag_audit.md --> had none (N3). Moving the
-three borderline calls gave N1 rates between 38% and 46% <!-- src: results/audit/curation_lag_audit.md -->. For 13 of
-the 21 <!-- src: results/audit/curation_lag_audit.md --> N1 genes the key evidence dates from 2021 or later. In a
-closed-book recall probe, a language model without tools "recognised" 24 of the 50
-<!-- src: results/audit/recall_probe_random50.tsv --> genes: 18 of 21 N1, 3 of 13 N2 and 3 of 16 N3 genes
-<!-- src: manuscript/figures/source_data/Fig1d_curation_lag_audit.tsv -->. Roughly four in ten "uncharacterised" genes
-thus already have published functions, so novelty must be checked against the literature (C4).
+**Published but uncurated functions [pre-specified].** An auditor with no access to co-essentiality output classed a
+pre-specified random sample of 50 U genes (Fig 1D). For 21 genes (42%, Wilson 95% CI 29–56%)
+<!-- src: results/audit/curation_lag_audit.md --> the auditor found direct functional evidence in a focused study (N1);
+13 <!-- src: results/audit/curation_lag_audit.md --> had partial evidence (N2) and 16
+<!-- src: results/audit/curation_lag_audit.md --> had none (N3). Moving the three borderline calls gave N1 rates between
+38% and 46% <!-- src: results/audit/curation_lag_audit.md -->. A closed-book language-model recall probe "recognised" 18
+of the 21 N1 genes <!-- src: manuscript/figures/source_data/Fig1d_curation_lag_audit.tsv --> (S1 Text). Roughly four in
+ten "uncharacterised" genes thus already have published functions, so novelty must be checked against the literature
+(C4).
 
-**Much of this reflects the definition of "uncharacterised" [post-review exploratory].** U required no experimental GO
+**Curation lag and the definition of "uncharacterised" [post-review exploratory].** U required no experimental GO
 biological-process or molecular-function annotation (D1) plus either a low UniProt annotation score (D2) or low focused
-literature (D3). Of the 4,924 U genes, 3,819 entered through D3 alone; 2,248 have a UniProt annotation score of 4 or 5
-(1,261 the maximum of 5), 288 are curated Complex Portal subunits and 1,218 have an experimental GO cellular-component
-annotation, which D1 ignores <!-- src: results/revision/a1_flag_counts.tsv -->. In all, 1,933 U genes carry at least one
-of these definition-artefact flags (score 5, Complex Portal subunit or experimental GO CC)
-<!-- src: results/revision/a1_flag_counts.tsv -->. D3 counts only papers about at most ten genes, so subunits described
-in multi-subunit papers look unstudied. In the random 50, the N1 rate was 19 of 34 (56%, 40–71%) for genes that entered
-through D3 alone and 2 of 16 (13%, 4–36%) for genes with a UniProt score of at most 2, and 13 of 22 (59%) for flagged
-against 8 of 28 (29%) for unflagged genes <!-- src: results/revision/a1_N1_rates_by_route_and_flag.tsv --> (S4A Fig).
-Of the 21 N1 genes, 13 have key evidence from 2021 or later, which curation could not yet be expected to reflect; for
-the other 8 the evidence is older, and 6 of these 8 carry a definition-artefact flag
-<!-- src: results/revision/a1_U_entry_flags.tsv -->. Much of what we call curation lag is therefore a gap created by the
-pre-registered definition, which follows Wainberg et al.'s D2 only in part: function that is published, often for
-complex membership, but invisible to a BP/MF-only, focused-literature definition. The remainder, about a quarter of the
-random sample, is recent work not yet curated.
+literature (D3). Of the 4,924 U genes, 3,819 entered through D3 alone <!-- src: results/revision/a1_flag_counts.tsv -->.
+D3 counts only papers about at most ten genes, so genes studied mainly in multi-gene papers look unstudied. We therefore
+flagged genes with a UniProt annotation score of 5 (1,261), curated Complex Portal subunits (288) and genes with an
+experimental GO cellular-component annotation (1,218) <!-- src: results/revision/a1_flag_counts.tsv -->, which D1 ignores; this last flag also counts localisation-only
+annotations. In all, 1,933 U genes carry at least one of these definition-artefact flags
+<!-- src: results/revision/a1_flag_counts.tsv -->. In the random sample, 13 of 21 N1 genes rest on evidence from 2021 or
+later (curation lag in the usual sense) <!-- src: results/revision/a1_U_entry_flags.tsv -->. The other 8 rest on older evidence; 6 of these are flagged, mostly (5) by
+UniProt score 5 <!-- src: results/revision/a1_U_entry_flags.tsv -->. None is a Complex Portal subunit. Literature-route
+genes were N1 more often (19/34 vs 2/16; 56% vs 13%, 3–36%), as were flagged genes (13/22 vs 8/28)
+<!-- src: results/revision/a1_N1_rates_by_route_and_flag.tsv --> (S4A Fig); with the cellular-component part of the
+flag restricted to complex terms (165 U genes <!-- src: results/revision/a1_flag_counts.tsv -->), the contrast is 10/18
+vs 11/32 (p = 0.23) <!-- src: results/revision/a1_N1_rates_by_route_and_flag.tsv -->. Among selected candidates,
+definition artefacts dominate (30/40 and 20/20 flagged; 13 and 17 Complex Portal subunits
+<!-- src: results/revision/a1_flag_counts.tsv -->; C4). In the random sample, then, most of the gap is recent work not
+yet curated and the rest is older work that the definition could not see; complex membership accounts for it only among
+the top candidates.
 
-## C2: co-essentiality beats both nulls on a temporal hold-out, with low absolute accuracy
+## C2: co-essentiality beats a matched-gene null on a temporal hold-out, with low absolute accuracy
 
 **Hold-out set.** H contained 820 genes that lacked experimental function at the July 2018 GO release, with 5,965
 <!-- src: results/holdout_eval/core.md --> gene–target pairs. Removing 106 <!-- src: results/holdout_eval/core.md -->
 pairs whose supporting papers cite DepMap or co-essentiality work left 809 <!-- src: results/holdout_eval/core.md -->
-genes with a target (11 <!-- src: results/holdout_eval/core.md --> genes lost every target). The PMID + N(g) cluster graph put 63.5% <!-- src: results/holdout_eval/core.md --> of H in one
+genes with a target. The PMID + N(g) cluster graph put 63.5% <!-- src: results/holdout_eval/core.md --> of H in one
 component, so under the fallback rule set before H was opened [deviation] the primary confidence intervals use the
 PMID-only clusters (703 <!-- src: results/holdout_eval/comparisons_core.tsv --> clusters among primary genes).
-Effective sample sizes were 719 and 722 <!-- src: results/holdout_eval/core.md --> (underpowered threshold 300).
 
 **Primary test [pre-specified].** zavg_BEF placed a later-confirmed term at rank 1 for 24
 <!-- src: verify/holdout_verification.md --> of 809 genes: precision@1 0.030 (95% CI 0.018–0.043)
@@ -291,121 +281,73 @@ Effective sample sizes were 719 and 722 <!-- src: results/holdout_eval/core.md -
 <!-- src: results/holdout_eval/SUMMARY.md --> (Fig 2B). The intersection–union test therefore passes, as it does with
 BCa intervals and with the PMID + N(g) clusters <!-- src: results/holdout_eval/SUMMARY.md -->. Prior-only always
 proposes the most frequent candidate terms (median size 200 genes <!-- src: results/holdout_eval/SUMMARY.md -->), none
-of which was new for an H gene; this arm is degenerate at rank 1, so the intersection–union test was in effect decided by
-the matched-gene null, and "beats both nulls" should be read with that in mind. An independent agent re-implemented the evaluation from the design documents and
-reproduced hit@1 for 809 of 809 <!-- src: verify/holdout_verification.md --> genes, for all three methods.
+of which was new for an H gene; this arm is degenerate at rank 1, so the test was in effect decided by the matched-gene
+null. An independent agent re-implemented the evaluation from the design documents and reproduced hit@1 for 809 of 809
+<!-- src: verify/holdout_verification.md --> genes. The result held in every pre-specified robustness check, including
+the ten split-half networks (precision@1 0.025–0.038 <!-- src: results/holdout_eval/SUMMARY.md -->), the circularity
+sensitivities, both tie-break orders and t0 = 2019-07 (S2C Fig; S1 Text). For GO complexes (V1; 77
+<!-- src: results/holdout_eval/SUMMARY.md --> H genes with a complex target), precision@1 was 0.182 (0.093–0.286)
+against 0.013 for prior-only and 0.005 for the null <!-- src: results/holdout_eval/SUMMARY.md -->.
 
-The result held in every pre-specified robustness check. Precision@1 on the ten split-half networks ranged from 0.025 to
-0.038 <!-- src: results/holdout_eval/SUMMARY.md -->, and both differences excluded zero in 10 of 10
-<!-- src: results/holdout_eval/SUMMARY.md --> (S2C Fig). Across the circularity sensitivities precision@1 was
-0.030–0.032 <!-- src: results/holdout_eval/SUMMARY.md -->, and the test passed in all five. The R1 tie-break was not
-specified in the design; implemented as ascending GO identifier, it affects 401 of 820 <!-- src: DEVIATIONS.md --> H
-genes, and the reverse order gives 0.032 <!-- src: DEVIATIONS.md --> with the primary still passing [deviation].
-Restricting candidates and targets to terms with at most 50 genes gave 0.029 (0.017–0.044) on 649
-<!-- src: results/holdout_eval/SUMMARY.md --> genes. Other pre-specified metrics were weaker. The MRR difference from
-prior-only was +0.010 (−0.004 to +0.025) <!-- src: results/holdout_eval/SUMMARY.md --> and did not exclude zero;
-prior-only often places a true term just below rank 1. Predicted terms were broad: the median top-1 term had 132
-annotated genes (IQR 84–176), and only 13% <!-- src: results/holdout_eval/SUMMARY.md --> had 50 or fewer. For GO
-complexes (V1; 77 <!-- src: results/holdout_eval/SUMMARY.md --> H genes with a complex target), precision@1 was 0.182
-(0.093–0.286) against 0.013 for prior-only and 0.005 for the null <!-- src: results/holdout_eval/SUMMARY.md -->;
-removing ETC complex I and the mitoribosome from targets and lists left this unchanged
+**Comparators [pre-specified].** GLS, the key secondary comparator, reached 0.023 (0.013–0.035)
+<!-- src: results/holdout_eval/SUMMARY.md -->; the two-sided difference, zavg_BEF minus GLS, was +0.006 (−0.005 to
++0.017) <!-- src: results/holdout_eval/SUMMARY.md -->, which rules out an advantage for zavg_BEF of more than 1.7 points
 <!-- src: results/holdout_eval/SUMMARY.md -->.
-
-**GLS (key secondary) [pre-specified].** GLS reached 0.023 (0.013–0.035) <!-- src: results/holdout_eval/SUMMARY.md -->.
-The two-sided difference, zavg_BEF minus GLS, was +0.006 (−0.005 to +0.017) <!-- src: results/holdout_eval/SUMMARY.md -->:
-no detectable difference (Fig 2A and 2B), and the interval rules out an advantage for zavg_BEF of more than 1.7 points (upper bound +0.017
-<!-- src: results/holdout_eval/SUMMARY.md -->).
-Together with the Pearson result below, the hold-out accuracy is a property of co-essentiality, of which zavg_BEF is one
-implementation, rather than of this tool. The tool's hyper-parameters were tuned on hu.MAP 3.0 co-complex pairs
-[38], a resource built after t0 that contains complexes with H genes, so post-t0 knowledge could in
-principle enter zavg_BEF; parity with untuned Pearson correlation bounds the size of any such benefit. By the size of the gene's smallest target, the difference was +0.011 (−0.002
-to +0.024) for targets of at most 50 genes and −0.013 (−0.032 to 0.000) for larger ones
-<!-- src: results/holdout_eval/SUMMARY.md -->. Secondary metrics without multiplicity control favoured zavg_BEF modestly
-(MRR +0.016, +0.005 to +0.027) <!-- src: results/holdout_eval/SUMMARY.md -->.
-
-**Secondary batch [pre-specified, reported in full].** Pearson correlation matched zavg_BEF (0.027; difference +0.002,
-−0.009 to +0.014) <!-- src: results/holdout_eval/SUMMARY.md -->. Two non-co-essentiality baselines did better (Fig 2A
-and 2B). The homology baseline, which uses the gene's own t0 electronic, sequence-similarity and phylogenetic
-annotations, made a prediction for 57% <!-- src: results/holdout_eval/SUMMARY.md --> of H genes, yet reached
-precision@1 0.218 (0.184–0.253), exceeding zavg_BEF by 0.188 (0.153–0.225) <!-- src: results/holdout_eval/SUMMARY.md -->.
-Module transfer from hu.MAP 3.0 interaction partners [40] reached 0.049 (0.034–0.066), 0.020 (0.004–0.037)
-<!-- src: results/holdout_eval/SUMMARY.md --> above zavg_BEF; hu.MAP 3.0 was built after t0, which favours it, as the
-design anticipated. The primary test also passed with t0 = 2019-07, with post-cut-off-dated targets, at K = 10 and 50,
-and without same-arm and paralogue exclusions (precision@1 0.028–0.034) <!-- src: results/holdout_eval/SUMMARY.md -->.
-H genes have stronger co-essentiality signal than U genes (standardised mean difference in top-K mean zavg_BEF +0.253,
-in R(g) +0.228) <!-- src: results/holdout_eval/SUMMARY.md -->. Reweighted to the covariate distribution of U,
-precision@1 fell to 0.012 (0.007–0.019), and both primary differences still excluded zero (+0.012 and +0.008, lower
-bound 0.002) <!-- src: results/holdout_eval/SUMMARY.md -->.
+Pearson correlation matched zavg_BEF (0.027; difference +0.002, −0.009 to +0.014)
+<!-- src: results/holdout_eval/SUMMARY.md -->. The hold-out accuracy is therefore a property of co-essentiality rather
+than of this tool. The tool's hyper-parameters were tuned on hu.MAP 3.0 co-complex pairs [38], built
+after t0, so post-t0 knowledge could in principle enter zavg_BEF; parity with untuned Pearson correlation bounds any such
+benefit. Two non-co-essentiality baselines did better (Fig 2A and 2B). The homology baseline, which uses the gene's own
+t0 electronic, sequence-similarity and phylogenetic annotations, made a prediction for 57%
+<!-- src: results/holdout_eval/SUMMARY.md --> of H genes, yet reached precision@1 0.218 (0.184–0.253), exceeding
+zavg_BEF by 0.188 (0.153–0.225) <!-- src: results/holdout_eval/SUMMARY.md -->. Module transfer from hu.MAP 3.0
+interaction partners [40] reached 0.049 (0.034–0.066) <!-- src: results/holdout_eval/SUMMARY.md -->, favoured
+because hu.MAP 3.0 was built after t0. H genes have stronger co-essentiality signal than U genes; reweighted to the
+covariate distribution of U, precision@1 fell to 0.012 (0.007–0.019), and both primary differences still excluded zero
+<!-- src: results/holdout_eval/SUMMARY.md -->.
 
 **Accuracy is concentrated in the strongest signals [pre-specified core].** By quintile of top-K mean zavg_BEF,
 precision@1 was 0 in the two lowest quintiles and 0.117 (0.067–0.174) in the highest (top-K mean 5.4–15.5)
-<!-- src: results/holdout_eval/fig_signal_quintiles.tsv --> (Fig 2C). GLS showed
-the same gradient, reaching 0.074 <!-- src: results/holdout_eval/fig_signal_quintiles.tsv --> in the top quintile.
-Prior-only scored 0 in every quintile. Precision@1 was not broken
-down by module family, because 552 of the 775 H genes with a prediction fall in the "other" family
-<!-- src: results/revision/a4_family_hits_H.tsv -->.
+<!-- src: results/holdout_eval/fig_signal_quintiles.tsv --> (Fig 2C). GLS showed the same gradient, reaching 0.074
+<!-- src: results/holdout_eval/fig_signal_quintiles.tsv --> in the top quintile.
 
 **Calibration [pre-specified].** The calibration model was fitted on the 775
 <!-- src: results/holdout_eval/calibration.md --> H genes with a top term and evaluated by 10-fold cluster
 cross-fitting. Out of fold, the calibration slope was 0.82 (Wald 95% CI 0.51–1.13) and the intercept −0.01 (−0.44 to
 0.43) <!-- src: results/holdout_eval/calibration.md --> (Fig 2D). Neither interval crosses the pre-specified
-poor-calibration bound, so the pre-specified caveat branch was not triggered. That is a statement about detectability,
-not adequacy. The model rests on 24 events among 775 genes, with seven parameters besides the intercept (3.4 events per
-parameter); the cluster-bootstrap slope interval is 0.59–1.09, the c-statistic is 0.855 (cluster-bootstrap 0.805–0.903),
-and the mean prediction exceeds the observed rate by only 0.0001 <!-- src: results/revision/a4_calibration_models.tsv -->
-[post-review exploratory]. With a 3.1% <!-- src: results/holdout_eval/calibration.md --> base rate, the Brier score
-(0.0294) was barely below that of a constant-rate prediction (0.0300) <!-- src: results/holdout_eval/calibration.md -->,
-a Brier skill of 0.021 <!-- src: results/revision/a4_calibration_models.tsv -->, and the Brier interval (0.0198–0.0412)
-<!-- src: results/holdout_eval/calibration.md --> contains the constant-rate value. We therefore describe p_cal as not
-detectably miscalibrated, with wide uncertainty. In the five lowest deciles (p_cal ≤ 0.013) no prediction was
-confirmed; in the top decile, a mean prediction of 0.170 compared with an observed rate of 0.115 (0.062–0.205)
-<!-- src: results/holdout_eval/calibration.md -->. Two of the four sign-constrained coefficients, for R(g) and term
-size, were fitted at their bound of 0 <!-- src: results/holdout_eval/calibration.md -->. The signalling/lineage family
-had no hits in H and received a coefficient of −11.86 <!-- src: results/holdout_eval/calibration.md -->, which sets its
-p_cal to about zero. This is quasi-separation: 0 of 111 signalling genes were hits, and the one-sided 95% upper bound
-on their hit rate is 0.027 <!-- src: results/revision/a4_family_hits_H.tsv; results/revision/numbers_a4.json -->. Because every signalling gene ranks
-below every hit, separation also inflates the c-statistic; without the signalling genes the out-of-fold slope was
-unchanged (0.82, 0.51–1.13) and c fell to 0.830 (664 genes) <!-- src: results/revision/numbers_a4.json -->
-[post-review exploratory]. As a further sensitivity, models with top-K mean zavg_BEF alone (24 events per parameter),
-or with annotation coverage added, cross-fitted in the same way, gave slopes of 0.93 (0.60–1.25) and 0.89 (0.57–1.21),
-c-statistics of 0.835 and 0.832, and Brier skills of 0.037 and 0.036
-<!-- src: results/revision/a4_calibration_models.tsv --> (S4D Fig): the simpler models calibrate at least as well as the
-frozen one, which is consistent with over-parameterisation of the frozen model rather than with signal it misses. Five families had only 10–19 H genes each <!-- src: results/holdout_eval/calibration.md --> and so
-receive no p_cal under the support rule. A model fitted on LOO genes instead (secondary) predicted a mean of 0.089
-against an observed 0.031 on H, with intercept −1.39 (−1.84 to −0.95) <!-- src: results/holdout_eval/SUMMARY.md -->.
-Current annotations of characterised genes therefore overstate, roughly threefold, the chance that a prediction for a
-newly studied gene will be confirmed.
+poor-calibration bound, so the caveat branch was not triggered. That is a statement about detectability, not adequacy
+[post-review exploratory]. The model rests on 24 events among 775 genes, with seven parameters besides the intercept
+(3.4 events per parameter) <!-- src: results/revision/a4_calibration_models.tsv -->. With a 3.1%
+<!-- src: results/holdout_eval/calibration.md --> base rate, its Brier score (0.0294) was barely below that of a
+constant-rate prediction (0.0300) <!-- src: results/holdout_eval/calibration.md -->, a Brier skill of 0.021
+<!-- src: results/revision/a4_calibration_models.tsv -->. The signalling family, with 0 hits among 111 genes, is
+quasi-separated, which sets its p_cal to about zero <!-- src: results/revision/a4_family_hits_H.tsv -->. Models with
+one or two covariates calibrate comparably (slopes 0.93 and 0.89, with intervals overlapping the frozen model's; c 0.835
+vs 0.855) <!-- src: results/revision/a4_calibration_models.tsv --> (S4D Fig; S1 Text). We therefore describe p_cal as
+not detectably miscalibrated, with wide uncertainty. A model fitted on LOO genes instead (secondary) predicted a mean of
+0.089 against an observed 0.031 on H <!-- src: results/holdout_eval/SUMMARY.md -->: current annotations of
+characterised genes overstate, roughly threefold, the chance that a prediction for a newly studied gene will be
+confirmed.
 
 **Named controls [pre-specified case series].** Of the 14 named controls, 9
 <!-- src: results/holdout_eval/controls_case_series.tsv --> are in H (Fig 2E). TMEM242's true term ranked first of 77
-reportable terms and PEDS1's seventh of 79; AIRIM's ranked 89th of 125
-<!-- src: results/holdout_eval/controls_case_series.tsv -->. For the other controls no clean true term was ranked,
-mostly because their new annotations cite DepMap or co-essentiality papers and were excluded. This applied to the single
-new term of SPRING1, TEDC1, TEDC2, POU2AF2 and POU2AF3, to 4 of 5 for CCDC32, 20 of 23 for SLC25A51 and 17 of 18 for
-FIRRM <!-- src: results/holdout_eval/controls_case_series.tsv -->. [Post-review exploratory] INTS15 and TMEM41B missed
-for a different reason: the network was right but the t0 vocabulary could not express it. All of INTS15's top ten
-partners are Integrator subunits or INIP, and its top terms were snRNA metabolism and snRNA transcription; but of its 11
-new GO terms, 8 were not reportable, because fewer than two of its neighbours carried them at t0, and 3 fell outside the
-term-size window <!-- src: results/revision/a8_control_target_reasons.tsv -->. TMEM41B's partners (VMP1, SYVN1, DERL2,
-SEL1L and others) gave ER-stress and ERAD terms, while 16 of its 17 new terms, including autophagosome assembly, were
-supported at t0 by at most one neighbour <!-- src: results/revision/a8_control_target_reasons.tsv -->. For these
-controls, t0 annotation of the neighbours, not the network, limited accuracy. (The descriptive module label for SPRING1 was the
-SREBP–SCAP complex <!-- src: results/holdout_eval/controls_case_series.tsv -->.) Much of the recent literature on these
-controls depends on co-essentiality itself, so the case series cannot serve as independent validation.
+reportable terms and PEDS1's seventh of 79 <!-- src: results/holdout_eval/controls_case_series.tsv -->. For most other
+controls no clean true term was ranked, because their new annotations cite DepMap or co-essentiality papers and were
+excluded (for example 20 of 23 for SLC25A51 <!-- src: results/holdout_eval/controls_case_series.tsv -->). [Post-review
+exploratory] INTS15 and TMEM41B missed for a different reason: their partners were right (Integrator subunits; VMP1 and
+ERAD factors), but the terms curators later added were carried by fewer than two of their neighbours at t0
+<!-- src: results/revision/a8_control_target_reasons.tsv --> (S1 Text). Because much recent literature on these
+controls depends on co-essentiality itself, the case series cannot serve as independent validation.
 
-**Complementarity [exploratory; post hoc, logged in LOOKS.md].** After seeing the primary results, we asked whether
-co-essentiality adds to the stronger baselines. Both zavg_BEF and homology were right for 9
-<!-- src: results/holdout_eval/exploratory_complementarity.md --> genes; zavg_BEF alone was right for 15 genes and
-homology alone for 167 <!-- src: results/holdout_eval/exploratory_complementarity.md -->, so the union, which credits a
-gene if either method is right, reached 0.236 (0.206–0.266), 0.019 <!-- src: results/holdout_eval/exploratory_complementarity.md -->
-above homology. That union is an oracle upper bound, not a usable rule. [Post-review exploratory] The deployable rule
-"homology where it makes a prediction, otherwise zavg_BEF" reached 0.224 (0.190–0.259), a gain over homology of +0.006
-(+0.001 to +0.012); the reverse priority reached 0.036 <!-- src: results/revision/a7_combination_rules.tsv -->. In the
-348 genes without a homology prediction, zavg_BEF reached 0.014 (0.003–0.029; 5 hits)
-<!-- src: results/holdout_eval/exploratory_complementarity.md -->, and in the 81 genes without a hu.MAP partner, 0
-<!-- src: results/holdout_eval/exploratory_complementarity.md -->. Within the top five terms, zavg_BEF found a true term
-for 0.067 of genes and prior-only for 0.069 <!-- src: results/holdout_eval/exploratory_complementarity.md -->.
-Co-essentiality thus adds a few distinct correct calls but does not replace homology- or interaction-based annotation.
+**Complementarity [exploratory; post hoc, logged in LOOKS.md].** zavg_BEF alone was right for 15 genes, homology alone
+for 167 and both for 9 <!-- src: results/holdout_eval/exploratory_complementarity.md -->. The oracle union, which credits
+a gene if either method is right, reached 0.236 (cluster bootstrap 0.202–0.272)
+<!-- src: results/revision/a7_combination_rules.tsv -->, an upper bound rather than a usable rule. [Post-review
+exploratory] The deployable rule "homology where it makes a prediction, otherwise zavg_BEF" reached 0.224
+(0.190–0.259), a gain over homology of +0.006 (+0.001 to +0.012) <!-- src: results/revision/a7_combination_rules.tsv -->;
+in the 348 genes without a homology prediction, zavg_BEF reached 0.014 (5 hits)
+<!-- src: results/holdout_eval/exploratory_complementarity.md -->. Co-essentiality thus adds a few distinct correct calls
+but does not replace homology- or interaction-based annotation.
 
 ## C3: calibrated predictions for U are uniformly low, and the low-yield branch applies
 
@@ -413,411 +355,245 @@ Co-essentiality thus adds a few distinct correct calls but does not replace homo
 with the hold-out code path, and 4,137 <!-- src: results/ledger/pcal_summary.json --> received a reportable top term.
 Of these, 2,583 <!-- src: results/ledger/pcal_summary.json --> were inside calibration support, 133
 <!-- src: results/ledger/pcal_summary.json --> received only a boundary upper bound and 1,421
-<!-- src: results/ledger/pcal_summary.json --> were out of support (Fig 3D). Low neighbourhood annotation coverage was the
-commonest reason (536 <!-- src: results/ledger/pcal_summary.json --> genes). The family rule removed every prediction in
-the five under-represented families: 119 centrosome/cilia/mitosis, 106 ribosome/translation, 97 nuclear RNA machinery,
-70 DNA replication/repair and 49 mitochondrial <!-- src: results/ledger/pcal_summary.json --> genes. Another 96
-<!-- src: results/ledger/pcal_summary.json --> genes were excluded because their signal exceeded H's 95th percentile.
-Calibration therefore leaves out the machinery modules and the strongest signals, where co-essentiality is best
-established and, on H, most accurate (Fig 2C). Among the 646 assessable genes, 269
-<!-- src: results/ledger/M6_SUMMARY.md --> are in support. A secondary, uncalibrated list (S20) of the strongest
-predictions without p_cal was defined before any literature step [deviation] and is analysed under C4.
+<!-- src: results/ledger/pcal_summary.json --> were out of support (Fig 3D). The support rule removed every prediction
+in five under-represented machinery families and 96 <!-- src: results/ledger/pcal_summary.json --> genes whose signal
+exceeded H's 95th percentile (S1 Text), so calibration leaves out the domain where co-essentiality is best established
+and, on H, most accurate (Fig 2C). Among the 646 assessable genes, 269 <!-- src: results/ledger/M6_SUMMARY.md --> are
+in support. A secondary, uncalibrated list (S20) of the strongest predictions without p_cal was defined before any
+literature step [deviation] and is analysed under C4.
 
-**Calibrated probabilities [pre-specified].** No in-support U gene reached the Tier B threshold of 0.3, let alone the
-Tier A threshold of 0.5. The largest in-support p_cal was 0.141 <!-- src: results/ledger/pcal_summary.json -->; the
-1,421 <!-- src: results/ledger/pcal_summary.json --> genes without p_cal, which include the strongest signals and S20, have no calibrated value to compare. Among
-expressed, assessable genes in support the median was 0.014 and the 90th percentile 0.047
-<!-- src: results/ledger/pcal_summary.json --> (Fig 3A). This ceiling follows from the model: with an H hit rate of 3%
-<!-- src: results/holdout_eval/calibration.md --> and covariates bounded by H's 95th percentiles (top-K mean zavg_BEF ≤
-10.99, coverage percentile ≤ 0.894 <!-- src: results/holdout_eval/calibration.md -->), the fitted model cannot reach
-0.3 inside support <!-- src: results/ledger/M6_SUMMARY.md -->.
+**Calibrated probabilities and decision branch [pre-specified].** No in-support U gene reached the Tier B threshold of
+0.3, let alone the Tier A threshold of 0.5. The largest in-support p_cal was 0.141
+<!-- src: results/ledger/pcal_summary.json -->; among expressed, assessable genes in support the median was 0.014 and the
+90th percentile 0.047 <!-- src: results/ledger/pcal_summary.json --> (Fig 3A). This ceiling follows from the model: with
+an H hit rate of 3% <!-- src: results/holdout_eval/calibration.md --> and covariates bounded by H's 95th percentiles,
+the fitted model cannot reach 0.3 inside support <!-- src: results/ledger/M6_SUMMARY.md -->. With no Tier A or Tier B
+gene <!-- src: results/ledger/M6_SUMMARY.md -->, the pre-specified low-yield branch applies: the paper leads with C1 and
+C2, the top 40 is filled by p_cal, and thresholds are not relaxed. Because C2 passed and at least 100 genes are
+assessable, the catalogue remains calibrated rather than descriptive.
 
-**Σp_cal [pre-specified headline].** Summed over the 2,583 in-support genes, the expected number of top terms that later
-experimental annotation will confirm within about eight years <!-- src: config/frozen.yaml --> is **30.5 (95% CI
-13.8–49.7)** <!-- src: results/ledger/pcal_summary.json -->, a mean of about 1.2% per gene
+**Σp_cal [pre-specified headline].** Summed over the 2,583 in-support genes, the expected number of top terms that would
+be confirmed if every gene gained new experimental BP/MF annotation within about eight years
+<!-- src: config/frozen.yaml --> (conditional; see below) is **30.5 (95% CI 13.8–49.7)**
+<!-- src: results/ledger/pcal_summary.json -->, a mean of about 1.2% per gene
 <!-- src: results/ledger/pcal_summary.json --> (Fig 3B). Over the 269 expressed, assessable genes in support it is 5.5
-(2.8–8.6) <!-- src: results/ledger/pcal_summary.json -->. The 133 boundary genes add an upper bound of 1.0 (0.5–1.9)
-<!-- src: results/ledger/pcal_summary.json -->, and Tier A contributes 0. The interval reflects parameter uncertainty
-in the expectation; it is not a prediction interval for the realised count, which has a further Poisson-binomial
-standard deviation of about 5.5 <!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->.
+(2.8–8.6) <!-- src: results/ledger/pcal_summary.json -->. The interval reflects parameter uncertainty in the
+expectation; it is not a prediction interval for the realised count, which has a further Poisson-binomial standard
+deviation of about 5.5 <!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->.
 
-**p_cal is conditional on later annotation [post-review exploratory].** The model was fitted on H, and H contains only
-genes that gained at least one experimental target. p_cal therefore estimates the probability that the top term is
-confirmed *given that the gene receives new experimental BP/MF annotation*, not the unconditional probability of
-confirmation; the design text and our first draft read it unconditionally. Of the 4,822 t0-eligible genes with a
-reportable top term, 775 (16.1%, 15.1–17.1%) gained such annotation over the 7.9-year horizon
-<!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->. Scaling by this rate, the unconditional expectation over the
-2,583 in-support genes is about 4.9 (2.2–8.1), and about 0.40 (0.21–0.64) for the primary top 40
-<!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->. Gaining annotation is not independent of signal (gain rate
-0.13–0.14 in the four lower quintiles of top-K mean zavg_BEF and 0.25 in the highest
-<!-- src: results/revision/a3_gain_rate_by_signal_quintile.tsv; results/revision/numbers_a3.json -->); with quintile-specific rates the expectation is 5.1
-(2.4–8.3) <!-- src: results/revision/a3_gain_rate_by_signal_quintile.tsv; results/revision/numbers_a3.json -->. The annual hazard of gaining annotation
-was similar for the 2018 cohort, a 2022 cohort and 2018 genes still uncharacterised in 2022 (0.0225, 0.0222 and 0.0199)
-<!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->, so the rate has been roughly stationary, but large
-phylogenetic and AI-assisted annotation efforts [44] could change it, and U genes, which stayed
-uncharacterised until 2026, may be annotated more slowly than the 2018 cohort.
-
-**Other sensitivities of Σp_cal [post-review exploratory].** The 403 in-support signalling genes contribute 0.00004
-because of the separated family coefficient; at the upper bound of the signalling hit rate they would contribute up to
-10.7 <!-- src: results/revision/numbers_a4.json -->. Expressed in-support genes contribute 20.0 of the 30.5
-<!-- src: results/revision/numbers_a4.json -->; the remainder comes from non-expressed genes, whose profiles we
-argue carry little functional signal. Under the simpler calibration models, Σp over the same 2,583 genes was 41.6 (zavg_BEF
-only) and 38.6 (with coverage) <!-- src: results/revision/a4_simple_models_on_U.tsv -->; their top 40s shared only 7 and
-14 genes with the primary top 40, because without the family term mitoribosomal and ribosome-biogenesis genes enter
-<!-- src: results/revision/a4_simple_model_top40.tsv -->.
-
-**Decision branch [pre-specified].** Tier A has 0 genes and Tier B has 0 <!-- src: results/ledger/M6_SUMMARY.md -->.
-With fewer than 10 Tier A genes, the pre-specified low-yield branch applies: the paper leads with C1 and C2, the top 40
-is filled by p_cal, and thresholds are not relaxed. Because C2 passed and 646 genes are assessable (≥ 100), the
-catalogue remains calibrated rather than descriptive.
-
-**False calls among clean negatives [pre-specified].** Of 1,167 <!-- src: results/ledger/negative_control.tsv -->
-scorable clean-negative genes, 708 <!-- src: results/ledger/negative_control.tsv --> received an in-support p_cal. None
-was Tier-A-like (rate 0, one-sided 95% upper bound 0.0026) <!-- src: results/ledger/negative_control.tsv -->, and none
-was Tier-B-like, in every profile tertile. This zero rate is uninformative, because no expressed gene reached the
-thresholds either. Clean negatives had a median p_cal of 0.010 and a maximum of 0.057
-<!-- src: results/ledger/negative_control.tsv -->, against 0.014 and 0.141
-<!-- src: results/ledger/negative_control.tsv --> for expressed, assessable genes (Fig 3A); p_cal separates the groups
-mainly in the upper tail.
-
-**Artefact flags [pre-specified].** Among the 4,137 predictions, locus flags touched 17, copy-number flags 1 and hub
-partners 511 <!-- src: results/ledger/M6_SUMMARY.md -->; 218 <!-- src: results/ledger/M6_SUMMARY.md --> predictions were
-hub-driven. In total 293 <!-- src: results/ledger/M6_SUMMARY.md --> carry a built-in exclusion from Tier A (a flag on
-at least half of the supporting partners, or hub-driven). The locus flag was applied without strand information, as a
-superset of the frozen rule [deviation].
-
-**Orthogonal support separates real from control predictions only weakly [pre-specified].** The support test was run on
-247 <!-- src: results/ledger/false_support.tsv --> anchor genes (all candidates evaluated during the top-40 fill),
-together with one matched-gene prediction and one decoy-term prediction per anchor. The Tier-A support rule was met by
-0.320 of real predictions, 0.279 of matched-gene predictions and 0.223 of decoy predictions
-<!-- src: results/ledger/false_support.tsv --> (Fig 3C). In a paired comparison over the same anchors [exploratory; a post hoc test, unadjusted],
-real predictions passed the rule more often than decoys (+0.097; 54 vs 30 discordant pairs; exact McNemar p = 0.012)
-<!-- src: manuscript/figures/source_data/derived_numbers.tsv --> but not detectably more often than matched-gene
-predictions (+0.040; 47 vs 37; p = 0.33) <!-- src: manuscript/figures/source_data/derived_numbers.tsv -->.
-Physical-interaction support showed the clearest contrast (0.12 real, 0.03 matched, 0.01 decoy), whereas co-abundance
-and localisation support were common in all three sets <!-- src: results/ledger/false_support.tsv -->. Contradictions
-were rare (0.004 of real predictions) and arose only through the four-source localisation reading [deviation]; the
-HPA-only rule never fired <!-- src: results/ledger/false_support.tsv -->. At the gene level, orthogonal "support" under
-this rule is weak evidence. It is reported for every candidate but upgrades no prediction; the physical class alone is
-the most informative orthogonal readout, and Table 3 reports it separately.
+**p_cal is conditional on later annotation [post-review exploratory].** H contains only genes that gained at least one
+experimental target, so p_cal estimates the probability that the top term is confirmed *given that the gene receives
+new experimental BP/MF annotation*, not the unconditional probability of confirmation (Methods). Of the 4,822
+t0-eligible genes with a reportable top term, 775 (16.1%, 15.1–17.1%) gained such annotation over the 7.9-year horizon
+<!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->. If the 2018 cohort's
+annotation rate applies to U, the unconditional expectation over the 2,583 in-support genes is about 4.9 (2.2–8.1), with
+a Poisson-binomial SD of the realised count of about 2.2
+<!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->. Gaining annotation is not
+independent of signal (gain rate 0.13–0.14 in the four lower quintiles of top-K mean zavg_BEF and 0.25 in the highest
+<!-- src: results/revision/a3_gain_rate_by_signal_quintile.tsv; results/revision/numbers_a3.json -->); with
+quintile-specific rates the expectation is 5.1 (2.4–8.3)
+<!-- src: results/revision/a3_gain_rate_by_signal_quintile.tsv; results/revision/numbers_a3.json -->, and with the lower
+hazard of 2018 genes still uncharacterised in 2022, which resemble U, it is about 4.4
+<!-- src: results/revision/a10_round2_numbers.tsv -->. The annual hazard was similar for the 2018 cohort, a 2022 cohort
+and those survivors (0.0225, 0.0222 and 0.0199)
+<!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->, but large phylogenetic and
+AI-assisted annotation efforts [44] could change it.
 
 **Top 40 [pre-specified fill; deviation in its reading].** The fill pool held 269
 <!-- src: manuscript/figures/source_data/derived_numbers.tsv --> expressed, assessable, in-support genes, of which 24
 <!-- src: manuscript/figures/source_data/derived_numbers.tsv --> were removed by a built-in artefact exclusion (23) or a
 contradiction (1). With no tiered gene, the frozen order Tier A → Tier B → p_cal reduces to p_cal. The top-40-only
-checks are tier caps ("Tier B at best"), so they are shown as labels, not demotions (PI ruling before any literature
-step) [deviation]. The primary top 40 is therefore the 40 highest p_cal values after exclusions (Fig 4). The pool
-contains no mitochondrial-family genes <!-- src: manuscript/figures/source_data/derived_numbers.tsv -->, so the
-mitochondrial cap did not bind. p_cal in the top 40 ranges from 0.036 to 0.141
+checks (lineage leave-out, DEMETER2 RNAi replication [59] and TP53 status) are tier caps, so they are shown
+as labels, not demotions (PI ruling before any literature step) [deviation]. The primary top 40 is therefore the 40
+highest p_cal values after exclusions (Fig 4). p_cal ranges from 0.036 to 0.141
 <!-- src: manuscript/figures/source_data/derived_numbers.tsv -->, and the sum is 2.50
 <!-- src: manuscript/figures/source_data/derived_numbers.tsv --> (point estimate): about two to three of these 40 top
-terms are expected to be confirmed if every gene is later annotated, and about 0.4 unconditionally
-<!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json --> [post-review exploratory]. Thirty-six top terms fall in the "other" family and 4 in ER/Golgi/secretory
-<!-- src: manuscript/figures/source_data/derived_numbers.tsv -->. The commonest terms are transcription elongation,
-epigenetic regulation of gene expression and response to ER stress (3 genes each)
-<!-- src: manuscript/figures/source_data/derived_numbers.tsv -->.
+terms would be confirmed if every gene were later annotated. [Post-review exploratory] The top 40 lies in the highest
+signal quintile, where the annotation rate is higher, so the unconditional expectation is about 0.4–0.6 (signal-adjusted
+0.64, 0.32–1.02) <!-- src: results/revision/a3_gain_rate_by_signal_quintile.tsv; results/revision/numbers_a3.json -->;
+with 31 <!-- src: manuscript/figures/source_data/Fig5c_novelty_class.tsv --> of these genes already published (C4), their rate is probably higher still. Thirty-three of the 40
+<!-- src: manuscript/figures/source_data/derived_numbers.tsv --> genes fail at least one top-40 check. The DEMETER2
+check failed for 182 of 204 <!-- src: results/ledger/M6_SUMMARY.md --> measured pool genes and was never validated on
+positive controls, so a DEMETER2 flag is not evidence against a prediction (S1 Text). The implementing agent's
+"clean-first" list, which applied the checks as demotions, shares 20
+<!-- src: manuscript/figures/source_data/derived_numbers.tsv --> genes with the primary top 40 (S3 Table).
 
-The top-40-only checks were strict. Thirty-three of the 40
-<!-- src: manuscript/figures/source_data/derived_numbers.tsv --> genes fail at least one. The lineage leave-out changed
-the top term for 10 <!-- src: manuscript/figures/source_data/derived_numbers.tsv --> genes. DEMETER2 RNAi
-[59] did not replicate the partner correlations for 24 of the 30
-<!-- src: manuscript/figures/source_data/derived_numbers.tsv --> genes in which it could be measured, and 11
-<!-- src: manuscript/figures/source_data/derived_numbers.tsv --> genes carry a TP53 flag. Across the pool, DEMETER2 failed
-to replicate for 182 of 204 <!-- src: results/ledger/M6_SUMMARY.md --> measured genes, a rate that may reflect the RNAi
-data as much as the predictions; we report it without adjustment. The check was never validated on positive controls,
-and the S20 machinery genes, on which it could have been, have no p_cal and were not scored, so a DEMETER2 flag should
-not be read as evidence against a prediction. Twenty-seven of the top 40 have support from at least
-one orthogonal class, and 25 have diagnostic-class support
-<!-- src: manuscript/figures/source_data/derived_numbers.tsv -->; given the false-support rates above, these counts
-should not be read as validation. The "clean-first" list built by the implementing agent shares 20
-<!-- src: manuscript/figures/source_data/derived_numbers.tsv --> genes with the primary top 40 and has Σp_cal 2.04
-(1.05–3.24) <!-- src: results/ledger/M6_SUMMARY.md -->; it is reported as a sensitivity analysis (S3 Table).
+**Controls for the catalogue [pre-specified].** None of the 708 <!-- src: results/ledger/negative_control.tsv -->
+in-support clean-negative genes reached either tier threshold, which is uninformative because no expressed gene did
+either; their p_cal was lower mainly in the upper tail (maximum 0.057 against 0.141
+<!-- src: results/ledger/negative_control.tsv -->; Fig 3A). Artefact flags gave a built-in Tier-A exclusion to 293 of the 4,137
+<!-- src: results/ledger/M6_SUMMARY.md --> predictions, mostly hub-driven (S1 Text). Orthogonal support
+separated real from control predictions only weakly: over 247 anchors, the Tier-A support rule was met by 0.320 of real
+predictions, 0.279 of matched-gene predictions and 0.223 of decoy-term predictions
+<!-- src: results/ledger/false_support.tsv --> (Fig 3C; paired tests in S1 Text). Orthogonal "support" therefore upgrades
+no prediction; physical-interaction support gave the clearest contrast, and Table 2 reports it separately.
 
 ## C4: blinded literature concordance supports the top predictions, mostly as rediscovery of published function
 
-**Candidate sets.** Four gene sets entered the literature step (Fig 5A). The primary set is the top 40 by p_cal. Two
-sets are secondary. S20 holds the 20 strongest predictions that have no p_cal, because their family has fewer than 30 H
-genes or their signal exceeds H's 95th percentile <!-- src: results/m7/s20.tsv -->; it was defined after the U
-predictions but before any literature step, and is analysed separately [deviation]. Extra30 holds 30 further genes from
-the fill pool, six in each p_cal quintile (p_cal 6 × 10⁻⁸ to 0.099) <!-- src: results/m7/extra30.tsv -->
-[pre-specified secondary]. The fourth set, 10 H genes whose "real" statement is a known current target term, served only
-to validate the judges <!-- src: results/m7/hval10.tsv --> [pre-specified]. Judged statements contained the predicted GO
-term and the descriptive module label only; the relationship type was dropped for every statement, because types
-existed for none of the decoy donors and would have marked the real slot [deviation]. This makes statements less
-falsifiable and easier to support. The judge instruction also credited a match to "the stated process or module",
-so a match to the module label alone counted as support; this operationalisation was not logged before judging and was
-entered in DEVIATIONS.md retrospectively [deviation, logged after the result], so we report term-only results beside
-the primary ones.
+**Candidate sets.** Four gene sets entered the literature step (Fig 5A). The primary set is the top 40 by p_cal. S20
+holds the 20 strongest predictions that have no p_cal, because their family has fewer than 30 H genes or their signal
+exceeds H's 95th percentile <!-- src: results/m7/s20.tsv -->; it was defined before any literature step and is analysed
+separately [deviation]. Extra30 holds 30 further fill-pool genes, six in each p_cal quintile (p_cal 6 × 10⁻⁸ to 0.099)
+<!-- src: results/m7/extra30.tsv --> [pre-specified secondary]. Ten H genes whose "real" statement is a known current
+target term served only to validate the judges <!-- src: results/m7/hval10.tsv --> [pre-specified]. Judged statements
+contained the predicted GO term and the descriptive module label but not the relationship type, which existed for no
+decoy donor and would have marked the real slot [deviation]. The judge instruction credited a match to "the stated
+process or module", so a module-label match counted as support; this was entered in DEVIATIONS.md only after the result
+[deviation, logged after the result], and term-only results are reported beside the primary ones (Methods).
 
-**Closed-book recall probe [pre-specified; extended to S20 and extra30].** Before any agent saw network output for
-these genes, a fresh language model without tools stated what it knew of each gene from its symbol and aliases. It
-"recognised" 52 of the 90 <!-- src: results/m7/recall_probe_90.tsv --> candidates: 22 of 40 in the top 40, 19 of 20 in
-S20 and 11 of 30 in extra30 <!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->. Recognition followed
-the literature class assigned later by the literature agent L (Fig 5D): 43 of 59 N1, 8 of 24 N2 and 1 of 7 N3
-candidates <!-- src: manuscript/figures/source_data/Fig5d_recall_probe.tsv -->, as in the random 50 U genes (18 of 21 N1,
-3 of 13 N2 and 3 of 16 N3 <!-- src: manuscript/figures/source_data/Fig5d_recall_probe.tsv -->). A language model
-therefore already knows most published-but-uncurated functions. This is why the judges saw only evidence that agent L
-had retrieved, under a redacted gene name, and were told not to use their own knowledge.
+**Recall probe and blind literature screen [pre-specified; extended].** Before any agent saw network output for these
+genes, a closed-book language model "recognised" 43 of 59 N1 candidates but 1 of 7 N3 candidates
+<!-- src: manuscript/figures/source_data/Fig5d_recall_probe.tsv --> (Fig 5D; S1 Text). A language model therefore
+already knows most published-but-uncurated functions, which is why the judges saw only evidence retrieved by a separate
+agent, L, under a redacted gene name. Agent L, with no access to co-essentiality output or to our predictions, recorded
+887 evidence items with verbatim spans for the 100 genes
+<!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->. Among the 90 U candidates, 59 were N1, 24 N2 and 7
+N3 <!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->; in the primary top 40 the split was 31 N1, 7
+N2 and 2 N3, and in S20 17 N1 and 3 N2 <!-- src: manuscript/figures/source_data/Fig5c_novelty_class.tsv --> (Fig 5C).
+These sets were selected on p_cal or signal and do not estimate a prevalence, but the highest-ranked predictions are
+concentrated in genes whose function is already published but not yet in GO experimental annotation: 78% of the top 40
+and 85% of S20 <!-- src: manuscript/figures/source_data/Fig5c_novelty_class.tsv -->. [Post-review exploratory] The
+definition artefacts described under C1 are concentrated here: 37 of the top 40 and all 20 S20 genes entered U through
+the literature criterion alone, and 30 of the top 40 and all of S20 carry a definition-artefact flag (13 and 17 are
+Complex Portal subunits) <!-- src: results/revision/a1_flag_counts.tsv -->.
 
-**Blind literature screen: curation lag among candidates [pre-specified; extended].** Agent L had no access to
-co-essentiality output or to our predictions. For the 100 genes it recorded 887 evidence items, each with a verbatim
-span; 518 were focused functional studies and 4 were flagged as DepMap-derived
-<!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->. Among the 90 U candidates, 59 were N1 (direct
-functional evidence), 24 N2 (partial) and 7 N3 (none) <!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->.
-In the primary top 40 the split was 31 N1, 7 N2 and 2 N3; in S20 17 N1 and 3 N2; and in extra30 11 N1, 14 N2 and 5 N3
-<!-- src: manuscript/figures/source_data/Fig5c_novelty_class.tsv --> (Fig 5C). Including the 10 H validation genes, all
-N1 as expected <!-- src: results/m7/judge/analysis_hval_genes.tsv -->, agent L classed 69 of 100 genes as N1
-<!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->; the 10 H genes are N1 by construction, so the
-relevant count is 59 of the 90 U candidates
-<!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->, which were selected on p_cal or signal and therefore do not estimate a
-prevalence. For comparison, the random 50 U genes had 21 N1,
-13 N2 and 16 N3 <!-- src: results/audit/curation_lag_audit.md --> (a different auditor; descriptive comparison). Our
-highest-ranked predictions are thus concentrated in genes whose function is already published but not yet in GO
-experimental annotation: 78% of the top 40 and 85% of S20 <!-- src: manuscript/figures/source_data/Fig5c_novelty_class.tsv -->.
-[Post-review exploratory] The definition artefacts described under C1 are concentrated here: 37 of the top 40 and all
-20 S20 genes entered U through the literature criterion alone, and 30 of the top 40 and all of S20 carry a
-definition-artefact flag (13 and 17 are Complex Portal subunits) <!-- src: results/revision/a1_flag_counts.tsv -->.
-Across the 90 candidates, 58 of 80 D3-only genes were N1 against 1 of 10 genes with a low UniProt score
-<!-- src: results/revision/a1_N1_rates_by_route_and_flag.tsv -->.
-
-**Judge validation [pre-specified].** On the 10 H genes, adjudicated scores supported 9 of 10 real statements and 1 of
+**Judges [pre-specified].** On the 10 H validation genes, adjudicated scores supported 9 of 10 real statements and 1 of
 30 decoys <!-- src: results/m7/judge/analysis_hval.md -->, meeting the acceptance rule (at least 7 of 10 real, at most 3
-of 30 decoys) at the first attempt. Between-instance agreement of the two judges was κ = 0.931 over 40 statements, with one
-disagreement <!-- src: results/m7/judge/analysis_hval.md -->, which the adjudicator resolved as supported; it is the
-single supported decoy <!-- src: results/m7/judge/scores/ADJ_hval.tsv -->.
+of 30 decoys) at the first attempt. Over the 360 main statements the two judges, two instances of one model (Methods),
+agreed with κ = 0.975, with 2 disagreements, both resolved by the adjudicator <!-- src: results/m7/judge/analysis_main.md -->.
+This is between-instance reproducibility, not validity, which rests on the validation set and the low decoy support
+rate. No packet leaked a gene or partner name <!-- src: results/m7/judge/leak_check.tsv -->.
 
-**Primary blinded test: top 40 [pre-specified; scoring operationalised, see above].** Each gene's packet held the real statement and three decoys in random
-order; the decoys were top terms of other U genes, matched on family and term size
+**Primary blinded test: top 40 [pre-specified; scoring operationalised, see above].** Each gene's packet held the real
+statement and three decoys in random order; the decoys were top terms of other U genes, matched on family and term size
 <!-- src: results/m7/answer_key_slots.tsv -->. Judges supported 18 of 40 real statements (45%, Wilson 95% CI 31–60%),
-left 20 unaddressed and scored 2 as contradicted <!-- src: results/m7/judge/analysis_main.md -->
-<!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->. They supported 3 of 120 decoys (2.5%)
-<!-- src: results/m7/judge/analysis_main.md -->. The mean of real minus mean decoy score was 0.375; with 20 non-zero
-differences, the exact one-sided sign-flip p was 2.2 × 10⁻⁴ <!-- src: results/m7/judge/analysis_main.md -->, so the
-primary test passes (Fig 5A). [Post-review exploratory] Counting support for the GO term only, which is what p_cal
-estimates, 16 of 40 real statements were supported (sign-flip p = 7.1 × 10⁻⁴); all six supported decoys across the
-sets were supported on the term <!-- src: results/revision/a5_judging_sensitivity.tsv; results/revision/a5_plus1_basis.tsv -->,
-so module crediting helped only real statements. An exact slot-permutation test, which uses the exchangeability of
-slots directly, gave p = 2.3 × 10⁻⁷ (term-only 2.6 × 10⁻⁶), and averaging the differences within clusters of genes that
-share a module label, because complex-mates share literature, gave p = 0.0022 over 17 non-zero clusters (term-only
-0.0058) <!-- src: results/revision/a5_judging_sensitivity.tsv -->. The conclusion does not depend on module crediting
-or on gene-level independence. The test is nonetheless easy: decoys are other genes' terms, so for a gene with
-literature the real statement can win on topic alone; within-gene decoys (the gene's own lower-ranked terms) would test
-whether the *top* prediction is preferred, and were not run. The two contradicted statements, for the N1 genes TLNRD1 and KDF1
-<!-- src: results/m7/judge/analysis_main_genes.tsv -->, failed on direction: TLNRD1 promotes rather than inhibits cell
-migration, and KDF1 inhibits rather than activates NF-κB signalling
-<!-- src: results/m7/judge/scores/J1_main2.tsv, J1_main3.tsv, J2_main2.tsv, J2_main3.tsv, ADJ_main2.tsv, ADJ_main3.tsv (packets J045, J048, J088, J098, J040, J095) -->. Support
-fell with rank: 12 of 20 for ranks 1–20 (p_cal 0.055–0.141) and 6 of 20 for ranks 21–40 (p_cal 0.036–0.050)
+left 20 unaddressed and scored 2 as contradicted <!-- src: results/m7/judge/analysis_main.md -->, both on direction (S1
+Text). They supported 3 of 120 decoys (2.5%) <!-- src: results/m7/judge/analysis_main.md -->. The mean of real minus
+mean decoy score was 0.375; with 20 non-zero differences, the exact one-sided sign-flip p was 2.2 × 10⁻⁴
+<!-- src: results/m7/judge/analysis_main.md -->, so the primary test passes (Fig 5A). [Post-review exploratory] Counting
+support for the GO term only, which is what p_cal estimates, 16 of 40 real statements were supported (sign-flip p = 7.1
+× 10⁻⁴); every supported decoy was supported on its term
+<!-- src: results/revision/a5_judging_sensitivity.tsv; results/revision/a5_plus1_basis.tsv -->. Slot-permutation and
+module-clustered tests gave the same conclusion (S1 Text). The test is nonetheless easy: decoys are other genes' terms,
+so for a gene with literature the real statement can win on topic alone; within-gene decoys (the gene's own
+lower-ranked terms) would test whether the *top* prediction is preferred, and were not run. Support fell with rank: 12
+of 20 for ranks 1–20 and 6 of 20 for ranks 21–40
 <!-- src: manuscript/figures/source_data/Fig5b_support_vs_pcal.tsv --> (Fig 5B).
 
 **Secondary sets [S20: deviation; extra30: pre-specified].** These sets were analysed separately and never pooled with
 the primary test. In S20, judges supported 19 of 20 real statements and 2 of 60 decoys (sign-flip p = 1.9 × 10⁻⁶)
 <!-- src: results/m7/judge/analysis_main.md -->; 15 of the 20 carry a Commander, complex I/OXPHOS or Elongator module
-label <!-- src: results/m7/s20.tsv --> (Table 2), the well-established machinery modules that the calibration support
-rule excludes. In extra30, judges supported 1 of 30 real statements and 1 of 90 decoys (p = 0.5)
-<!-- src: results/m7/judge/analysis_main.md -->; support was 0 of 6 in each of the four lowest p_cal quintiles and 1 of 6
-in the highest <!-- src: manuscript/figures/source_data/Fig5b_support_vs_pcal.tsv -->. Literature support therefore rose
-with p_cal across the fill pool (Fig 5B): 18 of 40 in the top 40 against 1 of 30 in extra30 (one-sided Fisher p = 5.6 ×
-10⁻⁵) [exploratory; post hoc, unadjusted] <!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->. The
-two extra30 genes whose p_cal exceeds the top-40 minimum, MARF1 (0.099, contradiction) and TMEM60 (0.037, built-in
-artefact exclusion), were excluded from the top 40 <!-- src: results/m7/extra30.tsv -->, which is why the highest
-extra30 bin overlaps the top-40 range. Literature support is a different and more lenient endpoint than p_cal, which
-estimates curation of the exact GO term with experimental evidence: the 18 (or 16) supported statements sit beside a
-summed p_cal of 2.50 for the top 40 <!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->, or about 0.4
-unconditionally <!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->. The gap measures how much more often
-"the literature reports the gene in this process or module" holds than "curators annotate this exact term".
+label <!-- src: results/m7/s20.tsv -->, the machinery modules that the calibration support rule excludes. In extra30,
+judges supported 1 of 30 real statements and 1 of 90 decoys (p = 0.5) <!-- src: results/m7/judge/analysis_main.md -->.
+Literature support therefore rose with p_cal across the fill pool (Fig 5B): 18 of 40 in the top 40 against 1 of 30 in
+extra30 (one-sided Fisher p = 5.6 × 10⁻⁵) [exploratory; post hoc, unadjusted]
+<!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->. Literature support is a different and more
+lenient endpoint than p_cal, which estimates curation of the exact GO term with experimental evidence: the 18 (or 16)
+supported statements sit beside a summed p_cal of 2.50 for the top 40
+<!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv --> if every gene were annotated, or about 0.4–0.6
+unconditionally (signal-adjusted 0.64, 0.32–1.02)
+<!-- src: results/revision/a3_gain_rate_by_signal_quintile.tsv; results/revision/numbers_a3.json --> [post-review
+exploratory]. The gap measures how much more often "the literature reports the gene in this process or module" holds
+than "curators annotate this exact term".
 
 **Support by novelty class [pre-specified reporting].** The support is mostly rediscovery. In the top 40, judges
 supported 16 of 31 N1, 2 of 7 N2 and 0 of 2 N3 genes <!-- src: results/m7/judge/analysis_main.md --> (Fig 5C); in S20,
 17 of 17 N1 and 2 of 3 N2 genes <!-- src: results/m7/judge/analysis_main.md -->. Of the 37 supported top-40 and S20
-genes, 33 are N1, and the recall probe recognised 35 <!-- src: manuscript/figures/source_data/Table2_rediscovery.tsv -->.
-Among N1 genes, whose function is published, the predicted function matched the published one for 16 of 31 in the top
-40 and 1 of 11 in extra30 <!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->. This is a direct,
-curation-independent estimate of accuracy among genes with literature (52% in the top 40
-<!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->), with the caveat that literature concordance is
-lenient. The contrast (one-sided Fisher p = 0.014 <!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->)
-[exploratory; post hoc, unadjusted, with only 11 N1 genes in extra30] suggests that higher-ranked predictions match published function more often, and not only because
-their genes are better studied, but it rests on one uncorrected test. [Post-review exploratory] In the top 40, judged
-support was 17 of 30 for genes with a definition-artefact flag and 1 of 10 for genes without
-<!-- src: results/revision/a1_judged_support_by_flag.tsv -->, so the judged successes are concentrated among complex
-subunits and other genes with published function that the definition missed. Only four supported
-genes are N2: TRAPPC5 and BICRAL in the top 40, NDUFB2 and MED9 in S20
-<!-- src: manuscript/figures/source_data/Table2_rediscovery.tsv -->. No N3 prediction could be checked against the
-literature by construction, and the top 40 contains only 2 N3 genes.
+genes, 33 are N1, and the recall probe recognised 35 <!-- src: manuscript/figures/source_data/Table2_rediscovery.tsv -->
+(Table A in S1 Text). Among top-40 genes with published function, selected on p_cal, the predicted function matched the
+published one for 16 of 31 (52%, Wilson 95% CI 35–68%); on the GO term alone it matched for 14 of 31 (45%), because
+YPEL5 and DPCD are N1 genes supported on the module label only <!-- src: results/revision/a10_round2_numbers.tsv -->.
+This is a curation-independent estimate of accuracy within that selected group, on a lenient endpoint. In extra30 the
+corresponding count was 1 of 11 N1 genes <!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv --> (one-sided
+Fisher p = 0.014 <!-- src: manuscript/figures/source_data/Fig5_derived_numbers.tsv -->) [exploratory; post hoc,
+unadjusted]. This suggests that higher-ranked predictions match published function more often, and not only because
+their genes are better studied; it rests on one uncorrected test with 11 extra30 genes. [Post-review exploratory] In
+the top 40, judged support was 17 of 30 for genes with a definition-artefact flag and 1 of 10 for genes without
+<!-- src: results/revision/a1_judged_support_by_flag.tsv -->. Only four supported genes are N2: TRAPPC5 and BICRAL in the
+top 40, NDUFB2 and MED9 in S20 <!-- src: manuscript/figures/source_data/Table2_rediscovery.tsv -->. No N3 prediction
+could be checked against the literature by construction.
 
-**Agreement and adjudication [pre-specified].** Over the 360 main statements the two judges, two instances of the same
-model (Claude Sonnet 5.5; adjudicator Claude Opus 5.5; docs/AGENT_PROMPTS.md), agreed with κ = 0.975, with 2
-disagreements and none left unresolved <!-- src: results/m7/judge/analysis_main.md -->. This is between-instance
-reproducibility, not validity: the judges read identical evidence tables under one rubric and scored most statements
-0. Validity rests on the validation set (9 of 10 real, 1 of 30 decoys <!-- src: results/m7/judge/analysis_hval.md -->) and
-the low decoy support rate. Both disagreements involved real
-statements, for WDR7 (S20) and DPCD (top 40); the adjudicator resolved both as supported because the evidence matched
-the module label, not the GO term <!-- src: results/m7/judge/scores/ADJ_main2.tsv -->
-<!-- src: results/m7/judge/scores/ADJ_main3.tsv -->. The judging rule credits a match to "the stated process or module"
-<!-- src: scripts/51_judge_packets.py --> and applied equally to decoys. Still, three supported real statements rest on
-the module label alone: YPEL5 (GID/CTLH complex; Wnt not shown), DPCD (R2TP/PAQosome; transcription elongation not
-shown) and WDR7 (V-ATPase/RAVE; iron homeostasis not shown)
-<!-- src: results/m7/judge/scores/J1_main2.tsv, J1_main3.tsv, J2_main2.tsv, J2_main3.tsv, ADJ_main2.tsv, ADJ_main3.tsv (packets J045, J048, J088, J098, J040, J095) -->, and for
-DDX19A, support for "cell population proliferation" came from cancer cell-line proliferation studies. Counting only
-term-level support, the top 40 has 16 supported real statements
-<!-- src: manuscript/figures/source_data/Table2_rediscovery.tsv; results/revision/a5_judging_sensitivity.tsv --> (see
-above). The judges' packets contained no
-gene-symbol or partner-name leaks <!-- src: results/m7/judge/leak_check.tsv -->.
+**Overlap with earlier catalogues [post-review exploratory].** For each candidate we asked whether the relationship
+between the gene and at least one of its ten strongest partners had already been published (S9 Table; S4B Fig). Of the
+primary top 40, 19 have a significant GLS pair and 22 share a tight module in the 2021 co-essentiality atlas
+[23], 17 share a hu.MAP 3.0 complex with a top-10 partner and 20 have a Predictomes AlphaFold pair (SPOC ≥
+0.5) <!-- src: results/revision/a2_novelty_overlap.tsv; manuscript/figures/source_data/FigS4_derived_numbers.tsv -->.
+Overall, 27 of the top 40 have a prior in a co-essentiality catalogue and 34 in any resource we obtained; only 6 have
+none, and all 20 S20 genes have a prior <!-- src: results/revision/a2_novelty_overlap.tsv -->. Wainberg et al. listed
+explicit function predictions for three of our top-40 genes, CCDC71L, C5orf34 and INAFM1
+<!-- src: results/revision/a2_novelty_overlap.tsv -->, all of which became candidate reports. These flags record that the
+link was published, not that the same function was assigned; Pan et al. [20], FIREWORKS [60] and
+Perturb-seq clusters [39] could not be checked, so the counts are lower bounds on prior knowledge.
 
-**Overlap with earlier catalogues [post-review exploratory].** The reports compared their predictions with published
-catalogues only as "agreement", so we quantified, for each candidate, whether the relationship between the gene and at
-least one of its ten strongest partners had already been published (S9 Table; S4B Fig). Of the primary top 40, 17 share
-a hu.MAP 3.0 complex with a top-10 partner, 20 have a Predictomes AlphaFold pair (SPOC ≥ 0.5), 19 have a significant GLS
-pair and 22 share a tight module in the 2021 co-essentiality atlas [23], and 9 have an edge or cluster in the
-2019 network [22] <!-- src: results/revision/a2_novelty_overlap.tsv; manuscript/figures/source_data/FigS4_derived_numbers.tsv -->.
-Overall, 27 of the top 40 have a prior in a co-essentiality catalogue and 34 in any resource we obtained; only 6
-(PLEKHH3, LGALS9B, FBXL18, SASH3, DDX19A and DPCD) have none <!-- src: results/revision/a2_novelty_overlap.tsv -->. All
-20 S20 genes have a prior <!-- src: results/revision/a2_novelty_overlap.tsv -->. Wainberg et al. listed explicit function
-predictions for three of our top-40 genes, CCDC71L, C5orf34 and INAFM1 <!-- src: results/revision/a2_novelty_overlap.tsv -->,
-all of which became candidate reports. These flags record that the co-essential or physical link was published, not that
-the same function was assigned; Pan et al. [20], FIREWORKS [60] and Perturb-seq clusters [39]
-could not be checked because no machine-readable gene-level table was obtainable. The counts are therefore lower bounds on
-prior knowledge.
-
-**Table 2. Top-40 and S20 predictions judged supported by the literature (blinded, adjudicated).**
-
-| Set, rank | Gene | Predicted GO term | Module label | p_cal | zavg | UniProt score; CP | L class | Probe | Basis |
-|---|---|---|---|---|---|---|---|---|---|
-| top 40, 1 | ANKRD52 | regulatory ncRNA-mediated gene silencing | RISC complex | 0.141 | – | 3; – | N1 | yes | term |
-| top 40, 3 | CNOT10 | regulation of RNA stability | CCR4-NOT deadenylase complex | 0.116 | – | 5; CP | N1 | yes | term |
-| top 40, 4 | TRAPPC5 | Golgi vesicle transport | TRAPP III complex | 0.114 | – | 4; CP | N2 | yes | term |
-| top 40, 6 | SSR4 | protein N-linked glycosylation | ER protein-containing complex | 0.091 | – | 5; CP | N1 | yes | term |
-| top 40, 7 | CNOT11 | regulation of RNA stability | CCR4-NOT deadenylase complex | 0.080 | – | 4; CP | N1 | yes | term |
-| top 40, 8 | MED31 | DNA-templated transcription initiation | RNA Pol II transcription regulator complex | 0.079 | – | 5; CP | N1 | yes | term |
-| top 40, 9 | YPEL5 | positive regulation of Wnt signaling pathway | GID E3 ubiquitin ligase complex | 0.078 | – | 5; CP | N1 | yes | module |
-| top 40, 10 | TMEM208 | establishment of protein localization to membrane | ER protein-containing complex | 0.078 | – | 5; – | N1 | yes | term |
-| top 40, 11 | PHC3 | epigenetic regulation of gene expression | PcG protein complex | 0.077 | – | 5; CP | N1 | yes | term |
-| top 40, 15 | TMED7 | Golgi vesicle transport | cytoplasmic ubiquitin ligase complex | 0.064 | – | 5; – | N1 | yes | term |
-| top 40, 18 | MGA | epigenetic regulation of gene expression | chromatin silencing complex | 0.059 | – | 5; CP | N1 | yes | term |
-| top 40, 20 | TMEM209 | nucleus organization | nuclear pore complex | 0.055 | – | 5; – | N1 | no | term |
-| top 40, 26 | PSMD13 | regulation of proteasomal protein catabolic process | proteasome complex | 0.047 | – | 5; CP | N1 | yes | term |
-| top 40, 27 | COA4 | cytochrome complex assembly | MitoCarta: OXPHOS | 0.046 | – | 4; – | N1 | yes | term |
-| top 40, 30 | GRIPAP1 | vesicle-mediated transport to the plasma membrane | vesicle tethering complex | 0.044 | – | 5; – | N1 | yes | term |
-| top 40, 33 | BICRAL | transcription coregulator binding | GBAF (SWI/SNF) complex | 0.041 | – | 5; CP | N2 | yes | term |
-| top 40, 38 | DDX19A | cell population proliferation | ER protein-containing complex | 0.036 | – | 5; – | N1 | yes | term (generic) |
-| top 40, 40 | DPCD | DNA-templated transcription elongation | PAQosome co-chaperone complex | 0.036 | – | 3; – | N1 | no | module (adjudicated) |
-| S20, 1 | COMMD3 | endosomal transport | Commander complex | – | 18.5 | 5; CP | N1 | yes | term |
-| S20, 2 | COMMD2 | endosomal transport | Commander complex | – | 17.0 | 5; CP | N1 | yes | term |
-| S20, 3 | NDUFB10 | NADH dehydrogenase activity | MitoCarta: OXPHOS | – | 16.7 | 5; CP | N1 | yes | term |
-| S20, 4 | COMMD4 | endosomal transport | Commander complex | – | 16.4 | 5; CP | N1 | yes | term |
-| S20, 5 | NDUFB2 | NADH dehydrogenase activity | respiratory chain complex I | – | 16.3 | 4; CP | N2 | yes | term |
-| S20, 6 | NDUFA2 | NADH dehydrogenase activity | respiratory chain complex I | – | 16.3 | 5; CP | N1 | yes | term |
-| S20, 7 | COMMD8 | endosomal transport | Commander complex | – | 16.3 | 5; CP | N1 | yes | term |
-| S20, 8 | TADA2B | acyltransferase activity (non-amino-acyl groups) | SAGA complex, KAT2A variant | – | 16.2 | 5; CP | N1 | yes | term |
-| S20, 9 | NDUFA11 | NADH dehydrogenase activity | MitoCarta: OXPHOS | – | 16.0 | 5; CP | N1 | yes | term |
-| S20, 10 | COMMD10 | endosomal transport | Commander complex | – | 15.9 | 5; CP | N1 | yes | term |
-| S20, 11 | WDR7 | intracellular iron ion homeostasis | proton-transporting two-sector ATPase complex | – | 15.8 | 3; CP | N1 | yes | module (adjudicated) |
-| S20, 12 | WASHC3 | endosomal transport | Commander complex | – | 15.6 | 5; CP | N1 | yes | term |
-| S20, 14 | CTU2 | tRNA metabolic process | Elongator holoenzyme complex | – | 15.5 | 5; – | N1 | yes | term |
-| S20, 15 | NDUFB4 | NADH dehydrogenase activity | MitoCarta: OXPHOS | – | 15.5 | 4; CP | N1 | yes | term |
-| S20, 16 | ELP5 | tRNA metabolic process | Elongator holoenzyme complex | – | 15.2 | 5; CP | N1 | yes | term |
-| S20, 17 | ELP6 | tRNA metabolic process | Elongator holoenzyme complex | – | 15.0 | 5; CP | N1 | yes | term |
-| S20, 18 | UNC50 | Golgi organization | vesicle tethering complex | – | 14.9 | 5; – | N1 | yes | term |
-| S20, 19 | MED9 | regulation of transcription initiation by RNA Pol II | RNA Pol II transcription regulator complex | – | 14.8 | 4; CP | N2 | yes | term |
-| S20, 20 | NUP43 | nucleocytoplasmic transport | nuclear pore complex | – | 14.8 | 5; CP | N1 | yes | term |
-
-<!-- src: manuscript/figures/source_data/Table2_rediscovery.tsv (scripts/61_figure5.py: analysis_main_genes.tsv,
-answer_key_slots.tsv, top40_primary.tsv, s20.tsv, L/index_batch_*.tsv, recall_probe_90.tsv); Basis column read from the
-judges' justifications in results/m7/judge/scores/J1_main*.tsv, J2_main*.tsv and ADJ_main*.tsv. Complex labels
-shortened (full names in the source TSV). UniProt
-annotation score and Complex Portal subunit (CP) from results/revision/a1_U_entry_flags.tsv [post-review]. -->
-
-Unsupported top-40 genes: 20 unaddressed and 2 contradicted (TLNRD1, KDF1); in S20, NR2C2AP was unaddressed
-<!-- src: results/m7/judge/analysis_main_genes.tsv -->.
-
-## Ten candidate reports: three rediscoveries, one partial rediscovery and five independent hypotheses
+## Ten candidate reports: three rediscoveries, one partial rediscovery and five hypotheses, four of them previously proposed
 
 The ten report genes were fixed before any judging result existed <!-- src: results/m7/report_selection.md -->: the
 nine highest-ranked N2 and N3 genes of the primary top 40 and one N1 rediscovery exemplar, ANKRD52, the top-ranked gene
 overall. Each report was written from a machine-generated evidence bundle, attacked by an independent red-team agent,
-and revised (S1–S10 Reports). All ten red-team verdicts were "accept with revisions"
+and revised (S1–S10 Reports); all ten red-team verdicts were "accept with revisions"
 <!-- src: reports/redteam/ANKRD52.md; reports/redteam/TRAPPC5.md; reports/redteam/RBM34.md; reports/redteam/PLEKHH3.md; reports/redteam/CCDC71L.md; reports/redteam/TM2D2.md; reports/redteam/TM2D1.md; reports/redteam/C5orf34.md; reports/redteam/BICRAL.md; reports/redteam/INAFM1.md -->.
-No fabricated citation was found among roughly 300 verbatim evidence spans checked
-<!-- src: RESEARCH_TREE.md (M7b status summary); reviews/retro_M7.md -->, but every review found numeric or framing
-problems that changed the reports. After peer review, each report gained a statement of what earlier catalogues had
-already published [post-review]: nine of the ten genes had a prior co-essential or physical link, and only PLEKHH3 had
-none <!-- src: results/revision/a2_novelty_overlap.tsv -->. Table 3 summarises the outcome; S10 Table gives the decisive
-experiments. Three points stand out.
+Nine of the ten genes had a prior co-essential or physical link in earlier catalogues; only PLEKHH3 had none
+<!-- src: results/revision/a2_novelty_overlap.tsv -->. Table 2 summarises the reports, S10 Table gives the decisive
+experiments, and S1 Text gives the full narrative.
 
-First, three reports are rediscoveries in which co-essentiality recovered published biology blind, and one is a partial
-rediscovery. ANKRD52 is the regulatory subunit of the phosphatase PP6, which dephosphorylates Argonaute 2 to sustain
-microRNA silencing [61]; its co-essentiality neighbourhood is the miRNA biogenesis and silencing machinery
-(AGO2, XPO5, DICER1, DROSHA, TNRC6A, DGCR8) with PPP6C further down <!-- src: reports/ANKRD52.md (§4) -->, and the
-AGO2–ANKRD52 co-dependency in DepMap had itself been reported (Fig S5C of [62]). Because AGO2 loss is near-neutral
-while ANKRD52 loss is not, and PP6 has other substrates, the prior favours failure of the proposed AGO2 phospho-mutant
-rescue of fitness. BICRAL's two strongest partners, SMARCD1 and BRD9, are the defining subunits of the non-canonical BAF
-(GBAF/ncBAF) complex in which it was placed biochemically in 2018 [63]; an earlier draft's "paralogue-specific
-requirement" was downgraded after red-team review because the paralogue BICRA tracks the same axis about twice as
-strongly (r 0.53 versus 0.27) <!-- src: reports/BICRAL.md (§0) -->. TRAPPC5 is a known TRAPP core subunit; the only
-unrecorded element, a dependency that follows the TRAPPIII arm (TRAPPC8/11/12/13), is one-sided because the
-TRAPPII-specific subunits have no recoverable co-essentiality structure <!-- src: reports/TRAPPC5.md (§0, §4) -->, and we
-have not tested whether the other core subunits (TRAPPC1/3/4) share the same leaning, in which case it would be a
-property of TRAPP in cancer lines rather than of TRAPPC5. RBM34 is the partial rediscovery: its partners are RNA
-polymerase I subunits and large-subunit pre-rRNA assembly factors, consistent with its yeast orthologue Nop12, a 60S
-maturation factor [64], and Wainberg et al. had placed it in a pre-ribosome module
-<!-- src: results/revision/a2_novelty_overlap.tsv -->, while the predicted term "DNA-templated transcription elongation"
-is an artefact of the vocabulary — the Pol I subunits carry the elongation annotation <!-- src: reports/RBM34.md (§0) -->.
+**Rediscoveries.** ANKRD52, BICRAL and TRAPPC5 recovered published biology blind. ANKRD52 is the regulatory subunit of
+the phosphatase PP6, which dephosphorylates Argonaute 2 to sustain microRNA silencing [61]; its
+co-essentiality neighbourhood is the miRNA biogenesis and silencing machinery, and the AGO2–ANKRD52 co-dependency had
+itself been reported [62]. BICRAL's two strongest partners, SMARCD1 and BRD9, are the defining subunits of the
+non-canonical BAF (GBAF/ncBAF) complex in which it was placed biochemically in 2018 [63]. TRAPPC5 is a known
+TRAPP core subunit. RBM34 is a partial rediscovery: its partners are RNA polymerase I subunits and large-subunit
+pre-rRNA assembly factors, consistent with its yeast orthologue Nop12, a 60S maturation factor [64], and with a
+pre-ribosome module of Wainberg et al., while the predicted term "DNA-templated transcription elongation" reflects how
+the Pol I subunits are annotated <!-- src: reports/RBM34.md (§0) -->.
 
-Second, the five remaining hypotheses (TM2D1 and TM2D2 count as one) differ in novelty. Only PLEKHH3 has no precedent in
-any catalogue we checked <!-- src: results/revision/a2_novelty_overlap.tsv -->, and it rests on a fitness co-advantage
-rather than on shared essentiality. PLEKHH3's two strongest correlates among all 18,433 genes are PLEKHA1 (TAPP1) and
-PTEN (r = 0.424 and 0.400), followed by TSC2, TSC1 and DDIT4, while the pathway's accelerator PIK3CA runs the other way
+**PLEKHH3.** The one hypothesis without precedent in any catalogue we checked rests on a fitness co-advantage rather
+than on shared essentiality. PLEKHH3's two strongest correlates among all 18,433 genes are PLEKHA1 (TAPP1) and PTEN
+(r = 0.424 and 0.400), followed by TSC2, TSC1 and DDIT4, while the pathway's accelerator PIK3CA runs the other way
 (r = −0.186) <!-- src: reports/PLEKHH3.md (§0) -->. PTEN and PLEKHA1, like PLEKHH3 itself, are genes whose loss helps
-cells grow (mean Chronos effects +0.377, +0.219 and +0.087) <!-- src: reports/PLEKHH3.md (§0, §3) -->. The two partners
-are themselves correlated (r 0.453), but each keeps a partial correlation with PLEKHH3 given the other (0.257 and
-0.298), and the co-dependency is absent in lymphoid lines <!-- src: reports/PLEKHH3.md (§0) -->. The report therefore
-predicts that PLEKHH3 restrains PI3K/AKT output with the PI(3,4)P₂ arm, a direction that a "function in a module"
-vocabulary cannot express; lineage-adjusted partial correlations and an analysis excluding PTEN-null lines are still to
-be done. C5orf34 co-depends exclusively on centriole-duplication genes, including the recently described A–C linker
-proteins CCDC77, MIIP and TBC1D31 (alias WDR67) [65], but Wainberg et al. had already predicted a
-centriole function for it <!-- src: results/revision/a2_novelty_overlap.tsv -->. What is new is the condition: a
-red-team-prompted refit showed that the centriolar neighbourhood survives in the 902 TP53-mutant lines and collapses in
-the 459 wild-type lines, whereas three random 459-line refits retain it <!-- src: reports/C5orf34.md (§5) -->. The signal
-is second-order — it comes from partner-list overlap (B-view z 23.8 with SPICE1) rather than direct correlation (F-view z
-2.4; raw r with SPICE1 0.06), and GLS gives a different top term <!-- src: reports/C5orf34.md (§0, §4, §5) -->. The
-co-dependency is therefore conditional on TP53 status, consistent with a centriolar phenotype masked by p53-dependent
-arrest [66], with a p53-context dependency unrelated to centrioles, or with p53 arrest homogenising the
-dependency of the whole module; whether the centriole module itself loses coherence in TP53-wild-type lines has not yet
-been tested, and the experimental plan requires an isogenic TP53 arm.
+cells grow (mean Chronos effects +0.377, +0.219 and +0.087) <!-- src: reports/PLEKHH3.md (§0, §3) -->. The two
+partners are themselves correlated (r 0.453), but each keeps a partial correlation with PLEKHH3 given the other (0.257
+and 0.298) <!-- src: reports/PLEKHH3.md (§0) -->. The report predicts that PLEKHH3 restrains PI3K/AKT output with the
+PI(3,4)P₂ arm, a direction that a "function in a module" vocabulary cannot express. For now this is a low-amplitude
+co-advantage signal not yet controlled for lineage: the co-dependency is absent in lymphoid lines, and the checks that
+need only DepMap data (lineage-adjusted partial correlations and an analysis excluding PTEN-null lines) were not run.
 
-Third, the other hypotheses are weak or not new, as the reports state up front. CCDC71L's Polycomb-dominated
-neighbourhood exists only after bias correction, the protein's high basic charge makes non-specific chromatin
-association the prior <!-- src: reports/CCDC71L.md (§0) -->, and Wainberg et al. had predicted an H3K27-methyltransferase
-function from a module with 8 of our top 10 partners <!-- src: reports/CCDC71L.md (§0) -->. Its proposed IP-MS against a
-PxVxL mutant tests HP1 binding, a refinement suggested by structural and hu.MAP data; the HP1 proteins themselves are not
-co-dependent with CCDC71L (r −0.105 to −0.010) <!-- src: reports/CCDC71L.md (§3) -->, so that experiment tests the
-interaction-derived hypothesis, and a Polycomb readout (H2AK119ub and H3K27me3 at Polycomb targets) is needed to test the
-co-essentiality one (S10 Table). TM2D1 and TM2D2 form a single observation: a co-dependency star with AUP1, JOSD1, STUB1
-and CHIC2 whose "ER stress" label rests on two partners and which shows no co-variation with the core ERAD machinery or
-UPR genes <!-- src: reports/TM2D1.md (§0); reports/TM2D2.md (§0) -->; the shared dependency was already in Wainberg et
-al.'s modules <!-- src: results/revision/a2_novelty_overlap.tsv -->. INAFM1, the weakest, is dependency-flat (4 of 1,361
-lines below −0.5), its predicted term rests on partners with near-zero raw correlation, its strongest partners (NFE2L1,
-NGLY1, DDI2, the NRF1-activation axis) form one correlated axis to which it attaches weakly (r 0.12–0.21)
-<!-- src: reports/INAFM1.md (§0) -->, and Wainberg et al. had predicted a related ubiquitination function
-<!-- src: results/revision/a2_novelty_overlap.tsv -->. Of the seven reports that are not rediscoveries, only RBM34 has
-admitted orthogonal support for its term, and none was supported by the blinded judges, as expected for genes with
-partial or no literature.
+**C5orf34.** C5orf34 co-depends exclusively on centriole-duplication genes, including the recently described A–C linker
+proteins CCDC77, MIIP and TBC1D31 (alias WDR67) [65], and Wainberg et al. had already predicted a
+centriole function for it <!-- src: results/revision/a2_novelty_overlap.tsv -->. A red-team-prompted refit showed that
+the centriolar neighbourhood survives in the 902 TP53-mutant lines and collapses in the 459 wild-type lines, whereas
+three random 459-line refits retain it <!-- src: reports/C5orf34.md (§5) -->. The signal is second-order, from
+partner-list overlap rather than direct correlation (S1 Text). The TP53 dependence could reflect a centriolar phenotype
+masked by p53-dependent arrest [66], a p53-context dependency unrelated to centrioles, or p53 arrest
+homogenising the dependency of the whole module. The DepMap-only check that would address the last explanation, the
+coherence of the centriole module itself in TP53-wild-type lines, was not run, so the TP53 condition is an observation
+to be tested, not an established property of C5orf34.
 
-**Table 3. The ten candidate reports.** Rank and p_cal in the primary top 40; relationship type: a, stable subunit;
+**The other hypotheses** are weak or anticipated, as the reports state up front. CCDC71L's Polycomb-dominated
+neighbourhood exists only after bias correction, and Wainberg et al. had predicted an H3K27-methyltransferase function
+for it <!-- src: reports/CCDC71L.md (§0) -->. TM2D1 and TM2D2 form one co-dependency module with AUP1, JOSD1, STUB1 and
+CHIC2, whose "ER stress" label rests on two partners and which was already in Wainberg et al.'s modules
+<!-- src: reports/TM2D1.md (§0); reports/TM2D2.md (§0) -->. INAFM1, the weakest, is dependency-flat (4 of 1,361 lines
+below −0.5) <!-- src: reports/INAFM1.md (§0) -->, and a related ubiquitination function had been predicted before
+<!-- src: results/revision/a2_novelty_overlap.tsv -->. None of the seven reports that are not rediscoveries was supported
+by the blinded judges, as expected for genes with partial or no literature.
+
+**Table 2. The ten candidate reports.** Rank and p_cal in the primary top 40; relationship type: a, stable subunit;
 b, assembly or maturation factor; d, pathway member, type unresolved. Orthogonal classes that support the predicted term
 after Holm correction: P, physical; A, co-abundance; L, localisation; G, Perturb-seq. L class: agent L's novelty class;
 judged: blinded, adjudicated verdict. Prior: earlier catalogue evidence for the gene's co-essential or physical link
-[post-review]. Decisive experiments: S10 Table.
+[post-review]. DEMETER2 non-replication is not listed as a caveat, because the check was never validated (S1 Text).
+Decisive experiments: S10 Table.
 
 | Gene (rank; p_cal) | Predicted function; type | Key co-essential partners | Evidence: physical; other orthogonal; L class; judged | Prior in catalogues | Main caveat | Status |
 |---|---|---|---|---|---|---|
 | ANKRD52 (1; 0.141) | Regulatory ncRNA-mediated gene silencing; d (PP6 subunit acting on AGO2) | AGO2, XPO5, DICER1, DROSHA, TNRC6A, DGCR8; PPP6C | none (physical data point to PP6); none; N1; supported | Wainberg module and GLS pairs; Kim edge; hu.MAP; Predictomes | Published mechanism and co-dependency; AGO2 loss near-neutral | rediscovery |
 | TRAPPC5 (4; 0.114) | Golgi vesicle transport; a (TRAPP subunit) | TRAPPC3, TRAPPC1, TRAPPC11, TRAPPC4, TRAPPC2L, TRAPPC13, TRAPPC8 | P; A, L, G; N2; supported | Wainberg module; Kim edge; hu.MAP; Predictomes | Membership in UniProt and Complex Portal; TRAPPIII leaning untested against other core subunits; TP53 flag | rediscovery |
-| RBM34 (5; 0.103) | DNA-templated transcription elongation (label from Pol I subunits); script a, evidence favours b | WDR89, DDX31, PWP1, RPF1, CEBPZ, POLR1E/G/H, TCOF1 | P; A, L; N2; unaddressed | Wainberg pre-ribosome module; Predictomes (PWP1) | Term is a vocabulary artefact; Nop12 orthology implies the module; DEMETER2 and TP53 flags | partial rediscovery |
-| PLEKHH3 (12; 0.076) | Regulation of PI3K/AKT signal transduction, as a negative regulator; d | PLEKHA1, PTEN, PTPN13; TSC2, TSC1, DDIT4 | none; none; N3; unaddressed | none found | Low-amplitude co-advantage; PTEN and PLEKHA1 correlated (r 0.45), about two effective partners; absent in lymphoid lines | hypothesis (new) |
+| RBM34 (5; 0.103) | DNA-templated transcription elongation (label from Pol I subunits); script a, evidence favours b | WDR89, DDX31, PWP1, RPF1, CEBPZ, POLR1E/G/H, TCOF1 | P; A, L; N2; unaddressed | Wainberg pre-ribosome module; Predictomes (PWP1) | Term is a vocabulary artefact; Nop12 orthology implies the module; TP53 flag | partial rediscovery |
+| PLEKHH3 (12; 0.076) | Regulation of PI3K/AKT signal transduction, as a negative regulator; d | PLEKHA1, PTEN, PTPN13; TSC2, TSC1, DDIT4 | none; none; N3; unaddressed | none found | Low-amplitude co-advantage, not yet controlled for lineage or PTEN-null lines; PTEN and PLEKHA1 correlated (r 0.45), about two effective partners; absent in lymphoid lines | hypothesis (no precedent found) |
 | CCDC71L (16; 0.064) | Epigenetic regulation of gene expression; d | SUZ12, EED, BMI1, RING1, CBX4, CBX8, PHC3, MTF2; SMCHD1, LRIF1 | none; none; N2; unaddressed | Wainberg function prediction (H3K27 methyltransferase), module and GLS pair | Exists only after bias correction; very basic protein; lineage leave-out changes the term; HP1 not co-dependent | hypothesis (predicted before) |
-| TM2D2 (21; 0.050) | Response to ER stress (tied with ERAD); d | TM2D1, JOSD1, AUP1, STUB1, CHIC2 | none; none; N2; unaddressed | Wainberg module and GLS pairs | Term rests on two partners; no co-variation with HRD1–SEL1L–UBE2G2 or UPR genes; DEMETER2 non-replication | hypothesis (with TM2D1; link published) |
+| TM2D2 (21; 0.050) | Response to ER stress (tied with ERAD); d | TM2D1, JOSD1, AUP1, STUB1, CHIC2 | none; none; N2; unaddressed | Wainberg module and GLS pairs | Term rests on two partners; no co-variation with HRD1–SEL1L–UBE2G2 or UPR genes | hypothesis (with TM2D1; link published) |
 | TM2D1 (28; 0.045) | Response to ER stress (tied with ERAD); d | TM2D2, AUP1, JOSD1, STUB1, CHIC2 | none; none; N2; unaddressed | Wainberg module and GLS pairs; hu.MAP; Predictomes | Same module as TM2D2 (one observation); STUB1 only raw rank 234; GLS gives a different top term | hypothesis (with TM2D2) |
-| C5orf34 (31; 0.044) | Regulation of organelle assembly (centriole duplication); b | SPICE1, CEP135, CEP295, WRAP73, PPP1R35, CEP120, CCDC77, MIIP, TBC1D31 | none; none; N2; unaddressed | Wainberg function prediction (centriole elongation) | TP53-mutant lines only; second-order signal (raw r with SPICE1 0.06); GLS gives a different term; DEMETER2 and TP53 flags | hypothesis (function predicted before; TP53 condition new) |
+| C5orf34 (31; 0.044) | Regulation of organelle assembly (centriole duplication); b | SPICE1, CEP135, CEP295, WRAP73, PPP1R35, CEP120, CCDC77, MIIP, TBC1D31 | none; none; N2; unaddressed | Wainberg function prediction (centriole elongation) | TP53-mutant lines only, module coherence in wild-type lines untested; second-order signal (raw r with SPICE1 0.06); GLS gives a different term; TP53 flag | hypothesis (function predicted before; TP53 condition untested) |
 | BICRAL (33; 0.041) | Transcription coregulator binding (GBAF complex); a (weight from literature) | SMARCD1, BRD9, CTBP1, SMARCA4, CREBBP | none; A, L (near-tautological); N2; supported | Wainberg module and GLS pairs; hu.MAP; Predictomes | Membership published in 2018; paralogue-specificity downgraded; lineage leave-out changes the term | rediscovery |
 | INAFM1 (37; 0.037) | Polyubiquitin modification-dependent protein binding; d | label from RAD23B, VCP, UBQLN1; strongest NFE2L1, NGLY1, DDI2 | none; none; N3; unaddressed | Wainberg function prediction (K63-ubiquitination), module and GLS pairs | Dependency-flat (4 of 1,361 lines < −0.5); NRF1 axis weakly attached; lineage leave-out changes the term | hypothesis (predicted before; weakest) |
 
@@ -833,8 +609,9 @@ We asked how far co-essentiality can be trusted as a source of function for unch
 fixed before any network quantity was computed. Three answers emerge. The signal is real and specific: on genes that
 were uncharacterised in 2018, the method beat a profile-matched null (the prior-only arm was degenerate at rank 1), and
 in blinded judging its top predictions matched the literature far more often than decoy statements. Its absolute
-accuracy is low and its reach is narrow: at most one pre-registered gene in eight is assessable, and perhaps one in
-twenty once the reproducibility test's false-call rate is allowed for; no in-support calibrated probability exceeds
+accuracy is low and its reach is narrow: at most one pre-registered gene in eight is assessable, and once the
+reproducibility test's false-call rate is allowed for, the calls exceed the null by one gene in twenty, implying at
+least one in fifteen with real signal under an untested assumption; no in-support calibrated probability exceeds
 0.141; and transfer from homology or interaction partners is more accurate. And the most confident predictions point
 mainly to functions that are already published, and usually already linked by earlier co-essentiality or interaction
 catalogues, which says as much about how "uncharacterised" is defined as about the method.
@@ -844,7 +621,7 @@ catalogues, which says as much about how "uncharacterised" is defined as about t
 The primary result is modest in size. A precision@1 of 0.030 <!-- src: results/holdout_eval/SUMMARY.md --> means that
 about one gene in 33 of the hold-out receives, as its single top term, a term that curators later annotated with
 experimental evidence. Reweighted to the covariate distribution of U it is 0.012 <!-- src: results/holdout_eval/SUMMARY.md -->,
-about one gene in 80. Accuracy rose steeply with signal strength, to 0.117
+about one gene in 83. Accuracy rose steeply with signal strength, to 0.117
 <!-- src: results/holdout_eval/fig_signal_quintiles.tsv --> in the top quintile, and was much higher for complex
 membership (0.182 <!-- src: results/holdout_eval/SUMMARY.md -->) than for the broad process terms that dominate GO, so the
 low headline is partly a property of the pre-registered endpoint. Both observations agree with earlier evidence that
@@ -862,11 +639,14 @@ What the study adds is a calibration, with two qualifications. The pre-specified
 miscalibrated out of fold (slope 0.82, 95% CI 0.51–1.13; c-statistic 0.855
 <!-- src: results/holdout_eval/calibration.md -->), but it rests on 24 events at 3.4 per parameter, its Brier score barely
 improves on a constant <!-- src: results/revision/a4_calibration_models.tsv -->, one family coefficient reflects
-separation, and simpler models calibrate at least as well (S4D Fig). And p_cal is conditional: it estimates the chance
+separation, and simpler models calibrate comparably (S4D Fig), so the data cannot say whether the frozen model is
+over-parameterised. And p_cal is conditional: it estimates the chance
 that the top term is confirmed if the gene is annotated at all, which happened for about one eligible gene in six over
 eight years <!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->. The catalogue's headline of about 30
 confirmations among 2,583 calibrated top terms <!-- src: results/ledger/pcal_summary.json --> therefore corresponds to
-about five unconditionally <!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json -->. A model fitted on characterised
+about five confirmations if the 2018 cohort's annotation rate applies to U
+<!-- src: results/revision/a3_annotation_gain_rates.tsv; results/revision/numbers_a3.json --> [post-review
+exploratory]. A model fitted on characterised
 genes, the usual leave-one-out set-up, overstated even the conditional probability about threefold
 <!-- src: results/holdout_eval/SUMMARY.md -->. Leave-one-out accuracy on well-annotated genes is therefore an optimistic
 guide to performance on genes that are only now being studied, a point that CAFA-style evaluations have made for other
@@ -884,15 +664,18 @@ p_cal or signal and estimate nothing about prevalence. Among the primary top 40,
 <!-- src: manuscript/figures/source_data/Fig5c_novelty_class.tsv -->, and 16 of the 18 supported predictions were for
 N1 genes <!-- src: results/m7/judge/analysis_main.md -->.
 
-Much of this is not slow curation but a property of our definition. U combined the absence of experimental GO process
+Part of this, and most of it among top candidates, is not slow curation but a property of our definition. U combined the absence of experimental GO process
 and function evidence with either a low UniProt annotation score or low focused literature, following Wainberg et al.'s
 UniProt criterion [23] only in part. The literature criterion counted papers about at most ten genes and the
-GO criterion ignored cellular component, so complex subunits described in multi-subunit papers entered U: 3,819 genes
-came in through the literature criterion alone and 288 are Complex Portal subunits
-<!-- src: results/revision/a1_flag_counts.tsv -->. In the random sample, 56% of such literature-route genes were N1 against
-13% of genes with a low UniProt score <!-- src: results/revision/a1_N1_rates_by_route_and_flag.tsv -->, and 6 of the 8 N1
-genes with evidence older than 2021 carried a definition-artefact flag <!-- src: results/revision/a1_U_entry_flags.tsv -->.
-Only the remainder, recent work not yet curated, is curation lag in the usual sense; electronic and phylogenetic
+GO criterion ignored cellular component, so genes studied mainly in multi-gene papers entered U: 3,819 genes came in
+through the literature criterion alone <!-- src: results/revision/a1_flag_counts.tsv -->. In the random sample, 56% of
+such literature-route genes were N1 against 13% of genes with a low UniProt score
+<!-- src: results/revision/a1_N1_rates_by_route_and_flag.tsv -->. There, 13 of the 21 N1 genes rest on evidence from 2021
+or later, which is curation lag in the usual sense; of the 8 with older evidence, 6 carry a definition-artefact flag,
+mostly a UniProt score of 5, and none is a Complex Portal subunit <!-- src: results/revision/a1_U_entry_flags.tsv -->.
+Among the top 40, by contrast, 30 genes carry a flag and 13 are Complex Portal subunits
+<!-- src: results/revision/a1_flag_counts.tsv -->, so complex membership matters mainly for the selected candidates.
+Electronic and phylogenetic
 annotation now covers most human genes [44], although its reliability varies by evidence source
 [67], and experimental curation lags. A stricter definition (UniProt score ≤ 2, or exclusion of genes with
 experimental cellular-component or Complex Portal membership) would have given a smaller and more genuinely
@@ -922,7 +705,7 @@ already in earlier catalogues. The gap is a property of honest calibration on a 
 larger hold-out, pooled families or a hierarchical model could close it, at the price of new assumptions that should
 themselves be pre-specified.
 
-## Context, direction and vocabulary
+## Context, direction, vocabulary and circularity
 
 Two reports show that the "gene functions in module M" vocabulary is too coarse for some of the method's signal.
 PLEKHH3 tracks PTEN and PLEKHA1 in fitness *gains* on knockout <!-- src: reports/PLEKHH3.md (§0) -->, which suggests a
@@ -936,40 +719,29 @@ be annotated <!-- src: reports/RBM34.md (§0) -->. The named controls INTS15 and
 networks were right, but the terms curators later added were not carried by their neighbours at t0
 <!-- src: results/revision/a8_control_target_reasons.tsv -->.
 
-## Circularity in annotation
-
-Our attempts to use known successes as positive controls largely failed for a reason that matters beyond this study.
-For most named controls, the experimental annotations added since 2018 cite DepMap or co-essentiality papers
-<!-- src: results/holdout_eval/controls_case_series.tsv -->; 16 of 1,050 supporting PMIDs in the hold-out were flagged
-this way <!-- src: results/holdout/circularity_summary.md -->. Integrated interaction resources also embed DepMap
-[43,48], so hu.MAP 3.0, Predictomes and STRING text-mining were not used as independent support; hu.MAP 3.0
-was a secondary comparator, and hu.MAP and Predictomes were used after review only to check novelty. As
-co-essentiality-derived annotations enter GO, future benchmarks that do not track evidence provenance will increasingly
-reward the method for agreeing with itself. Excluding flagged evidence made no material difference here (precision@1
-0.030–0.032 across sensitivities <!-- src: results/holdout_eval/SUMMARY.md -->), but the issue will grow.
+Annotation also feeds back on itself. For most named controls the experimental annotations added since 2018 cite DepMap
+or co-essentiality papers <!-- src: results/holdout_eval/controls_case_series.tsv -->, and 16 of 1,050 supporting PMIDs
+in the hold-out were flagged this way <!-- src: results/holdout/circularity_summary.md -->. Integrated interaction
+resources also embed DepMap [43,48], so hu.MAP 3.0, Predictomes and STRING text-mining were not used as
+independent support. Excluding flagged evidence made no material difference here (precision@1 0.030–0.032 across
+sensitivities <!-- src: results/holdout_eval/SUMMARY.md -->), but as co-essentiality-derived annotations enter GO,
+benchmarks that do not track evidence provenance will increasingly reward the method for agreeing with itself.
 
 ## What the AI-agent safeguards caught, and what they did not
 
-The study was run by language-model agents, and several safeguards changed the result rather than merely documenting
-it. An independent agent re-derived the pre-registered list and the hold-out from raw files and reproduced both exactly,
-after an earlier re-derivation had exposed a mismatch between two implementations of the generic-term list (7 versus 22
-terms) <!-- src: reviews/retro_M3.md -->. An independent verifier reproduced hit@1 for 809 of 809 hold-out genes
-<!-- src: verify/holdout_verification.md --> and found that the design had never specified a tie-break, which affected
-401 of 820 genes <!-- src: DEVIATIONS.md -->. The PI overrode an implementing agent's fill of the top 40 that ranked
-genes with p_cal near zero above flagged genes with p_cal ≥ 0.06 and retained two genes that carried exclusions
-<!-- src: DEVIATIONS.md -->. Red-team review of the ten reports found no fabricated citation but changed every report: it
-led to the TP53-stratified refit for C5orf34, exposed an error in the recall-probe answer for TM2D1 (the fly gene
-*almondex* is the TM2D3 orthologue), showed that the blinded search for CCDC71L had missed its most relevant paper, and
-downgraded the paralogue claim for BICRAL <!-- src: reports/redteam/BICRAL.md; reports/redteam/C5orf34.md; reports/redteam/CCDC71L.md; reports/redteam/TM2D1.md -->.
-Blinding held at the level that was checked: no packet leaked a gene or partner name
-<!-- src: results/m7/judge/leak_check.tsv -->, and the judges were validated on known genes before they saw any candidate.
-
-The safeguards also had gaps that peer review exposed. The module-label crediting rule in the judge instruction was not
-logged until review; three other deviations were logged only after the results they affect existed; the agent-run log
-is sparse; the role-scope file is a template; and the agents' novelty statements had not been checked against earlier
-catalogues until a referee asked. Of 22 logged deviations, 13 filled operational details the design had left open
-<!-- src: DEVIATIONS.md --> (12 before review <!-- src: reviews/retro_M7.md -->); a full dry run of the pipeline before
-the freeze would have prevented most of them.
+Several safeguards changed the result rather than merely documenting it. Independent re-derivation of the
+pre-registered list exposed a mismatch between two implementations of the generic-term list (7 versus 22 terms)
+<!-- src: reviews/retro_M3.md -->; an independent verifier reproduced hit@1 for 809 of 809 hold-out genes
+<!-- src: verify/holdout_verification.md --> and found an unspecified tie-break affecting 401 of 820 genes
+<!-- src: DEVIATIONS.md -->; the PI overrode a top-40 fill that ranked genes with p_cal near zero above flagged genes
+with p_cal ≥ 0.06 <!-- src: DEVIATIONS.md -->; and red-team review changed every report, prompting the TP53-stratified
+refit for C5orf34 and downgrading the paralogue claim for BICRAL
+<!-- src: reports/redteam/BICRAL.md; reports/redteam/C5orf34.md -->. No packet leaked a gene or partner name
+<!-- src: results/m7/judge/leak_check.tsv -->. The gaps were exposed by peer review: the module-label crediting rule and
+three other deviations were logged only after the results they affect existed, the agent-run log is sparse, the
+role-scope file is a template, and the agents' novelty statements had not been checked against earlier catalogues. Of
+22 logged deviations, 13 filled operational details the design had left open <!-- src: DEVIATIONS.md -->; a full dry
+run of the pipeline before the freeze would have prevented most of them.
 
 ## Limitations
 
@@ -989,7 +761,9 @@ matches to the module label as well as to the term; on terms alone the top 40 ha
 statements <!-- src: results/revision/a5_judging_sensitivity.tsv -->. The literature agent's search was incomplete in at
 least one case (CCDC71L). The novelty check covered the catalogues we could obtain; Pan et al., FIREWORKS and the
 Perturb-seq clusters were not checked. Orthogonal support separated real from decoy predictions only weakly, and DEMETER2
-replication failed for most genes, a check that was never validated on positive controls. Twenty-two deviations from
+replication failed for most genes, a check that was never validated on positive controls. The DepMap-only controls for
+the two most novel report observations (lineage-adjusted and PTEN-null-excluded correlations for PLEKHH3; centriole-module
+coherence in TP53-wild-type lines for C5orf34) were not run. Twenty-two deviations from
 the frozen design are logged <!-- src: DEVIATIONS.md -->. Finally, no prediction was tested at the bench: the reports
 specify decisive experiments, with matched-essentiality controls and decision rules, but these remain proposals.
 
@@ -1003,17 +777,17 @@ co-dependency) and context (lineage, TP53 status), which the reports show carry 
 express. Third, definitions of "uncharacterised" should exclude genes with experimental cellular-component or curated
 complex membership, or report them separately. Fourth, the most decisive next step is experimental: the reports each name
 a first experiment and a pre-registered decision rule, and PLEKHH3, the only report gene without precedent, together
-with the TP53 condition for C5orf34, offers the clearest test of whether co-essentiality can identify genuinely new
+with the TP53 condition for C5orf34, offers the clearest test, once the DepMap-only controls above have been run, of whether co-essentiality can identify genuinely new
 functions rather than recover known ones.
 
 # Methods
 
 The analysis followed DESIGN.md v2.3, frozen at git tag `design-frozen` (commit afed1dd), with every later change logged
 in DEVIATIONS.md (summarised at the end of this section, including which rows were logged after the affected result).
-All steps were run by scripts in `scripts/`, numbered in execution order (README.md gives the run order). Table 4 defines
+All steps were run by scripts in `scripts/`, numbered in execution order (README.md gives the run order). Table 3 defines
 the notation.
 
-**Table 4. Notation.**
+**Table 3. Notation.**
 
 | Symbol | Meaning |
 |---|---|
@@ -1208,8 +982,8 @@ When H genes were scored, neighbour memberships, the background, the candidate t
 from t0. The network used 26Q3 data, so the test is temporal in annotation only. Current annotations are about 8
 <!-- src: config/frozen.yaml --> years after t0. Because H includes only genes that gained at least one target, p_cal
 is the probability of confirmation within roughly that horizon *conditional on the gene gaining experimental BP/MF
-annotation*; DESIGN.md §3.7 describes it without this condition, and we correct the interpretation here without
-changing the model.
+annotation*. DESIGN.md §3.7 and the first submitted version of this manuscript described it without this condition;
+the conditional reading was introduced after the first round of review, without changing the model.
 
 **Circularity.** Every supporting PMID was searched in Europe PMC, in full text where available, for DepMap and
 co-essentiality terms. Of 1,050 <!-- src: results/holdout/circularity_summary.md --> PMIDs, 16
@@ -1377,9 +1151,19 @@ verdict with required fixes (reports/redteam/). The writer answered each fix poi
 
 After the first round of peer review, the referees' requests were run by `scripts/90_revision_analyses.py` (helpers in
 `scripts/revision_common.py`) into `results/revision/` (summary in `results/revision/SUMMARY.md`; figure S4 by
-`scripts/62_figS4.py`). None changes a frozen rule or a pre-specified result. Analyses that read H outcomes (A3, A4, A7,
-A8 below) were logged in LOOKS.md before they were run (row dated 2026-10-30). All are labelled [post-review
-exploratory] in Results.
+`scripts/62_figS4.py`). After the second round, `scripts/92_round2_numbers.py` derived a few further quantities from
+U-side and judging files only (A10 below; no H outcome was read). None changes a frozen rule or a pre-specified result.
+The analyses that read H outcomes (A3, A4, A7, A8 below) were logged in LOOKS.md; the row was committed together with
+the results (feb6172), so the order rests on the agents' record, as for the primary look. All are labelled
+[post-review exploratory] in Results.
+
+**Revision history.** The first submitted version read p_cal unconditionally, attributed most of the published-but-uncurated
+functions to slow curation, reported the candidate reports' overlap with published catalogues only as agreement, and
+carried the full sensitivity analyses and the rediscovery table in the main Results. Round 1 introduced the conditional
+reading of p_cal, the definition-artefact analysis (A1) and the catalogue check (A2). Round 2 corrected the
+null-adjusted assessability to an excess over the null (A6, A10), restricted the attribution to complex membership to
+the selected candidates, added the assumption behind every unconditional figure, and moved the detailed analyses to S1
+Text without changing their numbers.
 
 - **A1, entry routes and definition-artefact flags.** Each U gene was classed by entry route (D1 and D2, with or without
   D3; or D3 without D2) and flagged if it had UniProt annotation score 5, was a Complex Portal subunit [82] or had
@@ -1392,10 +1176,19 @@ exploratory] in Results.
   co-member [22]. Symbols of older catalogues were mapped through HGNC previous symbols and aliases. Pan et al.
   [20], FIREWORKS [60] and Perturb-seq cluster assignments [39] were not obtainable in
   machine-readable form. Downloads and checksums are in `results/revision/external_manifest.tsv`.
-- **A3, unconditional reading of p_cal.** The rate at which t0-eligible genes gained any target in the 5–200 window over
-  the horizon (overall, among genes with a reportable top term, and by quintile of top-K mean zavg_BEF) was multiplied
-  into the saved bootstrap Σp_cal; intervals combine bootstrap draws with Jeffreys-Beta draws of the rate, assuming
-  independence. Annual hazards for a 2022 cohort and for 2018 genes still uncharacterised in 2022 check stationarity.
+- **A3, unconditional reading of p_cal.** Because a top term can be confirmed only if the gene gains annotation, the
+  expected number of unconditional confirmations is exactly Σ p_i r_i, where r_i is gene i's probability of gaining new
+  experimental BP/MF annotation over the horizon. Using one rate r assumes that (i) the gain rate does not vary with
+  p_cal (shown false for signal: the highest quintile gains annotation about twice as often), (ii) the 2018 cohort's
+  rate transfers to genes still uncharacterised in 2026 and (iii) p_cal itself transfers to U. The rate at which
+  t0-eligible genes gained any target in the 5–200 window (overall, among genes with a reportable top term, and by
+  quintile of top-K mean zavg_BEF) was multiplied into the saved bootstrap Σp_cal; intervals combine bootstrap draws
+  with Jeffreys-Beta draws of the rate, assuming independence. The survivor-hazard version uses the hazard of 2018
+  genes still uncharacterised in 2022 (0.145 over the horizon): 30.5 × 0.145 ≈ 4.4
+  <!-- src: results/revision/a10_round2_numbers.tsv -->, beside 4.9 with the 2018-cohort rate; the unconditional
+  Poisson-binomial SD is about 2.2 <!-- src: results/revision/numbers_a3.json -->. Annual hazards for a 2022 cohort and
+  for the 2018 survivors check stationarity. Assumption (2) as worded in `results/revision/a3_pcal_conditional.md`
+  ("independent of whether the top term is right") is superseded by (i)–(iii) here.
 - **A4, calibration sensitivity.** Calibration-in-the-large, Brier skill and cluster-bootstrap intervals for the frozen
   model; the frozen model without signalling genes; and sign-constrained one- and two-covariate models (top-K mean
   zavg_BEF alone, plus coverage, plus term size) cross-fitted exactly as in §3.7 and applied to U with covariate support
@@ -1403,14 +1196,21 @@ exploratory] in Results.
 - **A5, judging sensitivities.** Term-only scores (the three real statements supported on the module label alone set to
   0; no decoy was affected), an exact slot-permutation test, and a sign-flip test over clusters of genes sharing the real
   statement's V1′ label.
-- **A6, null-adjusted assessability.** The clean-negative split-half false-call rate in each stratum (any dependency, or
-  profile-SD tertile) was applied to the expressed scorable genes of that stratum and the expected false calls subtracted
-  from the observed assessable count (Jeffreys-Beta and binomial draws, 100,000, seed 0). This is a bound under the
-  assumption that the rates transfer, not an estimate of specificity.
+- **A6, null-adjusted assessability.** The clean-negative split-half false-call rate α in each stratum (any
+  dependency, or profile-SD tertile) was applied to the N expressed scorable genes of that stratum and the expected
+  false calls Nα subtracted from the observed assessable count (Jeffreys-Beta and binomial draws, 100,000, seed 0). If T
+  genes carry real signal and are detected with power π, observed = Tπ + (N − T)α, so the difference is T(π − α): the
+  excess of calls over the null expectation (named `implied_true` in `a6_assessability_null_adjusted.tsv`), not T. At
+  full power T = (observed − Nα)/(1 − α) per stratum, a lower bound on T computed in A10. Both rest on the untested
+  assumption that the rates transfer to expressed genes.
 - **A7, combination rules on H.** Precision@1 for "homology if it predicts, else zavg_BEF", the reverse, and the oracle
   union, with paired cluster-bootstrap intervals and U-reweighting as in the secondary batch.
 - **A8, named-control misses.** For each control, each new term in the t0 vocabulary was classed as circularity-flagged,
   outside the size window, not reportable (fewer than two supporting neighbours annotated at t0) or ranked.
+- **A10, round-2 quantities** (`scripts/92_round2_numbers.py`; `results/revision/a10_round2_numbers.tsv` and
+  `a10_assessability_excess_and_implied.tsv`). The A6 excess and the full-power lower bound with intervals from the same
+  draw scheme; judged support among top-40 genes shared or not shared with the clean-first list; Wilson intervals for
+  the N1 accuracy estimate; and the survivor-hazard rescaling in A3. No H outcome was read.
 
 ## Reproducibility and AI-agent safeguards
 
@@ -1423,18 +1223,22 @@ as follows; where the record is incomplete, we say so.
   and the tag before any pairwise DepMap read. The freeze commit is afed1dd, and the SHA-256 of
   `preregistration/FREEZE.sha256` is 687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04
   <!-- src: README.md -->. The repository has no remote, so git tags and commit times are self-reported until deposition.
-- **Chronology audit.** `scripts/audit_order.py` was run at milestones M4 and M6 by the milestone analyst agents, not
-  by fresh agents, and found no ordering violation (reviews/audit_order_M4.md, reviews/audit_order_M6.md). Its globs do
-  not cover the hold-out and ledger outputs, whose first commits were checked by hand during review, and no audit was
-  committed for the final milestone.
+- **Chronology audit.** `scripts/audit_order.py` was run at milestones M4 and M6 by the milestone analyst agents
+  (reviews/audit_order_M4.md, reviews/audit_order_M6.md) and found no ordering violation. Its globs covered the
+  prediction ledger from the first commit (the M6 audit ran before the ledger existed), but not the hold-out evaluation,
+  the M7 judging or the post-review outputs. During revision the globs were extended to those three directories, and an
+  independent agent that produced no results ran the audit on all four (reviews/audit_order_M9.md): no ordering
+  violation, no pairwise output before the freeze tag, and the frozen files unchanged.
 - **Hidden tool predictions.** The tool's genome-wide predictions were hidden by sparse checkout until the freeze.
 - **One-look rule.** LOOKS.md allowed one primary look at H, after the ranker and calibration specification were
   committed. LOOKS.md also records an independent verification re-run of the primary analysis, one exploratory look
-  (complementarity) and the post-review exploratory analyses; the primary look's row was committed together with its
-  results, so "row before run" rests on the agents' record.
+  (complementarity) and the post-review exploratory analyses. Only the specification row (commit f0f7aa3) demonstrably
+  preceded the primary look (7db89d2), by 31 minutes <!-- src: reviews/audit_order_M9.md -->; the rows for the primary look, the verification re-run, the
+  exploratory look and the post-review analyses were each committed together with their results, so for those looks
+  "row before run" rests on the agents' record (reviews/audit_order_M9.md).
 - **Claim tracing.** Every number in this manuscript's source carries a comment naming its file. A claims table
-  generated from these comments (`results/revision/CLAIMS_preview.tsv`, by `scripts/91_claims_from_manuscript.py`)
-  replaces the hand-written CLAIMS.tsv, which held only six claims.
+  generated from these comments, for the main text and S1 Text (`CLAIMS.tsv`, by `scripts/91_claims_from_manuscript.py`),
+  replaces the hand-written version, which held only six claims.
 - **Agent scopes and prompts.** Blind roles (curation-lag auditor, literature agent L, recall probe, judges, adjudicator)
   were given read and write restrictions in their task prompts, which are reproduced verbatim in docs/AGENT_PROMPTS.md;
   `config/agent_scopes.yaml` is a template rather than an enforced policy, `results/agent_runs.tsv` logs only one agent
@@ -1458,7 +1262,9 @@ affected results are reported under both rules where both exist. Most were logge
 computed, but four were not: the R1 tie-break (found by the independent verifier after the primary look), the
 lineage-restricted expression rule behind the 646 versus 635 assessable count (found after the assessability output),
 the pure-p_cal reading of the top-40 fill (decided after the ranked list existed, before any literature step) and the
-module-label crediting in the judge instruction (logged retrospectively during manuscript review). Row dates in
+module-label crediting in the judge instruction (logged retrospectively during manuscript review in commit 017fa97;
+the row's date was first written as a later day and corrected in place in commit 95a40cc, so the commit, not the date,
+records when it was logged). Row dates in
 DEVIATIONS.md are not monotone, and the commits, not the dates, give the order. Thirteen rows fill operational details the
 design left open (for example orthogonal admission mechanics, the RBO persistence of 0.9, LOO and hold-out evaluation
 details, U scoring and bootstrap mechanics, artefact-flag operationalisation, the transcription-factor list, the fill
@@ -1480,14 +1286,14 @@ pure-p_cal top 40 was judged; the clean-first list shares 20 genes with it
 
 All code, configuration, pre-registration files, design documents and reviews, committed results, figure source data
 and candidate reports are in the project repository, which will be deposited with its git history and tags in an
-archival repository (Zenodo) on acceptance [archival DOI: 10.5281/zenodo.XXXXXXX, placeholder]. The pre-registration
+archival repository (Zenodo) on acceptance [archival DOI: to be completed by the human authors]. The pre-registration
 can be checked against the deposited history: freeze commit afed1dd (tags `preregistration-v1` and `design-frozen`),
 SHA-256 of `preregistration/FREEZE.sha256` 687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04
 <!-- src: README.md -->. Until deposition the repository has no public remote, so tag and commit times are self-reported.
 `README.md` gives the environment set-up, data acquisition and the run order of every script, and marks the steps that
 were performed by agents and cannot be re-run from a script. The layout is: `PROMPT.md` (the fixed goal), `DESIGN.md`
 (frozen design v2.3), `DEVIATIONS.md` and `LOOKS.md` (change and hold-out logs), `RESEARCH_TREE.md` (decision record),
-`results/revision/CLAIMS_preview.tsv` (number-to-file map generated from the manuscript's source comments),
+`CLAIMS.tsv` (number-to-file map generated from the source comments of the manuscript and S1 Text),
 `docs/AGENT_PROMPTS.md` (verbatim prompts for the blinded agent roles), `preregistration/` (the frozen
 list U, criteria, provenance and `FREEZE.sha256`), `config/` (frozen parameters, seeds, pinned environment, agent
 scopes), `src/` and `scripts/` (pipeline, numbered in execution order), `tests/` and `verify/` (unit tests, toy-data
@@ -1514,20 +1320,20 @@ curation-lag audit, literature agent L, judges and some analyses), working under
 The agents designed the study, wrote and ran all code, performed the literature screens and blinded judging, wrote the
 candidate reports and this manuscript, and revised it after review. The verbatim prompts of the blinded roles are in
 `docs/AGENT_PROMPTS.md`. AI tools cannot be authors and cannot take responsibility for the work. [Human oversight and
-accountability statement to be completed: which human author(s) set the brief, reviewed the design, results, literature
-claims and text, and take responsibility for the submission. At the time of writing, no human had verified the results,
-the literature claims or the text.]
+accountability statement: to be completed by the human authors, stating which human author(s) set the brief, reviewed
+the design, results, literature claims and text, and take responsibility for the submission. At the time of writing, no
+human had verified the results, the literature claims or the text.]
 
-**Author contributions (CRediT).** [To be completed by the human author(s); AI contributions are described above and
+**Author contributions (CRediT).** [To be completed by the human authors; AI contributions are described above and
 are not authorship.]
 
 # Acknowledgements
 
-[To be completed.]
+[To be completed by the human authors.]
 
 # Funding
 
-[To be completed.]
+[To be completed by the human authors.]
 
 # Competing interests
 
@@ -1673,7 +1479,7 @@ fitted on LOO genes, in bins of at least 30 genes; observed hit@1 with Wilson 95
 calibration. (E) Named positive controls: number of GO terms gained since t0 (window 2–300 genes), split into clean
 terms and terms whose supporting papers cite DepMap or co-essentiality work (excluded), with the rank of the best clean
 true term among the gene's reportable terms. Reasons for the misses of INTS15 and TMEM41B (true terms not reportable from
-t0 neighbour annotations) are given in Results [post-review]. †, not in H (no new term in the 5–200 window); case series only. Source data:
+t0 neighbour annotations) are given in Results and S1 Text [post-review exploratory]. †, not in H (no new term in the 5–200 window); case series only. Source data:
 manuscript/figures/source_data/Fig2a_precision_by_method.tsv, Fig2b_paired_differences.tsv, Fig2c_signal_quintiles.tsv,
 Fig2d_reliability.tsv, Fig2e_named_controls.tsv.
 
@@ -1682,8 +1488,9 @@ Fig2d_reliability.tsv, Fig2e_named_controls.tsv.
 **Fig 3. Calibrated catalogue for the pre-registered genes.** (A) Cumulative distribution of calibrated probability
 (p_cal) for expressed, assessable genes within calibration support (n = 269), for all in-support U genes (n = 2,583) and
 for in-support clean-negative genes, which are not expressed in at least 95% of lines (n = 708). The Tier B (0.3) and
-Tier A (0.5) thresholds lie off scale. (B) Σp_cal, the expected number of top terms that later experimental annotation
-will confirm, with percentile 95% confidence intervals from 2,000 cluster-bootstrap refits of the calibration model; the
+Tier A (0.5) thresholds lie off scale. (B) Σp_cal, the expected number of top terms that would be confirmed if every
+gene gained new experimental BP/MF annotation within about eight years <!-- src: config/frozen.yaml --> (conditional; about 4.9 <!-- src: results/revision/numbers_a3.json --> for the in-support genes
+if the 2018 cohort's annotation rate applies [post-review exploratory]), with percentile 95% confidence intervals from 2,000 cluster-bootstrap refits of the calibration model; the
 boundary-gene value is an upper bound, and the primary top 40 is a point sum. (C) Fraction of real, matched-gene and
 decoy-term predictions (247 anchors each) meeting the Tier-A orthogonal support condition (rule), the strict and any-class
 variants, and support from individual classes (P, physical; A, co-abundance; L, localisation; G, Perturb-seq), with 95%
@@ -1757,9 +1564,10 @@ counts. (B) Fraction of the primary top 40, S20 and the ten report genes for whi
 the gene's ten strongest partners was already in a published resource: hu.MAP 3.0 co-complex membership; Predictomes
 AlphaFold pair (SPOC ≥ 0.5); Wainberg et al. 2021 significant GLS pair, module (density ≥ 0.5) or explicit function
 prediction; Kim et al. 2019 network edge or cluster; and any co-essentiality catalogue or any resource. Flags record a
-published link, not the same function. (C) Assessable genes (grey) and the number remaining after subtracting the false
-calls expected from clean-negative rates (blue; 95% interval), by the stratifier used for the rates and the expression
-definition; labels give the null-adjusted count and its share of U. (D) Calibration of the frozen model and of one- and
+published link, not the same function. (C) Assessable genes (grey) and the excess of assessable calls over the false calls
+expected from clean-negative rates (blue; 95% interval), by the stratifier used for the rates and the expression
+definition; labels give the excess and its share of U. The excess is not the number of genes with real signal, which at
+full power is at least about 324 <!-- src: results/revision/a10_assessability_excess_and_implied.tsv --> (S1 Text). (D) Calibration of the frozen model and of one- and
 two-covariate models, all cross-fitted out of fold on H: calibration slope (solid, Wald 95% CI; dashed, cluster
 bootstrap) and c-statistic (cluster-bootstrap 95% CI); EPP, events per parameter; BSS, Brier skill score relative to a
 constant prediction. Source data: manuscript/figures/source_data/FigS4a_N1_by_route_and_flag.tsv,
@@ -1771,22 +1579,15 @@ FigS4_derived_numbers.tsv (scripts/62_figS4.py, from results/revision/).
 **Table 1. Principal data sources.** Version and use of each input; URLs, SHA-256 checksums and licences are in
 DATA.md. Restricted-licence files were used internally and are not redistributed.
 
-**Table 2. Top-40 and S20 predictions judged supported by the literature (blinded, adjudicated).** p_cal is given for the
-primary top 40 and the uncalibrated top-K mean zavg_BEF (zavg) for S20, in separate columns. UniProt score; CP: UniProt
-annotation score and whether the gene is a curated Complex Portal subunit [post-review]. L class, novelty class from the blind literature agent.
-Probe, recognised by the closed-book recall probe. Basis: whether judges cited the GO term (term) or only the module label
-(module); "generic" marks support from cancer cell-line proliferation studies. Module labels are shortened; full names
-are in the source file (manuscript/figures/source_data/Table2_rediscovery.tsv).
-
-**Table 3. The ten candidate reports.** For each report gene: rank and p_cal in the primary top 40; the predicted GO term
+**Table 2. The ten candidate reports.** For each report gene: rank and p_cal in the primary top 40; the predicted GO term
 and relationship type (a, stable subunit; b, assembly or maturation factor; d, pathway member, type unresolved); the
 strongest co-essential partners; evidence strength (physical-class support after Holm correction; other orthogonal
 classes, A, co-abundance, L, localisation, G, Perturb-seq; the blind literature agent's novelty class; and the
 adjudicated verdict on the real statement); prior catalogue evidence [post-review]; the main caveat after red-team
-review; and status (rediscovery, partial rediscovery or hypothesis). The decisive experiments are in S10 Table. Full
+review (DEMETER2 non-replication omitted as an unvalidated check); and status (rediscovery, partial rediscovery or hypothesis). The decisive experiments are in S10 Table. Full
 reports, experiment plans and red-team reviews: S1–S10 Reports.
 
-**Table 4. Notation** (Methods).
+**Table 3. Notation** (Methods).
 
 # Supporting information
 
@@ -1823,15 +1624,23 @@ al. 2019 (`results/revision/a2_novelty_overlap.tsv`); all other post-review tabl
 `results/revision/SUMMARY.md`).
 
 **S10 Table. Decisive experiments for the ten report genes.** `manuscript/supplementary/S10_Table_decisive_experiments.tsv`
-(moved from Table 3, with post-review notes).
+(moved from the candidate-report table, now Table 2, with post-review notes).
 
 **S1–S10 Reports. Candidate reports.** `reports/ANKRD52.md` (with `ANKRD52_experiments.md`), `reports/TRAPPC5.md` (with
 `TRAPPC5_experiments.md`), `reports/RBM34.md`, `reports/PLEKHH3.md`, `reports/CCDC71L.md`, `reports/TM2D2.md`,
 `reports/TM2D1.md`, `reports/C5orf34.md`, `reports/BICRAL.md`, `reports/INAFM1.md`; red-team reviews in
 `reports/redteam/`; machine-generated evidence bundles in `reports/data/`.
 
-**S1 Text. Frozen study design.** `DESIGN.md` v2.3 (tag `design-frozen`) and design reviews (`reviews/`).
+**S1 Text. Supplementary results.** Verification, sensitivity and secondary analyses moved from the Results in
+revision (tool reproduction and ranker choice; census strata and the rank-biased-overlap and null-adjusted
+assessability analyses; hold-out robustness, calibration details, named controls and complementarity; catalogue
+coverage, Σp_cal sensitivities, clean-negative false calls, artefact flags, orthogonal support and top-40 checks;
+judging details and alternative tests), Table A (the top-40 and S20 predictions judged supported by the literature,
+formerly Table 2) and the full candidate-report narrative. `manuscript/supplementary/S1_Text.md`.
+
+**S2 Text. Frozen study design.** `DESIGN.md` v2.3 (tag `design-frozen`) and design reviews (`reviews/`).
 
 **S1 Data. Figure source data.** `manuscript/figures/source_data/` (including S4 Fig).
 
-**S2 Text. Response to reviewers and verbatim agent prompts.** `reviews/ms_round1_response.md`; `docs/AGENT_PROMPTS.md`.
+**S3 Text. Responses to reviewers and verbatim agent prompts.** `reviews/ms_round1_response.md`,
+`reviews/ms_round2_response.md`; `docs/AGENT_PROMPTS.md`.

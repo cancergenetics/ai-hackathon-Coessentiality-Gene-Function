@@ -159,6 +159,7 @@ summaries, see `preregistration/PROVENANCE.md`). **Do not re-run 03 after the fr
 | 62 | `62_figS4.py` | S4 Fig: post-review exploratory analyses (reads `results/revision/` only) | `manuscript/figures/FigS4.*`, `source_data/FigS4*.tsv` | n/r | no |
 | 90 | `90_revision_analyses.py` | Post-review exploratory analyses requested by the round-1 referees (A1-A8) | `results/revision/` | n/r | yes |
 | 91 | `91_claims_from_manuscript.py` | Claims table generated from the manuscript's src comments | `results/revision/CLAIMS_preview.tsv` | n/r | no |
+| 92 | `92_round2_numbers.py` | Round-2 referee numbers (U-side and judging files only; no H outcomes) | `results/revision/a10_*.tsv` | n/r | no |
 | 70 | `70_report_bundles.py` | Evidence bundles for the ten deep-dive candidates | `reports/data/<gene>/`, `bundle_summary.tsv` | 133 s | yes |
 | 79 | `79_assemble_manuscript.py` | Assemble `manuscript/src/*.md` with keyed citations into `manuscript.md` | `manuscript/manuscript.md` | n/r | no |
 | 80 | `80_build_manuscript.sh` | Render `.md` to `.docx` and `.pdf` | `manuscript/manuscript.docx`, `.pdf` | n/r | no |
