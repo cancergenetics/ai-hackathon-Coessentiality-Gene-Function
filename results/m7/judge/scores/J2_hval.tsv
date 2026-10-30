@@ -1,0 +1,41 @@
+packet_id	slot	score	justification
+J006	A	1	Rows 4-9: regulates synapse formation / excitatory synapse differentiation.
+J006	B	0	No evidence on sulfur amino acid metabolism.
+J006	C	0	No evidence on wide pore channel activity.
+J006	D	0	No evidence on NADP binding.
+J046	A	0	No evidence addresses alkali metal ion binding.
+J046	B	1	Rows 1,2,6: F-actin cross-linker; regulates actin filament bundling.
+J046	C	0	No evidence on carbonate dehydratase activity.
+J046	D	0	CERF chromatin remodeling (row 7) is not snRNA transcription; not addressed.
+J063	A	0	Rows 1,4: axoneme organisation in sperm flagella but explicitly not cilia; ambiguous so unscored.
+J063	B	0	No evidence on mitotic cytokinesis.
+J063	C	0	No evidence on MTOC organisation.
+J063	D	0	No evidence on sister chromatid segregation.
+J067	A	0	No evidence on mitochondrial membrane organisation.
+J067	B	1	Rows 2,3,6,8: required for mitochondrial translation; rescues stalled mitoribosomes at early elongation.
+J067	C	0	No evidence on mitochondrial transport.
+J067	D	1	Rows 3,7: KO causes OXPHOS deficiency; role in OXPHOS biogenesis.
+J070	A	0	No evidence on PC acyl-chain remodeling.
+J070	B	0	No evidence on MVB sorting.
+J070	C	1	Rows 1,6,8: PGP synthase, committed step of PG/CL biosynthesis.
+J070	D	0	No evidence on vesicle fusion.
+J073	A	0	No evidence on C2H2 zinc finger binding.
+J073	B	0	No evidence on NDP kinase activity.
+J073	C	0	No evidence on arylsulfatase activity.
+J073	D	1	Rows 3,4: regulator of osteoclast function/differentiation; LEL needed for osteoclast differentiation.
+J083	A	1	Rows 1,2,5: neuron-specific restriction factor blocking HSV-1 entry.
+J083	B	0	No evidence on taste receptor activity.
+J083	C	0	Hair follicle BMP niche (row 8) is not branching morphogenesis; not addressed.
+J083	D	0	No evidence on nuclear steroid receptor activity.
+J085	A	0	No evidence on iron homeostasis.
+J085	B	1	Rows 1,3,5: monomethylates PRMT5, MYH9 lysine methyltransferase.
+J085	C	0	No evidence on sensory stimulus detection.
+J085	D	0	No evidence on nucleotide metabolism regulation.
+J089	A	0	No evidence on mitotic chromatid segregation.
+J089	B	1	Rows 1,2,9: required for flagellar axoneme assembly; laterality defects in zebrafish.
+J089	C	0	No evidence on G2/M transition.
+J089	D	0	No evidence on G1/S transition.
+J096	A	0	No evidence on gamma-catenin binding.
+J096	B	0	No evidence on arylsulfatase activity.
+J096	C	0	No evidence on NDP kinase activity.
+J096	D	1	Rows 1-3: H3K14ub E3 ligase building pericentromeric heterochromatin, recruiting SUV39H/HP1 to chromatin.

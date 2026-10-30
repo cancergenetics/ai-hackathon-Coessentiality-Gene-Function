@@ -1,0 +1,41 @@
+packet_id	slot	score	justification
+J006	A	1	Rows 1,4,6,8: regulates synapse formation / excitatory synapse differentiation.
+J006	B	0	No evidence on sulfur amino acid metabolism.
+J006	C	0	No evidence on wide pore channel activity.
+J006	D	0	No evidence on NADP binding.
+J046	A	0	No evidence on alkali metal ion binding.
+J046	B	1	Rows 1,2,6: actin cross-linker that regulates actin filament bundling; row 5 myosin-driven apical constriction.
+J046	C	0	No evidence on carbonate dehydratase activity.
+J046	D	0	Row 7 CERF chromatin remodeling complex stabilisation; nothing on snRNA transcription.
+J063	A	0	Rows 1,4: axoneme organisation in sperm flagella but explicitly 'not in cilia'/deficiency does not affect cilia; not clearly supportive of motile cilium assembly.
+J063	B	0	No evidence on mitotic cytokinesis.
+J063	C	0	No evidence on MTOC organization.
+J063	D	0	No evidence on mitotic chromatid segregation (only spermatogenic flagellar roles).
+J067	A	0	No evidence on mitochondrial membrane organization.
+J067	B	1	Rows 3,6,8: required for mitochondrial translation and ejects peptidyl-tRNA from stalled mitoribosomes at early elongation.
+J067	C	0	No evidence on mitochondrial transport.
+J067	D	0	Rows 3,7: OXPHOS deficiency is secondary to reduced mitochondrial translation; direct complex assembly role not shown.
+J070	A	0	No evidence on phosphatidylcholine acyl-chain remodeling.
+J070	B	0	No evidence on MVB sorting.
+J070	C	1	Rows 1,6,8: PGP synthase, committed step of phosphatidylglycerol/cardiolipin biosynthesis.
+J070	D	0	No evidence on vesicle fusion.
+J073	A	0	Row 5 GABP transcription complex binding; no C2H2 zinc finger domain binding shown.
+J073	B	0	No evidence on nucleoside diphosphate kinase activity.
+J073	C	0	No evidence on arylsulfatase activity.
+J073	D	1	Rows 3,4: regulator of osteoclast function; LEL important for osteoclast differentiation/multinucleation.
+J083	A	1	Rows 1,2,5: neuron-specific restriction factor blocking HSV-1 entry via NECTIN-1 (host suppression of viral/symbiont invasion).
+J083	B	0	No evidence on taste receptor activity.
+J083	C	0	Hair follicle stem cell niche (row 8) is not branching morphogenesis; not addressed.
+J083	D	0	No evidence on nuclear steroid receptor activity.
+J085	A	0	No evidence on iron homeostasis.
+J085	B	1	Rows 1,3,5,6: monomethylates PRMT5, MYH9, SOX7 lysine methyltransferase activity.
+J085	C	0	No evidence on sensory perception stimulus detection.
+J085	D	0	No evidence on nucleotide metabolic process regulation.
+J089	A	0	No evidence on mitotic sister chromatid segregation.
+J089	B	1	Rows 1-3,5: essential for assembly of sperm flagellar axoneme (central pair); row 9 laterality/cilia-related phenotype.
+J089	C	0	No evidence on G2/M transition.
+J089	D	0	No evidence on G1/S transition.
+J096	A	0	No evidence on gamma-catenin binding.
+J096	B	0	No evidence on arylsulfatase activity.
+J096	C	0	No evidence on nucleoside diphosphate kinase activity.
+J096	D	1	Rows 1-3: H3K14ub E3 ligase that recruits SUV39H/HP1 to pericentromeric heterochromatin; loss mislocalises SUV39H/H3K9me3.
