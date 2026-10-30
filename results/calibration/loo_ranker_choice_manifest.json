@@ -1,7 +1,7 @@
 {
  "script": "scripts/30_loo_ranker_choice.py",
  "created": "2026-10-29T22:16:37",
- "git_head": "26477b44fbdc9ac0f99804dee02603f793e830fb",
+ "git_head": "3cbcd6f2abb9a0180412a59290868950b8f655be",
  "gate": {
   "tag": "preregistration-v1",
   "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",

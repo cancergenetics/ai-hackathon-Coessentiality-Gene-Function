@@ -171,7 +171,7 @@ gls = core["gls"]
 o = calr["oof"]
 L = ["# M5b — the single pre-registered look at the temporal hold-out H: SUMMARY", "",
      ("**DRY RUN on LOO genes with pseudo-targets — NOT H.**" if B.DRY else
-      "Scripts 32–35 (one execution each unless noted in LOOKS.md); specification: LOOKS.md row f0922e1 (ranker R1, "
+      "Scripts 32–35 (one execution each unless noted in LOOKS.md); specification: LOOKS.md row 47631ed (ranker R1, "
       "§3.7 calibration spec, cluster fallback), DEVIATIONS.md. All CIs are 95% paired cluster-bootstrap percentile "
       f"intervals ({core['n_boot']:,} replicates, seed 0) unless stated; BCa intervals are in comparisons_core.tsv."), "",
      "## Verdicts", "",

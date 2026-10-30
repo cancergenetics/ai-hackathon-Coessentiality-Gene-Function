@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """34_calibration_fit.py -- M5b: the DESIGN.md v2.3 §3.7 calibration model on H, exactly as logged in LOOKS.md
-(specification row f0922e1), and the §0 decision branches.
+(specification row 47631ed), and the §0 decision branches.
 
 Model: logistic regression of hit@1 (zavg_BEF, R1, primary targets; scripts/32) on top-K mean zavg_BEF (>= 0, raw),
 R(g) (>= 0, raw), neighbourhood annotation coverage (fraction of N(g) in the t0 annotated background; >= 0; within-
@@ -119,7 +119,7 @@ refs = dict(coverage_t0=np.sort(CORE["cov_t0"][sc_mask]), coverage_current=np.so
 RT = pd.concat([pd.DataFrame(dict(reference=k, value=v)) for k, v in refs.items()])
 RT.to_csv(CALDIR / "model_H_percentile_reference.tsv.gz", sep="\t", index=False, float_format="%.8g")
 model = dict(
-    spec="DESIGN v2.3 §3.7; LOOKS.md specification row (f0922e1); scripts/34_calibration_fit.py",
+    spec="DESIGN v2.3 §3.7; LOOKS.md specification row (47631ed); scripts/34_calibration_fit.py",
     outcome="hit@1 of the V2 top reportable R1 term (zavg_BEF, K=25) against T(g), primary circularity rule",
     covariates=names, signs=signs, intercept=float(m.intercept_), coef=dict(zip(names, m.coef_.tolist())),
     standardised=dict(w=m.w_.tolist(), mu=m.mu_.tolist(), sd=m.sd_.tolist(),

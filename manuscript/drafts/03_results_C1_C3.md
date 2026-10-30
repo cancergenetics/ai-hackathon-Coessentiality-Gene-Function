@@ -24,7 +24,7 @@ against 0.140 for the hypergeometric ranker (R2), 0.111 for the empirical ranker
 <!-- src: results/calibration/loo_ranker_choice.md --> (Supplementary Fig. S1a). Every circularity variant gave the same choice. When annotation rows were
 shuffled among genes of similar annotation count, R1 precision@1 fell from 0.139 to 0.015, below the prior-only level of
 0.036 <!-- src: results/calibration/label_shuffle.md --> (Supplementary Fig. S1b). The choice and the calibration specification were logged before the hold-out was opened (LOOKS.md, commit
-f0922e1).
+47631ed).
 
 ## C1: about one in eight pre-registered genes is assessable
 

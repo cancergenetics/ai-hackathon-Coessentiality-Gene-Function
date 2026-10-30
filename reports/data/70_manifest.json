@@ -1,7 +1,7 @@
 {
  "script": "scripts/70_report_bundles.py",
  "created": "2026-10-30T05:57:22",
- "git_head": "e5c207b0bfd87fdd94e52436b86eb03d2dfd51e4",
+ "git_head": "07611616e0195304e47f7d3879a425a052037909",
  "gate": {
   "tag": "preregistration-v1",
   "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",

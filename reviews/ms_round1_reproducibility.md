@@ -3,14 +3,14 @@
 Scope: manuscript.md (Methods, safeguards, availability, Supporting information), PROMPT.md, DATA.md, config/, DEVIATIONS.md, LOOKS.md, preregistration/, reviews/audit_order_M*.md, git log (64 commits, UTC). `data/` listed only; `check_data.sh` not run.
 
 ## Scripts run
-- `audit_order.py`: no violations. Both tags point to afed1dd (2026-10-29 21:00:14); first pairwise commit 386283e (21:27:56). Blind spot: its globs match nothing for "U predictions" and "hold-out metrics". By hand, `results/holdout_eval` first appears in 7db89d2 (22:50) and `results/ledger` in a6dc4f0, both after the tag.
+- `audit_order.py`: no violations. Both tags point to afed1dd (2026-10-29 21:00:14); first pairwise commit 386283e (21:27:56). Blind spot: its globs match nothing for "U predictions" and "hold-out metrics". By hand, `results/holdout_eval` first appears in aa381fc (22:50) and `results/ledger` in c4eadf5, both after the tag.
 - `verify_sparse.sh`: PASS. Committed `sparse_check.txt` still says "tag does not exist" (written pre-tag; stale).
 - All 10 `FREEZE.sha256` files re-hash identically; the hash of FREEZE.sha256 (687075e6…) matches RESEARCH_TREE D2. DESIGN, frozen.yaml, seeds.yaml and knownness.py are unchanged since afed1dd.
 
 ## (1) Process claims
 - **Pre-registration timing and hash:** supported by history. No git remote exists, so tags and timestamps are self-reported (M1).
-- **One look at H:** largely true. Spec row f0f7aa3 (22:19) precedes the look 7db89d2 (22:50); dry runs used LOO genes (`scripts/32` dry branch). The look's LOOKS row was committed together with the results, so "row before run" rests on the agent's word. LOOKS also logs a verification re-run and a post hoc exploratory look; Methods mention neither.
-- **21 deviations:** count correct. "Each logged before the results it affects were computed" is false for at least two. The R1 tie-break was "found by independent verifier after M5b" (d8959e8), and the top-40 fill was "decided after M6". The 646/635 assessability gap was found after M4 output. Row dates are non-monotone and disagree with commits (spec row dated 10-30, committed 10-29).
+- **One look at H:** largely true. Spec row fa21808 (22:19) precedes the look aa381fc (22:50); dry runs used LOO genes (`scripts/32` dry branch). The look's LOOKS row was committed together with the results, so "row before run" rests on the agent's word. LOOKS also logs a verification re-run and a post hoc exploratory look; Methods mention neither.
+- **21 deviations:** count correct. "Each logged before the results it affects were computed" is false for at least two. The R1 tie-break was "found by independent verifier after M5b" (8e7e47f), and the top-40 fill was "decided after M6". The 646/635 assessability gap was found after M4 output. Row dates are non-monotone and disagree with commits (spec row dated 10-30, committed 10-29).
 - **Independent re-derivations, κ, sign-flip, red-teams:** supported (`verify/*.md`; κ 0.931 and 0.975, p = 0.0002, 18/40 vs 3/120 in `results/m7/judge/analysis_*.md`; 10 red-team files, each report revised afterwards).
 - **"Fresh agents ran audit_order":** overstated. The M6 file says it was run "by the M6 analyst agent". DESIGN.md (line 69) requires M4, M6 and M9; no M9 audit is committed.
 - **"Agent scopes restricted each role":** overstated. `agent_scopes.yaml` is headed TEMPLATE. `results/agent_runs.tsv` has one row (DESIGN §9 wants every run), and `results/agent_log/` is absent. No agent prompts (L, judges, recall probe, writers, red-team) are committed, so blinding cannot be audited.

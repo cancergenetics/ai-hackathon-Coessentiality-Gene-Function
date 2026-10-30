@@ -2,7 +2,7 @@
 """36_holdout_exploratory.py -- EXPLORATORY (post hoc; not pre-specified) look at the temporal hold-out H.
 
 Logged in LOOKS.md ("EXPLORATORY post hoc look at H: complementarity of zavg_BEF with homology and PPI baselines;
-hit@k"). No specification change; the primary analysis (scripts/32) is already reported (7db89d2).
+hit@k"). No specification change; the primary analysis (scripts/32) is already reported (aa381fc).
 Re-runs the scripts/32-33 code path (same primary H set, targets, circularity exclusion, R1, hu.MAP network and
 homology list as scripts/33; imports m5b_common and src; nothing modified) because the homology / PPI per-gene
 outputs were not saved, and asserts agreement with per_gene_core.tsv / secondary.tsv before using them.
@@ -140,7 +140,7 @@ z1 = H["zavg_BEF"][1]
 tsv = []
 L = ["# EXPLORATORY (post hoc; not pre-specified)", "",
      "Exploratory complementarity analysis on the temporal hold-out H (scripts/36; LOOKS.md row dated 2026-10-29). "
-     "The primary analysis (M5b, 7db89d2) is unchanged. Nothing here is a confirmatory test; p-values and CIs are "
+     "The primary analysis (M5b, aa381fc) is unchanged. Nothing here is a confirmatory test; p-values and CIs are "
      "descriptive, uncorrected, and chosen after seeing the primary results (homology 0.218 and PPI 0.049 hit@1 vs "
      f"zavg_BEF {z1.mean():.3f}). Primary H n = {N}; same genes, targets, circularity exclusion, R1 and >= 2-partner "
      "reportability as scripts/32-33 (per-gene hit@1 of zavg_BEF, GLS, prior-only, homology and PPI reproduce the "

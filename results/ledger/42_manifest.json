@@ -1,7 +1,7 @@
 {
  "script": "scripts/42_artefact_flags.py",
  "created": "2026-10-29T23:04:10",
- "git_head": "beabea770a395f3fc80eec047726773cc050092c",
+ "git_head": "fe9e67e0609a0e6c8c42ce154edbdc283271869a",
  "gate": {
   "tag": "preregistration-v1",
   "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",

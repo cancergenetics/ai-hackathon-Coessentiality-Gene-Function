@@ -11,7 +11,7 @@ comments in the rendered PDF/DOCX only. Labels in square brackets inside Results
 tag design-frozen; [deviation] = logged in DEVIATIONS.md (Methods states which rows were logged after the affected
 result); [exploratory] = post hoc, before manuscript review; [post-review exploratory] = requested by the referees,
 computed by scripts/90_revision_analyses.py (round 1) or scripts/92_round2_numbers.py (round 2, no H outcome read) into
-results/revision/ (the LOOKS.md row for the H-touching round-1 analyses was committed with their results, feb6172), no
+results/revision/ (the LOOKS.md row for the H-touching round-1 analyses was committed with their results, b39691d), no
 frozen rule changed; [post-review] alone = a table column or report statement added after review that is not itself an
 analysis; [descriptive] = computed for presentation by scripts/60_figures.py,
 scripts/61_figure5.py or scripts/62_figS4.py (manuscript/figures/source_data/), not a pre-specified test. Citations are

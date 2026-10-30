@@ -1,7 +1,7 @@
 # Independent verification of the M5b temporal hold-out PRIMARY result
 
 Verifier agent, 2026-10-29. LOOKS.md row appended before any H outcome was computed ("independent verification
-re-derivation of M5b primary (no spec change)", preceding 7db89d2). Nothing else was edited and nothing was committed.
+re-derivation of M5b primary (no spec change)", preceding aa381fc). Nothing else was edited and nothing was committed.
 
 **Verdict: VERIFIED WITH MINOR DISCREPANCIES (explained).** Every primary number is reproduced exactly: per-gene hit@1
 for zavg_BEF, prior-only and the matched null agrees for 809/809 genes. Three top-1 *term labels* differ (none of them a
@@ -9,7 +9,7 @@ hit, so no hit changes). All three come from how GAF rows are mapped to genes an
 
 ## Method
 
-`verify/rederive_holdout.py` was written from DESIGN.md §3.0–§3.3 and §3.5, the LOOKS.md f0922e1 specification row and
+`verify/rederive_holdout.py` was written from DESIGN.md §3.0–§3.3 and §3.5, the LOOKS.md 47631ed specification row and
 the DEVIATIONS.md rows of 2026-10-29/30. It imports only `src/gate.py` (`gate.check()` passes). It does **not** import
 scripts/32–34, `scripts/m5b_common.py`, `src/vocab.py` or `src/predictor.py`. I re-implemented each step myself:
 

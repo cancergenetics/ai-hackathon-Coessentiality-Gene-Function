@@ -2,7 +2,7 @@
 """41_pcal.py -- M6 step 2: calibrated probabilities for U predictions (DESIGN.md v2.3 §3.7, §4.2; DEVIATIONS.md
 2026-10-29 M6 rows).
 
-p_cal = the all-H fit of results/calibration/model_H.json (scripts/34; LOOKS spec row f0922e1) applied to the U
+p_cal = the all-H fit of results/calibration/model_H.json (scripts/34; LOOKS spec row 47631ed) applied to the U
 covariates of results/ledger/u_predictions.tsv (current release). Support (frozen rule, model_H.json): all four
 continuous covariates within the H 5th-95th percentiles and family with >= 30 H genes -> p_cal; below the 5th percentile
 only on top-K mean zavg and/or R(g) -> boundary p_cal reported as an UPPER BOUND (not tiered; summed separately); any

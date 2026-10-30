@@ -191,8 +191,8 @@ The Top-40 paragraph and C4 now say "would be confirmed if every gene were later
 
 **M5. "Logged before they were run" is unverifiable.** Done, using your text.
 - **Methods ("Post-review exploratory analyses"):** "were logged in LOOKS.md; the row was committed together with the
-  results (feb6172), so the order rests on the agents' record, as for the primary look".
-- **"One-look rule" bullet:** only the specification row (f0f7aa3) demonstrably preceded the primary look (7db89d2), by
+  results (b39691d), so the order rests on the agents' record, as for the primary look".
+- **"One-look rule" bullet:** only the specification row (fa21808) demonstrably preceded the primary look (aa381fc), by
   31 minutes. The rows for the primary look, the verification re-run, the exploratory look and the post-review analyses
   were each committed with their results (`reviews/audit_order_M9.md`).
 - **Front-matter comment:** no longer says "logged … before".
@@ -237,10 +237,10 @@ supported (11 on the term), against 6 of the 20 that were not shared (5 on the t
 The Results keep the one-sentence pointer.
 
 **S6. DEVIATIONS row dated after its commit.** Partly done.
-- **What happened:** the row was committed in 017fa97 with the date 2026-10-31. Commit 95a40cc, made before this
+- **What happened:** the row was committed in acdad5a with the date 2026-10-31. Commit 090a7d8, made before this
   review arrived, then corrected that date in place. This went against the append-only convention.
 - **Done:** the Methods now refer to the row by commit: "logged retrospectively during manuscript review in commit
-  017fa97; the row's date was first written as a later day and corrected in place in commit 95a40cc, so the commit, not
+  acdad5a; the row's date was first written as a later day and corrected in place in commit 090a7d8, so the commit, not
   the date, records when it was logged."
 - **Not done:** we did not append an erratum row to `DEVIATIONS.md`. That file sits outside the manuscript tree, and a
   new row would change the count of 22 rows cited throughout. We recommend that the human authors add a "record note
@@ -270,7 +270,7 @@ The Results keep the one-sentence pointer.
   - during revision they were extended, and an independent agent ran the audit on all four directories
     (`reviews/audit_order_M9.md`: PASS).
 - **"[post-review]" label:** defined once (S2 above).
-- **R1–R3 (REPORT.md):** fixed in commit 253f38d; no manuscript change.
+- **R1–R3 (REPORT.md):** fixed in commit ed9a54b; no manuscript change.
 
 ---
 

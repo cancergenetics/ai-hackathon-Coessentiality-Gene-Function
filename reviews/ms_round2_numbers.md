@@ -1,6 +1,6 @@
 # Manuscript number verification, round 2
 
-Subject: `manuscript/manuscript.md` at HEAD f845eb2 (v2) and `REPORT.md`. Auditor: independent agent (did not produce results).
+Subject: `manuscript/manuscript.md` at HEAD 0cde51b (v2) and `REPORT.md`. Auditor: independent agent (did not produce results).
 Tool: `./.env/bin/python -I verify/check_manuscript_numbers.py` (read-only). Nothing in the manuscript, REPORT.md or sources was edited.
 
 ## 1. Counts
@@ -35,7 +35,7 @@ Internal consistency: every quantity that appears more than once is identical wh
 | A3 | line 847 (Discussion) | 0.012 "about one gene in 80" | 1 / 0.012 = 83 (1 / 0.030 = 33 is right) | `results/holdout_eval/SUMMARY.md` | trivial wording |
 | A4 | line 1426, Methods > Reproducibility, "Chronology audit" bullet | "Its globs do not cover the hold-out and ledger outputs" | `results/ledger/` was in the glob set from the first commit (afed1dd); the M6 audit ran before the ledger existed (reviews/audit_order_M6.md: "prediction ledger: none"). Only `results/holdout_eval/`, `results/m7/` and `results/revision/` were uncovered. The same bullet's "no audit was committed for the final milestone" is superseded by `reviews/audit_order_M9.md` and the extended globs | `scripts/audit_order.py`; `reviews/audit_order_M6.md` | low (statement about process, not a number). Reword after M9 |
 | R1 | `REPORT.md` section 5 | "23+ logged deviations after the freeze" | 22 rows (manuscript Discussion, Methods and `DEVIATIONS.md` rows 7-28) | `DEVIATIONS.md` | low. Replace by 22 |
-| R2 | `REPORT.md` header | "2026-10-29 -> 2026-10-31" | last commit f845eb2 is 2026-10-30T09:36Z; no commit dated 10-31. The same later date appears in `DEVIATIONS.md` (row "2026-10-31", judge instruction), `reports/CCDC71L.md`, `reports/PLEKHH3.md` ("corrected 2026-10-31") | `git log` | low. Date anomaly; the manuscript already says row dates are not monotone |
+| R2 | `REPORT.md` header | "2026-10-29 -> 2026-10-31" | last commit 0cde51b is 2026-10-30T09:36Z; no commit dated 10-31. The same later date appears in `DEVIATIONS.md` (row "2026-10-31", judge instruction), `reports/CCDC71L.md`, `reports/PLEKHH3.md` ("corrected 2026-10-31") | `git log` | low. Date anomaly; the manuscript already says row dates are not monotone |
 | R3 | `REPORT.md` section 1, M4 | "Tool reproduces its published HT-AP exactly" | reproduced within +/-0.005; differences 0.0001-0.0003 (0.3451 vs 0.345 etc.) | `results/verification/tool_reproduction.md` | trivial. "within tolerance" |
 
 No other REPORT.md number disagrees with the manuscript or sources (646 / 13.1%, 243 (173-306) / 4.9%, 809, 0.030 (0.018-0.043), 0.000 / 0.005, +0.006, 0.218, 0.049, +0.006, 0.117, slope 0.82 (0.51-1.13), c 0.86, 24 events, 0.141, 4,137, 0.32 / 0.28 / 0.22, 18/40 vs 3/120, p = 0.0002, 16/40 and 7e-4, 19/20, 1/30, 42%, 59/90, 56% vs 13%, 34/40, 9/10, 11 reviewers and 2 disposition checks, 809/809).
@@ -46,5 +46,5 @@ No other REPORT.md number disagrees with the manuscript or sources (646 / 13.1%,
 - `a3_annotation_gain_rates.tsv` is the cited file but the unconditional expectation 4.90 (2.23-8.05) is in `numbers_a3.json` and `SUMMARY.md`, which the tag also names. The manuscript prints 8.1 for 8.05 (two-decimal source); fine.
 - `S2 Fig` legend: other scorable genes 10,303; `baseline_rows.md` frame is 13,240 protein-coding scorable genes outside U and H, less 3,000 LOO = 10,240. The 63 difference is probably non-protein-coding scorable genes; not verifiable from committed files, so left as a query.
 - `S4A` Wilson interval for D1 and D2 route 4-36% vs 3.5-36%: see A1.
-- Commit message 691244d says judge validation "0/30 decoys"; the adjudicated analysis (`analysis_hval.md`) and the manuscript say 1 of 30. The manuscript is right.
+- Commit message 1eb08ea says judge validation "0/30 decoys"; the adjudicated analysis (`analysis_hval.md`) and the manuscript say 1 of 30. The manuscript is right.
 - The 82 screening misses were dominated by derived or rewritten forms (95% CI labels, "five", "two to three", "2018", percentages of fractions), which the tool cannot match.

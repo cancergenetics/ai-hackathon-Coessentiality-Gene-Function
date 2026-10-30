@@ -1,6 +1,10 @@
-# raw/restricted data and large derived matrices: never commit
-/data/
-/external/
+# input data, third-party code and caches: never commit
+# (only the placeholder READMEs in data/ and external/README.md are tracked)
+/data/**
+!/data/**/
+!/data/**/README.md
+/external/**
+!/external/README.md
 /.env/
 *.npy
 *.npz
@@ -13,3 +17,9 @@ __pycache__/
 .DS_Store
 scratch/
 results/m7/scratch_*/
+
+# environments, local build outputs, assistant settings
+.venv/
+.claude/
+manuscript/~$*
+*.pkl

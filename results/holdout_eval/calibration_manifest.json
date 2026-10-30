@@ -1,7 +1,7 @@
 {
  "script": "scripts/34_calibration_fit.py",
  "created": "2026-10-29T22:49:20",
- "git_head": "e066f495f74d62eecf57b8abd049b5fd9433826e",
+ "git_head": "4c99d8344b359e040689a39f5f4f07cc829291b3",
  "gate": {
   "tag": "preregistration-v1",
   "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",

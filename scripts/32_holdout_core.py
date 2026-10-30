@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """32_holdout_core.py -- M5b: the single pre-registered look at the temporal hold-out H, core analyses
-(DESIGN.md v2.3 §3.0-§3.6, §8 'core'; LOOKS.md specification row f0922e1; DEVIATIONS.md).
+(DESIGN.md v2.3 §3.0-§3.6, §8 'core'; LOOKS.md specification row 47631ed; DEVIATIONS.md).
 
 Vocabulary V2 at t0 = GO 2018-07-02 GAF propagated with the current obo (src/vocab.build_v2) for neighbour
 membership, candidate terms (5-200 annotated scorable genes at t0, per query after the IPI with/from rule), term sizes

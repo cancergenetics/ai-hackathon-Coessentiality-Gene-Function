@@ -125,7 +125,7 @@ leakage; Ref 38 DOI.**
   - Results C4 and the candidate-report section;
   - Table 3 (new "Prior in catalogues" and "Status" columns);
   - the Discussion and Future work.
-- Each report also gained a "Prior prediction" bullet (`reports/*.md`, commit cb6b460).
+- Each report also gained a "Prior prediction" bullet (`reports/*.md`, commit 2e2e9c2).
 - Not done:
   - Pan 2018 (Cell Press 403; the supplement is not open access).
   - FIREWORKS (no genome-wide table).
@@ -450,7 +450,7 @@ genes.
 - The Discussion ("... and what they did not") and the front-matter label definition were also corrected.
 - The count is now 22 (21 + the 2026-10-31 row).
 
-**M3. Root README.** Already present (commit c35d171); updated in this revision.
+**M3. Root README.** Already present (commit 3bb0813); updated in this revision.
 
 - Prompts paragraph now points to `docs/AGENT_PROMPTS.md`.
 - Run-order rows added for 62, 90 and 91.

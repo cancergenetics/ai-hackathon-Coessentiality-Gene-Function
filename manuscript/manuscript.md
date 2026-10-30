@@ -11,7 +11,7 @@ comments in the rendered PDF/DOCX only. Labels in square brackets inside Results
 tag design-frozen; [deviation] = logged in DEVIATIONS.md (Methods states which rows were logged after the affected
 result); [exploratory] = post hoc, before manuscript review; [post-review exploratory] = requested by the referees,
 computed by scripts/90_revision_analyses.py (round 1) or scripts/92_round2_numbers.py (round 2, no H outcome read) into
-results/revision/ (the LOOKS.md row for the H-touching round-1 analyses was committed with their results, feb6172), no
+results/revision/ (the LOOKS.md row for the H-touching round-1 analyses was committed with their results, b39691d), no
 frozen rule changed; [post-review] alone = a table column or report statement added after review that is not itself an
 analysis; [descriptive] = computed for presentation by scripts/60_figures.py,
 scripts/61_figure5.py or scripts/62_figS4.py (manuscript/figures/source_data/), not a pre-specified test. Citations are
@@ -200,7 +200,7 @@ within the pre-specified ±0.005 of the published values
 chosen once, on 2,519 <!-- src: results/calibration/loo_ranker_choice.md --> characterised leave-one-out (LOO) genes, by
 the frozen mean-reciprocal-rank rule [pre-specified]: raw neighbour support (R1; MRR 0.169
 <!-- src: results/calibration/loo_ranker_choice.md -->) (S1A Fig). The choice and the calibration specification were
-logged before the hold-out was opened (LOOKS.md, commit f0f7aa3).
+logged before the hold-out was opened (LOOKS.md, commit fa21808).
 
 ## C1: at most one in eight pre-registered genes is assessable
 
@@ -1154,7 +1154,7 @@ After the first round of peer review, the referees' requests were run by `script
 `scripts/62_figS4.py`). After the second round, `scripts/92_round2_numbers.py` derived a few further quantities from
 U-side and judging files only (A10 below; no H outcome was read). None changes a frozen rule or a pre-specified result.
 The analyses that read H outcomes (A3, A4, A7, A8 below) were logged in LOOKS.md; the row was committed together with
-the results (feb6172), so the order rests on the agents' record, as for the primary look. All are labelled
+the results (b39691d), so the order rests on the agents' record, as for the primary look. All are labelled
 [post-review exploratory] in Results.
 
 **Revision history.** The first submitted version read p_cal unconditionally, attributed most of the published-but-uncurated
@@ -1232,8 +1232,8 @@ as follows; where the record is incomplete, we say so.
 - **Hidden tool predictions.** The tool's genome-wide predictions were hidden by sparse checkout until the freeze.
 - **One-look rule.** LOOKS.md allowed one primary look at H, after the ranker and calibration specification were
   committed. LOOKS.md also records an independent verification re-run of the primary analysis, one exploratory look
-  (complementarity) and the post-review exploratory analyses. Only the specification row (commit f0f7aa3) demonstrably
-  preceded the primary look (7db89d2), by 31 minutes <!-- src: reviews/audit_order_M9.md -->; the rows for the primary look, the verification re-run, the
+  (complementarity) and the post-review exploratory analyses. Only the specification row (commit fa21808) demonstrably
+  preceded the primary look (aa381fc), by 31 minutes <!-- src: reviews/audit_order_M9.md -->; the rows for the primary look, the verification re-run, the
   exploratory look and the post-review analyses were each committed together with their results, so for those looks
   "row before run" rests on the agents' record (reviews/audit_order_M9.md).
 - **Claim tracing.** Every number in this manuscript's source carries a comment naming its file. A claims table
@@ -1262,8 +1262,8 @@ affected results are reported under both rules where both exist. Most were logge
 computed, but four were not: the R1 tie-break (found by the independent verifier after the primary look), the
 lineage-restricted expression rule behind the 646 versus 635 assessable count (found after the assessability output),
 the pure-p_cal reading of the top-40 fill (decided after the ranked list existed, before any literature step) and the
-module-label crediting in the judge instruction (logged retrospectively during manuscript review in commit 017fa97;
-the row's date was first written as a later day and corrected in place in commit 95a40cc, so the commit, not the date,
+module-label crediting in the judge instruction (logged retrospectively during manuscript review in commit acdad5a;
+the row's date was first written as a later day and corrected in place in commit 090a7d8, so the commit, not the date,
 records when it was logged). Row dates in
 DEVIATIONS.md are not monotone, and the commits, not the dates, give the order. Thirteen rows fill operational details the
 design left open (for example orthogonal admission mechanics, the RBO persistence of 0.9, LOO and hold-out evaluation

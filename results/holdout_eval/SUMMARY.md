@@ -1,6 +1,6 @@
 # M5b — the single pre-registered look at the temporal hold-out H: SUMMARY
 
-Scripts 32–35 (one execution each unless noted in LOOKS.md); specification: LOOKS.md row f0922e1 (ranker R1, §3.7 calibration spec, cluster fallback), DEVIATIONS.md. All CIs are 95% paired cluster-bootstrap percentile intervals (10,000 replicates, seed 0) unless stated; BCa intervals are in comparisons_core.tsv.
+Scripts 32–35 (one execution each unless noted in LOOKS.md); specification: LOOKS.md row 47631ed (ranker R1, §3.7 calibration spec, cluster fallback), DEVIATIONS.md. All CIs are 95% paired cluster-bootstrap percentile intervals (10,000 replicates, seed 0) unless stated; BCa intervals are in comparisons_core.tsv.
 
 ## Verdicts
 

@@ -32,7 +32,7 @@ Every post-review number in the Abstract, C1–C4, the Discussion and Methods ma
 - Edit C1 to: "leaving an excess of 243 (173–306) calls … implying at least about 324 genes with real reproducible signal at full power; this is a lower bound under an untested assumption".
 - Rename `implied_true` in `a6_*.tsv` and recompute its interval with the 1/(1 − α) correction (U and clean negatives only).
 
-**M5. The claim that the post-review H analyses were logged before they ran is unverifiable.** The LOOKS.md row for the post-review analyses first appears in commit feb6172, the same commit as `results/revision/`. In Methods ("Post-review exploratory analyses") and in the response letter, replace "were logged in LOOKS.md before they were run" with: "were logged in LOOKS.md; the row was committed together with the results (feb6172), so the order rests on the agents' record, as for the primary look".
+**M5. The claim that the post-review H analyses were logged before they ran is unverifiable.** The LOOKS.md row for the post-review analyses first appears in commit b39691d, the same commit as `results/revision/`. In Methods ("Post-review exploratory analyses") and in the response letter, replace "were logged in LOOKS.md before they were run" with: "were logged in LOOKS.md; the row was committed together with the results (b39691d), so the order rests on the agents' record, as for the primary look".
 
 ## SHOULD
 
@@ -52,7 +52,7 @@ Every post-review number in the Abstract, C1–C4, the Discussion and Methods ma
 
 **S5. Round-1 S7 can be answered without H.** By my count, 12 of the 20 genes shared with the clean-first list were supported (11 on the term alone), against 6 of the 20 that were not shared. Report this.
 
-**S6. DEVIATIONS row dated 2026-10-31 was committed on 2026-10-30** (017fa97), so its date lies after its own commit. Add an erratum row; do not edit the original. In the Methods, refer to the row by its commit rather than its date.
+**S6. DEVIATIONS row dated 2026-10-31 was committed on 2026-10-30** (acdad5a), so its date lies after its own commit. Add an erratum row; do not edit the original. In the Methods, refer to the row by its commit rather than its date.
 
 ## Label audit
 

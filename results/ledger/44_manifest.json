@@ -1,7 +1,7 @@
 {
  "script": "scripts/44_tiers_top40.py",
  "created": "2026-10-30T04:52:43",
- "git_head": "4eb041c69dca0c5c5daa0b840cae739357d29fbc",
+ "git_head": "70864b2ccb494bd8f215e136f8cc03cf540f8611",
  "gate": {
   "tag": "preregistration-v1",
   "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",

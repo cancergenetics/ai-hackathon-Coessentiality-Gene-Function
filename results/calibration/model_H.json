@@ -1,5 +1,5 @@
 {
- "spec": "DESIGN v2.3 \u00a73.7; LOOKS.md specification row (f0922e1); scripts/34_calibration_fit.py",
+ "spec": "DESIGN v2.3 \u00a73.7; LOOKS.md specification row (47631ed); scripts/34_calibration_fit.py",
  "outcome": "hit@1 of the V2 top reportable R1 term (zavg_BEF, K=25) against T(g), primary circularity rule",
  "covariates": [
   "zmean",

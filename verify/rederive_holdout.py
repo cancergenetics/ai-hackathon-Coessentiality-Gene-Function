@@ -1,6 +1,6 @@
 """Independent re-derivation of the M5b temporal hold-out PRIMARY result (verifier; no spec change).
 
-Written from DESIGN.md v2.3 §3.0-§3.3, §3.5, the LOOKS.md f0922e1 spec row and DEVIATIONS.md rows of 2026-10-29/30.
+Written from DESIGN.md v2.3 §3.0-§3.3, §3.5, the LOOKS.md 47631ed spec row and DEVIATIONS.md rows of 2026-10-29/30.
 Does NOT import scripts/32-34, scripts/m5b_common.py, src/vocab.py or src/predictor.py. Imports only src/gate.py.
 
 Usage: ./.env/bin/python -I verify/rederive_holdout.py [--variant NAME ...]

@@ -17,7 +17,7 @@ within the pre-specified ±0.005 of the published values
 chosen once, on 2,519 <!-- src: results/calibration/loo_ranker_choice.md --> characterised leave-one-out (LOO) genes, by
 the frozen mean-reciprocal-rank rule [pre-specified]: raw neighbour support (R1; MRR 0.169
 <!-- src: results/calibration/loo_ranker_choice.md -->) (S1A Fig). The choice and the calibration specification were
-logged before the hold-out was opened (LOOKS.md, commit f0f7aa3).
+logged before the hold-out was opened (LOOKS.md, commit fa21808).
 
 ## C1: at most one in eight pre-registered genes is assessable
 

@@ -94,7 +94,7 @@ Add S20. M7: recall probe → blind literature screen (L) → judge validation o
 ### M5 — temporal hold-out: primary passes, modest absolute accuracy (2026-10-30)
 On LOO (3,000 characterised genes) the frozen rule chose ranker R1 (raw S; MRR 0.169 vs R2 0.140, R3 0.111, prior
 0.073); label shuffle collapses it (p@1 0.015). Ranker + calibration spec + a cluster fallback were logged (LOOKS.md,
-f0922e1) before H was opened once (7db89d2). On H (809 genes with targets after circularity exclusion), zavg_BEF
+47631ed) before H was opened once (aa381fc). On H (809 genes with targets after circularity exclusion), zavg_BEF
 precision@1 = 0.030 (95% CI 0.018–0.043) vs prior-only 0.000 and matched-gene null 0.005: **primary IUT passes**
 (Δ +0.030 and +0.025, CIs exclude 0; also in all 10 split-half networks and all circularity sensitivities). zavg_BEF vs
 GLS +0.006 (−0.005 to +0.017): no detectable difference. Calibration out-of-fold slope 0.82 (0.51–1.13), intercept

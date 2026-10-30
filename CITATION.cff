@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software or the results, please cite it as below, and cite DepMap, the co-essentiality tool, GO and the other data sources listed in DATA.md."
+title: "ai-hackathon-Coessentiality-Gene-Function: pre-registered and calibrated function predictions for uncharacterised human genes from DepMap co-essentiality"
+type: software
+authors:
+  - name: "The authors"          # TODO: replace with author list
+version: 0.1.0
+date-released: "2026-XX-XX"      # TODO: set on release
+repository-code: "https://github.com/cancergenetics/ai-hackathon-Coessentiality-Gene-Function"
+keywords:
+  - co-essentiality
+  - DepMap
+  - gene function prediction
+  - uncharacterised genes
+  - pre-registration
+  - AI agents
+references:
+  - type: software
+    title: "ai-hackathon-Coessentiality"
+    authors:
+      - name: "The authors"
+    repository-code: "https://github.com/cancergenetics/ai-hackathon-Coessentiality"
+# preferred-citation:            # TODO: add the manuscript once available

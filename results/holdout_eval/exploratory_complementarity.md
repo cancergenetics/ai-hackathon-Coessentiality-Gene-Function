@@ -1,6 +1,6 @@
 # EXPLORATORY (post hoc; not pre-specified)
 
-Exploratory complementarity analysis on the temporal hold-out H (scripts/36; LOOKS.md row dated 2026-10-29). The primary analysis (M5b, 7db89d2) is unchanged. Nothing here is a confirmatory test; p-values and CIs are descriptive, uncorrected, and chosen after seeing the primary results (homology 0.218 and PPI 0.049 hit@1 vs zavg_BEF 0.030). Primary H n = 809; same genes, targets, circularity exclusion, R1 and >= 2-partner reportability as scripts/32-33 (per-gene hit@1 of zavg_BEF, GLS, prior-only, homology and PPI reproduce the saved outputs exactly). Gene-level bootstrap CIs: 10,000 replicates, seed 0; PMID-only cluster CIs (the primary cluster rule) given alongside where noted.
+Exploratory complementarity analysis on the temporal hold-out H (scripts/36; LOOKS.md row dated 2026-10-29). The primary analysis (M5b, aa381fc) is unchanged. Nothing here is a confirmatory test; p-values and CIs are descriptive, uncorrected, and chosen after seeing the primary results (homology 0.218 and PPI 0.049 hit@1 vs zavg_BEF 0.030). Primary H n = 809; same genes, targets, circularity exclusion, R1 and >= 2-partner reportability as scripts/32-33 (per-gene hit@1 of zavg_BEF, GLS, prior-only, homology and PPI reproduce the saved outputs exactly). Gene-level bootstrap CIs: 10,000 replicates, seed 0; PMID-only cluster CIs (the primary cluster rule) given alongside where noted.
 
 ## 1. Per-gene hit@1 agreement (2x2) and union
 
