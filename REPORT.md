@@ -2,7 +2,7 @@
 
 Project: use the label-free co-essentiality tool zavg_BEF (github.com/cancergenetics/ai-hackathon-Coessentiality @
 3c684c9) on DepMap 26Q3 CRISPR screens to propose functions for pre-registered uncharacterised human genes.
-Run autonomously by an AI PI agent (Claude Opus 5.5) delegating to Opus/Sonnet 5.5 sub-agents, 2026-10-29 → 2026-10-31.
+Run autonomously by an AI PI agent (Claude Opus 5.5) delegating to Opus/Sonnet 5.5 sub-agents, 2026-10-29 → 2026-10-30.
 Paper: `manuscript/manuscript.pdf` (source `manuscript/src/`); candidate reports: `reports/`; record:
 `RESEARCH_TREE.md`, `DEVIATIONS.md`, `LOOKS.md`, `LESSONS.md`. Nothing here has been verified by a human or at the bench.
 
@@ -14,7 +14,7 @@ Paper: `manuscript/manuscript.pdf` (source `manuscript/src/`); candidate reports
 | M1 Literature & data | `LITERATURE.md` (Crossref-verified references); annotation data (GO current + 5 archives, gene2pubmed, UniProt, Unknome, TCRD) and orthogonal data (hu.MAP 3.0, BioPlex, OpenCell, HPA, Human Cell Map, STRING, BioGRID, Perturb-seq, ProteomeHD, AF2, chemogenomics, Complex Portal, MitoCarta); per-gene knownness table | `LITERATURE.md`, `config/data_checksums.tsv`, `results/preregistration/` |
 | M2 Design | DESIGN v1 → v2.3 through 2 review rounds (11 role-specific reviewers) and 2 item-by-item disposition checks | `DESIGN.md`, `reviews/round*` |
 | M3 Pre-registration | U = D1 ∩ (D2 ∪ D3) = 4,924 genes frozen before any gene–gene computation (tag `preregistration-v1`, hash gate); independently re-derived; hold-out H (820 genes, t0 = GO 2018-07) sized; power simulated | `preregistration/`, `results/holdout/`, `verify/` |
-| M4 Verification & census | Tool reproduces its published HT-AP exactly; 14/14 sanity checks; split-half assessability; orthogonal-source admission; curation-lag audit; LLM recall probe | `results/verification/`, `results/assessability/`, `results/orthogonal/`, `results/audit/` |
+| M4 Verification & census | Tool reproduces its published HT-AP to within 0.0003; 14/14 sanity checks; split-half assessability; orthogonal-source admission; curation-lag audit; LLM recall probe | `results/verification/`, `results/assessability/`, `results/orthogonal/`, `results/audit/` |
 | M5 Calibration | Ranker chosen on a LOO set, spec logged, then one look at H; calibration model fitted; independent re-derivation of the primary (809/809 per-gene agreement) | `results/calibration/`, `results/holdout_eval/`, `LOOKS.md` |
 | M6 Predictions | Every scorable U gene scored; calibrated probabilities; artefact flags; orthogonal support; top 40 | `results/ledger/` |
 | M7 Literature validation | Blind literature agents (100 genes) → redacted packets → judge validation on known genes → two blinded judges + adjudicator with 3 decoys per gene; 10 deep-dive reports, each red-teamed and revised | `results/m7/`, `reports/`, `reports/redteam/` |
@@ -86,7 +86,7 @@ calibration rests on 24 events; tiers and orthogonal-support rules turned out un
 families (mitochondrial, DNA repair, ribosome, nuclear RNA, centrosome) fell outside calibration support and were handled
 by a post hoc secondary list; judges were two instances of one LLM and credited module-label matches (logged
 retrospectively); literature agents can miss full-text-only evidence (e.g. CCDC71L); tool hyper-parameters were tuned on
-hu.MAP 3.0, which post-dates t0; 23+ logged deviations after the freeze (mostly unspecified operational details; some
+hu.MAP 3.0, which post-dates t0; 22 logged deviations after the freeze (mostly unspecified operational details; some
 retrospective); no wet-lab validation; no human verification of any result.
 
 ## 6. Remaining ideas (not pursued)

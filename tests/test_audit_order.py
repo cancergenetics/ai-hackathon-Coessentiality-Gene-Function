@@ -84,3 +84,16 @@ def test_flags_old_mtime(tmp_path):
     os.utime(repo / "results/holdout/x_metrics.tsv", (old, old))
     md, flags = ao.build_report(repo)
     assert any("mtime before" in f for f in flags), md
+
+
+def test_flags_later_milestone_dirs_before_tag(tmp_path):
+    """results/holdout_eval/, results/m7/, results/revision/ and results/ledger/ are pairwise-derived (M9 extension)."""
+    for d in ("results/holdout_eval/core.md", "results/m7/s20.tsv", "results/revision/a3.tsv", "results/ledger/top40.tsv"):
+        sub = tmp_path / d.split("/")[1]
+        sub.mkdir()
+        repo = init(sub)
+        commit(repo, {d: "x\n"}, "early", "2025-12-01T00:00:00+00:00")
+        commit(repo, {"preregistration/FREEZE.sha256": "x\n"}, "freeze", "2026-01-01T00:00:00+00:00")
+        freeze(repo, "2026-01-01T00:00:00+00:00")
+        md, flags = ao.build_report(repo)
+        assert any("at/before" in f for f in flags), (d, md)

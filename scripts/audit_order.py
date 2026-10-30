@@ -7,7 +7,7 @@ Reports
   * commit and tag-object times of the tags ``preregistration-v1`` and ``design-frozen`` (and whether they point to the
     same commit);
   * for each "pairwise-derived" path group (results/u_predictions*, results/ledger/, results/holdout/*metrics*, matrix
-    manifests, plus other pairwise result dirs): the first commit touching it, its time, and whether it is the tag commit
+    manifests, plus other pairwise result dirs and, since M9, results/holdout_eval/, results/m7/, results/revision/): the first commit touching it, its time, and whether it is the tag commit
     or an ancestor of it (i.e. committed before/with the tag). FLAG if so, or if the tag does not exist yet;
   * mtimes of files under results/ (working tree, tracked or not) against the tag time: pairwise-derived files whose mtime
     predates the tag are FLAGGED; the count of other files older than the tag is informational (annotation-only
@@ -36,6 +36,10 @@ GROUPS = {
     "matrices manifests": ["results/matrices/*manifest*", "results/matrices*manifest*"],
     "other pairwise outputs": ["results/calibration/", "results/loo/", "results/assessability/", "results/orthogonal/",
                                "results/matrices/", "results/neighbours/", "results/splithalf/"],
+    # added for the M9 audit: later-milestone outputs, all downstream of pairwise DepMap quantities
+    "hold-out evaluation": ["results/holdout_eval/"],
+    "M7 literature and judging": ["results/m7/"],
+    "post-review revision analyses": ["results/revision/"],
 }
 
 
