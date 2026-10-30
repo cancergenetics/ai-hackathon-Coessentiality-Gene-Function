@@ -1,0 +1,121 @@
+packet_id	slot	score	justification
+J032	A	0	No evidence row addresses this process/activity.
+J032	B	0	No evidence row addresses this process/activity.
+J032	C	0	No evidence row addresses this process/activity.
+J032	D	0	Row 5 shows muscle phenotype/RYR1 loss in patients but gene's described role is splicing/EJC; no direct muscle-process function.
+J033	A	0	No evidence row addresses this process/activity.
+J033	B	0	No evidence row addresses this process/activity.
+J033	C	0	No evidence row addresses this process/activity.
+J033	D	0	No evidence row addresses this process/activity.
+J034	A	0	No evidence row addresses this process/activity.
+J034	B	0	No evidence row addresses this process/activity.
+J034	C	0	No evidence row addresses this process/activity.
+J034	D	0	No evidence row addresses this process/activity.
+J035	A	0	No evidence row addresses this process/activity.
+J035	B	0	No evidence row addresses this process/activity.
+J035	C	0	Rows 2/6 only describe miRNA targeting of GENE_X mRNA; not the protein's function.
+J035	D	0	No evidence row addresses this process/activity.
+J036	A	0	No evidence row addresses this process/activity.
+J036	B	0	No evidence row addresses this process/activity.
+J036	C	0	No evidence row addresses this process/activity.
+J036	D	0	No evidence row addresses this process/activity.
+J037	A	0	No evidence row addresses this process/activity.
+J037	B	0	No evidence row addresses this process/activity.
+J037	C	1	Rows 1,4,5: accessory subunit of complex I (NADH dehydrogenase), mutation causes complex I deficiency.
+J037	D	0	No evidence row addresses this process/activity.
+J038	A	0	No evidence row addresses this process/activity.
+J038	B	0	No evidence row addresses this process/activity.
+J038	C	1	Rows 5,8: endoribonuclease, binds DCP1:DCP2 decapping, mediates mRNA decay.
+J038	D	0	No evidence row addresses this process/activity.
+J039	A	1	Rows 1,6: Commander scaffold, endosomal recycling and lysosomal protein delivery.
+J039	B	0	No evidence row addresses this process/activity.
+J039	C	0	Evidence is endosomal/lysosomal, not Golgi vesicle transport specifically.
+J039	D	1	Rows 1,3,4: essential for endosomal recycling in Commander.
+J040	A	0	No evidence row addresses this process/activity.
+J040	B	0	No evidence row addresses this process/activity.
+J040	C	0	No evidence row addresses this process/activity.
+J040	D	0	No evidence row addresses this process/activity.
+J041	A	0	No evidence row addresses this process/activity.
+J041	B	0	No evidence row addresses this process/activity.
+J041	C	0	No evidence row addresses this process/activity.
+J041	D	0	No evidence row addresses this process/activity.
+J042	A	0	No evidence row addresses this process/activity.
+J042	B	0	No evidence row addresses this process/activity.
+J042	C	1	Rows 1,2,3: Commander/CCC subunit essential for endosomal cargo recycling.
+J042	D	0	No evidence row addresses this process/activity.
+J043	A	0	No evidence row addresses this process/activity.
+J043	B	0	No evidence row addresses this process/activity.
+J043	C	0	No evidence row addresses this process/activity.
+J043	D	0	No evidence row addresses this process/activity.
+J044	A	0	No evidence row addresses this process/activity.
+J044	B	0	No evidence row addresses this process/activity.
+J044	C	0	No evidence row addresses this process/activity.
+J044	D	0	No evidence row addresses this process/activity.
+J045	A	-1	Rows 1,8: regulates/promotes migration and invasion, opposite to negative regulation of migration.
+J045	B	1	Rows 1,8: regulates cell proliferation/growth in cancer cells.
+J045	C	0	No evidence row addresses this process/activity.
+J045	D	0	No evidence row addresses this process/activity.
+J047	A	0	No evidence row addresses this process/activity.
+J047	B	0	No evidence row addresses this process/activity.
+J047	C	0	No evidence row addresses this process/activity.
+J047	D	0	No evidence row addresses this process/activity.
+J048	A	0	No evidence row addresses this process/activity.
+J048	B	0	No evidence row addresses this process/activity.
+J048	C	0	No evidence row addresses this process/activity.
+J048	D	-1	Row 8: interacts with IKK complex and inhibits NF-kB (ameloblasts), opposite to positive regulation.
+J049	A	0	No evidence row addresses this process/activity.
+J049	B	0	No evidence row addresses this process/activity.
+J049	C	0	No evidence row addresses this process/activity.
+J049	D	0	No evidence row addresses this process/activity.
+J050	A	0	No evidence row addresses this process/activity.
+J050	B	0	No evidence row addresses this process/activity.
+J050	C	0	Rows 2,3 link to Pol II nuclear import/promoter recruitment, not elongation specifically.
+J050	D	0	No evidence row addresses this process/activity.
+J051	A	0	No evidence row addresses this process/activity.
+J051	B	0	No evidence row addresses this process/activity.
+J051	C	0	No evidence row addresses this process/activity.
+J051	D	0	No evidence row addresses this process/activity.
+J052	A	0	No evidence row addresses this process/activity.
+J052	B	0	No evidence row addresses this process/activity.
+J052	C	0	No evidence row addresses this process/activity.
+J052	D	1	Rows 1,3,11: p24 cargo receptor for ER-to-Golgi anterograde transport.
+J053	A	0	No evidence row addresses this process/activity.
+J053	B	0	No evidence row addresses this process/activity.
+J053	C	0	No evidence row addresses this process/activity.
+J053	D	1	Rows 4,11: Commander CCC scaffold for endosomal recycling; RSS recyclinopathy.
+J054	A	0	No evidence row addresses this process/activity.
+J054	B	0	No evidence row addresses this process/activity.
+J054	C	0	No evidence row addresses this process/activity.
+J054	D	0	No evidence row addresses this process/activity.
+J055	A	0	No evidence row addresses this process/activity.
+J055	B	0	No evidence row addresses this process/activity.
+J055	C	0	No evidence row addresses this process/activity.
+J055	D	0	No evidence row addresses this process/activity.
+J056	A	1	Row 7: with CNOT11 regulates sensing of cellular dsRNA by MDA5 (cytoplasmic PRR).
+J056	B	0	No evidence row addresses this process/activity.
+J056	C	0	No evidence row addresses this process/activity.
+J056	D	1	Rows 1-3,5,6: CCR4-NOT module regulating mRNA stability/decay.
+J057	A	0	No evidence row addresses this process/activity.
+J057	B	0	No evidence row addresses this process/activity.
+J057	C	0	No evidence row addresses this process/activity.
+J057	D	0	No evidence row addresses this process/activity.
+J058	A	0	No evidence row addresses this process/activity.
+J058	B	0	No evidence row addresses this process/activity.
+J058	C	0	No evidence row addresses this process/activity.
+J058	D	0	No evidence row addresses this process/activity.
+J059	A	0	No evidence row addresses this process/activity.
+J059	B	0	No evidence row addresses this process/activity.
+J059	C	0	No evidence row addresses this process/activity.
+J059	D	0	No evidence row addresses this process/activity.
+J060	A	0	No evidence row addresses this process/activity.
+J060	B	0	No evidence row addresses this process/activity.
+J060	C	0	No evidence row addresses this process/activity.
+J060	D	0	No evidence row addresses this process/activity.
+J061	A	0	No evidence row addresses this process/activity.
+J061	B	1	Row 5: Commander scaffold for endosomal recycling.
+J061	C	1	Rows 5,3: Commander/endosomal recycling of transmembrane cargo, closely equivalent to intracellular protein transport.
+J061	D	0	No evidence row addresses this process/activity.
+J062	A	0	No evidence row addresses this process/activity.
+J062	B	0	No evidence row addresses this process/activity.
+J062	C	0	No evidence row addresses this process/activity.
+J062	D	0	No evidence row addresses this process/activity.

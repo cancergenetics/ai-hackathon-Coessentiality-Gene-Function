@@ -1,0 +1,4 @@
+batch	packet_id	slot	score_1	just_1	score_2	just_2
+hval	J067	D	0	Rows 3,7: OXPHOS deficiency is secondary to reduced mitochondrial translation; direct complex assembly role not shown.	1	Rows 3,7: KO causes OXPHOS deficiency; role in OXPHOS biogenesis.
+main2	J040	C	0	No evidence row addresses this process/activity.	1	Rows 1,4,5,7,8 RAVE complex assembling V-ATPase (proton-transporting ATPase module); iron homeostasis itself not shown
+main3	J098	B	1	Rows 1-3: adaptor of R2TP (PAQosome core) with RUVBL1/2; transcription elongation function not shown.	0	Row 1-2 R2TP adaptor regulating ciliogenesis; no transcription elongation evidence

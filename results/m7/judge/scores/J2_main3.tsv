@@ -1,0 +1,121 @@
+packet_id	slot	score	justification
+J064	A	0	Rows 3-4 only say 'may be involved in transcriptional regulation' by similarity; ribonucleotide metabolism not addressed
+J064	B	0	Not addressed by the evidence (rows 1-4 only sequence-based/list mentions)
+J064	C	0	Not addressed by the evidence
+J064	D	0	Rows 3-4 give only generic possible transcriptional regulation; no Pol III or initiation evidence
+J065	A	0	Not addressed by the evidence; rows 1-6 are cancer proliferation/MAPK/cell cycle
+J065	B	0	Rows 1-2 show cell cycle/MAPK effects, not organelle assembly
+J065	C	0	Not addressed by the evidence
+J065	D	0	Not addressed by the evidence
+J066	A	0	Not addressed by the evidence; evidence is endosomal recycling (rows 2, 11)
+J066	B	0	Not addressed by the evidence
+J066	C	1	Rows 2, 4, 11: subunit of CCC/Commander, essential for endosomal recycling of cargo; row 4 transferrin endocytosis/recycling
+J066	D	0	Not addressed by the evidence
+J068	A	0	Not addressed by the evidence
+J068	B	0	Not addressed by the evidence
+J068	C	0	Rows 2-5 show K11/K63 polyubiquitination of substrates by an SCF ligase, not monoubiquitination or methyltransferase complex
+J068	D	0	Not addressed by the evidence
+J069	A	0	Not addressed by the evidence; evidence is FINCA, embryonic development
+J069	B	0	Not addressed by the evidence
+J069	C	0	Not addressed by the evidence
+J069	D	0	Not addressed by the evidence
+J071	A	0	Not addressed by the evidence
+J071	B	0	Not addressed by the evidence
+J071	C	1	Rows 4-5, 10: GENE_X-PPP6C dephosphorylates AGO2, sustaining miRNA-mediated silencing (RISC)
+J071	D	0	Not addressed by the evidence
+J072	A	0	Not addressed by the evidence
+J072	B	0	Rows 1-4 concern DSB repair/53BP1/KAT8, not telomeric DNA binding
+J072	C	0	Not addressed by the evidence
+J072	D	0	Not addressed by the evidence
+J074	A	1	Rows 1-2, 4: TRAPP component acting in ER-to-Golgi vesicular transport (TRAPP III subtype not specified)
+J074	B	0	Evidence is ER-to-Golgi TRAPP, not endosomal/Commander
+J074	C	0	Not addressed by the evidence
+J074	D	0	Not addressed by the evidence
+J075	A	0	Not addressed by the evidence
+J075	B	0	Not addressed by the evidence
+J075	C	0	Not addressed by the evidence
+J075	D	0	Not addressed by the evidence; evidence is trophoblast TGF-beta/Smad3 and preeclampsia
+J076	A	0	Not addressed by the evidence
+J076	B	0	Not addressed by the evidence
+J076	C	0	Not addressed by the evidence; evidence is Golgi/Rab trafficking
+J076	D	0	Not addressed by the evidence
+J077	A	0	Rows 1-5: uncharacterised membrane protein, glioma expression only
+J077	B	0	Not addressed by the evidence
+J077	C	0	Not addressed by the evidence
+J077	D	0	Not addressed by the evidence
+J078	A	0	Not addressed by the evidence
+J078	B	0	Not addressed by the evidence
+J078	C	1	Rows 4-7: MGA-MAX defining DNA-binding subunit of PRC1.6 non-canonical Polycomb silencing complex
+J078	D	0	Not addressed by the evidence
+J079	A	0	Rows 1-7: no Polycomb/epigenetic evidence
+J079	B	0	Not addressed by the evidence
+J079	C	0	Not addressed by the evidence
+J079	D	0	Not addressed by the evidence; only lipid metabolism/fat deposition mentions
+J080	A	1	Rows 1, 6, 7: Elongator subunit catalysing tRNA anticodon-loop modification
+J080	B	0	Not addressed by the evidence (Elongator, not SIN3A HDAC)
+J080	C	0	Not addressed by the evidence
+J080	D	0	Not addressed by the evidence
+J081	A	0	Row 6 etc: no heart-development evidence
+J081	B	0	Not addressed by the evidence
+J081	C	0	Not addressed by the evidence
+J081	D	0	Not addressed by the evidence
+J082	A	0	Not addressed by the evidence
+J082	B	0	Not addressed by the evidence
+J082	C	0	Not addressed by the evidence
+J082	D	0	Not addressed by the evidence
+J084	A	0	Not addressed by the evidence
+J084	B	0	Not addressed by the evidence
+J084	C	0	Not addressed by the evidence
+J084	D	0	Row 1 nucleolar localisation only; no Pol I or transcription elongation evidence
+J086	A	0	Not addressed by the evidence
+J086	B	0	Not addressed by the evidence
+J086	C	0	Not addressed by the evidence
+J086	D	0	Not addressed by the evidence; only nucleosome core component annotation
+J087	A	0	Not addressed by the evidence; association hits only
+J087	B	0	Not addressed by the evidence
+J087	C	0	Not addressed by the evidence
+J087	D	0	Not addressed by the evidence
+J088	A	0	Not addressed by the evidence
+J088	B	1	Rows 1, 5, 6, 8: subunit of GID/CTLH E3 ligase complex (module matches; Wnt process itself not addressed)
+J088	C	0	Not addressed by the evidence
+J088	D	0	Not addressed by the evidence
+J090	A	0	Rows 1-2 only possible transcriptional regulation
+J090	B	0	Not addressed by the evidence
+J090	C	0	Not addressed by the evidence
+J090	D	0	Not addressed by the evidence
+J091	A	0	Not addressed by the evidence
+J091	B	1	Rows 1, 3, 4, 8: CCR4-NOT subunit needed for tubulin mRNA decay and mRNA stability
+J091	C	1	Row 7: regulates sensing of unedited dsRNA by MDA5 (cytoplasmic PRR pathway); module BRCA1-A not supported
+J091	D	0	Evidence is CCR4-NOT deadenylation, not ubiquitin catabolism or cullin-RING
+J092	A	0	Not addressed by the evidence
+J092	B	0	Row 8 PD-L1 nuclear translocation promoted via IPO5, not negative regulation; module not supported
+J092	C	1	Rows 1, 8: Nup107-160 NPC subunit; regulates PD-L1 nuclear translocation
+J092	D	0	Not addressed by the evidence
+J093	A	0	Not addressed by the evidence
+J093	B	1	Rows 1, 3, 6: WASH complex subunit in endosome tubule fission, cargo sorting, PTH1R endosomal trafficking (process matches; Commander not named)
+J093	C	0	Not addressed by the evidence
+J093	D	0	Not addressed by the evidence
+J094	A	0	Row 8 co-expression only; no direct evidence
+J094	B	0	Not addressed by the evidence
+J094	C	0	Not addressed by the evidence
+J094	D	0	Not addressed by the evidence
+J095	A	0	Not addressed by the evidence
+J095	B	0	Not addressed by the evidence
+J095	C	0	Row 4 LSD1-mediated gene silencing coregulation does not address carboxylic acid biosynthesis or a silencing complex
+J095	D	1	Rows 6-7: GENE_X promotes cell proliferation in cervical and gastric cancer cells
+J097	A	0	Not addressed by the evidence
+J097	B	0	Complex I assembly role (rows 1-2) does not address mitochondrial gene expression or HAT complex
+J097	C	1	Rows 1, 8: accessory subunit of mitochondrial respiratory complex I (NADH dehydrogenase)
+J097	D	0	Not addressed by the evidence
+J098	A	0	Not addressed by the evidence
+J098	B	0	Row 1-2 R2TP adaptor regulating ciliogenesis; no transcription elongation evidence
+J098	C	0	Not addressed by the evidence
+J098	D	0	Not addressed by the evidence
+J099	A	0	Not addressed by the evidence; evidence is MIER1-HDAC corepressor subunit
+J099	B	0	Not addressed by the evidence
+J099	C	0	Not addressed by the evidence
+J099	D	0	Not addressed by the evidence
+J100	A	0	Row 3 transcriptional repression of SLC44A2, not transport function
+J100	B	0	Not addressed by the evidence
+J100	C	0	Not addressed by the evidence
+J100	D	0	Not addressed by the evidence

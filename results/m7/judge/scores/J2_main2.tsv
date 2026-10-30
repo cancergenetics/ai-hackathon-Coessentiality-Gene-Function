@@ -1,0 +1,121 @@
+packet_id	slot	score	justification
+J032	A	0	Rows 6-8 show splicing/EJC role, not transcription initiation or Pol complex
+J032	B	0	No oxidoreductase or histone methyltransferase evidence
+J032	C	0	No lyase evidence; Not addressed by evidence
+J032	D	0	Row 5 myopathic changes/RYR1 depletion is indirect; no cullin-RING or muscle process shown
+J033	A	0	Rows 1,5 describe glycan biosynthesis, not catabolism of organophosphates
+J033	B	0	Not addressed by evidence; rows 3,6 neuronal/dendrite phenotypes not organelle localization
+J033	C	0	Not addressed by evidence (no JNK evidence)
+J033	D	0	Not addressed by evidence (no chromatin adaptor evidence)
+J034	A	0	Rows 1,6 show RhoA GEF activity, not pentosyltransferase
+J034	B	0	Not addressed by evidence (no retinoid evidence)
+J034	C	0	Not addressed by evidence (no glycosylation evidence)
+J034	D	0	Not addressed by evidence (no neutral lipid evidence)
+J035	A	0	Not addressed by evidence; rows 1-7 show no sulfur or lipid metabolism
+J035	B	0	Not addressed by evidence; no antiviral defense evidence
+J035	C	0	Row 2 cytoskeleton link is only miRNA co-targeting with WASF2, not GENE_X function; no SWI/SNF evidence
+J035	D	0	Not addressed by evidence; no transport or SCAR evidence
+J036	A	0	Not addressed by evidence; surfactant protein evidence only (rows 1-7)
+J036	B	0	Not addressed by evidence (no bone evidence)
+J036	C	0	Not addressed by evidence (no tetrapyrrole binding)
+J036	D	0	Not addressed by evidence (no dsRNA binding)
+J037	A	0	Not addressed by evidence; rows 1-6 show complex I subunit only
+J037	B	0	Not addressed by evidence (no transferase or ion channel evidence)
+J037	C	1	Rows 1,2,4 complex I (NADH dehydrogenase) accessory subunit; OXPHOS module
+J037	D	0	Not addressed by evidence (no E-box binding or exosome evidence)
+J038	A	0	Not addressed by evidence (no isomerase or mitochondrial translation evidence)
+J038	B	0	Not addressed by evidence (no small GTPase binding)
+J038	C	1	Rows 5,7,8 endoribonuclease and decapping platform driving mRNA decay with DCP1:DCP2/EDC4
+J038	D	0	Row 9 peroxisome location only; no protein-localization or cullin evidence
+J039	A	1	Rows 1,3,6,9 endosomal recycling and lysosomal protein delivery (intracellular protein transport)
+J039	B	0	Not addressed by evidence (no sphingolipid evidence)
+J039	C	0	Rows 1,9 endosomal recycling, not Golgi vesicle transport or TRAPP III
+J039	D	1	Row 1,3 Commander complex scaffold in endosomal recycling
+J040	A	0	Not addressed by evidence (no iron binding or mito translation evidence)
+J040	B	0	Not addressed by evidence (no RNA 3' processing evidence)
+J040	C	1	Rows 1,4,5,7,8 RAVE complex assembling V-ATPase (proton-transporting ATPase module); iron homeostasis itself not shown
+J040	D	0	Not addressed by evidence (no PDZ binding or kinetochore evidence)
+J041	A	0	Not addressed by evidence (only interaction with MORF4L1/KIF1B/CSPP1)
+J041	B	0	Not addressed by evidence (no calcium transport evidence)
+J041	C	0	Not addressed by evidence (no magnesium binding)
+J041	D	0	Rows 1 interactions with KIF1B/CSPP1 only; no projection organization evidence
+J042	A	0	Not addressed by evidence (no sphingolipid evidence)
+J042	B	0	Not addressed by evidence (no phospholipid biosynthesis evidence)
+J042	C	1	Rows 1,3 CCC/Commander complex subunit in endosomal recycling
+J042	D	0	Not addressed by evidence (no fatty acid or OXPHOS evidence)
+J043	A	0	Not addressed by evidence; no RNA stability or CCR4-NOT evidence
+J043	B	0	Not addressed by evidence (no lipid carrier or cullin evidence)
+J043	C	0	Row 4 Golgi retention/COPI; no O-glycosylation evidence
+J043	D	0	Not addressed by evidence (no PRR signaling or RQC evidence)
+J044	A	0	Not addressed by evidence (histone variant; no PDZ/CCAN evidence)
+J044	B	0	Not addressed by evidence (no iron binding evidence)
+J044	C	0	Not addressed by evidence (no vitamin binding evidence)
+J044	D	0	Not addressed by evidence (no iron homeostasis or ATPase evidence)
+J045	A	-1	Row 8 overexpression promotes migration/invasion, opposing negative regulation; row 1 'regulates migration'; no STRIPAK evidence
+J045	B	1	Rows 1,8 regulates cell proliferation in cancer cells (growth); ion channel module not shown
+J045	C	0	Rows 5-7 CCM pathway/actin; no small GTPase signaling shown
+J045	D	0	Not addressed by evidence (no purine metabolism evidence)
+J047	A	0	Not addressed by evidence; only family-level and expression mentions
+J047	B	0	Not addressed by evidence (no NF-kB evidence)
+J047	C	0	Not addressed by evidence (no complex disassembly evidence)
+J047	D	0	Not addressed by evidence (no cytoskeletal constituent evidence)
+J048	A	0	Not addressed by evidence; rows 1-5 epidermal/tooth development, no gamete or peptidase evidence
+J048	B	0	Not addressed by evidence (no sodium transport evidence)
+J048	C	0	Not addressed by evidence (no TGF-beta/BMP signaling or cullin evidence)
+J048	D	-1	Row 8 GENE_X interacts with IKK complex and inhibits NF-kB, opposing positive regulation
+J049	A	0	Not addressed by evidence (only gastric cancer EEF1D/PI3K-AKT data)
+J049	B	0	Not addressed by evidence (no chaperone binding)
+J049	C	0	Not addressed by evidence (no toxic substance response)
+J049	D	0	Not addressed by evidence (no phagocytosis evidence)
+J050	A	0	Not addressed by evidence (no metal transport or spliceosome evidence)
+J050	B	0	Row 1 COPI vesicle association; no endosome organization or detoxification evidence
+J050	C	0	Rows 2,3 Pol II RPB2 delivery and transcription regulation but elongation/PAQosome not specifically shown
+J050	D	0	Not addressed by evidence (no cell junction evidence)
+J051	A	0	Not addressed by evidence (no anion transport evidence)
+J051	B	0	Not addressed by evidence (no carboxylic acid binding)
+J051	C	0	Not addressed by evidence; only generic transcriptional regulator annotation
+J051	D	0	Not addressed by evidence (no organophosphate transport)
+J052	A	0	Not addressed by evidence (no steroid metabolism evidence)
+J052	B	0	Not addressed by evidence (no phospholipid biosynthesis evidence)
+J052	C	0	Not addressed by evidence (no lipid transport evidence)
+J052	D	1	Rows 1,3,11 p24 cargo receptor for ER-to-Golgi anterograde transport
+J053	A	0	Not addressed by evidence (no fatty acid metabolism evidence)
+J053	B	0	Not addressed by evidence (no lipid transport evidence)
+J053	C	0	Not addressed by evidence (no phospholipid biosynthesis evidence)
+J053	D	1	Rows 4,11 Commander/CCC subunit in endosomal recycling
+J054	A	0	Not addressed by evidence (no adhesion evidence)
+J054	B	0	Row 2 PPP1CA interaction only; no phosphorylation regulation shown
+J054	C	0	Row 3 OXPHOS promotion in GIST but no ROS metabolism evidence
+J054	D	0	Not addressed by evidence (no RNA localization evidence)
+J055	A	0	Not addressed by evidence; only ortholog expression/AR regulation
+J055	B	0	Row 3 is regulation of Aard by AR, not repressor activity of the protein
+J055	C	0	Not addressed by evidence (no immune signaling evidence)
+J055	D	0	Not addressed by evidence (no lymphocyte evidence)
+J056	A	1	Row 7 interacts with CNOT11/GGNBP2 to regulate MDA5 cytoplasmic dsRNA sensing; row 8 interferon response
+J056	B	0	Not addressed by evidence (no glycosylation evidence)
+J056	C	0	Not addressed by evidence (no lipid carrier evidence)
+J056	D	1	Rows 1-3,5,6 CCR4-NOT module subunit affecting mRNA stability/deadenylation
+J057	A	0	Rows 1,2,5 lipid accumulation/CoA binding, not sulfur compound metabolism
+J057	B	0	Row 3 integrin/FAK signaling via MYH9; no cell adhesion negative regulation shown
+J057	C	0	Row 3 MYH9 stabilization is not microtubule-based process
+J057	D	0	Row 8 no ion channel activity; no GPCR binding evidence
+J058	A	0	Not addressed by evidence (ATP synthase c-subunit only)
+J058	B	0	Not addressed by evidence (no CNS development evidence)
+J058	C	0	Not addressed by evidence (no immune signaling evidence)
+J058	D	0	Row 3 c-subunit not PTP; no apoptotic signaling evidence
+J059	A	0	Not addressed by evidence; row 2 only tight-junction expression association
+J059	B	0	Not addressed by evidence (no cytokine receptor binding)
+J059	C	0	Row 2 expression association with tight junctions only, not a function
+J059	D	0	Not addressed by evidence (no PI3K/AKT evidence)
+J060	A	0	Rows 1-4 lipogenesis/ACC activation, no adhesion evidence
+J060	B	0	Not addressed by evidence (no cell-cell adhesion evidence)
+J060	C	0	Not addressed by evidence (no alcohol metabolism evidence)
+J060	D	0	Rows 2-4 fatty acid synthesis, not sulfur compound metabolism
+J061	A	0	Not addressed by evidence (no steroid metabolism evidence)
+J061	B	1	Rows 4,5 Commander complex in endosomal recycling
+J061	C	1	Rows 4,5 Commander-mediated endosomal recycling of cargo (intracellular protein transport)
+J061	D	0	Not addressed by evidence (no phospholipid biosynthesis evidence)
+J062	A	0	Not addressed by evidence (no tRNA evidence)
+J062	B	0	Not addressed by evidence (no ion channel evidence)
+J062	C	0	Not addressed by evidence (no phosphatase binding)
+J062	D	0	Not addressed by evidence (no light response or spliceosome evidence)

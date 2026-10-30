@@ -1,0 +1,121 @@
+packet_id	slot	score	justification
+J064	A	0	Rows 3-4 give only a similarity-based 'may be involved in transcriptional regulation'; ribonucleotide metabolism not addressed.
+J064	B	0	Not addressed by the evidence.
+J064	C	0	Not addressed by the evidence.
+J064	D	0	No evidence of Pol III or transcription initiation role (rows 3-4 only suggest generic transcriptional regulation).
+J065	A	0	Not addressed by the evidence.
+J065	B	0	Rows 1-2 report cell cycle/MAPK roles in cancer, not organelle assembly.
+J065	C	0	Not addressed by the evidence.
+J065	D	0	Not addressed by the evidence.
+J066	A	0	Not addressed by the evidence.
+J066	B	0	Not addressed by the evidence.
+J066	C	1	Rows 1,2,11: subunit of CCC/Commander complex driving endosomal recycling; row 4 endocytosis/recycling defects.
+J066	D	0	Not addressed by the evidence.
+J068	A	0	Not addressed by the evidence.
+J068	B	0	Not addressed by the evidence.
+J068	C	0	Rows 2-5 report K11/K63 or polyubiquitination of substrates, not monoubiquitination; methyltransferase complex not addressed.
+J068	D	0	Not addressed by the evidence.
+J069	A	0	No sound-perception evidence.
+J069	B	0	Not addressed by the evidence.
+J069	C	0	Not addressed by the evidence.
+J069	D	0	Not addressed by the evidence.
+J071	A	0	Not addressed by the evidence.
+J071	B	0	Not addressed by the evidence.
+J071	C	1	Row 4: GENE_X-PPP6C dephosphorylates AGO2 and sustains miRNA-mediated silencing; row 5 miRNA silencing impaired; row 6 miR-155/SOCS1 silencing.
+J071	D	0	Not addressed by the evidence.
+J072	A	0	Not addressed by the evidence.
+J072	B	0	Rows 1-4 concern DSB repair/nucleolus; telomere cap complex not addressed.
+J072	C	0	Not addressed by the evidence.
+J072	D	0	Not addressed by the evidence.
+J074	A	1	Rows 1-2: component of TRAPP complex acting in ER-to-Golgi vesicular transport (Golgi vesicle transport).
+J074	B	0	TRAPP/ER-Golgi evidence, no Commander or endosomal transport link.
+J074	C	0	Not addressed by the evidence.
+J074	D	0	Not addressed by the evidence.
+J075	A	0	Not addressed by the evidence.
+J075	B	0	Not addressed by the evidence.
+J075	C	0	Not addressed by the evidence.
+J075	D	0	Not addressed by the evidence.
+J076	A	0	Golgi/trafficking evidence only; no heart contraction link.
+J076	B	0	Not addressed by the evidence.
+J076	C	0	Rows 4-6 on trafficking/glycosylation; RNA stability not addressed.
+J076	D	0	Rab-GDF activity (row 4) is not lipid carrier activity.
+J077	A	0	Not addressed by the evidence.
+J077	B	0	Not addressed by the evidence.
+J077	C	0	Not addressed by the evidence.
+J077	D	0	Not addressed by the evidence.
+J078	A	0	Not addressed by the evidence.
+J078	B	0	Not addressed by the evidence.
+J078	C	1	Rows 4-7: DNA-binding subunit of non-canonical Polycomb PRC1.6 with MAX/E2F6/L3MBTL2/PCGF6, epigenetic repression of target genes.
+J078	D	0	Not addressed by the evidence.
+J079	A	0	Row 1: no functional annotation; no Polycomb evidence.
+J079	B	0	Not addressed by the evidence.
+J079	C	0	Rows 2-4 on fat deposition/lipid metabolism, not transporter activity.
+J079	D	0	Not addressed by the evidence.
+J080	A	1	Rows 1,6,7: subunit of Elongator complex catalysing tRNA anticodon-loop (wobble) modification.
+J080	B	0	Elongator evidence does not address epigenetic regulation or SIN3A complex.
+J080	C	0	Not addressed by the evidence.
+J080	D	0	Not addressed by the evidence.
+J081	A	0	Not addressed by the evidence.
+J081	B	0	Not addressed by the evidence.
+J081	C	0	Not addressed by the evidence.
+J081	D	0	Not addressed by the evidence.
+J082	A	0	Not addressed by the evidence.
+J082	B	0	Not addressed by the evidence.
+J082	C	0	Not addressed by the evidence.
+J082	D	0	Not addressed by the evidence.
+J084	A	0	Only expression/cancer evidence; ion channel not addressed.
+J084	B	0	Not addressed by the evidence.
+J084	C	0	Not addressed by the evidence.
+J084	D	0	Row 1 nucleolar localisation only; no transcription elongation or Pol I evidence.
+J086	A	0	Histone H2A paralogue; no vacuolar transport evidence.
+J086	B	0	Not addressed by the evidence.
+J086	C	0	Not addressed by the evidence.
+J086	D	0	Not addressed by the evidence.
+J087	A	0	Not addressed by the evidence.
+J087	B	0	Not addressed by the evidence.
+J087	C	0	Not addressed by the evidence.
+J087	D	0	Not addressed by the evidence.
+J088	A	0	Rows 1,5,6: CTLH subunit; DNA recombination or vitamin metabolism not addressed.
+J088	B	1	Rows 1,5,6,8: subunit of the GID/CTLH E3 ubiquitin ligase complex (module matches); Wnt function itself not shown.
+J088	C	0	Not addressed by the evidence.
+J088	D	0	Not addressed by the evidence.
+J090	A	0	Not addressed by the evidence.
+J090	B	0	Not addressed by the evidence.
+J090	C	0	Not addressed by the evidence.
+J090	D	0	Not addressed by the evidence.
+J091	A	0	No peptidase or HAT evidence.
+J091	B	1	Rows 1-4,8: CCR4-NOT deadenylase subunit required for tubulin mRNA decay/stability.
+J091	C	1	Row 7: CRISPR screen shows GENE_X regulates sensing of unedited dsRNA by MDA5 (cytoplasmic PRR); BRCA1-A module not supported.
+J091	D	0	CCR4-NOT evidence does not address cullin-RING ligase or ubiquitin catabolism.
+J092	A	0	Complex-level NPC/kinetochore evidence; mRNA catabolism not addressed.
+J092	B	0	Row 8 concerns PD-L1 nuclear translocation promotion, not negative regulation; metals module absent.
+J092	C	1	Rows 1,8,10: Nup107-160 NPC subunit; regulates PD-L1 nuclear translocation via IPO5; nucleocytoplasmic transport gene.
+J092	D	0	Not addressed by the evidence.
+J093	A	0	Not addressed by the evidence.
+J093	B	1	Rows 1,3,6: WASH complex subunit in endosomal tubule fission and PTH1R endosomal trafficking (endosomal transport); Commander module not supported.
+J093	C	0	Not addressed by the evidence.
+J093	D	0	Not addressed by the evidence.
+J094	A	0	Row 8 only co-expression with innate immunity genes; no functional evidence.
+J094	B	0	Not addressed by the evidence.
+J094	C	0	Rows 1-2 are macropinosome/integrin; neuron projection not addressed.
+J094	D	0	Not addressed by the evidence.
+J095	A	0	Row 4 R-loop/LSD1 silencing is not DNA repair regulation; ubiquitin conjugating complex not addressed.
+J095	B	0	Not addressed by the evidence.
+J095	C	0	Not addressed by the evidence.
+J095	D	1	Rows 6-7: promotes proliferation in cervical and gastric cancer cells (cell population proliferation).
+J097	A	0	Not addressed by the evidence.
+J097	B	0	Not addressed by the evidence.
+J097	C	1	Rows 1,8: accessory subunit of mitochondrial complex I; patient mutation disturbs complex I assembly/activity.
+J097	D	0	Not addressed by the evidence.
+J098	A	0	Not addressed by the evidence.
+J098	B	1	Rows 1-3: adaptor of R2TP (PAQosome core) with RUVBL1/2; transcription elongation function not shown.
+J098	C	0	Not addressed by the evidence.
+J098	D	0	Not addressed by the evidence.
+J099	A	0	Not addressed by the evidence.
+J099	B	0	Not addressed by the evidence.
+J099	C	0	Not addressed by the evidence.
+J099	D	0	Not addressed by the evidence.
+J100	A	0	Not addressed by the evidence.
+J100	B	0	Not addressed by the evidence.
+J100	C	0	Not addressed by the evidence.
+J100	D	0	Not addressed by the evidence.
