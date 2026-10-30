@@ -1,0 +1,5 @@
+tertile	n	n_prediction	n_in_support	n_upper_bound	p_cal_median	p_cal_p90	p_cal_max	sum_p_cal	n_pcal_ge_0p3	n_pcal_ge_0p5	n_repro_p_lt_0p05	n_tierA_like_pre43	rate_tierA_like_pre43
+all	1167	1113	708	27	0.0102393	0.018551	0.0571719	7.56212	0	0	153	0	0
+high	329	316	190	7	0.0106663	0.0199253	0.0571719	2.07559	0	0	55	0	0
+low	464	439	286	13	0.00964943	0.0169428	0.0245882	2.79793	0	0	41	0	0
+mid	374	358	232	7	0.0110015	0.0201576	0.0422008	2.6886	0	0	57	0	0

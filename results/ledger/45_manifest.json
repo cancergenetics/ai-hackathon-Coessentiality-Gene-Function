@@ -1,0 +1,27 @@
+{
+ "script": "scripts/45_m6_summary.py",
+ "created": "2026-10-30T04:53:32",
+ "git_head": "4eb041c69dca0c5c5daa0b840cae739357d29fbc",
+ "gate": {
+  "tag": "preregistration-v1",
+  "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",
+  "freeze_file": "preregistration/FREEZE.sha256",
+  "freeze_sha256": "687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04",
+  "n_files": 10,
+  "tool_commit": "3c684c972f1e5c3ead722b4b3e2c508fa3cb5ddf",
+  "data": {
+   "data/raw/depmap/CRISPRGeneEffect.csv": "1e0c492944a7297c0eda179081a1e81a1cfe41a97628facd7eddbdda1a7504ee"
+  },
+  "n_freeze_files": 10
+ },
+ "inputs": {
+  "results/ledger/u_pcal.tsv": "7b6d1e6f0f9f297d91f1a40f2b9ec8575f8d95e9c2209edb83ad575cf57cd80c",
+  "results/ledger/top40.tsv": "2ea25db197f3beb65b645ed69da50ff5697fa24c0708fe728c15328d97c30eaa",
+  "results/ledger/support.tsv": "42920c76781c6ba5d7fdc25ac65cf7a9835740fc65cba9c2779d30742355b248"
+ },
+ "seed": 0,
+ "runtime_s": 3.5,
+ "peak_rss_gb": 0.286,
+ "python": "3.12.16",
+ "platform": "macOS-26.5.2-x86_64-i386-64bit"
+}

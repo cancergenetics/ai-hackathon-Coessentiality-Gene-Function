@@ -1,0 +1,41 @@
+{
+ "script": "scripts/42_artefact_flags.py",
+ "created": "2026-10-29T23:04:10",
+ "git_head": "beabea770a395f3fc80eec047726773cc050092c",
+ "gate": {
+  "tag": "preregistration-v1",
+  "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",
+  "freeze_file": "preregistration/FREEZE.sha256",
+  "freeze_sha256": "687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04",
+  "n_files": 10,
+  "tool_commit": "3c684c972f1e5c3ead722b4b3e2c508fa3cb5ddf",
+  "data": {
+   "data/raw/depmap/CRISPRGeneEffect.csv": "1e0c492944a7297c0eda179081a1e81a1cfe41a97628facd7eddbdda1a7504ee",
+   "data/raw/depmap/OmicsCNGeneWGS.csv": "31cace66f202adaace306d975b5661c8b77ea82f07d2ed34045eec9c7958fcd6"
+  },
+  "n_freeze_files": 10
+ },
+ "inputs": {
+  "results/ledger/u_predictions.tsv": "44de16023f7227aa3940b7668ce2bd7dfabe404aa89e4643e13b159fc7502143",
+  "data/raw/depmap/OmicsCNGeneWGS.csv": "31cace66f202adaace306d975b5661c8b77ea82f07d2ed34045eec9c7958fcd6",
+  "data/raw/ensembl/ensembl116_gene_coordinates.tsv": "a80896b35cfdfc0bbb5755b05ac1d123d326a8eba87add554bb3ee2fdd57a1c8",
+  "data/raw/hgnc/hgnc_complete_set.txt": "0f2d3f035e0e6583c055a1d9e008f275376a4b66f72af380dfc2ac730272c247"
+ },
+ "seed": 0,
+ "runtime_s": 29.0,
+ "peak_rss_gb": 3.011,
+ "python": "3.12.16",
+ "platform": "macOS-26.5.2-x86_64-i386-64bit",
+ "n_predictions": 4137,
+ "n_excluded": 293,
+ "n_hub_driven": 218,
+ "n_with_locus_flag": 17,
+ "n_with_cn_flag": 1,
+ "n_with_hub_partner": 511,
+ "n_shared_lines_cn": 1221,
+ "partner_flag_rates": {
+  "locus": 0.0027944439878359495,
+  "cn": 8.218952905399852e-05,
+  "hub": 0.05654639598915098
+ }
+}

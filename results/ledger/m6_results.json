@@ -1,0 +1,166 @@
+{
+ "sums": {
+  "in_support_all": {
+   "n": 2583,
+   "sum": 30.4874898355639,
+   "ci": [
+    13.834047317504883,
+    49.69965362548828
+   ]
+  },
+  "upper_bound_all": {
+   "n": 133,
+   "sum": 1.0396026761453,
+   "ci": [
+    0.4517800211906433,
+    1.8699634075164795
+   ]
+  },
+  "in_support_expressed_assessable": {
+   "n": 269,
+   "sum": 5.4943043093436,
+   "ci": [
+    2.8132667541503906,
+    8.635934829711914
+   ]
+  },
+  "tier_A": {
+   "n": 0,
+   "sum": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ]
+  },
+  "top40": {
+   "n": 40,
+   "sum": 2.0412251293879002,
+   "ci": [
+    1.0525715351104736,
+    3.24153995513916
+   ]
+  }
+ },
+ "n_tier_A": 0,
+ "n_tier_B": 0,
+ "n_expressed_assessable": 646,
+ "branch": [
+  "C2 primary passed at M5b -> calibrated claims for U are permitted (p_cal from the pre-specified model).",
+  "646 U genes scorable, expressed and assessable (\u2265 100) -> tiers apply.",
+  "**0 genes in Tier A (< 10) -> low-yield branch: the paper leads with C1\u2013C2; the top 40 is filled Tier A -> Tier B -> p_cal and labelled by tier. Thresholds are not relaxed.**"
+ ],
+ "false_support": [
+  {
+   "set": "real",
+   "n": 247,
+   "passes_tierA_support_rule": 0.31983805668016196,
+   "strict_diagnostic_support": 0.29554655870445345,
+   "any_class_support": 0.38866396761133604,
+   "contradiction": 0.004048582995951417,
+   "contradiction_hpa_only": 0.0,
+   "diagnostic_class_measured": 0.9757085020242915,
+   "supports_P": 0.1214574898785425,
+   "supports_A": 0.242914979757085,
+   "supports_L": 0.2388663967611336,
+   "supports_G": 0.0728744939271255,
+   "supports_S": 0.0
+  },
+  {
+   "set": "matched",
+   "n": 247,
+   "passes_tierA_support_rule": 0.2793522267206478,
+   "strict_diagnostic_support": 0.23076923076923078,
+   "any_class_support": 0.2874493927125506,
+   "contradiction": 0.03643724696356275,
+   "contradiction_hpa_only": 0.0,
+   "diagnostic_class_measured": 0.951417004048583,
+   "supports_P": 0.032388663967611336,
+   "supports_A": 0.15384615384615385,
+   "supports_L": 0.15789473684210525,
+   "supports_G": 0.032388663967611336,
+   "supports_S": 0.0
+  },
+  {
+   "set": "decoy",
+   "n": 247,
+   "passes_tierA_support_rule": 0.22267206477732793,
+   "strict_diagnostic_support": 0.19838056680161945,
+   "any_class_support": 0.242914979757085,
+   "contradiction": 0.016194331983805668,
+   "contradiction_hpa_only": 0.0,
+   "diagnostic_class_measured": 0.9757085020242915,
+   "supports_P": 0.012145748987854251,
+   "supports_A": 0.12550607287449392,
+   "supports_L": 0.11740890688259109,
+   "supports_G": 0.03643724696356275,
+   "supports_S": 0.0
+  }
+ ],
+ "negative_control": [
+  {
+   "set": "clean negative",
+   "tertile": "all",
+   "n": 1167,
+   "n_with_pcal": 708,
+   "p_cal_median": 0.01023925,
+   "p_cal_p90": 0.01855106,
+   "p_cal_max": 0.0571719,
+   "n_tierA_like": 0,
+   "rate_tierA_like": 0.0,
+   "rate_upper95_if_zero": 0.0025637450588522626,
+   "n_tierB_like": 0
+  },
+  {
+   "set": "clean negative",
+   "tertile": "high",
+   "n": 329,
+   "n_with_pcal": 190,
+   "p_cal_median": 0.0106663,
+   "p_cal_p90": 0.0199253,
+   "p_cal_max": 0.0571719,
+   "n_tierA_like": 0,
+   "rate_tierA_like": 0.0,
+   "rate_upper95_if_zero": 0.009064239065107005,
+   "n_tierB_like": 0
+  },
+  {
+   "set": "clean negative",
+   "tertile": "low",
+   "n": 464,
+   "n_with_pcal": 286,
+   "p_cal_median": 0.00964943,
+   "p_cal_p90": 0.0169428,
+   "p_cal_max": 0.0245882,
+   "n_tierA_like": 0,
+   "rate_tierA_like": 0.0,
+   "rate_upper95_if_zero": 0.0064355223059406885,
+   "n_tierB_like": 0
+  },
+  {
+   "set": "clean negative",
+   "tertile": "mid",
+   "n": 374,
+   "n_with_pcal": 232,
+   "p_cal_median": 0.01100145,
+   "p_cal_p90": 0.02015766,
+   "p_cal_max": 0.0422008,
+   "n_tierA_like": 0,
+   "rate_tierA_like": 0.0,
+   "rate_upper95_if_zero": 0.007977984938356775,
+   "n_tierB_like": 0
+  },
+  {
+   "set": "expressed & assessable (comparison)",
+   "tertile": "all",
+   "n": 646,
+   "n_with_pcal": 269,
+   "p_cal_median": 0.0136602,
+   "p_cal_p90": 0.047163680000000006,
+   "p_cal_max": 0.141024,
+   "n_tierA_like": 0,
+   "rate_tierA_like": 0.0,
+   "rate_upper95_if_zero": NaN,
+   "n_tierB_like": 0
+  }
+ ]
+}

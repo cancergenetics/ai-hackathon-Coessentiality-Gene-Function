@@ -1,0 +1,73 @@
+{
+ "n_scorable": 4271,
+ "n_with_prediction": 4137,
+ "category_counts": {
+  "in_support": 2583,
+  "no_pcal": 1421,
+  "no_prediction": 134,
+  "upper_bound": 133
+ },
+ "sum_pcal_in_support": 30.48749005373222,
+ "ci_in_support": [
+  13.834047317504883,
+  49.69965362548828
+ ],
+ "sum_pcal_upper_bound": 1.0396027368281686,
+ "ci_upper_bound": [
+  0.4517800211906433,
+  1.8699634075164795
+ ],
+ "n_boot_used": 2000,
+ "n_boot_skipped": 0,
+ "seed": 0,
+ "max_p_cal": 0.14102380306726148,
+ "max_p_cal_upper": 0.017439627561998884,
+ "n_pcal_ge_tierB": 0,
+ "n_pcal_ge_tierA": 0,
+ "reasons_no_pcal": {
+  "cov_pct < P5": 536,
+  "size_pct > P95": 217,
+  "size_pct < P5": 186,
+  "family centrosome_cilia_mitosis (< 30 H genes)": 119,
+  "cov_pct > P95": 118,
+  "R > P95": 107,
+  "family ribosome_biogenesis_translation (< 30 H genes)": 106,
+  "family nuclear_RNA_machinery (< 30 H genes)": 97,
+  "zmean > P95": 96,
+  "family DNA_replication_repair (< 30 H genes)": 70,
+  "zmean < P5": 58,
+  "family mitochondrial (< 30 H genes)": 49
+ },
+ "family_counts_with_prediction": {
+  "other": 2916,
+  "signalling_lineage": 571,
+  "ER_Golgi_secretory_lipid": 209,
+  "centrosome_cilia_mitosis": 119,
+  "ribosome_biogenesis_translation": 106,
+  "nuclear_RNA_machinery": 97,
+  "DNA_replication_repair": 70,
+  "mitochondrial": 49
+ },
+ "sum_pcal_in_support_expressed_assessable": 5.494303497017871,
+ "n_in_support_expressed_assessable": 269,
+ "ci_in_support_expressed_assessable": [
+  2.8132667541503906,
+  8.635934829711914
+ ],
+ "p_cal_quantiles_expressed_assessable": {
+  "0.1": 1.69003245715966e-07,
+  "0.25": 0.007692258469885287,
+  "0.5": 0.013660175074316105,
+  "0.75": 0.02325326727222228,
+  "0.9": 0.04716372025762413,
+  "1.0": 0.14102380306726148
+ },
+ "p_cal_quantiles_clean_negative": {
+  "0.1": 1.033641319053241e-07,
+  "0.25": 0.007420167915635913,
+  "0.5": 0.010239250401631941,
+  "0.75": 0.014094949788562494,
+  "0.9": 0.01855103478133038,
+  "1.0": 0.05717189228248714
+ }
+}

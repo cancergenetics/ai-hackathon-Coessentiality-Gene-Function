@@ -1,0 +1,54 @@
+{
+ "script": "scripts/43_orthogonal_support.py",
+ "created": "2026-10-29T23:06:28",
+ "git_head": "beabea770a395f3fc80eec047726773cc050092c",
+ "gate": {
+  "tag": "preregistration-v1",
+  "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",
+  "freeze_file": "preregistration/FREEZE.sha256",
+  "freeze_sha256": "687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04",
+  "n_files": 10,
+  "tool_commit": "3c684c972f1e5c3ead722b4b3e2c508fa3cb5ddf",
+  "data": {
+   "data/raw/depmap/CRISPRGeneEffect.csv": "1e0c492944a7297c0eda179081a1e81a1cfe41a97628facd7eddbdda1a7504ee"
+  },
+  "n_freeze_files": 10
+ },
+ "inputs": {
+  "results/ledger/u_predictions.tsv": "44de16023f7227aa3940b7668ce2bd7dfabe404aa89e4643e13b159fc7502143",
+  "results/ledger/u_pcal.tsv": "7b6d1e6f0f9f297d91f1a40f2b9ec8575f8d95e9c2209edb83ad575cf57cd80c",
+  "results/ledger/u_flags.tsv": "9f3fd77c85316132463887fcc3f3cb0ff8727bc2bbb76a8bc44b7499a0043765",
+  "results/orthogonal/admission.tsv": "481a16b6c949527fb2c1d8b8ebf65edc48e519e20f9ce6a84117a8c8876ba4f2"
+ },
+ "seed": 0,
+ "runtime_s": 110.7,
+ "peak_rss_gb": 4.268,
+ "python": "3.12.16",
+ "platform": "macOS-26.5.2-x86_64-i386-64bit",
+ "real": {
+  "n": 40,
+  "passes_rule": 0.625,
+  "strict_diag_support": 0.6,
+  "any_class_support": 0.675,
+  "contradiction": 0.025,
+  "diag_measured": 0.975
+ },
+ "matched": {
+  "n": 40,
+  "passes_rule": 0.475,
+  "strict_diag_support": 0.375,
+  "any_class_support": 0.375,
+  "contradiction": 0.05,
+  "diag_measured": 0.9
+ },
+ "decoy": {
+  "n": 40,
+  "passes_rule": 0.25,
+  "strict_diag_support": 0.225,
+  "any_class_support": 0.325,
+  "contradiction": 0.075,
+  "diag_measured": 0.975
+ },
+ "n_anchors": 40,
+ "n_scope_pcal_ge_0.3": 0
+}

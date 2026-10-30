@@ -1,0 +1,6 @@
+set	tertile	n	n_with_pcal	p_cal_median	p_cal_p90	p_cal_max	n_tierA_like	rate_tierA_like	rate_upper95_if_zero	n_tierB_like
+clean negative	all	1167	708	0.0102393	0.0185511	0.0571719	0	0	0.00256375	0
+clean negative	high	329	190	0.0106663	0.0199253	0.0571719	0	0	0.00906424	0
+clean negative	low	464	286	0.00964943	0.0169428	0.0245882	0	0	0.00643552	0
+clean negative	mid	374	232	0.0110014	0.0201577	0.0422008	0	0	0.00797798	0
+expressed & assessable (comparison)	all	646	269	0.0136602	0.0471637	0.141024	0	0		0

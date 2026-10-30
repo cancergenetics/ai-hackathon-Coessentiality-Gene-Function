@@ -1,0 +1,28 @@
+{
+ "real": {
+  "n": 40,
+  "passes_rule": 0.625,
+  "strict_diag_support": 0.6,
+  "any_class_support": 0.675,
+  "contradiction": 0.025,
+  "diag_measured": 0.975
+ },
+ "matched": {
+  "n": 40,
+  "passes_rule": 0.475,
+  "strict_diag_support": 0.375,
+  "any_class_support": 0.375,
+  "contradiction": 0.05,
+  "diag_measured": 0.9
+ },
+ "decoy": {
+  "n": 40,
+  "passes_rule": 0.25,
+  "strict_diag_support": 0.225,
+  "any_class_support": 0.325,
+  "contradiction": 0.075,
+  "diag_measured": 0.975
+ },
+ "n_anchors": 40,
+ "n_scope_pcal_ge_0.3": 0
+}

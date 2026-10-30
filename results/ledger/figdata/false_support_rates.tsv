@@ -1,0 +1,4 @@
+set	n	passes_tierA_support_rule	strict_diagnostic_support	any_class_support	contradiction	contradiction_hpa_only	diagnostic_class_measured	supports_P	supports_A	supports_L	supports_G	supports_S
+real	247	0.3198	0.2955	0.3887	0.0040	0.0000	0.9757	0.1215	0.2429	0.2389	0.0729	0.0000
+matched	247	0.2794	0.2308	0.2874	0.0364	0.0000	0.9514	0.0324	0.1538	0.1579	0.0324	0.0000
+decoy	247	0.2227	0.1984	0.2429	0.0162	0.0000	0.9757	0.0121	0.1255	0.1174	0.0364	0.0000

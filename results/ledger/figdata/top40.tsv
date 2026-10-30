@@ -1,0 +1,41 @@
+rank	symbol	v2_term	v2_term_name	v1p_label_name	family	p_cal	tier	fill_group	supporting_classes	relationship_type	flags	zmean	cov_pct
+1	ANKRD52	GO:0031047	regulatory ncRNA-mediated gene silencing	RISC complex	other	0.141024		p_cal fill (clean)		d		10.6822	0.859139
+2	MED31	GO:0006352	DNA-templated transcription initiation	RNA polymerase II transcription regulator complex	other	0.0788531		p_cal fill (clean)	PALG	a		10.0373	0.58481
+3	PHC3	GO:0040029	epigenetic regulation of gene expression	PcG protein complex	other	0.0765728		p_cal fill (clean)	AL	a		8.72365	0.785908
+4	PLEKHH3	GO:0051896	regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction	protein folding chaperone complex	other	0.0757136		p_cal fill (clean)		d		8.24307	0.859139
+5	MGA	GO:0040029	epigenetic regulation of gene expression	chromatin silencing complex	other	0.0587553		p_cal fill (clean)	PAL	a		7.28967	0.859139
+6	TM2D1	GO:0034976	response to endoplasmic reticulum stress		other	0.0451822		p_cal fill (clean)		c		8.71887	0.457459
+7	GRIPAP1	GO:0098876	vesicle-mediated transport to the plasma membrane	vesicle tethering complex	ER_Golgi_secretory_lipid	0.0444943		p_cal fill (clean)	A	a		7.37765	0.785908
+8	YIPF6	GO:0006890	retrograde vesicle-mediated transport, Golgi to endoplasmic reticulum	COPI vesicle coat complex, COPG1-COPZ1 variant	ER_Golgi_secretory_lipid	0.0296803		p_cal fill (clean)	A	a		7.10529	0.58481
+9	C6orf47	GO:0007029	endoplasmic reticulum organization	Nuclear pore complex	ER_Golgi_secretory_lipid	0.0227735		p_cal fill (clean)	PA	a		4.51135	0.859139
+10	ATP6V1E2	GO:0004222	metalloendopeptidase activity		other	0.0203072		p_cal fill (clean)		c		4.40925	0.693976
+11	FAM124A	GO:0051054	positive regulation of DNA metabolic process	DNA replication factor C complex, CHTF18 variant	other	0.0177809		p_cal fill (clean)	L	d		3.93414	0.693976
+12	TBC1D9B	GO:0032418	lysosome localization	BORC complex	other	0.0177112		p_cal fill (clean)		d		5.33385	0.457459
+13	PROSER2	GO:0062197	cellular response to chemical stress		other	0.0176242		p_cal fill (clean)	P	a		4.55504	0.58481
+14	ASDURF	GO:0006354	DNA-templated transcription elongation	PAQosome co-chaperone complex	other	0.017016		p_cal fill (clean)	P	a	CN|low_coverage	6.62186	0.21806
+15	PNISR	GO:0006403	RNA localization	nuclear pore	other	0.0166871		p_cal fill (clean)	ALG	a		5.12124	0.457459
+16	IFFO2	GO:0006790	sulfur compound metabolic process	MitoCarta: Metabolism > Carbohydrate metabolism	other	0.0143338		p_cal fill (clean)		d		3.81831	0.58481
+17	TMEM35B	GO:0007276	gamete generation		other	0.0137445		p_cal fill (clean)		c		5.20341	0.328096
+18	TMEM120B	GO:0006790	sulfur compound metabolic process	MitoCarta: Metabolism > Lipid metabolism	other	0.0118754		p_cal fill (clean)		c		4.68397	0.328096
+19	HMGN3	GO:0008234	cysteine-type peptidase activity	MitoCarta: Mitochondrial central dogma > mtRNA metabolism	other	0.0106875		p_cal fill (clean)		d		4.31001	0.328096
+20	SAMD14	GO:0006605	protein targeting		other	0.00769226		p_cal fill (clean)		d		3.80338	0.21806
+21	YDJC	GO:0007029	endoplasmic reticulum organization	endoplasmic reticulum protein-containing complex	ER_Golgi_secretory_lipid	0.00750081		p_cal fill (clean)		c		4.39266	0.21806
+22	INSM2	GO:0007507	heart development	RNA polymerase II transcription regulator complex	signalling_lineage	4.34072e-07		p_cal fill (clean)	L	e	TF	7.23025	0.859139
+23	ANKMY2	GO:0007188	adenylate cyclase-modulating G protein-coupled receptor signaling pathway	ER membrane insertion complex	signalling_lineage	1.78926e-07		p_cal fill (clean)	P	a		5.76085	0.58481
+24	CCSER2	GO:0031175	neuron projection development		signalling_lineage	7.64747e-08		p_cal fill (clean)	A	a		4.31324	0.328096
+25	DNAJC28	GO:0007259	cell surface receptor signaling pathway via JAK-STAT	RNA polymerase II transcription regulator complex	signalling_lineage	6.99152e-08		p_cal fill (clean)		d		4.65635	0.21806
+26	CCDC174	GO:0006352	DNA-templated transcription initiation	DNA-directed RNA polymerase complex	other	0.116433		p_cal fill (flagged)	AL	a	lineage_leaveout_fail	9.91095	0.859139
+27	CNOT10	GO:0043487	regulation of RNA stability	CCR4-NOT mRNA deadenylase complex, CNOT6L-CNOT7 variant	other	0.115749		p_cal fill (flagged)	PAL	a	DEMETER2|TP53	10.8748	0.693976
+28	TRAPPC5	GO:0048193	Golgi vesicle transport	TRAPP III complex, TRAPPC2 variant	ER_Golgi_secretory_lipid	0.11402		p_cal fill (flagged)	PALG	a	TP53	10.944	0.785908
+29	RBM34	GO:0006354	DNA-templated transcription elongation	DNA-directed RNA polymerase I complex	other	0.102738		p_cal fill (flagged)	PAL	a	DEMETER2|TP53	9.41798	0.859139
+30	MARF1	GO:0006401	RNA catabolic process	RNA decapping and exonuclease complex, DCP1A variant	other	0.0993891		p_cal fill (flagged)	PA	a	contradiction|DEMETER2	9.28865	0.859139
+31	STK40	GO:0032434	regulation of proteasomal ubiquitin-dependent protein catabolic process	CRL4- DET1-COP1 E3 ubiquitin ligase complex, CUL4A variant	other	0.0980704		p_cal fill (flagged)	L	c	excl43	9.23666	0.859139
+32	SSR4	GO:0006487	protein N-linked glycosylation	endoplasmic reticulum protein-containing complex	ER_Golgi_secretory_lipid	0.091498		p_cal fill (flagged)	PAL	a	DEMETER2	9.6462	0.859139
+33	CNOT11	GO:0043487	regulation of RNA stability	CCR4-NOT mRNA deadenylase complex, CNOT6L-CNOT7 variant	other	0.0797873		p_cal fill (flagged)	PA	a	DEMETER2|TP53	10.8434	0.457459
+34	YPEL5	GO:0030177	positive regulation of Wnt signaling pathway	GID E3 ubiquitin ligase complex, RMND5B-RANBP9 variant	other	0.0782256		p_cal fill (flagged)	A	a	lineage_leaveout_fail|DEMETER2	10.7681	0.457459
+35	TMEM208	GO:0090150	establishment of protein localization to membrane	endoplasmic reticulum protein-containing complex	other	0.0777261		p_cal fill (flagged)	A	a	DEMETER2	8.34275	0.859139
+36	TLNRD1	GO:0030336	negative regulation of cell migration	FAR/SIP/STRIPAK complex	other	0.0693311		p_cal fill (flagged)	P	a	DEMETER2	8.89721	0.693976
+37	DMXL1	GO:1903706	regulation of hemopoiesis	transcription repressor complex	other	0.063789		p_cal fill (flagged)		d	lineage_leaveout_fail|DEMETER2	7.59686	0.859139
+38	TMED7	GO:0048193	Golgi vesicle transport	cytoplasmic ubiquitin ligase complex	ER_Golgi_secretory_lipid	0.0636413		p_cal fill (flagged)	PG	a	lineage_leaveout_fail|DEMETER2	8.70428	0.785908
+39	CCDC71L	GO:0040029	epigenetic regulation of gene expression	PcG protein complex	other	0.063521		p_cal fill (flagged)		d	lineage_leaveout_fail	7.58109	0.859139
+40	TANGO6	GO:0006354	DNA-templated transcription elongation	PAQosome co-chaperone complex	other	0.0612955		p_cal fill (flagged)	G	d	TP53	9.0874	0.58481
