@@ -42,12 +42,13 @@ Paper: `manuscript/manuscript.pdf` (source `manuscript/src/`); candidate reports
   genes already had published function: 42% of a random U sample (and 59/90 judged candidates) are N1 — largely an
   artefact of the PubMed-count entry criterion (D3-only entrants 56% N1 vs 13%) [post-review]. 34/40 top genes appear
   in prior catalogues (Wainberg 2021, Kim 2019, hu.MAP 3.0, Predictomes) [post-review].
-- **Candidates (reports/).** Ten red-teamed reports with decisive experiments. The most distinctive hypotheses:
-  PLEKHH3 as a PI(3,4)P2-arm brake on PI3K/AKT (co-advantage with PTEN/PLEKHA1; no prior catalogue prediction);
-  INAFM1 with the NFE2L1–NGLY1–DDI2 (NRF1 activation) axis; CCDC71L with Polycomb/HP1 chromatin regulators; C5orf34
-  with centriole A–C linker genes, conditional on TP53 status; TM2D1/TM2D2 as a tentative ER/protein-QC co-dependency.
-  RBM34 (nucleolar rRNA production), BICRAL (GBAF), TRAPPC5 (TRAPPIII arm), ANKRD52 (PP6–AGO2 miRNA regulation) are
-  largely rediscoveries that serve as positive controls.
+- **Candidates (reports/).** Ten red-teamed reports with decisive experiments. Post-review check: 9/10 genes already
+  had a prior co-essentiality prediction or module (`results/revision/report_novelty_corrections.md`). Only PLEKHH3 is
+  new — a putative PI(3,4)P2-arm brake on PI3K/AKT (co-advantage with PTEN/PLEKHA1, its #1/#2 genome-wide correlates).
+  Wainberg 2021 had already predicted INAFM1 (DDI2/NFE2L1/NGLY1 module), CCDC71L (PRC2) and C5orf34 (centriole
+  elongation); our reports add calibration, orthogonal evidence, literature checks, refinements (CCDC71L HP1/PxVxL arm;
+  C5orf34 TP53-conditional dependency) and decisive experiments. TM2D1/TM2D2 (AUP1/JOSD1/STUB1 module) are a tentative
+  ER/protein-QC co-dependency; RBM34, BICRAL, TRAPPC5 and ANKRD52 are largely rediscoveries serving as positive controls.
 
 ## 3. What this means
 
