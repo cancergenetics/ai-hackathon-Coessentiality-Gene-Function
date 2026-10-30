@@ -20,3 +20,13 @@ placeholders with the new keys.
 | (none placed) | 02_methods, Calibration | Cross-fitting (sample splitting for out-of-fold predictions) | Chernozhukov et al. 2018 (Econometrics J), optional |
 | (none placed) | 02_methods, Hold-out power | Connor 1987 McNemar sample-size approximation used in results/holdout/holdout_sizing.md (only needed if the MDE formula is quoted) | Connor 1987 (Biometrics) |
 | (none placed) | 02_methods, co-essentiality method | Laplacian eigenmaps (the E view), if the method description is expanded | Belkin & Niyogi 2003 (Neural Comput) |
+
+## Status (2026-10-30, manuscript assembly)
+
+All rows above were resolved in `manuscript/manuscript.md` with references verified against Crossref (and PubMed where
+indexed) and added to `references/literature_refs.tsv` (verified_yes_no = yes): Webber2010; Rubin1980, Stuart2010;
+Berger1982, BergerHsu1996; Efron1987, FieldWelsh2007; Brier1950; Cox1958, VanCalster2019; Wilson1927; Simes1986,
+Aickin1996 (for Holm's procedure: Holm 1979 has no Crossref/PubMed record); Cohen1960; Nosek2018, Simmons2011;
+DepMap_web, Meldal2022, Oughtred2021, Dyer2025; Chernozhukov2018; Belkin2003. Connor 1987 was not needed (no MDE
+formula is quoted). The suggested Berger 1982 DOI (…10487759) resolved to a different paper and was replaced by
+10.1080/00401706.1982.10487790.
