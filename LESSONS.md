@@ -12,3 +12,6 @@ One line per rule, with evidence. Pruned at each milestone (M3 pruning: reviews/
 8. Update RESEARCH_TREE at every DESIGN version; a stale tree misleads reviewers. (round2_ai §2.3)
 9. Commit scripts, hashes and summaries, not duplicate derived tables. (`afed1dd`: 116k lines)
 10. Give later review rounds a diff and ID'd items, not the whole document. (round-2 reviews were short, disposition 31 KB)
+11. Give each parallel agent its own scratch subdirectory; shared scratch files were overwritten across literature agents. (M7 L batch ad)
+12. Pipeline writer → independent red-team → writer revision (resume the writer via SendMessage, it keeps context); every red-team found real numeric/citation or framing errors, none of which the writer's self-checks caught. (M7: 10 reports)
+13. Specify a fill/tie rule for every ranked list in the design: an unspecified R1 tie-break (401/820 H genes tied) and an ambiguous top-40 fill rule both needed post hoc decisions. (M5–M6)
