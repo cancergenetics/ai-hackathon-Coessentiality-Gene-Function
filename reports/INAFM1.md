@@ -4,6 +4,16 @@ Prepared under DESIGN §6.5. Template A is Part I; Template B is Part II of this
 `reports/INAFM1.md` as the only writable report path for this gene, so the experiment plan is kept here as a clearly
 marked part rather than in `reports/INAFM1_experiments.md`).
 
+> **Post-review correction (2026-10-31).** The earlier text said no prior catalogue made this prediction and that
+> INAFM1 was "not found" in Wainberg 2021 (supplementary tables not retrieved). The supplementary tables have now been
+> checked (`data/raw/revision_downloads/wainberg2021/`; record in `results/revision/report_novelty_corrections.md`):
+> Wainberg 2021 lists INAFM1 under its former symbol **PRR24** in a d = 0.9 co-essential module **{DDI2, NFE2L1, NGLY1,
+> PRR24}** (module 4428), in a d = 0.5 module with five of our top-10 partners (module 1706), and in Supplementary
+> Data 3 with a predicted function ("negative regulation of protein K63-linked ubiquitination"). Changes: §0 gains a
+> "Prior prediction" bullet; §7 "Prior prediction lists" and §11 are rewritten to state what was already predicted and
+> what this report adds; the claim that this is "the first evidence of any kind that places it in a pathway" is
+> withdrawn. Nothing else was changed (the blind novelty class N3 refers to functional literature and is kept).
+
 Unblinded literature search date: **2026-10-30** (Europe PMC incl. preprint sources, UniProt, GO/GOA, hu.MAP 3.0,
 Predictomes, project ledgers). Red-team review: complete — unedited review at `reports/redteam/INAFM1.md`, verdict **ACCEPT WITH REVISIONS**; point-by-point responses in Appendix B.
 
@@ -40,6 +50,12 @@ Predictomes, project ledgers). Red-team review: complete — unedited review at 
   small covariation, and the two lines the experiment rests on sit 5–6 SD below an otherwise flat distribution — a
   pattern that is as consistent with screen outliers (clone effects, guide efficiency, normalisation) as with real
   dependency. Reproducing the dropout is therefore the first thing the experiment must do, and it may simply fail.
+- **Prior prediction (post-review correction, 2026-10-31):** this is **not a new co-essentiality call**. Wainberg 2021
+  (PMID:33859415, Supplementary Data 2) already placed INAFM1 (as PRR24) in a tight co-essential module with exactly
+  the NRF1 axis — {DDI2, NFE2L1, NGLY1, PRR24} — and in a 12-gene module that also contains RAD23B and IPO9; its
+  Supplementary Data 3 predicted "negative regulation of protein K63-linked ubiquitination" for it. What this report
+  adds is the calibrated probability, the orthogonal-evidence and lineage checks (both negative), the literature check
+  and the experiment plan, not the partner set.
 - **First experiment:** knock out INAFM1 in two dependent lines with three guides plus a guide-resistant cDNA rescue and
   ask whether polyubiquitin-conjugate handling and NRF1 processing change beyond what a matched-essentiality control
   gene (**WAPL**, cohesin release — deliberately not a mitochondrial gene) does at the same growth effect; time
@@ -327,13 +343,21 @@ INAFM1 claim. The claim therefore does not re-enter the evidence through a DepMa
 **Closest prior publication and what co-essentiality adds beyond it.** The closest is PMID:41650465 (the INAFM2/ROME
 characterisation), which adds nothing about INAFM1 beyond confirming that it is unstudied. Co-essentiality adds the
 only functional signal that exists for this gene: a reproducible (split-half R = 0.192, p = 0.0050) neighbourhood whose
-top three members are the three proteins of the NRF1 proteolytic-activation axis.
+top three members are the three proteins of the NRF1 proteolytic-activation axis. *Corrected 2026-10-31:* that
+neighbourhood is not new — the same NRF1-axis module was already published by Wainberg 2021 (next item); what this
+report adds to it is calibration, robustness/orthogonal checks and an experiment.
 
-**Prior prediction lists containing this gene:** **none found.**
-- *Wainberg 2021* (PMID:33859415): INAFM1/PRR24 is not named anywhere in the retrieved full text. Their uncharacterised
-  set was UniProt annotation score ≤ 2, which INAFM1 satisfies, so it could have been in scope; the per-gene
-  supplementary prediction tables were not retrieved, so this is "not found in the retrieved text", not a verified
-  absence.
+**Prior prediction lists containing this gene:** **Wainberg 2021 (corrected 2026-10-31; earlier text said "none found").**
+- *Wainberg 2021* (PMID:33859415): INAFM1 is not named in the main text, but it is in the supplementary tables under
+  its former symbol **PRR24** (`data/raw/revision_downloads/wainberg2021/`): (i) Supplementary Data 2, module 4428
+  (d = 0.9, 4 genes) = **DDI2, NFE2L1, NGLY1, PRR24** (no GO term enriched); module 1706 (d = 0.5, 12 genes) = DDI2,
+  IPO9, NFE2L1, NGLY1, PLAA, PRR24, RAD23B, TXNL1, UBC, USP14, USP15, USP38 (top term "protein deubiquitination");
+  (ii) Supplementary Data 1, significant GLS pairs PRR24–DDI2 (p = 7e-07) and PRR24–NGLY1 (p = 5e-05), plus
+  TMEM107, CCDC9, CCDC61 and several weaker partner-led pairs; (iii) Supplementary Data 3, predicted function
+  "biological process: negative regulation of protein K63-linked ubiquitination" (module 165, d = 0.2, 41 genes,
+  206.9-fold, p = 3e-07; term genes PLAA, TRIP12, UBR5). The NRF1-axis attachment and five of our top-10 partners
+  (NFE2L1, NGLY1, DDI2, RAD23B, IPO9) were therefore already published as a co-essential module. Kim 2019 (Tables
+  S5/S6): INAFM1/PRR24 absent.
 - *hu.MAP 3.0* (PMID:40425816): INAFM1 (C9JVW0) is absent from the complex table and the pair files — no prediction.
 - *Replogle 2022* (PMID:35688146): INAFM1 is not measured in K562 genome-wide, K562 essential or RPE1 essential
   Perturb-seq (ledger `support_sources.tsv`: "g not measured") — no prediction.
@@ -403,13 +427,22 @@ See **Part II** of this file (Template B).
 
 ## 11. Novelty and external benchmarks
 
-Agreement with prior catalogues: **none of the four catalogues made this prediction.** Wainberg 2021 does not name the
-gene in its retrieved full text (supplementary tables not retrieved); hu.MAP 3.0 does not contain the protein;
-Replogle 2022 did not measure it; Predictomes contains only low-scoring pairs, none with a partner.
+*Corrected 2026-10-31 (post-review): the earlier version said no catalogue made this prediction.*
 
-What is new here: for a gene with **zero** functional literature as of 2026-10-30, this is the first evidence of any
-kind that places it in a pathway — a reproducible co-dependency neighbourhood (split-half R = 0.192, p = 0.0050) whose
-three strongest members are NFE2L1, NGLY1 and DDI2. Against that, the honest accounting is:
+Agreement with prior catalogues: **Wainberg 2021 made essentially the same co-essentiality call.** Its Supplementary
+Data 2 places INAFM1 (as PRR24) in a d = 0.9 module {DDI2, NFE2L1, NGLY1, PRR24} and a d = 0.5 ubiquitin/
+deubiquitination module containing five of our top-10 partners (NFE2L1, NGLY1, DDI2, RAD23B, IPO9); its Supplementary
+Data 3 lists a predicted function, "negative regulation of protein K63-linked ubiquitination" (from a broader
+41-gene module) (§7). Our label (GO:0031593 polyubiquitin modification-dependent protein binding) differs in wording
+from Wainberg's GO term but sits in the same ubiquitin/proteasome space, and the partner set agrees. hu.MAP 3.0 does
+not contain the protein; Replogle 2022 did not measure it; Predictomes contains only low-scoring pairs, none with a
+partner; Kim 2019 does not list it.
+
+What is new here: **not** the placement of INAFM1 next to NFE2L1, NGLY1 and DDI2 — that is a re-derivation of
+Wainberg 2021's module. What this report adds is (i) a calibrated confirmation probability for the label, (ii) the
+reproducibility, lineage leave-out and orthogonal-evidence checks (split-half R = 0.192, p = 0.0050; lineage
+leave-out fails; no orthogonal support), (iii) a literature check confirming there is still no functional study, and
+(iv) a decisive experiment. The honest accounting is:
 
 - p_cal = 0.0367, i.e. the expected confirmation probability is about 1 in 27;
 - the label GO:0031593 is generated by three partners whose raw co-dependency with INAFM1 is ≈ 0 (RAD23B −0.009,
@@ -422,8 +455,8 @@ three strongest members are NFE2L1, NGLY1 and DDI2. Against that, the honest acc
   against;
 - the four "dependent" lines may be screen outliers, which Tier 1 is designed to find out first.
 
-The contribution is therefore a testable hypothesis with a cheap decisive test, not a function call — and the test may
-well fail at its first gate.
+The contribution is therefore a calibrated, checked re-statement of a published co-essentiality module, with a cheap
+decisive test — not a new function call — and the test may well fail at its first gate.
 
 ## Appendix A. Evidence ledger
 

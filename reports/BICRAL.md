@@ -7,6 +7,17 @@ marked part rather than in `reports/BICRAL_experiments.md`).
 Unblinded literature search date: **2026-10-30** (Europe PMC incl. preprint sources, UniProt, GO/GOA, hu.MAP 3.0,
 Predictomes, project ledgers). Red-team review: complete — unedited review at `reports/redteam/BICRAL.md`, verdict **ACCEPT WITH REVISIONS**; point-by-point responses in Appendix B.
 
+> **Post-review correction (2026-10-31).** The report previously said Wainberg 2021 "could not have" made this
+> assignment (BICRAL outside its uncharacterised set; supplementary tables not retrieved) and kept the ncBAF-coupled
+> co-essentiality neighbourhood as a standing addition. The supplementary tables have now been checked
+> (`data/raw/revision_downloads/wainberg2021/`; record in `results/revision/report_novelty_corrections.md`):
+> **Wainberg 2021 already published a d = 0.9 co-essential module {BRD9, GLTSCR1 (BICRA), GLTSCR1L (BICRAL), SMARCD1}**
+> (Supplementary Data 2, module 3502, top term "SWI/SNF complex", 807.7-fold) and lists GLTSCR1L–BRD9 and
+> GLTSCR1L–SMARCD1 as significant pairs (Supplementary Data 1). BICRAL is not in its Supplementary Data 3 (out of scope,
+> as stated). Changes: §0 gains a "Prior prediction" bullet; the Wainberg entries in §7 and §11 are corrected, and §11
+> item (i) is downgraded from "independent, orthogonal rediscovery … This stands" to a re-derivation of a published
+> co-essential module. Nothing else was changed.
+
 ---
 
 # Part I — Template A
@@ -39,6 +50,11 @@ Predictomes, project ledgers). Red-team review: complete — unedited review at 
   seen; membership is in UniProt and Complex Portal; a 2018 bioRxiv preprint (PPR59167) already reported
   GLTSCR1L-specific function at H3K27ac enhancers; the prediction failed the lineage leave-out check; and the
   paralogue-specificity reading rests on 1 of 4 dependent lines against a positive BICRAL–BICRA correlation.
+- **Prior prediction (post-review correction, 2026-10-31):** the ncBAF co-essentiality call is itself **not new**:
+  Wainberg 2021 (PMID:33859415, Supplementary Data 2) already grouped BICRAL (as GLTSCR1L) with BRD9, SMARCD1 and
+  its paralogue BICRA (GLTSCR1) in a 4-gene ncBAF-specific co-essential module, with GLTSCR1L–BRD9 and
+  GLTSCR1L–SMARCD1 as significant pairs. This report adds the calibration, the lineage and paralogue analyses, the
+  literature check and the paralogue-specificity experiment.
 - **First experiment:** knock out BICRAL and BICRA, singly and together, with reciprocal cross-complementation, across
   **three** lines — a BICRAL-dependent synovial sarcoma line (Yamato), a genuinely BICRA-dependent line
   (**JMURTK2**, BICRA −0.68 †), and a BICRAL-independent synovial sarcoma control (SYO-1) — asking whether the fitness
@@ -378,9 +394,13 @@ kind of inference from the same kind of data for the paralogue GLTSCR1 eight yea
 new here.
 
 **Prior prediction lists containing this gene:**
-- *Wainberg 2021* (PMID:33859415): BICRAL / GLTSCR1L is **not named in the retrieved full text**. Their uncharacterised
-  set was UniProt annotation score ≤ 2; BICRAL's score is 5, so it would have been **out of scope** for their
-  prediction list. Per-gene supplementary tables were not retrieved.
+- *Wainberg 2021* (PMID:33859415) (*corrected 2026-10-31; supplementary tables checked*): BICRAL / GLTSCR1L is not
+  named in the main text and, with UniProt annotation score 5, is out of scope for (and absent from) their
+  uncharacterised-gene prediction list (Supplementary Data 3). **But the co-essential module is there:** Supplementary
+  Data 2 module 3502 (d = 0.9) = **BRD9, GLTSCR1, GLTSCR1L, SMARCD1**, top term "cellular component: SWI/SNF complex"
+  (807.7-fold, p = 1.7e-12); Supplementary Data 1 pairs GLTSCR1L–BRD9 (p = 4e-11) and GLTSCR1L–SMARCD1 (p = 8e-06),
+  plus weaker MIER3, HIST1H3H, MRPL33 and ZNF296 pairs. This is the same ncBAF-specific neighbourhood (no SMARCA4) that
+  §11 item (i) describes. Kim 2019 (Tables S5/S6): absent.
 - *hu.MAP 3.0* (PMID:40425816): **yes — hu.MAP 3.0 places BICRAL in SWI/SNF complexes** (two complex entries; pair
   probabilities ≥ 0.997 with SMARCA2/SMARCA4 and ≥ 0.999 with BCL7A/BCL7C/SMARCC1). This is the one catalogue that
   made an equivalent assignment, and it is reported-only (not independent).
@@ -453,16 +473,21 @@ See **Part II** of this file (Template B).
 ## 11. Novelty and external benchmarks
 
 Agreement with prior catalogues: **hu.MAP 3.0 made an equivalent assignment** (BICRAL in SWI/SNF complexes, very high
-pair probabilities with ncBAF/BAF members); **Wainberg 2021** could not have — BICRAL's UniProt annotation score of 5
-puts it outside their uncharacterised set, and the gene is not named in the retrieved text; **Replogle 2022** did not
+pair probabilities with ncBAF/BAF members); **Wainberg 2021** (*corrected 2026-10-31*) did not list BICRAL among its
+uncharacterised-gene predictions (annotation score 5, out of scope), but **did publish the same co-essential module** —
+{BRD9, GLTSCR1/BICRA, GLTSCR1L/BICRAL, SMARCD1}, d = 0.9, "SWI/SNF complex" — with BRD9 and SMARCD1 as BICRAL's
+significant pairs (§7); **Kim 2019** does not list it; **Replogle 2022** did not
 measure the gene; **Predictomes** gives consistent but unremarkable pair scores. Pan et al. 2018 (PMID:29778836) is the
 true methodological precedent: the same inference, from the same data type, for the paralogue GLTSCR1.
 
 What is new here, stated narrowly and more conservatively than in the first draft:
 
 - **(i) The co-essentiality neighbourhood of BICRAL itself** — SMARCD1 and BRD9 ahead of everything else
-  (0.268 / 0.252 †), SMARCA4 far behind (0.081 †) — an **independent, orthogonal rediscovery** of a membership that
-  GO's D1 rule still does not record (the only experimental GO row is CC-only, PMID:29374058 IDA). This stands.
+  (0.268 / 0.252 †), SMARCA4 far behind (0.081 †) — an orthogonal rediscovery of a membership that GO's D1 rule still
+  does not record (the only experimental GO row is CC-only, PMID:29374058 IDA). *Downgraded 2026-10-31:* this
+  neighbourhood, including its ncBAF-rather-than-SWI/SNF-general shape, was already published by Wainberg 2021 as a
+  4-gene co-essential module; what this report adds is the raw-correlation quantification against SMARCA4 and the
+  BICRA comparison, not the neighbourhood itself.
 - **(ii) The paralogue contrast is *not* claimed as new knowledge.** The first draft called paralogue-specific
   dependency "the genuinely new, falsifiable content of this report". That was too strong, and §7.3 now sets out why:
   BICRAL–BICRA is **positively** correlated (+0.164 †), BICRA tracks the ncBAF axis about twice as strongly
@@ -470,12 +495,14 @@ What is new here, stated narrowly and more conservatively than in the first draf
   BICRAL-dependent lines co-drops with BRD9/SMARCD1 † — and that line is the one the experiment uses. What remains is
   a two-line, same-disease observation worth testing, not a result.
 - **What is not new at all:** complex membership (published 2018, recalled unprompted by the probe, recorded in
-  UniProt, Complex Portal and hu.MAP 3.0); BICRAL-specific function at H3K27ac enhancers via the GiBAF domain
+  UniProt, Complex Portal and hu.MAP 3.0); the ncBAF co-essential module itself (Wainberg 2021, Supplementary Data 2,
+  module 3502 — *added 2026-10-31*); BICRAL-specific function at H3K27ac enhancers via the GiBAF domain
   (PPR59167, 2018 preprint — missed in the first draft); and the inference method itself (PMID:29778836 applied it to
   the paralogue in 2018).
 
-This gene is therefore best reported as a **rediscovery**, with one modest refinement (ncBAF-coupled rather than
-SWI/SNF-general dependency) and one open hypothesis (paralogue specificity). It is exactly the kind of case the N2
+This gene is therefore best reported as a **rediscovery**, with one modest quantitative refinement (ncBAF-coupled rather
+than SWI/SNF-general dependency, a shape already visible in Wainberg 2021's module) and one open hypothesis (paralogue
+specificity). It is exactly the kind of case the N2
 class was defined for, and the curation-lag story — experimental knowledge that exists in UniProt and in a preprint
 but not in GO's BP/MF evidence codes — is the more interesting finding.
 
