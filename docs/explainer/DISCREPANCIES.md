@@ -56,7 +56,7 @@ messages) and over the PI's own account of the turning points.
 2. <a id="c2"></a>**Did judge validation finish before main judging started?** Validation was committed at 05:35:46 and main judging
    at 05:38:14. Commit times cannot show that the main judges started only after validation passed, as DESIGN §6.4
    requires. The validation was also committed before adjudication was complete (A5).
-3. <a id="c3"></a>**History rewrite.** `16de609` rewrote all commit hashes after scrubbing local paths. The M9 chronology audit ran
+3. <a id="c3"></a>**History rewrite.** Before publication, local file paths were scrubbed from the whole history with `git filter-branch`; this changed the hashes of the 61 commits from `3cbcd6f` (M4 audit) onward, while the first 20 commits, including the freeze commit `afed1dd`, kept their hashes (`16de609` then remapped the hashes cited in the docs). *PI note:* filter-branch keeps author and committer dates, so commit times were preserved. The M9 chronology audit ran
    before the rewrite (on `0cde51b`). Tags still point to `afed1dd` with the original time (checked here), and the
    hashes cited in the docs resolve. Whether *all* timestamps were preserved was not re-audited after the rewrite.
 4. <a id="c4"></a>**How much of the leave-one-out vs hold-out gap (0.139 vs 0.030) is leakage and how much is population difference?**
