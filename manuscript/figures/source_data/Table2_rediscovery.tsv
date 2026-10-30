@@ -1,0 +1,38 @@
+set	rank	symbol	hgnc_id	predicted_V2_term	predicted_V2_term_name	V1prime_label	V1prime_label_name	family	p_cal	zmean	literature_class_L	n_items	n_functional	n_depmap_derived	recall_probe	n_decoy_supported
+top40	1	ANKRD52	HGNC:26614	GO:0031047	regulatory ncRNA-mediated gene silencing	GO:0016442	RISC complex	other	0.141024		N1	11	7	0	yes	0
+top40	3	CNOT10	HGNC:23817	GO:0043487	regulation of RNA stability	CP:CPX-2522	CCR4-NOT mRNA deadenylase complex, CNOT6L-CNOT7 variant	other	0.115749		N1	9	5	0	yes	1
+top40	4	TRAPPC5	HGNC:23067	GO:0048193	Golgi vesicle transport	CP:CPX-4750	TRAPP III complex, TRAPPC2 variant	ER_Golgi_secretory_lipid	0.11402		N2	5	1	0	yes	0
+top40	6	SSR4	HGNC:11326	GO:0006487	protein N-linked glycosylation	GO:0140534	endoplasmic reticulum protein-containing complex	ER_Golgi_secretory_lipid	0.091498		N1	14	7	0	yes	0
+top40	7	CNOT11	HGNC:25217	GO:0043487	regulation of RNA stability	CP:CPX-2522	CCR4-NOT mRNA deadenylase complex, CNOT6L-CNOT7 variant	other	0.0797873		N1	9	6	0	yes	1
+top40	8	MED31	HGNC:24260	GO:0006352	DNA-templated transcription initiation	GO:0090575	RNA polymerase II transcription regulator complex	other	0.0788531		N1	9	5	0	yes	0
+top40	9	YPEL5	HGNC:18329	GO:0030177	positive regulation of Wnt signaling pathway	CP:CPX-7901	GID E3 ubiquitin ligase complex, RMND5B-RANBP9 variant	other	0.0782256		N1	11	6	0	yes	0
+top40	10	TMEM208	HGNC:25015	GO:0090150	establishment of protein localization to membrane	GO:0140534	endoplasmic reticulum protein-containing complex	other	0.0777261		N1	9	5	0	yes	0
+top40	11	PHC3	HGNC:15682	GO:0040029	epigenetic regulation of gene expression	GO:0031519	PcG protein complex	other	0.0765728		N1	9	5	0	yes	0
+top40	15	TMED7	HGNC:24253	GO:0048193	Golgi vesicle transport	GO:0000153	cytoplasmic ubiquitin ligase complex	ER_Golgi_secretory_lipid	0.0636413		N1	12	6	0	yes	0
+top40	18	MGA	HGNC:14010	GO:0040029	epigenetic regulation of gene expression	GO:0005677	chromatin silencing complex	other	0.0587553		N1	12	6	0	yes	0
+top40	20	TMEM209	HGNC:21898	GO:0006997	nucleus organization	CP:CPX-873	Nuclear pore complex	other	0.0546176		N1	9	8	0	no	0
+top40	26	PSMD13	HGNC:9558	GO:0061136	regulation of proteasomal protein catabolic process	GO:0000502	proteasome complex	other	0.0471533		N1	9	8	0	yes	0
+top40	27	COA4	HGNC:24604	GO:0017004	cytochrome complex assembly	MC:OXPHOS	MitoCarta: OXPHOS	other	0.0464306		N1	8	5	0	yes	0
+top40	30	GRIPAP1	HGNC:18706	GO:0098876	vesicle-mediated transport to the plasma membrane	GO:0099023	vesicle tethering complex	ER_Golgi_secretory_lipid	0.0444943		N1	11	7	0	yes	0
+top40	33	BICRAL	HGNC:21111	GO:0001221	transcription coregulator binding	CP:CPX-4206	GBAF (SWI/SNF) ATP-dependent chromatin remodeling complex, ACTL6A-BICRA-SMARCA4 variant	other	0.0414605		N2	6	4	0	yes	0
+top40	38	DDX19A	HGNC:25628	GO:0008283	cell population proliferation	GO:0140534	endoplasmic reticulum protein-containing complex	other	0.0356027		N1	10	6	1	yes	0
+top40	40	DPCD	HGNC:24542	GO:0006354	DNA-templated transcription elongation	CP:CPX-6145	PAQosome co-chaperone complex	other	0.035536		N1	9	6	0	no	0
+s20	1	COMMD3	HGNC:23332	GO:0016197	endosomal transport	CP:CPX-2211	Commander complex	ER_Golgi_secretory_lipid		18.4816	N1	11	9	0	yes	1
+s20	2	COMMD2	HGNC:24993	GO:0016197	endosomal transport	CP:CPX-2211	Commander complex	ER_Golgi_secretory_lipid		16.9746	N1	8	2	0	yes	1
+s20	3	NDUFB10	HGNC:7696	GO:0003954	NADH dehydrogenase activity	MC:OXPHOS	MitoCarta: OXPHOS	other		16.6555	N1	8	6	0	yes	0
+s20	4	COMMD4	HGNC:26027	GO:0016197	endosomal transport	CP:CPX-2211	Commander complex	ER_Golgi_secretory_lipid		16.4119	N1	11	7	0	yes	0
+s20	5	NDUFB2	HGNC:7697	GO:0003954	NADH dehydrogenase activity	CP:CPX-577	Mitochondrial respiratory chain complex I	other		16.3301	N2	6	1	0	yes	0
+s20	6	NDUFA2	HGNC:7685	GO:0003954	NADH dehydrogenase activity	CP:CPX-577	Mitochondrial respiratory chain complex I	other		16.2974	N1	9	5	0	yes	0
+s20	7	COMMD8	HGNC:26036	GO:0016197	endosomal transport	CP:CPX-2211	Commander complex	ER_Golgi_secretory_lipid		16.2588	N1	14	11	0	yes	0
+s20	8	TADA2B	HGNC:30781	GO:0016747	acyltransferase activity, transferring groups other than amino-acyl groups	CP:CPX-900	SAGA complex, KAT2A variant	other		16.2113	N1	10	8	0	yes	0
+s20	9	NDUFA11	HGNC:20371	GO:0003954	NADH dehydrogenase activity	MC:OXPHOS	MitoCarta: OXPHOS	other		15.9916	N1	10	6	1	yes	0
+s20	10	COMMD10	HGNC:30201	GO:0016197	endosomal transport	CP:CPX-2211	Commander complex	ER_Golgi_secretory_lipid		15.9202	N1	11	10	0	yes	0
+s20	11	WDR7	HGNC:13490	GO:0006879	intracellular iron ion homeostasis	GO:0016469	proton-transporting two-sector ATPase complex	other		15.8189	N1	10	5	0	yes	0
+s20	12	WASHC3	HGNC:24256	GO:0016197	endosomal transport	CP:CPX-2211	Commander complex	ER_Golgi_secretory_lipid		15.6309	N1	10	6	0	yes	0
+s20	14	CTU2	HGNC:28005	GO:0006399	tRNA metabolic process	CP:CPX-1949	Elongator holoenzyme complex	other		15.5266	N1	12	9	1	yes	0
+s20	15	NDUFB4	HGNC:7699	GO:0003954	NADH dehydrogenase activity	MC:OXPHOS	MitoCarta: OXPHOS	other		15.4938	N1	7	5	0	yes	0
+s20	16	ELP5	HGNC:30617	GO:0006399	tRNA metabolic process	CP:CPX-1949	Elongator holoenzyme complex	other		15.2141	N1	11	9	0	yes	0
+s20	17	ELP6	HGNC:25976	GO:0006399	tRNA metabolic process	CP:CPX-1949	Elongator holoenzyme complex	other		15.0368	N1	10	5	0	yes	0
+s20	18	UNC50	HGNC:16046	GO:0007030	Golgi organization	GO:0099023	vesicle tethering complex	ER_Golgi_secretory_lipid		14.9051	N1	8	6	0	yes	0
+s20	19	MED9	HGNC:25487	GO:0060260	regulation of transcription initiation by RNA polymerase II	GO:0090575	RNA polymerase II transcription regulator complex	signalling_lineage		14.8133	N2	9	4	0	yes	0
+s20	20	NUP43	HGNC:21182	GO:0006913	nucleocytoplasmic transport	CP:CPX-873	Nuclear pore complex	other		14.7972	N1	10	4	0	yes	0

@@ -1,0 +1,37 @@
+key	value	note	inputs
+hval10_real_supported	9/10	real statement adjudicated +1	results/m7/judge/analysis_*_genes.tsv
+hval10_real_supported_wilson	0.900 (0.596-0.982)	Wilson 95% CI (descriptive)	results/m7/judge/analysis_*_genes.tsv
+hval10_decoy_supported	1/30 (0.033; 0.006-0.167)	decoys adjudicated +1, Wilson CI (decoys nested in genes; descriptive)	results/m7/judge/analysis_*_genes.tsv
+top40_real_supported	18/40	real statement adjudicated +1	results/m7/judge/analysis_*_genes.tsv
+top40_real_supported_wilson	0.450 (0.307-0.602)	Wilson 95% CI (descriptive)	results/m7/judge/analysis_*_genes.tsv
+top40_decoy_supported	3/120 (0.025; 0.009-0.071)	decoys adjudicated +1, Wilson CI (decoys nested in genes; descriptive)	results/m7/judge/analysis_*_genes.tsv
+top40_signflip_p	0.000217 (n non-zero 20)	exact one-sided sign-flip, recomputed by integer DP	results/m7/judge/analysis_main_genes.tsv
+s20_real_supported	19/20	real statement adjudicated +1	results/m7/judge/analysis_*_genes.tsv
+s20_real_supported_wilson	0.950 (0.764-0.991)	Wilson 95% CI (descriptive)	results/m7/judge/analysis_*_genes.tsv
+s20_decoy_supported	2/60 (0.033; 0.009-0.114)	decoys adjudicated +1, Wilson CI (decoys nested in genes; descriptive)	results/m7/judge/analysis_*_genes.tsv
+s20_signflip_p	1.91e-06 (n non-zero 19)	exact one-sided sign-flip, recomputed by integer DP	results/m7/judge/analysis_main_genes.tsv
+extra30_real_supported	1/30	real statement adjudicated +1	results/m7/judge/analysis_*_genes.tsv
+extra30_real_supported_wilson	0.033 (0.006-0.167)	Wilson 95% CI (descriptive)	results/m7/judge/analysis_*_genes.tsv
+extra30_decoy_supported	1/90 (0.011; 0.002-0.060)	decoys adjudicated +1, Wilson CI (decoys nested in genes; descriptive)	results/m7/judge/analysis_*_genes.tsv
+extra30_signflip_p	0.5 (n non-zero 2)	exact one-sided sign-flip, recomputed by integer DP	results/m7/judge/analysis_main_genes.tsv
+recall_probe_random_50	24/50	recognised by closed-book probe	results/audit/recall_probe_random50.tsv; results/m7/recall_probe_90.tsv
+recall_probe_90_candidates	52/90	recognised by closed-book probe	results/audit/recall_probe_random50.tsv; results/m7/recall_probe_90.tsv
+top40_supported_by_class	N1 16/31; N2 2/7; N3 0/2	supported / genes in class	results/m7/judge/analysis_main_genes.tsv
+top40_supported_recognised	16/18	supported genes recognised by the recall probe	results/m7/recall_probe_90.tsv
+top40_recognised	22/40	recall probe	results/m7/recall_probe_90.tsv
+s20_supported_by_class	N1 17/17; N2 2/3; N3 0/0	supported / genes in class	results/m7/judge/analysis_main_genes.tsv
+s20_supported_recognised	19/19	supported genes recognised by the recall probe	results/m7/recall_probe_90.tsv
+s20_recognised	19/20	recall probe	results/m7/recall_probe_90.tsv
+extra30_supported_by_class	N1 1/11; N2 0/14; N3 0/5	supported / genes in class	results/m7/judge/analysis_main_genes.tsv
+extra30_supported_recognised	1/1	supported genes recognised by the recall probe	results/m7/recall_probe_90.tsv
+extra30_recognised	11/30	recall probe	results/m7/recall_probe_90.tsv
+top40_vs_extra30_support_fisher	OR 23.7; one-sided p 5.6e-05	descriptive, not pre-specified	results/m7/judge/analysis_main_genes.tsv
+top40_vs_extra30_support_within_N1_fisher	16/31 vs 1/11; one-sided p 0.014	descriptive, not pre-specified	results/m7/judge/analysis_main_genes.tsv
+top40_pcal_supported_vs_not	median 0.0701 vs 0.0487	descriptive	results/ledger/top40_primary.tsv
+top40_sum_pcal	2.50	expected GO confirmations (point)	results/ledger/top40_primary.tsv
+extra30_sum_pcal	0.443	expected GO confirmations (point)	results/m7/extra30.tsv
+L_classes_90	N1 59; N2 24; N3 7	agent L, 90 U candidates	results/m7/L/index_batch_*.tsv
+L_classes_100	N1 69; N2 24; N3 7	agent L, 100 genes incl. hval10	results/m7/L/index_batch_*.tsv
+L_items	887 items; 518 functional; 4 DepMap-derived	agent L evidence items, 100 genes	results/m7/L/index_batch_*.tsv
+contradicted_top40	TLNRD1, KDF1	real statement -1	results/m7/judge/analysis_main_genes.tsv
+decoy_supported_genes	extra30:FAM117B; s20:COMMD3; top40:TLNRD1; top40:CNOT10; s20:COMMD2; top40:CNOT11; hval10:MTRES1	genes with a supported decoy	results/m7/judge/analysis_*_genes.tsv
