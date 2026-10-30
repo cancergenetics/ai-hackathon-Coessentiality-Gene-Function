@@ -1,0 +1,129 @@
+{
+ "section": "a8",
+ "title": "A8. Named-control misses (domain M8) [exploratory, post-review]",
+ "rows": [
+  {
+   "key": "SPRING1: new terms in t0 vocabulary; reasons",
+   "value": "2; circularity-flagged: 2",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "PEDS1: new terms in t0 vocabulary; reasons",
+   "value": "8; outside 2\u2013300 window: 2; not reportable: 2; ranked 7: 1; ranked 8: 1; ranked 9: 1; ranked 10: 1",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "CCDC32: new terms in t0 vocabulary; reasons",
+   "value": "5; circularity-flagged: 4; not reportable: 1",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "INTS15: new terms in t0 vocabulary; reasons",
+   "value": "11; not reportable: 8; outside 2\u2013300 window: 3",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "INTS15: top-10 partners (z)",
+   "value": "INTS10(30.1), INTS14(28.0), INTS13(27.4), INTS5(16.5), INTS2(14.8), INIP(14.7), INTS12(14.4), INTS9(14.4), INTS8(14.1), INTS6(12.9)",
+   "file": "results/revision/a8_control_summary.tsv",
+   "note": ""
+  },
+  {
+   "key": "INTS15: top terms (2\u2013300)",
+   "value": "GO:0016073 snRNA metabolic process (size 73, S 198.8, n_sup 12); GO:0009301 snRNA transcription (size 68, S 188.5, n_sup 11); GO:0042795 snRNA transcription by RNA polymerase II (size 68, S 188.5, n_sup 11); GO:0016180 snRNA processing (size 17, S 137.4, n_sup 9); GO:0000226 microtubule cytoskeleton organization (size 233, S 38.6, n_sup 2)",
+   "file": "results/revision/a8_control_summary.tsv",
+   "note": ""
+  },
+  {
+   "key": "INTS15: in-window clean targets with most annotated partners",
+   "value": "DNA-templated transcription initiation (size 190; 1 partners: E2F3; not reportable: 1 supporting partner(s) annotated at t0); transcription initiation at RNA polymerase II promoter (size 179; 1 partners: E2F3; not reportable: 1 supporting partner(s) annotated at t0); regulation of DNA-templated transcription elongation (size 29; 0 partners: -; not reportable: 0 supporting partner(s) annotated at t0)",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "HAPSTR1: new terms in t0 vocabulary; reasons",
+   "value": "6; circularity-flagged: 3; not reportable: 2; outside 2\u2013300 window: 1",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "SLC25A51: new terms in t0 vocabulary; reasons",
+   "value": "26; circularity-flagged: 21; not reportable: 3; outside 2\u2013300 window: 2",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "TEDC1: new terms in t0 vocabulary; reasons",
+   "value": "3; circularity-flagged: 3",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "TEDC2: new terms in t0 vocabulary; reasons",
+   "value": "3; circularity-flagged: 3",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "POU2AF2: new terms in t0 vocabulary; reasons",
+   "value": "2; circularity-flagged: 2",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "POU2AF3: new terms in t0 vocabulary; reasons",
+   "value": "2; circularity-flagged: 2",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "TMEM242: new terms in t0 vocabulary; reasons",
+   "value": "5; ranked 1: 1; ranked 64: 1; ranked 65: 1; ranked 66: 1; ranked 67: 1",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "FIRRM: new terms in t0 vocabulary; reasons",
+   "value": "27; circularity-flagged: 19; outside 2\u2013300 window: 7; not reportable: 1",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "AIRIM: new terms in t0 vocabulary; reasons",
+   "value": "6; not reportable: 3; outside 2\u2013300 window: 2; ranked 89: 1",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "TMEM41B: new terms in t0 vocabulary; reasons",
+   "value": "17; not reportable: 16; outside 2\u2013300 window: 1",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  },
+  {
+   "key": "TMEM41B: top-10 partners (z)",
+   "value": "VMP1(17.9), SYVN1(16.2), DERL2(15.1), DNAJC3(14.6), SEL1L(14.5), UBE2J1(14.4), UBE2G2(14.1), SEC62(12.3), DNAJB11(11.9), AUP1(10.3)",
+   "file": "results/revision/a8_control_summary.tsv",
+   "note": ""
+  },
+  {
+   "key": "TMEM41B: top terms (2\u2013300)",
+   "value": "GO:0034976 response to endoplasmic reticulum stress (size 167, S 151.7, n_sup 13); GO:0010498 proteasomal protein catabolic process (size 171, S 110.3, n_sup 9); GO:0036503 ERAD pathway (size 57, S 110.3, n_sup 9); GO:0009100 glycoprotein metabolic process (size 252, S 95.1, n_sup 8); GO:0006986 response to unfolded protein (size 111, S 89.1, n_sup 8)",
+   "file": "results/revision/a8_control_summary.tsv",
+   "note": ""
+  },
+  {
+   "key": "TMEM41B: in-window clean targets with most annotated partners",
+   "value": "autophagosome assembly (size 23; 1 partners: ATG9A; not reportable: 1 supporting partner(s) annotated at t0); autophagy (size 133; 1 partners: ATG9A; not reportable: 1 supporting partner(s) annotated at t0); vacuole organization (size 50; 1 partners: ATG9A; not reportable: 1 supporting partner(s) annotated at t0)",
+   "file": "results/revision/a8_control_target_reasons.tsv",
+   "note": ""
+  }
+ ],
+ "notes": [
+  "Targets here = current minus t0 V2 terms of the control present in the t0 vocabulary (any size), so terms outside 2\u2013300 are listed with that reason. Reportable = >= 2 supporting partners (n_sup from the scorer, H setting, window 2\u2013300 as Fig 2E). 'Annotated partners' = members of N(g) (K = 25) carrying the term at t0 (propagated); the scorer's n_sup can be lower after the IPI with/from rule."
+ ]
+}

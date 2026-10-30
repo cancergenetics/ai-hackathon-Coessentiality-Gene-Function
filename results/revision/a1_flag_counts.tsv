@@ -1,0 +1,9 @@
+population	n	D2	route_D3only	score5	score_ge4	cp_subunit	exp_CC	exp_CC_complex	tdark	artefact_flag
+U (4,924)	4924	1105	3819	1261	2248	288	1218	165	3600	1933
+U scorable	4271	803	3468	1193	2113	280	1156	159	3108	1826
+U assessable (C1, 635)	635	67	568	262	431	160	320	115	383	414
+random-50 audit	50	16	34	18	27	0	14	0	35	22
+top 40	40	3	37	20	30	13	24	10	21	30
+S20	20	0	20	16	19	17	18	11	5	20
+extra30	30	7	23	11	16	1	9	0	22	15
+10 report genes	10	3	7	2	3	2	4	2	7	5

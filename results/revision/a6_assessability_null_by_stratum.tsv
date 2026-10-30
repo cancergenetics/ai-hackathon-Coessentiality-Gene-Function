@@ -1,0 +1,11 @@
+stratifier	expression	level	clean_neg_n	clean_neg_p_lt_0p05	false_call_rate	rate_lo	rate_hi	expressed_scorable	observed_assessable	expected_false	excess
+sd_tertile_withinU	frozen expressed (635)	high	329	55	0.167173	0.130745	0.211284	960	430	160.486	269.514
+sd_tertile_withinU	frozen expressed (635)	low	464	41	0.0883621	0.0658026	0.117682	784	69	69.2759	-0.275862
+sd_tertile_withinU	frozen expressed (635)	mid	374	57	0.152406	0.119528	0.192352	881	136	134.27	1.72995
+sd_tertile_withinU	DESIGN expressed (646)	high	329	55	0.167173	0.130745	0.211284	985	437	164.666	272.334
+sd_tertile_withinU	DESIGN expressed (646)	low	464	41	0.0883621	0.0658026	0.117682	820	71	72.4569	-1.4569
+sd_tertile_withinU	DESIGN expressed (646)	mid	374	57	0.152406	0.119528	0.192352	917	138	139.757	-1.75668
+any_dependency	frozen expressed (635)	False	939	91	0.0969116	0.0795992	0.117509	1840	215	178.317	36.6826
+any_dependency	frozen expressed (635)	True	228	62	0.27193	0.218309	0.333109	785	420	213.465	206.535
+any_dependency	DESIGN expressed (646)	False	939	91	0.0969116	0.0795992	0.117509	1914	219	185.489	33.5112
+any_dependency	DESIGN expressed (646)	True	228	62	0.27193	0.218309	0.333109	808	427	219.719	207.281

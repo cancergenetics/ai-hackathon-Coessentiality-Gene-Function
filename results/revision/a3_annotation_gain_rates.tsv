@@ -1,0 +1,7 @@
+rate	k	n	p	wilson_lo	wilson_hi	horizon_years	annual_hazard	p_over_7p88y_constant_hazard	note
+any new target (|H| / t0-eligible)	820	5051	0.162344	0.152432	0.17277	7.88	0.0224742	0.162344	holdout_sizing.md definition
+primary H (non-circular target) / t0-eligible	809	5051	0.160166	0.150311	0.170538	7.88	0.0221448	0.160166	
+H fit set (primary H with prediction) / t0-eligible with prediction	775	4822	0.160722	0.150626	0.171357	7.88	0.0222287	0.160722	matches the conditioning set of p_cal (PRIMARY scaling)
+any new target among t0-eligible with prediction	786	4822	0.163003	0.152846	0.173696	7.88	0.022574	0.163003	
+2022 cohort: any new target / 2022-eligible	376	4555	0.0825467	0.0749022	0.0908946	3.89	0.0221759	0.160372	t0 = GO 2022-07-01, cut-off PMID 2022-07-01
+survivors: eligible in 2018 AND still eligible in 2022 -> new target after 2022	310	4171	0.0743227	0.0667483	0.0826805	3.89	0.0198789	0.145031	genes that stayed uncharacterised 2018->2022 (U-like survivors); gain 2022->now

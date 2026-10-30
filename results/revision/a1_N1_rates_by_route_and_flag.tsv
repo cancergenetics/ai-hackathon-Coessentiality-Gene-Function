@@ -1,0 +1,43 @@
+population	stratifier	stratum	n	n_N1	N1_rate	wilson_lo	wilson_hi	fisher_two_sided_p_flag_vs_rest
+random-50 audit (prevalence)	entry route	D3 only	34	19	0.558824	0.394539	0.711165	
+random-50 audit (prevalence)	entry route	D1&D2	16	2	0.125	0.0349775	0.360228	0.00523133
+random-50 audit (prevalence)	definition-artefact flag	flag	22	13	0.590909	0.387348	0.767442	
+random-50 audit (prevalence)	definition-artefact flag	no flag	28	8	0.285714	0.15254	0.470593	0.044215
+random-50 audit (prevalence)	artefact flag (exp CC = complex term)	flag	18	10	0.555556	0.337164	0.754405	
+random-50 audit (prevalence)	artefact flag (exp CC = complex term)	no flag	32	11	0.34375	0.204104	0.516889	0.232357
+random-50 audit (prevalence)	UniProt score 5	flag	18	10	0.555556	0.337164	0.754405	
+random-50 audit (prevalence)	UniProt score 5	no flag	32	11	0.34375	0.204104	0.516889	0.232357
+random-50 audit (prevalence)	Complex Portal subunit	flag	0	0				
+random-50 audit (prevalence)	Complex Portal subunit	no flag	50	21	0.42	0.29375	0.557666	
+random-50 audit (prevalence)	experimental GO CC	flag	14	9	0.642857	0.387644	0.836553	
+random-50 audit (prevalence)	experimental GO CC	no flag	36	12	0.333333	0.202146	0.49666	0.0608821
+random-50 audit (prevalence)	Tdark	flag	35	10	0.285714	0.163265	0.450549	
+random-50 audit (prevalence)	Tdark	no flag	15	11	0.733333	0.480496	0.891025	0.00499536
+top40 + S20 + extra30 (L class; selected, not prevalence)	entry route	D3 only	80	58	0.725	0.618559	0.810822	
+top40 + S20 + extra30 (L class; selected, not prevalence)	entry route	D1&D2	10	1	0.1	0.0178762	0.40415	0.000215674
+top40 + S20 + extra30 (L class; selected, not prevalence)	definition-artefact flag	flag	65	49	0.753846	0.636942	0.84242	
+top40 + S20 + extra30 (L class; selected, not prevalence)	definition-artefact flag	no flag	25	10	0.4	0.234033	0.592605	0.00264614
+top40 + S20 + extra30 (L class; selected, not prevalence)	artefact flag (exp CC = complex term)	flag	56	45	0.803571	0.681554	0.886614	
+top40 + S20 + extra30 (L class; selected, not prevalence)	artefact flag (exp CC = complex term)	no flag	34	14	0.411765	0.26366	0.577784	0.000226466
+top40 + S20 + extra30 (L class; selected, not prevalence)	UniProt score 5	flag	47	39	0.829787	0.698602	0.911136	
+top40 + S20 + extra30 (L class; selected, not prevalence)	UniProt score 5	no flag	43	20	0.465116	0.325111	0.610844	0.000355716
+top40 + S20 + extra30 (L class; selected, not prevalence)	Complex Portal subunit	flag	31	27	0.870968	0.711476	0.948657	
+top40 + S20 + extra30 (L class; selected, not prevalence)	Complex Portal subunit	no flag	59	32	0.542373	0.416578	0.662987	0.00216493
+top40 + S20 + extra30 (L class; selected, not prevalence)	experimental GO CC	flag	51	40	0.784314	0.653736	0.875061	
+top40 + S20 + extra30 (L class; selected, not prevalence)	experimental GO CC	no flag	39	19	0.487179	0.338652	0.638006	0.00401765
+top40 + S20 + extra30 (L class; selected, not prevalence)	Tdark	flag	48	25	0.520833	0.383292	0.655287	
+top40 + S20 + extra30 (L class; selected, not prevalence)	Tdark	no flag	42	34	0.809524	0.666992	0.90018	0.00713263
+top 40 (L class)	entry route	D3 only	37	31	0.837838	0.688635	0.923488	
+top 40 (L class)	entry route	D1&D2	3	0	0	0	0.561497	0.00850202
+top 40 (L class)	definition-artefact flag	flag	30	25	0.833333	0.664356	0.926635	
+top 40 (L class)	definition-artefact flag	no flag	10	6	0.6	0.312674	0.83182	0.190337
+top 40 (L class)	artefact flag (exp CC = complex term)	flag	25	22	0.88	0.700442	0.958332	
+top 40 (L class)	artefact flag (exp CC = complex term)	no flag	15	9	0.6	0.357468	0.801755	0.0572371
+top 40 (L class)	UniProt score 5	flag	20	18	0.9	0.698966	0.972134	
+top 40 (L class)	UniProt score 5	no flag	20	13	0.65	0.432854	0.818808	0.127386
+top 40 (L class)	Complex Portal subunit	flag	13	11	0.846154	0.577654	0.956742	
+top 40 (L class)	Complex Portal subunit	no flag	27	20	0.740741	0.553214	0.868296	0.690392
+top 40 (L class)	experimental GO CC	flag	24	20	0.833333	0.641469	0.933213	
+top 40 (L class)	experimental GO CC	no flag	16	11	0.6875	0.444044	0.858354	0.441444
+top 40 (L class)	Tdark	flag	21	14	0.666667	0.453735	0.828052	
+top 40 (L class)	Tdark	no flag	19	17	0.894737	0.686059	0.970641	0.132773

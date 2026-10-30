@@ -1,0 +1,121 @@
+model	symbol	hgnc_id	p	family	top_term_name	zmean	cov_pct	size_pct	p_cal
+zmean only	TRNAU1AP	HGNC:30813	0.13272	other	anaphase-promoting complex-dependent catabolic process	10.962	0.58481	0.034316	
+zmean only	MRPL22	HGNC:14480	0.13228	mitochondrial	mitochondrial gene expression	10.951	0.3281	0.15948	
+zmean only	TRAPPC5	HGNC:23067	0.13202	ER_Golgi_secretory_lipid	Golgi vesicle transport	10.944	0.78591	0.79967	0.11402
+zmean only	MRPS11	HGNC:14050	0.13172	other	tRNA metabolic process	10.936	0.0049745	0.53507	
+zmean only	MRPL15	HGNC:14054	0.13025	ribosome_biogenesis_translation	aminoacyl-tRNA ligase activity	10.898	0.0014135	0.080534	
+zmean only	ZNF511	HGNC:28445	0.12953	nuclear_RNA_machinery	RNA splicing, via transesterification reactions	10.879	0.58481	0.90184	
+zmean only	CNOT10	HGNC:23817	0.12937	other	regulation of RNA stability	10.875	0.69398	0.43006	0.11575
+zmean only	CNOT11	HGNC:25217	0.12819	other	regulation of RNA stability	10.843	0.45746	0.43006	0.079787
+zmean only	MRPL38	HGNC:14033	0.12814	ribosome_biogenesis_translation	structural constituent of ribosome	10.842	0.00048929	0.28337	
+zmean only	YPEL5	HGNC:18329	0.12538	other	positive regulation of Wnt signaling pathway	10.768	0.45746	0.30036	0.078226
+zmean only	SSR3	HGNC:11325	0.12483	ER_Golgi_secretory_lipid	protein N-linked glycosylation	10.753	0.91587	0.1856	
+zmean only	MRPL11	HGNC:14042	0.12227	mitochondrial	mitochondrial gene expression	10.683	0.0093781	0.15948	
+zmean only	ANKRD52	HGNC:26614	0.12225	other	regulatory ncRNA-mediated gene silencing	10.682	0.85914	0.17225	0.14102
+zmean only	GOLT1B	HGNC:20175	0.12155	ER_Golgi_secretory_lipid	Golgi vesicle transport	10.663	0.69398	0.79967	
+zmean only	MRPL35	HGNC:14489	0.12071	mitochondrial	mitochondrial gene expression	10.639	0.00048929	0.15948	
+zmean only	MRPS23	HGNC:14509	0.11958	other	tRNA metabolic process	10.608	0.0030988	0.53507	
+zmean only	HEATR5B	HGNC:29273	0.11897	other	vesicle organization	10.59	0.91587	0.67631	
+zmean only	MRPL42	HGNC:14493	0.11786	mitochondrial	mitochondrial gene expression	10.559	0.13328	0.15948	
+zmean only	MRPL4	HGNC:14276	0.11673	ribosome_biogenesis_translation	structural constituent of ribosome	10.526	0.00048929	0.28337	
+zmean only	PRPF39	HGNC:20314	0.11642	other	anaphase-promoting complex-dependent catabolic process	10.518	0.78591	0.034316	
+zmean only	KANSL2	HGNC:26024	0.11527	other	regulation of mitochondrial gene expression	10.484	0.91587	0.05114	
+zmean only	GPN2	HGNC:25513	0.11256	ribosome_biogenesis_translation	protein-RNA complex assembly	10.404	0.58481	0.46735	
+zmean only	MRPL33	HGNC:14487	0.11165	other	tRNA metabolic process	10.377	0.0049745	0.53507	
+zmean only	MRPL52	HGNC:16655	0.11117	mitochondrial	mitochondrial gene expression	10.363	0.13328	0.15948	
+zmean only	NOP16	HGNC:26934	0.10965	ribosome_biogenesis_translation	ribosome biogenesis	10.317	0.58481	0.85542	
+zmean only	PSMD13	HGNC:9558	0.10933	other	regulation of proteasomal protein catabolic process	10.307	0.21806	0.62328	0.047153
+zmean only	PIGX	HGNC:26046	0.10911	other	GPI anchored protein biosynthesis	10.3	0.9608	0.061235	
+zmean only	WDR89	HGNC:20489	0.10884	ribosome_biogenesis_translation	ribosome biogenesis	10.292	0.85914	0.85542	
+zmean only	SCFD2	HGNC:30676	0.10839	ER_Golgi_secretory_lipid	Golgi vesicle transport	10.278	0.78591	0.79967	
+zmean only	NOP9	HGNC:19826	0.10543	ribosome_biogenesis_translation	ribosome biogenesis	10.186	0.85914	0.85542	
+zmean only	CCNJ	HGNC:23434	0.10505	other	kinase regulator activity	10.174	0.69398	0.95815	
+zmean only	GDAP2	HGNC:18010	0.1041	other	response to nutrient levels	10.144	0.9608	0.8082	
+zmean only	MED31	HGNC:24260	0.1008	other	DNA-templated transcription initiation	10.037	0.58481	0.5708	0.078853
+zmean only	MRPL37	HGNC:14034	0.10066	ribosome_biogenesis_translation	ribosome biogenesis	10.033	0.0020387	0.85542	
+zmean only	MRPL51	HGNC:14044	0.098834	ribosome_biogenesis_translation	translational elongation	9.9723	0.0030988	0.1114	
+zmean only	ESF1	HGNC:15898	0.09866	ribosome_biogenesis_translation	ribosome biogenesis	9.9664	0.85914	0.85542	
+zmean only	MRPS9	HGNC:14501	0.098129	mitochondrial	mitochondrial gene expression	9.9487	0.038409	0.15948	
+zmean only	MRPS33	HGNC:16634	0.097404	mitochondrial	mitochondrial gene expression	9.9242	0.21806	0.15948	
+zmean only	PARS2	HGNC:30563	0.097097	mitochondrial	mitochondrial gene expression	9.9138	0.85914	0.15948	
+zmean only	ASB3	HGNC:16013	0.097025	other	sister chromatid cohesion	9.9114	0.91587	0.056396	
+zmean + coverage	ANKRD52	HGNC:26614	0.15808	other	regulatory ncRNA-mediated gene silencing	10.682	0.85914	0.17225	0.14102
+zmean + coverage	TRAPPC5	HGNC:23067	0.15367	ER_Golgi_secretory_lipid	Golgi vesicle transport	10.944	0.78591	0.79967	0.11402
+zmean + coverage	WDR89	HGNC:20489	0.14279	ribosome_biogenesis_translation	ribosome biogenesis	10.292	0.85914	0.85542	
+zmean + coverage	NOP9	HGNC:19826	0.13886	ribosome_biogenesis_translation	ribosome biogenesis	10.186	0.85914	0.85542	
+zmean + coverage	PRPF39	HGNC:20314	0.13742	other	anaphase-promoting complex-dependent catabolic process	10.518	0.78591	0.034316	
+zmean + coverage	CNOT10	HGNC:23817	0.13352	other	regulation of RNA stability	10.875	0.69398	0.43006	0.11575
+zmean + coverage	ESF1	HGNC:15898	0.131	ribosome_biogenesis_translation	ribosome biogenesis	9.9664	0.85914	0.85542	
+zmean + coverage	PARS2	HGNC:30563	0.12917	mitochondrial	mitochondrial gene expression	9.9138	0.85914	0.15948	
+zmean + coverage	CCDC174	HGNC:28033	0.12907	other	DNA-templated transcription initiation	9.9109	0.85914	0.5708	0.11643
+zmean + coverage	SCFD2	HGNC:30676	0.12894	ER_Golgi_secretory_lipid	Golgi vesicle transport	10.278	0.78591	0.79967	
+zmean + coverage	GOLT1B	HGNC:20175	0.12617	ER_Golgi_secretory_lipid	Golgi vesicle transport	10.663	0.69398	0.79967	
+zmean + coverage	SSR4	HGNC:11326	0.12021	ER_Golgi_secretory_lipid	protein N-linked glycosylation	9.6462	0.85914	0.1856	0.091498
+zmean + coverage	CLASRP	HGNC:17731	0.11993	nuclear_RNA_machinery	RNA splicing, via transesterification reactions	9.6377	0.85914	0.90184	
+zmean + coverage	TRNAU1AP	HGNC:30813	0.11784	other	anaphase-promoting complex-dependent catabolic process	10.962	0.58481	0.034316	
+zmean + coverage	ZNF511	HGNC:28445	0.11521	nuclear_RNA_machinery	RNA splicing, via transesterification reactions	10.879	0.58481	0.90184	
+zmean + coverage	RBM19	HGNC:29098	0.11306	ribosome_biogenesis_translation	ribosome biogenesis	9.791	0.78591	0.85542	
+zmean + coverage	RBM34	HGNC:28965	0.113	other	DNA-templated transcription elongation	9.418	0.85914	0.13596	0.10274
+zmean + coverage	CCNJ	HGNC:23434	0.11055	other	kinase regulator activity	10.174	0.69398	0.95815	
+zmean + coverage	SRBD1	HGNC:25521	0.10962	centrosome_cilia_mitosis	chromosome segregation	9.3068	0.85914	0.87444	
+zmean + coverage	LRRC57	HGNC:26719	0.10771	other	kinase regulator activity	9.6133	0.78591	0.95815	
+zmean + coverage	RPP25L	HGNC:19909	0.10405	other	RNA 5'-end processing	9.1164	0.85914	0.037403	
+zmean + coverage	GPN2	HGNC:25513	0.10117	ribosome_biogenesis_translation	protein-RNA complex assembly	10.404	0.58481	0.46735	
+zmean + coverage	NOP16	HGNC:26934	0.098756	ribosome_biogenesis_translation	ribosome biogenesis	10.317	0.58481	0.85542	
+zmean + coverage	POM121C	HGNC:34005	0.095863	other	nucleocytoplasmic transport	9.6564	0.69398	0.45172	
+zmean + coverage	CNOT11	HGNC:25217	0.095565	other	regulation of RNA stability	10.843	0.45746	0.43006	0.079787
+zmean + coverage	YPEL5	HGNC:18329	0.093586	other	positive regulation of Wnt signaling pathway	10.768	0.45746	0.30036	0.078226
+zmean + coverage	MED31	HGNC:24260	0.091381	other	DNA-templated transcription initiation	10.037	0.58481	0.5708	0.078853
+zmean + coverage	SRRD	HGNC:33910	0.086629	other	cytoplasmic stress granule assembly	8.4565	0.85914	0.031173	
+zmean + coverage	SRFBP1	HGNC:26333	0.085349	ribosome_biogenesis_translation	ribosome biogenesis	8.7744	0.78591	0.85542	
+zmean + coverage	PHC3	HGNC:15682	0.084141	other	epigenetic regulation of gene expression	8.7236	0.78591	0.54524	0.076573
+zmean + coverage	TMEM208	HGNC:25015	0.083907	other	establishment of protein localization to membrane	8.3428	0.85914	0.38443	0.077726
+zmean + coverage	TMED7	HGNC:24253	0.083684	ER_Golgi_secretory_lipid	Golgi vesicle transport	8.7043	0.78591	0.79967	0.063641
+zmean + coverage	SCNM1	HGNC:23136	0.082824	nuclear_RNA_machinery	RNA splicing, via transesterification reactions	9.6863	0.58481	0.90184	
+zmean + coverage	MRPL22	HGNC:14480	0.081987	mitochondrial	mitochondrial gene expression	10.951	0.3281	0.15948	
+zmean + coverage	RALGAPB	HGNC:29221	0.081979	other	cellular response to chemical stress	8.6311	0.78591	0.64416	
+zmean + coverage	PLEKHH3	HGNC:26105	0.081586	other	regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction	8.2431	0.85914	0.7748	0.075714
+zmean + coverage	TTC14	HGNC:24697	0.077815	signalling_lineage	regulation of DNA-templated transcription elongation	8.4465	0.78591	0.1542	5.4192e-07
+zmean + coverage	TLNRD1	HGNC:13519	0.077485	other	negative regulation of cell migration	8.8972	0.69398	0.94433	0.069331
+zmean + coverage	FAM32A	HGNC:24563	0.0742	nuclear_RNA_machinery	RNA splicing, via transesterification reactions	8.2787	0.78591	0.90184	
+zmean + coverage	IER5L	HGNC:23679	0.072849	DNA_replication_repair	ATP-dependent activity, acting on DNA	8.6798	0.69398	0.31677	
+zmean + term size	MRPL22	HGNC:14480	0.13228	mitochondrial	mitochondrial gene expression	10.951	0.3281	0.15948	
+zmean + term size	TRAPPC5	HGNC:23067	0.13202	ER_Golgi_secretory_lipid	Golgi vesicle transport	10.944	0.78591	0.79967	0.11402
+zmean + term size	MRPS11	HGNC:14050	0.13172	other	tRNA metabolic process	10.936	0.0049745	0.53507	
+zmean + term size	MRPL15	HGNC:14054	0.13025	ribosome_biogenesis_translation	aminoacyl-tRNA ligase activity	10.898	0.0014135	0.080534	
+zmean + term size	ZNF511	HGNC:28445	0.12953	nuclear_RNA_machinery	RNA splicing, via transesterification reactions	10.879	0.58481	0.90184	
+zmean + term size	CNOT10	HGNC:23817	0.12937	other	regulation of RNA stability	10.875	0.69398	0.43006	0.11575
+zmean + term size	CNOT11	HGNC:25217	0.12819	other	regulation of RNA stability	10.843	0.45746	0.43006	0.079787
+zmean + term size	MRPL38	HGNC:14033	0.12814	ribosome_biogenesis_translation	structural constituent of ribosome	10.842	0.00048929	0.28337	
+zmean + term size	YPEL5	HGNC:18329	0.12538	other	positive regulation of Wnt signaling pathway	10.768	0.45746	0.30036	0.078226
+zmean + term size	SSR3	HGNC:11325	0.12483	ER_Golgi_secretory_lipid	protein N-linked glycosylation	10.753	0.91587	0.1856	
+zmean + term size	MRPL11	HGNC:14042	0.12227	mitochondrial	mitochondrial gene expression	10.683	0.0093781	0.15948	
+zmean + term size	ANKRD52	HGNC:26614	0.12225	other	regulatory ncRNA-mediated gene silencing	10.682	0.85914	0.17225	0.14102
+zmean + term size	GOLT1B	HGNC:20175	0.12155	ER_Golgi_secretory_lipid	Golgi vesicle transport	10.663	0.69398	0.79967	
+zmean + term size	MRPL35	HGNC:14489	0.12071	mitochondrial	mitochondrial gene expression	10.639	0.00048929	0.15948	
+zmean + term size	MRPS23	HGNC:14509	0.11958	other	tRNA metabolic process	10.608	0.0030988	0.53507	
+zmean + term size	HEATR5B	HGNC:29273	0.11897	other	vesicle organization	10.59	0.91587	0.67631	
+zmean + term size	MRPL42	HGNC:14493	0.11786	mitochondrial	mitochondrial gene expression	10.559	0.13328	0.15948	
+zmean + term size	MRPL4	HGNC:14276	0.11673	ribosome_biogenesis_translation	structural constituent of ribosome	10.526	0.00048929	0.28337	
+zmean + term size	KANSL2	HGNC:26024	0.11527	other	regulation of mitochondrial gene expression	10.484	0.91587	0.05114	
+zmean + term size	GPN2	HGNC:25513	0.11256	ribosome_biogenesis_translation	protein-RNA complex assembly	10.404	0.58481	0.46735	
+zmean + term size	MRPL33	HGNC:14487	0.11165	other	tRNA metabolic process	10.377	0.0049745	0.53507	
+zmean + term size	MRPL52	HGNC:16655	0.11117	mitochondrial	mitochondrial gene expression	10.363	0.13328	0.15948	
+zmean + term size	NOP16	HGNC:26934	0.10965	ribosome_biogenesis_translation	ribosome biogenesis	10.317	0.58481	0.85542	
+zmean + term size	PSMD13	HGNC:9558	0.10933	other	regulation of proteasomal protein catabolic process	10.307	0.21806	0.62328	0.047153
+zmean + term size	PIGX	HGNC:26046	0.10911	other	GPI anchored protein biosynthesis	10.3	0.9608	0.061235	
+zmean + term size	WDR89	HGNC:20489	0.10884	ribosome_biogenesis_translation	ribosome biogenesis	10.292	0.85914	0.85542	
+zmean + term size	SCFD2	HGNC:30676	0.10839	ER_Golgi_secretory_lipid	Golgi vesicle transport	10.278	0.78591	0.79967	
+zmean + term size	NOP9	HGNC:19826	0.10543	ribosome_biogenesis_translation	ribosome biogenesis	10.186	0.85914	0.85542	
+zmean + term size	GDAP2	HGNC:18010	0.1041	other	response to nutrient levels	10.144	0.9608	0.8082	
+zmean + term size	MED31	HGNC:24260	0.1008	other	DNA-templated transcription initiation	10.037	0.58481	0.5708	0.078853
+zmean + term size	MRPL37	HGNC:14034	0.10066	ribosome_biogenesis_translation	ribosome biogenesis	10.033	0.0020387	0.85542	
+zmean + term size	MRPL51	HGNC:14044	0.098834	ribosome_biogenesis_translation	translational elongation	9.9723	0.0030988	0.1114	
+zmean + term size	ESF1	HGNC:15898	0.09866	ribosome_biogenesis_translation	ribosome biogenesis	9.9664	0.85914	0.85542	
+zmean + term size	MRPS9	HGNC:14501	0.098129	mitochondrial	mitochondrial gene expression	9.9487	0.038409	0.15948	
+zmean + term size	MRPS33	HGNC:16634	0.097404	mitochondrial	mitochondrial gene expression	9.9242	0.21806	0.15948	
+zmean + term size	PARS2	HGNC:30563	0.097097	mitochondrial	mitochondrial gene expression	9.9138	0.85914	0.15948	
+zmean + term size	ASB3	HGNC:16013	0.097025	other	sister chromatid cohesion	9.9114	0.91587	0.056396	
+zmean + term size	CCDC174	HGNC:28033	0.097012	other	DNA-templated transcription initiation	9.9109	0.85914	0.5708	0.11643
+zmean + term size	RBM19	HGNC:29098	0.093534	ribosome_biogenesis_translation	ribosome biogenesis	9.791	0.78591	0.85542	
+zmean + term size	PSMG4	HGNC:21108	0.093323	other	regulation of proteasomal protein catabolic process	9.7836	0.91587	0.62328	

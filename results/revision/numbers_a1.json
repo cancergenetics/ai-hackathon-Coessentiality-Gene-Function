@@ -1,0 +1,172 @@
+{
+ "section": "a1",
+ "title": "A1. Entry-route re-stratification of U (domain M1) [exploratory, post-review]",
+ "rows": [
+  {
+   "key": "U genes entering via D1&D2 (UniProt score <= 2)",
+   "value": 1105,
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": ""
+  },
+  {
+   "key": "U genes entering via D3 only (not D2)",
+   "value": 3819,
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": ""
+  },
+  {
+   "key": "U genes with UniProt annotation score 5",
+   "value": 1261,
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": ""
+  },
+  {
+   "key": "U genes with UniProt annotation score >= 4",
+   "value": 2248,
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": ""
+  },
+  {
+   "key": "U genes that are Complex Portal subunits",
+   "value": 288,
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": "CORUM not in data/raw: not checked"
+  },
+  {
+   "key": "U genes with >= 1 experimental GO CC term (any)",
+   "value": 1218,
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": "feature table n_exp_CC (current GAF, D1 evidence codes)"
+  },
+  {
+   "key": "U genes with experimental GO CC protein-complex term (GO:0032991 desc.)",
+   "value": 165,
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": ""
+  },
+  {
+   "key": "U genes Tdark",
+   "value": 3600,
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": ""
+  },
+  {
+   "key": "U genes with any definition-artefact flag (score 5 | CP subunit | exp CC)",
+   "value": 1933,
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": ""
+  },
+  {
+   "key": "U assessable (C1, 635): score 5 / CP subunit / exp CC / any artefact flag / D3-only",
+   "value": "262 / 160 / 320 / 414 / 568 of 635",
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": ""
+  },
+  {
+   "key": "top 40: score 5 / CP subunit / exp CC / any artefact flag / D3-only",
+   "value": "20 / 13 / 24 / 30 / 37 of 40",
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": ""
+  },
+  {
+   "key": "S20: score 5 / CP subunit / exp CC / any artefact flag / D3-only",
+   "value": "16 / 17 / 18 / 20 / 20 of 20",
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": ""
+  },
+  {
+   "key": "10 report genes: score 5 / CP subunit / exp CC / any artefact flag / D3-only",
+   "value": "2 / 2 / 4 / 5 / 7 of 10",
+   "file": "results/revision/a1_flag_counts.tsv",
+   "note": ""
+  },
+  {
+   "key": "random-50 N1 rate, route = D3 only",
+   "value": "19/34 = 0.559 (0.395\u20130.711)",
+   "file": "results/revision/a1_N1_rates_by_route_and_flag.tsv",
+   "note": ""
+  },
+  {
+   "key": "random-50 N1 rate, route = D1&D2",
+   "value": "2/16 = 0.125 (0.035\u20130.360)",
+   "file": "results/revision/a1_N1_rates_by_route_and_flag.tsv",
+   "note": ""
+  },
+  {
+   "key": "random-50 N1 rate, artefact flag = flag",
+   "value": "13/22 = 0.591 (0.387\u20130.767)",
+   "file": "results/revision/a1_N1_rates_by_route_and_flag.tsv",
+   "note": ""
+  },
+  {
+   "key": "random-50 N1 rate, artefact flag = no flag",
+   "value": "8/28 = 0.286 (0.153\u20130.471)",
+   "file": "results/revision/a1_N1_rates_by_route_and_flag.tsv",
+   "note": ""
+  },
+  {
+   "key": "top40+S20+extra30 N1 rate (L), route = D3 only",
+   "value": "58/80 = 0.725 (0.619\u20130.811)",
+   "file": "results/revision/a1_N1_rates_by_route_and_flag.tsv",
+   "note": "selected genes; not a prevalence"
+  },
+  {
+   "key": "top40+S20+extra30 N1 rate (L), route = D1&D2",
+   "value": "1/10 = 0.100 (0.018\u20130.404)",
+   "file": "results/revision/a1_N1_rates_by_route_and_flag.tsv",
+   "note": "selected genes; not a prevalence"
+  },
+  {
+   "key": "top40+S20+extra30 N1 rate (L), artefact flag = flag",
+   "value": "49/65 = 0.754 (0.637\u20130.842)",
+   "file": "results/revision/a1_N1_rates_by_route_and_flag.tsv",
+   "note": "selected genes; not a prevalence"
+  },
+  {
+   "key": "top40+S20+extra30 N1 rate (L), artefact flag = no flag",
+   "value": "10/25 = 0.400 (0.234\u20130.593)",
+   "file": "results/revision/a1_N1_rates_by_route_and_flag.tsv",
+   "note": "selected genes; not a prevalence"
+  },
+  {
+   "key": "random-50 N1 split: key evidence 2021+ / before 2021 (auditor's dating)",
+   "value": "13 / 8 of 21",
+   "file": "results/revision/a1_U_entry_flags.tsv",
+   "note": "2021+ = recent work not yet curated (lag, sense a); before 2021 = older evidence never curated or invisible to D1/D3 (sense b). Dating is the auditor's, from curation_lag_audit.md"
+  },
+  {
+   "key": "random-50 N1 'old' genes with an artefact flag",
+   "value": "6 of 8",
+   "file": "results/revision/a1_U_entry_flags.tsv",
+   "note": ""
+  },
+  {
+   "key": "top40 judged support: artefact-flag vs no flag",
+   "value": "17/30 = 0.567 (0.392\u20130.726) vs 1/10 = 0.100 (0.018\u20130.404)",
+   "file": "results/revision/a1_judged_support_by_flag.tsv",
+   "note": ""
+  },
+  {
+   "key": "S20 judged support: artefact-flag vs no flag",
+   "value": "19/20 = 0.950 (0.764\u20130.991) vs 0/0",
+   "file": "results/revision/a1_judged_support_by_flag.tsv",
+   "note": ""
+  },
+  {
+   "key": "C1 assessable among scorable U, artefact flag vs rest",
+   "value": "414/1826 = 0.227 (0.208\u20130.246) vs 221/2445 = 0.090 (0.080\u20130.102)",
+   "file": "results/revision/a1_assessable_by_flag.tsv",
+   "note": ""
+  },
+  {
+   "key": "C1 assessable among scorable U, D3-only route vs rest",
+   "value": "568/3468 = 0.164 (0.152\u20130.176) vs 67/803 = 0.083 (0.066\u20130.105)",
+   "file": "results/revision/a1_assessable_by_flag.tsv",
+   "note": ""
+  }
+ ],
+ "notes": [
+  "Entry routes: U = D1 & (D2 | D3); 'D1&D2' = D2 true (UniProt score <= 2), with or without D3; 'D3 only' = D3 true and D2 false. Definition-artefact flag = UniProt score 5 OR Complex Portal subunit OR >= 1 experimental GO CC term (current GAF, D1 evidence codes). CORUM is not in data/raw and was not used.",
+  "N1 classes: random-50 = audit agent (results/audit/curation_lag_audit.tsv); candidate sets = agent L (results/m7/L/index_batch_*.tsv). Fisher p-values in the TSVs are exploratory and unadjusted."
+ ]
+}

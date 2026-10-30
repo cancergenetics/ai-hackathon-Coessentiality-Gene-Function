@@ -109,3 +109,16 @@ Not obtained (recorded for transparency):
 - ProteomeHD: NOT DOWNLOADED: SKIPPED: protein-level SILAC ratio matrix (9 MB, 7z, no 7z tool installed); not needed for pair scores
 - Predictomes: NOT DOWNLOADED: SKIPPED: 53.2 GB (> 3 GB) structure models for top 16k pairs; full set 4.32 TB in 100 tars
 <!-- END downloaded -->
+
+## Post-review downloads (manuscript round 1; used only for the novelty-overlap analysis)
+
+Listed in `results/revision/external_manifest.tsv` (URL, SHA-256, retrieval date, licence); stored in `data/raw/revision_downloads/` (git-ignored; no open licence for the Wainberg files — never redistributed).
+
+| File | Source | SHA-256 | Licence |
+|---|---|---|---|
+| data/raw/revision_downloads/wainberg2021/41588_2021_840_MOESM3_ESM.zip | Wainberg et al. 2021 Nat Genet, Supplementary Data 1 (co-essential pairs, 10% per-gene FDR) | f95c2d7c1c5d1011dc0e02ecce88ffce44c4a6918ed4b1ab1077f1c97f1ee7e9 | publisher ESM, no open licence stated (article not OA); internal use only, not redistributed |
+| data/raw/revision_downloads/wainberg2021/41588_2021_840_MOESM4_ESM.zip | Wainberg et al. 2021, Supplementary Data 2 (5,229 co-essential modules) | 2ec1fd635a44d0becd900fb03f459388dd4c66371abde18d55412503ad10927b | publisher ESM, no open licence stated; internal use only |
+| data/raw/revision_downloads/wainberg2021/41588_2021_840_MOESM5_ESM.xlsx | Wainberg et al. 2021, Supplementary Data 3 (uncharacterised-gene predictions) | 7c7cd7482b81c3d5001ef1214dd2fc6288c2825d6d1f96b935b83d735f19e326 | publisher ESM, no open licence stated; internal use only |
+| data/raw/revision_downloads/kim2019/lsa_201800278_TableS5.txt | Kim et al. 2019 Life Sci Alliance, Table S5 (co-essentiality network edges) | 6e2788d1f2a04a970d80e405c81660f91db1c236d370be78d22dcac0c9532061 | CC BY 4.0 (Life Science Alliance article licence) |
+| data/raw/revision_downloads/kim2019/lsa_201800278_TableS6.xlsx | Kim et al. 2019, Table S6 (MCL gene clusters) | 6e9259c4b403e1db0bbeb8a773a63534f9864e23fc1bfc0ff0995c47751dea4e | CC BY 4.0 (Life Science Alliance article licence) |
+| data/raw/revision_downloads/fireworks2021/lsa_202000882_DC1.xlsx | Amici et al. 2021 (FIREWORKS) Life Sci Alliance, Table S1 ('undruggables'; NOT a genome-wide prediction table; not used) | c9e16754413a131bb14be044482a1e4315c99ccc229516051e36aafd1fabcbc1 | CC BY 4.0 (Life Science Alliance article licence) |

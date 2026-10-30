@@ -1,0 +1,262 @@
+{
+ "section": "a4",
+ "title": "A4. Calibration sensitivity: simpler models, separation (domain M3 / stats M3) [exploratory, post-review]",
+ "rows": [
+  {
+   "key": "frozen \u00a73.7 model (4 covariates + family): events/parameters",
+   "value": "24/7 = 3.4",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": "parameters excl. intercept"
+  },
+  {
+   "key": "frozen \u00a73.7 model (4 covariates + family): slope (Wald; cluster-bootstrap)",
+   "value": "0.82 (0.51\u20131.13; 0.59\u20131.09)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "frozen \u00a73.7 model (4 covariates + family): calibration intercept (Wald)",
+   "value": "-0.01 (-0.44 to +0.43)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "frozen \u00a73.7 model (4 covariates + family): mean pred - observed (CITL)",
+   "value": "+0.0001",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "frozen \u00a73.7 model (4 covariates + family): Brier (CI) / constant / skill",
+   "value": "0.0294 (0.0198\u20130.0412) / 0.0300 / 0.021",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "frozen \u00a73.7 model (4 covariates + family): c-statistic (cluster-bootstrap CI)",
+   "value": "0.855 (0.805\u20130.903)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean only: events/parameters",
+   "value": "24/1 = 24.0",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": "parameters excl. intercept"
+  },
+  {
+   "key": "zmean only: slope (Wald; cluster-bootstrap)",
+   "value": "0.93 (0.60\u20131.25; 0.59\u20131.28)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean only: calibration intercept (Wald)",
+   "value": "-0.01 (-0.43 to +0.41)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean only: mean pred - observed (CITL)",
+   "value": "+0.0003",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean only: Brier (CI) / constant / skill",
+   "value": "0.0289 (0.0190\u20130.0407) / 0.0300 / 0.037",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean only: c-statistic (cluster-bootstrap CI)",
+   "value": "0.835 (0.740\u20130.906)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + coverage: events/parameters",
+   "value": "24/2 = 12.0",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": "parameters excl. intercept"
+  },
+  {
+   "key": "zmean + coverage: slope (Wald; cluster-bootstrap)",
+   "value": "0.89 (0.57\u20131.21; 0.62\u20131.17)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + coverage: calibration intercept (Wald)",
+   "value": "-0.01 (-0.43 to +0.42)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + coverage: mean pred - observed (CITL)",
+   "value": "+0.0002",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + coverage: Brier (CI) / constant / skill",
+   "value": "0.0289 (0.0191\u20130.0409) / 0.0300 / 0.036",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + coverage: c-statistic (cluster-bootstrap CI)",
+   "value": "0.832 (0.766\u20130.891)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + term size: events/parameters",
+   "value": "24/2 = 12.0",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": "parameters excl. intercept"
+  },
+  {
+   "key": "zmean + term size: slope (Wald; cluster-bootstrap)",
+   "value": "0.93 (0.60\u20131.25; 0.59\u20131.28)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + term size: calibration intercept (Wald)",
+   "value": "-0.01 (-0.43 to +0.41)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + term size: mean pred - observed (CITL)",
+   "value": "+0.0003",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + term size: Brier (CI) / constant / skill",
+   "value": "0.0289 (0.0190\u20130.0407) / 0.0300 / 0.037",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + term size: c-statistic (cluster-bootstrap CI)",
+   "value": "0.835 (0.740\u20130.906)",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "signalling/lineage family in H fit set: hits / genes",
+   "value": "0/111",
+   "file": "results/revision/a4_family_hits_H.tsv",
+   "note": "coefficient -11.86 (quasi-separation)"
+  },
+  {
+   "key": "one-sided 95% upper bound for signalling hit rate (0/n)",
+   "value": "0.0266",
+   "file": "results/revision/a4_family_hits_H.tsv",
+   "note": ""
+  },
+  {
+   "key": "in-support U signalling genes; their Sigma p_cal; Sigma if each at the upper bound",
+   "value": "403; 0.00004; 10.7",
+   "file": "results/revision/a4_family_hits_H.tsv",
+   "note": ""
+  },
+  {
+   "key": "frozen model OOF without signalling genes: n, slope (Wald), c",
+   "value": "664, 0.82 (0.51\u20131.13), 0.830",
+   "file": "results/revision/a4_calibration_models.tsv",
+   "note": ""
+  },
+  {
+   "key": "frozen model: Sigma p_cal in-support U (CI); n in support",
+   "value": "30.5 (13.8\u201349.7); 2583",
+   "file": "results/ledger/pcal_summary.json",
+   "note": ""
+  },
+  {
+   "key": "zmean only: Sigma p in-support U (CI); n in support; max p",
+   "value": "68.6 (37.1\u2013104.5); 3850; 0.133",
+   "file": "results/revision/a4_simple_models_on_U.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean only: Sigma p over the frozen model's 2,583 in-support genes (expressed only)",
+   "value": "41.6 (27.0)",
+   "file": "results/revision/a4_simple_models_on_U.tsv",
+   "note": "like-for-like comparison with 30.5"
+  },
+  {
+   "key": "zmean only: Sigma p of the primary top-40 genes under this model",
+   "value": "2.61",
+   "file": "results/revision/a4_simple_models_on_U.tsv",
+   "note": "frozen: 2.50"
+  },
+  {
+   "key": "zmean only: top-40 Sigma p; overlap with primary top 40",
+   "value": "4.60; 7/40",
+   "file": "results/revision/a4_simple_model_top40.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + coverage: Sigma p in-support U (CI); n in support; max p",
+   "value": "52.0 (27.5\u201380.0); 3249; 0.158",
+   "file": "results/revision/a4_simple_models_on_U.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + coverage: Sigma p over the frozen model's 2,583 in-support genes (expressed only)",
+   "value": "38.6 (25.6)",
+   "file": "results/revision/a4_simple_models_on_U.tsv",
+   "note": "like-for-like comparison with 30.5"
+  },
+  {
+   "key": "zmean + coverage: Sigma p of the primary top-40 genes under this model",
+   "value": "2.84",
+   "file": "results/revision/a4_simple_models_on_U.tsv",
+   "note": "frozen: 2.50"
+  },
+  {
+   "key": "zmean + coverage: top-40 Sigma p; overlap with primary top 40",
+   "value": "4.27; 14/40",
+   "file": "results/revision/a4_simple_model_top40.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + term size: Sigma p in-support U (CI); n in support; max p",
+   "value": "62.1 (33.4\u201394.6); 3471; 0.132",
+   "file": "results/revision/a4_simple_models_on_U.tsv",
+   "note": ""
+  },
+  {
+   "key": "zmean + term size: Sigma p over the frozen model's 2,583 in-support genes (expressed only)",
+   "value": "41.6 (27.0)",
+   "file": "results/revision/a4_simple_models_on_U.tsv",
+   "note": "like-for-like comparison with 30.5"
+  },
+  {
+   "key": "zmean + term size: Sigma p of the primary top-40 genes under this model",
+   "value": "2.61",
+   "file": "results/revision/a4_simple_models_on_U.tsv",
+   "note": "frozen: 2.50"
+  },
+  {
+   "key": "zmean + term size: top-40 Sigma p; overlap with primary top 40",
+   "value": "4.53; 8/40",
+   "file": "results/revision/a4_simple_model_top40.tsv",
+   "note": ""
+  },
+  {
+   "key": "frozen model: Sigma p_cal of expressed in-support U genes",
+   "value": "20.0",
+   "file": "results/ledger/u_pcal.tsv",
+   "note": "stats S5b"
+  }
+ ],
+ "notes": [
+  "zmean + term size: the term-size coefficient sits at its sign bound (0), so this model equals zmean only.",
+  "Simple models: sign-constrained logistic (src/calibration.MonotoneLogistic), 10-fold cluster cross-fitting with fold seeds 0\u20134 (as \u00a73.7), primary PMID clusters; bootstrap = 2,000 cluster resamples (seed 0) of OOF predictions (slope/intercept/Brier/c) or refits (Sigma). U support = used covariates within H 5th\u201395th percentiles, no family restriction. Top 40 under a simple model follows scripts/46 (expressed, assessable, \u00a74.3 exclusions, contradictions, mito cap); contradictions were evaluated only for the original support set, so new entrants are unchecked for contradiction."
+ ]
+}

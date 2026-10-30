@@ -1,0 +1,87 @@
+{
+ "section": "a6",
+ "title": "A6. Assessability: null-adjusted estimate (stats M7) [exploratory, post-review]",
+ "rows": [
+  {
+   "key": "by sd_tertile_withinU, frozen expressed (635): expected null calls (95% int.)",
+   "value": "364 (304\u2013433) of 635",
+   "file": "results/revision/a6_assessability_null_adjusted.tsv",
+   "note": ""
+  },
+  {
+   "key": "by sd_tertile_withinU, frozen expressed (635): implied true-assessable (95% int.); % of U",
+   "value": "271 (202\u2013331); 5.5% (4.1\u20136.7%)",
+   "file": "results/revision/a6_assessability_null_adjusted.tsv",
+   "note": ""
+  },
+  {
+   "key": "by sd_tertile_withinU, DESIGN expressed (646): expected null calls (95% int.)",
+   "value": "377 (316\u2013448) of 646",
+   "file": "results/revision/a6_assessability_null_adjusted.tsv",
+   "note": ""
+  },
+  {
+   "key": "by sd_tertile_withinU, DESIGN expressed (646): implied true-assessable (95% int.); % of U",
+   "value": "269 (198\u2013330); 5.5% (4.0\u20136.7%)",
+   "file": "results/revision/a6_assessability_null_adjusted.tsv",
+   "note": ""
+  },
+  {
+   "key": "by any_dependency, frozen expressed (635): expected null calls (95% int.)",
+   "value": "392 (329\u2013462) of 635",
+   "file": "results/revision/a6_assessability_null_adjusted.tsv",
+   "note": ""
+  },
+  {
+   "key": "by any_dependency, frozen expressed (635): implied true-assessable (95% int.); % of U",
+   "value": "243 (173\u2013306); 4.9% (3.5\u20136.2%)",
+   "file": "results/revision/a6_assessability_null_adjusted.tsv",
+   "note": ""
+  },
+  {
+   "key": "by any_dependency, DESIGN expressed (646): expected null calls (95% int.)",
+   "value": "405 (340\u2013477) of 646",
+   "file": "results/revision/a6_assessability_null_adjusted.tsv",
+   "note": ""
+  },
+  {
+   "key": "by any_dependency, DESIGN expressed (646): implied true-assessable (95% int.); % of U",
+   "value": "241 (169\u2013306); 4.9% (3.4\u20136.2%)",
+   "file": "results/revision/a6_assessability_null_adjusted.tsv",
+   "note": ""
+  },
+  {
+   "key": "clean-negative false-call rate, sd_tertile_withinU = high",
+   "value": "55/329 = 0.167 (0.131\u20130.211); applied to 960 expressed",
+   "file": "results/revision/a6_assessability_null_by_stratum.tsv",
+   "note": ""
+  },
+  {
+   "key": "clean-negative false-call rate, sd_tertile_withinU = low",
+   "value": "41/464 = 0.088 (0.066\u20130.118); applied to 784 expressed",
+   "file": "results/revision/a6_assessability_null_by_stratum.tsv",
+   "note": ""
+  },
+  {
+   "key": "clean-negative false-call rate, sd_tertile_withinU = mid",
+   "value": "57/374 = 0.152 (0.120\u20130.192); applied to 881 expressed",
+   "file": "results/revision/a6_assessability_null_by_stratum.tsv",
+   "note": ""
+  },
+  {
+   "key": "clean-negative false-call rate, any_dependency = False",
+   "value": "91/939 = 0.097 (0.080\u20130.118); applied to 1840 expressed",
+   "file": "results/revision/a6_assessability_null_by_stratum.tsv",
+   "note": ""
+  },
+  {
+   "key": "clean-negative false-call rate, any_dependency = True",
+   "value": "62/228 = 0.272 (0.218\u20130.333); applied to 785 expressed",
+   "file": "results/revision/a6_assessability_null_by_stratum.tsv",
+   "note": ""
+  }
+ ],
+ "notes": [
+  "Bound, not an estimate of specificity: assumes the clean-negative p < 0.05 rate in each stratum equals the null false-call rate among expressed genes of that stratum. Interval: Jeffreys-Beta draws of each rate plus binomial sampling of the false-call count (100,000 draws, seed 0), stratum-wise independent."
+ ]
+}

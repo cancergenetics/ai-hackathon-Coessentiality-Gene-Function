@@ -1,0 +1,166 @@
+{
+ "section": "a5",
+ "title": "A5. Judging sensitivities: term-only, slot permutation, module clusters (stats M4/S2) [exploratory, post-review]",
+ "rows": [
+  {
+   "key": "top40 primary (process or module): real supported; decoys supported",
+   "value": "18/40; 3/120",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "top40 primary (process or module): exact sign-flip p (n non-zero)",
+   "value": "0.000217 (20)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "top40 primary (process or module): exact slot-permutation p",
+   "value": "2.35e-07",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "top40 primary (process or module): V1'-label-clustered sign-flip p (clusters non-zero / all)",
+   "value": "0.00217 (17/28)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "top40 term-only: real supported; decoys supported",
+   "value": "16/40; 3/120",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "top40 term-only: exact sign-flip p (n non-zero)",
+   "value": "0.000713 (18)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "top40 term-only: exact slot-permutation p",
+   "value": "2.58e-06",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "top40 term-only: V1'-label-clustered sign-flip p (clusters non-zero / all)",
+   "value": "0.00577 (15/28)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "s20 primary (process or module): real supported; decoys supported",
+   "value": "19/20; 2/60",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "s20 primary (process or module): exact sign-flip p (n non-zero)",
+   "value": "1.91e-06 (19)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "s20 primary (process or module): exact slot-permutation p",
+   "value": "1.46e-11",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "s20 primary (process or module): V1'-label-clustered sign-flip p (clusters non-zero / all)",
+   "value": "0.00195 (9/9)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "s20 term-only: real supported; decoys supported",
+   "value": "18/20; 2/60",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "s20 term-only: exact sign-flip p (n non-zero)",
+   "value": "3.81e-06 (18)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "s20 term-only: exact slot-permutation p",
+   "value": "5.82e-11",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "s20 term-only: V1'-label-clustered sign-flip p (clusters non-zero / all)",
+   "value": "0.00391 (8/9)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "extra30 primary (process or module): real supported; decoys supported",
+   "value": "1/30; 1/90",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "extra30 primary (process or module): exact sign-flip p (n non-zero)",
+   "value": "0.5 (2)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "extra30 primary (process or module): exact slot-permutation p",
+   "value": "0.438",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "extra30 primary (process or module): V1'-label-clustered sign-flip p (clusters non-zero / all)",
+   "value": "0.5 (2/13)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "extra30 term-only: real supported; decoys supported",
+   "value": "1/30; 1/90",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "extra30 term-only: exact sign-flip p (n non-zero)",
+   "value": "0.5 (2)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "extra30 term-only: exact slot-permutation p",
+   "value": "0.438",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "extra30 term-only: V1'-label-clustered sign-flip p (clusters non-zero / all)",
+   "value": "0.5 (2/13)",
+   "file": "results/revision/a5_judging_sensitivity.tsv",
+   "note": ""
+  },
+  {
+   "key": "supported decoys classified term-based (all sets)",
+   "value": "6/6",
+   "file": "results/revision/a5_plus1_basis.tsv",
+   "note": ""
+  },
+  {
+   "key": "supported real statements resting on module label only",
+   "value": "WDR7 (s20), YPEL5 (top40), DPCD (top40)",
+   "file": "results/revision/a5_plus1_basis.tsv",
+   "note": ""
+  }
+ ],
+ "notes": [
+  "Final per-slot scores = J1 where J1 = J2, else ADJ (scripts/52 rule); reconstruction asserted equal to analysis_main_genes.tsv. Term-only: the three real +1s that the manuscript's Table 2 'Basis' column marks as module-only (YPEL5, DPCD, WDR7; read from judge justifications) set to 0; every supported decoy's justification names the process (term) -> unchanged. Term vs module was not re-judged blind.",
+  "Slot permutation: real slot uniform over the 4 slots within each gene, statistic = \u03a3(real \u2212 mean of the other three), exact convolution. Module-clustered: d averaged within genes sharing the real statement's V1\u2032 label, exact sign-flip over cluster means."
+ ]
+}

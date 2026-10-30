@@ -1,0 +1,111 @@
+{
+ "section": "a3",
+ "title": "A3. Conditional interpretation of p_cal: annotation-gain rate (stats M1) [exploratory, post-review]",
+ "rows": [
+  {
+   "key": "t0-eligible genes (scorable, D1 at 2018-07, <= 10 focused PMIDs pre-cut-off)",
+   "value": 5051,
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": ""
+  },
+  {
+   "key": "annotation-gain rate, any new target: 820/5,051",
+   "value": "820/5051 = 0.162 (0.152\u20130.173)",
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": ""
+  },
+  {
+   "key": "t0-eligible genes with a reportable top term at t0",
+   "value": 4822,
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": ""
+  },
+  {
+   "key": "gain rate matching the p_cal conditioning set (H fit set / eligible with prediction)",
+   "value": "775/4822 = 0.161 (0.151\u20130.171)",
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": "PRIMARY scaling factor"
+  },
+  {
+   "key": "2022 cohort gain rate (3.9 y horizon)",
+   "value": "376/4555 = 0.083 (0.075\u20130.091)",
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": ""
+  },
+  {
+   "key": "2018->2022 survivor cohort gain after 2022 (3.9 y)",
+   "value": "310/4171 = 0.074 (0.067\u20130.083)",
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": ""
+  },
+  {
+   "key": "annual hazard: 2018 cohort / 2022 cohort / 2018->2022 survivors",
+   "value": "0.0225 / 0.0222 / 0.0199",
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": "constant-hazard check of stationarity and survivorship"
+  },
+  {
+   "key": "gain rate by top-K mean zavg quintile (Q1..Q5)",
+   "value": "0.135 / 0.144 / 0.130 / 0.141 / 0.254",
+   "file": "results/revision/a3_gain_rate_by_signal_quintile.tsv",
+   "note": "Spearman(zmean, gained) rho = 0.096"
+  },
+  {
+   "key": "Sigma p_cal in-support U (conditional; parameter CI)",
+   "value": "30.5 (13.8\u201349.7)",
+   "file": "results/ledger/pcal_summary.json",
+   "note": ""
+  },
+  {
+   "key": "Poisson-binomial SD of realised conditional count, sqrt(sum p(1-p))",
+   "value": 5.46,
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": ""
+  },
+  {
+   "key": "unconditional Sigma p_cal ~= Sigma x rate (conditioning-set rate)",
+   "value": "4.90 (2.23\u20138.05)",
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": "interval: bootstrap Sigma x Jeffreys-Beta rate draws (independent)"
+  },
+  {
+   "key": "top-40 Sigma p_cal unconditional (conditioning-set rate)",
+   "value": "0.402 (0.206\u20130.643)",
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": ""
+  },
+  {
+   "key": "unconditional Sigma p_cal ~= Sigma x rate (any-target rate 820/5,051)",
+   "value": "4.95 (2.29\u20138.06)",
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": "interval: bootstrap Sigma x Jeffreys-Beta rate draws (independent)"
+  },
+  {
+   "key": "top-40 Sigma p_cal unconditional (any-target rate 820/5,051)",
+   "value": "0.406 (0.208\u20130.649)",
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": ""
+  },
+  {
+   "key": "Poisson-binomial SD of realised unconditional count (conditioning-set rate)",
+   "value": 2.21,
+   "file": "results/revision/a3_annotation_gain_rates.tsv",
+   "note": ""
+  },
+  {
+   "key": "signal-adjusted unconditional Sigma p_cal (gain rate by zmean quintile)",
+   "value": "5.13 (2.38\u20138.30)",
+   "file": "results/revision/a3_gain_rate_by_signal_quintile.tsv",
+   "note": "in-support U genes per eligible-cohort zmean quintile Q1..Q5: 462/596/559/578/388"
+  },
+  {
+   "key": "signal-adjusted unconditional top-40 Sigma p_cal",
+   "value": "0.635 (0.324\u20131.024)",
+   "file": "results/revision/a3_gain_rate_by_signal_quintile.tsv",
+   "note": ""
+  }
+ ],
+ "notes": [
+  "Sigma p_cal rows use results/ledger/u_pcal.tsv and the 2,000 saved bootstrap refits (data/derived/ledger/pcal_boot.npz); see results/revision/a3_pcal_conditional.md for assumptions."
+ ]
+}

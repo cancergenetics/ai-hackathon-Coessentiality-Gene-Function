@@ -1,0 +1,24 @@
+{
+ "script": "scripts/90_revision_analyses.py",
+ "created": "2026-10-30T08:15:02",
+ "git_head": "fe788e000e2344298975aaf7bffa66901db395af",
+ "gate": {
+  "tag": "preregistration-v1",
+  "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",
+  "freeze_file": "preregistration/FREEZE.sha256",
+  "freeze_sha256": "687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04",
+  "n_files": 10,
+  "tool_commit": "3c684c972f1e5c3ead722b4b3e2c508fa3cb5ddf",
+  "data": {
+   "data/raw/depmap/CRISPRGeneEffect.csv": "1e0c492944a7297c0eda179081a1e81a1cfe41a97628facd7eddbdda1a7504ee"
+  },
+  "n_freeze_files": 10
+ },
+ "inputs": {},
+ "seed": 0,
+ "runtime_s": 1.9,
+ "peak_rss_gb": 0.145,
+ "python": "3.12.16",
+ "platform": "macOS-26.5.2-x86_64-i386-64bit",
+ "sections": "a5"
+}

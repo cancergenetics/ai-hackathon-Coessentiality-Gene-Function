@@ -1,0 +1,31 @@
+set	flag	value	n	n_supported	rate	wilson_lo	wilson_hi
+top40	artefact_flag	True	30	17	0.566667	0.391973	0.726225
+top40	artefact_flag	False	10	1	0.1	0.0178762	0.40415
+top40	cp_subunit	True	13	10	0.769231	0.497436	0.918205
+top40	cp_subunit	False	27	8	0.296296	0.15853	0.484807
+top40	score5	True	20	13	0.65	0.432854	0.818808
+top40	score5	False	20	5	0.25	0.111862	0.468701
+top40	exp_CC	True	24	17	0.708333	0.508323	0.850854
+top40	exp_CC	False	16	1	0.0625	0.0111193	0.283287
+top40	route_D3only	True	37	18	0.486486	0.334464	0.641051
+top40	route_D3only	False	3	0	0	0	0.561497
+S20	artefact_flag	True	20	19	0.95	0.763869	0.991119
+S20	artefact_flag	False	0	0			
+S20	cp_subunit	True	17	17	1	0.815682	1
+S20	cp_subunit	False	3	2	0.666667	0.20766	0.938508
+S20	score5	True	16	15	0.9375	0.716713	0.988881
+S20	score5	False	4	4	1	0.510109	1
+S20	exp_CC	True	18	17	0.944444	0.742427	0.990125
+S20	exp_CC	False	2	2	1	0.34238	1
+S20	route_D3only	True	20	19	0.95	0.763869	0.991119
+S20	route_D3only	False	0	0			
+extra30	artefact_flag	True	15	1	0.0666667	0.0118669	0.298165
+extra30	artefact_flag	False	15	0	0	0	0.203883
+extra30	cp_subunit	True	1	0	0	0	0.793451
+extra30	cp_subunit	False	29	1	0.0344828	0.00611321	0.171755
+extra30	score5	True	11	1	0.0909091	0.0162322	0.377358
+extra30	score5	False	19	0	0	0	0.168179
+extra30	exp_CC	True	9	1	0.111111	0.0198909	0.435
+extra30	exp_CC	False	21	0	0	0	0.154639
+extra30	route_D3only	True	23	1	0.0434783	0.00771667	0.209912
+extra30	route_D3only	False	7	0	0	0	0.35433

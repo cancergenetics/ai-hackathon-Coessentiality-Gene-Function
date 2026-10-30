@@ -1,0 +1,91 @@
+J_id	hgnc_id	symbol	set	real_slot	scores	scores_term	real	real_term	d	d_term	v1p_label	v1p_label_name
+J001	HGNC:15975	SASH3	top40	D	0000	0000	0	0	0	0	GO:0098802	plasma membrane signaling receptor complex
+J002	HGNC:7699	NDUFB4	s20	D	000+	000+	1	1	1	1	MC:OXPHOS	MitoCarta: OXPHOS
+J003	HGNC:11326	SSR4	top40	D	000+	000+	1	1	1	1	GO:0140534	endoplasmic reticulum protein-containing complex
+J004	HGNC:7697	NDUFB2	s20	B	0+00	0+00	1	1	1	1	CP:CPX-577	Mitochondrial respiratory chain complex I
+J005	HGNC:24142	TM2D1	top40	B	0000	0000	0	0	0	0		
+J007	HGNC:1935	CHIC2	top40	B	0000	0000	0	0	0	0		
+J008	HGNC:30617	ELP5	s20	C	00+0	00+0	1	1	1	1	CP:CPX-1949	Elongator holoenzyme complex
+J009	HGNC:30795	TSPAN11	extra30	D	0000	0000	0	0	0	0		
+J010	HGNC:24604	COA4	top40	A	+000	+000	1	1	1	1	MC:OXPHOS	MitoCarta: OXPHOS
+J011	HGNC:13578	ZNF318	top40	C	0000	0000	0	0	0	0	GO:0005847	mRNA cleavage and polyadenylation specificity factor complex
+J012	HGNC:25487	MED9	s20	D	000+	000+	1	1	1	1	GO:0090575	RNA polymerase II transcription regulator complex
+J013	HGNC:24260	MED31	top40	D	000+	000+	1	1	1	1	GO:0090575	RNA polymerase II transcription regulator complex
+J014	HGNC:21898	TMEM209	top40	C	00+0	00+0	1	1	1	1	CP:CPX-873	Nuclear pore complex
+J015	HGNC:28005	CTU2	s20	D	000+	000+	1	1	1	1	CP:CPX-1949	Elongator holoenzyme complex
+J016	HGNC:2937	DMXL1	top40	D	0000	0000	0	0	0	0	GO:0017053	transcription repressor complex
+J017	HGNC:24127	TM2D2	top40	A	0000	0000	0	0	0	0		
+J018	HGNC:29243	RBM27	top40	A	0000	0000	0	0	0	0	CP:CPX-2488	TREX transcription-export complex, DX39B variant
+J019	HGNC:27312	SAMD14	extra30	B	0000	0000	0	0	0	0		
+J020	HGNC:25744	AKIRIN1	top40	A	0000	0000	0	0	0	0	GO:0000502	proteasome complex
+J021	HGNC:14440	FAM117B	extra30	B	+000	+000	0	0	-0.333333	-0.333333	GO:0000307	cyclin-dependent protein kinase holoenzyme complex
+J022	HGNC:7696	NDUFB10	s20	A	+000	+000	1	1	1	1	MC:OXPHOS	MitoCarta: OXPHOS
+J023	HGNC:16046	UNC50	s20	A	+000	+000	1	1	1	1	GO:0099023	vesicle tethering complex
+J024	HGNC:9558	PSMD13	top40	D	000+	000+	1	1	1	1	GO:0000502	proteasome complex
+J025	HGNC:25015	TMEM208	top40	C	00+0	00+0	1	1	1	1	GO:0140534	endoplasmic reticulum protein-containing complex
+J026	HGNC:18896	TMEM185B	extra30	B	0000	0000	0	0	0	0		
+J027	HGNC:15682	PHC3	top40	C	00+0	00+0	1	1	1	1	GO:0031519	PcG protein complex
+J028	HGNC:18706	GRIPAP1	top40	B	0+00	0+00	1	1	1	1	GO:0099023	vesicle tethering complex
+J029	HGNC:28728	MARCHF3	extra30	B	0000	0000	0	0	0	0		
+J030	HGNC:21111	BICRAL	top40	C	00+0	00+0	1	1	1	1	CP:CPX-4206	GBAF (SWI/SNF) ATP-dependent chromatin remodeling complex, ACTL6A-BICRA-SMARCA4 variant
+J031	HGNC:30781	TADA2B	s20	B	0+00	0+00	1	1	1	1	CP:CPX-900	SAGA complex, KAT2A variant
+J032	HGNC:28033	CCDC174	top40	A	0000	0000	0	0	0	0	GO:0000428	DNA-directed RNA polymerase complex
+J033	HGNC:23162	ALG10	extra30	A	0000	0000	0	0	0	0		
+J034	HGNC:37252	ARHGEF33	extra30	A	0000	0000	0	0	0	0		
+J035	HGNC:28982	HMGXB3	extra30	C	0000	0000	0	0	0	0	CP:CPX-4203	GBAF (SWI/SNF) ATP-dependent chromatin remodeling complex, ACTL6A-BICRAL-SMARCA2 variant
+J036	HGNC:18386	SFTA2	extra30	B	0000	0000	0	0	0	0		
+J037	HGNC:20371	NDUFA11	s20	C	00+0	00+0	1	1	1	1	MC:OXPHOS	MitoCarta: OXPHOS
+J038	HGNC:29562	MARF1	extra30	C	00+0	00+0	1	1	1	1	CP:CPX-2870	RNA decapping and exonuclease complex, DCP1A variant
+J039	HGNC:23332	COMMD3	s20	D	+00+	+00+	1	1	0.666667	0.666667	CP:CPX-2211	Commander complex
+J040	HGNC:13490	WDR7	s20	C	00+0	0000	1	0	1	0	GO:0016469	proton-transporting two-sector ATPase complex
+J041	HGNC:28796	MRFAP1L1	extra30	A	0000	0000	0	0	0	0		
+J042	HGNC:26036	COMMD8	s20	C	00+0	00+0	1	1	1	1	CP:CPX-2211	Commander complex
+J043	HGNC:6555	LEPROTL1	extra30	D	0000	0000	0	0	0	0	CP:CPX-2656	Ribosome quality control complex
+J044	HGNC:14456	H2AJ	extra30	A	0000	0000	0	0	0	0	CP:CPX-5646	Kinetochore CCAN complex
+J045	HGNC:13519	TLNRD1	top40	A	-+00	-+00	-1	-1	-1.33333	-1.33333	GO:0090443	FAR/SIP/STRIPAK complex
+J047	HGNC:19399	PGBD2	extra30	B	0000	0000	0	0	0	0		
+J048	HGNC:26624	KDF1	top40	D	000-	000-	-1	-1	-1	-1	GO:0008385	IkappaB kinase complex
+J049	HGNC:24842	LGALS9B	top40	D	0000	0000	0	0	0	0		
+J050	HGNC:25749	TANGO6	top40	C	0000	0000	0	0	0	0	CP:CPX-6145	PAQosome co-chaperone complex
+J051	HGNC:26179	ZNF672	extra30	C	0000	0000	0	0	0	0		
+J052	HGNC:24253	TMED7	top40	D	000+	000+	1	1	1	1	GO:0000153	cytoplasmic ubiquitin ligase complex
+J053	HGNC:26027	COMMD4	s20	D	000+	000+	1	1	1	1	CP:CPX-2211	Commander complex
+J054	HGNC:17798	YLPM1	extra30	D	0000	0000	0	0	0	0	CP:CPX-2477	TREX-2 transcription-export complex, CETN2 variant
+J055	HGNC:33842	AARD	extra30	B	0000	0000	0	0	0	0		
+J056	HGNC:23817	CNOT10	top40	D	+00+	+00+	1	1	0.666667	0.666667	CP:CPX-2522	CCR4-NOT mRNA deadenylase complex, CNOT6L-CNOT7 variant
+J057	HGNC:32008	TMEM120B	extra30	A	0000	0000	0	0	0	0	MC:Metabolism > Lipid metabolism	MitoCarta: Metabolism > Lipid metabolism
+J058	HGNC:842	ATP5MC2	extra30	D	0000	0000	0	0	0	0	GO:0090575	RNA polymerase II transcription regulator complex
+J059	HGNC:26105	PLEKHH3	top40	D	0000	0000	0	0	0	0	GO:0101031	protein folding chaperone complex
+J060	HGNC:20715	MID1IP1	top40	D	0000	0000	0	0	0	0	MC:Metabolism > Lipid metabolism	MitoCarta: Metabolism > Lipid metabolism
+J061	HGNC:24993	COMMD2	s20	B	0++0	0++0	1	1	0.666667	0.666667	CP:CPX-2211	Commander complex
+J062	HGNC:30763	NR2C2AP	s20	A	0000	0000	0	0	0	0	CP:CPX-1949	Elongator holoenzyme complex
+J064	HGNC:30948	ZNF585B	extra30	D	0000	0000	0	0	0	0	CP:CPX-2393	DNA-directed RNA polymerase III complex, POLR3G variant
+J065	HGNC:24738	C5orf34	top40	B	0000	0000	0	0	0	0		
+J066	HGNC:30201	COMMD10	s20	C	00+0	00+0	1	1	1	1	CP:CPX-2211	Commander complex
+J068	HGNC:21874	FBXL18	top40	D	0000	0000	0	0	0	0	GO:0090575	RNA polymerase II transcription regulator complex
+J069	HGNC:24731	NHLRC2	top40	C	0000	0000	0	0	0	0	GO:0008287	protein serine/threonine phosphatase complex
+J071	HGNC:26614	ANKRD52	top40	C	00+0	00+0	1	1	1	1	GO:0016442	RISC complex
+J072	HGNC:26104	C8orf33	top40	B	0000	0000	0	0	0	0	GO:0000782	telomere cap complex
+J074	HGNC:23067	TRAPPC5	top40	A	+000	+000	1	1	1	1	CP:CPX-4750	TRAPP III complex, TRAPPC2 variant
+J075	HGNC:9519	PSG2	extra30	C	0000	0000	0	0	0	0		
+J076	HGNC:28476	YIPF2	extra30	D	0000	0000	0	0	0	0		
+J077	HGNC:21754	TMEM60	extra30	C	0000	0000	0	0	0	0	GO:0034702	monoatomic ion channel complex
+J078	HGNC:14010	MGA	top40	C	00+0	00+0	1	1	1	1	GO:0005677	chromatin silencing complex
+J079	HGNC:26685	CCDC71L	top40	A	0000	0000	0	0	0	0	GO:0031519	PcG protein complex
+J080	HGNC:25976	ELP6	s20	A	+000	+000	1	1	1	1	CP:CPX-1949	Elongator holoenzyme complex
+J081	HGNC:19401	PGBD4	extra30	B	0000	0000	0	0	0	0	GO:0005890	sodium:potassium-exchanging ATPase complex
+J082	HGNC:27406	INAFM1	top40	B	0000	0000	0	0	0	0	GO:0005643	nuclear pore
+J084	HGNC:28965	RBM34	top40	D	0000	0000	0	0	0	0	CP:CPX-2386	DNA-directed RNA polymerase I complex
+J086	HGNC:13671	H2AC12	extra30	D	0000	0000	0	0	0	0	GO:0030532	small nuclear ribonucleoprotein complex
+J087	HGNC:25526	FAM90A1	extra30	B	0000	0000	0	0	0	0		
+J088	HGNC:18329	YPEL5	top40	B	0+00	0000	1	0	1	0	CP:CPX-7901	GID E3 ubiquitin ligase complex, RMND5B-RANBP9 variant
+J090	HGNC:23707	ZNF492	extra30	B	0000	0000	0	0	0	0		
+J091	HGNC:25217	CNOT11	top40	B	0++0	0++0	1	1	0.666667	0.666667	CP:CPX-2522	CCR4-NOT mRNA deadenylase complex, CNOT6L-CNOT7 variant
+J092	HGNC:21182	NUP43	s20	C	00+0	00+0	1	1	1	1	CP:CPX-873	Nuclear pore complex
+J093	HGNC:24256	WASHC3	s20	B	0+00	0+00	1	1	1	1	CP:CPX-2211	Commander complex
+J094	HGNC:25373	CYRIA	extra30	D	0000	0000	0	0	0	0	GO:0090575	RNA polymerase II transcription regulator complex
+J095	HGNC:25628	DDX19A	top40	D	000+	000+	1	1	1	1	GO:0140534	endoplasmic reticulum protein-containing complex
+J097	HGNC:7685	NDUFA2	s20	C	00+0	00+0	1	1	1	1	CP:CPX-577	Mitochondrial respiratory chain complex I
+J098	HGNC:24542	DPCD	top40	B	0+00	0000	1	0	1	0	CP:CPX-6145	PAQosome co-chaperone complex
+J099	HGNC:33754	C16orf87	extra30	D	0000	0000	0	0	0	0		
+J100	HGNC:24149	HES4	extra30	C	0000	0000	0	0	0	0	MC:Mitochondrial dynamics and surveillance	MitoCarta: Mitochondrial dynamics and surveillance

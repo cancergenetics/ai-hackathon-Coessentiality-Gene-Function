@@ -1,0 +1,99 @@
+{
+ "section": "a7",
+ "title": "A7. Deployable combination rules on H (stats M6) [exploratory, post-review]",
+ "rows": [
+  {
+   "key": "zavg_BEF alone: precision@1 on H (cluster-bootstrap CI)",
+   "value": "24/809 = 0.030 (0.018\u20130.043)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "zavg_BEF alone: minus homology alone (paired cluster CI)",
+   "value": "-0.188 (-0.225 to -0.153)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "zavg_BEF alone: U-reweighted precision@1 (CI)",
+   "value": "0.012 (0.007\u20130.019)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "homology alone: precision@1 on H (cluster-bootstrap CI)",
+   "value": "176/809 = 0.218 (0.184\u20130.253)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "homology alone: U-reweighted precision@1 (CI)",
+   "value": "0.220 (0.183\u20130.259)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "homology if it predicts, else zavg_BEF: precision@1 on H (cluster-bootstrap CI)",
+   "value": "181/809 = 0.224 (0.190\u20130.259)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "homology if it predicts, else zavg_BEF: minus homology alone (paired cluster CI)",
+   "value": "+0.006 (+0.001 to +0.012)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "homology if it predicts, else zavg_BEF: U-reweighted precision@1 (CI)",
+   "value": "0.223 (0.185\u20130.262)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "zavg_BEF if it predicts, else homology: precision@1 on H (cluster-bootstrap CI)",
+   "value": "29/809 = 0.036 (0.023\u20130.050)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "zavg_BEF if it predicts, else homology: minus homology alone (paired cluster CI)",
+   "value": "-0.182 (-0.217 to -0.148)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "zavg_BEF if it predicts, else homology: U-reweighted precision@1 (CI)",
+   "value": "0.018 (0.011\u20130.027)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "oracle union (either right; upper bound): precision@1 on H (cluster-bootstrap CI)",
+   "value": "191/809 = 0.236 (0.202\u20130.272)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "oracle union (either right; upper bound): minus homology alone (paired cluster CI)",
+   "value": "+0.019 (+0.010 to +0.028)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "oracle union (either right; upper bound): U-reweighted precision@1 (CI)",
+   "value": "0.229 (0.191\u20130.268)",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  },
+  {
+   "key": "H genes where homology predicts (>= 1 t0 IEA/ISS/IBA candidate term)",
+   "value": "461/809",
+   "file": "results/revision/a7_combination_rules.tsv",
+   "note": ""
+  }
+ ],
+ "notes": [
+  "Homology 'predicts' = >= 1 candidate V2 term from t0 IEA/ISS/IBA annotations (else its list is the frequency fallback). Cluster-bootstrap CIs: 10,000 resamples of primary PMID clusters (seed 0). U-reweighted: inverse-odds weights of scripts/33 \u00a78 (trimmed 1/99), 2,000 cluster-bootstrap refits; the zavg_BEF-alone weighted value reproduces secondary.tsv exactly (asserted)."
+ ]
+}

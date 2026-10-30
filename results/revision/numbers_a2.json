@@ -1,0 +1,198 @@
+{
+ "section": "a2",
+ "title": "A2. Novelty overlap with external catalogues (domain M4) [exploratory, post-review]",
+ "rows": [
+  {
+   "key": "top 40: hu.MAP 3.0 co-complex with >= 1 top-10 partner",
+   "value": "17/40",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "top 40: Predictomes SPOC >= 0.5 with >= 1 top-10 partner",
+   "value": "20/40",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "top 40: Wainberg 2021 module shared with >= 1 top-10 partner (any d / d >= 0.5)",
+   "value": "27/40 / 22/40",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": "d = 0.2 modules are large and diffuse; the d >= 0.5 version enters the 'catalogue prior'"
+  },
+  {
+   "key": "top 40: Wainberg 2021 GLS pair (10% FDR) with >= 1 top-10 partner",
+   "value": "19/40",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "top 40: listed in Wainberg 2021 Supp. Data 3 (uncharacterised-gene predictions)",
+   "value": "3/40",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": "CCDC71L,C5orf34,INAFM1"
+  },
+  {
+   "key": "top 40: Kim 2019 network edge with >= 1 top-10 partner",
+   "value": "9/40",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "top 40: Kim 2019 MCL cluster shared with >= 1 top-10 partner",
+   "value": "7/40",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "top 40: any co-essentiality catalogue prior (Wainberg GLS pair, module d>=0.5 or Supp. Data 3; Kim edge/cluster)",
+   "value": "27/40",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "top 40: any prior (catalogue or hu.MAP/Predictomes)",
+   "value": "34/40",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "top 40: no prior in any obtained resource",
+   "value": "6/40",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": "PLEKHH3,LGALS9B,FBXL18,SASH3,DDX19A,DPCD"
+  },
+  {
+   "key": "S20: hu.MAP 3.0 co-complex with >= 1 top-10 partner",
+   "value": "16/20",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "S20: Predictomes SPOC >= 0.5 with >= 1 top-10 partner",
+   "value": "14/20",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "S20: Wainberg 2021 module shared with >= 1 top-10 partner (any d / d >= 0.5)",
+   "value": "20/20 / 20/20",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": "d = 0.2 modules are large and diffuse; the d >= 0.5 version enters the 'catalogue prior'"
+  },
+  {
+   "key": "S20: Wainberg 2021 GLS pair (10% FDR) with >= 1 top-10 partner",
+   "value": "19/20",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "S20: listed in Wainberg 2021 Supp. Data 3 (uncharacterised-gene predictions)",
+   "value": "0/20",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "S20: Kim 2019 network edge with >= 1 top-10 partner",
+   "value": "17/20",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "S20: Kim 2019 MCL cluster shared with >= 1 top-10 partner",
+   "value": "17/20",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "S20: any co-essentiality catalogue prior (Wainberg GLS pair, module d>=0.5 or Supp. Data 3; Kim edge/cluster)",
+   "value": "20/20",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "S20: any prior (catalogue or hu.MAP/Predictomes)",
+   "value": "20/20",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "S20: no prior in any obtained resource",
+   "value": "0/20",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "10 report genes: hu.MAP 3.0 co-complex with >= 1 top-10 partner",
+   "value": "4/10",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "10 report genes: Predictomes SPOC >= 0.5 with >= 1 top-10 partner",
+   "value": "5/10",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "10 report genes: Wainberg 2021 module shared with >= 1 top-10 partner (any d / d >= 0.5)",
+   "value": "9/10 / 8/10",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": "d = 0.2 modules are large and diffuse; the d >= 0.5 version enters the 'catalogue prior'"
+  },
+  {
+   "key": "10 report genes: Wainberg 2021 GLS pair (10% FDR) with >= 1 top-10 partner",
+   "value": "6/10",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "10 report genes: listed in Wainberg 2021 Supp. Data 3 (uncharacterised-gene predictions)",
+   "value": "3/10",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": "CCDC71L,C5orf34,INAFM1"
+  },
+  {
+   "key": "10 report genes: Kim 2019 network edge with >= 1 top-10 partner",
+   "value": "2/10",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "10 report genes: Kim 2019 MCL cluster shared with >= 1 top-10 partner",
+   "value": "2/10",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "10 report genes: any co-essentiality catalogue prior (Wainberg GLS pair, module d>=0.5 or Supp. Data 3; Kim edge/cluster)",
+   "value": "9/10",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "10 report genes: any prior (catalogue or hu.MAP/Predictomes)",
+   "value": "9/10",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  },
+  {
+   "key": "10 report genes: no prior in any obtained resource",
+   "value": "1/10",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": "PLEKHH3"
+  },
+  {
+   "key": "10 report genes with no prior in any obtained resource",
+   "value": "PLEKHH3",
+   "file": "results/revision/a2_novelty_overlap.tsv",
+   "note": ""
+  }
+ ],
+ "notes": [
+  "Partners = the gene's top-10 zavg_BEF neighbours (results/ledger/u_partners.tsv, rank <= 10). Symbol mapping for 2019-era catalogues: HGNC approved, then unique previous symbols, then unique aliases.",
+  "Replogle 2022: no gene-cluster assignment file in data/raw/replogle2022_perturbseq (annotated_embedding_coordinates.csv holds embedding coordinates only) -> unavailable. Pan 2018 (Cell Systems): Cell Press SI returned HTTP 403 (bot protection), Europe PMC: not open access, PMC author manuscript supplement is a PDF only -> not obtainable. FIREWORKS 2021: the only supplementary file is the 'undruggables' co-essential-partner table (not a genome-wide prediction table) -> not obtainable.",
+  "Overlap flags say that the co-essential (or physical) relationship between the gene and >= 1 of its own top-10 partners was already published; they do not check that the resource assigned the same function. Only Wainberg Supp. Data 3 is an explicit function prediction for uncharacterised genes.",
+  "Downloads and checksums: results/revision/external_manifest.tsv (DATA.md-ready)."
+ ]
+}

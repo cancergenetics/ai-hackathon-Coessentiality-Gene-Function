@@ -1,0 +1,27 @@
+{
+ "section": "a9",
+ "title": "A9. CLAIMS.tsv preview from manuscript src tags (reproducibility) [post-review tooling]",
+ "rows": [
+  {
+   "key": "tagged numbers extracted (years excluded)",
+   "value": 943,
+   "file": "results/revision/CLAIMS_preview.tsv",
+   "note": ""
+  },
+  {
+   "key": "screening hit / miss (value found in a cited file?)",
+   "value": "897 / 46",
+   "file": "results/revision/CLAIMS_preview.tsv",
+   "note": "miss rows need a manual look (rounding, derived values, wrong file)"
+  },
+  {
+   "key": "rows with a generating script inferred",
+   "value": 935,
+   "file": "results/revision/CLAIMS_preview.tsv",
+   "note": ""
+  }
+ ],
+ "notes": [
+  "scripts/91_claims_from_manuscript.py reuses verify/check_manuscript_numbers.py extraction/screening; source_key left blank for the PI; the PI moves the preview to CLAIMS.tsv."
+ ]
+}

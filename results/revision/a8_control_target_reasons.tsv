@@ -1,0 +1,124 @@
+control	term	term_name	size_t0	in_5_200	circ_flagged	n_partners_annotated_t0	n_sup_scored	annotated_partners	rank_2_300	reason
+SPRING1	GO:0080135	regulation of cellular response to stress	253	False	True	0	0			circularity-flagged (excluded)
+SPRING1	GO:1902533	positive regulation of intracellular signal transduction	536	False	True	0	0			circularity-flagged (excluded)
+PEDS1	GO:0008610	lipid biosynthetic process	406	False	False	12	0	FAR1,SELENOI,AGPS,PEX7,PCYT2,ACSL4,GNPAT,LPCAT1,CERS2,ELOVL1,AGPAT1,AGPAT3		outside 2–300 window
+PEDS1	GO:0008611	ether lipid biosynthetic process	5	True	False	4	4	FAR1,AGPS,PEX7,GNPAT	7	ranked 7 (below rank 1)
+PEDS1	GO:0016491	oxidoreductase activity	469	False	False	3	0	FAR1,FADS2,CYB5A		outside 2–300 window
+PEDS1	GO:0016705	oxidoreductase activity, acting on paired donors, with incorporation or reduction of molecular oxygen	104	True	False	1	1	FADS2		not reportable: 1 supporting partner(s) annotated at t0
+PEDS1	GO:0016717	oxidoreductase activity, acting on paired donors, with oxidation of a pair of donors resulting in the reduction of molecular oxygen to two molecules of water	6	True	False	1	1	FADS2		not reportable: 1 supporting partner(s) annotated at t0
+PEDS1	GO:0046485	ether lipid metabolic process	8	True	False	4	4	FAR1,AGPS,PEX7,GNPAT	8	ranked 8 (below rank 1)
+PEDS1	GO:0046504	glycerol ether biosynthetic process	5	True	False	4	4	FAR1,AGPS,PEX7,GNPAT	9	ranked 9 (below rank 1)
+PEDS1	GO:1901503	ether biosynthetic process	5	True	False	4	4	FAR1,AGPS,PEX7,GNPAT	10	ranked 10 (below rank 1)
+CCDC32	GO:0030100	regulation of endocytosis	118	True	True	2	2	AP2S1,PICALM	52	circularity-flagged (excluded)
+CCDC32	GO:0048259	regulation of receptor-mediated endocytosis	51	True	True	1	1	PICALM		circularity-flagged (excluded)
+CCDC32	GO:0060322	head development	99	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+CCDC32	GO:0060627	regulation of vesicle-mediated transport	154	True	True	1	1	PICALM		circularity-flagged (excluded)
+CCDC32	GO:2000369	regulation of clathrin-dependent endocytosis	7	True	True	0	0			circularity-flagged (excluded)
+INTS15	GO:0006351	DNA-templated transcription	496	False	False	13	0	INTS10,INTS14,INTS13,INTS5,INTS2,INTS12,INTS9,INTS8,INTS6,INTS7,NELFA,ICE2,E2F3		outside 2–300 window
+INTS15	GO:0006352	DNA-templated transcription initiation	190	True	False	1	1	E2F3		not reportable: 1 supporting partner(s) annotated at t0
+INTS15	GO:0006366	transcription by RNA polymerase II	423	False	False	13	0	INTS10,INTS14,INTS13,INTS5,INTS2,INTS12,INTS9,INTS8,INTS6,INTS7,NELFA,ICE2,E2F3		outside 2–300 window
+INTS15	GO:0006367	transcription initiation at RNA polymerase II promoter	179	True	False	1	1	E2F3		not reportable: 1 supporting partner(s) annotated at t0
+INTS15	GO:0006401	RNA catabolic process	203	False	False	1	1	PPP2CA		not reportable: 1 supporting partner(s) annotated at t0
+INTS15	GO:0032784	regulation of DNA-templated transcription elongation	29	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+INTS15	GO:0034243	regulation of transcription elongation by RNA polymerase II	14	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+INTS15	GO:0034655	nucleobase-containing compound catabolic process	304	False	False	1	0	PPP2CA		outside 2–300 window
+INTS15	GO:0071025	RNA surveillance	5	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+INTS15	GO:0071027	nuclear RNA surveillance	4	False	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+INTS15	GO:0141188	nucleic acid catabolic process	217	False	False	1	1	PPP2CA		not reportable: 1 supporting partner(s) annotated at t0
+HAPSTR1	GO:0031625	ubiquitin protein ligase binding	229	False	True	2	2	UBE2G1,MDM2	55	circularity-flagged (excluded)
+HAPSTR1	GO:0044389	ubiquitin-like protein ligase binding	243	False	True	2	2	UBE2G1,MDM2	56	circularity-flagged (excluded)
+HAPSTR1	GO:0080135	regulation of cellular response to stress	253	False	True	3	3	TRIP12,UBR5,MDM2	11	circularity-flagged (excluded)
+HAPSTR1	GO:1901796	regulation of signal transduction by p53 class mediator	108	True	False	1	1	MDM2		not reportable: 1 supporting partner(s) annotated at t0
+HAPSTR1	GO:1901797	negative regulation of signal transduction by p53 class mediator	21	True	False	1	1	MDM2		not reportable: 1 supporting partner(s) annotated at t0
+HAPSTR1	GO:1902532	negative regulation of intracellular signal transduction	311	False	False	1	0	MDM2		outside 2–300 window
+SLC25A51	GO:0000295	adenine nucleotide transmembrane transporter activity	5	True	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0006091	generation of precursor metabolites and energy	168	True	True	3	3	NDUFV2,NDUFS1,NDUFS2	16	circularity-flagged (excluded)
+SLC25A51	GO:0006119	oxidative phosphorylation	33	True	True	2	2	NDUFV2,NDUFS2	19	circularity-flagged (excluded)
+SLC25A51	GO:0006862	nucleotide transport	8	True	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0009060	aerobic respiration	83	True	True	2	2	NDUFV2,NDUFS2	20	circularity-flagged (excluded)
+SLC25A51	GO:0009820	alkaloid metabolic process	4	False	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+SLC25A51	GO:0015215	nucleotide transmembrane transporter activity	9	True	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0015216	purine nucleotide transmembrane transporter activity	6	True	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0015605	organophosphate ester transmembrane transporter activity	23	True	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0015748	organophosphate ester transport	54	True	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0015865	purine nucleotide transport	6	True	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0015931	nucleobase-containing compound transport	127	True	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0015932	nucleobase-containing compound transmembrane transporter activity	26	True	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0015980	energy derivation by oxidation of organic compounds	117	True	True	3	3	NDUFV2,NDUFS1,NDUFS2	17	circularity-flagged (excluded)
+SLC25A51	GO:0019646	aerobic electron transport chain	7	True	True	1	1	NDUFV2		circularity-flagged (excluded)
+SLC25A51	GO:0019752	carboxylic acid metabolic process	446	False	False	2	0	MTHFD2,SHMT2		outside 2–300 window
+SLC25A51	GO:0022900	electron transport chain	16	True	True	2	2	NDUFV2,NDUFS2	21	circularity-flagged (excluded)
+SLC25A51	GO:0022904	respiratory electron transport chain	16	True	True	2	2	NDUFV2,NDUFS2	22	circularity-flagged (excluded)
+SLC25A51	GO:0032787	monocarboxylic acid metabolic process	272	False	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+SLC25A51	GO:0043436	oxoacid metabolic process	473	False	False	2	0	MTHFD2,SHMT2		outside 2–300 window
+SLC25A51	GO:0045333	cellular respiration	93	True	True	3	3	NDUFV2,NDUFS1,NDUFS2	18	circularity-flagged (excluded)
+SLC25A51	GO:0051503	adenine nucleotide transport	5	True	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0055085	transmembrane transport	480	False	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0071705	nitrogen compound transport	234	False	True	0	0			circularity-flagged (excluded)
+SLC25A51	GO:0072524	pyridine-containing compound metabolic process	85	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+SLC25A51	GO:0072530	purine-containing compound transmembrane transport	2	False	True	0	0			circularity-flagged (excluded)
+TEDC1	GO:0000226	microtubule cytoskeleton organization	233	False	True	15	15	TUBE1,SASS6,PLK4,CPAP,CEP152,STIL,PCNT,CEP135,CCP110,CEP192,C2CD3,CEP63,ASPM,WRAP73,CDK5RAP2	1	circularity-flagged (excluded)
+TEDC1	GO:0007010	cytoskeleton organization	470	False	True	15	0	TUBE1,SASS6,PLK4,CPAP,CEP152,STIL,PCNT,CEP135,CCP110,CEP192,C2CD3,CEP63,ASPM,WRAP73,CDK5RAP2		circularity-flagged (excluded)
+TEDC1	GO:0007017	microtubule-based process	316	False	True	15	0	TUBE1,SASS6,PLK4,CPAP,CEP152,STIL,PCNT,CEP135,CCP110,CEP192,C2CD3,CEP63,ASPM,WRAP73,CDK5RAP2		circularity-flagged (excluded)
+TEDC2	GO:0000226	microtubule cytoskeleton organization	233	False	True	14	14	TUBE1,SASS6,PLK4,CPAP,STIL,CEP152,PCNT,CEP135,CEP192,C2CD3,CEP63,ASPM,SPICE1,WRAP73	1	circularity-flagged (excluded)
+TEDC2	GO:0007010	cytoskeleton organization	470	False	True	14	0	TUBE1,SASS6,PLK4,CPAP,STIL,CEP152,PCNT,CEP135,CEP192,C2CD3,CEP63,ASPM,SPICE1,WRAP73		circularity-flagged (excluded)
+TEDC2	GO:0007017	microtubule-based process	316	False	True	14	0	TUBE1,SASS6,PLK4,CPAP,STIL,CEP152,PCNT,CEP135,CEP192,C2CD3,CEP63,ASPM,SPICE1,WRAP73		circularity-flagged (excluded)
+POU2AF2	GO:0003712	transcription coregulator activity	351	False	True	1	0	SS18		circularity-flagged (excluded)
+POU2AF2	GO:0003713	transcription coactivator activity	204	False	True	1	1	SS18		circularity-flagged (excluded)
+POU2AF3	GO:0003712	transcription coregulator activity	351	False	True	1	0	SS18		circularity-flagged (excluded)
+POU2AF3	GO:0003713	transcription coactivator activity	204	False	True	1	1	SS18		circularity-flagged (excluded)
+TMEM242	GO:0007005	mitochondrion organization	204	False	False	18	18	ATP5PD,ATP5PB,ATP5F1B,ATP5PF,ATP5F1A,ATP5ME,ATP5F1D,ATP5F1C,ATP5PO,ATP5F1E,ATP5MG,ATP5MF,OXA1L,MFN2,TMEM70,IMMT,YME1L1,STOML2	1	ranked 1 (hit)
+TMEM242	GO:0033108	mitochondrial respiratory chain complex assembly	81	True	False	2	2	OXA1L,TMEM70	64	ranked 64 (below rank 1)
+TMEM242	GO:0033615	mitochondrial proton-transporting ATP synthase complex assembly	3	False	False	2	2	OXA1L,TMEM70	65	ranked 65 (below rank 1)
+TMEM242	GO:0043461	proton-transporting ATP synthase complex assembly	3	False	False	2	2	OXA1L,TMEM70	66	ranked 66 (below rank 1)
+TMEM242	GO:0070071	proton-transporting two-sector ATPase complex assembly	6	True	False	2	2	OXA1L,TMEM70	67	ranked 67 (below rank 1)
+FIRRM	GO:0000018	regulation of DNA recombination	48	True	True	1	1	FIGNL1		circularity-flagged (excluded)
+FIRRM	GO:0000278	mitotic cell cycle	429	False	False	1	0	RFWD3		outside 2–300 window
+FIRRM	GO:0003697	single-stranded DNA binding	63	True	True	2	2	ERCC4,ERCC1	28	circularity-flagged (excluded)
+FIRRM	GO:0006259	DNA metabolic process	466	False	True	5	0	RFWD3,ZFYVE26,ERCC4,BRIP1,ERCC1		circularity-flagged (excluded)
+FIRRM	GO:0006281	DNA repair	302	False	True	4	0	RFWD3,ZFYVE26,ERCC4,ERCC1		circularity-flagged (excluded)
+FIRRM	GO:0006282	regulation of DNA repair	87	True	True	1	1	FIGNL1		circularity-flagged (excluded)
+FIRRM	GO:0007059	chromosome segregation	148	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+FIRRM	GO:0010569	regulation of double-strand break repair via homologous recombination	29	True	True	1	1	FIGNL1		circularity-flagged (excluded)
+FIRRM	GO:0019900	kinase binding	436	False	False	3	0	DGKQ,TCL1B,GCSAM		outside 2–300 window
+FIRRM	GO:0019901	protein kinase binding	380	False	False	2	0	TCL1B,GCSAM		outside 2–300 window
+FIRRM	GO:0022402	cell cycle process	528	False	False	1	0	RFWD3		outside 2–300 window
+FIRRM	GO:0022411	cellular component disassembly	270	False	True	0	0			circularity-flagged (excluded)
+FIRRM	GO:0032984	protein-containing complex disassembly	170	True	True	0	0			circularity-flagged (excluded)
+FIRRM	GO:0032986	protein-DNA complex disassembly	19	True	True	0	0			circularity-flagged (excluded)
+FIRRM	GO:0036297	interstrand cross-link repair	42	True	True	3	3	RFWD3,ERCC4,ERCC1	10	circularity-flagged (excluded)
+FIRRM	GO:0043549	regulation of kinase activity	352	False	False	1	0	TCL1B		outside 2–300 window
+FIRRM	GO:0045738	negative regulation of DNA repair	25	True	True	0	0			circularity-flagged (excluded)
+FIRRM	GO:0045859	regulation of protein kinase activity	331	False	False	1	0	TCL1B		outside 2–300 window
+FIRRM	GO:0045910	negative regulation of DNA recombination	19	True	True	0	0			circularity-flagged (excluded)
+FIRRM	GO:0051052	regulation of DNA metabolic process	232	False	True	3	3	FIGNL1,ERCC4,ERCC1	5	circularity-flagged (excluded)
+FIRRM	GO:0051053	negative regulation of DNA metabolic process	88	True	True	2	2	ERCC4,ERCC1	46	circularity-flagged (excluded)
+FIRRM	GO:0051338	regulation of transferase activity	400	False	False	1	0	TCL1B		outside 2–300 window
+FIRRM	GO:0071824	protein-DNA complex organization	70	True	True	0	0			circularity-flagged (excluded)
+FIRRM	GO:0080135	regulation of cellular response to stress	253	False	True	4	4	FIGNL1,RFWD3,ERCC4,ERCC1	1	circularity-flagged (excluded)
+FIRRM	GO:2000042	negative regulation of double-strand break repair via homologous recombination	13	True	True	0	0			circularity-flagged (excluded)
+FIRRM	GO:2000779	regulation of double-strand break repair	53	True	True	1	1	FIGNL1		circularity-flagged (excluded)
+FIRRM	GO:2000780	negative regulation of double-strand break repair	24	True	True	0	0			circularity-flagged (excluded)
+AIRIM	GO:0006259	DNA metabolic process	466	False	False	3	0	MRE11,PNKP,RAD50		outside 2–300 window
+AIRIM	GO:0006260	DNA replication	150	True	False	2	2	MRE11,RAD50	89	ranked 89 (below rank 1)
+AIRIM	GO:0022613	ribonucleoprotein complex biogenesis	214	False	False	1	1	WDR18		not reportable: 1 supporting partner(s) annotated at t0
+AIRIM	GO:0042254	ribosome biogenesis	135	True	False	1	1	WDR18		not reportable: 1 supporting partner(s) annotated at t0
+AIRIM	GO:0042273	ribosomal large subunit biogenesis	21	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+AIRIM	GO:0044087	regulation of cellular component biogenesis	474	False	False	0	0			outside 2–300 window
+TMEM41B	GO:0000045	autophagosome assembly	23	True	False	1	1	ATG9A		not reportable: 1 supporting partner(s) annotated at t0
+TMEM41B	GO:0005319	lipid carrier activity	59	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+TMEM41B	GO:0006869	lipid transport	126	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+TMEM41B	GO:0006914	autophagy	133	True	False	1	1	ATG9A		not reportable: 1 supporting partner(s) annotated at t0
+TMEM41B	GO:0007033	vacuole organization	50	True	False	1	1	ATG9A		not reportable: 1 supporting partner(s) annotated at t0
+TMEM41B	GO:0010876	lipid localization	126	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+TMEM41B	GO:0016236	macroautophagy	103	True	False	1	1	ATG9A		not reportable: 1 supporting partner(s) annotated at t0
+TMEM41B	GO:0032365	intracellular lipid transport	23	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+TMEM41B	GO:0035821	modulation of process of another organism	119	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+TMEM41B	GO:0044788	host-mediated perturbation of viral process	43	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+TMEM41B	GO:0044830	host-mediated perturbation of viral RNA genome replication	2	False	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+TMEM41B	GO:0051851	host-mediated perturbation of symbiont process	56	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+TMEM41B	GO:0061919	process utilizing autophagic mechanism	133	True	False	1	1	ATG9A		not reportable: 1 supporting partner(s) annotated at t0
+TMEM41B	GO:0070925	organelle assembly	392	False	False	1	0	ATG9A		outside 2–300 window
+TMEM41B	GO:0140104	molecular carrier activity	81	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+TMEM41B	GO:0140303	intramembrane lipid carrier activity	21	True	False	0	0			not reportable: 0 supporting partner(s) annotated at t0
+TMEM41B	GO:1905037	autophagosome organization	24	True	False	1	1	ATG9A		not reportable: 1 supporting partner(s) annotated at t0

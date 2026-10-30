@@ -1,0 +1,5 @@
+stratifier	expression	observed	expected_false	expected_lo	expected_hi	implied_true	implied_lo	implied_hi	implied_frac_U	implied_frac_U_lo	implied_frac_U_hi
+sd_tertile_withinU	frozen expressed (635)	635	364.032	304	433	270.968	202	331	0.05503	0.0410236	0.0672218
+sd_tertile_withinU	DESIGN expressed (646)	646	376.879	316	448	269.121	198	330	0.0546549	0.0402112	0.0670187
+any_dependency	frozen expressed (635)	635	391.782	329	462	243.218	173	306	0.0493943	0.035134	0.0621446
+any_dependency	DESIGN expressed (646)	646	405.208	340	477	240.792	169	306	0.0489017	0.0343217	0.0621446
