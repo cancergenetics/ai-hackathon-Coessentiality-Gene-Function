@@ -1,0 +1,91 @@
+hgnc_id	symbol	recalled_function	confidence	recognised
+HGNC:24142	TM2D1	TM2-domain membrane protein that binds beta-amyloid (BBP); its Drosophila homolog almondex is needed for Notch signalling.	medium	yes
+HGNC:24127	TM2D2	TM2-domain membrane protein related to TM2D1; possibly involved in Notch signalling.	low	no
+HGNC:2937	DMXL1	Rabconnectin-3 alpha homolog that regulates V-ATPase assembly and organelle acidification.	medium	yes
+HGNC:9519	PSG2	Pregnancy-specific glycoprotein (CEA family) secreted by placental trophoblast; probably immunomodulatory.	medium	yes
+HGNC:11326	SSR4	Delta subunit of the TRAP translocon-associated protein complex at the ER, which assists cotranslational translocation and N-glycosylation.	high	yes
+HGNC:25526	FAM90A1	unknown	none	no
+HGNC:30948	ZNF585B	KRAB zinc finger protein, presumably a transcriptional repressor; no specific function known.	low	no
+HGNC:30617	ELP5	Subunit of the Elongator complex (ELP456 subcomplex), which modifies tRNA wobble uridines (mcm5/ncm5U).	high	yes
+HGNC:13490	WDR7	Rabconnectin-3 beta homolog that partners DMXL1/2 to regulate V-ATPase activity.	medium	yes
+HGNC:9558	PSMD13	26S proteasome regulatory-particle lid subunit Rpn9.	high	yes
+HGNC:25749	TANGO6	Transmembrane protein found in a Golgi-organization/secretion screen; its function is poorly defined.	low	no
+HGNC:26105	PLEKHH3	Protein with PH, MyTH4 and FERM domains; function unknown.	low	no
+HGNC:15682	PHC3	Polyhomeotic homolog 3, a subunit of canonical Polycomb Repressive Complex 1 (PRC1).	high	yes
+HGNC:21898	TMEM209	Nuclear envelope transmembrane protein; function unclear.	low	no
+HGNC:18329	YPEL5	Subunit of the CTLH/GID E3 ubiquitin ligase complex.	medium	yes
+HGNC:25373	CYRIA	CYFIP-related Rac1 interactor A, which binds active Rac1 and restrains WAVE-complex-driven lamellipodia.	medium	yes
+HGNC:25015	TMEM208	SND2 homolog, part of the SRP-independent (SND) pathway that targets proteins to the ER.	medium	yes
+HGNC:21754	TMEM60	unknown	none	no
+HGNC:7697	NDUFB2	Accessory subunit of mitochondrial respiratory complex I (NADH:ubiquinone oxidoreductase).	high	yes
+HGNC:14456	H2AJ	Histone H2A variant that builds up in senescent cells and supports inflammatory gene expression.	medium	yes
+HGNC:7696	NDUFB10	Accessory subunit of mitochondrial respiratory complex I.	high	yes
+HGNC:18896	TMEM185B	Multi-pass membrane protein; function unknown.	low	no
+HGNC:27406	INAFM1	unknown	none	no
+HGNC:28965	RBM34	RRM RNA-binding protein, possibly nucleolar or involved in ribosome biogenesis.	low	no
+HGNC:28005	CTU2	Cytosolic thiouridylase 2, which works with CTU1 on 2-thiolation of mcm5s2U34 in tRNAs.	high	yes
+HGNC:26179	ZNF672	Zinc finger protein; function unknown.	low	no
+HGNC:37252	ARHGEF33	Putative Rho guanine nucleotide exchange factor; no specific function known.	low	no
+HGNC:21874	FBXL18	F-box/LRR protein, a probable substrate receptor for an SCF E3 ubiquitin ligase.	low	no
+HGNC:24542	DPCD	Gene deleted in a mouse primary ciliary dyskinesia model; possibly involved in ciliogenesis or motile cilia.	low	no
+HGNC:26624	KDF1	Keratinocyte differentiation factor 1, which controls epidermal proliferation and differentiation (linked to ectodermal dysplasia).	medium	yes
+HGNC:19401	PGBD4	Domesticated piggyBac transposase-derived gene; function unknown.	low	no
+HGNC:32008	TMEM120B	TMEM120A/TACAN paralog; nuclear envelope protein that may take part in adipocyte differentiation.	medium	yes
+HGNC:23162	ALG10	ER alpha-1,2-glucosyltransferase that adds the terminal glucose to the dolichol-linked N-glycan precursor.	high	yes
+HGNC:17798	YLPM1	YLP-motif nuclear protein that interacts with PP1; poorly characterised.	low	no
+HGNC:26685	CCDC71L	unknown	none	no
+HGNC:24738	C5orf34	unknown	none	no
+HGNC:23817	CNOT10	Subunit of the CCR4-NOT deadenylase complex (CNOT10/CNOT11 module).	high	yes
+HGNC:29243	RBM27	RRM/CCCH zinc finger RNA-binding protein, possibly involved in nuclear RNA decay.	low	no
+HGNC:33842	AARD	unknown	none	no
+HGNC:14010	MGA	MAX-binding T-box/bHLHZip transcription factor and scaffold of the non-canonical PRC1.6 complex (with E2F6/L3MBTL2).	high	yes
+HGNC:27312	SAMD14	SAM-domain protein, possibly involved in erythroid KIT signalling.	low	no
+HGNC:15975	SASH3	SLY, an SH3/SAM adaptor in lymphocytes that supports lymphocyte activation and proliferation.	medium	yes
+HGNC:26027	COMMD4	COMMD-family subunit of the CCC/Commander complex, which recycles endosomal cargo and also regulates NF-kB.	high	yes
+HGNC:24842	LGALS9B	Galectin-9 paralog, a beta-galactoside-binding lectin.	medium	yes
+HGNC:30763	NR2C2AP	Protein associated with the TR4 nuclear receptor (NR2C2) that modulates its transcriptional activity.	low	no
+HGNC:23067	TRAPPC5	Core subunit of the TRAPP complexes, which tether ER-to-Golgi vesicles and act as a Rab1 GEF.	high	yes
+HGNC:28033	CCDC174	Coiled-coil nuclear protein; function unclear.	low	no
+HGNC:28728	MARCHF3	Membrane-associated RING-CH E3 ubiquitin ligase on endosomes.	medium	yes
+HGNC:1935	CHIC2	Cysteine-rich hydrophobic domain membrane protein; fused to ETV6 in leukaemia; function unclear.	low	no
+HGNC:26104	C8orf33	unknown	none	no
+HGNC:30781	TADA2B	ADA2b subunit of the SAGA histone acetyltransferase coactivator complex.	high	yes
+HGNC:26614	ANKRD52	Ankyrin-repeat regulatory subunit C of the PP6 phosphatase (PP6-ARS-C).	high	yes
+HGNC:25217	CNOT11	Subunit of the CCR4-NOT deadenylase complex (CNOT10/CNOT11 module).	high	yes
+HGNC:16046	UNC50	Golgi membrane protein (GMH1 homolog) that supports surface delivery of nicotinic acetylcholine receptors and ARF-GEF function.	medium	yes
+HGNC:7685	NDUFA2	Accessory subunit of mitochondrial respiratory complex I.	high	yes
+HGNC:20715	MID1IP1	MIG12, which promotes acetyl-CoA carboxylase polymerization in lipogenesis and stabilises microtubules.	medium	yes
+HGNC:24604	COA4	Twin CX9C intermembrane-space cytochrome c oxidase assembly factor (CMC3).	medium	yes
+HGNC:24256	WASHC3	Subunit of the WASH complex, which drives Arp2/3 actin polymerisation on endosomes for cargo recycling.	high	yes
+HGNC:25628	DDX19A	DEAD-box RNA helicase (Dbp5 homolog) that remodels mRNPs during mRNA export at the nuclear pore.	high	yes
+HGNC:14440	FAM117B	unknown	low	no
+HGNC:30201	COMMD10	COMMD-family subunit of the CCC/Commander endosomal recycling complex.	high	yes
+HGNC:18386	SFTA2	Small secreted surfactant-associated protein expressed in lung.	low	no
+HGNC:28982	HMGXB3	HMG-box containing protein; function unknown.	low	no
+HGNC:19399	PGBD2	Domesticated piggyBac transposase-derived gene; function unknown.	low	no
+HGNC:23332	COMMD3	COMMD-family subunit of the CCC/Commander endosomal recycling complex.	high	yes
+HGNC:30795	TSPAN11	Tetraspanin family membrane protein; no specific function known.	low	no
+HGNC:13519	TLNRD1	Talin-rod-domain protein that may bundle actin.	low	no
+HGNC:21111	BICRAL	GLTSCR1L, a subunit of the non-canonical (GBAF/ncBAF) SWI/SNF chromatin remodelling complex.	medium	yes
+HGNC:28796	MRFAP1L1	unknown	low	no
+HGNC:26036	COMMD8	COMMD-family subunit of the CCC/Commander endosomal recycling complex.	high	yes
+HGNC:25487	MED9	Subunit of the Mediator transcriptional coactivator complex (middle module).	high	yes
+HGNC:24253	TMED7	p24 family cargo receptor that cycles between the ER and Golgi; regulates TLR4 trafficking.	medium	yes
+HGNC:13578	ZNF318	Zinc finger protein reported as an androgen receptor corepressor; poorly characterised.	low	no
+HGNC:29562	MARF1	NYN-domain endoribonuclease that controls mRNA stability in oocytes and is needed for meiosis and genome integrity.	medium	yes
+HGNC:24731	NHLRC2	Thioredoxin-like NHL-repeat protein linked to FINCA disease; role unclear.	low	no
+HGNC:6555	LEPROTL1	Vps55 homolog in endosomal trafficking that reduces surface expression of growth hormone and leptin receptors.	medium	yes
+HGNC:20371	NDUFA11	Accessory subunit of mitochondrial respiratory complex I.	high	yes
+HGNC:23707	ZNF492	KRAB zinc finger protein, presumably a transcriptional repressor.	low	no
+HGNC:33754	C16orf87	unknown	none	no
+HGNC:24260	MED31	Subunit of the Mediator transcriptional coactivator complex (Soh1).	high	yes
+HGNC:842	ATP5MC2	Subunit c (P2 isoform) of the mitochondrial ATP synthase F0 c-ring.	high	yes
+HGNC:13671	H2AC12	Replication-dependent histone H2A, a core nucleosome component.	high	yes
+HGNC:28476	YIPF2	Yip1-family Golgi membrane protein, possibly involved in vesicle trafficking.	low	no
+HGNC:21182	NUP43	Subunit of the Nup107-160 (Y-complex) nuclear pore scaffold; also found at kinetochores.	high	yes
+HGNC:7699	NDUFB4	Accessory subunit of mitochondrial respiratory complex I.	high	yes
+HGNC:18706	GRIPAP1	GRASP-1, a neuronal GRIP1-associated protein on recycling endosomes that controls AMPA receptor recycling.	medium	yes
+HGNC:24993	COMMD2	COMMD-family subunit of the CCC/Commander endosomal recycling complex.	high	yes
+HGNC:25976	ELP6	Subunit of the Elongator complex (ELP456 subcomplex), which modifies tRNA wobble uridines.	high	yes
+HGNC:25744	AKIRIN1	Nuclear Akirin family protein, possibly involved in NF-kB-dependent transcription and muscle regeneration.	low	no
+HGNC:24149	HES4	bHLH-Orange transcriptional repressor that is a Notch-pathway target gene.	high	yes
