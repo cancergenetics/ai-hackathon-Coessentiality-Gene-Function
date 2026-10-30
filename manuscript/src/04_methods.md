@@ -2,8 +2,29 @@
 # Methods
 
 The analysis followed DESIGN.md v2.3, frozen at git tag `design-frozen` (commit afed1dd), with every later change logged
-in DEVIATIONS.md (summarised at the end of this section). All steps were run by scripts in `scripts/`, numbered in
-execution order.
+in DEVIATIONS.md (summarised at the end of this section, including which rows were logged after the affected result).
+All steps were run by scripts in `scripts/`, numbered in execution order (README.md gives the run order). Table 4 defines
+the notation.
+
+**Table 4. Notation.**
+
+| Symbol | Meaning |
+|---|---|
+| U | pre-registered uncharacterised genes (4,924) |
+| H | temporal hold-out: genes uncharacterised at t0 (GO 2018-07-02) that gained experimental BP/MF targets since (820; 809 primary) |
+| LOO | characterised leave-one-out genes used to choose the ranker |
+| D1, D2, D3 | knownness criteria: no experimental BP/MF GO; UniProt annotation score ≤ 2; low focused literature or IDG Tdark |
+| N(g), K | the gene's top K = 25 co-essentiality neighbours after exclusions |
+| R(g) | split-half reproducibility of N(g) |
+| R1, R2, R3 | term rankers: raw neighbour support, hypergeometric, empirical |
+| V2; V1, V1′ | primary vocabulary (GO BP + MF); descriptive module labels (GO complexes; plus Complex Portal and MitoCarta) |
+| p_cal | calibrated probability that the top term is confirmed, given that the gene gains experimental annotation |
+| Σp_cal | sum of p_cal over a gene set (expected conditional confirmations) |
+| Tier A / B | pre-specified prioritisation tiers (p_cal ≥ 0.5 / ≥ 0.3 plus conditions) |
+| S20; extra30 | secondary list of 20 strong uncalibrated predictions; 30 fill-pool genes outside the top 40 |
+| N1, N2, N3 | literature class: function established; partial; none |
+| L | blind literature agent |
+| definition-artefact flag | UniProt score 5, Complex Portal subunit or experimental GO cellular-component annotation [post-review] |
 
 ## Data and versions
 
@@ -35,7 +56,8 @@ the tool's rule.
 
 We used zavg_BEF from the ai-hackathon-Coessentiality tool [Coessentiality_tool] at commit 3c684c9
 <!-- src: DATA.md -->, unmodified, through its public API and with its published configuration. In brief
-(external/coessentiality/docs/explainer/METHOD.md), gene profiles were centred and standardised for covariance
+(external/coessentiality/docs/explainer/METHOD.md; the description here is intended to allow reimplementation without
+the repository), gene profiles were centred and standardised for covariance
 estimation. The 20 <!-- src: results/matrices/zavg_full_manifest.json --> strongest cell-line covariance components
 were removed and the rest ridge-whitened (ridge 0.1 <!-- src: results/matrices/zavg_full_manifest.json --> × mean
 eigenvalue). The method combines three views:
@@ -51,7 +73,9 @@ Each view was z-scored against 200,000 <!-- src: results/matrices/zavg_full_mani
 the three z-scores were averaged. Background genes had less than 10%
 <!-- src: results/matrices/zavg_full_manifest.json --> missing values (17,525 genes
 <!-- src: results/verification/sanity_checks.md -->). The tool's settings had been tuned on hu.MAP 3.0 co-complex pairs
-[Fischer2025; Coessentiality_tool]; we tuned nothing.
+[Fischer2025; Coessentiality_tool]; we tuned nothing. Because hu.MAP 3.0 post-dates t0 and contains complexes with H
+genes, this tuning is a route by which post-t0 knowledge could enter zavg_BEF; GLS and Pearson, which were not tuned,
+are reported beside it on H for this reason.
 
 **Verification.** We computed one full zavg_BEF matrix, and GLS [Wainberg2021] and Pearson rows for the genes that
 needed them. Our GLS and Pearson values matched the tool's on 100,993 <!-- src: results/verification/baseline_rows.md -->
@@ -67,7 +91,10 @@ The universe was the 19,296 <!-- src: preregistration/CRITERIA.md --> HGNC Appro
 function (`src/knownness.py::d1`) applied the criteria to every GO release:
 
 - **D1**: no informative GO biological-process or molecular-function annotation with evidence EXP, IDA, IPI, IMP, IGI,
-  IEP, TAS or IC [GO_evidence_web]. NOT-qualified rows were removed and `contributes_to` rows counted. High-throughput,
+  IEP, TAS or IC [GO_evidence_web]. The GO guide classes TAS (traceable author statement) and IC (inferred by curator)
+  as author or curatorial statements rather than experimental evidence; we counted them deliberately, so that a gene
+  with a curated author statement of function was not called uncharacterised, and use "experimental" below for this
+  set of codes. NOT-qualified rows were removed and `contributes_to` rows counted. High-throughput,
   electronic, similarity-based, phylogenetic, RCA, NAS and ND codes were ignored, as were cellular-component
   annotations. The 22 <!-- src: preregistration/CRITERIA.md --> generic terms listed in CRITERIA.md (for example
   "protein binding", the roots and high-level grouping terms) did not count.
@@ -172,13 +199,17 @@ propagated from t0 annotations, both in the current ontology, restricted to term
 gene–target pairs (median 6 <!-- src: results/holdout/holdout_sizing.md --> per gene), and none of its genes was in U.
 When H genes were scored, neighbour memberships, the background, the candidate terms and the prior frequencies all came
 from t0. The network used 26Q3 data, so the test is temporal in annotation only. Current annotations are about 8
-<!-- src: config/frozen.yaml --> years after t0, so p_cal is the probability of confirmation within roughly that horizon.
+<!-- src: config/frozen.yaml --> years after t0. Because H includes only genes that gained at least one target, p_cal
+is the probability of confirmation within roughly that horizon *conditional on the gene gaining experimental BP/MF
+annotation*; DESIGN.md §3.7 describes it without this condition, and we correct the interpretation here without
+changing the model.
 
 **Circularity.** Every supporting PMID was searched in Europe PMC, in full text where available, for DepMap and
 co-essentiality terms. Of 1,050 <!-- src: results/holdout/circularity_summary.md --> PMIDs, 16
 <!-- src: results/holdout/circularity_summary.md --> were flagged; they affected 106
-<!-- src: results/holdout/circularity_summary.md --> pairs, and 9 <!-- src: results/holdout/circularity_summary.md -->
-genes lost all their targets. The known case, CCDC32 annotations citing Wainberg et al. [Wainberg2021], was flagged. The
+<!-- src: results/holdout/circularity_summary.md --> pairs, and under the primary rule 11
+<!-- src: results/holdout_eval/core.md --> genes lost all their targets (9 <!-- src: results/holdout/circularity_summary.md -->
+under the fully-circular definition used in one sensitivity analysis). The known case, CCDC32 annotations citing Wainberg et al. [Wainberg2021], was flagged. The
 primary analysis excluded flagged annotations from targets and ranked lists; sensitivity analyses varied the rule.
 
 **Endpoint and comparators.** The endpoint was hit@1: the top reportable term is in T(g). The denominator was all primary
@@ -252,7 +283,9 @@ supplier/client; (b) assembly factor; (d) pathway member, unresolved.
 experiments as one group; Human Cell Map SAINT separately); A, co-abundance (ProteomeHD; CCLE proteomics, flagged for
 its shared lines); L, localisation; G, Perturb-seq with on-target knockdown of at least 30% <!-- src: DESIGN.md -->; and
 S, AlphaFold2 pDockQ ≥ 0.23 <!-- src: DESIGN.md -->. Sources that embed DepMap or literature (hu.MAP 3.0, DEMETER2,
-Predictomes, HumanNet, STRING text-mining) were reported only [KimCY2022; Schmid2025].
+Predictomes, STRING text-mining) were never used as support [KimCY2022; Schmid2025]: hu.MAP 3.0 served as a secondary
+comparator on H, DEMETER2 as a robustness check, and hu.MAP and Predictomes, after review, only for the novelty check.
+HumanNet was not obtained or used.
 
 **Admission.** Sources were admitted before any U prediction existed, on annotation data only (S3 Fig). Pair sources
 needed a co-complex odds ratio with a lower 95% bound above 2 <!-- src: DESIGN.md --> on 2,538
@@ -266,7 +299,7 @@ OpenCell, Human Cell Map and MitoCarta failed on coverage alone.
 **Support test.** The test was applied to the top-40 candidates and every fill entrant (247 anchors), and to one
 matched-gene and one decoy-term prediction per anchor. The called term's members were compared with 1,000
 <!-- src: DESIGN.md --> degree-matched member sets, and p-values were combined by Simes within a class and Holm across
-classes at α = 0.05 <!-- src: DESIGN.md --> [Simes1986; Aickin1996]. Each class was then called not measured, no support,
+classes at α = 0.05 <!-- src: DESIGN.md --> [Simes1986; Holm1979; Aickin1996]. Each class was then called not measured, no support,
 supports or contradicts. A missing interaction was never a contradiction; a contradiction needed incompatible
 localisation from at least 2 <!-- src: DESIGN.md --> high-reliability sources. Each module family had a pre-specified
 diagnostic class. The false-support rate is the fraction of matched and decoy predictions that met the Tier-A support
@@ -301,13 +334,16 @@ protein names were redacted from L's evidence, and a leak check searched every p
 
 **Judging.** Two independent judges read the packets and scored each statement +1 (directly supported), 0 (not
 addressed) or −1 (contradicted) <!-- src: DESIGN.md -->, using only the evidence provided; DepMap-derived support counted
-as 0 <!-- src: DESIGN.md -->. A match to "the stated process or module" counted as support
-<!-- src: scripts/51_judge_packets.py -->, for real and decoy statements alike. Agreement was reported as Cohen's κ
+as 0 <!-- src: DESIGN.md -->. The packet instruction credited a match to "the stated process or module, or a
+closely equivalent one" <!-- src: scripts/51_judge_packets.py -->, for real and decoy statements alike; this
+operationalisation of DESIGN §6.4 was logged in DEVIATIONS.md only after review, and a term-only re-reading of the
+judges' justifications is reported beside the primary result (not re-judged blind). Agreement was reported as Cohen's κ
 [Cohen1960], and a third judge adjudicated disagreements. Judges were first validated on 10 <!-- src: DESIGN.md --> H genes
 with known true terms; validation required at least 7 of 10 <!-- src: DESIGN.md --> real statements supported and at most 3
 of 30 <!-- src: DESIGN.md --> decoys. The primary test was an exact one-sided sign-flip test of real minus mean decoy
-score over the top 40 (α = 0.05 <!-- src: DESIGN.md -->); S20 and extra30 were tested separately. All judging agents were
-Claude-family models (Opus 5.5 or Sonnet 5.5 <!-- src: PROMPT.md -->).
+score over the top 40 (α = 0.05 <!-- src: DESIGN.md -->); S20 and extra30 were tested separately. Judges J1 and J2 were two instances of Claude Sonnet 5.5 and the
+adjudicator was Claude Opus 5.5; the recall probe also ran on Claude Opus 5.5 (docs/AGENT_PROMPTS.md, which gives every
+blinded-role prompt verbatim). Temperatures and seeds of model calls were not recorded.
 
 ## Candidate reports and red-team review
 
@@ -322,51 +358,113 @@ observations written before the literature and orthogonal sections were read; an
 strongest alternative explanation; and a tiered experimental plan with a matched-essentiality control gene and a decision
 rule fixed in advance. Every gene-function sentence had to cite an evidence-ledger row with a verbatim span; numbers were
 copied from the ledger, not retyped, and the report says "not found in the literature as of" a date rather than
-"novel". Overlap with published catalogues [Wainberg2021; Fischer2025; Replogle2022] was reported as agreement only.
+"novel". Overlap with published catalogues [Wainberg2021; Fischer2025; Replogle2022] was at first reported as agreement only;
+after review it was quantified systematically (below) and each report gained a "prior prediction" statement.
 
 Each report was then reviewed by an independent red-team agent (Claude Opus 5.5) that had not written it. The reviewer
 re-resolved every cited PMID through the Europe PMC API, matched each quoted span against abstract or full text,
 recomputed reported numbers from the project files, attacked the hypothesis and the experimental plan, and returned a
 verdict with required fixes (reports/redteam/). The writer answered each fix point by point in the report's appendix.
 
+## Post-review exploratory analyses
+
+After the first round of peer review, the referees' requests were run by `scripts/90_revision_analyses.py` (helpers in
+`scripts/revision_common.py`) into `results/revision/` (summary in `results/revision/SUMMARY.md`; figure S4 by
+`scripts/62_figS4.py`). None changes a frozen rule or a pre-specified result. Analyses that read H outcomes (A3, A4, A7,
+A8 below) were logged in LOOKS.md before they were run (row dated 2026-10-30). All are labelled [post-review
+exploratory] in Results.
+
+- **A1, entry routes and definition-artefact flags.** Each U gene was classed by entry route (D1 and D2, with or without
+  D3; or D3 without D2) and flagged if it had UniProt annotation score 5, was a Complex Portal subunit [Meldal2022] or had
+  at least one experimental GO cellular-component annotation (D1 evidence codes, current GAF). CORUM was not available.
+  N1 rates were tabulated by route and flag for the random-50 audit and for the candidate sets, with Wilson intervals.
+- **A2, novelty overlap.** For each top-40, S20 and report gene, we recorded whether at least one of its ten strongest
+  zavg_BEF partners was a hu.MAP 3.0 co-complex member [Fischer2025], a Predictomes pair with SPOC ≥ 0.5 [Schmid2025], a
+  significant GLS pair, a co-member of a Wainberg et al. module (any density, and density ≥ 0.5) or listed with an explicit
+  function prediction in their Supplementary Data 3 [Wainberg2021], or a Kim et al. network edge or MCL cluster
+  co-member [Kim2019]. Symbols of older catalogues were mapped through HGNC previous symbols and aliases. Pan et al.
+  [Pan2018], FIREWORKS [Amici2021] and Perturb-seq cluster assignments [Replogle2022] were not obtainable in
+  machine-readable form. Downloads and checksums are in `results/revision/external_manifest.tsv`.
+- **A3, unconditional reading of p_cal.** The rate at which t0-eligible genes gained any target in the 5–200 window over
+  the horizon (overall, among genes with a reportable top term, and by quintile of top-K mean zavg_BEF) was multiplied
+  into the saved bootstrap Σp_cal; intervals combine bootstrap draws with Jeffreys-Beta draws of the rate, assuming
+  independence. Annual hazards for a 2022 cohort and for 2018 genes still uncharacterised in 2022 check stationarity.
+- **A4, calibration sensitivity.** Calibration-in-the-large, Brier skill and cluster-bootstrap intervals for the frozen
+  model; the frozen model without signalling genes; and sign-constrained one- and two-covariate models (top-K mean
+  zavg_BEF alone, plus coverage, plus term size) cross-fitted exactly as in §3.7 and applied to U with covariate support
+  only.
+- **A5, judging sensitivities.** Term-only scores (the three real statements supported on the module label alone set to
+  0; no decoy was affected), an exact slot-permutation test, and a sign-flip test over clusters of genes sharing the real
+  statement's V1′ label.
+- **A6, null-adjusted assessability.** The clean-negative split-half false-call rate in each stratum (any dependency, or
+  profile-SD tertile) was applied to the expressed scorable genes of that stratum and the expected false calls subtracted
+  from the observed assessable count (Jeffreys-Beta and binomial draws, 100,000, seed 0). This is a bound under the
+  assumption that the rates transfer, not an estimate of specificity.
+- **A7, combination rules on H.** Precision@1 for "homology if it predicts, else zavg_BEF", the reverse, and the oracle
+  union, with paired cluster-bootstrap intervals and U-reweighting as in the secondary batch.
+- **A8, named-control misses.** For each control, each new term in the t0 vocabulary was classed as circularity-flagged,
+  outside the size window, not reportable (fewer than two supporting neighbours annotated at t0) or ranked.
+
 ## Reproducibility and AI-agent safeguards
 
 AI agents (Claude Opus 5.5 and Sonnet 5.5 <!-- src: PROMPT.md -->) ran the study under a fixed, human-written goal
 (PROMPT.md). Before the freeze, the design went through two review rounds by independent agent reviewers covering prior
-work, statistics, data and algorithms, AI-agent failure modes and experimental biology (reviews/). The safeguards were:
+work, statistics, data and algorithms, AI-agent failure modes and experimental biology (reviews/). The safeguards were
+as follows; where the record is incomplete, we say so.
 
 - **Hash gate.** `gate.check()` verified the freeze file, which covers 10 <!-- src: reviews/audit_order_M4.md --> files,
-  and the tag before any pairwise DepMap read.
-- **Chronology audit.** Fresh agents ran `scripts/audit_order.py` at milestones; the audits found no ordering violation
-  (reviews/audit_order_M4.md, reviews/audit_order_M6.md).
+  and the tag before any pairwise DepMap read. The freeze commit is afed1dd, and the SHA-256 of
+  `preregistration/FREEZE.sha256` is 687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04
+  <!-- src: README.md -->. The repository has no remote, so git tags and commit times are self-reported until deposition.
+- **Chronology audit.** `scripts/audit_order.py` was run at milestones M4 and M6 by the milestone analyst agents, not
+  by fresh agents, and found no ordering violation (reviews/audit_order_M4.md, reviews/audit_order_M6.md). Its globs do
+  not cover the hold-out and ledger outputs, whose first commits were checked by hand during review, and no audit was
+  committed for the final milestone.
 - **Hidden tool predictions.** The tool's genome-wide predictions were hidden by sparse checkout until the freeze.
-- **One-look rule.** LOOKS.md allowed one look at H, after the ranker and calibration specification were committed.
-- **Claim tracing.** CLAIMS.tsv maps manuscript numbers to result files, and every number in this manuscript's source
-  carries a comment naming its file.
-- **Agent scopes.** config/agent_scopes.yaml restricted each role's reads and writes; blind roles ran in directories that
-  held only identifiers, and agents never committed.
+- **One-look rule.** LOOKS.md allowed one primary look at H, after the ranker and calibration specification were
+  committed. LOOKS.md also records an independent verification re-run of the primary analysis, one exploratory look
+  (complementarity) and the post-review exploratory analyses; the primary look's row was committed together with its
+  results, so "row before run" rests on the agents' record.
+- **Claim tracing.** Every number in this manuscript's source carries a comment naming its file. A claims table
+  generated from these comments (`results/revision/CLAIMS_preview.tsv`, by `scripts/91_claims_from_manuscript.py`)
+  replaces the hand-written CLAIMS.tsv, which held only six claims.
+- **Agent scopes and prompts.** Blind roles (curation-lag auditor, literature agent L, recall probe, judges, adjudicator)
+  were given read and write restrictions in their task prompts, which are reproduced verbatim in docs/AGENT_PROMPTS.md;
+  `config/agent_scopes.yaml` is a template rather than an enforced policy, `results/agent_runs.tsv` logs only one agent
+  run, and model temperatures and seeds were not recorded, so the agent-only steps are not reproducible in the strict
+  sense and blinding can be audited only from the prompts, packet construction (scripts/50–51) and the leak check.
 - **Independent re-derivation.** Agents that did not produce key numbers re-derived them (pre-registered list, hold-out
   set, primary hold-out evaluation).
 
 Seeds are in config/seeds.yaml (0–4 <!-- src: config/frozen.yaml -->), and every design parameter is in
-config/frozen.yaml, checked by script against DESIGN.md. The environment is pinned in config/requirements.lock.txt (numpy
-2.5.4, pandas 3.1.0, scipy 1.18.1, scikit-learn 1.9.1 <!-- src: config/requirements.lock.txt -->). Large matrices are
-regenerated by script; summaries and per-gene results are committed.
+config/frozen.yaml, checked by script against DESIGN.md; several scripts hard-code seed 0 rather than reading the seed
+file, and the tool's internal random-pair seed is fixed inside the tool. The environment is pinned in
+config/requirements.lock.txt (numpy 2.5.4, pandas 3.1.0, scipy 1.18.1, scikit-learn 1.9.1
+<!-- src: config/requirements.lock.txt -->); README.md documents the run order, which steps call the gate, runtimes and
+the non-portable lines of the lock file. Large matrices are regenerated by script; summaries and per-gene results are
+committed.
 
 ## Deviations from the frozen design
 
-DESIGN.md was not edited after the tag. Twenty-one changes were logged in DEVIATIONS.md
-<!-- src: reviews/retro_M7.md -->, each before the results it affects were computed, and affected results are reported
-under both rules where both exist. Twelve filled operational details the design left open (for example orthogonal
-admission mechanics, the RBO persistence of 0.9, LOO and hold-out evaluation details, U scoring and bootstrap mechanics,
-artefact-flag operationalisation, the transcription-factor list, the fill iteration and the R1 tie-break, which affects
-401 of 820 <!-- src: DEVIATIONS.md --> H genes and whose reverse order leaves the primary passing). Three were
-interpretations or implementation gaps: the contradiction rule uses its four named localisation sources regardless of
-admission; the primary assessable count applies the design's lineage-restricted expression rule (646 versus 635
-<!-- src: results/assessability/summary.md -->); and, under the low-yield branch, the top-40-only checks are tier caps,
-so the primary top 40 is pure p_cal order with the implementing agent's "clean-first" list reported as a sensitivity
-analysis. Four were real changes or additions: the PMID-only cluster fallback, set before H was opened after the LOO
-link graph put 2,491 of 2,519 <!-- src: results/calibration/loo_ranker_choice.md --> genes in one component; the
-secondary S20 list, defined before any literature step; the extension of the recall probe to S20 and extra30; and a
-descriptive HPA tissue stratum that was not computed because the data were not obtained. Two were errata with no rule
-change. Judged statements omitted the relationship type to preserve blinding.
+DESIGN.md was not edited after the tag. Twenty-two changes are logged in DEVIATIONS.md <!-- src: DEVIATIONS.md -->, and
+affected results are reported under both rules where both exist. Most were logged before the results they affect were
+computed, but four were not: the R1 tie-break (found by the independent verifier after the primary look), the
+lineage-restricted expression rule behind the 646 versus 635 assessable count (found after the assessability output),
+the pure-p_cal reading of the top-40 fill (decided after the ranked list existed, before any literature step) and the
+module-label crediting in the judge instruction (logged retrospectively during manuscript review). Row dates in
+DEVIATIONS.md are not monotone, and the commits, not the dates, give the order. Thirteen rows fill operational details the
+design left open (for example orthogonal admission mechanics, the RBO persistence of 0.9, LOO and hold-out evaluation
+details, U scoring and bootstrap mechanics, artefact-flag operationalisation, the transcription-factor list, the fill
+iteration, the R1 tie-break, which affects 401 of 820 <!-- src: DEVIATIONS.md --> H genes and whose reverse order
+leaves the primary passing, and the judging instruction). Three were interpretations or implementation gaps: the
+contradiction rule uses its four named localisation sources regardless of admission; the primary assessable count
+applies the design's lineage-restricted expression rule (646 versus 635 <!-- src: results/assessability/summary.md -->);
+and, under the low-yield branch, the top-40-only checks are tier caps, so the primary top 40 is pure p_cal order with the
+implementing agent's "clean-first" list reported as a sensitivity analysis. Four were real changes or additions: the
+PMID-only cluster fallback, set before H was opened after the LOO link graph put 2,491 of 2,519
+<!-- src: results/calibration/loo_ranker_choice.md --> genes in one component; the secondary S20 list, defined before
+any literature step; the extension of the recall probe to S20 and extra30; and a descriptive HPA tissue stratum that was
+not computed because the data were not obtained. Two were errata with no rule change. Judged statements omitted the
+relationship type to preserve blinding. DEVIATIONS promised results "under both rules" for the top-40 fill, but only the
+pure-p_cal top 40 was judged; the clean-first list shares 20 genes with it
+<!-- src: manuscript/figures/source_data/derived_numbers.tsv -->.

@@ -88,7 +88,8 @@ def fmt(k):
             jo = jo.title()
         a_end = "" if auth.endswith(".") else "."
         t_end = "" if ti[-1] in "?!" else "."
-        return f"{auth}{a_end} {ti}{t_end} {jo}. {loc}. doi:{doi}"
+        ref = f"Available from: {doi}" if doi.startswith("http") else f"doi:{doi}"  # no-DOI records cite a stable URL
+        return f"{auth}{a_end} {ti}{t_end} {jo}. {loc}. {ref}"
     r = tsv.get(k) or EXTRA[k]
     url = r["doi_or_pmid"]
     if url.startswith("doi:"):

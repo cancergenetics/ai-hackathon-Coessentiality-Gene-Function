@@ -156,6 +156,9 @@ summaries, see `preregistration/PROVENANCE.md`). **Do not re-run 03 after the fr
 | 52 | `52_judge_analysis.py` | Validation check and primary analysis of blinded judging | `results/m7/judge/analysis_{main,hval}.md` | n/r | no |
 | 60 | `60_figures.py` | Manuscript figures for claims C1-C3 (no new analysis) | `manuscript/figures/Fig1-4.*`, `FigS1-3.*`, `source_data/` | n/r | no |
 | 61 | `61_figure5.py` | Figure 5 and Table 2 for claim C4 (no new judging) | `manuscript/figures/Fig5.*`, `Table2_rediscovery.tsv` | n/r | no |
+| 62 | `62_figS4.py` | S4 Fig: post-review exploratory analyses (reads `results/revision/` only) | `manuscript/figures/FigS4.*`, `source_data/FigS4*.tsv` | n/r | no |
+| 90 | `90_revision_analyses.py` | Post-review exploratory analyses requested by the round-1 referees (A1-A8) | `results/revision/` | n/r | yes |
+| 91 | `91_claims_from_manuscript.py` | Claims table generated from the manuscript's src comments | `results/revision/CLAIMS_preview.tsv` | n/r | no |
 | 70 | `70_report_bundles.py` | Evidence bundles for the ten deep-dive candidates | `reports/data/<gene>/`, `bundle_summary.tsv` | 133 s | yes |
 | 79 | `79_assemble_manuscript.py` | Assemble `manuscript/src/*.md` with keyed citations into `manuscript.md` | `manuscript/manuscript.md` | n/r | no |
 | 80 | `80_build_manuscript.sh` | Render `.md` to `.docx` and `.pdf` | `manuscript/manuscript.docx`, `.pdf` | n/r | no |
@@ -185,10 +188,10 @@ from a script. Their outputs are committed, so they can be inspected.
 | Candidate reports and red-teaming | Ten reports with experiment plans, then adversarial review and revision | `reports/*.md`, `reports/redteam/*.md`, scratch dirs `results/m7/scratch_reports_*` (git-ignored) |
 | Manuscript writing and review | Draft parts, two referee reports, number/reference/reproducibility audits | `manuscript/src/`, `manuscript/drafts/`, `reviews/ms_round1_*.md` |
 
-**Prompts.** The only verbatim prompt committed is the PI brief, `PROMPT.md`. The task prompts given to the L,
-judge, recall-probe, report-writer and red-team agents were **not committed**, and no seeds or temperatures
-were recorded for LLM calls. Blinding therefore cannot be audited from prompts alone (the packet design is in
-`scripts/50_m7_prep.py`, `scripts/51_judge_packets.py` and `DESIGN.md` §6.4). `config/agent_scopes.yaml` is a
+**Prompts.** The PI brief is `PROMPT.md`. The task prompts given to the curation-lag auditor, literature agent L,
+recall probes, judges, adjudicator and red-team reviewers were committed after manuscript review, verbatim, in
+`docs/AGENT_PROMPTS.md` (with the model used for each role). No seeds or temperatures were recorded for LLM calls.
+The packet design is in `scripts/50_m7_prep.py`, `scripts/51_judge_packets.py` and `DESIGN.md` §6.4. `config/agent_scopes.yaml` is a
 template for agent write scopes, and `results/agent_runs.tsv` has one row (model ID `claude-sonnet-5-5`), so
 it is not a complete record of agent runs. These agent steps are not reproducible in the strict sense.
 
@@ -223,6 +226,7 @@ inside the tool and not overridden. LLM steps have no recorded seeds.
 ```bash
 .env/bin/python -I scripts/60_figures.py      # Fig1-4, FigS1-3 -> manuscript/figures/
 .env/bin/python -I scripts/61_figure5.py      # Fig5 and Table 2
+.env/bin/python -I scripts/62_figS4.py        # S4 Fig (post-review analyses; reads results/revision/)
 .env/bin/python -I scripts/79_assemble_manuscript.py   # manuscript/src/*.md -> manuscript/manuscript.md
 bash scripts/80_build_manuscript.sh           # .docx and .pdf (pandoc; Chrome or xelatex for PDF)
 ```

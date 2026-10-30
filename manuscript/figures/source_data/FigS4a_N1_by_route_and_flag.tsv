@@ -1,0 +1,9 @@
+population	stratifier	stratum	n	n_N1	N1_rate	wilson_lo	wilson_hi
+random 50 (audit)	entry route	D3 only	34	19	0.558824	0.394539	0.711165
+random 50 (audit)	entry route	D1&D2	16	2	0.125	0.0349775	0.360228
+random 50 (audit)	definition-artefact flag	flag	22	13	0.590909	0.387348	0.767442
+random 50 (audit)	definition-artefact flag	no flag	28	8	0.285714	0.15254	0.470593
+candidates (L)	entry route	D3 only	80	58	0.725	0.618559	0.810822
+candidates (L)	entry route	D1&D2	10	1	0.1	0.0178762	0.40415
+candidates (L)	definition-artefact flag	flag	65	49	0.753846	0.636942	0.84242
+candidates (L)	definition-artefact flag	no flag	25	10	0.4	0.234033	0.592605

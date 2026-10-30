@@ -24,10 +24,23 @@ as the plasmalogen desaturase and C15orf57/CCDC32 in AP-2-mediated endocytosis [
 Werner2020], C16orf72/HAPSTR1 in stress signalling [Amici2022], C14orf80 and C16orf59 (TEDC1/2) with δ/ε-tubulin
 [Pan2018], and C7orf26/INTS15 as an Integrator subunit [Pan2022; Offley2023]. Network construction has also improved,
 through covariance whitening and generalised least squares (GLS) [Wainberg2021; Gheorghe2022], dimensionality reduction
-and normalisation [Hassan2023; Pan2022] and per-gene balancing [Rohde2025]. The method used here, zavg_BEF, averages
-three label-free views of the DepMap gene-effect matrix: whitened profile similarity, overlap of genome-wide partner
-lists, and proximity in a graph embedding. On co-complex pairs held out from its development it ranked pairs better than
-GLS [Coessentiality_tool].
+and normalisation [Hassan2023; Pan2022]; related balancing of correlation networks has been developed for predicting
+gene buffering [Rohde2025]. The method used here, zavg_BEF, averages three label-free views of the DepMap gene-effect
+matrix: whitened profile similarity, overlap of genome-wide partner lists, and proximity in a graph embedding. On
+co-complex pairs held out from its development it ranked pairs better than GLS [Coessentiality_tool]. We treat it as one
+implementation of co-essentiality and compare it throughout with GLS and Pearson correlation, so that the results
+speak to co-essentiality rather than to one tool. Besides shared dependency, DepMap also records co-*advantage*: pairs
+of genes whose knockout increases fitness in the same cell lines, as expected for members of one growth-restraining
+pathway.
+
+Co-essentiality is now one of several genome-scale sources of function for uncharacterised genes. Genome-scale
+Perturb-seq groups genes by the transcriptional consequences of their knockdown and placed C7orf26 in Integrator
+[Replogle2022]; affinity-purification and cell-imaging maps such as hu.MAP 3.0 and OpenCell assign proteins to complexes
+and compartments [Fischer2025; Cho2022]; proteome-wide AlphaFold screens propose direct interactions [Burke2023;
+Schmid2025]; phylogenetic modelling now propagates function to most human genes [Feuermann2025]; and machine-learning
+GO predictors are benchmarked in the CAFA challenges [Zhou2019]. A useful evaluation of co-essentiality must therefore
+ask what it adds to these sources, especially to homology and physical interaction data, and not only whether it beats
+chance.
 
 Four things are missing before co-essentiality predictions for uncharacterised genes can be used with known confidence.
 
@@ -47,7 +60,10 @@ mitoribosome supplied about 76% <!-- src: LITERATURE.md --> of true-positive pai
 prospective in form: take genes that were uncharacterised at a past date, predict their function without the
 annotations added since, and score the predictions against those later annotations. This is the design of the Critical
 Assessment of Functional Annotation (CAFA) [Radivojac2013; Jiang2016; Zhou2019], made possible by archived GO releases
-[GO_archive_web]. To our knowledge it has not been applied to co-essentiality function prediction.
+[GO_archive_web]. Benchmarks of co-essentiality networks have scored them against current reference annotations or
+complexes [Rahman2021; Hassan2023], and genetic-interaction maps have been compared with them [Billmann2026]; in the
+studies we reviewed we did not find a time-split test of co-essentiality function predictions against later
+experimental annotation.
 
 **Calibration.** Co-essentiality scores are ranking scores, not probabilities [Coessentiality_tool]. An experimentalist
 choosing which prediction to test needs to know how often a prediction of a given strength turns out to be right, and a
@@ -56,12 +72,12 @@ or an enrichment p-value; both need a model fitted against an external outcome a
 
 **An honest census.** Many uncharacterised genes are poor subjects for co-essentiality. They are less often essential,
 often not expressed in cancer cell lines, and often buffered by paralogues [Dede2020; DeKegel2019]. A flat knockout
-profile carries no network information [Billmann2026]. Genes in tandem clusters are exposed to proximity and
+profile carries no co-essentiality information, however the network is built. Genes in tandem clusters are exposed to proximity and
 copy-number artefacts, because Cas9 cutting causes chromosome-arm truncations and amplified regions give correlated
 effects [Lazar2024; Meyers2017; Kim2019]. The fraction of the uncharacterised genome to which co-essentiality can speak
 at all is rarely reported, so the reach of the approach is hard to judge.
 
-Here we apply zavg_BEF to DepMap CRISPR gene effects to predict functions for a pre-registered list of uncharacterised
+Here we apply zavg_BEF, with GLS and Pearson as comparators, to DepMap CRISPR gene effects to predict functions for a pre-registered list of uncharacterised
 human genes, and we address the four gaps directly. The list was built from annotation data alone and frozen, together
 with the full analysis design, under a cryptographic hash and git tags before any pairwise DepMap quantity was computed.
 The design fixed four claims, and the decision rule for each, before the analyses that test them; each claim is reported
@@ -82,5 +98,8 @@ whichever way it falls.
 
 Orthogonal datasets (physical interaction, co-abundance, localisation, perturbation and structure data) entered only
 through a pre-specified support test, and only if they recovered known complexes on genes outside the uncharacterised
-list. The study was planned and run by a team of AI agents under a human-specified goal; the safeguards this required
-are part of the Methods and are assessed in the Discussion.
+list. The main contribution is the evaluation standard (pre-registration, a temporal hold-out, calibration and
+circularity control) rather than a new predictor. The study was planned and run by a team of AI agents under a
+human-specified goal; the safeguards this required, and their gaps, are part of the Methods and are assessed in the
+Discussion. After peer review we added analyses requested by the referees; they are labelled [post-review exploratory]
+and change no pre-specified result.

@@ -1,0 +1,4 @@
+key	value	note	inputs
+novelty_kim_edge_or_cluster_top_40	9/40	Kim 2019 network edge OR shared MCL cluster with >= 1 top-10 partner	results/revision/a2_novelty_overlap.tsv
+novelty_kim_edge_or_cluster_S20	17/20	Kim 2019 network edge OR shared MCL cluster with >= 1 top-10 partner	results/revision/a2_novelty_overlap.tsv
+novelty_kim_edge_or_cluster_10_report_genes	2/10	Kim 2019 network edge OR shared MCL cluster with >= 1 top-10 partner	results/revision/a2_novelty_overlap.tsv

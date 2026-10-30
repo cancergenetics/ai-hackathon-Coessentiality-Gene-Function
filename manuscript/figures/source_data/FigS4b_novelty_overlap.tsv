@@ -1,0 +1,25 @@
+resource	column	set	k	n	fraction
+hu.MAP 3.0 co-complex	humap_cocomplex_top10	top 40	17	40	0.425
+hu.MAP 3.0 co-complex	humap_cocomplex_top10	S20	16	20	0.8
+hu.MAP 3.0 co-complex	humap_cocomplex_top10	10 report genes	4	10	0.4
+Predictomes SPOC ≥ 0.5	predictomes_spoc_ge0p5_top10	top 40	20	40	0.5
+Predictomes SPOC ≥ 0.5	predictomes_spoc_ge0p5_top10	S20	14	20	0.7
+Predictomes SPOC ≥ 0.5	predictomes_spoc_ge0p5_top10	10 report genes	5	10	0.5
+Wainberg 2021 GLS pair	wainberg_gls_pair_top10	top 40	19	40	0.475
+Wainberg 2021 GLS pair	wainberg_gls_pair_top10	S20	19	20	0.95
+Wainberg 2021 GLS pair	wainberg_gls_pair_top10	10 report genes	6	10	0.6
+Wainberg 2021 module (d ≥ 0.5)	wainberg_module_d_ge0p5_with_top10	top 40	22	40	0.55
+Wainberg 2021 module (d ≥ 0.5)	wainberg_module_d_ge0p5_with_top10	S20	20	20	1.0
+Wainberg 2021 module (d ≥ 0.5)	wainberg_module_d_ge0p5_with_top10	10 report genes	8	10	0.8
+Wainberg 2021 function prediction	wainberg_sd3	top 40	3	40	0.075
+Wainberg 2021 function prediction	wainberg_sd3	S20	0	20	0.0
+Wainberg 2021 function prediction	wainberg_sd3	10 report genes	3	10	0.3
+Kim 2019 edge or cluster	kim_any	top 40	9	40	0.225
+Kim 2019 edge or cluster	kim_any	S20	17	20	0.85
+Kim 2019 edge or cluster	kim_any	10 report genes	2	10	0.2
+any co-essentiality catalogue	coessentiality_catalogue_prior	top 40	27	40	0.675
+any co-essentiality catalogue	coessentiality_catalogue_prior	S20	20	20	1.0
+any co-essentiality catalogue	coessentiality_catalogue_prior	10 report genes	9	10	0.9
+any prior resource	any_prior	top 40	34	40	0.85
+any prior resource	any_prior	S20	20	20	1.0
+any prior resource	any_prior	10 report genes	9	10	0.9

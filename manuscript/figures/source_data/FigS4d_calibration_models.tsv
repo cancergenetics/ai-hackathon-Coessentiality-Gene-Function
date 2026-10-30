@@ -1,0 +1,4 @@
+model	events	n_params_excl_intercept	events_per_param	slope	slope_wald_lo	slope_wald_hi	slope_boot_lo	slope_boot_hi	c	c_boot_lo	c_boot_hi	brier	brier_ref	brier_skill	sigma_on_frozen_support	top40_overlap_with_primary
+frozen §3.7 model (4 covariates + family)	24	7	3.42857	0.819199	0.511793	1.12661	0.592685	1.09006	0.85536	0.804922	0.902842	0.0293867	0.0300087	0.0207295		
+zmean only	24	1	24.0	0.928874	0.604519	1.25323	0.589233	1.28116	0.835053	0.74012	0.906372	0.0288956	0.0300087	0.0370926	41.5836	7.0
+zmean + coverage	24	2	12.0	0.886539	0.567342	1.20574	0.618713	1.17135	0.832113	0.76636	0.891133	0.0289178	0.0300087	0.0363549	38.6341	14.0
