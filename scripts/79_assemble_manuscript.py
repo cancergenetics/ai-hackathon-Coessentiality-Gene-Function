@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Assemble manuscript parts (keyed citations) into manuscript.md with numbered citations and a PLOS-style
-reference list. Metadata: Crossref records fetched by cr.py (old_meta.tsv, new_meta.tsv); fallback to the TSV."""
+reference list. Metadata: Crossref records fetched by scripts/78_crossref_metadata.py (old_meta.tsv, new_meta.tsv); fallback to the TSV."""
 import csv, re, sys
 from pathlib import Path
 
