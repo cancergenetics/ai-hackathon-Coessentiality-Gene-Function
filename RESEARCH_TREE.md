@@ -4,6 +4,20 @@ Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · 
 
 ## Status summary (latest first)
 
+### M7a — blinded literature validation (2026-10-30)
+Closed-book recall probe: 52/90 candidates "recognised" by the LLM (mostly complex members). Blind literature screen
+(agent L, 100 genes, verbatim-checked evidence): 69 N1 / 24 N2 / 7 N3 — confirming heavy curation lag among
+database-"uncharacterised" genes. Judge validation on 10 H genes passed (9/10 real, 1/30 decoys). Main blinded judging
+(2 judges + adjudicator, κ = 0.975): **primary top 40: 18/40 real predictions supported vs 3/120 decoys, exact
+sign-flip p = 0.0002**; S20 (secondary, uncalibrated strong signals): 19/20 vs 2/60 (p = 2e-6); extra30 (lower p_cal,
+calibration check): 1/30 — support tracks p_cal. Support is concentrated in N1 genes (16/31) — the predictions mostly
+recover published-but-uncurated functions; N2 2/7, N3 0/2.
+
+**Decision note D6.** Paper framing: co-essentiality + calibration recovers function for curation-lag genes with high
+specificity against decoys; genuinely novel predictions (N2/N3) are hypotheses with modest prior support. Deep-dive
+reports (10 genes, fixed before judging) proceed. Caveat to report: judges credited module-label matches ("process or
+module" rule), applied identically to decoys.
+
 ### M6 — predictions for U: low-yield branch (2026-10-30)
 All 4,271 scorable U genes were scored with the H code path (4,137 have a reportable top term). Calibrated
 probabilities are low everywhere: max p_cal 0.141, so **no gene reaches Tier A (≥0.5) or Tier B (≥0.3)** — the
@@ -139,5 +153,8 @@ pre-registered list is committed and its hash recorded here.
 - [x] M6 Predictions for 4,137 U genes; max p_cal 0.141 → low-yield branch; top 40 by p_cal; S20 secondary list
   - [-] Orthogonal support barely separates real from null predictions (0.32 vs 0.28 vs 0.22)
 - [~] M7 Literature deep-dives + experiments for top candidates; per-candidate reports
+  - [!] Blinded judging primary PASS: 18/40 vs 3/120 decoys, p = 0.0002; S20 19/20; extra30 1/30
+  - [x] L screen 100 genes: 69 N1 / 24 N2 / 7 N3; recall probe 52/90
+  - [~] Deep-dive reports (10 genes)
 - [ ] M8 Manuscript, figures, references; review rounds
 - [ ] M9 REPORT.md, final LESSONS pruning
