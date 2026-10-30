@@ -1,0 +1,12 @@
+gene	term	partners	classes	type	p_cal	flags
+TRAPPC5	Golgi vesicle transport	TRAPPC3, TRAPPC1, TRAPPC11	PALG	a	0.114	TP53, probe_recognised
+RBM34	DNA-templated transcription elongation	WDR89, DDX31, PWP1	PAL	a	0.1027	D2_not_replicated, TP53, K50_diff
+PLEKHH3	regulation of phosphatidylinositol 3-kinase/protein kinase B signal transduction	PLEKHA1, PTEN, PTPN13	none	d	0.07571	
+CCDC71L	epigenetic regulation of gene expression	SUZ12, EED, BMI1	none	d	0.06352	leaveout_fail, K10_diff
+TM2D2	response to endoplasmic reticulum stress	JOSD1, AUP1, STUB1	none	c	0.05029	D2_not_replicated
+TM2D1	response to endoplasmic reticulum stress	JOSD1, AUP1, STUB1	none	c	0.04518	probe_recognised
+C5orf34	regulation of organelle assembly	SPICE1, MIIP, CCDC77	none	b	0.04426	D2_not_replicated, TP53
+BICRAL	transcription coregulator binding	SMARCD1, BRD9, CTBP1	AL	a	0.04146	leaveout_fail, K10_diff, probe_recognised
+INAFM1	polyubiquitin modification-dependent protein binding	NFE2L1, NGLY1, DDI2	none	d	0.03669	leaveout_fail, K50_diff
+ANKRD52	regulatory ncRNA-mediated gene silencing	AGO2, XPO5, DICER1	none	d	0.141	probe_recognised
+CHIC2	response to endoplasmic reticulum stress	STUB1, TM2D1, TM2D2	G	d	0.04721	leaveout_fail, D2_not_replicated
