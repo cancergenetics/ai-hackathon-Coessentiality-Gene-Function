@@ -4,6 +4,24 @@ Legend: [ ] planned · [~] in progress · [x] done · [-] abandoned/negative · 
 
 ## Status summary (latest first)
 
+### M8 — manuscript v1 reviewed; revision in progress (2026-10-31) — RESUME HERE
+Manuscript v1 (manuscript/manuscript.md/.pdf/.docx; source manuscript/src/, built by scripts/79 + 80) went through
+review round 1 (reviews/ms_round1_*.md): domain and statistics referees → major revision; numbers 948/953 match;
+references 99/100 OK; reproducibility audit (README added; docs/AGENT_PROMPTS.md added). Post-review exploratory
+analyses are committed (results/revision/SUMMARY.md): null-adjusted assessable ≈ 243 (4.9% of U); unconditional
+Σp_cal ≈ 4.9; curation lag concentrated in D3-only entry route (56% vs 13% N1); 34/40 top-40 genes have prior
+catalogue support (Wainberg 2021 already predicted CCDC71L, C5orf34, INAFM1; only PLEKHH3 has none); term-only judging
+16/40, p = 7.1e-4; homology-else-zavg 0.224.
+
+**Interrupted (usage limit):** two agents were stopped mid-task — (1) manuscript text revision + reviews/ms_round1_response.md
++ FigS4 (scripts/62); (2) report novelty corrections (results/revision/report_novelty_corrections.md). Any uncommitted
+edits they left in manuscript/src/, reports/, scripts/62_figS4.py are UNREVIEWED: inspect `git status`/`git diff`, then
+finish or `git restore`. LOOKS.md row for the post-review H look needs its commit filled.
+
+**Remaining:** finish the two revision tasks; rebuild manuscript; review round 2 (referees re-review + numbers check);
+REPORT.md (approach, follow-ups, limitations, remaining ideas); final LESSONS pruning; audit_order M9 by a fresh agent;
+final commit. Optional: deposit repo (Zenodo) — needs the user.
+
 ### M7b — ten deep-dive candidate reports, red-teamed (2026-10-30)
 Ten reports (selection fixed before judging) were written from machine-generated evidence bundles, then reviewed by
 independent red-team agents (all ACCEPT WITH REVISIONS; zero fabricated citations across ~300 verified spans, but each
@@ -175,5 +193,5 @@ pre-registered list is committed and its hash recorded here.
   - [!] Blinded judging primary PASS: 18/40 vs 3/120 decoys, p = 0.0002; S20 19/20; extra30 1/30
   - [x] L screen 100 genes: 69 N1 / 24 N2 / 7 N3; recall probe 52/90
   - [x] Deep-dive reports (10 genes): written, red-teamed, revised
-- [~] M8 Manuscript, figures, references; review rounds
+- [~] M8 Manuscript v1 + review round 1 done; revision interrupted (see top)
 - [ ] M9 REPORT.md, final LESSONS pruning
