@@ -1,0 +1,12 @@
+item	claim_paraphrase	source	year	evidence_level	depmap_derived
+1	Putative ankyrin-repeat regulatory subunit (ARS) of protein phosphatase 6 that may confer phosphoprotein substrate recognition	UniProt Q8NB46	2026	functional	no
+2	PP6 holoenzyme is a heterotrimer of catalytic subunit, SAPS-domain subunit (PP6R) and ARS subunit; interacts with PPP6R1	UniProt Q8NB46	2026	functional	no
+3	Ankrd52 co-purifies with PP6 catalytic subunit and SAPS subunit PP6R1 (FLAG-PP6R1 pull-down + MS); ankyrin subunits proposed to specify PP6 function	PMID:18186651	2008	functional	no
+4	ANKRD52-PPP6C phosphatase complex dephosphorylates AGO2 (S824-S834) after CSNK1A1 phosphorylation; CRISPR screen identified it as a miRNA-pathway regulator	PMID:28114302	2017	functional	no
+5	Inactivation of AGO2 phosphorylation cycle impairs miRNA silencing globally	PMID:28114302	2017	functional	no
+6	Patient ANKRD52 mutations dampen JAK-STAT-IFNg signalling and antigen presentation via loss of miR-155 silencing of SOCS1 (CRISPR screen in mouse tumour model)	PMID:34853298	2021	functional	no
+7	TAZ negatively regulates ANKRD52 (tumour suppressor) promoting PAK1 dephosphorylation in lung adenocarcinoma	PMID:33096142	2021	functional	no
+8	ANKRD52 is a scaffold subunit of PP6 in colorectal cancer stemness (PP6 study)	PMID:39014521	2024	mention	no
+9	Pan-cancer expression/immune analysis; ANKRD52 described as PP6 regulatory component	PMID:38296907	2024	mention	no
+10	ANKRD52-PPP6C listed among kinases/phosphatases acting on miR biogenesis machinery	PMID:37762595	2023	mention	no
+11	COLLISION (locus-level, non-protein): circular intronic lncRNA ci-ankrd52 positively regulates Pol II transcription	PMID:24035497	2013	mention	no

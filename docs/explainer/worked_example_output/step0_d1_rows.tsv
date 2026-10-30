@@ -1,0 +1,4 @@
+hgnc_id	go_id	term_name	aspect	evidence	reference	generic
+HGNC:26614	GO:0005515	protein binding	F	IPI	PMID:18186651	True
+HGNC:26614	GO:0005515	protein binding	F	IPI	PMID:24255178	True
+HGNC:26614	GO:0005515	protein binding	F	IPI	PMID:35271311	True

@@ -1,0 +1,6 @@
+gene	zavg_BEF	rank_without_exclusions	location	arm	reason
+TARBP2	13.4243	9		12q	same chromosome arm (12q)
+DUSP6	5.31378	20		12q	same chromosome arm (12q)
+ANKRD28	2.86793	84		3p	Ensembl paralogue (would not have entered the top 25 anyway)
+ANKRD44	-0.624278	17306		2q	Ensembl paralogue (would not have entered the top 25 anyway)
+ANKRD55	-0.121002	9818		5q	Ensembl paralogue (would not have entered the top 25 anyway)

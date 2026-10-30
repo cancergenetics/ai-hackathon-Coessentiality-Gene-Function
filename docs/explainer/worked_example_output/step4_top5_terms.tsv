@@ -1,0 +1,6 @@
+rank	go_id	term_name	S	n_sup	x	size	p_hyper	family	supporting_partners
+1	GO:0031047	regulatory ncRNA-mediated gene silencing	158.114	8	8	62	5.51825e-14	other	AGO2,XPO5,DICER1,DROSHA,TNRC6A,DGCR8,TNRC6B,DDX6
+2	GO:0016441	post-transcriptional gene silencing	115.689	6	6	32	1.04461e-11	other	AGO2,XPO5,DICER1,TNRC6A,TNRC6B,DDX6
+3	GO:0035194	regulatory ncRNA-mediated post-transcriptional gene silencing	92.0029	5	5	25	4.6603e-10	other	AGO2,XPO5,TNRC6A,TNRC6B,DDX6
+4	GO:0035195	miRNA-mediated post-transcriptional gene silencing	92.0029	5	5	24	3.73235e-10	other	AGO2,XPO5,TNRC6A,TNRC6B,DDX6
+5	GO:0035196	miRNA processing	91.8747	4	4	31	1.95618e-07	other	AGO2,DICER1,DROSHA,DGCR8

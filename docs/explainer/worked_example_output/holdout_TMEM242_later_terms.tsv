@@ -1,0 +1,6 @@
+go_id	term_name	size_t0	in_primary_window_5_200	support_pmids	circularity_flagged	rank_at_t0
+GO:0007005	mitochondrion organization	204	False	33753518	False	1
+GO:0033108	mitochondrial respiratory chain complex assembly	81	True	33753518	False	64
+GO:0033615	mitochondrial proton-transporting ATP synthase complex assembly	3	False	33753518	False	65
+GO:0043461	proton-transporting ATP synthase complex assembly	3	False	33753518	False	66
+GO:0070071	proton-transporting two-sector ATPase complex assembly	6	True	33753518	False	67

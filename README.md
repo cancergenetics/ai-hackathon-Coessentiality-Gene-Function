@@ -31,6 +31,10 @@ commit `3c684c9`, used read-only) to DepMap 26Q3 CRISPR screens. It pre-register
 genes (U) before looking at any pairwise DepMap information, calibrates the predictor on a temporal hold-out (H),
 and checks the top candidates by blinded literature judging.
 
+## Start here: plain-language explainer
+
+[`docs/explainer/`](docs/explainer/README.md) explains what the method does (with a worked example on real data, ANKRD52), how the agents arrived at it (eight turning points), and what was learned. [`docs/explainer/explainer.html`](docs/explainer/explainer.html) is the same content as one self-contained interactive page; download it and open it in a browser.
+
 ## Repository map
 
 | Path | Content |

@@ -1,0 +1,10 @@
+source	cls	kind	measured	n_members	n_measured	stat	null_mean	p	note	cls_h	kind_h	member_hits	n_edges_of_gene	coessential_neighbours_with_edge
+P_group	P	binary	True	62	62	1	0.327	0.282717		P	binary	TNRC6B	45	TNRC6B,PPP6C,PPP6R1,PPP6R3
+HCM_SAINT	P	binary	True	62	48	0	0.035	1		P	binary		7	
+ProteomeHD	A	continuous	True	62	38	0.621358	0.523622	0.013986		A	continuous	top members by percentile in the gene's row: MOV10 0.976, ZC3H7A 0.960, SPOUT1 0.946, DICER1 0.923, PUM1 0.919		top N(g) partners by percentile: PPP6R3 0.961, DICER1 0.923, XPO5 0.805, PPP6R1 0.789, PPP6C 0.787
+CCLE_proteomics	A	continuous	True	62	59	0.538593	0.523119	0.328671		A	continuous	top members by percentile in the gene's row: EIF4G1 0.990, EIF4E2 0.971, TSNAX 0.971, TSN 0.963, BCDIN3D 0.942		top N(g) partners by percentile: PPP6C 0.997, PTPA 0.991, PPP6R3 0.980, PPP6R1 0.947, CYB5R4 0.918
+HPA	L	localisation	True	62	55	0.709091	0.568855	0.020979		L	localisation	gene compartments: ['mitochondrion', 'nucleus']		
+PerturbSeq_K562_GW	G	continuous	False	62	0				g not measured					
+PerturbSeq_K562_essential	G	continuous	False	62	0				g not measured					
+PerturbSeq_RPE1_essential	G	continuous	False	62	0				g not measured					
+Burke2023_AF2	S	pair_binary	False	62	0				no measured member	S	pair_binary		0	

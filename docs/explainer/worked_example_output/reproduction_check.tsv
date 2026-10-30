@@ -1,0 +1,160 @@
+step	quantity	this_run	committed	source	match
+0	D1 (no informative BP/MF term with experimental evidence)	True	True	preregistration/uncharacterised_genes.tsv	yes
+0	n_d1_rows	3	3	preregistration/uncharacterised_genes.tsv	yes
+0	n_d1_terms_generic	1	1	preregistration/uncharacterised_genes.tsv	yes
+1	cell lines with a value	1361	1361	preregistration/uncharacterised_genes.tsv	yes
+1	mean gene effect	-0.24274565636789447	-0.242746	preregistration/uncharacterised_genes.tsv	yes
+1	SD of gene effect	0.23123126452027173	0.231231	preregistration/uncharacterised_genes.tsv	yes
+1	fraction of lines < -0.5	0.12417340191036003	0.124173	results/ledger/u_predictions.tsv	yes
+1	expression: fraction of models log2(TPM+1) >= 1	0.9985915492957746	0.998592	preregistration/uncharacterised_genes.tsv	yes
+1	expression: median log2(TPM+1)	3.9360393499999997	3.93604	preregistration/uncharacterised_genes.tsv	yes
+1	expressed flag	True	True	preregistration/uncharacterised_genes.tsv	yes
+2	N(g) (25 neighbours, order) recomputed from the matrix == stored full_top100.npz	identical	identical	data/derived/neighbours/full_top100.npz	yes
+2	partner 1 symbol	AGO2	AGO2	results/ledger/u_partners.tsv	yes
+2	partner 1 (AGO2) zavg_BEF	25.763521194458008	25.7635	results/ledger/u_partners.tsv	yes
+2	partner 1 (AGO2) z_B	43.282240544965184	43.2822	results/ledger/u_partners.tsv	yes
+2	partner 1 (AGO2) z_E	20.59343184833158	20.5934	results/ledger/u_partners.tsv	yes
+2	partner 1 (AGO2) z_F	13.414890949402189	13.4149	results/ledger/u_partners.tsv	yes
+2	partner 2 symbol	XPO5	XPO5	results/ledger/u_partners.tsv	yes
+2	partner 2 (XPO5) zavg_BEF	24.397741317749023	24.3977	results/ledger/u_partners.tsv	yes
+2	partner 2 (XPO5) z_B	42.89914166633092	42.8991	results/ledger/u_partners.tsv	yes
+2	partner 2 (XPO5) z_E	20.18692670796518	20.1869	results/ledger/u_partners.tsv	yes
+2	partner 2 (XPO5) z_F	10.107152878203685	10.1072	results/ledger/u_partners.tsv	yes
+2	partner 3 symbol	DICER1	DICER1	results/ledger/u_partners.tsv	yes
+2	partner 3 (DICER1) zavg_BEF	23.685842514038086	23.6858	results/ledger/u_partners.tsv	yes
+2	partner 3 (DICER1) z_B	41.5147187429106	41.5147	results/ledger/u_partners.tsv	yes
+2	partner 3 (DICER1) z_E	19.844818928669273	19.8448	results/ledger/u_partners.tsv	yes
+2	partner 3 (DICER1) z_F	9.697991355349151	9.69799	results/ledger/u_partners.tsv	yes
+2	partner 4 symbol	DROSHA	DROSHA	results/ledger/u_partners.tsv	yes
+2	partner 4 (DROSHA) zavg_BEF	22.37240982055664	22.3724	results/ledger/u_partners.tsv	yes
+2	partner 4 (DROSHA) z_B	40.07942921358938	40.0794	results/ledger/u_partners.tsv	yes
+2	partner 4 (DROSHA) z_E	19.989830524774945	19.9898	results/ledger/u_partners.tsv	yes
+2	partner 4 (DROSHA) z_F	7.0479692517620345	7.04797	results/ledger/u_partners.tsv	yes
+2	partner 5 symbol	TNRC6A	TNRC6A	results/ledger/u_partners.tsv	yes
+2	partner 5 (TNRC6A) zavg_BEF	20.99909019470215	20.9991	results/ledger/u_partners.tsv	yes
+2	partner 5 (TNRC6A) z_B	36.58918432265816	36.5892	results/ledger/u_partners.tsv	yes
+2	partner 5 (TNRC6A) z_E	19.844448315591762	19.8444	results/ledger/u_partners.tsv	yes
+2	partner 5 (TNRC6A) z_F	6.563638020255024	6.56364	results/ledger/u_partners.tsv	yes
+2	partner 6 symbol	DGCR8	DGCR8	results/ledger/u_partners.tsv	yes
+2	partner 6 (DGCR8) zavg_BEF	20.052946090698242	20.0529	results/ledger/u_partners.tsv	yes
+2	partner 6 (DGCR8) z_B	34.49820109615945	34.4982	results/ledger/u_partners.tsv	yes
+2	partner 6 (DGCR8) z_E	19.247468640669524	19.2475	results/ledger/u_partners.tsv	yes
+2	partner 6 (DGCR8) z_F	6.413166457799005	6.41317	results/ledger/u_partners.tsv	yes
+2	partner 7 symbol	TNRC6B	TNRC6B	results/ledger/u_partners.tsv	yes
+2	partner 7 (TNRC6B) zavg_BEF	16.27482795715332	16.2748	results/ledger/u_partners.tsv	yes
+2	partner 7 (TNRC6B) z_B	28.056346082119347	28.0563	results/ledger/u_partners.tsv	yes
+2	partner 7 (TNRC6B) z_E	17.100100290768136	17.1001	results/ledger/u_partners.tsv	yes
+2	partner 7 (TNRC6B) z_F	3.6680369432069693	3.66804	results/ledger/u_partners.tsv	yes
+2	partner 8 symbol	PPP6C	PPP6C	results/ledger/u_partners.tsv	yes
+2	partner 8 (PPP6C) zavg_BEF	13.619718551635742	13.6197	results/ledger/u_partners.tsv	yes
+2	partner 8 (PPP6C) z_B	20.850272352644357	20.8503	results/ledger/u_partners.tsv	yes
+2	partner 8 (PPP6C) z_E	11.75721301109336	11.7572	results/ledger/u_partners.tsv	yes
+2	partner 8 (PPP6C) z_F	8.251670737981025	8.25167	results/ledger/u_partners.tsv	yes
+2	partner 9 symbol	CNOT9	CNOT9	results/ledger/u_partners.tsv	yes
+2	partner 9 (CNOT9) zavg_BEF	10.963414192199707	10.9634	results/ledger/u_partners.tsv	yes
+2	partner 9 (CNOT9) z_B	14.582838944564926	14.5828	results/ledger/u_partners.tsv	yes
+2	partner 9 (CNOT9) z_E	13.74693283782605	13.7469	results/ledger/u_partners.tsv	yes
+2	partner 9 (CNOT9) z_F	4.560471537970825	4.56047	results/ledger/u_partners.tsv	yes
+2	partner 10 symbol	PPP6R1	PPP6R1	results/ledger/u_partners.tsv	yes
+2	partner 10 (PPP6R1) zavg_BEF	7.544394016265869	7.54439	results/ledger/u_partners.tsv	yes
+2	partner 10 (PPP6R1) z_B	8.876144904663803	8.87614	results/ledger/u_partners.tsv	yes
+2	partner 10 (PPP6R1) z_E	8.519754230974216	8.51975	results/ledger/u_partners.tsv	yes
+2	partner 10 (PPP6R1) z_F	5.237282582419976	5.23728	results/ledger/u_partners.tsv	yes
+3	R(g) split-half reproducibility	0.472	0.472	results/assessability/assessability_U.tsv	yes
+3	mean R0 over 200 matched genes	0.00368	0.00368	results/assessability/assessability_U.tsv	yes
+3	max R0	0.2	0.2	results/assessability/assessability_U.tsv	yes
+3	#{R0 >= R}	0	0.0	results/assessability/assessability_U.tsv	yes
+3	empirical p	0.004975124378109453	0.00497512	results/assessability/assessability_U.tsv	yes
+3	assessable	True	True	results/assessability/assessability_U.tsv	yes
+3	R(g) used by the ledger	0.472	0.472	results/ledger/u_predictions.tsv	yes
+4	top-5 term 1	GO:0031047	GO:0031047	results/ledger/u_top5.tsv	yes
+4	top-5 term 1 S	158.11404991149902	158.114	results/ledger/u_top5.tsv	yes
+4	top-5 term 1 supporting partners	8	8	results/ledger/u_top5.tsv	yes
+4	top-5 term 2	GO:0016441	GO:0016441	results/ledger/u_top5.tsv	yes
+4	top-5 term 2 S	115.68869400024414	115.689	results/ledger/u_top5.tsv	yes
+4	top-5 term 2 supporting partners	6	6	results/ledger/u_top5.tsv	yes
+4	top-5 term 3	GO:0035194	GO:0035194	results/ledger/u_top5.tsv	yes
+4	top-5 term 3 S	92.00285148620605	92.0029	results/ledger/u_top5.tsv	yes
+4	top-5 term 3 supporting partners	5	5	results/ledger/u_top5.tsv	yes
+4	top-5 term 4	GO:0035195	GO:0035195	results/ledger/u_top5.tsv	yes
+4	top-5 term 4 S	92.00285148620605	92.0029	results/ledger/u_top5.tsv	yes
+4	top-5 term 4 supporting partners	5	5	results/ledger/u_top5.tsv	yes
+4	top-5 term 5	GO:0035196	GO:0035196	results/ledger/u_top5.tsv	yes
+4	top-5 term 5 S	91.87471961975098	91.8747	results/ledger/u_top5.tsv	yes
+4	top-5 term 5 supporting partners	4	4	results/ledger/u_top5.tsv	yes
+4	top term	GO:0031047	GO:0031047	results/ledger/u_predictions.tsv	yes
+4	top term S	158.11404991149902	158.114	results/ledger/u_predictions.tsv	yes
+4	top term size (per query)	62	62.0	results/ledger/u_predictions.tsv	yes
+4	top term hypergeometric p	5.518247845635025e-14	5.51825e-14	results/ledger/u_predictions.tsv	yes
+4	number of reportable terms (>= 2 supporting partners)	45	45	results/ledger/u_predictions.tsv	yes
+4	S = sum of positive z of supporting partners	158.11404991149902	158.114	results/ledger/u_predictions.tsv	yes
+4	partner 1 supports top term	True	True	results/ledger/u_partners.tsv	yes
+4	partner 2 supports top term	True	True	results/ledger/u_partners.tsv	yes
+4	partner 3 supports top term	True	True	results/ledger/u_partners.tsv	yes
+4	partner 4 supports top term	True	True	results/ledger/u_partners.tsv	yes
+4	partner 5 supports top term	True	True	results/ledger/u_partners.tsv	yes
+4	partner 6 supports top term	True	True	results/ledger/u_partners.tsv	yes
+4	partner 7 supports top term	True	True	results/ledger/u_partners.tsv	yes
+4	partner 8 supports top term	False	False	results/ledger/u_partners.tsv	yes
+4	partner 9 supports top term	False	False	results/ledger/u_partners.tsv	yes
+4	partner 10 supports top term	False	False	results/ledger/u_partners.tsv	yes
+4	most specific term among the top 5 (descriptive)	GO:0035195	GO:0035195	results/ledger/u_predictions.tsv	yes
+4	module family of the top term	other	other	results/ledger/u_predictions.tsv	yes
+4	V1 module label	GO:0016442	GO:0016442	results/ledger/u_predictions.tsv	yes
+4	V1' module label	GO:0016442	GO:0016442	results/ledger/u_predictions.tsv	yes
+5	coverage reference (all genes) == M5b current coverage	True	True	data/derived/holdout_eval/core.pkl	yes
+5	top-term size reference (all scorable genes) == M5b reference	True	True	data/derived/holdout_eval/core.pkl	yes
+5	covariate zmean	10.682231464385985	10.6822	results/ledger/u_predictions.tsv	yes
+5	covariate R	0.472	0.472	results/ledger/u_predictions.tsv	yes
+5	covariate coverage	0.88	0.88	results/ledger/u_predictions.tsv	yes
+5	covariate cov_pct	0.8591388496248776	0.859139	results/ledger/u_predictions.tsv	yes
+5	covariate size_pct	0.17224694104560623	0.172247	results/ledger/u_predictions.tsv	yes
+5	support category	in_support	in_support	results/ledger/u_pcal.tsv	yes
+5	p_cal	0.14102485846066284	0.141024	results/ledger/u_pcal.tsv	yes
+5	p_cal (tiers table)	0.14102485846066284	0.141024	results/ledger/tiers_all.tsv	yes
+5	rank in primary top 40	1	1	results/ledger/top40_primary.tsv	yes
+6	real: tested gene	ANKRD52	ANKRD52	results/ledger/support.tsv	yes
+6	real: term	GO:0031047	GO:0031047	results/ledger/support.tsv	yes
+6	real: class P state	no support	no support	results/ledger/support.tsv	yes
+6	real: class P Simes p	0.5654345654345654	0.565435	results/ledger/support.tsv	yes
+6	real: class A state	no support	no support	results/ledger/support.tsv	yes
+6	real: class A Simes p	0.027972027972027972	0.027972	results/ledger/support.tsv	yes
+6	real: class L state	no support	no support	results/ledger/support.tsv	yes
+6	real: class L Simes p	0.02097902097902098	0.020979	results/ledger/support.tsv	yes
+6	real: class G state	not measured	not measured	results/ledger/support.tsv	yes
+6	real: class S state	not measured	not measured	results/ledger/support.tsv	yes
+6	real: passes Tier-A support rule	False	False	results/ledger/support.tsv	yes
+6	matched: tested gene	MTA2	MTA2	results/ledger/support.tsv	yes
+6	matched: term	GO:0031047	GO:0031047	results/ledger/support.tsv	yes
+6	matched: class P state	no support	no support	results/ledger/support.tsv	yes
+6	matched: class P Simes p	1.0	1.0	results/ledger/support.tsv	yes
+6	matched: class A state	supports	supports	results/ledger/support.tsv	yes
+6	matched: class A Simes p	0.007992007992007992	0.00799201	results/ledger/support.tsv	yes
+6	matched: class L state	supports	supports	results/ledger/support.tsv	yes
+6	matched: class L Simes p	0.001998001998001998	0.001998	results/ledger/support.tsv	yes
+6	matched: class G state	no support	no support	results/ledger/support.tsv	yes
+6	matched: class G Simes p	0.025974025974025976	0.025974	results/ledger/support.tsv	yes
+6	matched: class S state	no support	no support	results/ledger/support.tsv	yes
+6	matched: class S Simes p	1.0	1.0	results/ledger/support.tsv	yes
+6	matched: passes Tier-A support rule	True	True	results/ledger/support.tsv	yes
+6	decoy: tested gene	ANKRD52	ANKRD52	results/ledger/support.tsv	yes
+6	decoy: term	GO:0014074	GO:0014074	results/ledger/support.tsv	yes
+6	decoy: class P state	no support	no support	results/ledger/support.tsv	yes
+6	decoy: class P Simes p	1.0	1.0	results/ledger/support.tsv	yes
+6	decoy: class A state	no support	no support	results/ledger/support.tsv	yes
+6	decoy: class A Simes p	0.8391608391608392	0.839161	results/ledger/support.tsv	yes
+6	decoy: class L state	no support	no support	results/ledger/support.tsv	yes
+6	decoy: class L Simes p	1.0	1.0	results/ledger/support.tsv	yes
+6	decoy: class G state	not measured	not measured	results/ledger/support.tsv	yes
+6	decoy: class S state	not measured	not measured	results/ledger/support.tsv	yes
+6	decoy: passes Tier-A support rule	False	False	results/ledger/support.tsv	yes
+6	diag_ok in tiers table	False	False	results/ledger/tiers_all.tsv	yes
+7	real statement score	1.0	1.0	results/m7/judge/analysis_main_genes.tsv	yes
+7	mean decoy score	0.0	0.0	results/m7/judge/analysis_main_genes.tsv	yes
+7	d = real - mean(decoys)	1.0	1.0	results/m7/judge/analysis_main_genes.tsv	yes
+H	primary (5-200) top-1 term at t0	GO:0006091	GO:0006091	results/holdout_eval/per_gene_core.tsv	yes
+H	primary hit@1	0	0	results/holdout_eval/per_gene_core.tsv	yes
+H	case series: number of later terms (window 2-300)	5	5	results/holdout_eval/controls_case_series.tsv	yes
+H	case series: reportable terms at t0	77	77	results/holdout_eval/controls_case_series.tsv	yes
+H	case series: rank of best later-annotated term	1	1.0	results/holdout_eval/controls_case_series.tsv	yes
+H	case series: top-1 term at t0	GO:0007005 mitochondrion organization	GO:0007005 mitochondrion organization	results/holdout_eval/controls_case_series.tsv	yes

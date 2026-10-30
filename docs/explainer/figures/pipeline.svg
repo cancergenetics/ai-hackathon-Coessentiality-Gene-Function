@@ -1,0 +1,138 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 980" width="560" height="980" role="img" aria-labelledby="pl-title pl-desc" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+  <title id="pl-title">The seven-step pipeline, from 19,296 genes to 40 literature-checked predictions</title>
+  <desc id="pl-desc">Input: 19,296 human protein-coding genes, DepMap 26Q3 CRISPR screens and GO annotations. Step 1 pre-registers 4,924 uncharacterised genes (4,271 scorable). Step 2 scores co-essentiality with the zavg_BEF tool. Step 3 keeps genes whose partner list reproduces and that are expressed: 646 pass, at least about 322 with real signal. Step 4 assigns a GO term to 4,137 genes. Step 5 calibrates on a 2018 hold-out: 3.0 percent right against 0.5 percent for a matched null; highest p_cal 0.141. Step 6 ranks 245 eligible genes by p_cal into a top 40. Step 7: blinded judges supported 18 of 40 predictions against 3 of 120 decoys. Output: one GO term, p_cal and labels per gene.</desc>
+  <style>
+    .pl-box { fill: #ffffff; stroke: #cfc8bb; stroke-width: 1.2; }
+    .pl-io { fill: #f1efe9; stroke: #cfc8bb; stroke-width: 1.2; }
+    .pl-dot { fill: #2b6cb0; }
+    .pl-n { fill: #ffffff; font-size: 17px; font-weight: 700; }
+    .pl-t { fill: #1d1d1f; font-size: 16px; font-weight: 700; }
+    .pl-d { fill: #4a4a4a; font-size: 13.5px; }
+    .pl-k { fill: #b4441b; font-size: 13.5px; font-weight: 700; }
+    .pl-lab { fill: #6b6458; font-size: 11px; font-weight: 700; letter-spacing: 0.08em; }
+    .pl-foot { fill: #6b6458; font-size: 12px; }
+    .pl-arrow { stroke: #8a8478; stroke-width: 1.6; fill: none; }
+    .pl-head { fill: #8a8478; }
+    @media (prefers-color-scheme: dark) {
+      .pl-box { fill: #1f2329; stroke: #3d434c; }
+      .pl-io { fill: #2a2e35; stroke: #3d434c; }
+      .pl-dot { fill: #4a8fd6; }
+      .pl-t { fill: #f2f2f2; }
+      .pl-d { fill: #b9bcc2; }
+      .pl-k { fill: #f0915f; }
+      .pl-lab, .pl-foot { fill: #9aa0a8; }
+      .pl-arrow { stroke: #8b93a0; }
+      .pl-head { fill: #8b93a0; }
+    }
+  </style>
+  <defs>
+    <marker id="pl-arrowhead" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" class="pl-head"/>
+    </marker>
+  </defs>
+
+  <!-- Input -->
+  <g id="pl-input">
+    <rect class="pl-io" x="16" y="10" width="528" height="76" rx="10"/>
+    <text class="pl-lab" x="32" y="30">INPUT</text>
+    <text class="pl-d" x="32" y="50">19,296 human protein-coding genes; GO annotations (current and 2018)</text>
+    <text class="pl-d" x="32" y="70">DepMap 26Q3 CRISPR knockout screens: 1,361 cancer cell lines</text>
+  </g>
+  <path class="pl-arrow" d="M280,86 V106" marker-end="url(#pl-arrowhead)"/>
+
+  <!-- Step 1 -->
+  <g class="pl-stage" id="pl-stage-1" data-step="1">
+    <title>Step 1: pre-register uncharacterised genes</title>
+    <rect class="pl-box" x="16" y="108" width="528" height="80" rx="10"/>
+    <circle class="pl-dot" cx="50" cy="148" r="18"/>
+    <text class="pl-n" x="50" y="154" text-anchor="middle">1</text>
+    <text class="pl-t" x="84" y="134">Pre-register uncharacterised genes</text>
+    <text class="pl-d" x="84" y="155">No experimental GO function and little literature; frozen by hash</text>
+    <text class="pl-k" x="84" y="176">19,296 → 4,924 genes (4,271 scorable in DepMap)</text>
+  </g>
+  <path class="pl-arrow" d="M280,188 V208" marker-end="url(#pl-arrowhead)"/>
+
+  <!-- Step 2 -->
+  <g class="pl-stage" id="pl-stage-2" data-step="2">
+    <title>Step 2: score co-essentiality with the published tool</title>
+    <rect class="pl-box" x="16" y="210" width="528" height="80" rx="10"/>
+    <circle class="pl-dot" cx="50" cy="250" r="18"/>
+    <text class="pl-n" x="50" y="256" text-anchor="middle">2</text>
+    <text class="pl-t" x="84" y="236">Score co-essentiality</text>
+    <text class="pl-d" x="84" y="257">Published tool zavg_BEF, read-only: a score for every gene pair</text>
+    <text class="pl-k" x="84" y="278">4,271 genes scored; tool benchmark reproduced (AP 0.3451)</text>
+  </g>
+  <path class="pl-arrow" d="M280,290 V310" marker-end="url(#pl-arrowhead)"/>
+
+  <!-- Step 3 -->
+  <g class="pl-stage" id="pl-stage-3" data-step="3">
+    <title>Step 3: decide whether the gene has usable signal</title>
+    <rect class="pl-box" x="16" y="312" width="528" height="80" rx="10"/>
+    <circle class="pl-dot" cx="50" cy="352" r="18"/>
+    <text class="pl-n" x="50" y="358" text-anchor="middle">3</text>
+    <text class="pl-t" x="84" y="338">Decide if the gene has usable signal</text>
+    <text class="pl-d" x="84" y="359">Top-25 partners reproduce in split halves; gene is expressed</text>
+    <text class="pl-k" x="84" y="380">646 pass (13%); at least ~322 with real signal</text>
+  </g>
+  <path class="pl-arrow" d="M280,392 V412" marker-end="url(#pl-arrowhead)"/>
+
+  <!-- Step 4 -->
+  <g class="pl-stage" id="pl-stage-4" data-step="4">
+    <title>Step 4: assign a candidate function</title>
+    <rect class="pl-box" x="16" y="414" width="528" height="80" rx="10"/>
+    <circle class="pl-dot" cx="50" cy="454" r="18"/>
+    <text class="pl-n" x="50" y="460" text-anchor="middle">4</text>
+    <text class="pl-t" x="84" y="440">Assign a candidate function</text>
+    <text class="pl-d" x="84" y="461">GO term with the highest summed partner score, ≥ 2 partners</text>
+    <text class="pl-k" x="84" y="482">4,137 genes get a top GO term</text>
+  </g>
+  <path class="pl-arrow" d="M280,494 V514" marker-end="url(#pl-arrowhead)"/>
+
+  <!-- Step 5 -->
+  <g class="pl-stage" id="pl-stage-5" data-step="5">
+    <title>Step 5: calibrate confidence on a temporal hold-out</title>
+    <rect class="pl-box" x="16" y="516" width="528" height="80" rx="10"/>
+    <circle class="pl-dot" cx="50" cy="556" r="18"/>
+    <text class="pl-n" x="50" y="562" text-anchor="middle">5</text>
+    <text class="pl-t" x="84" y="542">Calibrate confidence on the future</text>
+    <text class="pl-d" x="84" y="563">Model fitted on 809 genes annotated after 2018 → p_cal</text>
+    <text class="pl-k" x="84" y="584">Hold-out: 3.0% right vs 0.5% null; max p_cal 0.141</text>
+  </g>
+  <path class="pl-arrow" d="M280,596 V616" marker-end="url(#pl-arrowhead)"/>
+
+  <!-- Step 6 -->
+  <g class="pl-stage" id="pl-stage-6" data-step="6">
+    <title>Step 6: add orthogonal evidence and prioritise</title>
+    <rect class="pl-box" x="16" y="618" width="528" height="80" rx="10"/>
+    <circle class="pl-dot" cx="50" cy="658" r="18"/>
+    <text class="pl-n" x="50" y="664" text-anchor="middle">6</text>
+    <text class="pl-t" x="84" y="644">Add orthogonal evidence and prioritise</text>
+    <text class="pl-d" x="84" y="665">Rank by p_cal; independent data and checks shown as labels</text>
+    <text class="pl-k" x="84" y="686">245 eligible genes → top 40 (no gene reached a tier)</text>
+  </g>
+  <path class="pl-arrow" d="M280,698 V718" marker-end="url(#pl-arrowhead)"/>
+
+  <!-- Step 7 -->
+  <g class="pl-stage" id="pl-stage-7" data-step="7">
+    <title>Step 7: check the literature blind</title>
+    <rect class="pl-box" x="16" y="720" width="528" height="80" rx="10"/>
+    <circle class="pl-dot" cx="50" cy="760" r="18"/>
+    <text class="pl-n" x="50" y="766" text-anchor="middle">7</text>
+    <text class="pl-t" x="84" y="746">Check the literature blind</text>
+    <text class="pl-d" x="84" y="767">Two judges, redacted evidence, three decoy statements per gene</text>
+    <text class="pl-k" x="84" y="788">18/40 predictions supported vs 3/120 decoys</text>
+  </g>
+  <path class="pl-arrow" d="M280,800 V820" marker-end="url(#pl-arrowhead)"/>
+
+  <!-- Output -->
+  <g id="pl-output">
+    <rect class="pl-io" x="16" y="822" width="528" height="96" rx="10"/>
+    <text class="pl-lab" x="32" y="842">OUTPUT</text>
+    <text class="pl-d" x="32" y="863">For each gene: one GO term, p_cal and warning labels.</text>
+    <text class="pl-d" x="32" y="884">About 4.9 top terms expected to be confirmed (30.5 if every</text>
+    <text class="pl-d" x="32" y="905">gene were later annotated); most top-40 functions already published.</text>
+  </g>
+
+  <text class="pl-foot" x="16" y="946">Steps 3–6 label every scorable gene; only expressed, assessable genes</text>
+  <text class="pl-foot" x="16" y="964">with a p_cal can enter the top 40.</text>
+</svg>

@@ -1,0 +1,277 @@
+{
+ "gene": "ANKRD52",
+ "control": "TMEM242",
+ "gate": {
+  "tag": "preregistration-v1",
+  "tag_commit": "afed1dd446a683071b7fdd91127641bbb5f3648a",
+  "freeze_file": "preregistration/FREEZE.sha256",
+  "freeze_sha256": "687075e680b8a051e6482de5bb052c903afaf2942ae5a25a34cef79e5965da04",
+  "n_files": 10,
+  "tool_commit": "3c684c972f1e5c3ead722b4b3e2c508fa3cb5ddf",
+  "data": {
+   "data/raw/depmap/CRISPRGeneEffect.csv": "1e0c492944a7297c0eda179081a1e81a1cfe41a97628facd7eddbdda1a7504ee"
+  },
+  "n_freeze_files": 10
+ },
+ "matrix_index": 713,
+ "hgnc_id": "HGNC:26614",
+ "step0": {
+  "hgnc_id": "HGNC:26614",
+  "symbol": "ANKRD52",
+  "location": "12q13.3",
+  "D1": "True",
+  "n_d1_terms_informative": "0",
+  "n_d1_terms_generic": "1",
+  "n_d1_rows": "3",
+  "D2": "False",
+  "annotation_score": "3",
+  "D3": "True",
+  "D3_pubmed": "True",
+  "D3_tdark": "False",
+  "n_pubmed_focused": "6",
+  "n_pubmed_all": "62",
+  "tdl": "Tbio",
+  "in_depmap": "True",
+  "scorable": "True",
+  "family_stratum": "other",
+  "expressed": "True",
+  "core": "False",
+  "headline_stratum": "True",
+  "U_rule": "U = D1 and (D2 or D3)",
+  "in_U_by_rule": true,
+  "literature_novelty_class_L": "N1"
+ },
+ "step1": {
+  "depmap_column": "ANKRD52 (283373)",
+  "n_lines_total": 1361,
+  "n_lines_observed": 1361,
+  "nan_fraction": 0.0,
+  "mean_effect": -0.24274565636789447,
+  "sd_effect": 0.23123126452027173,
+  "n_lines_lt_m0p5": 169,
+  "frac_lines_lt_m0p5": 0.12417340191036003,
+  "min_effect": -1.4450345039367676,
+  "median_effect": -0.22687287628650665,
+  "tool_background": true,
+  "expr_n_models": 2130,
+  "expr_frac_log2tpm1_ge1": 0.9985915492957746,
+  "expr_median_log2tpm1": 3.9360393499999997,
+  "expressed": true,
+  "clean_negative": false
+ },
+ "step2": {
+  "arm": "12q",
+  "n_paralogues_in_matrix": 3,
+  "paralogues": [
+   "ANKRD28",
+   "ANKRD44",
+   "ANKRD55"
+  ],
+  "n_bg_genes_same_arm": 686,
+  "kth_score": 4.516629219055176,
+  "n_removed_above_cutoff": 2,
+  "n_bg_genes": 17525,
+  "zmean_top25": 10.682231903076172,
+  "row_quantiles": {
+   "0.5": -0.09061357378959656,
+   "0.99": 2.0790741252899214,
+   "0.999": 5.434536987304568
+  },
+  "tool": {
+   "n_lines": 1361,
+   "K_tool": 44,
+   "n_bg": 17525
+  }
+ },
+ "step3": {
+  "R": 0.472,
+  "R0_mean": 0.00368,
+  "R0_max": 0.2,
+  "n_R0_ge_R": 0,
+  "p": 0.004975124378109453,
+  "alpha": 0.05,
+  "expressed": true,
+  "expressed_design": true,
+  "assessable": true,
+  "K": 25,
+  "n_matched": 200,
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ]
+ },
+ "step4": {
+  "n_candidate_terms": 6920,
+  "n_terms_with_S": 238,
+  "n_reportable": 45,
+  "n_draw_annotated_neighbours": 22,
+  "population_annotated_background": 12867,
+  "n_ipi_partner_genes_with_rows_removed": 0,
+  "top_term": "GO:0031047",
+  "top_term_name": "regulatory ncRNA-mediated gene silencing",
+  "family": "other",
+  "most_specific_top5": "GO:0035195",
+  "most_specific_top5_name": "miRNA-mediated post-transcriptional gene silencing",
+  "supporting_partners": [
+   "AGO2",
+   "XPO5",
+   "DICER1",
+   "DROSHA",
+   "TNRC6A",
+   "DGCR8",
+   "TNRC6B",
+   "DDX6"
+  ],
+  "v1_label": "GO:0016442",
+  "v1_label_name": "RISC complex",
+  "v1p_label": "GO:0016442",
+  "v1p_label_n_sup": 5,
+  "vocabulary": {
+   "n_columns": 7326,
+   "n_candidate_terms": 6920,
+   "n_annotated_background": 12867,
+   "window": [
+    5,
+    200
+   ]
+  }
+ },
+ "step5": {
+  "covariates": {
+   "zmean": 10.682231464385985,
+   "R": 0.472,
+   "coverage": 0.88,
+   "cov_pct": 0.8591388496248776,
+   "size_pct": 0.17224694104560623,
+   "family": "other"
+  },
+  "support_category": "in_support",
+  "logit": -1.8068038067504908,
+  "p_cal": 0.14102485846066284,
+  "H_fit": {
+   "n_fit": 775,
+   "n_hits": 24,
+   "hit_rate": 0.03096774193548387
+  },
+  "top40_rank": 1,
+  "n_pool": 269,
+  "n_eligible": 245,
+  "tier": "",
+  "tier_thresholds": {
+   "A": 0.5,
+   "B": 0.3
+  },
+  "n_U_with_pcal": 2583
+ },
+ "step6": {
+  "n_term_members_tested": 62,
+  "class_state": {
+   "P": "no support",
+   "A": "no support",
+   "L": "no support",
+   "G": "not measured",
+   "S": "not measured"
+  },
+  "class_p": {
+   "P": 0.5654345654345654,
+   "A": 0.027972027972027972,
+   "L": 0.02097902097902098,
+   "G": NaN,
+   "S": NaN
+  },
+  "holm_alpha": 0.05,
+  "null_sets": 1000,
+  "diagnostic_classes": [
+   "P",
+   "A",
+   "L",
+   "G",
+   "S"
+  ],
+  "contradiction": {
+   "contradicts": false,
+   "assessable": true,
+   "term_compartments": [
+    "cytosol",
+    "nucleus"
+   ],
+   "incompatible_sources": [
+    "HCM_NMF"
+   ],
+   "multi_localised": true,
+   "n_localised_members": 59
+  },
+  "passes_rule": false,
+  "matched_gene": "MTA2",
+  "decoy_term": "response to purine-containing compound"
+ },
+ "step7": {
+  "packet": "J071",
+  "real_slot": "C",
+  "real": 1.0,
+  "decoy_mean": 0.0,
+  "d": 1.0,
+  "novelty_class": "N1",
+  "n_literature_items": 11,
+  "n_functional_items": 7,
+  "recall_probe": {
+   "hgnc_id": "HGNC:26614",
+   "symbol": "ANKRD52",
+   "recalled_function": "Ankyrin-repeat regulatory subunit C of the PP6 phosphatase (PP6-ARS-C).",
+   "confidence": "high",
+   "recognised": "yes"
+  }
+ },
+ "holdout": {
+  "gene": "TMEM242",
+  "t0": "2018-07-02",
+  "primary_top1": "GO:0006091",
+  "primary_top1_name": "generation of precursor metabolites and energy",
+  "primary_targets": {
+   "GO:0033108": "mitochondrial respiratory chain complex assembly",
+   "GO:0070071": "proton-transporting two-sector ATPase complex assembly"
+  },
+  "primary_target_ranks": {
+   "GO:0033108": 49,
+   "GO:0070071": 50
+  },
+  "primary_hit1": 0,
+  "case_top1": "GO:0007005",
+  "case_top1_name": "mitochondrion organization",
+  "case_rank_best": 1,
+  "case_n_later_terms": 5,
+  "circularity": "re-checked from local circularity tables",
+  "supporting_partners_t0": [
+   "ATP5PD",
+   "ATP5PB",
+   "ATP5F1B",
+   "ATP5PF",
+   "ATP5F1A",
+   "ATP5ME",
+   "ATP5F1D",
+   "ATP5F1C",
+   "ATP5PO",
+   "ATP5F1E",
+   "ATP5MG",
+   "ATP5MF",
+   "OXA1L",
+   "MFN2",
+   "TMEM70",
+   "IMMT",
+   "YME1L1",
+   "STOML2"
+  ],
+  "zmean": 13.05400360107422,
+  "R": 0.672,
+  "v1prime_label_committed": "MitoCarta: OXPHOS"
+ },
+ "reproduction": {
+  "n_checks": 159,
+  "n_match": 159,
+  "mismatches": []
+ },
+ "runtime_s": 199.0
+}

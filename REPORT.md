@@ -24,7 +24,7 @@ Paper: `manuscript/manuscript.pdf` (source `manuscript/src/`); candidate reports
 
 - **Census (C1).** 4,924 genes pre-registered; 4,271 scorable; 646 pass the frozen assessability rule (13.1%), but
   clean-negative (non-expressed) genes pass the split-half test at 13%, so the null-adjusted estimate of genes with a
-  real, reproducible co-essentiality signal is ≈ 243 (173–306), ≈ 4.9% of U [post-review].
+  real, reproducible co-essentiality signal is at least ≈ 324 (248–389), ≈ 6.6% of U (243 assessable calls in excess of the null) [post-review].
 - **Accuracy (C2).** On the temporal hold-out (809 genes uncharacterised in 2018, annotated since), precision@1 of the
   predicted GO term = 0.030 (0.018–0.043) vs 0.000 prior-only and 0.005 matched-gene null — primary test passes,
   robust to every split-half network and circularity sensitivity, independently re-derived. No advantage over GLS

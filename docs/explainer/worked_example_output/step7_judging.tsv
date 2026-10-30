@@ -1,0 +1,5 @@
+packet	slot	is_real	statement	term	term_size	decoy_donor	judge1	judge2	final
+J071	A	False	GENE_X functions in modulation of chemical synaptic transmission; module context: histone deacetylase complex	GO:0050804	63	OR1J2	0	0	0
+J071	B	False	GENE_X functions in deacylase activity; module context: telomere cap complex	GO:0160215	62	LLPH	0	0	0
+J071	C	True	GENE_X functions in regulatory ncRNA-mediated gene silencing; module context: RISC complex	GO:0031047	62		1	1	1
+J071	D	False	GENE_X functions in dicarboxylic acid metabolic process; module context: plasma membrane signaling receptor complex	GO:0043648	63	EIF2S3B	0	0	0

@@ -1,0 +1,245 @@
+{
+ "range": [
+  "2026-10-29T19:30:00Z",
+  "2026-10-30T11:15:00Z"
+ ],
+ "timezone_note": "All times are git commit times (UTC). Dates written inside some project files are not UTC-consistent; see DISCREPANCIES.md.",
+ "caption": "The research phase, 29-30 October 2026 (UTC). Coloured bands: milestones, from git commit times. Hatched: no commits (23:11-03:57; git does not say what happened, see DISCREPANCIES.md C1) and the usage-limit pause (08:16-09:16). Numbered circles: the eight turning points, placed at the commit that settled each one (time_start/time_end in this file give the span from first proposal to final decision). Publication clean-up (11:39-11:52) is not shown. Sources: git log, RESEARCH_TREE.md, results/**.",
+ "phases": [
+  {
+   "start": "2026-10-29T19:39:00Z",
+   "end": "2026-10-29T20:07:00Z",
+   "label": "Set-up, literature, data",
+   "milestones": "M0-M1",
+   "group": "design"
+  },
+  {
+   "start": "2026-10-29T20:07:00Z",
+   "end": "2026-10-29T20:31:00Z",
+   "label": "Design + 2 review rounds",
+   "milestones": "M2",
+   "group": "design"
+  },
+  {
+   "start": "2026-10-29T20:31:00Z",
+   "end": "2026-10-29T21:03:00Z",
+   "label": "Freeze",
+   "milestones": "M3",
+   "group": "design"
+  },
+  {
+   "start": "2026-10-29T21:03:00Z",
+   "end": "2026-10-29T21:57:00Z",
+   "label": "Verify tool, census",
+   "milestones": "M4",
+   "group": "evaluation"
+  },
+  {
+   "start": "2026-10-29T21:57:00Z",
+   "end": "2026-10-29T23:11:00Z",
+   "label": "Ranker, hold-out look",
+   "milestones": "M5",
+   "group": "evaluation"
+  },
+  {
+   "start": "2026-10-29T23:11:00Z",
+   "end": "2026-10-30T04:55:00Z",
+   "label": "Predictions for 4,137 genes",
+   "milestones": "M6",
+   "group": "predictions"
+  },
+  {
+   "start": "2026-10-30T04:55:00Z",
+   "end": "2026-10-30T07:13:00Z",
+   "label": "Blind literature checks, 10 reports",
+   "milestones": "M7",
+   "group": "predictions"
+  },
+  {
+   "start": "2026-10-30T07:13:00Z",
+   "end": "2026-10-30T10:26:00Z",
+   "label": "Manuscript, 2 review rounds, wrap-up",
+   "milestones": "M8-M9",
+   "group": "writing"
+  }
+ ],
+ "gaps": [
+  {
+   "start": "2026-10-29T23:11:00Z",
+   "end": "2026-10-30T03:57:00Z",
+   "label": "no commits",
+   "note": "Scripts 40-43 (U predictions) ran 23:03-23:06. Script 44 (top-40 checks) finished at 04:52 after 55 min of measured runtime; that runtime uses time.perf_counter, which excludes macOS sleep, and the PI reports that the machine slept during the run (DISCREPANCIES C1, B12)."
+  },
+  {
+   "start": "2026-10-30T08:16:00Z",
+   "end": "2026-10-30T09:16:00Z",
+   "label": "usage-limit pause",
+   "note": "Commit 379827f records the interruption and resume instructions."
+  }
+ ],
+ "turning_points": [
+  {
+   "id": "tp-1",
+   "n": 1,
+   "title": "Define \"uncharacterised\" before looking",
+   "short_label": "Define \"uncharacterised\" first",
+   "key_number": "4,924 genes hash-frozen; later 42% found already published",
+   "time": "2026-10-29T21:00:14Z",
+   "time_start": "2026-10-29T20:06:34Z",
+   "time_end": "2026-10-29T21:00:14Z",
+   "commit": "afed1dd",
+   "commits": [
+    "f1cb5c3",
+    "afed1dd",
+    "b2b3a53",
+    "b39691d"
+   ],
+   "summary": "Uncharacterised = no experimental GO process/function annotation AND (UniProt annotation score <= 2 OR <= 10 focused PubMed papers OR IDG Tdark); 4,924 genes frozen by hash before any gene-gene score. A later audit found 42% already had published function, mostly among genes entering via the literature-attention route (few focused papers or Tdark) without a low UniProt score (56% vs 13%).",
+   "method_step": 1,
+   "method_anchor": "METHOD.md#step-1",
+   "journey_anchor": "JOURNEY.md#tp-1"
+  },
+  {
+   "id": "tp-2",
+   "n": 2,
+   "title": "Validate on genes annotated after 2018, not on known genes",
+   "short_label": "Validate on the future",
+   "key_number": "820 hold-out genes; DepMap-citing annotations removed",
+   "time": "2026-10-29T20:18:15Z",
+   "time_start": "2026-10-29T20:06:34Z",
+   "time_end": "2026-10-29T21:00:14Z",
+   "commit": "3e6b162",
+   "commits": [
+    "f1cb5c3",
+    "3e6b162",
+    "afed1dd"
+   ],
+   "summary": "Primary validation = CAFA-style temporal hold-out (genes uncharacterised in GO 2018-07, annotated since), with prior-only and matched-gene nulls and a full-text circularity filter that removes annotations from papers that used DepMap. Leave-one-out on known genes was demoted to choosing the ranker.",
+   "method_step": 5,
+   "method_anchor": "METHOD.md#step-5",
+   "journey_anchor": "JOURNEY.md#tp-2"
+  },
+  {
+   "id": "tp-3",
+   "n": 3,
+   "title": "Decide which genes the method can speak about",
+   "short_label": "Which genes carry signal?",
+   "key_number": "646 assessable (13%); excess over null about 241",
+   "time": "2026-10-29T21:55:35Z",
+   "time_start": "2026-10-29T20:18:15Z",
+   "time_end": "2026-10-29T21:55:35Z",
+   "commit": "0e76668",
+   "commits": [
+    "3e6b162",
+    "0e76668",
+    "b39691d"
+   ],
+   "summary": "A gene is flagged assessable if its neighbour list reproduces across split halves of the cell lines better than for 200 matched genes, and the gene is expressed. 646 of 4,924 pass; non-expressed control genes pass the reproducibility test 13% of the time, so calls exceed the null expectation by only about 241 (at least ~322 genes with real signal).",
+   "method_step": 3,
+   "method_anchor": "METHOD.md#step-3",
+   "journey_anchor": "JOURNEY.md#tp-3"
+  },
+  {
+   "id": "tp-4",
+   "n": 4,
+   "title": "Turn neighbours into a function call",
+   "short_label": "Simplest ranker wins",
+   "key_number": "MRR 0.169 vs 0.140 vs 0.111; 401/820 top ties",
+   "time": "2026-10-29T22:19:48Z",
+   "time_start": "2026-10-29T22:19:48Z",
+   "time_end": "2026-10-29T23:07:36Z",
+   "commit": "47631ed",
+   "commits": [
+    "47631ed",
+    "8e7e47f"
+   ],
+   "summary": "Three pre-declared rankers compared once on 3,000 sampled known genes (2,519 with a target) by a fixed rule; the summed partner score won and collapsed under label shuffling. An independent verifier later found tied top scores in 401 of 820 hold-out genes.",
+   "method_step": 4,
+   "method_anchor": "METHOD.md#step-4",
+   "journey_anchor": "JOURNEY.md#tp-4"
+  },
+  {
+   "id": "tp-5",
+   "n": 5,
+   "title": "The single look at the hold-out",
+   "short_label": "One look at the hold-out",
+   "key_number": "precision@1 0.030 vs 0.005 null; homology 0.218",
+   "time": "2026-10-29T22:50:36Z",
+   "time_start": "2026-10-29T22:19:48Z",
+   "time_end": "2026-10-29T23:11:36Z",
+   "commit": "aa381fc",
+   "commits": [
+    "fa21808",
+    "aa381fc",
+    "8e7e47f",
+    "70864b2"
+   ],
+   "summary": "Specification logged 31 min before the hold-out was opened once. Primary test passed (0.030 vs 0.000 prior-only and 0.005 matched-gene null), no better than GLS, far below the gene's own 2018 electronic/phylogenetic annotations (0.218). Calibration not detectably off, but based on 24 correct calls.",
+   "method_step": 5,
+   "method_anchor": "METHOD.md#step-5",
+   "journey_anchor": "JOURNEY.md#tp-5"
+  },
+  {
+   "id": "tp-6",
+   "n": 6,
+   "title": "No gene reaches the confidence tiers",
+   "short_label": "No gene reaches a tier",
+   "key_number": "max p_cal 0.141 vs Tier A 0.5",
+   "time": "2026-10-30T04:55:05Z",
+   "time_start": "2026-10-30T04:55:05Z",
+   "time_end": "2026-10-30T04:55:35Z",
+   "commit": "c4eadf5",
+   "commits": [
+    "c4eadf5",
+    "6a95b71"
+   ],
+   "summary": "Highest calibrated probability 0.141, so the pre-registered low-yield branch applied. The PI ranked the top 40 by p_cal (overriding an agent's clean-first fill) and added a separate, uncalibrated list of 20 strong-signal genes from machinery families outside calibration support.",
+   "method_step": 6,
+   "method_anchor": "METHOD.md#step-6",
+   "journey_anchor": "JOURNEY.md#tp-6"
+  },
+  {
+   "id": "tp-7",
+   "n": 7,
+   "title": "Blinded literature judging with decoys",
+   "short_label": "Blinded judges with decoys",
+   "key_number": "18/40 real vs 3/120 decoys supported (p = 0.0002)",
+   "time": "2026-10-30T05:38:14Z",
+   "time_start": "2026-10-30T05:05:35Z",
+   "time_end": "2026-10-30T07:47:30Z",
+   "commit": "020b0ed",
+   "commits": [
+    "3776d47",
+    "1eb08ea",
+    "020b0ed",
+    "acdad5a"
+   ],
+   "summary": "Literature agents blind to predictions wrote evidence tables; judges scored each real prediction against three decoys, after passing a validation on known genes (9/10 real vs 1/30 decoys). 18/40 real vs 3/120 decoys supported; 16/40 when module-label matches are not credited.",
+   "method_step": 7,
+   "method_anchor": "METHOD.md#step-7",
+   "journey_anchor": "JOURNEY.md#tp-7"
+  },
+  {
+   "id": "tp-8",
+   "n": 8,
+   "title": "Referees reframe the paper",
+   "short_label": "Referees reframe the claims",
+   "key_number": "about 5 expected confirmations; 1 of 10 reports new",
+   "time": "2026-10-30T07:47:23Z",
+   "time_start": "2026-10-30T07:47:23Z",
+   "time_end": "2026-10-30T10:25:58Z",
+   "commit": "3f3a65b",
+   "commits": [
+    "3f3a65b",
+    "b39691d",
+    "2e2e9c2",
+    "0cde51b",
+    "a739f06"
+   ],
+   "summary": "Referee agents showed that p_cal is conditional on a gene being annotated later (unconditional expected confirmations about 5, not 30.5), that the census counted null calls, and that 9 of 10 report genes already had a published co-essential link (3 an explicit Wainberg 2021 prediction). Only PLEKHH3 had no prior.",
+   "method_step": null,
+   "method_anchor": "METHOD.md",
+   "journey_anchor": "JOURNEY.md#tp-8"
+  }
+ ]
+}

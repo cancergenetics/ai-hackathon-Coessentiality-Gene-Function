@@ -1,0 +1,239 @@
+go_id	term_name	size	S	n_sup	x	n_draw	p_hyper	p_emp	reportable	rank_R1	family
+GO:0031047	regulatory ncRNA-mediated gene silencing	62	158.114	8	8	22	5.51825e-14	0.00200401	True	1	other
+GO:0016441	post-transcriptional gene silencing	32	115.689	6	6	22	1.04461e-11	0.00200803	True	2	other
+GO:0035194	regulatory ncRNA-mediated post-transcriptional gene silencing	25	92.0029	5	5	22	4.6603e-10	0.002	True	3	other
+GO:0035195	miRNA-mediated post-transcriptional gene silencing	24	92.0029	5	5	22	3.73235e-10	0.002	True	4	other
+GO:0035196	miRNA processing	31	91.8747	4	4	22	1.95618e-07	0.002	True	5	other
+GO:0070918	regulatory ncRNA processing	35	91.8747	4	4	22	3.24067e-07	0.002	True	6	other
+GO:0004518	nuclease activity	157	71.8218	3	3	22	0.0023147	0.00203252	True	7	other
+GO:0004519	endonuclease activity	91	71.8218	3	3	22	0.000478111	0.00201207	True	8	other
+GO:0004521	RNA endonuclease activity	46	71.8218	3	3	22	6.27943e-05	0.00200803	True	9	other
+GO:0004540	RNA nuclease activity	90	71.8218	3	3	22	0.000462861	0.0020202	True	10	other
+GO:0016891	RNA endonuclease activity producing 5'-phosphomonoesters, hydrolytic mechanism	26	71.8218	3	3	22	1.09963e-05	0.00200803	True	11	other
+GO:0003725	double-stranded RNA binding	58	69.5023	3	3	22	0.000125955	0.00200803	True	12	other
+GO:0017148	negative regulation of translation	84	67.6051	4	4	22	1.13037e-05	0.00201613	True	13	other
+GO:0035278	miRNA-mediated gene silencing by inhibition of translation	16	67.6051	4	4	22	1.15067e-08	0.002	True	14	other
+GO:0033962	P-body assembly	8	51.3303	3	3	22	2.41614e-07	0.00199601	True	15	other
+GO:0003729	mRNA binding	151	50.1613	2	2	22	0.0271036	0.00407332	True	16	nuclear_RNA_machinery
+GO:0022618	protein-RNA complex assembly	128	49.4494	2	2	22	0.019917	0.0101626	True	17	ribosome_biogenesis_translation
+GO:0031054	pre-miRNA processing	13	49.4494	2	2	22	0.000215211	0.00199601	True	18	other
+GO:0035197	siRNA binding	6	49.4494	2	2	22	4.1688e-05	0.00199601	True	19	other
+GO:0061980	regulatory RNA binding	35	49.4494	2	2	22	0.0016047	0.00200803	True	20	other
+GO:0070922	RISC complex assembly	10	49.4494	2	2	22	0.000124547	0.00199601	True	21	ribosome_biogenesis_translation
+GO:0071826	protein-RNA complex organization	134	49.4494	2	2	22	0.0217015	0.0101626	True	22	other
+GO:0010586	miRNA metabolic process	17	48.0836	2	2	22	0.000373687	0.002	True	23	other
+GO:0070883	pre-miRNA binding	8	48.0836	2	2	22	7.76565e-05	0.00199601	True	24	other
+GO:0043487	regulation of RNA stability	119	46.5802	3	3	22	0.00104474	0.00410678	True	25	other
+GO:0043488	regulation of mRNA stability	108	46.5802	3	3	22	0.000788488	0.00409836	True	26	other
+GO:0061013	regulation of mRNA catabolic process	127	46.5802	3	3	22	0.00126077	0.00410678	True	27	other
+GO:1903311	regulation of mRNA metabolic process	200	46.5802	3	3	22	0.00458186	0.00833333	True	28	other
+GO:0031053	primary miRNA processing	11	42.4254	2	2	22	0.000152066	0.00199601	True	29	other
+GO:0070878	primary miRNA binding	6	42.4254	2	2	22	4.1688e-05	0.002	True	30	other
+GO:0061014	positive regulation of mRNA catabolic process	55	42.0383	2	2	22	0.00392306	0.0040404	True	31	other
+GO:1903313	positive regulation of mRNA metabolic process	67	42.0383	2	2	22	0.00576907	0.0040404	True	32	other
+GO:0031267	small GTPase binding	147	31.9421	2	2	22	0.0257876	0.0121704	True	33	other
+GO:0051020	GTPase binding	174	31.9421	2	2	22	0.0351822	0.0204082	True	34	other
+GO:0046332	SMAD binding	60	28.2855	2	2	22	0.00465188	0.0120482	True	35	other
+GO:0070412	R-SMAD binding	22	28.2855	2	2	22	0.000631441	0.004	True	36	other
+GO:0004721	phosphoprotein phosphatase activity	134	24.9131	3	3	22	0.00147135	0.0241935	True	37	other
+GO:0004722	protein serine/threonine phosphatase activity	66	19.5328	2	2	22	0.00560264	0.018	True	38	other
+GO:0006470	protein dephosphorylation	73	19.5328	2	2	22	0.00681481	0.0180361	True	39	other
+GO:0016311	dephosphorylation	101	19.5328	2	2	22	0.012723	0.0220884	True	40	other
+GO:0019208	phosphatase regulator activity	73	19.0386	3	3	22	0.000249703	0.0141414	True	41	other
+GO:0019888	protein phosphatase regulator activity	62	19.0386	3	3	22	0.0001537	0.0141414	True	42	other
+GO:0051056	regulation of small GTPase mediated signal transduction	191	11.6106	2	2	22	0.0416835	0.0707071	True	43	other
+GO:0016651	oxidoreductase activity, acting on NAD(P)H	64	9.79616	2	2	22	0.00527658	0.0401606	True	44	other
+GO:0016653	oxidoreductase activity, acting on NAD(P)H, heme protein as acceptor	10	9.79616	2	2	22	0.000124547	0.00798403	True	45	other
+GO:0000339	RNA cap binding	15	25.7635	1	1	22	0.0253559	1	False		other
+GO:0000340	RNA 7-methylguanosine cap binding	9	25.7635	1	1	22	0.0152881	1	False		other
+GO:0000993	RNA polymerase II complex binding	43	25.7635	1	1	22	0.0710541	1	False		other
+GO:0001046	core promoter sequence-specific DNA binding	32	25.7635	1	1	22	0.0533507	1	False		other
+GO:0003727	single-stranded RNA binding	53	25.7635	1	1	22	0.0868735	1	False		other
+GO:0003730	mRNA 3'-UTR binding	67	25.7635	1	1	22	0.108589	1	False		nuclear_RNA_machinery
+GO:0006446	regulation of translational initiation	58	25.7635	1	1	22	0.0946865	1	False		other
+GO:0035198	miRNA binding	27	25.7635	1	1	22	0.0451976	1	False		other
+GO:0035279	miRNA-mediated gene silencing by mRNA destabilization	5	25.7635	1	1	22	0.00852114	1	False		other
+GO:0035925	mRNA 3'-UTR AU-rich region binding	21	25.7635	1	1	22	0.0353255	1	False		nuclear_RNA_machinery
+GO:0043175	RNA polymerase core enzyme binding	44	25.7635	1	1	22	0.0726478	1	False		other
+GO:0045727	positive regulation of translation	94	25.7635	1	1	22	0.149085	1	False		other
+GO:0045765	regulation of angiogenesis	191	25.7635	1	1	22	0.280566	1	False		other
+GO:0045766	positive regulation of angiogenesis	107	25.7635	1	1	22	0.167951	1	False		other
+GO:0045947	negative regulation of translational initiation	15	25.7635	1	1	22	0.0253559	1	False		other
+GO:0050779	RNA destabilization	46	25.7635	1	1	22	0.0758272	1	False		other
+GO:0050803	regulation of synapse structure or activity	47	25.7635	1	1	22	0.077413	1	False		other
+GO:0050807	regulation of synapse organization	47	25.7635	1	1	22	0.077413	1	False		other
+GO:0061157	mRNA destabilization	44	25.7635	1	1	22	0.0726478	1	False		other
+GO:0070063	RNA polymerase binding	57	25.7635	1	1	22	0.093129	1	False		other
+GO:1901163	regulation of trophoblast cell migration	15	25.7635	1	1	22	0.0253559	1	False		other
+GO:1901165	positive regulation of trophoblast cell migration	7	25.7635	1	1	22	0.0119101	1	False		other
+GO:1901342	regulation of vasculature development	197	25.7635	1	1	22	0.288027	1	False		other
+GO:1904018	positive regulation of vasculature development	111	25.7635	1	1	22	0.173675	1	False		other
+GO:2000241	regulation of reproductive process	47	25.7635	1	1	22	0.077413	1	False		other
+GO:2000243	positive regulation of reproductive process	28	25.7635	1	1	22	0.0468336	1	False		other
+GO:0005049	nuclear export signal receptor activity	11	24.3977	1	1	22	0.018655	1	False		other
+GO:0006403	RNA localization	78	24.3977	1	1	22	0.125305	1	False		other
+GO:0006405	RNA export from nucleus	53	24.3977	1	1	22	0.0868735	1	False		other
+GO:0006611	protein export from nucleus	17	24.3977	1	1	22	0.02869	1	False		ER_Golgi_secretory_lipid
+GO:0006886	intracellular protein transport	165	24.3977	1	1	22	0.247365	1	False		ER_Golgi_secretory_lipid
+GO:0006913	nucleocytoplasmic transport	125	24.3977	1	1	22	0.193415	1	False		other
+GO:0015931	nucleobase-containing compound transport	115	24.3977	1	1	22	0.179362	1	False		other
+GO:0043021	ribonucleoprotein complex binding	112	24.3977	1	1	22	0.175101	1	False		other
+GO:0050657	nucleic acid transport	66	24.3977	1	1	22	0.107055	1	False		other
+GO:0050658	RNA transport	66	24.3977	1	1	22	0.107055	1	False		other
+GO:0051168	nuclear export	78	24.3977	1	1	22	0.125305	1	False		other
+GO:0051169	nuclear transport	126	24.3977	1	1	22	0.194808	1	False		other
+GO:0051236	establishment of RNA localization	68	24.3977	1	1	22	0.110121	1	False		other
+GO:0140142	nucleocytoplasmic carrier activity	25	24.3977	1	1	22	0.0419177	1	False		other
+GO:0001818	negative regulation of cytokine production	181	23.6858	1	1	22	0.267965	1	False		other
+GO:0001959	regulation of cytokine-mediated signaling pathway	126	23.6858	1	1	22	0.194808	1	False		other
+GO:0001960	negative regulation of cytokine-mediated signaling pathway	59	23.6858	1	1	22	0.0962414	1	False		other
+GO:0006399	tRNA metabolic process	142	23.6858	1	1	22	0.21678	1	False		other
+GO:0006401	RNA catabolic process	149	23.6858	1	1	22	0.226212	1	False		other
+GO:0010803	regulation of tumor necrosis factor-mediated signaling pathway	50	23.6858	1	1	22	0.0821549	1	False		other
+GO:0010804	negative regulation of tumor necrosis factor-mediated signaling pathway	22	23.6858	1	1	22	0.0369776	1	False		other
+GO:0016078	tRNA decay	6	23.6858	1	1	22	0.010217	1	False		other
+GO:0030422	siRNA processing	6	23.6858	1	1	22	0.010217	1	False		other
+GO:0032680	regulation of tumor necrosis factor production	94	23.6858	1	1	22	0.149085	1	False		other
+GO:0032720	negative regulation of tumor necrosis factor production	40	23.6858	1	1	22	0.0662575	1	False		other
+GO:0060759	regulation of response to cytokine stimulus	137	23.6858	1	1	22	0.209976	1	False		other
+GO:0060761	negative regulation of response to cytokine stimulus	63	23.6858	1	1	22	0.102436	1	False		other
+GO:0141188	nucleic acid catabolic process	163	23.6858	1	1	22	0.244751	1	False		other
+GO:1903555	regulation of tumor necrosis factor superfamily cytokine production	97	23.6858	1	1	22	0.153475	1	False		other
+GO:1903556	negative regulation of tumor necrosis factor superfamily cytokine production	41	23.6858	1	1	22	0.067859	1	False		other
+GO:0001530	lipopolysaccharide binding	27	22.3724	1	1	22	0.0451976	1	False		other
+GO:0017151	DEAD/H-box RNA helicase binding	7	22.3724	1	1	22	0.0119101	1	False		other
+GO:0042742	defense response to bacterium	162	22.3724	1	1	22	0.243441	1	False		other
+GO:0050829	defense response to Gram-negative bacterium	67	22.3724	1	1	22	0.108589	1	False		other
+GO:0050830	defense response to Gram-positive bacterium	64	22.3724	1	1	22	0.103978	1	False		other
+GO:0020037	heme binding	54	20.0529	1	1	22	0.0884413	1	False		other
+GO:0046906	tetrapyrrole binding	59	20.0529	1	1	22	0.0962414	1	False		other
+GO:0060147	regulation of post-transcriptional gene silencing	22	20.0529	1	1	22	0.0369776	1	False		other
+GO:0060148	positive regulation of post-transcriptional gene silencing	11	20.0529	1	1	22	0.018655	1	False		other
+GO:0060964	regulation of miRNA-mediated gene silencing	22	20.0529	1	1	22	0.0369776	1	False		other
+GO:0060966	regulation of gene silencing by regulatory ncRNA	22	20.0529	1	1	22	0.0369776	1	False		other
+GO:0070920	regulation of regulatory ncRNA processing	11	20.0529	1	1	22	0.018655	1	False		other
+GO:0140517	protein-RNA adaptor activity	23	20.0529	1	1	22	0.038627	1	False		other
+GO:1900368	regulation of post-transcriptional gene silencing by regulatory ncRNA	22	20.0529	1	1	22	0.0369776	1	False		other
+GO:1900370	positive regulation of post-transcriptional gene silencing by RNA	11	20.0529	1	1	22	0.018655	1	False		other
+GO:1903798	regulation of miRNA processing	11	20.0529	1	1	22	0.018655	1	False		other
+GO:1903800	positive regulation of miRNA processing	5	20.0529	1	1	22	0.00852114	1	False		other
+GO:2000631	regulation of pre-miRNA processing	5	20.0529	1	1	22	0.00852114	1	False		other
+GO:2000637	positive regulation of miRNA-mediated gene silencing	11	20.0529	1	1	22	0.018655	1	False		other
+GO:0060211	regulation of nuclear-transcribed mRNA poly(A) tail shortening	11	16.2748	1	1	22	0.018655	1	False		other
+GO:0060213	positive regulation of nuclear-transcribed mRNA poly(A) tail shortening	9	16.2748	1	1	22	0.0152881	1	False		other
+GO:1900151	regulation of nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay	21	16.2748	1	1	22	0.0353255	1	False		other
+GO:1900153	positive regulation of nuclear-transcribed mRNA catabolic process, deadenylation-dependent decay	9	16.2748	1	1	22	0.0152881	1	False		other
+GO:0006888	endoplasmic reticulum to Golgi vesicle-mediated transport	61	13.6197	1	1	22	0.0993436	1	False		ER_Golgi_secretory_lipid
+GO:0006900	vesicle budding from membrane	40	13.6197	1	1	22	0.0662575	1	False		ER_Golgi_secretory_lipid
+GO:0006901	vesicle coat assembly	17	13.6197	1	1	22	0.02869	1	False		ER_Golgi_secretory_lipid
+GO:0016050	vesicle organization	163	13.6197	1	1	22	0.244751	1	False		other
+GO:0039531	regulation of cytoplasmic pattern recognition receptor signaling pathway	120	13.6197	1	1	22	0.186418	1	False		other
+GO:0039532	negative regulation of cytoplasmic pattern recognition receptor signaling pathway	62	13.6197	1	1	22	0.100891	1	False		other
+GO:0048193	Golgi vesicle transport	177	13.6197	1	1	22	0.262866	1	False		ER_Golgi_secretory_lipid
+GO:0048208	COPII vesicle coat assembly	13	13.6197	1	1	22	0.022011	1	False		ER_Golgi_secretory_lipid
+GO:0062207	regulation of pattern recognition receptor signaling pathway	159	13.6197	1	1	22	0.239498	1	False		other
+GO:0090114	COPII-coated vesicle budding	25	13.6197	1	1	22	0.0419177	1	False		ER_Golgi_secretory_lipid
+GO:0160049	negative regulation of cGAS/STING signaling pathway	18	13.6197	1	1	22	0.0303529	1	False		other
+GO:0001934	positive regulation of protein phosphorylation	185	10.9634	1	1	22	0.273031	1	False		other
+GO:0005154	epidermal growth factor receptor binding	22	10.9634	1	1	22	0.0369776	1	False		other
+GO:0007548	sex differentiation	62	10.9634	1	1	22	0.100891	1	False		signalling_lineage
+GO:0033135	regulation of peptidyl-serine phosphorylation	26	10.9634	1	1	22	0.043559	1	False		other
+GO:0033138	positive regulation of peptidyl-serine phosphorylation	20	10.9634	1	1	22	0.0336707	1	False		other
+GO:0033143	regulation of intracellular steroid hormone receptor signaling pathway	55	10.9634	1	1	22	0.0900064	1	False		other
+GO:0033144	negative regulation of intracellular steroid hormone receptor signaling pathway	26	10.9634	1	1	22	0.043559	1	False		other
+GO:0033146	regulation of intracellular estrogen receptor signaling pathway	25	10.9634	1	1	22	0.0419177	1	False		other
+GO:0033147	negative regulation of intracellular estrogen receptor signaling pathway	9	10.9634	1	1	22	0.0152881	1	False		other
+GO:0042058	regulation of epidermal growth factor receptor signaling pathway	49	10.9634	1	1	22	0.0805769	1	False		other
+GO:0042327	positive regulation of phosphorylation	199	10.9634	1	1	22	0.290497	1	False		other
+GO:0045742	positive regulation of epidermal growth factor receptor signaling pathway	22	10.9634	1	1	22	0.0369776	1	False		other
+GO:0070851	growth factor receptor binding	84	10.9634	1	1	22	0.134296	1	False		other
+GO:1901184	regulation of ERBB signaling pathway	52	10.9634	1	1	22	0.0853032	1	False		other
+GO:1901186	positive regulation of ERBB signaling pathway	23	10.9634	1	1	22	0.038627	1	False		other
+GO:0005096	GTPase activator activity	142	7.02932	1	1	22	0.21678	1	False		signalling_lineage
+GO:0007264	small GTPase-mediated signal transduction	112	7.02932	1	1	22	0.175101	1	False		signalling_lineage
+GO:0007266	Rho protein signal transduction	36	7.02932	1	1	22	0.0598252	1	False		signalling_lineage
+GO:0042169	SH2 domain binding	28	7.02932	1	1	22	0.0468336	1	False		other
+GO:0001837	epithelial to mesenchymal transition	40	6.64944	1	1	22	0.0662575	1	False		signalling_lineage
+GO:0006513	protein monoubiquitination	36	6.64944	1	1	22	0.0598252	1	False		other
+GO:0009790	embryo development	155	6.64944	1	1	22	0.23421	1	False		signalling_lineage
+GO:0009792	embryo development ending in birth or egg hatching	55	6.64944	1	1	22	0.0900064	1	False		signalling_lineage
+GO:0014029	neural crest formation	8	6.64944	1	1	22	0.0136005	1	False		signalling_lineage
+GO:0014032	neural crest cell development	13	6.64944	1	1	22	0.022011	1	False		signalling_lineage
+GO:0014033	neural crest cell differentiation	16	6.64944	1	1	22	0.0270243	1	False		signalling_lineage
+GO:0043009	chordate embryonic development	48	6.64944	1	1	22	0.0789963	1	False		signalling_lineage
+GO:0048762	mesenchymal cell differentiation	48	6.64944	1	1	22	0.0789963	1	False		signalling_lineage
+GO:0048863	stem cell differentiation	35	6.64944	1	1	22	0.0582106	1	False		signalling_lineage
+GO:0048864	stem cell development	15	6.64944	1	1	22	0.0253559	1	False		signalling_lineage
+GO:0060485	mesenchyme development	57	6.64944	1	1	22	0.093129	1	False		signalling_lineage
+GO:0004723	calcium-dependent protein serine/threonine phosphatase activity	5	5.91307	1	1	22	0.00852114	1	False		other
+GO:0017015	regulation of transforming growth factor beta receptor signaling pathway	74	5.91307	1	1	22	0.119261	1	False		other
+GO:0030177	positive regulation of Wnt signaling pathway	93	5.91307	1	1	22	0.147617	1	False		other
+GO:0030512	negative regulation of transforming growth factor beta receptor signaling pathway	46	5.91307	1	1	22	0.0758272	1	False		other
+GO:0033192	calmodulin-dependent protein phosphatase activity	5	5.91307	1	1	22	0.00852114	1	False		other
+GO:0043124	negative regulation of canonical NF-kappaB signal transduction	66	5.91307	1	1	22	0.107055	1	False		other
+GO:0060828	regulation of canonical Wnt signaling pathway	161	5.91307	1	1	22	0.242129	1	False		other
+GO:0090092	regulation of transmembrane receptor protein serine/threonine kinase signaling pathway	145	5.91307	1	1	22	0.220836	1	False		other
+GO:0090101	negative regulation of transmembrane receptor protein serine/threonine kinase signaling pathway	77	5.91307	1	1	22	0.123798	1	False		other
+GO:0090263	positive regulation of canonical Wnt signaling pathway	68	5.91307	1	1	22	0.110121	1	False		other
+GO:0090287	regulation of cellular response to growth factor stimulus	160	5.91307	1	1	22	0.240815	1	False		other
+GO:1901222	regulation of non-canonical NF-kappaB signal transduction	57	5.91307	1	1	22	0.093129	1	False		other
+GO:1901223	negative regulation of non-canonical NF-kappaB signal transduction	21	5.91307	1	1	22	0.0353255	1	False		other
+GO:1903844	regulation of cellular response to transforming growth factor beta stimulus	76	5.91307	1	1	22	0.122288	1	False		other
+GO:0000723	telomere maintenance	67	5.49395	1	1	22	0.108589	1	False		DNA_replication_repair
+GO:0031333	negative regulation of protein-containing complex assembly	79	5.49395	1	1	22	0.12681	1	False		other
+GO:0032200	telomere organization	68	5.49395	1	1	22	0.110121	1	False		other
+GO:0070199	establishment of protein localization to chromosome	15	5.49395	1	1	22	0.0253559	1	False		other
+GO:0070200	establishment of protein localization to telomere	6	5.49395	1	1	22	0.010217	1	False		other
+GO:0072594	establishment of protein localization to organelle	150	5.49395	1	1	22	0.227551	1	False		other
+GO:0019211	phosphatase activator activity	20	5.38035	1	1	22	0.0336707	1	False		other
+GO:0019902	phosphatase binding	139	5.38035	1	1	22	0.212704	1	False		other
+GO:0019903	protein phosphatase binding	99	5.38035	1	1	22	0.156389	1	False		other
+GO:0051721	protein phosphatase 2A binding	18	5.38035	1	1	22	0.0303529	1	False		other
+GO:0072542	protein phosphatase activator activity	13	5.38035	1	1	22	0.022011	1	False		other
+GO:0004128	cytochrome-b5 reductase activity, acting on NAD(P)H	6	5.27953	1	1	22	0.010217	1	False		other
+GO:0006801	superoxide metabolic process	27	5.27953	1	1	22	0.0451976	1	False		other
+GO:0015701	bicarbonate transport	18	5.27953	1	1	22	0.0303529	1	False		other
+GO:0016174	NAD(P)H oxidase H2O2-forming activity	9	5.27953	1	1	22	0.0152881	1	False		other
+GO:0050664	oxidoreductase activity, acting on NAD(P)H, oxygen as acceptor	16	5.27953	1	1	22	0.0270243	1	False		other
+GO:0072593	reactive oxygen species metabolic process	58	5.27953	1	1	22	0.0946865	1	False		other
+GO:0032386	regulation of intracellular transport	158	4.67031	1	1	22	0.238179	1	False		other
+GO:0033157	regulation of intracellular protein transport	71	4.67031	1	1	22	0.114703	1	False		other
+GO:0046822	regulation of nucleocytoplasmic transport	72	4.67031	1	1	22	0.116225	1	False		other
+GO:0046825	regulation of protein export from nucleus	23	4.67031	1	1	22	0.038627	1	False		other
+GO:0005085	guanyl-nucleotide exchange factor activity	164	4.58132	1	1	22	0.246059	1	False		signalling_lineage
+GO:0030032	lamellipodium assembly	15	4.58132	1	1	22	0.0253559	1	False		other
+GO:0046847	filopodium assembly	10	4.58132	1	1	22	0.0169729	1	False		other
+GO:0097581	lamellipodium organization	19	4.58132	1	1	22	0.0320132	1	False		other
+GO:0003724	RNA helicase activity	40	4.56767	1	1	22	0.0662575	1	False		nuclear_RNA_machinery
+GO:0004386	helicase activity	87	4.56767	1	1	22	0.138758	1	False		other
+GO:0008186	ATP-dependent activity, acting on RNA	44	4.56767	1	1	22	0.0726478	1	False		other
+GO:0016032	viral process	160	4.56767	1	1	22	0.240815	1	False		other
+GO:0019058	viral life cycle	101	4.56767	1	1	22	0.159294	1	False		other
+GO:0019068	virion assembly	34	4.56767	1	1	22	0.0565933	1	False		other
+GO:0120543	macromolecular conformation isomerase activity	149	4.56767	1	1	22	0.226212	1	False		other
+GO:0120545	nucleic acid conformation isomerase activity	98	4.56767	1	1	22	0.154933	1	False		other
+GO:0000075	cell cycle checkpoint signaling	107	4.5419	1	1	22	0.167951	1	False		signalling_lineage
+GO:0000077	DNA damage checkpoint signaling	73	4.5419	1	1	22	0.117744	1	False		DNA_replication_repair
+GO:0008630	intrinsic apoptotic signaling pathway in response to DNA damage	35	4.5419	1	1	22	0.0582106	1	False		DNA_replication_repair
+GO:0010948	negative regulation of cell cycle process	184	4.5419	1	1	22	0.271768	1	False		other
+GO:0031570	DNA integrity checkpoint signaling	79	4.5419	1	1	22	0.12681	1	False		signalling_lineage
+GO:0042770	signal transduction in response to DNA damage	113	4.5419	1	1	22	0.176523	1	False		DNA_replication_repair
+GO:0043392	negative regulation of DNA binding	12	4.5419	1	1	22	0.0203344	1	False		other
+GO:0043489	RNA stabilization	52	4.5419	1	1	22	0.0853032	1	False		other
+GO:0044092	negative regulation of molecular function	180	4.5419	1	1	22	0.266694	1	False		other
+GO:0048145	regulation of fibroblast proliferation	37	4.5419	1	1	22	0.0614373	1	False		other
+GO:0048146	positive regulation of fibroblast proliferation	25	4.5419	1	1	22	0.0419177	1	False		other
+GO:0048255	mRNA stabilization	43	4.5419	1	1	22	0.0710541	1	False		other
+GO:0051098	regulation of binding	73	4.5419	1	1	22	0.117744	1	False		other
+GO:0051100	negative regulation of binding	35	4.5419	1	1	22	0.0582106	1	False		other
+GO:0051101	regulation of DNA binding	33	4.5419	1	1	22	0.0549733	1	False		other
+GO:0097190	apoptotic signaling pathway	181	4.5419	1	1	22	0.267965	1	False		signalling_lineage
+GO:0097193	intrinsic apoptotic signaling pathway	96	4.5419	1	1	22	0.152014	1	False		signalling_lineage
+GO:1901988	negative regulation of cell cycle phase transition	148	4.5419	1	1	22	0.224871	1	False		other
+GO:1902369	negative regulation of RNA catabolic process	67	4.5419	1	1	22	0.108589	1	False		other
+GO:1902373	negative regulation of mRNA catabolic process	57	4.5419	1	1	22	0.093129	1	False		other
+GO:1902806	regulation of cell cycle G1/S phase transition	110	4.5419	1	1	22	0.172248	1	False		other
+GO:1903312	negative regulation of mRNA metabolic process	69	4.5419	1	1	22	0.111651	1	False		other
+GO:2000045	regulation of G1/S transition of mitotic cell cycle	91	4.5419	1	1	22	0.144674	1	False		other
+GO:0006091	generation of precursor metabolites and energy	178	4.51663	1	1	22	0.264144	1	False		other
+GO:0022900	electron transport chain	29	4.51663	1	1	22	0.0484669	1	False		other

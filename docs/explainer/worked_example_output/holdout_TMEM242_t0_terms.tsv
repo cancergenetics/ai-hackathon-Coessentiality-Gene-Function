@@ -1,0 +1,16 @@
+rank	go_id	term_name	S	n_sup	size_t0	later_annotated
+1	GO:0007005	mitochondrion organization	271.976	18	204	True
+2	GO:0006091	generation of precursor metabolites and energy	248.307	14	168	False
+3	GO:0009060	aerobic respiration	248.307	14	83	False
+4	GO:0015980	energy derivation by oxidation of organic compounds	248.307	14	117	False
+5	GO:0045333	cellular respiration	248.307	14	93	False
+6	GO:0007006	mitochondrial membrane organization	241.665	14	39	False
+7	GO:0007007	inner mitochondrial membrane organization	234.602	13	33	False
+8	GO:0042407	cristae formation	234.602	13	25	False
+9	GO:0140657	ATP-dependent activity	233.491	13	284	False
+10	GO:0006119	oxidative phosphorylation	233.052	13	33	False
+11	GO:0006163	purine nucleotide metabolic process	233.052	13	200	False
+12	GO:0006164	purine nucleotide biosynthetic process	233.052	13	76	False
+13	GO:0006754	ATP biosynthetic process	233.052	13	26	False
+14	GO:0009117	nucleotide metabolic process	233.052	13	223	False
+15	GO:0009141	nucleoside triphosphate metabolic process	233.052	13	92	False
