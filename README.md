@@ -33,7 +33,9 @@ and checks the top candidates by blinded literature judging.
 
 ## Start here: plain-language explainer
 
-[`docs/explainer/`](docs/explainer/README.md) explains what the method does (with a worked example on real data, ANKRD52), how the agents arrived at it (eight turning points), and what was learned. [`docs/explainer/explainer.html`](docs/explainer/explainer.html) is the same content as one self-contained interactive page; download it and open it in a browser.
+[`docs/explainer_v2/`](docs/explainer_v2/README.md) is a short, readable account (about 15 minutes) of what the method does, whether it worked, and how the AI agents arrived at it, following one gene (ANKRD52) through every step. [`docs/explainer_v2/explainer.html`](docs/explainer_v2/explainer.html) is the same content as one self-contained page; download it and open it in a browser.
+
+The longer reference explainer, with full step-by-step detail, eight turning points, ranked insights and a list of discrepancies, is in [`docs/explainer/`](docs/explainer/README.md).
 
 ## Repository map
 
